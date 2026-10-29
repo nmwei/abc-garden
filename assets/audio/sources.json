@@ -1,0 +1,191 @@
+{
+  "engine": "Kokoro 82M v1.0",
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "license": "Apache-2.0",
+  "notice": "自然合成示范，非教师录音。名称与字母音分别用明确音素生成。字母音启用前仍需核对课堂，可用教师录音替换。",
+  "clips": [
+    {
+      "letter": "A",
+      "namePhonemes": "eɪ",
+      "soundPhonemes": "æ",
+      "nameDuration": 1.43,
+      "soundDuration": 0.9
+    },
+    {
+      "letter": "B",
+      "namePhonemes": "biː",
+      "soundPhonemes": "b",
+      "nameDuration": 1.45,
+      "soundDuration": 0.68
+    },
+    {
+      "letter": "C",
+      "namePhonemes": "siː",
+      "soundPhonemes": "k",
+      "nameDuration": 1.45,
+      "soundDuration": 0.65
+    },
+    {
+      "letter": "D",
+      "namePhonemes": "diː",
+      "soundPhonemes": "d",
+      "nameDuration": 1.45,
+      "soundDuration": 0.7
+    },
+    {
+      "letter": "E",
+      "namePhonemes": "iː",
+      "soundPhonemes": "ɛ",
+      "nameDuration": 1.38,
+      "soundDuration": 1.02
+    },
+    {
+      "letter": "F",
+      "namePhonemes": "ɛf",
+      "soundPhonemes": "f",
+      "nameDuration": 1.13,
+      "soundDuration": 0.65
+    },
+    {
+      "letter": "G",
+      "namePhonemes": "dʒiː",
+      "soundPhonemes": "ɡ",
+      "nameDuration": 1.48,
+      "soundDuration": 0.7
+    },
+    {
+      "letter": "H",
+      "namePhonemes": "eɪtʃ",
+      "soundPhonemes": "h",
+      "nameDuration": 1.43,
+      "soundDuration": 0.6
+    },
+    {
+      "letter": "I",
+      "namePhonemes": "aɪ",
+      "soundPhonemes": "ɪ",
+      "nameDuration": 1.45,
+      "soundDuration": 1.05
+    },
+    {
+      "letter": "J",
+      "namePhonemes": "dʒeɪ",
+      "soundPhonemes": "dʒ",
+      "nameDuration": 1.48,
+      "soundDuration": 1.05
+    },
+    {
+      "letter": "K",
+      "namePhonemes": "keɪ",
+      "soundPhonemes": "k",
+      "nameDuration": 1.48,
+      "soundDuration": 0.65
+    },
+    {
+      "letter": "L",
+      "namePhonemes": "ɛl",
+      "soundPhonemes": "l",
+      "nameDuration": 1.35,
+      "soundDuration": 0.8
+    },
+    {
+      "letter": "M",
+      "namePhonemes": "ɛm",
+      "soundPhonemes": "m",
+      "nameDuration": 1.32,
+      "soundDuration": 0.78
+    },
+    {
+      "letter": "N",
+      "namePhonemes": "ɛn",
+      "soundPhonemes": "n",
+      "nameDuration": 1.32,
+      "soundDuration": 0.78
+    },
+    {
+      "letter": "O",
+      "namePhonemes": "oʊ",
+      "soundPhonemes": "ɑ",
+      "nameDuration": 1.38,
+      "soundDuration": 0.95
+    },
+    {
+      "letter": "P",
+      "namePhonemes": "piː",
+      "soundPhonemes": "p",
+      "nameDuration": 1.43,
+      "soundDuration": 0.72
+    },
+    {
+      "letter": "Q",
+      "namePhonemes": "kjuː",
+      "soundPhonemes": "kw",
+      "nameDuration": 1.45,
+      "soundDuration": 0.88
+    },
+    {
+      "letter": "R",
+      "namePhonemes": "ɑɹ",
+      "soundPhonemes": "ɹ",
+      "nameDuration": 1.35,
+      "soundDuration": 0.8
+    },
+    {
+      "letter": "S",
+      "namePhonemes": "ɛs",
+      "soundPhonemes": "s",
+      "nameDuration": 1.2,
+      "soundDuration": 0.7
+    },
+    {
+      "letter": "T",
+      "namePhonemes": "tiː",
+      "soundPhonemes": "t",
+      "nameDuration": 1.4,
+      "soundDuration": 0.68
+    },
+    {
+      "letter": "U",
+      "namePhonemes": "juː",
+      "soundPhonemes": "ʌ",
+      "nameDuration": 1.48,
+      "soundDuration": 1.02
+    },
+    {
+      "letter": "V",
+      "namePhonemes": "viː",
+      "soundPhonemes": "v",
+      "nameDuration": 1.43,
+      "soundDuration": 0.82
+    },
+    {
+      "letter": "W",
+      "namePhonemes": "dʌbəljuː",
+      "soundPhonemes": "w",
+      "nameDuration": 1.65,
+      "soundDuration": 0.63
+    },
+    {
+      "letter": "X",
+      "namePhonemes": "ɛks",
+      "soundPhonemes": "ks",
+      "nameDuration": 1.23,
+      "soundDuration": 0.8
+    },
+    {
+      "letter": "Y",
+      "namePhonemes": "waɪ",
+      "soundPhonemes": "j",
+      "nameDuration": 1.45,
+      "soundDuration": 0.75
+    },
+    {
+      "letter": "Z",
+      "namePhonemes": "ziː",
+      "soundPhonemes": "z",
+      "nameDuration": 1.43,
+      "soundDuration": 0.8
+    }
+  ]
+}

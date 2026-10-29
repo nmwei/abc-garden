@@ -1,0 +1,23 @@
+{
+  "name": "abc-garden",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A gentle, offline-first alphabet garden for iPad.",
+  "scripts": {
+    "audio": "node scripts/generate-audio.mjs",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "test": "node --test tests/core.test.mjs",
+    "test:e2e": "playwright test",
+    "check": "npm test && npm run build",
+    "test:subpath": "node tests/subpath.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "kokoro-js": "1.2.1"
+  }
+}
