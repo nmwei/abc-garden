@@ -8,15 +8,18 @@
     "audio": "node scripts/generate-audio.mjs",
     "build": "node scripts/build.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
-    "test": "node --test tests/core.test.mjs",
+    "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "check": "npm test && npm run build",
-    "test:subpath": "node tests/subpath.mjs"
+    "test:subpath": "node tests/subpath.mjs",
+    "audio:course": "node scripts/generate-course-audio.mjs",
+    "assets:import": "node scripts/import-learning-assets.mjs"
   },
   "engines": {
     "node": ">=20"
   },
   "devDependencies": {
+    "@huggingface/transformers": "3.8.1",
     "@playwright/test": "1.64.1",
     "kokoro-js": "1.2.1"
   }

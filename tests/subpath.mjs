@@ -18,7 +18,13 @@ try{
     await context.setOffline(true);await page.reload();await expect(page.locator('.alphabet-card')).toHaveCount(26);
     await page.getByRole('button',{name:'字母 A 大小写，听字母名称',exact:true}).click();
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
-    console.log(`${name}: /abc-garden/ resources, audio Range and offline playback passed.`);
+    await page.getByRole('button',{name:'成长地图',exact:true}).click();
+    await page.locator('[data-view="words"]').click();
+    await expect(page.locator('.word-list button')).toHaveCount(40);
+    await page.getByRole('button',{name:'听句子',exact:true}).click();
+    await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+    expect(await page.locator('.learning-panel>img').evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
+    console.log(`${name}: /abc-garden/ resources, audio Range, word pictures and offline sentence playback passed.`);
     await browser.close();browser=null;
   }
 }finally{if(browser)await browser.close();server.kill('SIGTERM');}

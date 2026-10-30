@@ -69,6 +69,8 @@ test('audio is decodable, offline assets are complete, and an offline reload rem
   await context.setOffline(true);await page.reload();
   await expect(page.locator('.alphabet-card')).toHaveCount(26);
   await page.getByRole('button',{name:'今日小旅程'}).click();await page.getByRole('button',{name:'开始今天的小旅程'}).click();
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain('prompt-demo.wav');
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
   await page.locator('[data-action="next"]').click();await expect(page.locator('.choices button')).toHaveCount(2);
   await context.setOffline(false);
 });
@@ -103,4 +105,34 @@ test('a teacher audio replacement is local, playable and restorable',async({page
   await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
   await page.getByRole('button',{name:'恢复内置示范',exact:true}).click();
   expect((await saved(page)).customAudio['name-A']).toBeUndefined();
+});
+test('Mandarin instructions use cached clips and demo teaches name, sound and example without assigning sounds by letter case',async({page})=>{
+  await page.addInitScript(()=>{
+    window.playedClips=[];
+    const original=HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play=function(){window.playedClips.push(this.src.split('/').at(-1));return original.apply(this,arguments);};
+    if(window.speechSynthesis)window.speechSynthesis.speak=()=>{throw new Error('Device speech must not be used');};
+  });
+  await page.reload();
+  await page.getByRole('button',{name:'开始今天的小旅程'}).click();
+  await expect(page.getByRole('heading',{name:'名字和声音，都听一听'})).toBeVisible();
+  await expect(page.locator('.demo-glyph')).toHaveText('Aa');
+  await expect(page.getByRole('button',{name:'听字母名称 A',exact:true})).toContainText('/eɪ/');
+  await expect(page.getByRole('button',{name:'听字母音 A',exact:true})).toContainText('/æ/');
+  await expect(page.getByRole('button',{name:'听示例词 apple',exact:true})).toBeVisible();
+  await expect(page.locator('[data-action="next"]')).toBeInViewport({ratio:1});
+  await expect.poll(()=>page.evaluate(()=>window.playedClips),{timeout:20000}).toEqual(['prompt-demo.wav','name-A.wav','prompt-letterSound.wav','sound-A.wav','example-A.wav']);
+  const data=await saved(page);expect(data.settings.mode).toBe('name');expect(data.events).toHaveLength(0);expect(data.observations).toEqual({});
+  await page.screenshot({path:'test-results/name-and-sound.png',fullPage:true,animations:'disabled'});
+});
+test('letter-sound and word previews are available without changing assessment mode',async({page})=>{
+  await page.getByRole('button',{name:'字母朋友',exact:true}).click();
+  await page.getByRole('button',{name:'听字母音 A',exact:true}).click();
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain('sound-A.wav');
+  await page.getByRole('button',{name:'听示例词 apple',exact:true}).click();
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain('example-A.wav');
+  await page.getByRole('button',{name:'听字母音',exact:true}).click();
+  await page.getByRole('button',{name:'字母 B 大小写，听字母音',exact:true}).click();
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain('sound-B.wav');
+  const data=await saved(page);expect(data?.settings?.mode||'name').toBe('name');
 });
