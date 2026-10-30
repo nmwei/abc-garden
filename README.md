@@ -99,7 +99,7 @@ npm run check
 node scripts/publish.mjs --repository owner/abc-garden
 ```
 
-脚本使用临时 bare Git 仓库，以对象快照提交 `main` 源码与 `gh-pages` 网站，原子推送，**不操作工作目录的暂存区**。只发布明确列出的源码、测试、说明与构建内容，不包含本机学习记录、环境变量、模型和依赖。
+先在 `main` 提交全部修改并合并远程更新，保持工作区干净。脚本检查提交关系后重新构建，将现有本地源码提交原样推送到远程 `main`，仅为 `gh-pages` 创建网站快照，两者原子推送；不重建源码提交、不强推、不操作工作目录暂存区。未提交修改或远程分叉时拒绝发布。构建产物不包含本机学习记录、环境变量、模型和依赖。
 
 在 GitHub 仓库 Settings → Pages 中选择 `Deploy from a branch`，分支 `gh-pages`，目录 `/(root)`。等待 GitHub 完成部署后访问 Pages 提供的网址。
 
