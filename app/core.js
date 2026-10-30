@@ -1,13 +1,15 @@
+import {freshLearning,cleanLearning} from './course-core.js';
 import { LETTERS, BLENDS } from './content.js';
 
 export const STORAGE_KEY = 'abc-garden-v1';
 export function freshState() {
-  return { version:1, settings:{ letters:['A','B','C','D'], mode:'name', minutes:5, soundConfirmed:false, blending:false }, events:[], observations:{}, session:null, lastSession:null, customAudio:{} };
+  return { version:1, settings:{ letters:['A','B','C','D'], mode:'name', minutes:5, soundConfirmed:false, blending:false }, events:[], observations:{}, session:null, lastSession:null, customAudio:{}, learning:freshLearning() };
 }
 
 export function sanitizeState(input) {
   if (!input || input.version !== 1) throw new Error('这不是可识别的字母花园备份。');
   const state = freshState();
+  state.learning=cleanLearning(input.learning);
   const settings = input.settings || {};
   const letters = LETTERS.filter(l => Array.isArray(settings.letters) && settings.letters.includes(l));
   if (letters.length >= 2) state.settings.letters = letters;

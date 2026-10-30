@@ -1,0 +1,347 @@
+[
+  {
+    "file": "pictures/apple.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f34e.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/ball.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26bd.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/cat.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f408.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/dog.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f415.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/egg.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f95a.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/fish.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f41f.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/goat.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f410.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/hat.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f452.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/insect.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f41c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/kite.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fa81.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/leaf.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f343.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/moon.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f319.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/nest.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fab9.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/ox.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f402.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/pig.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f416.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/queen.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f478.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/rabbit.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f407.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/sun.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2600.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/up.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2b06.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/van.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f690.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/web.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f578.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/box.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4e6.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/yes.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2714.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/zebra.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f993.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/banana.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f34c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/milk.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f95b.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/water.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4a7.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/bread.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f35e.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/book.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4d5.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/bed.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cf.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/chair.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fa91.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/tree.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f333.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/flower.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/bird.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f426.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/hand.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u270b.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/eye.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f441.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/ear.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f442.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/bike.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6b2.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  },
+  {
+    "file": "pictures/jam.svg",
+    "author": "ABC Garden",
+    "source": "Original vector illustration",
+    "license": "Project original",
+    "changes": "Original"
+  },
+  {
+    "file": "pictures/top.svg",
+    "author": "ABC Garden",
+    "source": "Original vector illustration",
+    "license": "Project original",
+    "changes": "Original"
+  },
+  {
+    "file": "audio/name-B.wav",
+    "author": "Twocs",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-b.ogg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+    "review": "Source and decoding verified; classroom listening review still required"
+  },
+  {
+    "file": "audio/name-G.wav",
+    "author": "Twocs",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-g.ogg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+    "review": "Source and decoding verified; classroom listening review still required"
+  },
+  {
+    "file": "audio/sound-G.wav",
+    "author": "Peter Isotalo",
+    "source": "https://commons.wikimedia.org/wiki/File:Voiced_velar_plosive_02.ogg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+    "review": "Source and decoding verified; classroom listening review still required"
+  }
+]

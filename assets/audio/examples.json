@@ -1,0 +1,137 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "license": "Apache-2.0",
+  "clips": [
+    {
+      "letter": "A",
+      "word": "apple",
+      "duration": 1.52
+    },
+    {
+      "letter": "B",
+      "word": "ball",
+      "duration": 1.5
+    },
+    {
+      "letter": "C",
+      "word": "cat",
+      "duration": 1.43
+    },
+    {
+      "letter": "D",
+      "word": "dog",
+      "duration": 1.52
+    },
+    {
+      "letter": "E",
+      "word": "egg",
+      "duration": 1.43
+    },
+    {
+      "letter": "F",
+      "word": "fish",
+      "duration": 1.5
+    },
+    {
+      "letter": "G",
+      "word": "goat",
+      "duration": 1.43
+    },
+    {
+      "letter": "H",
+      "word": "hat",
+      "duration": 1.38
+    },
+    {
+      "letter": "I",
+      "word": "insect",
+      "duration": 1.6
+    },
+    {
+      "letter": "J",
+      "word": "jam",
+      "duration": 1.57
+    },
+    {
+      "letter": "K",
+      "word": "kite",
+      "duration": 1.48
+    },
+    {
+      "letter": "L",
+      "word": "leaf",
+      "duration": 1.45
+    },
+    {
+      "letter": "M",
+      "word": "moon",
+      "duration": 1.52
+    },
+    {
+      "letter": "N",
+      "word": "nest",
+      "duration": 1.48
+    },
+    {
+      "letter": "O",
+      "word": "ox",
+      "duration": 1.5
+    },
+    {
+      "letter": "P",
+      "word": "pig",
+      "duration": 1.48
+    },
+    {
+      "letter": "Q",
+      "word": "queen",
+      "duration": 1.48
+    },
+    {
+      "letter": "R",
+      "word": "rabbit",
+      "duration": 1.55
+    },
+    {
+      "letter": "S",
+      "word": "sun",
+      "duration": 1.48
+    },
+    {
+      "letter": "T",
+      "word": "top",
+      "duration": 1.45
+    },
+    {
+      "letter": "U",
+      "word": "up",
+      "duration": 1.35
+    },
+    {
+      "letter": "V",
+      "word": "van",
+      "duration": 1.5
+    },
+    {
+      "letter": "W",
+      "word": "web",
+      "duration": 1.45
+    },
+    {
+      "letter": "X",
+      "word": "box",
+      "duration": 1.55
+    },
+    {
+      "letter": "Y",
+      "word": "yes",
+      "duration": 1.52
+    },
+    {
+      "letter": "Z",
+      "word": "zebra",
+      "duration": 1.6
+    }
+  ]
+}

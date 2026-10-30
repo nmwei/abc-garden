@@ -1,4 +1,4 @@
-const CACHE='abc-garden-656d18b1d49f';
+const CACHE='abc-garden-97433a4afb53';
 const root=new URL('./',self.location.href);
 self.addEventListener('install',event=>event.waitUntil((async()=>{
   const response=await fetch(new URL('precache.json',root),{cache:'no-store'});
@@ -47,6 +47,6 @@ self.addEventListener('message',event=>{
     const response=await cache.match(new URL('precache.json',root));
     let ready=false;
     if(response){const manifest=await response.json();const results=await Promise.all(manifest.files.map(file=>cache.match(new URL(file,root))));ready=results.every(Boolean);}
-    event.ports[0]?.postMessage({ready,version:'656d18b1d49f'});
+    event.ports[0]?.postMessage({ready,version:'97433a4afb53'});
   })());
 });

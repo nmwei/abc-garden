@@ -1,0 +1,463 @@
+{
+  "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "voice": "af_heart",
+  "notice": "Synthetic reference speech; not teacher reviewed",
+  "clips": [
+    {
+      "key": "word-banana",
+      "text": "banana"
+    },
+    {
+      "key": "word-milk",
+      "text": "milk"
+    },
+    {
+      "key": "word-water",
+      "text": "water"
+    },
+    {
+      "key": "word-bread",
+      "text": "bread"
+    },
+    {
+      "key": "word-book",
+      "text": "book"
+    },
+    {
+      "key": "word-bed",
+      "text": "bed"
+    },
+    {
+      "key": "word-chair",
+      "text": "chair"
+    },
+    {
+      "key": "word-tree",
+      "text": "tree"
+    },
+    {
+      "key": "word-flower",
+      "text": "flower"
+    },
+    {
+      "key": "word-bird",
+      "text": "bird"
+    },
+    {
+      "key": "word-hand",
+      "text": "hand"
+    },
+    {
+      "key": "word-eye",
+      "text": "eye"
+    },
+    {
+      "key": "word-ear",
+      "text": "ear"
+    },
+    {
+      "key": "word-bike",
+      "text": "bike"
+    },
+    {
+      "key": "sentence-apple",
+      "text": "I like apples."
+    },
+    {
+      "key": "sentence-ball",
+      "text": "This is my ball."
+    },
+    {
+      "key": "sentence-cat",
+      "text": "I see a cat."
+    },
+    {
+      "key": "sentence-dog",
+      "text": "The dog can run."
+    },
+    {
+      "key": "sentence-egg",
+      "text": "This is an egg."
+    },
+    {
+      "key": "sentence-fish",
+      "text": "The fish can swim."
+    },
+    {
+      "key": "sentence-goat",
+      "text": "I see a goat."
+    },
+    {
+      "key": "sentence-hat",
+      "text": "This is my hat."
+    },
+    {
+      "key": "sentence-insect",
+      "text": "An ant is an insect."
+    },
+    {
+      "key": "sentence-jam",
+      "text": "I like jam."
+    },
+    {
+      "key": "sentence-kite",
+      "text": "My kite is in the sky."
+    },
+    {
+      "key": "sentence-leaf",
+      "text": "This leaf is green."
+    },
+    {
+      "key": "sentence-moon",
+      "text": "I see the moon."
+    },
+    {
+      "key": "sentence-nest",
+      "text": "The bird is in the nest."
+    },
+    {
+      "key": "sentence-ox",
+      "text": "The ox is big."
+    },
+    {
+      "key": "sentence-pig",
+      "text": "I see a pig."
+    },
+    {
+      "key": "sentence-queen",
+      "text": "The queen has a crown."
+    },
+    {
+      "key": "sentence-rabbit",
+      "text": "The rabbit can hop."
+    },
+    {
+      "key": "sentence-sun",
+      "text": "The sun is bright."
+    },
+    {
+      "key": "sentence-top",
+      "text": "The top can spin."
+    },
+    {
+      "key": "sentence-up",
+      "text": "Look up!"
+    },
+    {
+      "key": "sentence-van",
+      "text": "I see a van."
+    },
+    {
+      "key": "sentence-web",
+      "text": "The spider has a web."
+    },
+    {
+      "key": "sentence-box",
+      "text": "The ball is in the box."
+    },
+    {
+      "key": "sentence-yes",
+      "text": "Yes, please."
+    },
+    {
+      "key": "sentence-zebra",
+      "text": "I see a zebra."
+    },
+    {
+      "key": "sentence-banana",
+      "text": "I like bananas."
+    },
+    {
+      "key": "sentence-milk",
+      "text": "Can I have some milk?"
+    },
+    {
+      "key": "sentence-water",
+      "text": "Can I have some water?"
+    },
+    {
+      "key": "sentence-bread",
+      "text": "I like bread."
+    },
+    {
+      "key": "sentence-book",
+      "text": "This is my book."
+    },
+    {
+      "key": "sentence-bed",
+      "text": "The cat is on the bed."
+    },
+    {
+      "key": "sentence-chair",
+      "text": "Please sit on the chair."
+    },
+    {
+      "key": "sentence-tree",
+      "text": "The tree is tall."
+    },
+    {
+      "key": "sentence-flower",
+      "text": "This is a yellow flower."
+    },
+    {
+      "key": "sentence-bird",
+      "text": "The bird can fly."
+    },
+    {
+      "key": "sentence-hand",
+      "text": "This is my hand."
+    },
+    {
+      "key": "sentence-eye",
+      "text": "This is my eye."
+    },
+    {
+      "key": "sentence-ear",
+      "text": "This is my ear."
+    },
+    {
+      "key": "sentence-bike",
+      "text": "I can ride a bike."
+    },
+    {
+      "key": "read-cat-0",
+      "text": "I see a cat."
+    },
+    {
+      "key": "read-cat-1",
+      "text": "The cat is on a bed."
+    },
+    {
+      "key": "read-cat-2",
+      "text": "The cat can nap."
+    },
+    {
+      "key": "read-picnic-0",
+      "text": "I have an apple."
+    },
+    {
+      "key": "read-picnic-1",
+      "text": "You have some bread."
+    },
+    {
+      "key": "read-picnic-2",
+      "text": "We have some water."
+    },
+    {
+      "key": "read-picnic-3",
+      "text": "Let us eat!"
+    },
+    {
+      "key": "read-kite-0",
+      "text": "It is a windy day."
+    },
+    {
+      "key": "read-kite-1",
+      "text": "Mia takes her kite to the park."
+    },
+    {
+      "key": "read-kite-2",
+      "text": "The kite goes up, up, up!"
+    },
+    {
+      "key": "read-kite-3",
+      "text": "Then it gets stuck in a tree."
+    },
+    {
+      "key": "read-kite-4",
+      "text": "Mia asks Dad for help."
+    },
+    {
+      "key": "read-kite-5",
+      "text": "Dad gets the kite down. Mia says, \"Thank you!\""
+    },
+    {
+      "key": "read-garden-0",
+      "text": "Ben puts a seed in a small pot."
+    },
+    {
+      "key": "read-garden-1",
+      "text": "Every morning, he gives it a little water."
+    },
+    {
+      "key": "read-garden-2",
+      "text": "He puts the pot near a sunny window."
+    },
+    {
+      "key": "read-garden-3",
+      "text": "For a few days, nothing happens."
+    },
+    {
+      "key": "read-garden-4",
+      "text": "Then a tiny green leaf appears."
+    },
+    {
+      "key": "read-garden-5",
+      "text": "Ben learns that growing takes time."
+    },
+    {
+      "key": "read-library-0",
+      "text": "Lily and Sam want to start a book club at school."
+    },
+    {
+      "key": "read-library-1",
+      "text": "Lily thinks everyone should read the same book so they can discuss it together."
+    },
+    {
+      "key": "read-library-2",
+      "text": "Sam wants each person to choose a different book and recommend it to the group."
+    },
+    {
+      "key": "read-library-3",
+      "text": "They ask their classmates what they think. Some children prefer stories, while others like books about animals or space."
+    },
+    {
+      "key": "read-library-4",
+      "text": "The friends decide to try both ideas. In the first week, everyone brings a favorite book. In the second week, they choose one short story to read together."
+    },
+    {
+      "key": "read-library-5",
+      "text": "After a month, they will ask the group which activities helped them discover something new."
+    },
+    {
+      "key": "read-library-6",
+      "text": "Lily realizes that listening to different ideas can make a plan better."
+    },
+    {
+      "key": "read-river-0",
+      "text": "A class notices that the path beside their local river is covered with litter."
+    },
+    {
+      "key": "read-river-1",
+      "text": "At first, the students want to organize one big cleanup. Their teacher asks what might happen the following week."
+    },
+    {
+      "key": "read-river-2",
+      "text": "They realize that removing rubbish once will not stop people from leaving more."
+    },
+    {
+      "key": "read-river-3",
+      "text": "The class makes a plan with two parts: a supervised cleanup and a set of clear signs near the path."
+    },
+    {
+      "key": "read-river-4",
+      "text": "They also ask the local council whether more bins could be provided."
+    },
+    {
+      "key": "read-river-5",
+      "text": "A month later, they compare photos of the same places. Some areas look much cleaner, but rubbish still collects near the bridge."
+    },
+    {
+      "key": "read-river-6",
+      "text": "The students decide to change the position of one sign and keep checking. They have learned to use evidence to improve a plan rather than assume the first idea will solve everything."
+    },
+    {
+      "key": "talk-hello-0",
+      "text": "Hello! My name is Mia."
+    },
+    {
+      "key": "talk-hello-1",
+      "text": "Hi, Mia! My name is Ben."
+    },
+    {
+      "key": "talk-hello-2",
+      "text": "How are you?"
+    },
+    {
+      "key": "talk-hello-3",
+      "text": "I am happy, thank you."
+    },
+    {
+      "key": "talk-snack-0",
+      "text": "Can I have some water, please?"
+    },
+    {
+      "key": "talk-snack-1",
+      "text": "Yes. Here you are."
+    },
+    {
+      "key": "talk-snack-2",
+      "text": "Thank you!"
+    },
+    {
+      "key": "talk-snack-3",
+      "text": "You are welcome."
+    },
+    {
+      "key": "talk-play-0",
+      "text": "Would you like to play outside?"
+    },
+    {
+      "key": "talk-play-1",
+      "text": "Yes! What shall we play?"
+    },
+    {
+      "key": "talk-play-2",
+      "text": "We could play with a ball or ride our bikes."
+    },
+    {
+      "key": "talk-play-3",
+      "text": "Let us play with the ball first."
+    },
+    {
+      "key": "talk-help-0",
+      "text": "Excuse me. I cannot find my book."
+    },
+    {
+      "key": "talk-help-1",
+      "text": "What does it look like?"
+    },
+    {
+      "key": "talk-help-2",
+      "text": "It is red, with a cat on the cover."
+    },
+    {
+      "key": "talk-help-3",
+      "text": "Is this your book?"
+    },
+    {
+      "key": "talk-help-4",
+      "text": "Yes, it is! Thank you for helping me."
+    },
+    {
+      "key": "talk-opinion-0",
+      "text": "I think we should spend more time learning outdoors."
+    },
+    {
+      "key": "talk-opinion-1",
+      "text": "Why do you think that?"
+    },
+    {
+      "key": "talk-opinion-2",
+      "text": "We can observe real plants and ask questions about what we see."
+    },
+    {
+      "key": "talk-opinion-3",
+      "text": "That sounds useful, but what would we do on rainy days?"
+    },
+    {
+      "key": "talk-opinion-4",
+      "text": "We could collect our questions outdoors and explore them in the classroom."
+    },
+    {
+      "key": "talk-plan-0",
+      "text": "We have one free afternoon. What would you like to do?"
+    },
+    {
+      "key": "talk-plan-1",
+      "text": "I would like to go for a bike ride, but we need to check the weather."
+    },
+    {
+      "key": "talk-plan-2",
+      "text": "The forecast says it might rain. Shall we make a backup plan?"
+    },
+    {
+      "key": "talk-plan-3",
+      "text": "Good idea. We could visit the library if the weather is bad."
+    },
+    {
+      "key": "talk-plan-4",
+      "text": "Let us agree on a time and tell our families."
+    }
+  ]
+}

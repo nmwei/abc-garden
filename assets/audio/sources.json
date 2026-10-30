@@ -3,7 +3,7 @@
   "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
   "voice": "af_heart",
   "license": "Apache-2.0",
-  "notice": "自然合成示范，非教师录音。名称与字母音分别用明确音素生成。字母音启用前仍需核对课堂，可用教师录音替换。",
+  "notice": "内置声音混合合成与真人参考录音。recordingOverrides 和 assets/credits.json 记录替换来源，未完成专业逐条听觉验收。",
   "clips": [
     {
       "letter": "A",
@@ -186,6 +186,126 @@
       "soundPhonemes": "z",
       "nameDuration": 1.43,
       "soundDuration": 0.8
+    }
+  ],
+  "mandarin": {
+    "model": "onnx-community/Kokoro-82M-v1.1-zh-ONNX",
+    "voice": "zf_001",
+    "license": "Apache-2.0",
+    "clips": [
+      {
+        "key": "welcome",
+        "text": "欢迎来到字母小花园。我们一起玩一小会儿。",
+        "phonemes": "ㄏ万1应2/ㄌㄞ2ㄉㄠ4/ㄗㄭ4ㄇㄨ3ㄒ要3/ㄏ穵1元2. 我3ㄇㄣ5/ㄧ4ㄑㄧ3/万2/ㄧ4ㄒ要3/ㄏ为R4.",
+        "duration": 4.72
+      },
+      {
+        "key": "demo",
+        "text": "来，先听字母的名字。",
+        "phonemes": "ㄌㄞ2, ㄒ言1/ㄊ应1/ㄗㄭ4ㄇㄨ3/ㄉㄜ5/ㄇ应2ㄗㄭ5.",
+        "duration": 2.75
+      },
+      {
+        "key": "letterSound",
+        "text": "再听听它的字母音。",
+        "phonemes": "ㄗㄞ4/ㄊ应1ㄊ应5/ㄊㄚ1/ㄉㄜ5/ㄗㄭ4ㄇㄨ3/阴1.",
+        "duration": 2.67
+      },
+      {
+        "key": "pairUpper",
+        "text": "它的小写朋友在哪里？找找看。",
+        "phonemes": "ㄊㄚ1/ㄉㄜ5/ㄒ要2ㄒㄝ3/ㄆㄥ2又5/ㄗㄞ4/ㄋㄚ2ㄌㄧ3? ㄓㄠ3ㄓㄠ3ㄎㄢ4.",
+        "duration": 3.95
+      },
+      {
+        "key": "pairLower",
+        "text": "它的大写朋友在哪里？找找看。",
+        "phonemes": "ㄊㄚ1/ㄉㄜ5/ㄉㄚ4ㄒㄝ3/ㄆㄥ2又5/ㄗㄞ4/ㄋㄚ2ㄌㄧ3? ㄓㄠ3ㄓㄠ3ㄎㄢ4.",
+        "duration": 3.92
+      },
+      {
+        "key": "chooseName",
+        "text": "听听名字，找找是哪一个。",
+        "phonemes": "ㄊ应1ㄊ应5/ㄇ应2ㄗㄭ5, ㄓㄠ3ㄓㄠ5/ㄕ十4/ㄋㄚ3/ㄧ2ㄍㄜ5.",
+        "duration": 3.38
+      },
+      {
+        "key": "chooseSound",
+        "text": "听听字母音，找找是哪一个。",
+        "phonemes": "ㄊ应1ㄊ应5/ㄗㄭ4ㄇㄨ3/阴1, ㄓㄠ3ㄓㄠ5/ㄕ十4/ㄋㄚ3/ㄧ2ㄍㄜ5.",
+        "duration": 3.6
+      },
+      {
+        "key": "recallName",
+        "text": "还记得它的名字吗？试着说说看。",
+        "phonemes": "ㄏㄞ2/ㄐㄧ4ㄉㄜ5/ㄊㄚ1/ㄉㄜ5/ㄇ应2ㄗㄭ5/ㄇㄚ5? ㄕ十4/ㄓㄜ5/ㄕ我1ㄕ我5ㄎㄢ4.",
+        "duration": 4
+      },
+      {
+        "key": "recallSound",
+        "text": "它会发什么声音呢？试着说说看。",
+        "phonemes": "ㄊㄚ1/ㄏ为4/ㄈㄚ1/ㄕㄣ2ㄇㄜ5/ㄕㄥ1阴1/ㄋㄜ5? ㄕ十4/ㄓㄜ5/ㄕ我1ㄕ我5ㄎㄢ4.",
+        "duration": 3.85
+      },
+      {
+        "key": "blend",
+        "text": "先听每个声音，再把它们连起来。",
+        "phonemes": "ㄒ言1/ㄊ应1/ㄇㄟ3ㄍㄜ5/ㄕㄥ1阴1, ㄗㄞ4/ㄅㄚ3/ㄊㄚ1ㄇㄣ5/ㄌ言2/ㄑㄧ3ㄌㄞ5.",
+        "duration": 3.88
+      },
+      {
+        "key": "help",
+        "text": "没关系，我们一起听听。",
+        "phonemes": "ㄇㄟ2ㄍ万1ㄒㄧ5, 我3ㄇㄣ5/ㄧ4ㄑㄧ3/ㄊ应1ㄊ应5.",
+        "duration": 2.95
+      },
+      {
+        "key": "correct",
+        "text": "对啦，找到它了。",
+        "phonemes": "ㄉ为4/ㄌㄚ5, ㄓㄠ3ㄉㄠ4/ㄊㄚ1/ㄌㄜ5.",
+        "duration": 2.35
+      },
+      {
+        "key": "finish",
+        "text": "今天先玩到这里，下次见。",
+        "phonemes": "ㄐ阴1ㄊ言1/ㄒ言1/万2/ㄉㄠ4/ㄓㄜ4ㄌㄧ3, ㄒ压4ㄘㄭ4/ㄐ言4.",
+        "duration": 3.5
+      },
+      {
+        "key": "pause",
+        "text": "先歇一会儿，准备好了再继续。",
+        "phonemes": "ㄒ言1/ㄒㄝ1/ㄧ2ㄏ为R4, ㄓ文3ㄅㄟ4/ㄏㄠ3/ㄌㄜ5/ㄗㄞ4/ㄐㄧ4ㄒㄩ4.",
+        "duration": 3.45
+      }
+    ]
+  },
+  "recordingOverrides": [
+    {
+      "file": "audio/name-B.wav",
+      "author": "Twocs",
+      "source": "https://commons.wikimedia.org/wiki/File:En-us-b.ogg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+      "review": "Source and decoding verified; classroom listening review still required"
+    },
+    {
+      "file": "audio/name-G.wav",
+      "author": "Twocs",
+      "source": "https://commons.wikimedia.org/wiki/File:En-us-g.ogg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+      "review": "Source and decoding verified; classroom listening review still required"
+    },
+    {
+      "file": "audio/sound-G.wav",
+      "author": "Peter Isotalo",
+      "source": "https://commons.wikimedia.org/wiki/File:Voiced_velar_plosive_02.ogg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "changes": "Converted OGG to mono PCM16 WAV at 24000 Hz; no phoneme editing",
+      "review": "Source and decoding verified; classroom listening review still required"
     }
   ]
 }
