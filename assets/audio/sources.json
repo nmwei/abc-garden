@@ -3,189 +3,1010 @@
   "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
   "voice": "af_heart",
   "license": "Apache-2.0",
-  "notice": "自然合成示范，非教师录音。名称与字母音分别用明确音素生成。字母音启用前仍需核对课堂，可用教师录音替换。",
+  "notice": "26 个名称和 26 个字母音来自用户提供的 GK 录音，保留每项三遍跟读。例词和合音等仍为原有素材。",
   "clips": [
     {
       "letter": "A",
       "namePhonemes": "eɪ",
       "soundPhonemes": "æ",
-      "nameDuration": 1.43,
-      "soundDuration": 0.9
+      "nameDuration": 1.49,
+      "soundDuration": 1.46
     },
     {
       "letter": "B",
       "namePhonemes": "biː",
       "soundPhonemes": "b",
-      "nameDuration": 1.45,
-      "soundDuration": 0.68
+      "nameDuration": 1.43,
+      "soundDuration": 1.42
     },
     {
       "letter": "C",
       "namePhonemes": "siː",
       "soundPhonemes": "k",
-      "nameDuration": 1.45,
-      "soundDuration": 0.65
+      "nameDuration": 1.49,
+      "soundDuration": 1.46
     },
     {
       "letter": "D",
       "namePhonemes": "diː",
       "soundPhonemes": "d",
-      "nameDuration": 1.45,
-      "soundDuration": 0.7
+      "nameDuration": 1.6,
+      "soundDuration": 1.39
     },
     {
       "letter": "E",
       "namePhonemes": "iː",
       "soundPhonemes": "ɛ",
-      "nameDuration": 1.38,
-      "soundDuration": 1.02
+      "nameDuration": 1.54,
+      "soundDuration": 1.47
     },
     {
       "letter": "F",
       "namePhonemes": "ɛf",
       "soundPhonemes": "f",
-      "nameDuration": 1.13,
-      "soundDuration": 0.65
+      "nameDuration": 1.3,
+      "soundDuration": 1.4
     },
     {
       "letter": "G",
       "namePhonemes": "dʒiː",
       "soundPhonemes": "ɡ",
-      "nameDuration": 1.48,
-      "soundDuration": 0.7
+      "nameDuration": 1.49,
+      "soundDuration": 1.36
     },
     {
       "letter": "H",
       "namePhonemes": "eɪtʃ",
       "soundPhonemes": "h",
-      "nameDuration": 1.43,
-      "soundDuration": 0.6
+      "nameDuration": 1.5,
+      "soundDuration": 1.45
     },
     {
       "letter": "I",
       "namePhonemes": "aɪ",
       "soundPhonemes": "ɪ",
-      "nameDuration": 1.45,
-      "soundDuration": 1.05
+      "nameDuration": 1.41,
+      "soundDuration": 1.41
     },
     {
       "letter": "J",
       "namePhonemes": "dʒeɪ",
       "soundPhonemes": "dʒ",
-      "nameDuration": 1.48,
-      "soundDuration": 1.05
+      "nameDuration": 1.49,
+      "soundDuration": 1.33
     },
     {
       "letter": "K",
       "namePhonemes": "keɪ",
       "soundPhonemes": "k",
-      "nameDuration": 1.48,
-      "soundDuration": 0.65
+      "nameDuration": 1.37,
+      "soundDuration": 1.39
     },
     {
       "letter": "L",
       "namePhonemes": "ɛl",
       "soundPhonemes": "l",
-      "nameDuration": 1.35,
-      "soundDuration": 0.8
+      "nameDuration": 1.47,
+      "soundDuration": 2.03
     },
     {
       "letter": "M",
       "namePhonemes": "ɛm",
       "soundPhonemes": "m",
-      "nameDuration": 1.32,
-      "soundDuration": 0.78
+      "nameDuration": 1.57,
+      "soundDuration": 1.48
     },
     {
       "letter": "N",
       "namePhonemes": "ɛn",
       "soundPhonemes": "n",
-      "nameDuration": 1.32,
-      "soundDuration": 0.78
+      "nameDuration": 1.48,
+      "soundDuration": 1.42
     },
     {
       "letter": "O",
       "namePhonemes": "oʊ",
       "soundPhonemes": "ɑ",
-      "nameDuration": 1.38,
-      "soundDuration": 0.95
+      "nameDuration": 1.56,
+      "soundDuration": 1.32
     },
     {
       "letter": "P",
       "namePhonemes": "piː",
       "soundPhonemes": "p",
-      "nameDuration": 1.43,
-      "soundDuration": 0.72
+      "nameDuration": 1.39,
+      "soundDuration": 1.45
     },
     {
       "letter": "Q",
       "namePhonemes": "kjuː",
       "soundPhonemes": "kw",
-      "nameDuration": 1.45,
-      "soundDuration": 0.88
+      "nameDuration": 1.43,
+      "soundDuration": 2.4
     },
     {
       "letter": "R",
       "namePhonemes": "ɑɹ",
       "soundPhonemes": "ɹ",
-      "nameDuration": 1.35,
-      "soundDuration": 0.8
+      "nameDuration": 1.48,
+      "soundDuration": 1.37
     },
     {
       "letter": "S",
       "namePhonemes": "ɛs",
       "soundPhonemes": "s",
-      "nameDuration": 1.2,
-      "soundDuration": 0.7
+      "nameDuration": 1.24,
+      "soundDuration": 1.36
     },
     {
       "letter": "T",
       "namePhonemes": "tiː",
       "soundPhonemes": "t",
-      "nameDuration": 1.4,
-      "soundDuration": 0.68
+      "nameDuration": 1.34,
+      "soundDuration": 1.36
     },
     {
       "letter": "U",
       "namePhonemes": "juː",
       "soundPhonemes": "ʌ",
-      "nameDuration": 1.48,
-      "soundDuration": 1.02
+      "nameDuration": 1.4,
+      "soundDuration": 1.4
     },
     {
       "letter": "V",
       "namePhonemes": "viː",
       "soundPhonemes": "v",
-      "nameDuration": 1.43,
-      "soundDuration": 0.82
+      "nameDuration": 1.35,
+      "soundDuration": 1.32
     },
     {
       "letter": "W",
       "namePhonemes": "dʌbəljuː",
       "soundPhonemes": "w",
-      "nameDuration": 1.65,
-      "soundDuration": 0.63
+      "nameDuration": 1.61,
+      "soundDuration": 2.12
     },
     {
       "letter": "X",
       "namePhonemes": "ɛks",
       "soundPhonemes": "ks",
-      "nameDuration": 1.23,
-      "soundDuration": 0.8
+      "nameDuration": 1.54,
+      "soundDuration": 1.51
     },
     {
       "letter": "Y",
       "namePhonemes": "waɪ",
       "soundPhonemes": "j",
-      "nameDuration": 1.45,
-      "soundDuration": 0.75
+      "nameDuration": 1.44,
+      "soundDuration": 1.34
     },
     {
       "letter": "Z",
       "namePhonemes": "ziː",
       "soundPhonemes": "z",
-      "nameDuration": 1.43,
-      "soundDuration": 0.8
+      "nameDuration": 1.38,
+      "soundDuration": 1.29
+    }
+  ],
+  "mandarin": {
+    "model": "onnx-community/Kokoro-82M-v1.1-zh-ONNX",
+    "voice": "zf_001",
+    "license": "Apache-2.0",
+    "clips": [
+      {
+        "key": "welcome",
+        "text": "欢迎来到字母小花园。我们一起玩一小会儿。",
+        "phonemes": "ㄏ万1应2/ㄌㄞ2ㄉㄠ4/ㄗㄭ4ㄇㄨ3ㄒ要3/ㄏ穵1元2. 我3ㄇㄣ5/ㄧ4ㄑㄧ3/万2/ㄧ4ㄒ要3/ㄏ为R4.",
+        "duration": 4.72
+      },
+      {
+        "key": "demo",
+        "text": "来，先听字母的名字。",
+        "phonemes": "ㄌㄞ2, ㄒ言1/ㄊ应1/ㄗㄭ4ㄇㄨ3/ㄉㄜ5/ㄇ应2ㄗㄭ5.",
+        "duration": 2.75
+      },
+      {
+        "key": "letterSound",
+        "text": "再听听它的字母音。",
+        "phonemes": "ㄗㄞ4/ㄊ应1ㄊ应5/ㄊㄚ1/ㄉㄜ5/ㄗㄭ4ㄇㄨ3/阴1.",
+        "duration": 2.67
+      },
+      {
+        "key": "pairUpper",
+        "text": "它的小写朋友在哪里？找找看。",
+        "phonemes": "ㄊㄚ1/ㄉㄜ5/ㄒ要2ㄒㄝ3/ㄆㄥ2又5/ㄗㄞ4/ㄋㄚ2ㄌㄧ3? ㄓㄠ3ㄓㄠ3ㄎㄢ4.",
+        "duration": 3.95
+      },
+      {
+        "key": "pairLower",
+        "text": "它的大写朋友在哪里？找找看。",
+        "phonemes": "ㄊㄚ1/ㄉㄜ5/ㄉㄚ4ㄒㄝ3/ㄆㄥ2又5/ㄗㄞ4/ㄋㄚ2ㄌㄧ3? ㄓㄠ3ㄓㄠ3ㄎㄢ4.",
+        "duration": 3.92
+      },
+      {
+        "key": "chooseName",
+        "text": "听听名字，找找是哪一个。",
+        "phonemes": "ㄊ应1ㄊ应5/ㄇ应2ㄗㄭ5, ㄓㄠ3ㄓㄠ5/ㄕ十4/ㄋㄚ3/ㄧ2ㄍㄜ5.",
+        "duration": 3.38
+      },
+      {
+        "key": "chooseSound",
+        "text": "听听字母音，找找是哪一个。",
+        "phonemes": "ㄊ应1ㄊ应5/ㄗㄭ4ㄇㄨ3/阴1, ㄓㄠ3ㄓㄠ5/ㄕ十4/ㄋㄚ3/ㄧ2ㄍㄜ5.",
+        "duration": 3.6
+      },
+      {
+        "key": "recallName",
+        "text": "还记得它的名字吗？试着说说看。",
+        "phonemes": "ㄏㄞ2/ㄐㄧ4ㄉㄜ5/ㄊㄚ1/ㄉㄜ5/ㄇ应2ㄗㄭ5/ㄇㄚ5? ㄕ十4/ㄓㄜ5/ㄕ我1ㄕ我5ㄎㄢ4.",
+        "duration": 4
+      },
+      {
+        "key": "recallSound",
+        "text": "它会发什么声音呢？试着说说看。",
+        "phonemes": "ㄊㄚ1/ㄏ为4/ㄈㄚ1/ㄕㄣ2ㄇㄜ5/ㄕㄥ1阴1/ㄋㄜ5? ㄕ十4/ㄓㄜ5/ㄕ我1ㄕ我5ㄎㄢ4.",
+        "duration": 3.85
+      },
+      {
+        "key": "blend",
+        "text": "先听每个声音，再把它们连起来。",
+        "phonemes": "ㄒ言1/ㄊ应1/ㄇㄟ3ㄍㄜ5/ㄕㄥ1阴1, ㄗㄞ4/ㄅㄚ3/ㄊㄚ1ㄇㄣ5/ㄌ言2/ㄑㄧ3ㄌㄞ5.",
+        "duration": 3.88
+      },
+      {
+        "key": "help",
+        "text": "没关系，我们一起听听。",
+        "phonemes": "ㄇㄟ2ㄍ万1ㄒㄧ5, 我3ㄇㄣ5/ㄧ4ㄑㄧ3/ㄊ应1ㄊ应5.",
+        "duration": 2.95
+      },
+      {
+        "key": "correct",
+        "text": "对啦，找到它了。",
+        "phonemes": "ㄉ为4/ㄌㄚ5, ㄓㄠ3ㄉㄠ4/ㄊㄚ1/ㄌㄜ5.",
+        "duration": 2.35
+      },
+      {
+        "key": "finish",
+        "text": "今天先玩到这里，下次见。",
+        "phonemes": "ㄐ阴1ㄊ言1/ㄒ言1/万2/ㄉㄠ4/ㄓㄜ4ㄌㄧ3, ㄒ压4ㄘㄭ4/ㄐ言4.",
+        "duration": 3.5
+      },
+      {
+        "key": "pause",
+        "text": "先歇一会儿，准备好了再继续。",
+        "phonemes": "ㄒ言1/ㄒㄝ1/ㄧ2ㄏ为R4, ㄓ文3ㄅㄟ4/ㄏㄠ3/ㄌㄜ5/ㄗㄞ4/ㄐㄧ4ㄒㄩ4.",
+        "duration": 3.45
+      }
+    ]
+  },
+  "recordingOverrides": [
+    {
+      "file": "audio/name-A.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "dc2fb240c52e50f8faa870f6cfddf5a9fa69732068212df268c6f0466c9a956b",
+      "start": 0.5,
+      "end": 1.99,
+      "gainDb": 4.277,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-A.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "e2fcbc27e021cf54aafe57ffa86299f0505474c8fbf81090d50cc6cb7c3667bd",
+      "start": 1.99,
+      "end": 3.45,
+      "gainDb": 6.079,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-B.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "14a2fb09c34884e250f3e291566c65b3200957f7b26349d290bcd2c76ac48ed6",
+      "start": 3.45,
+      "end": 4.88,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-B.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "6b2ed2a22d4c5985386659a5d95efda81691fc05d8d4f7bbc237e2ccb1e0032e",
+      "start": 4.88,
+      "end": 6.3,
+      "gainDb": 8.139,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-C.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "bd4f7bbdbcfec80ae6a1f9d23db7724dc6c250d2dc745e99c42a8e9cc73bb4a0",
+      "start": 6.3,
+      "end": 7.79,
+      "gainDb": 10.876,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-C.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "462dfac7b03e6dbb329d903ee9845efe95ba72c44bc5a94b3cdef3ac445a62e5",
+      "start": 7.79,
+      "end": 9.25,
+      "gainDb": 7.217,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-D.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "2df3061638dc05cf8dbc95591b9f14c9975c1d743ba5c68c945f7167d6a98884",
+      "start": 9.25,
+      "end": 10.85,
+      "gainDb": 9.578,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-D.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "69a74717a4f3bb061cd0f65738b04d2e859b78b45f097a964dc429eab1222069",
+      "start": 10.85,
+      "end": 12.24,
+      "gainDb": 9.548,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-E.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "5e7ba60702c25646563b8423b4146f814b5e2a5516feaf18e3d4d00662efd82b",
+      "start": 12.24,
+      "end": 13.78,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-E.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "52e8d9a7536a40523f18558d4a2cf2bdf002feaca0839cfc95337a4491276f06",
+      "start": 13.78,
+      "end": 15.25,
+      "gainDb": 7.926,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-F.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "b6423947c4f21a97ecbb75dfc7e30452f05cd84f2fe0ca7b2b7f17bf59162f70",
+      "start": 15.25,
+      "end": 16.55,
+      "gainDb": 1.547,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-F.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "6c4a7ea69eb7a8e6d2dc58837cdadbca938929d3c519ad5d4eda38c4f0e129a6",
+      "start": 16.55,
+      "end": 17.95,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-G.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "58f7e5f6c54e9cafe9207160d2149efb6228915131cee7b08486e7097c0e2746",
+      "start": 17.95,
+      "end": 19.44,
+      "gainDb": 7.382,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-G.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "dbe0d534b952a905da5603f22300d408c5ac7d4dfa6c6801ecc2673d18ff51c2",
+      "start": 19.44,
+      "end": 20.8,
+      "gainDb": 10.214,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-H.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "c5ec9da84a5713c466c24f77382d719aae954f9b36e14dd93b92163071bd83d7",
+      "start": 20.8,
+      "end": 22.3,
+      "gainDb": 3.336,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-H.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "fdfc817ac260048996204f5170e20cc2104472829ed006b7e5b3bd718fe310ad",
+      "start": 22.3,
+      "end": 23.75,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-I.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "55cfb82b14260f2783757ec1040b24d7226f874518e1297da028fec6b97a4343",
+      "start": 23.75,
+      "end": 25.16,
+      "gainDb": 2.663,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-I.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "4af53c7a0b492bcbeffb32d5b97b76644b0c43ce8a1250e3ce1f46e34d214fa1",
+      "start": 25.16,
+      "end": 26.57,
+      "gainDb": 11.212,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-J.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "1d84682687619a5bfe193e464bf8590c9293bfe760210645556e0591e9faf616",
+      "start": 26.57,
+      "end": 28.06,
+      "gainDb": 7.16,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-J.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "4642931f25b5c266d8cc3bcc3e2e45e547510560f47d0156680d20b7c29df8f3",
+      "start": 28.06,
+      "end": 29.39,
+      "gainDb": 9.832,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-K.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "cc04652965da72b220d04ee54fb0355dc3c426fc51aa6603ab4ab80873aeb509",
+      "start": 29.39,
+      "end": 30.76,
+      "gainDb": 8.531,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-K.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "6718206c72eb036a24c704926838a64d9e3b6a5935a03d0006727012a6694981",
+      "start": 30.76,
+      "end": 32.15,
+      "gainDb": 9.48,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-L.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "db69b5a952ce351e03ef264daca3e4c99bb52592b91d9ba4e2ba200bc8d799fe",
+      "start": 32.15,
+      "end": 33.62,
+      "gainDb": 0.58,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-L.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "b120cb3a636658966bf014ea13e7ee9b9f24c5f707ee167a0d463f8699e3e8c1",
+      "start": 33.62,
+      "end": 35.65,
+      "gainDb": 2.994,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-M.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "3ebfccafc461e96e69e17217cd1362b3e96103bc74927907c4b359cb88de1943",
+      "start": 35.65,
+      "end": 37.22,
+      "gainDb": 5.11,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-M.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "8cbd74e839d0dd4ab4bf82f1655c9b0f9af8ed36acd341069fc5c186b822587f",
+      "start": 37.22,
+      "end": 38.7,
+      "gainDb": 10.433,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-N.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "de07f4e9823b7cfcfe593abe2e8822dcfd64900673b6f2fc27b54762ea92729e",
+      "start": 38.7,
+      "end": 40.18,
+      "gainDb": 5.646,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-N.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "52632202bb5b86591b969fd938e8e4d77a0aec78d512857b5b4d28e87225ea39",
+      "start": 40.18,
+      "end": 41.6,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-O.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "2c1fac8e23d2e59c432da128675316ee0addb8c61d90085be32c0b5b357f2b75",
+      "start": 41.6,
+      "end": 43.16,
+      "gainDb": 2.136,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-O.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "39d4f25882bc558dd0f768e69923987cca47d669f278c581fb4409279b299936",
+      "start": 43.16,
+      "end": 44.48,
+      "gainDb": 1.217,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-P.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "ea6d91e5f4d9f081d408ef3500df3a19c256aa9e8aa0f34231f22f8bb39040ee",
+      "start": 44.48,
+      "end": 45.87,
+      "gainDb": 7.773,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-P.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "f4de0232925a3233470e57688ed7fd9c761c6a510ebfcfc2ef7def6e0cee5dbf",
+      "start": 45.87,
+      "end": 47.32,
+      "gainDb": 5.109,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-Q.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "b6c32ec7102cdbc994d92e776465c6fe7281b154b7540d81ca7b480a51b64355",
+      "start": 47.32,
+      "end": 48.75,
+      "gainDb": 8.04,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-Q.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "e09af25a9ed70cd7dd7f24c9d7ea16e0881e9c5402197569392f6891491f6c34",
+      "start": 48.75,
+      "end": 51.15,
+      "gainDb": 1.843,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-R.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "a0a5614c56de28981afc60543258810cb80c6380771a85074330ff8ef52ee813",
+      "start": 51.15,
+      "end": 52.63,
+      "gainDb": 2.839,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-R.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "b07c96668c335ca0edaa96242e349ec169a1c413c8659791f1302c798f4d8c4b",
+      "start": 52.63,
+      "end": 54,
+      "gainDb": 7.705,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-S.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "f35ded623a61f7050645de62eba0806d9480bf5288af3528aa767e96bf864b0b",
+      "start": 54,
+      "end": 55.24,
+      "gainDb": 7.387,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-S.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "b612415efb66f811d8800c20e093f6fe94411e7071cadc46629a5925baa31548",
+      "start": 55.24,
+      "end": 56.6,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-T.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "181c14a6e11b01f097301dc9febb538155178870ba113064e48df7aa647e8a4c",
+      "start": 56.6,
+      "end": 57.94,
+      "gainDb": 9.153,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-T.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "d22780a5156281e66dd8dbb95dd21346adf02599e93d9f77cd95876c821b5610",
+      "start": 57.94,
+      "end": 59.3,
+      "gainDb": 4.687,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-U.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "0fdb0034084bfd76d3d23ee25e114d040479431e16706ac65ec9b921cb0e74be",
+      "start": 59.3,
+      "end": 60.7,
+      "gainDb": 8.926,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-U.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "4fc1882b09a55954dcfe92229659d55ed0dcbced3062af3f32d88e5970a5650b",
+      "start": 60.7,
+      "end": 62.1,
+      "gainDb": 8.314,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-V.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "0f231c827e59c9fcee0c525823bb1404069377a4d30882e66cffcfaeb952622b",
+      "start": 62.1,
+      "end": 63.45,
+      "gainDb": 8.531,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-V.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "3175cd96cca694d98ecd2c7ee9e67af584a71fe2af4fa6885453e9431938c850",
+      "start": 63.45,
+      "end": 64.77,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-W.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "e54510f713954e512a6fe43504ea519d7d359482d51cb7cc85b7f0b3d2f058d6",
+      "start": 64.77,
+      "end": 66.38,
+      "gainDb": 7.077,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-W.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "5b2ec91f35360030fbc74341472c3a9d2a5e0ade57b139081c730423786c6378",
+      "start": 66.38,
+      "end": 68.5,
+      "gainDb": 1.139,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-X.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "e4c7c3d21fc99065b99128bd2bddafdd6eda649ed8fd0e3283905061e205f712",
+      "start": 68.5,
+      "end": 70.04,
+      "gainDb": 2.197,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-X.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "8eb9cd09bf1fa062438b117c35c74f59624baad32f1c3dd264f9390f9ffb3951",
+      "start": 70.04,
+      "end": 71.55,
+      "gainDb": 8.024,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-Y.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "f587ecd48d82ce2be4cbb82aff9a281bdae7a7cd993397fa401fdc5d9167bbb3",
+      "start": 71.55,
+      "end": 72.99,
+      "gainDb": -2.223,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-Y.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "ec8152648ef8b61dafb22a1bf9e0955aae0dd4f4a868ac145c8079cff184aa58",
+      "start": 72.99,
+      "end": 74.33,
+      "gainDb": 3.469,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/name-Z.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "d4f9f1655436a3cda79dddcf3db2235e6bab3d4fbd0735c317c7b1e40cb69253",
+      "start": 74.33,
+      "end": 75.71,
+      "gainDb": 7.269,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
+    },
+    {
+      "file": "audio/sound-Z.wav",
+      "author": "用户提供，录音者未注明",
+      "source": "./assets/audio/gk/source.mp3",
+      "provenance": "user-provided",
+      "license": "User-provided recording; redistribution rights not specified",
+      "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+      "sha256": "56119d219b8799c18e93442937e543099e866448273017bdb35f5fe133b0545c",
+      "start": 75.71,
+      "end": 77,
+      "gainDb": 12,
+      "changes": "Split on decoded 24 kHz mono timeline; kept three repetitions; peak target -6 dBFS, gain capped at +12 dB; no denoise, pitch change or time stretching",
+      "review": "Audio structure and waveform cuts checked; professional pronunciation review not performed"
     }
   ]
 }

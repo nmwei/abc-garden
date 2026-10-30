@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>26 个字母 · 同声录音试听</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f8f7f1;color:#28483e;font-family:system-ui,sans-serif}main{max-width:960px;margin:auto;padding:28px 22px 50px}a{color:#32664f;text-underline-offset:4px}header{padding:28px 0 22px}small{letter-spacing:.12em}h1{font-size:clamp(28px,5vw,42px);margin:12px 0}p{line-height:1.8;color:#52665d}.controls{display:flex;flex-wrap:wrap;gap:10px}button{font:inherit;cursor:pointer;border:1px solid #d1dfd5;border-radius:14px;background:#fff;color:#28483e;padding:13px 20px;min-height:48px}button:focus-visible,a:focus-visible{outline:3px solid #bf7b33;outline-offset:4px}.primary{background:#32664f;color:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px;margin:18px 0 28px}.letter{padding:20px 6px}.letter strong{display:block;font-size:38px;font-weight:600;letter-spacing:2px}.letter span{display:block;font-size:12px;margin-top:10px;color:#64786c}.letter[aria-pressed=true]{background:#dfeddf;border:2px solid #32664f}.note{padding:18px 22px;background:#eeeede;border-radius:16px}.source{font-size:13px}.source summary{cursor:pointer;padding:16px 0}.source ul{padding-left:20px;columns:3}.source li{margin:10px 0}#status{min-height:26px}@media(max-width:480px){.grid{grid-template-columns:repeat(4,1fr);gap:8px}.letter strong{font-size:30px}.source ul{columns:2}}
+</style>
+<main>
+<a href="../../../#/letters">← 返回字母朋友</a>
+<header><small>LISTEN TOGETHER · A–Z</small><h1>26 个字母，同一个声音</h1><p>来自 GCompris 英音素材库 · Julia Wycherley 真人录音<br>大写和小写是同一个字母的两种写法，使用同一段名称录音。</p></header>
+<div class="controls"><button class="primary" id="all" disabled>从 A 听到 Z</button><button id="stop">停止播放</button><a href="https://www.starfall.com/h/abcs/index.php" target="_blank" rel="noopener">打开 Starfall 学习参考 ↗</a></div>
+<p id="status" role="status" aria-live="polite">正在准备试听清单…</p>
+<section class="grid" id="letters" aria-label="26 个大小写字母名称"></section>
+<div class="note"><strong>这是整套候选试听，尚未启用为课堂声音。</strong><p>只包含字母名称，不包含自然拼读的字母音或示例词。来源目录标注为英音；当前课堂以美音配置为主，若采用这套，还需一起校准名称音标与相关示范。文件来源和播放已核验不代表完成专业发音审听。</p></div>
+<details class="source"><summary>录音来源、原始文件与许可</summary><p>© 2011 Julia Wycherley。上游署名标注 GPL；此候选音频包按 GNU GPL v3 提供。WAV 由原始 OGG 转为 24 kHz 单声道 PCM16，没有裁剪、变速或修改音高。原始录音同时保留。</p><p><a href="SOURCE-README.txt">上游署名清单</a> · <a href="GPL-3.0.txt">GPL v3 全文</a> · <a href="manifest.json">来源与校验清单</a> · <a href="https://gcompris.net/index-en.html">GCompris 项目</a></p><ul id="sources"></ul></details>
+</main>
+<audio id="preview" preload="none"></audio>
+<script type="module" src="preview.js"></script>
+</html>
