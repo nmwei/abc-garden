@@ -6,3 +6,5 @@ playwright-report/
 .env*
 *.log
 .playwright-cli/
+.audio-env/
+.audio-cache/

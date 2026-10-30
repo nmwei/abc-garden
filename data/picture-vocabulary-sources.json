@@ -1,0 +1,28 @@
+{
+  "sourceFile": "picture-vocabulary.tsv",
+  "sha256": "0ee738557ed7c2976306802a73aeaf5db5a6be7e37461b3d46c8bd035abd772e",
+  "text": "Project-authored Chinese glosses and English examples; not a graded curriculum or professionally reviewed textbook.",
+  "pictures": {
+    "project": "Google Noto Emoji",
+    "revision": "v2.047",
+    "license": "Apache-2.0",
+    "exceptions": [
+      "top",
+      "jam"
+    ],
+    "attribution": "assets/credits.json"
+  },
+  "audio": {
+    "engine": "Kokoro",
+    "voice": "af_heart",
+    "speed": 0.9,
+    "attribution": "assets/audio/course-sources.json"
+  },
+  "counts": {
+    "cards": 1168,
+    "singleToken": 1079,
+    "phrases": 89,
+    "contextCues": 433,
+    "themes": 16
+  }
+}

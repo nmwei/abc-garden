@@ -1,15 +1,17 @@
+import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
 test('continuous reading supports ordered pairs, pause, skipping and navigation',async({page,context})=>{
   await page.addInitScript(()=>{
     window.followClips=[];const play=HTMLMediaElement.prototype.play;
     HTMLMediaElement.prototype.play=function(){if(this.id==='follow-audio')window.followClips.push(this.src.split('/').pop());return play.apply(this,arguments);};
   });
-  await page.goto('/#/letters');
-  await expect(page.locator('#offline-label')).toHaveText('离线素材已准备好',{timeout:60000});
-  await context.setOffline(true);await page.reload();
+  await page.goto('/');await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'ABCD',words:''})));await page.goto('/#/letters');await page.reload();
+  await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});
+  await downloadPack(page,'letters');await context.setOffline(true);await page.reload();
   await expect(page.getByRole('button',{name:'连着跟读',exact:true})).toHaveAttribute('aria-pressed','true');
   await page.getByRole('button',{name:'播放这一组',exact:true}).click();
   await expect.poll(()=>page.evaluate(()=>window.followClips.slice(0,4)),{timeout:20000}).toEqual(['name-A.wav','sound-A.wav','name-B.wav','sound-B.wav']);
+  await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.readyState>=2&&a.currentTime>.1&&!a.paused)).toBe(true);
   await page.getByRole('button',{name:'暂停',exact:true}).click();
   const time=await page.locator('#follow-audio').evaluate(a=>a.currentTime);
   await page.waitForTimeout(800);
@@ -21,9 +23,9 @@ test('continuous reading supports ordered pairs, pause, skipping and navigation'
   await expect(page.locator('#follow-status')).toContainText('Bb');
   await page.getByRole('button',{name:'停止',exact:true}).click();
   await expect(page.locator('.following')).toHaveCount(0);
-  await page.getByLabel('跟读范围').selectOption('all');
+  await expect(page.locator('#follow-range')).toHaveCount(0);
   await page.getByRole('button',{name:'播放这一组',exact:true}).click();
-  await expect(page.locator('#follow-status')).toContainText('1/26');
+  await expect(page.locator('#follow-status')).toContainText('1/4');
   await page.getByRole('button',{name:'字母 C 大小写，听名称和字母音',exact:true}).click();
   await expect(page.locator('#follow-status')).toContainText('Cc');
   await expect(page.locator('#follow-status')).toContainText('1/1');

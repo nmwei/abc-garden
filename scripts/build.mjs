@@ -1,6 +1,7 @@
-import { mkdir,cp,readdir,readFile,writeFile,rm } from 'node:fs/promises';
+import './compile-sentence-meanings.mjs';
+import { mkdir,cp,readdir,readFile,writeFile,rm,stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import {WORDS,COURSE_AUDIO} from '../app/course-content.js';
+import {WORDS,COURSE_AUDIO,TOPICS,READINGS,DIALOGUES} from '../app/course-content.js';
 import { ALPHABET,BLENDS,PROMPTS } from '../app/content.js';
 const out=new URL('../dist/',import.meta.url);
 await rm(out,{recursive:true,force:true});
@@ -34,8 +35,24 @@ const paths=(await files(out)).sort();
 const hash=createHash('sha256');
 for(const path of paths) hash.update(path).update(await readFile(new URL(path,out)));
 const worker=await readFile(new URL('../sw.js',import.meta.url),'utf8');
-hash.update(worker);
+hash.update(worker).update(await readFile(new URL(import.meta.url)));
 const version=hash.digest('hex').slice(0,12);
-await writeFile(new URL('precache.json',out),JSON.stringify({version,files:['./',...paths.map(p=>`./${p}`)]}));
+// Only the interface is installed automatically; media belongs to explicit optional packs.
+const shell=paths.filter(p=>p==='index.html'||p==='manifest.webmanifest'||p==='assets/icon.svg'||p.startsWith('app/')||/^assets\/icon-.*\.png$/.test(p));
+const packs=[];
+async function pack(id,title,files){const unique=[...new Set(files)];let bytes=0;for(const file of unique)bytes+=(await stat(new URL(file,out))).size;packs.push({id,title,files:unique,bytes});}
+const wav=key=>`./assets/audio/${key}.wav`;
+await pack('letters','字母朋友',[...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,wav(`example-${a.upper}`)]),...BLENDS.map(b=>wav(`blend-${b.id}`)),...Object.keys(PROMPTS).map(k=>wav(`prompt-${k}`)),wav('silence')]);
+for(const [id,title] of Object.entries(TOPICS))if(id!=='all')await pack(id,title,WORDS.filter(w=>w.topic===id).flatMap(w=>[w.image,wav(w.audio),wav(`sentence-${w.id}`)]));
+for(const [id,title,rows,prefix] of [['reading','故事小屋',READINGS,'read'],['dialogue','开口说一说',DIALOGUES,'talk']])await pack(id,title,rows.flatMap(r=>[WORDS.find(w=>w.id===r.image).image,...r.lines.map((_,i)=>wav(`${prefix}-${r.id}-${i}`))]));
+await pack('candidate','字母发音对照样例',[...['index.html','preview.js','manifest.json','SOURCE-README.txt','GPL-3.0.txt'].map(f=>`./assets/audio/gcompris/${f}`),...candidate.clips.map(c=>`./assets/audio/gcompris/${c.file}`)]);
+await pack('all','全部学习内容',packs.flatMap(p=>p.files).concat(['./assets/credits.json','./assets/pictures/LICENSE-NOTO.txt','./assets/dictionary/source.json','./assets/dictionary/LICENSE-ECDICT.txt','./assets/audio/gk/source.mp3','./assets/audio/gk/cuts.json']));
+const resources={};
+for(const file of packs.at(-1).files){const bytes=await readFile(new URL(file,out));resources[file]={bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};}
+const offline={version,files:['./',...shell.map(p=>`./${p}`)],packs,resources};
+await writeFile(new URL('precache.json',out),JSON.stringify(offline));
+await writeFile(new URL('offline-packs.json',out),JSON.stringify(packs.map(({files,...meta})=>meta)));
+// The tiny pack index must itself be available while offline.
+offline.files.push('./offline-packs.json');await writeFile(new URL('precache.json',out),JSON.stringify(offline));
 await writeFile(new URL('sw.js',out),worker.replaceAll('__BUILD_ID__',version));
 console.log(`Built ${paths.length} files, ${required.length} audio clips. Version ${version}`);

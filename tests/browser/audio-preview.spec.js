@@ -1,8 +1,10 @@
+import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
 
 test('complete candidate alphabet plays offline and sequence can be stopped',async({page,context})=>{
   await page.goto('/');
-  await expect(page.locator('#offline-label')).toHaveText('离线素材已准备好',{timeout:60000});
+  await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});
+  await downloadPack(page,'candidate');
   await page.goto('/assets/audio/gcompris/index.html');
   await expect(page.locator('.letter')).toHaveCount(26);
   await context.setOffline(true);await page.reload();

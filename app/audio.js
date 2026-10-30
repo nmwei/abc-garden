@@ -17,7 +17,7 @@ export class GardenAudio {
       if(token!==this.token)return false;
       const key=sequence[index];
       onClip?.(index);
-      const audio=this.element;audio.src=this.customAudio()[key]||`./assets/audio/${key}.wav`;
+      const audio=this.element;audio.src=typeof key==='object'?key.src:this.customAudio()[key]||`./assets/audio/${key}.wav`;
       audio.preload='auto';this.current=audio;
       const ok=await new Promise(resolve=>{
         let settled=false;

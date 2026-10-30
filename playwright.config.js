@@ -6,6 +6,10 @@ export default defineConfig({
   webServer:{command:'node scripts/serve.mjs',url:'http://localhost:4173',reuseExistingServer:!process.env.CI},
   projects:[
     {name:'iPad-chromium',use:{...devices['iPad Pro 11 landscape'],browserName:'chromium',launchOptions:process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}}},
-    {name:'iPad-webkit',use:{...devices['iPad Pro 11 landscape'],browserName:'webkit'}},
+    {name:'iPad-webkit',use:{...devices['iPad Pro 11 landscape'],browserName:'webkit',launchOptions:process.env.WEBKIT_PATH?{executablePath:process.env.WEBKIT_PATH}:{}}},
+    {name:'phone-chromium',use:{...devices['iPhone 13'],browserName:'chromium',launchOptions:process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}}},
+    {name:'phone-webkit',use:{...devices['iPhone 13'],browserName:'webkit',launchOptions:process.env.WEBKIT_PATH?{executablePath:process.env.WEBKIT_PATH}:{}}},
+    {name:'desktop-chromium',use:{viewport:{width:1440,height:1000},browserName:'chromium',launchOptions:process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}}},
+    {name:'desktop-webkit',use:{viewport:{width:1440,height:1000},browserName:'webkit',launchOptions:process.env.WEBKIT_PATH?{executablePath:process.env.WEBKIT_PATH}:{}}},
   ],
 });

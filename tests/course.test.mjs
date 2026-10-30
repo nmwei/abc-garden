@@ -14,8 +14,27 @@ test('assisted and independent attempts drive review without assigning spoken ma
  assert.throws(()=>recordLearning(s,'apple','speak','mastered'));assert.equal(cleanLearning({events:[{item:'<script>',skill:'listen',result:'independent',at:1}]}).events.length,0);
 });
 test('all content is addressable and comprehension answers are valid',()=>{
- assert.equal(WORDS.length,40);assert.equal(new Set(WORDS.map(w=>w.id)).size,40);
+ assert.equal(WORDS.length,1168);assert.equal(new Set(WORDS.map(w=>w.id)).size,WORDS.length);
  assert.equal(new Set(COURSE_AUDIO.map(a=>a.key)).size,COURSE_AUDIO.length);
  for(const x of [...READINGS,...DIALOGUES,...WRITING])assert.ok([1,2,3].includes(x.level));
  for(const r of READINGS)assert.ok(r.options[r.answer]);
+});
+test('beginner expansion provides short paired turns and complete translation support',()=>{
+ const stories=READINGS.filter(r=>r.level===1),talks=DIALOGUES.filter(d=>d.level===1);
+ assert.equal(stories.length,10);assert.equal(talks.length,10);
+ for(const r of stories.slice(0,8)){assert.equal(r.lines.length,4);assert.ok(r.zh&&r.prompt);assert.ok(r.lines.every(line=>line.split(/\s+/).length<=7));}
+ for(const d of talks.slice(0,8)){assert.equal(d.lines.length,4);assert.equal(d.zh.length,d.lines.length);assert.deepEqual(d.lines.map(l=>l[0]),['A','B','A','B']);}
+});
+
+import {sentenceMeaning} from '../app/sentence-meanings.js';
+import {searchLocalWords} from '../app/local-dictionary.js';
+test('every built-in example has an exact-source meaning and unknown parent sentences stay unlabelled',()=>{
+ for(const word of WORDS)assert.ok(sentenceMeaning(word.sentence),word.id);
+ assert.equal(sentenceMeaning('I like apples.'),'我喜欢苹果。');
+ assert.equal(sentenceMeaning('This is my own changed example.'),'');
+});
+test('selection prefers picture cards but exact dictionary matches remain first',()=>{
+ const rows=searchLocalWords();assert.ok(rows.slice(0,20).every(w=>w.hasPicture));
+ assert.equal(searchLocalWords('cherry')[0].word,'cherry');
+ assert.ok(searchLocalWords('cherry blossom').some(w=>w.word==='cherry blossom'&&w.hasPicture));
 });
