@@ -1,0 +1,217 @@
+{
+  "author": "Julia Wycherley",
+  "year": 2011,
+  "locale": "en_GB",
+  "license": "GPL (as stated by upstream)",
+  "review": "Candidate only; independent listening review pending",
+  "clips": [
+    {
+      "letter": "A",
+      "original": "U0061.ogg",
+      "gitBlobSha1": "aaa82f3e1096a8c4602a1a0063f27fcef6602c45",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0061.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0061.ogg",
+      "file": "A.wav"
+    },
+    {
+      "letter": "B",
+      "original": "U0062.ogg",
+      "gitBlobSha1": "e7791841009632a42135fe8c4542a3ac5eb1697c",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0062.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0062.ogg",
+      "file": "B.wav"
+    },
+    {
+      "letter": "C",
+      "original": "U0063.ogg",
+      "gitBlobSha1": "3d833c7f85ce277b2b74c29eec46d89a7edfc787",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0063.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0063.ogg",
+      "file": "C.wav"
+    },
+    {
+      "letter": "D",
+      "original": "U0064.ogg",
+      "gitBlobSha1": "b077a0d15a101878cfc58c4fd04c7fdf7ace8a70",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0064.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0064.ogg",
+      "file": "D.wav"
+    },
+    {
+      "letter": "E",
+      "original": "U0065.ogg",
+      "gitBlobSha1": "a02e7f5d8a94e7b59e2aad6c0dcff3c7b9b52d06",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0065.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0065.ogg",
+      "file": "E.wav"
+    },
+    {
+      "letter": "F",
+      "original": "U0066.ogg",
+      "gitBlobSha1": "43f28e40780fed756bf003311c9751382af66577",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0066.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0066.ogg",
+      "file": "F.wav"
+    },
+    {
+      "letter": "G",
+      "original": "U0067.ogg",
+      "gitBlobSha1": "befcb3413ea7dc96e485542b8e5737f7c603790a",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0067.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0067.ogg",
+      "file": "G.wav"
+    },
+    {
+      "letter": "H",
+      "original": "U0068.ogg",
+      "gitBlobSha1": "6cb4f1c788b69bbc6449a9572b3f564f1375fa28",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0068.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0068.ogg",
+      "file": "H.wav"
+    },
+    {
+      "letter": "I",
+      "original": "U0069.ogg",
+      "gitBlobSha1": "817608051488df57381ab3803a37f568b511589e",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0069.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0069.ogg",
+      "file": "I.wav"
+    },
+    {
+      "letter": "J",
+      "original": "U006A.ogg",
+      "gitBlobSha1": "10ee5fea4564b6ee98ebaeca6e9410bf5da6c3ff",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006A.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006A.ogg",
+      "file": "J.wav"
+    },
+    {
+      "letter": "K",
+      "original": "U006B.ogg",
+      "gitBlobSha1": "34c2d30788fe35e261c04b9bd0949cded82b9d29",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006B.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006B.ogg",
+      "file": "K.wav"
+    },
+    {
+      "letter": "L",
+      "original": "U006C.ogg",
+      "gitBlobSha1": "3129d5c81916541331d5876911d4f2fc7328d66e",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006C.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006C.ogg",
+      "file": "L.wav"
+    },
+    {
+      "letter": "M",
+      "original": "U006D.ogg",
+      "gitBlobSha1": "6ad4927747424141772eaf8d230b5b522ba423d5",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006D.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006D.ogg",
+      "file": "M.wav"
+    },
+    {
+      "letter": "N",
+      "original": "U006E.ogg",
+      "gitBlobSha1": "821ab3ea34cf7e7c5af20645c83b825554ac21fa",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006E.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006E.ogg",
+      "file": "N.wav"
+    },
+    {
+      "letter": "O",
+      "original": "U006F.ogg",
+      "gitBlobSha1": "bd7731b44614311c1c06b694966e332e90ac6a44",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U006F.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U006F.ogg",
+      "file": "O.wav"
+    },
+    {
+      "letter": "P",
+      "original": "U0070.ogg",
+      "gitBlobSha1": "b30321cb36e246fa04b65b727432f12be8a43460",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0070.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0070.ogg",
+      "file": "P.wav"
+    },
+    {
+      "letter": "Q",
+      "original": "U0071.ogg",
+      "gitBlobSha1": "948ed7caaf3a87f0f81d5bdc273b0266b7bc5575",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0071.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0071.ogg",
+      "file": "Q.wav"
+    },
+    {
+      "letter": "R",
+      "original": "U0072.ogg",
+      "gitBlobSha1": "d714b763fbef01a9b04eda8b00ce72fa2eb4f8fb",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0072.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0072.ogg",
+      "file": "R.wav"
+    },
+    {
+      "letter": "S",
+      "original": "U0073.ogg",
+      "gitBlobSha1": "f0cb1c9ca6a58b756cd60730edc0ae1ff60cc706",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0073.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0073.ogg",
+      "file": "S.wav"
+    },
+    {
+      "letter": "T",
+      "original": "U0074.ogg",
+      "gitBlobSha1": "c2622b6fc05a69a852597ead8275b0c993177201",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0074.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0074.ogg",
+      "file": "T.wav"
+    },
+    {
+      "letter": "U",
+      "original": "U0075.ogg",
+      "gitBlobSha1": "9e8726de56e984d465adc7957509c075e2c5bfd2",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0075.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0075.ogg",
+      "file": "U.wav"
+    },
+    {
+      "letter": "V",
+      "original": "U0076.ogg",
+      "gitBlobSha1": "fca2d5b5e7021e1c7d8a72f28ea51b45af8038e0",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0076.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0076.ogg",
+      "file": "V.wav"
+    },
+    {
+      "letter": "W",
+      "original": "U0077.ogg",
+      "gitBlobSha1": "b9eb8afeed248b19375f5863737e500ddd696846",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0077.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0077.ogg",
+      "file": "W.wav"
+    },
+    {
+      "letter": "X",
+      "original": "U0078.ogg",
+      "gitBlobSha1": "e131f0117a16eeff3133052b81a934959f3f8480",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0078.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0078.ogg",
+      "file": "X.wav"
+    },
+    {
+      "letter": "Y",
+      "original": "U0079.ogg",
+      "gitBlobSha1": "60819c9170887ea1304cd09cccf3972df06be72f",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U0079.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U0079.ogg",
+      "file": "Y.wav"
+    },
+    {
+      "letter": "Z",
+      "original": "U007A.ogg",
+      "gitBlobSha1": "8e0566cd88751cca2f236c26f6956906a6b6db64",
+      "source": "https://github.com/KDE/gcompris-data/blob/master/voices/en_GB/alphabet/U007A.ogg",
+      "url": "https://cdn.jsdelivr.net/gh/KDE/gcompris-data@master/voices/en_GB/alphabet/U007A.ogg",
+      "file": "Z.wav"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 {
   "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
   "voice": "af_heart",
-  "notice": "Synthetic reference speech; not teacher reviewed",
+  "speed": 0.9,
+  "notice": "Synthetic reference speech; project-authored examples; not teacher reviewed",
   "clips": [
     {
       "key": "word-banana",
@@ -58,6 +59,4518 @@
     {
       "key": "word-bike",
       "text": "bike"
+    },
+    {
+      "key": "word-orange",
+      "text": "orange"
+    },
+    {
+      "key": "word-pear",
+      "text": "pear"
+    },
+    {
+      "key": "word-peach",
+      "text": "peach"
+    },
+    {
+      "key": "word-grapes",
+      "text": "grapes"
+    },
+    {
+      "key": "word-strawberry",
+      "text": "strawberry"
+    },
+    {
+      "key": "word-watermelon",
+      "text": "watermelon"
+    },
+    {
+      "key": "word-lemon",
+      "text": "lemon"
+    },
+    {
+      "key": "word-carrot",
+      "text": "carrot"
+    },
+    {
+      "key": "word-potato",
+      "text": "potato"
+    },
+    {
+      "key": "word-tomato",
+      "text": "tomato"
+    },
+    {
+      "key": "word-corn",
+      "text": "corn"
+    },
+    {
+      "key": "word-cucumber",
+      "text": "cucumber"
+    },
+    {
+      "key": "word-broccoli",
+      "text": "broccoli"
+    },
+    {
+      "key": "word-rice",
+      "text": "rice"
+    },
+    {
+      "key": "word-cheese",
+      "text": "cheese"
+    },
+    {
+      "key": "word-pizza",
+      "text": "pizza"
+    },
+    {
+      "key": "word-cake",
+      "text": "cake"
+    },
+    {
+      "key": "word-cookie",
+      "text": "cookie"
+    },
+    {
+      "key": "word-tiger",
+      "text": "tiger"
+    },
+    {
+      "key": "word-lion",
+      "text": "lion"
+    },
+    {
+      "key": "word-elephant",
+      "text": "elephant"
+    },
+    {
+      "key": "word-monkey",
+      "text": "monkey"
+    },
+    {
+      "key": "word-panda",
+      "text": "panda"
+    },
+    {
+      "key": "word-bear",
+      "text": "bear"
+    },
+    {
+      "key": "word-duck",
+      "text": "duck"
+    },
+    {
+      "key": "word-chicken",
+      "text": "chicken"
+    },
+    {
+      "key": "word-frog",
+      "text": "frog"
+    },
+    {
+      "key": "word-horse",
+      "text": "horse"
+    },
+    {
+      "key": "word-sheep",
+      "text": "sheep"
+    },
+    {
+      "key": "word-cow",
+      "text": "cow"
+    },
+    {
+      "key": "word-turtle",
+      "text": "turtle"
+    },
+    {
+      "key": "word-butterfly",
+      "text": "butterfly"
+    },
+    {
+      "key": "word-bee",
+      "text": "bee"
+    },
+    {
+      "key": "word-bus",
+      "text": "bus"
+    },
+    {
+      "key": "word-train",
+      "text": "train"
+    },
+    {
+      "key": "word-car",
+      "text": "car"
+    },
+    {
+      "key": "word-boat",
+      "text": "boat"
+    },
+    {
+      "key": "word-spoon",
+      "text": "spoon"
+    },
+    {
+      "key": "word-mix",
+      "text": "mix"
+    },
+    {
+      "key": "word-clean",
+      "text": "clean"
+    },
+    {
+      "key": "word-cherry",
+      "text": "cherry"
+    },
+    {
+      "key": "word-blueberry",
+      "text": "blueberry"
+    },
+    {
+      "key": "word-pineapple",
+      "text": "pineapple"
+    },
+    {
+      "key": "word-mango",
+      "text": "mango"
+    },
+    {
+      "key": "word-kiwi",
+      "text": "kiwi"
+    },
+    {
+      "key": "word-coconut",
+      "text": "coconut"
+    },
+    {
+      "key": "word-avocado",
+      "text": "avocado"
+    },
+    {
+      "key": "word-olive",
+      "text": "olive"
+    },
+    {
+      "key": "word-melon",
+      "text": "melon"
+    },
+    {
+      "key": "word-fruit",
+      "text": "fruit"
+    },
+    {
+      "key": "word-vegetable",
+      "text": "vegetable"
+    },
+    {
+      "key": "word-salad",
+      "text": "salad"
+    },
+    {
+      "key": "word-lettuce",
+      "text": "lettuce"
+    },
+    {
+      "key": "word-cabbage",
+      "text": "cabbage"
+    },
+    {
+      "key": "word-eggplant",
+      "text": "eggplant"
+    },
+    {
+      "key": "word-onion",
+      "text": "onion"
+    },
+    {
+      "key": "word-garlic",
+      "text": "garlic"
+    },
+    {
+      "key": "word-bell pepper",
+      "text": "bell pepper"
+    },
+    {
+      "key": "word-chili",
+      "text": "chili"
+    },
+    {
+      "key": "word-pea",
+      "text": "pea"
+    },
+    {
+      "key": "word-beans",
+      "text": "beans"
+    },
+    {
+      "key": "word-mushroom",
+      "text": "mushroom"
+    },
+    {
+      "key": "word-sweet potato",
+      "text": "sweet potato"
+    },
+    {
+      "key": "word-ginger",
+      "text": "ginger"
+    },
+    {
+      "key": "word-peanut",
+      "text": "peanut"
+    },
+    {
+      "key": "word-chestnut",
+      "text": "chestnut"
+    },
+    {
+      "key": "word-nuts",
+      "text": "nuts"
+    },
+    {
+      "key": "word-seed",
+      "text": "seed"
+    },
+    {
+      "key": "word-wheat",
+      "text": "wheat"
+    },
+    {
+      "key": "word-grain",
+      "text": "grain"
+    },
+    {
+      "key": "word-toast",
+      "text": "toast"
+    },
+    {
+      "key": "word-sandwich",
+      "text": "sandwich"
+    },
+    {
+      "key": "word-bun",
+      "text": "bun"
+    },
+    {
+      "key": "word-bagel",
+      "text": "bagel"
+    },
+    {
+      "key": "word-croissant",
+      "text": "croissant"
+    },
+    {
+      "key": "word-baguette",
+      "text": "baguette"
+    },
+    {
+      "key": "word-flatbread",
+      "text": "flatbread"
+    },
+    {
+      "key": "word-pancake",
+      "text": "pancake"
+    },
+    {
+      "key": "word-waffle",
+      "text": "waffle"
+    },
+    {
+      "key": "word-pretzel",
+      "text": "pretzel"
+    },
+    {
+      "key": "word-cracker",
+      "text": "cracker"
+    },
+    {
+      "key": "word-biscuit",
+      "text": "biscuit"
+    },
+    {
+      "key": "word-pie",
+      "text": "pie"
+    },
+    {
+      "key": "word-cupcake",
+      "text": "cupcake"
+    },
+    {
+      "key": "word-doughnut",
+      "text": "doughnut"
+    },
+    {
+      "key": "word-pudding",
+      "text": "pudding"
+    },
+    {
+      "key": "word-ice cream",
+      "text": "ice cream"
+    },
+    {
+      "key": "word-chocolate",
+      "text": "chocolate"
+    },
+    {
+      "key": "word-candy",
+      "text": "candy"
+    },
+    {
+      "key": "word-lollipop",
+      "text": "lollipop"
+    },
+    {
+      "key": "word-honey",
+      "text": "honey"
+    },
+    {
+      "key": "word-butter",
+      "text": "butter"
+    },
+    {
+      "key": "word-salt",
+      "text": "salt"
+    },
+    {
+      "key": "word-juice",
+      "text": "juice"
+    },
+    {
+      "key": "word-orange juice",
+      "text": "orange juice"
+    },
+    {
+      "key": "word-apple juice",
+      "text": "apple juice"
+    },
+    {
+      "key": "word-lemonade",
+      "text": "lemonade"
+    },
+    {
+      "key": "word-smoothie",
+      "text": "smoothie"
+    },
+    {
+      "key": "word-tea",
+      "text": "tea"
+    },
+    {
+      "key": "word-hot chocolate",
+      "text": "hot chocolate"
+    },
+    {
+      "key": "word-cocoa",
+      "text": "cocoa"
+    },
+    {
+      "key": "word-ice",
+      "text": "ice"
+    },
+    {
+      "key": "word-drink",
+      "text": "drink"
+    },
+    {
+      "key": "word-soup",
+      "text": "soup"
+    },
+    {
+      "key": "word-noodles",
+      "text": "noodles"
+    },
+    {
+      "key": "word-pasta",
+      "text": "pasta"
+    },
+    {
+      "key": "word-spaghetti",
+      "text": "spaghetti"
+    },
+    {
+      "key": "word-dumpling",
+      "text": "dumpling"
+    },
+    {
+      "key": "word-sushi",
+      "text": "sushi"
+    },
+    {
+      "key": "word-rice ball",
+      "text": "rice ball"
+    },
+    {
+      "key": "word-shrimp",
+      "text": "shrimp"
+    },
+    {
+      "key": "word-meat",
+      "text": "meat"
+    },
+    {
+      "key": "word-beef",
+      "text": "beef"
+    },
+    {
+      "key": "word-pork",
+      "text": "pork"
+    },
+    {
+      "key": "word-steak",
+      "text": "steak"
+    },
+    {
+      "key": "word-ham",
+      "text": "ham"
+    },
+    {
+      "key": "word-bacon",
+      "text": "bacon"
+    },
+    {
+      "key": "word-sausage",
+      "text": "sausage"
+    },
+    {
+      "key": "word-hot dog",
+      "text": "hot dog"
+    },
+    {
+      "key": "word-hamburger",
+      "text": "hamburger"
+    },
+    {
+      "key": "word-fries",
+      "text": "fries"
+    },
+    {
+      "key": "word-popcorn",
+      "text": "popcorn"
+    },
+    {
+      "key": "word-taco",
+      "text": "taco"
+    },
+    {
+      "key": "word-wrap",
+      "text": "wrap"
+    },
+    {
+      "key": "word-omelet",
+      "text": "omelet"
+    },
+    {
+      "key": "word-fried egg",
+      "text": "fried egg"
+    },
+    {
+      "key": "word-boiled egg",
+      "text": "boiled egg"
+    },
+    {
+      "key": "word-breakfast",
+      "text": "breakfast"
+    },
+    {
+      "key": "word-lunch",
+      "text": "lunch"
+    },
+    {
+      "key": "word-dinner",
+      "text": "dinner"
+    },
+    {
+      "key": "word-snack",
+      "text": "snack"
+    },
+    {
+      "key": "word-meal",
+      "text": "meal"
+    },
+    {
+      "key": "word-dessert",
+      "text": "dessert"
+    },
+    {
+      "key": "word-picnic",
+      "text": "picnic"
+    },
+    {
+      "key": "word-slice",
+      "text": "slice"
+    },
+    {
+      "key": "word-kitten",
+      "text": "kitten"
+    },
+    {
+      "key": "word-puppy",
+      "text": "puppy"
+    },
+    {
+      "key": "word-pet",
+      "text": "pet"
+    },
+    {
+      "key": "word-hamster",
+      "text": "hamster"
+    },
+    {
+      "key": "word-mouse",
+      "text": "mouse"
+    },
+    {
+      "key": "word-rat",
+      "text": "rat"
+    },
+    {
+      "key": "word-hedgehog",
+      "text": "hedgehog"
+    },
+    {
+      "key": "word-squirrel",
+      "text": "squirrel"
+    },
+    {
+      "key": "word-chipmunk",
+      "text": "chipmunk"
+    },
+    {
+      "key": "word-fox",
+      "text": "fox"
+    },
+    {
+      "key": "word-wolf",
+      "text": "wolf"
+    },
+    {
+      "key": "word-deer",
+      "text": "deer"
+    },
+    {
+      "key": "word-moose",
+      "text": "moose"
+    },
+    {
+      "key": "word-reindeer",
+      "text": "reindeer"
+    },
+    {
+      "key": "word-giraffe",
+      "text": "giraffe"
+    },
+    {
+      "key": "word-hippopotamus",
+      "text": "hippopotamus"
+    },
+    {
+      "key": "word-rhino",
+      "text": "rhino"
+    },
+    {
+      "key": "word-camel",
+      "text": "camel"
+    },
+    {
+      "key": "word-llama",
+      "text": "llama"
+    },
+    {
+      "key": "word-kangaroo",
+      "text": "kangaroo"
+    },
+    {
+      "key": "word-koala",
+      "text": "koala"
+    },
+    {
+      "key": "word-sloth",
+      "text": "sloth"
+    },
+    {
+      "key": "word-otter",
+      "text": "otter"
+    },
+    {
+      "key": "word-beaver",
+      "text": "beaver"
+    },
+    {
+      "key": "word-raccoon",
+      "text": "raccoon"
+    },
+    {
+      "key": "word-badger",
+      "text": "badger"
+    },
+    {
+      "key": "word-skunk",
+      "text": "skunk"
+    },
+    {
+      "key": "word-bat",
+      "text": "bat"
+    },
+    {
+      "key": "word-gorilla",
+      "text": "gorilla"
+    },
+    {
+      "key": "word-orangutan",
+      "text": "orangutan"
+    },
+    {
+      "key": "word-leopard",
+      "text": "leopard"
+    },
+    {
+      "key": "word-buffalo",
+      "text": "buffalo"
+    },
+    {
+      "key": "word-bison",
+      "text": "bison"
+    },
+    {
+      "key": "word-donkey",
+      "text": "donkey"
+    },
+    {
+      "key": "word-pony",
+      "text": "pony"
+    },
+    {
+      "key": "word-lamb",
+      "text": "lamb"
+    },
+    {
+      "key": "word-piglet",
+      "text": "piglet"
+    },
+    {
+      "key": "word-rooster",
+      "text": "rooster"
+    },
+    {
+      "key": "word-hen",
+      "text": "hen"
+    },
+    {
+      "key": "word-chick",
+      "text": "chick"
+    },
+    {
+      "key": "word-duckling",
+      "text": "duckling"
+    },
+    {
+      "key": "word-goose",
+      "text": "goose"
+    },
+    {
+      "key": "word-turkey",
+      "text": "turkey"
+    },
+    {
+      "key": "word-swan",
+      "text": "swan"
+    },
+    {
+      "key": "word-penguin",
+      "text": "penguin"
+    },
+    {
+      "key": "word-parrot",
+      "text": "parrot"
+    },
+    {
+      "key": "word-peacock",
+      "text": "peacock"
+    },
+    {
+      "key": "word-flamingo",
+      "text": "flamingo"
+    },
+    {
+      "key": "word-dove",
+      "text": "dove"
+    },
+    {
+      "key": "word-eagle",
+      "text": "eagle"
+    },
+    {
+      "key": "word-owl",
+      "text": "owl"
+    },
+    {
+      "key": "word-crow",
+      "text": "crow"
+    },
+    {
+      "key": "word-blackbird",
+      "text": "blackbird"
+    },
+    {
+      "key": "word-feather",
+      "text": "feather"
+    },
+    {
+      "key": "word-wing",
+      "text": "wing"
+    },
+    {
+      "key": "word-beak",
+      "text": "beak"
+    },
+    {
+      "key": "word-claw",
+      "text": "claw"
+    },
+    {
+      "key": "word-paw",
+      "text": "paw"
+    },
+    {
+      "key": "word-tail",
+      "text": "tail"
+    },
+    {
+      "key": "word-fur",
+      "text": "fur"
+    },
+    {
+      "key": "word-wool",
+      "text": "wool"
+    },
+    {
+      "key": "word-horn",
+      "text": "horn"
+    },
+    {
+      "key": "word-antler",
+      "text": "antler"
+    },
+    {
+      "key": "word-hoof",
+      "text": "hoof"
+    },
+    {
+      "key": "word-whisker",
+      "text": "whisker"
+    },
+    {
+      "key": "word-shell",
+      "text": "shell"
+    },
+    {
+      "key": "word-snail",
+      "text": "snail"
+    },
+    {
+      "key": "word-worm",
+      "text": "worm"
+    },
+    {
+      "key": "word-caterpillar",
+      "text": "caterpillar"
+    },
+    {
+      "key": "word-bug",
+      "text": "bug"
+    },
+    {
+      "key": "word-ant",
+      "text": "ant"
+    },
+    {
+      "key": "word-ladybug",
+      "text": "ladybug"
+    },
+    {
+      "key": "word-beetle",
+      "text": "beetle"
+    },
+    {
+      "key": "word-cricket",
+      "text": "cricket"
+    },
+    {
+      "key": "word-grasshopper",
+      "text": "grasshopper"
+    },
+    {
+      "key": "word-fly",
+      "text": "fly"
+    },
+    {
+      "key": "word-mosquito",
+      "text": "mosquito"
+    },
+    {
+      "key": "word-spider",
+      "text": "spider"
+    },
+    {
+      "key": "word-spider web",
+      "text": "spider web"
+    },
+    {
+      "key": "word-lizard",
+      "text": "lizard"
+    },
+    {
+      "key": "word-snake",
+      "text": "snake"
+    },
+    {
+      "key": "word-crocodile",
+      "text": "crocodile"
+    },
+    {
+      "key": "word-alligator",
+      "text": "alligator"
+    },
+    {
+      "key": "word-tortoise",
+      "text": "tortoise"
+    },
+    {
+      "key": "word-dinosaur",
+      "text": "dinosaur"
+    },
+    {
+      "key": "word-dragon",
+      "text": "dragon"
+    },
+    {
+      "key": "word-unicorn",
+      "text": "unicorn"
+    },
+    {
+      "key": "word-whale",
+      "text": "whale"
+    },
+    {
+      "key": "word-dolphin",
+      "text": "dolphin"
+    },
+    {
+      "key": "word-seal",
+      "text": "seal"
+    },
+    {
+      "key": "word-shark",
+      "text": "shark"
+    },
+    {
+      "key": "word-octopus",
+      "text": "octopus"
+    },
+    {
+      "key": "word-squid",
+      "text": "squid"
+    },
+    {
+      "key": "word-jellyfish",
+      "text": "jellyfish"
+    },
+    {
+      "key": "word-crab",
+      "text": "crab"
+    },
+    {
+      "key": "word-lobster",
+      "text": "lobster"
+    },
+    {
+      "key": "word-oyster",
+      "text": "oyster"
+    },
+    {
+      "key": "word-coral",
+      "text": "coral"
+    },
+    {
+      "key": "word-tropical fish",
+      "text": "tropical fish"
+    },
+    {
+      "key": "word-pufferfish",
+      "text": "pufferfish"
+    },
+    {
+      "key": "word-animal",
+      "text": "animal"
+    },
+    {
+      "key": "word-wild animal",
+      "text": "wild animal"
+    },
+    {
+      "key": "word-farm animal",
+      "text": "farm animal"
+    },
+    {
+      "key": "word-sea animal",
+      "text": "sea animal"
+    },
+    {
+      "key": "word-footprint",
+      "text": "footprint"
+    },
+    {
+      "key": "word-school",
+      "text": "school"
+    },
+    {
+      "key": "word-classroom",
+      "text": "classroom"
+    },
+    {
+      "key": "word-teacher",
+      "text": "teacher"
+    },
+    {
+      "key": "word-student",
+      "text": "student"
+    },
+    {
+      "key": "word-pupil",
+      "text": "pupil"
+    },
+    {
+      "key": "word-classmate",
+      "text": "classmate"
+    },
+    {
+      "key": "word-backpack",
+      "text": "backpack"
+    },
+    {
+      "key": "word-schoolbag",
+      "text": "schoolbag"
+    },
+    {
+      "key": "word-pencil",
+      "text": "pencil"
+    },
+    {
+      "key": "word-pen",
+      "text": "pen"
+    },
+    {
+      "key": "word-crayon",
+      "text": "crayon"
+    },
+    {
+      "key": "word-paintbrush",
+      "text": "paintbrush"
+    },
+    {
+      "key": "word-paint",
+      "text": "paint"
+    },
+    {
+      "key": "word-ruler",
+      "text": "ruler"
+    },
+    {
+      "key": "word-triangle ruler",
+      "text": "triangle ruler"
+    },
+    {
+      "key": "word-scissors",
+      "text": "scissors"
+    },
+    {
+      "key": "word-paper",
+      "text": "paper"
+    },
+    {
+      "key": "word-notebook",
+      "text": "notebook"
+    },
+    {
+      "key": "word-textbook",
+      "text": "textbook"
+    },
+    {
+      "key": "word-storybook",
+      "text": "storybook"
+    },
+    {
+      "key": "word-dictionary",
+      "text": "dictionary"
+    },
+    {
+      "key": "word-bookmark",
+      "text": "bookmark"
+    },
+    {
+      "key": "word-page",
+      "text": "page"
+    },
+    {
+      "key": "word-cover",
+      "text": "cover"
+    },
+    {
+      "key": "word-label",
+      "text": "label"
+    },
+    {
+      "key": "word-tag",
+      "text": "tag"
+    },
+    {
+      "key": "word-paper clip",
+      "text": "paper clip"
+    },
+    {
+      "key": "word-clip",
+      "text": "clip"
+    },
+    {
+      "key": "word-clipboard",
+      "text": "clipboard"
+    },
+    {
+      "key": "word-folder",
+      "text": "folder"
+    },
+    {
+      "key": "word-file",
+      "text": "file"
+    },
+    {
+      "key": "word-calendar",
+      "text": "calendar"
+    },
+    {
+      "key": "word-chart",
+      "text": "chart"
+    },
+    {
+      "key": "word-graph",
+      "text": "graph"
+    },
+    {
+      "key": "word-number",
+      "text": "number"
+    },
+    {
+      "key": "word-letter",
+      "text": "letter"
+    },
+    {
+      "key": "word-alphabet",
+      "text": "alphabet"
+    },
+    {
+      "key": "word-word",
+      "text": "word"
+    },
+    {
+      "key": "word-sentence",
+      "text": "sentence"
+    },
+    {
+      "key": "word-story",
+      "text": "story"
+    },
+    {
+      "key": "word-note",
+      "text": "note"
+    },
+    {
+      "key": "word-list",
+      "text": "list"
+    },
+    {
+      "key": "word-homework",
+      "text": "homework"
+    },
+    {
+      "key": "word-question",
+      "text": "question"
+    },
+    {
+      "key": "word-answer",
+      "text": "answer"
+    },
+    {
+      "key": "word-check mark",
+      "text": "check mark"
+    },
+    {
+      "key": "word-cross mark",
+      "text": "cross mark"
+    },
+    {
+      "key": "word-plus",
+      "text": "plus"
+    },
+    {
+      "key": "word-minus",
+      "text": "minus"
+    },
+    {
+      "key": "word-equal",
+      "text": "equal"
+    },
+    {
+      "key": "word-magnifying glass",
+      "text": "magnifying glass"
+    },
+    {
+      "key": "word-microscope",
+      "text": "microscope"
+    },
+    {
+      "key": "word-telescope",
+      "text": "telescope"
+    },
+    {
+      "key": "word-test tube",
+      "text": "test tube"
+    },
+    {
+      "key": "word-magnet",
+      "text": "magnet"
+    },
+    {
+      "key": "word-globe",
+      "text": "globe"
+    },
+    {
+      "key": "word-map",
+      "text": "map"
+    },
+    {
+      "key": "word-compass",
+      "text": "compass"
+    },
+    {
+      "key": "word-school bus",
+      "text": "school bus"
+    },
+    {
+      "key": "word-bell",
+      "text": "bell"
+    },
+    {
+      "key": "word-lunch box",
+      "text": "lunch box"
+    },
+    {
+      "key": "word-art",
+      "text": "art"
+    },
+    {
+      "key": "word-science",
+      "text": "science"
+    },
+    {
+      "key": "word-math",
+      "text": "math"
+    },
+    {
+      "key": "word-reading",
+      "text": "reading"
+    },
+    {
+      "key": "word-writing",
+      "text": "writing"
+    },
+    {
+      "key": "word-drawing",
+      "text": "drawing"
+    },
+    {
+      "key": "word-music",
+      "text": "music"
+    },
+    {
+      "key": "word-lesson",
+      "text": "lesson"
+    },
+    {
+      "key": "word-break time",
+      "text": "break time"
+    },
+    {
+      "key": "word-house",
+      "text": "house"
+    },
+    {
+      "key": "word-home",
+      "text": "home"
+    },
+    {
+      "key": "word-garden",
+      "text": "garden"
+    },
+    {
+      "key": "word-door",
+      "text": "door"
+    },
+    {
+      "key": "word-window",
+      "text": "window"
+    },
+    {
+      "key": "word-mirror",
+      "text": "mirror"
+    },
+    {
+      "key": "word-sofa",
+      "text": "sofa"
+    },
+    {
+      "key": "word-couch",
+      "text": "couch"
+    },
+    {
+      "key": "word-armchair",
+      "text": "armchair"
+    },
+    {
+      "key": "word-seat",
+      "text": "seat"
+    },
+    {
+      "key": "word-lamp",
+      "text": "lamp"
+    },
+    {
+      "key": "word-light bulb",
+      "text": "light bulb"
+    },
+    {
+      "key": "word-candle",
+      "text": "candle"
+    },
+    {
+      "key": "word-flashlight",
+      "text": "flashlight"
+    },
+    {
+      "key": "word-bedroom",
+      "text": "bedroom"
+    },
+    {
+      "key": "word-pillow",
+      "text": "pillow"
+    },
+    {
+      "key": "word-blanket",
+      "text": "blanket"
+    },
+    {
+      "key": "word-quilt",
+      "text": "quilt"
+    },
+    {
+      "key": "word-bathroom",
+      "text": "bathroom"
+    },
+    {
+      "key": "word-bathtub",
+      "text": "bathtub"
+    },
+    {
+      "key": "word-bath",
+      "text": "bath"
+    },
+    {
+      "key": "word-shower",
+      "text": "shower"
+    },
+    {
+      "key": "word-toilet",
+      "text": "toilet"
+    },
+    {
+      "key": "word-toilet paper",
+      "text": "toilet paper"
+    },
+    {
+      "key": "word-soap",
+      "text": "soap"
+    },
+    {
+      "key": "word-sponge",
+      "text": "sponge"
+    },
+    {
+      "key": "word-toothbrush",
+      "text": "toothbrush"
+    },
+    {
+      "key": "word-razor",
+      "text": "razor"
+    },
+    {
+      "key": "word-comb",
+      "text": "comb"
+    },
+    {
+      "key": "word-brush",
+      "text": "brush"
+    },
+    {
+      "key": "word-basket",
+      "text": "basket"
+    },
+    {
+      "key": "word-bucket",
+      "text": "bucket"
+    },
+    {
+      "key": "word-broom",
+      "text": "broom"
+    },
+    {
+      "key": "word-bin",
+      "text": "bin"
+    },
+    {
+      "key": "word-trash can",
+      "text": "trash can"
+    },
+    {
+      "key": "word-tissue",
+      "text": "tissue"
+    },
+    {
+      "key": "word-laundry",
+      "text": "laundry"
+    },
+    {
+      "key": "word-kitchen",
+      "text": "kitchen"
+    },
+    {
+      "key": "word-pot",
+      "text": "pot"
+    },
+    {
+      "key": "word-pan",
+      "text": "pan"
+    },
+    {
+      "key": "word-bowl",
+      "text": "bowl"
+    },
+    {
+      "key": "word-plate",
+      "text": "plate"
+    },
+    {
+      "key": "word-dish",
+      "text": "dish"
+    },
+    {
+      "key": "word-cup",
+      "text": "cup"
+    },
+    {
+      "key": "word-mug",
+      "text": "mug"
+    },
+    {
+      "key": "word-glass",
+      "text": "glass"
+    },
+    {
+      "key": "word-bottle",
+      "text": "bottle"
+    },
+    {
+      "key": "word-jar",
+      "text": "jar"
+    },
+    {
+      "key": "word-lid",
+      "text": "lid"
+    },
+    {
+      "key": "word-fork",
+      "text": "fork"
+    },
+    {
+      "key": "word-knife",
+      "text": "knife"
+    },
+    {
+      "key": "word-chopsticks",
+      "text": "chopsticks"
+    },
+    {
+      "key": "word-teapot",
+      "text": "teapot"
+    },
+    {
+      "key": "word-straw",
+      "text": "straw"
+    },
+    {
+      "key": "word-safety pin",
+      "text": "safety pin"
+    },
+    {
+      "key": "word-thread",
+      "text": "thread"
+    },
+    {
+      "key": "word-needle",
+      "text": "needle"
+    },
+    {
+      "key": "word-yarn",
+      "text": "yarn"
+    },
+    {
+      "key": "word-knot",
+      "text": "knot"
+    },
+    {
+      "key": "word-rope",
+      "text": "rope"
+    },
+    {
+      "key": "word-ladder",
+      "text": "ladder"
+    },
+    {
+      "key": "word-tool",
+      "text": "tool"
+    },
+    {
+      "key": "word-hammer",
+      "text": "hammer"
+    },
+    {
+      "key": "word-screwdriver",
+      "text": "screwdriver"
+    },
+    {
+      "key": "word-wrench",
+      "text": "wrench"
+    },
+    {
+      "key": "word-screw",
+      "text": "screw"
+    },
+    {
+      "key": "word-nut",
+      "text": "nut"
+    },
+    {
+      "key": "word-bolt",
+      "text": "bolt"
+    },
+    {
+      "key": "word-saw",
+      "text": "saw"
+    },
+    {
+      "key": "word-axe",
+      "text": "axe"
+    },
+    {
+      "key": "word-hook",
+      "text": "hook"
+    },
+    {
+      "key": "word-chain",
+      "text": "chain"
+    },
+    {
+      "key": "word-lock",
+      "text": "lock"
+    },
+    {
+      "key": "word-key",
+      "text": "key"
+    },
+    {
+      "key": "word-doorknob",
+      "text": "doorknob"
+    },
+    {
+      "key": "word-handle",
+      "text": "handle"
+    },
+    {
+      "key": "word-battery",
+      "text": "battery"
+    },
+    {
+      "key": "word-plug",
+      "text": "plug"
+    },
+    {
+      "key": "word-electricity",
+      "text": "electricity"
+    },
+    {
+      "key": "word-television",
+      "text": "television"
+    },
+    {
+      "key": "word-radio",
+      "text": "radio"
+    },
+    {
+      "key": "word-telephone",
+      "text": "telephone"
+    },
+    {
+      "key": "word-phone",
+      "text": "phone"
+    },
+    {
+      "key": "word-computer",
+      "text": "computer"
+    },
+    {
+      "key": "word-laptop",
+      "text": "laptop"
+    },
+    {
+      "key": "word-keyboard",
+      "text": "keyboard"
+    },
+    {
+      "key": "word-computer mouse",
+      "text": "computer mouse"
+    },
+    {
+      "key": "word-printer",
+      "text": "printer"
+    },
+    {
+      "key": "word-screen",
+      "text": "screen"
+    },
+    {
+      "key": "word-monitor",
+      "text": "monitor"
+    },
+    {
+      "key": "word-camera",
+      "text": "camera"
+    },
+    {
+      "key": "word-video camera",
+      "text": "video camera"
+    },
+    {
+      "key": "word-photo",
+      "text": "photo"
+    },
+    {
+      "key": "word-picture",
+      "text": "picture"
+    },
+    {
+      "key": "word-frame",
+      "text": "frame"
+    },
+    {
+      "key": "word-clock",
+      "text": "clock"
+    },
+    {
+      "key": "word-alarm clock",
+      "text": "alarm clock"
+    },
+    {
+      "key": "word-watch",
+      "text": "watch"
+    },
+    {
+      "key": "word-timer",
+      "text": "timer"
+    },
+    {
+      "key": "word-hourglass",
+      "text": "hourglass"
+    },
+    {
+      "key": "word-fan",
+      "text": "fan"
+    },
+    {
+      "key": "word-air",
+      "text": "air"
+    },
+    {
+      "key": "word-brick",
+      "text": "brick"
+    },
+    {
+      "key": "word-wood",
+      "text": "wood"
+    },
+    {
+      "key": "word-stone",
+      "text": "stone"
+    },
+    {
+      "key": "word-rock",
+      "text": "rock"
+    },
+    {
+      "key": "word-string",
+      "text": "string"
+    },
+    {
+      "key": "word-envelope",
+      "text": "envelope"
+    },
+    {
+      "key": "word-mailbox",
+      "text": "mailbox"
+    },
+    {
+      "key": "word-package",
+      "text": "package"
+    },
+    {
+      "key": "word-parcel",
+      "text": "parcel"
+    },
+    {
+      "key": "word-shopping bag",
+      "text": "shopping bag"
+    },
+    {
+      "key": "word-shopping cart",
+      "text": "shopping cart"
+    },
+    {
+      "key": "word-money",
+      "text": "money"
+    },
+    {
+      "key": "word-coin",
+      "text": "coin"
+    },
+    {
+      "key": "word-wallet",
+      "text": "wallet"
+    },
+    {
+      "key": "word-purse",
+      "text": "purse"
+    },
+    {
+      "key": "word-receipt",
+      "text": "receipt"
+    },
+    {
+      "key": "word-ticket",
+      "text": "ticket"
+    },
+    {
+      "key": "word-stamp",
+      "text": "stamp"
+    },
+    {
+      "key": "word-recycling",
+      "text": "recycling"
+    },
+    {
+      "key": "word-clothes",
+      "text": "clothes"
+    },
+    {
+      "key": "word-shirt",
+      "text": "shirt"
+    },
+    {
+      "key": "word-t-shirt",
+      "text": "t-shirt"
+    },
+    {
+      "key": "word-jeans",
+      "text": "jeans"
+    },
+    {
+      "key": "word-pants",
+      "text": "pants"
+    },
+    {
+      "key": "word-trousers",
+      "text": "trousers"
+    },
+    {
+      "key": "word-shorts",
+      "text": "shorts"
+    },
+    {
+      "key": "word-dress",
+      "text": "dress"
+    },
+    {
+      "key": "word-coat",
+      "text": "coat"
+    },
+    {
+      "key": "word-jacket",
+      "text": "jacket"
+    },
+    {
+      "key": "word-vest",
+      "text": "vest"
+    },
+    {
+      "key": "word-scarf",
+      "text": "scarf"
+    },
+    {
+      "key": "word-glove",
+      "text": "glove"
+    },
+    {
+      "key": "word-mittens",
+      "text": "mittens"
+    },
+    {
+      "key": "word-socks",
+      "text": "socks"
+    },
+    {
+      "key": "word-shoe",
+      "text": "shoe"
+    },
+    {
+      "key": "word-shoes",
+      "text": "shoes"
+    },
+    {
+      "key": "word-sneaker",
+      "text": "sneaker"
+    },
+    {
+      "key": "word-boot",
+      "text": "boot"
+    },
+    {
+      "key": "word-boots",
+      "text": "boots"
+    },
+    {
+      "key": "word-sandal",
+      "text": "sandal"
+    },
+    {
+      "key": "word-flip-flops",
+      "text": "flip-flops"
+    },
+    {
+      "key": "word-cap",
+      "text": "cap"
+    },
+    {
+      "key": "word-sun hat",
+      "text": "sun hat"
+    },
+    {
+      "key": "word-helmet",
+      "text": "helmet"
+    },
+    {
+      "key": "word-crown",
+      "text": "crown"
+    },
+    {
+      "key": "word-glasses",
+      "text": "glasses"
+    },
+    {
+      "key": "word-sunglasses",
+      "text": "sunglasses"
+    },
+    {
+      "key": "word-goggles",
+      "text": "goggles"
+    },
+    {
+      "key": "word-tie",
+      "text": "tie"
+    },
+    {
+      "key": "word-ribbon",
+      "text": "ribbon"
+    },
+    {
+      "key": "word-bow",
+      "text": "bow"
+    },
+    {
+      "key": "word-handbag",
+      "text": "handbag"
+    },
+    {
+      "key": "word-bag",
+      "text": "bag"
+    },
+    {
+      "key": "word-suitcase",
+      "text": "suitcase"
+    },
+    {
+      "key": "word-umbrella",
+      "text": "umbrella"
+    },
+    {
+      "key": "word-swimsuit",
+      "text": "swimsuit"
+    },
+    {
+      "key": "word-swimming trunks",
+      "text": "swimming trunks"
+    },
+    {
+      "key": "word-ring",
+      "text": "ring"
+    },
+    {
+      "key": "word-necklace",
+      "text": "necklace"
+    },
+    {
+      "key": "word-bead",
+      "text": "bead"
+    },
+    {
+      "key": "word-gem",
+      "text": "gem"
+    },
+    {
+      "key": "word-diamond",
+      "text": "diamond"
+    },
+    {
+      "key": "word-button",
+      "text": "button"
+    },
+    {
+      "key": "word-pocket",
+      "text": "pocket"
+    },
+    {
+      "key": "word-shoelace",
+      "text": "shoelace"
+    },
+    {
+      "key": "word-sleeve",
+      "text": "sleeve"
+    },
+    {
+      "key": "word-collar",
+      "text": "collar"
+    },
+    {
+      "key": "word-uniform",
+      "text": "uniform"
+    },
+    {
+      "key": "word-costume",
+      "text": "costume"
+    },
+    {
+      "key": "word-mask",
+      "text": "mask"
+    },
+    {
+      "key": "word-sky",
+      "text": "sky"
+    },
+    {
+      "key": "word-cloud",
+      "text": "cloud"
+    },
+    {
+      "key": "word-rain",
+      "text": "rain"
+    },
+    {
+      "key": "word-rainbow",
+      "text": "rainbow"
+    },
+    {
+      "key": "word-snow",
+      "text": "snow"
+    },
+    {
+      "key": "word-snowflake",
+      "text": "snowflake"
+    },
+    {
+      "key": "word-snowman",
+      "text": "snowman"
+    },
+    {
+      "key": "word-snowball",
+      "text": "snowball"
+    },
+    {
+      "key": "word-wind",
+      "text": "wind"
+    },
+    {
+      "key": "word-breeze",
+      "text": "breeze"
+    },
+    {
+      "key": "word-fog",
+      "text": "fog"
+    },
+    {
+      "key": "word-mist",
+      "text": "mist"
+    },
+    {
+      "key": "word-storm",
+      "text": "storm"
+    },
+    {
+      "key": "word-thunder",
+      "text": "thunder"
+    },
+    {
+      "key": "word-lightning",
+      "text": "lightning"
+    },
+    {
+      "key": "word-tornado",
+      "text": "tornado"
+    },
+    {
+      "key": "word-sunshine",
+      "text": "sunshine"
+    },
+    {
+      "key": "word-sunrise",
+      "text": "sunrise"
+    },
+    {
+      "key": "word-sunset",
+      "text": "sunset"
+    },
+    {
+      "key": "word-star",
+      "text": "star"
+    },
+    {
+      "key": "word-shooting star",
+      "text": "shooting star"
+    },
+    {
+      "key": "word-comet",
+      "text": "comet"
+    },
+    {
+      "key": "word-planet",
+      "text": "planet"
+    },
+    {
+      "key": "word-earth",
+      "text": "earth"
+    },
+    {
+      "key": "word-world",
+      "text": "world"
+    },
+    {
+      "key": "word-space",
+      "text": "space"
+    },
+    {
+      "key": "word-galaxy",
+      "text": "galaxy"
+    },
+    {
+      "key": "word-moonlight",
+      "text": "moonlight"
+    },
+    {
+      "key": "word-crescent",
+      "text": "crescent"
+    },
+    {
+      "key": "word-full moon",
+      "text": "full moon"
+    },
+    {
+      "key": "word-mountain",
+      "text": "mountain"
+    },
+    {
+      "key": "word-hill",
+      "text": "hill"
+    },
+    {
+      "key": "word-volcano",
+      "text": "volcano"
+    },
+    {
+      "key": "word-lava",
+      "text": "lava"
+    },
+    {
+      "key": "word-island",
+      "text": "island"
+    },
+    {
+      "key": "word-beach",
+      "text": "beach"
+    },
+    {
+      "key": "word-sand",
+      "text": "sand"
+    },
+    {
+      "key": "word-sea",
+      "text": "sea"
+    },
+    {
+      "key": "word-ocean",
+      "text": "ocean"
+    },
+    {
+      "key": "word-wave",
+      "text": "wave"
+    },
+    {
+      "key": "word-lake",
+      "text": "lake"
+    },
+    {
+      "key": "word-river",
+      "text": "river"
+    },
+    {
+      "key": "word-stream",
+      "text": "stream"
+    },
+    {
+      "key": "word-desert",
+      "text": "desert"
+    },
+    {
+      "key": "word-forest",
+      "text": "forest"
+    },
+    {
+      "key": "word-woods",
+      "text": "woods"
+    },
+    {
+      "key": "word-park",
+      "text": "park"
+    },
+    {
+      "key": "word-field",
+      "text": "field"
+    },
+    {
+      "key": "word-grass",
+      "text": "grass"
+    },
+    {
+      "key": "word-plant",
+      "text": "plant"
+    },
+    {
+      "key": "word-seedling",
+      "text": "seedling"
+    },
+    {
+      "key": "word-sprout",
+      "text": "sprout"
+    },
+    {
+      "key": "word-root",
+      "text": "root"
+    },
+    {
+      "key": "word-stem",
+      "text": "stem"
+    },
+    {
+      "key": "word-branch",
+      "text": "branch"
+    },
+    {
+      "key": "word-trunk",
+      "text": "trunk"
+    },
+    {
+      "key": "word-bark",
+      "text": "bark"
+    },
+    {
+      "key": "word-twig",
+      "text": "twig"
+    },
+    {
+      "key": "word-log",
+      "text": "log"
+    },
+    {
+      "key": "word-pine tree",
+      "text": "pine tree"
+    },
+    {
+      "key": "word-palm tree",
+      "text": "palm tree"
+    },
+    {
+      "key": "word-cactus",
+      "text": "cactus"
+    },
+    {
+      "key": "word-bamboo",
+      "text": "bamboo"
+    },
+    {
+      "key": "word-clover",
+      "text": "clover"
+    },
+    {
+      "key": "word-herb",
+      "text": "herb"
+    },
+    {
+      "key": "word-rose",
+      "text": "rose"
+    },
+    {
+      "key": "word-tulip",
+      "text": "tulip"
+    },
+    {
+      "key": "word-sunflower",
+      "text": "sunflower"
+    },
+    {
+      "key": "word-daisy",
+      "text": "daisy"
+    },
+    {
+      "key": "word-cherry blossom",
+      "text": "cherry blossom"
+    },
+    {
+      "key": "word-lotus",
+      "text": "lotus"
+    },
+    {
+      "key": "word-bouquet",
+      "text": "bouquet"
+    },
+    {
+      "key": "word-petal",
+      "text": "petal"
+    },
+    {
+      "key": "word-bud",
+      "text": "bud"
+    },
+    {
+      "key": "word-pollen",
+      "text": "pollen"
+    },
+    {
+      "key": "word-soil",
+      "text": "soil"
+    },
+    {
+      "key": "word-mud",
+      "text": "mud"
+    },
+    {
+      "key": "word-pebble",
+      "text": "pebble"
+    },
+    {
+      "key": "word-reef",
+      "text": "reef"
+    },
+    {
+      "key": "word-spring",
+      "text": "spring"
+    },
+    {
+      "key": "word-summer",
+      "text": "summer"
+    },
+    {
+      "key": "word-autumn",
+      "text": "autumn"
+    },
+    {
+      "key": "word-fall",
+      "text": "fall"
+    },
+    {
+      "key": "word-winter",
+      "text": "winter"
+    },
+    {
+      "key": "word-season",
+      "text": "season"
+    },
+    {
+      "key": "word-weather",
+      "text": "weather"
+    },
+    {
+      "key": "word-temperature",
+      "text": "temperature"
+    },
+    {
+      "key": "word-thermometer",
+      "text": "thermometer"
+    },
+    {
+      "key": "word-day",
+      "text": "day"
+    },
+    {
+      "key": "word-night",
+      "text": "night"
+    },
+    {
+      "key": "word-morning",
+      "text": "morning"
+    },
+    {
+      "key": "word-afternoon",
+      "text": "afternoon"
+    },
+    {
+      "key": "word-evening",
+      "text": "evening"
+    },
+    {
+      "key": "word-midnight",
+      "text": "midnight"
+    },
+    {
+      "key": "word-noon",
+      "text": "noon"
+    },
+    {
+      "key": "word-today",
+      "text": "today"
+    },
+    {
+      "key": "word-tomorrow",
+      "text": "tomorrow"
+    },
+    {
+      "key": "word-yesterday",
+      "text": "yesterday"
+    },
+    {
+      "key": "word-week",
+      "text": "week"
+    },
+    {
+      "key": "word-month",
+      "text": "month"
+    },
+    {
+      "key": "word-year",
+      "text": "year"
+    },
+    {
+      "key": "word-bicycle",
+      "text": "bicycle"
+    },
+    {
+      "key": "word-scooter",
+      "text": "scooter"
+    },
+    {
+      "key": "word-skateboard",
+      "text": "skateboard"
+    },
+    {
+      "key": "word-roller skate",
+      "text": "roller skate"
+    },
+    {
+      "key": "word-motorcycle",
+      "text": "motorcycle"
+    },
+    {
+      "key": "word-taxi",
+      "text": "taxi"
+    },
+    {
+      "key": "word-truck",
+      "text": "truck"
+    },
+    {
+      "key": "word-delivery truck",
+      "text": "delivery truck"
+    },
+    {
+      "key": "word-tractor",
+      "text": "tractor"
+    },
+    {
+      "key": "word-ambulance",
+      "text": "ambulance"
+    },
+    {
+      "key": "word-fire engine",
+      "text": "fire engine"
+    },
+    {
+      "key": "word-fire truck",
+      "text": "fire truck"
+    },
+    {
+      "key": "word-police car",
+      "text": "police car"
+    },
+    {
+      "key": "word-racing car",
+      "text": "racing car"
+    },
+    {
+      "key": "word-minibus",
+      "text": "minibus"
+    },
+    {
+      "key": "word-trolleybus",
+      "text": "trolleybus"
+    },
+    {
+      "key": "word-tram",
+      "text": "tram"
+    },
+    {
+      "key": "word-subway",
+      "text": "subway"
+    },
+    {
+      "key": "word-metro",
+      "text": "metro"
+    },
+    {
+      "key": "word-monorail",
+      "text": "monorail"
+    },
+    {
+      "key": "word-bullet train",
+      "text": "bullet train"
+    },
+    {
+      "key": "word-locomotive",
+      "text": "locomotive"
+    },
+    {
+      "key": "word-railway",
+      "text": "railway"
+    },
+    {
+      "key": "word-track",
+      "text": "track"
+    },
+    {
+      "key": "word-station",
+      "text": "station"
+    },
+    {
+      "key": "word-bus stop",
+      "text": "bus stop"
+    },
+    {
+      "key": "word-road",
+      "text": "road"
+    },
+    {
+      "key": "word-highway",
+      "text": "highway"
+    },
+    {
+      "key": "word-bridge",
+      "text": "bridge"
+    },
+    {
+      "key": "word-traffic light",
+      "text": "traffic light"
+    },
+    {
+      "key": "word-stop sign",
+      "text": "stop sign"
+    },
+    {
+      "key": "word-barrier",
+      "text": "barrier"
+    },
+    {
+      "key": "word-construction",
+      "text": "construction"
+    },
+    {
+      "key": "word-wheel",
+      "text": "wheel"
+    },
+    {
+      "key": "word-tire",
+      "text": "tire"
+    },
+    {
+      "key": "word-fuel",
+      "text": "fuel"
+    },
+    {
+      "key": "word-gas station",
+      "text": "gas station"
+    },
+    {
+      "key": "word-airplane",
+      "text": "airplane"
+    },
+    {
+      "key": "word-plane",
+      "text": "plane"
+    },
+    {
+      "key": "word-helicopter",
+      "text": "helicopter"
+    },
+    {
+      "key": "word-rocket",
+      "text": "rocket"
+    },
+    {
+      "key": "word-satellite",
+      "text": "satellite"
+    },
+    {
+      "key": "word-parachute",
+      "text": "parachute"
+    },
+    {
+      "key": "word-airport",
+      "text": "airport"
+    },
+    {
+      "key": "word-takeoff",
+      "text": "takeoff"
+    },
+    {
+      "key": "word-landing",
+      "text": "landing"
+    },
+    {
+      "key": "word-ship",
+      "text": "ship"
+    },
+    {
+      "key": "word-sailboat",
+      "text": "sailboat"
+    },
+    {
+      "key": "word-canoe",
+      "text": "canoe"
+    },
+    {
+      "key": "word-rowboat",
+      "text": "rowboat"
+    },
+    {
+      "key": "word-speedboat",
+      "text": "speedboat"
+    },
+    {
+      "key": "word-ferry",
+      "text": "ferry"
+    },
+    {
+      "key": "word-anchor",
+      "text": "anchor"
+    },
+    {
+      "key": "word-sail",
+      "text": "sail"
+    },
+    {
+      "key": "word-paddle",
+      "text": "paddle"
+    },
+    {
+      "key": "word-oar",
+      "text": "oar"
+    },
+    {
+      "key": "word-life jacket",
+      "text": "life jacket"
+    },
+    {
+      "key": "word-lifebuoy",
+      "text": "lifebuoy"
+    },
+    {
+      "key": "word-cable car",
+      "text": "cable car"
+    },
+    {
+      "key": "word-ferris wheel",
+      "text": "ferris wheel"
+    },
+    {
+      "key": "word-roller coaster",
+      "text": "roller coaster"
+    },
+    {
+      "key": "word-carousel",
+      "text": "carousel"
+    },
+    {
+      "key": "word-tent",
+      "text": "tent"
+    },
+    {
+      "key": "word-camp",
+      "text": "camp"
+    },
+    {
+      "key": "word-camping",
+      "text": "camping"
+    },
+    {
+      "key": "word-luggage",
+      "text": "luggage"
+    },
+    {
+      "key": "word-passport",
+      "text": "passport"
+    },
+    {
+      "key": "word-journey",
+      "text": "journey"
+    },
+    {
+      "key": "word-trip",
+      "text": "trip"
+    },
+    {
+      "key": "word-vacation",
+      "text": "vacation"
+    },
+    {
+      "key": "word-holiday",
+      "text": "holiday"
+    },
+    {
+      "key": "word-person",
+      "text": "person"
+    },
+    {
+      "key": "word-people",
+      "text": "people"
+    },
+    {
+      "key": "word-child",
+      "text": "child"
+    },
+    {
+      "key": "word-children",
+      "text": "children"
+    },
+    {
+      "key": "word-baby",
+      "text": "baby"
+    },
+    {
+      "key": "word-boy",
+      "text": "boy"
+    },
+    {
+      "key": "word-girl",
+      "text": "girl"
+    },
+    {
+      "key": "word-man",
+      "text": "man"
+    },
+    {
+      "key": "word-woman",
+      "text": "woman"
+    },
+    {
+      "key": "word-adult",
+      "text": "adult"
+    },
+    {
+      "key": "word-family",
+      "text": "family"
+    },
+    {
+      "key": "word-mother",
+      "text": "mother"
+    },
+    {
+      "key": "word-mom",
+      "text": "mom"
+    },
+    {
+      "key": "word-father",
+      "text": "father"
+    },
+    {
+      "key": "word-dad",
+      "text": "dad"
+    },
+    {
+      "key": "word-parent",
+      "text": "parent"
+    },
+    {
+      "key": "word-parents",
+      "text": "parents"
+    },
+    {
+      "key": "word-sister",
+      "text": "sister"
+    },
+    {
+      "key": "word-brother",
+      "text": "brother"
+    },
+    {
+      "key": "word-grandmother",
+      "text": "grandmother"
+    },
+    {
+      "key": "word-grandma",
+      "text": "grandma"
+    },
+    {
+      "key": "word-grandfather",
+      "text": "grandfather"
+    },
+    {
+      "key": "word-grandpa",
+      "text": "grandpa"
+    },
+    {
+      "key": "word-grandparents",
+      "text": "grandparents"
+    },
+    {
+      "key": "word-aunt",
+      "text": "aunt"
+    },
+    {
+      "key": "word-uncle",
+      "text": "uncle"
+    },
+    {
+      "key": "word-cousin",
+      "text": "cousin"
+    },
+    {
+      "key": "word-friend",
+      "text": "friend"
+    },
+    {
+      "key": "word-neighbor",
+      "text": "neighbor"
+    },
+    {
+      "key": "word-twins",
+      "text": "twins"
+    },
+    {
+      "key": "word-team",
+      "text": "team"
+    },
+    {
+      "key": "word-group",
+      "text": "group"
+    },
+    {
+      "key": "word-doctor",
+      "text": "doctor"
+    },
+    {
+      "key": "word-nurse",
+      "text": "nurse"
+    },
+    {
+      "key": "word-dentist",
+      "text": "dentist"
+    },
+    {
+      "key": "word-farmer",
+      "text": "farmer"
+    },
+    {
+      "key": "word-cook",
+      "text": "cook"
+    },
+    {
+      "key": "word-chef",
+      "text": "chef"
+    },
+    {
+      "key": "word-baker",
+      "text": "baker"
+    },
+    {
+      "key": "word-firefighter",
+      "text": "firefighter"
+    },
+    {
+      "key": "word-police officer",
+      "text": "police officer"
+    },
+    {
+      "key": "word-pilot",
+      "text": "pilot"
+    },
+    {
+      "key": "word-astronaut",
+      "text": "astronaut"
+    },
+    {
+      "key": "word-scientist",
+      "text": "scientist"
+    },
+    {
+      "key": "word-artist",
+      "text": "artist"
+    },
+    {
+      "key": "word-singer",
+      "text": "singer"
+    },
+    {
+      "key": "word-musician",
+      "text": "musician"
+    },
+    {
+      "key": "word-dancer",
+      "text": "dancer"
+    },
+    {
+      "key": "word-builder",
+      "text": "builder"
+    },
+    {
+      "key": "word-mechanic",
+      "text": "mechanic"
+    },
+    {
+      "key": "word-engineer",
+      "text": "engineer"
+    },
+    {
+      "key": "word-driver",
+      "text": "driver"
+    },
+    {
+      "key": "word-sailor",
+      "text": "sailor"
+    },
+    {
+      "key": "word-gardener",
+      "text": "gardener"
+    },
+    {
+      "key": "word-vet",
+      "text": "vet"
+    },
+    {
+      "key": "word-librarian",
+      "text": "librarian"
+    },
+    {
+      "key": "word-writer",
+      "text": "writer"
+    },
+    {
+      "key": "word-photographer",
+      "text": "photographer"
+    },
+    {
+      "key": "word-magician",
+      "text": "magician"
+    },
+    {
+      "key": "word-clown",
+      "text": "clown"
+    },
+    {
+      "key": "word-king",
+      "text": "king"
+    },
+    {
+      "key": "word-princess",
+      "text": "princess"
+    },
+    {
+      "key": "word-prince",
+      "text": "prince"
+    },
+    {
+      "key": "word-fairy",
+      "text": "fairy"
+    },
+    {
+      "key": "word-mermaid",
+      "text": "mermaid"
+    },
+    {
+      "key": "word-superhero",
+      "text": "superhero"
+    },
+    {
+      "key": "word-robot",
+      "text": "robot"
+    },
+    {
+      "key": "word-head",
+      "text": "head"
+    },
+    {
+      "key": "word-face",
+      "text": "face"
+    },
+    {
+      "key": "word-hair",
+      "text": "hair"
+    },
+    {
+      "key": "word-nose",
+      "text": "nose"
+    },
+    {
+      "key": "word-mouth",
+      "text": "mouth"
+    },
+    {
+      "key": "word-lip",
+      "text": "lip"
+    },
+    {
+      "key": "word-tongue",
+      "text": "tongue"
+    },
+    {
+      "key": "word-tooth",
+      "text": "tooth"
+    },
+    {
+      "key": "word-teeth",
+      "text": "teeth"
+    },
+    {
+      "key": "word-foot",
+      "text": "foot"
+    },
+    {
+      "key": "word-feet",
+      "text": "feet"
+    },
+    {
+      "key": "word-leg",
+      "text": "leg"
+    },
+    {
+      "key": "word-knee",
+      "text": "knee"
+    },
+    {
+      "key": "word-arm",
+      "text": "arm"
+    },
+    {
+      "key": "word-elbow",
+      "text": "elbow"
+    },
+    {
+      "key": "word-finger",
+      "text": "finger"
+    },
+    {
+      "key": "word-thumb",
+      "text": "thumb"
+    },
+    {
+      "key": "word-palm",
+      "text": "palm"
+    },
+    {
+      "key": "word-fist",
+      "text": "fist"
+    },
+    {
+      "key": "word-toe",
+      "text": "toe"
+    },
+    {
+      "key": "word-heel",
+      "text": "heel"
+    },
+    {
+      "key": "word-muscle",
+      "text": "muscle"
+    },
+    {
+      "key": "word-bone",
+      "text": "bone"
+    },
+    {
+      "key": "word-brain",
+      "text": "brain"
+    },
+    {
+      "key": "word-heart",
+      "text": "heart"
+    },
+    {
+      "key": "word-lungs",
+      "text": "lungs"
+    },
+    {
+      "key": "word-body",
+      "text": "body"
+    },
+    {
+      "key": "word-skin",
+      "text": "skin"
+    },
+    {
+      "key": "word-eyes",
+      "text": "eyes"
+    },
+    {
+      "key": "word-eyebrow",
+      "text": "eyebrow"
+    },
+    {
+      "key": "word-cheek",
+      "text": "cheek"
+    },
+    {
+      "key": "word-chin",
+      "text": "chin"
+    },
+    {
+      "key": "word-beard",
+      "text": "beard"
+    },
+    {
+      "key": "word-mustache",
+      "text": "mustache"
+    },
+    {
+      "key": "word-curly hair",
+      "text": "curly hair"
+    },
+    {
+      "key": "word-red hair",
+      "text": "red hair"
+    },
+    {
+      "key": "word-white hair",
+      "text": "white hair"
+    },
+    {
+      "key": "word-footprints",
+      "text": "footprints"
+    },
+    {
+      "key": "word-handprint",
+      "text": "handprint"
+    },
+    {
+      "key": "word-fingerprint",
+      "text": "fingerprint"
+    },
+    {
+      "key": "word-senses",
+      "text": "senses"
+    },
+    {
+      "key": "word-hearing",
+      "text": "hearing"
+    },
+    {
+      "key": "word-sight",
+      "text": "sight"
+    },
+    {
+      "key": "word-soccer",
+      "text": "soccer"
+    },
+    {
+      "key": "word-football",
+      "text": "football"
+    },
+    {
+      "key": "word-basketball",
+      "text": "basketball"
+    },
+    {
+      "key": "word-baseball",
+      "text": "baseball"
+    },
+    {
+      "key": "word-softball",
+      "text": "softball"
+    },
+    {
+      "key": "word-tennis",
+      "text": "tennis"
+    },
+    {
+      "key": "word-volleyball",
+      "text": "volleyball"
+    },
+    {
+      "key": "word-rugby",
+      "text": "rugby"
+    },
+    {
+      "key": "word-badminton",
+      "text": "badminton"
+    },
+    {
+      "key": "word-shuttlecock",
+      "text": "shuttlecock"
+    },
+    {
+      "key": "word-table tennis",
+      "text": "table tennis"
+    },
+    {
+      "key": "word-ping-pong",
+      "text": "ping-pong"
+    },
+    {
+      "key": "word-hockey",
+      "text": "hockey"
+    },
+    {
+      "key": "word-ice hockey",
+      "text": "ice hockey"
+    },
+    {
+      "key": "word-golf",
+      "text": "golf"
+    },
+    {
+      "key": "word-bowling",
+      "text": "bowling"
+    },
+    {
+      "key": "word-fishing",
+      "text": "fishing"
+    },
+    {
+      "key": "word-swimming",
+      "text": "swimming"
+    },
+    {
+      "key": "word-diving",
+      "text": "diving"
+    },
+    {
+      "key": "word-surfing",
+      "text": "surfing"
+    },
+    {
+      "key": "word-rowing",
+      "text": "rowing"
+    },
+    {
+      "key": "word-sailing",
+      "text": "sailing"
+    },
+    {
+      "key": "word-cycling",
+      "text": "cycling"
+    },
+    {
+      "key": "word-running",
+      "text": "running"
+    },
+    {
+      "key": "word-walking",
+      "text": "walking"
+    },
+    {
+      "key": "word-hiking",
+      "text": "hiking"
+    },
+    {
+      "key": "word-climbing",
+      "text": "climbing"
+    },
+    {
+      "key": "word-skating",
+      "text": "skating"
+    },
+    {
+      "key": "word-skiing",
+      "text": "skiing"
+    },
+    {
+      "key": "word-snowboarding",
+      "text": "snowboarding"
+    },
+    {
+      "key": "word-sledding",
+      "text": "sledding"
+    },
+    {
+      "key": "word-sled",
+      "text": "sled"
+    },
+    {
+      "key": "word-skis",
+      "text": "skis"
+    },
+    {
+      "key": "word-ice skate",
+      "text": "ice skate"
+    },
+    {
+      "key": "word-exercise",
+      "text": "exercise"
+    },
+    {
+      "key": "word-stretch",
+      "text": "stretch"
+    },
+    {
+      "key": "word-yoga",
+      "text": "yoga"
+    },
+    {
+      "key": "word-balance",
+      "text": "balance"
+    },
+    {
+      "key": "word-gymnastics",
+      "text": "gymnastics"
+    },
+    {
+      "key": "word-cartwheel",
+      "text": "cartwheel"
+    },
+    {
+      "key": "word-jump rope",
+      "text": "jump rope"
+    },
+    {
+      "key": "word-boxing",
+      "text": "boxing"
+    },
+    {
+      "key": "word-boxing glove",
+      "text": "boxing glove"
+    },
+    {
+      "key": "word-martial arts",
+      "text": "martial arts"
+    },
+    {
+      "key": "word-racket",
+      "text": "racket"
+    },
+    {
+      "key": "word-goal",
+      "text": "goal"
+    },
+    {
+      "key": "word-net",
+      "text": "net"
+    },
+    {
+      "key": "word-trophy",
+      "text": "trophy"
+    },
+    {
+      "key": "word-medal",
+      "text": "medal"
+    },
+    {
+      "key": "word-prize",
+      "text": "prize"
+    },
+    {
+      "key": "word-winner",
+      "text": "winner"
+    },
+    {
+      "key": "word-race",
+      "text": "race"
+    },
+    {
+      "key": "word-finish line",
+      "text": "finish line"
+    },
+    {
+      "key": "word-flag",
+      "text": "flag"
+    },
+    {
+      "key": "word-score",
+      "text": "score"
+    },
+    {
+      "key": "word-player",
+      "text": "player"
+    },
+    {
+      "key": "word-coach",
+      "text": "coach"
+    },
+    {
+      "key": "word-referee",
+      "text": "referee"
+    },
+    {
+      "key": "word-practice",
+      "text": "practice"
+    },
+    {
+      "key": "word-toy",
+      "text": "toy"
+    },
+    {
+      "key": "word-teddy bear",
+      "text": "teddy bear"
+    },
+    {
+      "key": "word-doll",
+      "text": "doll"
+    },
+    {
+      "key": "word-puzzle",
+      "text": "puzzle"
+    },
+    {
+      "key": "word-puzzle piece",
+      "text": "puzzle piece"
+    },
+    {
+      "key": "word-dice",
+      "text": "dice"
+    },
+    {
+      "key": "word-game",
+      "text": "game"
+    },
+    {
+      "key": "word-board game",
+      "text": "board game"
+    },
+    {
+      "key": "word-chess",
+      "text": "chess"
+    },
+    {
+      "key": "word-chess piece",
+      "text": "chess piece"
+    },
+    {
+      "key": "word-balloon",
+      "text": "balloon"
+    },
+    {
+      "key": "word-bubbles",
+      "text": "bubbles"
+    },
+    {
+      "key": "word-magic wand",
+      "text": "magic wand"
+    },
+    {
+      "key": "word-yo-yo",
+      "text": "yo-yo"
+    },
+    {
+      "key": "word-boomerang",
+      "text": "boomerang"
+    },
+    {
+      "key": "word-frisbee",
+      "text": "frisbee"
+    },
+    {
+      "key": "word-slide",
+      "text": "slide"
+    },
+    {
+      "key": "word-playground",
+      "text": "playground"
+    },
+    {
+      "key": "word-water gun",
+      "text": "water gun"
+    },
+    {
+      "key": "word-video game",
+      "text": "video game"
+    },
+    {
+      "key": "word-controller",
+      "text": "controller"
+    },
+    {
+      "key": "word-joystick",
+      "text": "joystick"
+    },
+    {
+      "key": "word-craft",
+      "text": "craft"
+    },
+    {
+      "key": "word-origami",
+      "text": "origami"
+    },
+    {
+      "key": "word-glitter",
+      "text": "glitter"
+    },
+    {
+      "key": "word-confetti",
+      "text": "confetti"
+    },
+    {
+      "key": "word-party",
+      "text": "party"
+    },
+    {
+      "key": "word-birthday",
+      "text": "birthday"
+    },
+    {
+      "key": "word-birthday cake",
+      "text": "birthday cake"
+    },
+    {
+      "key": "word-gift",
+      "text": "gift"
+    },
+    {
+      "key": "word-present",
+      "text": "present"
+    },
+    {
+      "key": "word-celebration",
+      "text": "celebration"
+    },
+    {
+      "key": "word-festival",
+      "text": "festival"
+    },
+    {
+      "key": "word-lantern",
+      "text": "lantern"
+    },
+    {
+      "key": "word-fireworks",
+      "text": "fireworks"
+    },
+    {
+      "key": "word-sparkler",
+      "text": "sparkler"
+    },
+    {
+      "key": "word-pumpkin",
+      "text": "pumpkin"
+    },
+    {
+      "key": "word-ghost",
+      "text": "ghost"
+    },
+    {
+      "key": "word-song",
+      "text": "song"
+    },
+    {
+      "key": "word-musical note",
+      "text": "musical note"
+    },
+    {
+      "key": "word-melody",
+      "text": "melody"
+    },
+    {
+      "key": "word-rhythm",
+      "text": "rhythm"
+    },
+    {
+      "key": "word-beat",
+      "text": "beat"
+    },
+    {
+      "key": "word-drum",
+      "text": "drum"
+    },
+    {
+      "key": "word-drumstick",
+      "text": "drumstick"
+    },
+    {
+      "key": "word-guitar",
+      "text": "guitar"
+    },
+    {
+      "key": "word-violin",
+      "text": "violin"
+    },
+    {
+      "key": "word-piano",
+      "text": "piano"
+    },
+    {
+      "key": "word-piano key",
+      "text": "piano key"
+    },
+    {
+      "key": "word-trumpet",
+      "text": "trumpet"
+    },
+    {
+      "key": "word-saxophone",
+      "text": "saxophone"
+    },
+    {
+      "key": "word-flute",
+      "text": "flute"
+    },
+    {
+      "key": "word-accordion",
+      "text": "accordion"
+    },
+    {
+      "key": "word-banjo",
+      "text": "banjo"
+    },
+    {
+      "key": "word-maracas",
+      "text": "maracas"
+    },
+    {
+      "key": "word-microphone",
+      "text": "microphone"
+    },
+    {
+      "key": "word-headphones",
+      "text": "headphones"
+    },
+    {
+      "key": "word-speaker",
+      "text": "speaker"
+    },
+    {
+      "key": "word-instrument",
+      "text": "instrument"
+    },
+    {
+      "key": "word-concert",
+      "text": "concert"
+    },
+    {
+      "key": "word-band",
+      "text": "band"
+    },
+    {
+      "key": "word-stage",
+      "text": "stage"
+    },
+    {
+      "key": "word-theater",
+      "text": "theater"
+    },
+    {
+      "key": "word-ballet",
+      "text": "ballet"
+    },
+    {
+      "key": "word-ballet shoes",
+      "text": "ballet shoes"
+    },
+    {
+      "key": "word-disco ball",
+      "text": "disco ball"
+    },
+    {
+      "key": "word-town",
+      "text": "town"
+    },
+    {
+      "key": "word-city",
+      "text": "city"
+    },
+    {
+      "key": "word-village",
+      "text": "village"
+    },
+    {
+      "key": "word-building",
+      "text": "building"
+    },
+    {
+      "key": "word-office",
+      "text": "office"
+    },
+    {
+      "key": "word-apartment",
+      "text": "apartment"
+    },
+    {
+      "key": "word-hotel",
+      "text": "hotel"
+    },
+    {
+      "key": "word-hospital",
+      "text": "hospital"
+    },
+    {
+      "key": "word-shop",
+      "text": "shop"
+    },
+    {
+      "key": "word-store",
+      "text": "store"
+    },
+    {
+      "key": "word-supermarket",
+      "text": "supermarket"
+    },
+    {
+      "key": "word-market",
+      "text": "market"
+    },
+    {
+      "key": "word-bakery",
+      "text": "bakery"
+    },
+    {
+      "key": "word-restaurant",
+      "text": "restaurant"
+    },
+    {
+      "key": "word-cafe",
+      "text": "cafe"
+    },
+    {
+      "key": "word-library",
+      "text": "library"
+    },
+    {
+      "key": "word-museum",
+      "text": "museum"
+    },
+    {
+      "key": "word-zoo",
+      "text": "zoo"
+    },
+    {
+      "key": "word-aquarium",
+      "text": "aquarium"
+    },
+    {
+      "key": "word-farm",
+      "text": "farm"
+    },
+    {
+      "key": "word-post office",
+      "text": "post office"
+    },
+    {
+      "key": "word-bank",
+      "text": "bank"
+    },
+    {
+      "key": "word-factory",
+      "text": "factory"
+    },
+    {
+      "key": "word-stadium",
+      "text": "stadium"
+    },
+    {
+      "key": "word-swimming pool",
+      "text": "swimming pool"
+    },
+    {
+      "key": "word-cinema",
+      "text": "cinema"
+    },
+    {
+      "key": "word-circus",
+      "text": "circus"
+    },
+    {
+      "key": "word-castle",
+      "text": "castle"
+    },
+    {
+      "key": "word-tower",
+      "text": "tower"
+    },
+    {
+      "key": "word-fountain",
+      "text": "fountain"
+    },
+    {
+      "key": "word-statue",
+      "text": "statue"
+    },
+    {
+      "key": "word-church",
+      "text": "church"
+    },
+    {
+      "key": "word-mosque",
+      "text": "mosque"
+    },
+    {
+      "key": "word-temple",
+      "text": "temple"
+    },
+    {
+      "key": "word-shrine",
+      "text": "shrine"
+    },
+    {
+      "key": "word-playroom",
+      "text": "playroom"
+    },
+    {
+      "key": "word-living room",
+      "text": "living room"
+    },
+    {
+      "key": "word-dining room",
+      "text": "dining room"
+    },
+    {
+      "key": "word-yard",
+      "text": "yard"
+    },
+    {
+      "key": "word-roof",
+      "text": "roof"
+    },
+    {
+      "key": "word-wall",
+      "text": "wall"
+    },
+    {
+      "key": "word-elevator",
+      "text": "elevator"
+    },
+    {
+      "key": "word-entrance",
+      "text": "entrance"
+    },
+    {
+      "key": "word-exit",
+      "text": "exit"
+    },
+    {
+      "key": "word-path",
+      "text": "path"
+    },
+    {
+      "key": "word-happy",
+      "text": "happy"
+    },
+    {
+      "key": "word-sad",
+      "text": "sad"
+    },
+    {
+      "key": "word-angry",
+      "text": "angry"
+    },
+    {
+      "key": "word-excited",
+      "text": "excited"
+    },
+    {
+      "key": "word-surprised",
+      "text": "surprised"
+    },
+    {
+      "key": "word-scared",
+      "text": "scared"
+    },
+    {
+      "key": "word-worried",
+      "text": "worried"
+    },
+    {
+      "key": "word-sleepy",
+      "text": "sleepy"
+    },
+    {
+      "key": "word-tired",
+      "text": "tired"
+    },
+    {
+      "key": "word-calm",
+      "text": "calm"
+    },
+    {
+      "key": "word-shy",
+      "text": "shy"
+    },
+    {
+      "key": "word-proud",
+      "text": "proud"
+    },
+    {
+      "key": "word-silly",
+      "text": "silly"
+    },
+    {
+      "key": "word-confused",
+      "text": "confused"
+    },
+    {
+      "key": "word-curious",
+      "text": "curious"
+    },
+    {
+      "key": "word-bored",
+      "text": "bored"
+    },
+    {
+      "key": "word-lonely",
+      "text": "lonely"
+    },
+    {
+      "key": "word-kind",
+      "text": "kind"
+    },
+    {
+      "key": "word-friendly",
+      "text": "friendly"
+    },
+    {
+      "key": "word-brave",
+      "text": "brave"
+    },
+    {
+      "key": "word-patient",
+      "text": "patient"
+    },
+    {
+      "key": "word-gentle",
+      "text": "gentle"
+    },
+    {
+      "key": "word-thankful",
+      "text": "thankful"
+    },
+    {
+      "key": "word-sorry",
+      "text": "sorry"
+    },
+    {
+      "key": "word-hungry",
+      "text": "hungry"
+    },
+    {
+      "key": "word-thirsty",
+      "text": "thirsty"
+    },
+    {
+      "key": "word-sick",
+      "text": "sick"
+    },
+    {
+      "key": "word-hurt",
+      "text": "hurt"
+    },
+    {
+      "key": "word-healthy",
+      "text": "healthy"
+    },
+    {
+      "key": "word-well",
+      "text": "well"
+    },
+    {
+      "key": "word-hot",
+      "text": "hot"
+    },
+    {
+      "key": "word-cold",
+      "text": "cold"
+    },
+    {
+      "key": "word-cool",
+      "text": "cool"
+    },
+    {
+      "key": "word-smile",
+      "text": "smile"
+    },
+    {
+      "key": "word-laugh",
+      "text": "laugh"
+    },
+    {
+      "key": "word-giggle",
+      "text": "giggle"
+    },
+    {
+      "key": "word-cry",
+      "text": "cry"
+    },
+    {
+      "key": "word-frown",
+      "text": "frown"
+    },
+    {
+      "key": "word-wink",
+      "text": "wink"
+    },
+    {
+      "key": "word-yawn",
+      "text": "yawn"
+    },
+    {
+      "key": "word-sneeze",
+      "text": "sneeze"
+    },
+    {
+      "key": "word-cough",
+      "text": "cough"
+    },
+    {
+      "key": "word-tear",
+      "text": "tear"
+    },
+    {
+      "key": "word-eat",
+      "text": "eat"
+    },
+    {
+      "key": "word-bite",
+      "text": "bite"
+    },
+    {
+      "key": "word-chew",
+      "text": "chew"
+    },
+    {
+      "key": "word-taste",
+      "text": "taste"
+    },
+    {
+      "key": "word-smell",
+      "text": "smell"
+    },
+    {
+      "key": "word-see",
+      "text": "see"
+    },
+    {
+      "key": "word-look",
+      "text": "look"
+    },
+    {
+      "key": "word-hear",
+      "text": "hear"
+    },
+    {
+      "key": "word-listen",
+      "text": "listen"
+    },
+    {
+      "key": "word-touch",
+      "text": "touch"
+    },
+    {
+      "key": "word-feel",
+      "text": "feel"
+    },
+    {
+      "key": "word-hold",
+      "text": "hold"
+    },
+    {
+      "key": "word-clap",
+      "text": "clap"
+    },
+    {
+      "key": "word-point",
+      "text": "point"
+    },
+    {
+      "key": "word-raise",
+      "text": "raise"
+    },
+    {
+      "key": "word-hug",
+      "text": "hug"
+    },
+    {
+      "key": "word-kiss",
+      "text": "kiss"
+    },
+    {
+      "key": "word-walk",
+      "text": "walk"
+    },
+    {
+      "key": "word-run",
+      "text": "run"
+    },
+    {
+      "key": "word-stand",
+      "text": "stand"
+    },
+    {
+      "key": "word-sit",
+      "text": "sit"
+    },
+    {
+      "key": "word-kneel",
+      "text": "kneel"
+    },
+    {
+      "key": "word-crawl",
+      "text": "crawl"
+    },
+    {
+      "key": "word-jump",
+      "text": "jump"
+    },
+    {
+      "key": "word-climb",
+      "text": "climb"
+    },
+    {
+      "key": "word-swim",
+      "text": "swim"
+    },
+    {
+      "key": "word-float",
+      "text": "float"
+    },
+    {
+      "key": "word-dive",
+      "text": "dive"
+    },
+    {
+      "key": "word-ride",
+      "text": "ride"
+    },
+    {
+      "key": "word-drive",
+      "text": "drive"
+    },
+    {
+      "key": "word-row",
+      "text": "row"
+    },
+    {
+      "key": "word-skate",
+      "text": "skate"
+    },
+    {
+      "key": "word-ski",
+      "text": "ski"
+    },
+    {
+      "key": "word-dance",
+      "text": "dance"
+    },
+    {
+      "key": "word-sing",
+      "text": "sing"
+    },
+    {
+      "key": "word-read",
+      "text": "read"
+    },
+    {
+      "key": "word-write",
+      "text": "write"
+    },
+    {
+      "key": "word-draw",
+      "text": "draw"
+    },
+    {
+      "key": "word-color",
+      "text": "color"
+    },
+    {
+      "key": "word-cut",
+      "text": "cut"
+    },
+    {
+      "key": "word-fold",
+      "text": "fold"
+    },
+    {
+      "key": "word-count",
+      "text": "count"
+    },
+    {
+      "key": "word-add",
+      "text": "add"
+    },
+    {
+      "key": "word-subtract",
+      "text": "subtract"
+    },
+    {
+      "key": "word-measure",
+      "text": "measure"
+    },
+    {
+      "key": "word-weigh",
+      "text": "weigh"
+    },
+    {
+      "key": "word-build",
+      "text": "build"
+    },
+    {
+      "key": "word-fix",
+      "text": "fix"
+    },
+    {
+      "key": "word-repair",
+      "text": "repair"
+    },
+    {
+      "key": "word-sew",
+      "text": "sew"
+    },
+    {
+      "key": "word-knit",
+      "text": "knit"
+    },
+    {
+      "key": "word-wash",
+      "text": "wash"
+    },
+    {
+      "key": "word-sweep",
+      "text": "sweep"
+    },
+    {
+      "key": "word-wipe",
+      "text": "wipe"
+    },
+    {
+      "key": "word-tidy",
+      "text": "tidy"
+    },
+    {
+      "key": "word-bake",
+      "text": "bake"
+    },
+    {
+      "key": "word-boil",
+      "text": "boil"
+    },
+    {
+      "key": "word-fry",
+      "text": "fry"
+    },
+    {
+      "key": "word-stir",
+      "text": "stir"
+    },
+    {
+      "key": "word-pour",
+      "text": "pour"
+    },
+    {
+      "key": "word-peel",
+      "text": "peel"
+    },
+    {
+      "key": "word-chop",
+      "text": "chop"
+    },
+    {
+      "key": "word-grow",
+      "text": "grow"
+    },
+    {
+      "key": "word-dig",
+      "text": "dig"
+    },
+    {
+      "key": "word-bloom",
+      "text": "bloom"
+    },
+    {
+      "key": "word-sleep",
+      "text": "sleep"
+    },
+    {
+      "key": "word-rest",
+      "text": "rest"
+    },
+    {
+      "key": "word-wake up",
+      "text": "wake up"
+    },
+    {
+      "key": "word-dream",
+      "text": "dream"
+    },
+    {
+      "key": "word-think",
+      "text": "think"
+    },
+    {
+      "key": "word-learn",
+      "text": "learn"
+    },
+    {
+      "key": "word-ask",
+      "text": "ask"
+    },
+    {
+      "key": "word-help",
+      "text": "help"
+    },
+    {
+      "key": "word-share",
+      "text": "share"
+    },
+    {
+      "key": "word-give",
+      "text": "give"
+    },
+    {
+      "key": "word-send",
+      "text": "send"
+    },
+    {
+      "key": "word-mail",
+      "text": "mail"
+    },
+    {
+      "key": "word-pack",
+      "text": "pack"
+    },
+    {
+      "key": "word-carry",
+      "text": "carry"
+    },
+    {
+      "key": "word-open",
+      "text": "open"
+    },
+    {
+      "key": "word-close",
+      "text": "close"
+    },
+    {
+      "key": "word-unlock",
+      "text": "unlock"
+    },
+    {
+      "key": "word-turn",
+      "text": "turn"
+    },
+    {
+      "key": "word-roll",
+      "text": "roll"
+    },
+    {
+      "key": "word-throw",
+      "text": "throw"
+    },
+    {
+      "key": "word-catch",
+      "text": "catch"
+    },
+    {
+      "key": "word-kick",
+      "text": "kick"
+    },
+    {
+      "key": "word-bounce",
+      "text": "bounce"
+    },
+    {
+      "key": "word-pull",
+      "text": "pull"
+    },
+    {
+      "key": "word-push",
+      "text": "push"
+    },
+    {
+      "key": "word-stop",
+      "text": "stop"
+    },
+    {
+      "key": "word-go",
+      "text": "go"
+    },
+    {
+      "key": "word-wait",
+      "text": "wait"
+    },
+    {
+      "key": "word-take turns",
+      "text": "take turns"
+    },
+    {
+      "key": "word-cross",
+      "text": "cross"
+    },
+    {
+      "key": "word-follow",
+      "text": "follow"
+    },
+    {
+      "key": "word-visit",
+      "text": "visit"
+    },
+    {
+      "key": "word-travel",
+      "text": "travel"
+    },
+    {
+      "key": "word-explore",
+      "text": "explore"
+    },
+    {
+      "key": "word-search",
+      "text": "search"
+    },
+    {
+      "key": "word-find",
+      "text": "find"
+    },
+    {
+      "key": "word-choose",
+      "text": "choose"
+    },
+    {
+      "key": "word-red",
+      "text": "red"
+    },
+    {
+      "key": "word-yellow",
+      "text": "yellow"
+    },
+    {
+      "key": "word-green",
+      "text": "green"
+    },
+    {
+      "key": "word-blue",
+      "text": "blue"
+    },
+    {
+      "key": "word-purple",
+      "text": "purple"
+    },
+    {
+      "key": "word-brown",
+      "text": "brown"
+    },
+    {
+      "key": "word-black",
+      "text": "black"
+    },
+    {
+      "key": "word-white",
+      "text": "white"
+    },
+    {
+      "key": "word-pink",
+      "text": "pink"
+    },
+    {
+      "key": "word-rainbow colors",
+      "text": "rainbow colors"
+    },
+    {
+      "key": "word-circle",
+      "text": "circle"
+    },
+    {
+      "key": "word-square",
+      "text": "square"
+    },
+    {
+      "key": "word-triangle",
+      "text": "triangle"
+    },
+    {
+      "key": "word-diamond shape",
+      "text": "diamond shape"
+    },
+    {
+      "key": "word-oval",
+      "text": "oval"
+    },
+    {
+      "key": "word-heart shape",
+      "text": "heart shape"
+    },
+    {
+      "key": "word-star shape",
+      "text": "star shape"
+    },
+    {
+      "key": "word-round",
+      "text": "round"
+    },
+    {
+      "key": "word-straight",
+      "text": "straight"
+    },
+    {
+      "key": "word-curved",
+      "text": "curved"
+    },
+    {
+      "key": "word-long",
+      "text": "long"
+    },
+    {
+      "key": "word-big",
+      "text": "big"
+    },
+    {
+      "key": "word-small",
+      "text": "small"
+    },
+    {
+      "key": "word-tall",
+      "text": "tall"
+    },
+    {
+      "key": "word-tiny",
+      "text": "tiny"
+    },
+    {
+      "key": "word-wide",
+      "text": "wide"
+    },
+    {
+      "key": "word-narrow",
+      "text": "narrow"
+    },
+    {
+      "key": "word-thick",
+      "text": "thick"
+    },
+    {
+      "key": "word-thin",
+      "text": "thin"
+    },
+    {
+      "key": "word-heavy",
+      "text": "heavy"
+    },
+    {
+      "key": "word-light",
+      "text": "light"
+    },
+    {
+      "key": "word-soft",
+      "text": "soft"
+    },
+    {
+      "key": "word-hard",
+      "text": "hard"
+    },
+    {
+      "key": "word-smooth",
+      "text": "smooth"
+    },
+    {
+      "key": "word-rough",
+      "text": "rough"
+    },
+    {
+      "key": "word-wet",
+      "text": "wet"
+    },
+    {
+      "key": "word-dry",
+      "text": "dry"
+    },
+    {
+      "key": "word-fast",
+      "text": "fast"
+    },
+    {
+      "key": "word-slow",
+      "text": "slow"
+    },
+    {
+      "key": "word-bright",
+      "text": "bright"
+    },
+    {
+      "key": "word-dark",
+      "text": "dark"
+    },
+    {
+      "key": "word-shiny",
+      "text": "shiny"
+    },
+    {
+      "key": "word-colorful",
+      "text": "colorful"
+    },
+    {
+      "key": "word-striped",
+      "text": "striped"
+    },
+    {
+      "key": "word-spotted",
+      "text": "spotted"
+    },
+    {
+      "key": "word-empty",
+      "text": "empty"
+    },
+    {
+      "key": "word-full bowl",
+      "text": "full bowl"
+    },
+    {
+      "key": "word-same",
+      "text": "same"
+    },
+    {
+      "key": "word-different",
+      "text": "different"
     },
     {
       "key": "sentence-apple",
@@ -220,6 +4733,4646 @@
       "text": "I can ride a bike."
     },
     {
+      "key": "sentence-orange",
+      "text": "This is an orange."
+    },
+    {
+      "key": "sentence-pear",
+      "text": "I like pears."
+    },
+    {
+      "key": "sentence-peach",
+      "text": "This peach is sweet."
+    },
+    {
+      "key": "sentence-grapes",
+      "text": "I like grapes."
+    },
+    {
+      "key": "sentence-strawberry",
+      "text": "The strawberry is red."
+    },
+    {
+      "key": "sentence-watermelon",
+      "text": "I like watermelon."
+    },
+    {
+      "key": "sentence-lemon",
+      "text": "The lemon is yellow."
+    },
+    {
+      "key": "sentence-carrot",
+      "text": "I see a carrot."
+    },
+    {
+      "key": "sentence-potato",
+      "text": "This is a potato."
+    },
+    {
+      "key": "sentence-tomato",
+      "text": "The tomato is red."
+    },
+    {
+      "key": "sentence-corn",
+      "text": "I like corn."
+    },
+    {
+      "key": "sentence-cucumber",
+      "text": "The cucumber is green."
+    },
+    {
+      "key": "sentence-broccoli",
+      "text": "I like broccoli."
+    },
+    {
+      "key": "sentence-rice",
+      "text": "I eat rice."
+    },
+    {
+      "key": "sentence-cheese",
+      "text": "I like cheese."
+    },
+    {
+      "key": "sentence-pizza",
+      "text": "We share a pizza."
+    },
+    {
+      "key": "sentence-cake",
+      "text": "I like cake."
+    },
+    {
+      "key": "sentence-cookie",
+      "text": "May I have a cookie?"
+    },
+    {
+      "key": "sentence-tiger",
+      "text": "I see a tiger."
+    },
+    {
+      "key": "sentence-lion",
+      "text": "The lion is big."
+    },
+    {
+      "key": "sentence-elephant",
+      "text": "The elephant has big ears."
+    },
+    {
+      "key": "sentence-monkey",
+      "text": "The monkey can climb."
+    },
+    {
+      "key": "sentence-panda",
+      "text": "The panda eats bamboo."
+    },
+    {
+      "key": "sentence-bear",
+      "text": "I see a bear."
+    },
+    {
+      "key": "sentence-duck",
+      "text": "The duck can swim."
+    },
+    {
+      "key": "sentence-chicken",
+      "text": "I see a chicken."
+    },
+    {
+      "key": "sentence-frog",
+      "text": "The frog can jump."
+    },
+    {
+      "key": "sentence-horse",
+      "text": "The horse can run."
+    },
+    {
+      "key": "sentence-sheep",
+      "text": "I see a sheep."
+    },
+    {
+      "key": "sentence-cow",
+      "text": "The cow eats grass."
+    },
+    {
+      "key": "sentence-turtle",
+      "text": "The turtle walks slowly."
+    },
+    {
+      "key": "sentence-butterfly",
+      "text": "The butterfly can fly."
+    },
+    {
+      "key": "sentence-bee",
+      "text": "The bee is on a flower."
+    },
+    {
+      "key": "sentence-bus",
+      "text": "I go by bus."
+    },
+    {
+      "key": "sentence-train",
+      "text": "The train is long."
+    },
+    {
+      "key": "sentence-car",
+      "text": "This is my car."
+    },
+    {
+      "key": "sentence-boat",
+      "text": "I see a boat."
+    },
+    {
+      "key": "sentence-spoon",
+      "text": "I use a spoon."
+    },
+    {
+      "key": "sentence-mix",
+      "text": "I can mix."
+    },
+    {
+      "key": "sentence-clean",
+      "text": "I clean my room."
+    },
+    {
+      "key": "sentence-cherry",
+      "text": "I like cherries."
+    },
+    {
+      "key": "sentence-blueberry",
+      "text": "This blueberry is small."
+    },
+    {
+      "key": "sentence-pineapple",
+      "text": "This is a pineapple."
+    },
+    {
+      "key": "sentence-mango",
+      "text": "I like mangoes."
+    },
+    {
+      "key": "sentence-kiwi",
+      "text": "The kiwi is green inside."
+    },
+    {
+      "key": "sentence-coconut",
+      "text": "This coconut is big."
+    },
+    {
+      "key": "sentence-avocado",
+      "text": "The avocado is green."
+    },
+    {
+      "key": "sentence-olive",
+      "text": "This olive is small."
+    },
+    {
+      "key": "sentence-melon",
+      "text": "The melon is sweet."
+    },
+    {
+      "key": "sentence-fruit",
+      "text": "I eat fruit every day."
+    },
+    {
+      "key": "sentence-vegetable",
+      "text": "A carrot is a vegetable."
+    },
+    {
+      "key": "sentence-salad",
+      "text": "I like this salad."
+    },
+    {
+      "key": "sentence-lettuce",
+      "text": "The lettuce is green."
+    },
+    {
+      "key": "sentence-cabbage",
+      "text": "We wash the cabbage."
+    },
+    {
+      "key": "sentence-eggplant",
+      "text": "The eggplant is purple."
+    },
+    {
+      "key": "sentence-onion",
+      "text": "We cut the onion."
+    },
+    {
+      "key": "sentence-garlic",
+      "text": "This is garlic."
+    },
+    {
+      "key": "sentence-bell pepper",
+      "text": "The bell pepper is green."
+    },
+    {
+      "key": "sentence-chili",
+      "text": "The chili is hot."
+    },
+    {
+      "key": "sentence-pea",
+      "text": "A pea is small and green."
+    },
+    {
+      "key": "sentence-beans",
+      "text": "I like beans."
+    },
+    {
+      "key": "sentence-mushroom",
+      "text": "We cook the mushroom."
+    },
+    {
+      "key": "sentence-sweet potato",
+      "text": "I like sweet potato."
+    },
+    {
+      "key": "sentence-ginger",
+      "text": "This is ginger."
+    },
+    {
+      "key": "sentence-peanut",
+      "text": "This is a peanut."
+    },
+    {
+      "key": "sentence-chestnut",
+      "text": "This chestnut is brown."
+    },
+    {
+      "key": "sentence-nuts",
+      "text": "These are nuts."
+    },
+    {
+      "key": "sentence-seed",
+      "text": "A plant grows from a seed."
+    },
+    {
+      "key": "sentence-wheat",
+      "text": "Bread can be made from wheat."
+    },
+    {
+      "key": "sentence-grain",
+      "text": "This is a grain of wheat."
+    },
+    {
+      "key": "sentence-toast",
+      "text": "I eat toast for breakfast."
+    },
+    {
+      "key": "sentence-sandwich",
+      "text": "This is my sandwich."
+    },
+    {
+      "key": "sentence-bun",
+      "text": "This bun is soft."
+    },
+    {
+      "key": "sentence-bagel",
+      "text": "The bagel has a hole."
+    },
+    {
+      "key": "sentence-croissant",
+      "text": "I eat a croissant."
+    },
+    {
+      "key": "sentence-baguette",
+      "text": "The baguette is long."
+    },
+    {
+      "key": "sentence-flatbread",
+      "text": "We share some flatbread."
+    },
+    {
+      "key": "sentence-pancake",
+      "text": "I like pancakes."
+    },
+    {
+      "key": "sentence-waffle",
+      "text": "This waffle is warm."
+    },
+    {
+      "key": "sentence-pretzel",
+      "text": "This is a pretzel."
+    },
+    {
+      "key": "sentence-cracker",
+      "text": "This cracker is crisp."
+    },
+    {
+      "key": "sentence-biscuit",
+      "text": "May I have a biscuit?"
+    },
+    {
+      "key": "sentence-pie",
+      "text": "We share an apple pie."
+    },
+    {
+      "key": "sentence-cupcake",
+      "text": "The cupcake is small."
+    },
+    {
+      "key": "sentence-doughnut",
+      "text": "This doughnut is round."
+    },
+    {
+      "key": "sentence-pudding",
+      "text": "I like pudding."
+    },
+    {
+      "key": "sentence-ice cream",
+      "text": "The ice cream is cold."
+    },
+    {
+      "key": "sentence-chocolate",
+      "text": "We share some chocolate."
+    },
+    {
+      "key": "sentence-candy",
+      "text": "This candy is small."
+    },
+    {
+      "key": "sentence-lollipop",
+      "text": "The lollipop is round."
+    },
+    {
+      "key": "sentence-honey",
+      "text": "Bees make honey."
+    },
+    {
+      "key": "sentence-butter",
+      "text": "We put butter on bread."
+    },
+    {
+      "key": "sentence-salt",
+      "text": "We use a little salt."
+    },
+    {
+      "key": "sentence-juice",
+      "text": "May I have some juice?"
+    },
+    {
+      "key": "sentence-orange juice",
+      "text": "I drink orange juice."
+    },
+    {
+      "key": "sentence-apple juice",
+      "text": "This is apple juice."
+    },
+    {
+      "key": "sentence-lemonade",
+      "text": "The lemonade is cold."
+    },
+    {
+      "key": "sentence-smoothie",
+      "text": "We make a banana smoothie."
+    },
+    {
+      "key": "sentence-tea",
+      "text": "The tea is hot."
+    },
+    {
+      "key": "sentence-hot chocolate",
+      "text": "My hot chocolate is warm."
+    },
+    {
+      "key": "sentence-cocoa",
+      "text": "This cup has cocoa in it."
+    },
+    {
+      "key": "sentence-ice",
+      "text": "The ice is cold."
+    },
+    {
+      "key": "sentence-drink",
+      "text": "This is my drink."
+    },
+    {
+      "key": "sentence-soup",
+      "text": "The soup is warm."
+    },
+    {
+      "key": "sentence-noodles",
+      "text": "I eat noodles with a fork."
+    },
+    {
+      "key": "sentence-pasta",
+      "text": "I like pasta."
+    },
+    {
+      "key": "sentence-spaghetti",
+      "text": "The spaghetti is long."
+    },
+    {
+      "key": "sentence-dumpling",
+      "text": "I eat a dumpling."
+    },
+    {
+      "key": "sentence-sushi",
+      "text": "This sushi has rice in it."
+    },
+    {
+      "key": "sentence-rice ball",
+      "text": "This is a rice ball."
+    },
+    {
+      "key": "sentence-shrimp",
+      "text": "This shrimp is cooked."
+    },
+    {
+      "key": "sentence-meat",
+      "text": "We cook the meat."
+    },
+    {
+      "key": "sentence-beef",
+      "text": "This is beef."
+    },
+    {
+      "key": "sentence-pork",
+      "text": "We cook pork for dinner."
+    },
+    {
+      "key": "sentence-steak",
+      "text": "This steak is on a plate."
+    },
+    {
+      "key": "sentence-ham",
+      "text": "There is ham in my sandwich."
+    },
+    {
+      "key": "sentence-bacon",
+      "text": "This is a slice of bacon."
+    },
+    {
+      "key": "sentence-sausage",
+      "text": "This is a sausage."
+    },
+    {
+      "key": "sentence-hot dog",
+      "text": "We share a hot dog."
+    },
+    {
+      "key": "sentence-hamburger",
+      "text": "This is my hamburger."
+    },
+    {
+      "key": "sentence-fries",
+      "text": "These fries are warm."
+    },
+    {
+      "key": "sentence-popcorn",
+      "text": "We share some popcorn."
+    },
+    {
+      "key": "sentence-taco",
+      "text": "This taco has vegetables."
+    },
+    {
+      "key": "sentence-wrap",
+      "text": "My wrap has chicken in it."
+    },
+    {
+      "key": "sentence-omelet",
+      "text": "We make an omelet."
+    },
+    {
+      "key": "sentence-fried egg",
+      "text": "This is a fried egg."
+    },
+    {
+      "key": "sentence-boiled egg",
+      "text": "I peel a boiled egg."
+    },
+    {
+      "key": "sentence-breakfast",
+      "text": "I eat breakfast in the morning."
+    },
+    {
+      "key": "sentence-lunch",
+      "text": "This is my lunch."
+    },
+    {
+      "key": "sentence-dinner",
+      "text": "We eat dinner together."
+    },
+    {
+      "key": "sentence-snack",
+      "text": "I have a small snack."
+    },
+    {
+      "key": "sentence-meal",
+      "text": "We enjoy our meal."
+    },
+    {
+      "key": "sentence-dessert",
+      "text": "We share a dessert."
+    },
+    {
+      "key": "sentence-picnic",
+      "text": "We have a picnic outside."
+    },
+    {
+      "key": "sentence-slice",
+      "text": "I have a slice of pizza."
+    },
+    {
+      "key": "sentence-kitten",
+      "text": "The kitten is small."
+    },
+    {
+      "key": "sentence-puppy",
+      "text": "The puppy can play."
+    },
+    {
+      "key": "sentence-pet",
+      "text": "My dog is my pet."
+    },
+    {
+      "key": "sentence-hamster",
+      "text": "The hamster is small."
+    },
+    {
+      "key": "sentence-mouse",
+      "text": "The mouse has a long tail."
+    },
+    {
+      "key": "sentence-rat",
+      "text": "I see a rat."
+    },
+    {
+      "key": "sentence-hedgehog",
+      "text": "The hedgehog has little spines."
+    },
+    {
+      "key": "sentence-squirrel",
+      "text": "The squirrel climbs a tree."
+    },
+    {
+      "key": "sentence-chipmunk",
+      "text": "The chipmunk has stripes."
+    },
+    {
+      "key": "sentence-fox",
+      "text": "The fox has a bushy tail."
+    },
+    {
+      "key": "sentence-wolf",
+      "text": "The wolf can howl."
+    },
+    {
+      "key": "sentence-deer",
+      "text": "The deer eats grass."
+    },
+    {
+      "key": "sentence-moose",
+      "text": "The moose is very big."
+    },
+    {
+      "key": "sentence-reindeer",
+      "text": "A reindeer has antlers."
+    },
+    {
+      "key": "sentence-giraffe",
+      "text": "The giraffe has a long neck."
+    },
+    {
+      "key": "sentence-hippopotamus",
+      "text": "The hippopotamus likes water."
+    },
+    {
+      "key": "sentence-rhino",
+      "text": "The rhino has a horn."
+    },
+    {
+      "key": "sentence-camel",
+      "text": "The camel walks on sand."
+    },
+    {
+      "key": "sentence-llama",
+      "text": "The llama has soft wool."
+    },
+    {
+      "key": "sentence-kangaroo",
+      "text": "The kangaroo can hop."
+    },
+    {
+      "key": "sentence-koala",
+      "text": "The koala sits in a tree."
+    },
+    {
+      "key": "sentence-sloth",
+      "text": "The sloth moves slowly."
+    },
+    {
+      "key": "sentence-otter",
+      "text": "The otter can swim."
+    },
+    {
+      "key": "sentence-beaver",
+      "text": "The beaver has a flat tail."
+    },
+    {
+      "key": "sentence-raccoon",
+      "text": "The raccoon has a striped tail."
+    },
+    {
+      "key": "sentence-badger",
+      "text": "The badger digs in the ground."
+    },
+    {
+      "key": "sentence-skunk",
+      "text": "The skunk has a white stripe."
+    },
+    {
+      "key": "sentence-bat",
+      "text": "The bat flies at night."
+    },
+    {
+      "key": "sentence-gorilla",
+      "text": "The gorilla is strong."
+    },
+    {
+      "key": "sentence-orangutan",
+      "text": "The orangutan has long arms."
+    },
+    {
+      "key": "sentence-leopard",
+      "text": "The leopard has spots."
+    },
+    {
+      "key": "sentence-buffalo",
+      "text": "The buffalo stands in the water."
+    },
+    {
+      "key": "sentence-bison",
+      "text": "The bison has thick fur."
+    },
+    {
+      "key": "sentence-donkey",
+      "text": "The donkey has long ears."
+    },
+    {
+      "key": "sentence-pony",
+      "text": "The pony is small."
+    },
+    {
+      "key": "sentence-lamb",
+      "text": "The lamb stays near its mother."
+    },
+    {
+      "key": "sentence-piglet",
+      "text": "The piglet is small."
+    },
+    {
+      "key": "sentence-rooster",
+      "text": "The rooster makes a loud call."
+    },
+    {
+      "key": "sentence-hen",
+      "text": "The hen lays an egg."
+    },
+    {
+      "key": "sentence-chick",
+      "text": "The chick is yellow."
+    },
+    {
+      "key": "sentence-duckling",
+      "text": "The duckling follows its mother."
+    },
+    {
+      "key": "sentence-goose",
+      "text": "The goose has a long neck."
+    },
+    {
+      "key": "sentence-turkey",
+      "text": "The turkey has a big tail."
+    },
+    {
+      "key": "sentence-swan",
+      "text": "The swan swims on the lake."
+    },
+    {
+      "key": "sentence-penguin",
+      "text": "The penguin can swim."
+    },
+    {
+      "key": "sentence-parrot",
+      "text": "The parrot is colorful."
+    },
+    {
+      "key": "sentence-peacock",
+      "text": "The peacock has a colorful tail."
+    },
+    {
+      "key": "sentence-flamingo",
+      "text": "The flamingo has long legs."
+    },
+    {
+      "key": "sentence-dove",
+      "text": "The dove can fly."
+    },
+    {
+      "key": "sentence-eagle",
+      "text": "The eagle flies high."
+    },
+    {
+      "key": "sentence-owl",
+      "text": "The owl has big eyes."
+    },
+    {
+      "key": "sentence-crow",
+      "text": "The crow is black."
+    },
+    {
+      "key": "sentence-blackbird",
+      "text": "The blackbird can sing."
+    },
+    {
+      "key": "sentence-feather",
+      "text": "A bird has feathers."
+    },
+    {
+      "key": "sentence-wing",
+      "text": "A bird has a wing on each side."
+    },
+    {
+      "key": "sentence-beak",
+      "text": "The bird has a small beak."
+    },
+    {
+      "key": "sentence-claw",
+      "text": "The cat has sharp claws."
+    },
+    {
+      "key": "sentence-paw",
+      "text": "The dog lifts one paw."
+    },
+    {
+      "key": "sentence-tail",
+      "text": "The cat has a long tail."
+    },
+    {
+      "key": "sentence-fur",
+      "text": "The bear has thick fur."
+    },
+    {
+      "key": "sentence-wool",
+      "text": "We get wool from sheep."
+    },
+    {
+      "key": "sentence-horn",
+      "text": "The goat has two horns."
+    },
+    {
+      "key": "sentence-antler",
+      "text": "A deer can have an antler on each side."
+    },
+    {
+      "key": "sentence-hoof",
+      "text": "A horse has a hoof on each foot."
+    },
+    {
+      "key": "sentence-whisker",
+      "text": "A cat has whiskers near its nose."
+    },
+    {
+      "key": "sentence-shell",
+      "text": "This shell is small."
+    },
+    {
+      "key": "sentence-snail",
+      "text": "The snail moves slowly."
+    },
+    {
+      "key": "sentence-worm",
+      "text": "The worm lives in the soil."
+    },
+    {
+      "key": "sentence-caterpillar",
+      "text": "The caterpillar eats a leaf."
+    },
+    {
+      "key": "sentence-bug",
+      "text": "I see a little bug."
+    },
+    {
+      "key": "sentence-ant",
+      "text": "The ant is very small."
+    },
+    {
+      "key": "sentence-ladybug",
+      "text": "The ladybug has spots."
+    },
+    {
+      "key": "sentence-beetle",
+      "text": "The beetle has a hard shell."
+    },
+    {
+      "key": "sentence-cricket",
+      "text": "The cricket can jump."
+    },
+    {
+      "key": "sentence-grasshopper",
+      "text": "The grasshopper has long back legs."
+    },
+    {
+      "key": "sentence-fly",
+      "text": "A fly is on the window."
+    },
+    {
+      "key": "sentence-mosquito",
+      "text": "A mosquito is a small insect."
+    },
+    {
+      "key": "sentence-spider",
+      "text": "The spider has eight legs."
+    },
+    {
+      "key": "sentence-spider web",
+      "text": "The spider makes a web."
+    },
+    {
+      "key": "sentence-lizard",
+      "text": "The lizard has a long tail."
+    },
+    {
+      "key": "sentence-snake",
+      "text": "The snake has no legs."
+    },
+    {
+      "key": "sentence-crocodile",
+      "text": "The crocodile has a long tail."
+    },
+    {
+      "key": "sentence-alligator",
+      "text": "The alligator lives near water."
+    },
+    {
+      "key": "sentence-tortoise",
+      "text": "The tortoise walks on land."
+    },
+    {
+      "key": "sentence-dinosaur",
+      "text": "This dinosaur has a long neck."
+    },
+    {
+      "key": "sentence-dragon",
+      "text": "The dragon is in a story."
+    },
+    {
+      "key": "sentence-unicorn",
+      "text": "The unicorn is in a story."
+    },
+    {
+      "key": "sentence-whale",
+      "text": "The whale lives in the sea."
+    },
+    {
+      "key": "sentence-dolphin",
+      "text": "The dolphin can jump."
+    },
+    {
+      "key": "sentence-seal",
+      "text": "The seal can swim."
+    },
+    {
+      "key": "sentence-shark",
+      "text": "The shark swims in the sea."
+    },
+    {
+      "key": "sentence-octopus",
+      "text": "The octopus has eight arms."
+    },
+    {
+      "key": "sentence-squid",
+      "text": "The squid lives in the sea."
+    },
+    {
+      "key": "sentence-jellyfish",
+      "text": "The jellyfish floats in the sea."
+    },
+    {
+      "key": "sentence-crab",
+      "text": "The crab walks sideways."
+    },
+    {
+      "key": "sentence-lobster",
+      "text": "The lobster has big claws."
+    },
+    {
+      "key": "sentence-oyster",
+      "text": "The oyster has a shell."
+    },
+    {
+      "key": "sentence-coral",
+      "text": "Coral grows in the sea."
+    },
+    {
+      "key": "sentence-tropical fish",
+      "text": "This tropical fish is colorful."
+    },
+    {
+      "key": "sentence-pufferfish",
+      "text": "The pufferfish can puff up."
+    },
+    {
+      "key": "sentence-animal",
+      "text": "An elephant is an animal."
+    },
+    {
+      "key": "sentence-wild animal",
+      "text": "A deer is a wild animal."
+    },
+    {
+      "key": "sentence-farm animal",
+      "text": "A cow is a farm animal."
+    },
+    {
+      "key": "sentence-sea animal",
+      "text": "A dolphin is a sea animal."
+    },
+    {
+      "key": "sentence-footprint",
+      "text": "I see an animal footprint."
+    },
+    {
+      "key": "sentence-school",
+      "text": "I go to school."
+    },
+    {
+      "key": "sentence-classroom",
+      "text": "We learn in the classroom."
+    },
+    {
+      "key": "sentence-teacher",
+      "text": "My teacher reads a story."
+    },
+    {
+      "key": "sentence-student",
+      "text": "The student has a book."
+    },
+    {
+      "key": "sentence-pupil",
+      "text": "The pupil goes to school."
+    },
+    {
+      "key": "sentence-classmate",
+      "text": "My classmate sits near me."
+    },
+    {
+      "key": "sentence-backpack",
+      "text": "My book is in my backpack."
+    },
+    {
+      "key": "sentence-schoolbag",
+      "text": "I carry my schoolbag."
+    },
+    {
+      "key": "sentence-pencil",
+      "text": "I draw with a pencil."
+    },
+    {
+      "key": "sentence-pen",
+      "text": "I write with a pen."
+    },
+    {
+      "key": "sentence-crayon",
+      "text": "I color with a crayon."
+    },
+    {
+      "key": "sentence-paintbrush",
+      "text": "I use a paintbrush."
+    },
+    {
+      "key": "sentence-paint",
+      "text": "We use paint to make pictures."
+    },
+    {
+      "key": "sentence-ruler",
+      "text": "I draw a line with a ruler."
+    },
+    {
+      "key": "sentence-triangle ruler",
+      "text": "This is a triangle ruler."
+    },
+    {
+      "key": "sentence-scissors",
+      "text": "We use scissors carefully."
+    },
+    {
+      "key": "sentence-paper",
+      "text": "I draw on paper."
+    },
+    {
+      "key": "sentence-notebook",
+      "text": "I write in my notebook."
+    },
+    {
+      "key": "sentence-textbook",
+      "text": "I open my textbook."
+    },
+    {
+      "key": "sentence-storybook",
+      "text": "We read a storybook."
+    },
+    {
+      "key": "sentence-dictionary",
+      "text": "We find a word in the dictionary."
+    },
+    {
+      "key": "sentence-bookmark",
+      "text": "I put a bookmark in my book."
+    },
+    {
+      "key": "sentence-page",
+      "text": "I turn the page."
+    },
+    {
+      "key": "sentence-cover",
+      "text": "The book has a red cover."
+    },
+    {
+      "key": "sentence-label",
+      "text": "My name is on the label."
+    },
+    {
+      "key": "sentence-tag",
+      "text": "This bag has a tag."
+    },
+    {
+      "key": "sentence-paper clip",
+      "text": "The paper clip holds two pages."
+    },
+    {
+      "key": "sentence-clip",
+      "text": "I use a clip for the paper."
+    },
+    {
+      "key": "sentence-clipboard",
+      "text": "The paper is on a clipboard."
+    },
+    {
+      "key": "sentence-folder",
+      "text": "I put my paper in a folder."
+    },
+    {
+      "key": "sentence-file",
+      "text": "This file has my work in it."
+    },
+    {
+      "key": "sentence-calendar",
+      "text": "We look at the calendar."
+    },
+    {
+      "key": "sentence-chart",
+      "text": "This chart has colored bars."
+    },
+    {
+      "key": "sentence-graph",
+      "text": "We look at a graph."
+    },
+    {
+      "key": "sentence-number",
+      "text": "I can read this number."
+    },
+    {
+      "key": "sentence-letter",
+      "text": "A is a letter."
+    },
+    {
+      "key": "sentence-alphabet",
+      "text": "We sing the alphabet song."
+    },
+    {
+      "key": "sentence-word",
+      "text": "Cat is a word."
+    },
+    {
+      "key": "sentence-sentence",
+      "text": "I can read a short sentence."
+    },
+    {
+      "key": "sentence-story",
+      "text": "Please tell me a story."
+    },
+    {
+      "key": "sentence-note",
+      "text": "I write a note for you."
+    },
+    {
+      "key": "sentence-list",
+      "text": "We make a shopping list."
+    },
+    {
+      "key": "sentence-homework",
+      "text": "I put my homework in my bag."
+    },
+    {
+      "key": "sentence-question",
+      "text": "May I ask a question?"
+    },
+    {
+      "key": "sentence-answer",
+      "text": "I know the answer."
+    },
+    {
+      "key": "sentence-check mark",
+      "text": "I draw a check mark."
+    },
+    {
+      "key": "sentence-cross mark",
+      "text": "This is a cross mark."
+    },
+    {
+      "key": "sentence-plus",
+      "text": "Two plus one is three."
+    },
+    {
+      "key": "sentence-minus",
+      "text": "Three minus one is two."
+    },
+    {
+      "key": "sentence-equal",
+      "text": "Two plus one is equal to three."
+    },
+    {
+      "key": "sentence-magnifying glass",
+      "text": "We look through a magnifying glass."
+    },
+    {
+      "key": "sentence-microscope",
+      "text": "We look through a microscope."
+    },
+    {
+      "key": "sentence-telescope",
+      "text": "We look at the moon with a telescope."
+    },
+    {
+      "key": "sentence-test tube",
+      "text": "The test tube is in a rack."
+    },
+    {
+      "key": "sentence-magnet",
+      "text": "The magnet picks up a paper clip."
+    },
+    {
+      "key": "sentence-globe",
+      "text": "We look at the globe."
+    },
+    {
+      "key": "sentence-map",
+      "text": "We find our town on a map."
+    },
+    {
+      "key": "sentence-compass",
+      "text": "The compass points north."
+    },
+    {
+      "key": "sentence-school bus",
+      "text": "The school bus stops here."
+    },
+    {
+      "key": "sentence-bell",
+      "text": "I hear the bell."
+    },
+    {
+      "key": "sentence-lunch box",
+      "text": "My lunch is in the lunch box."
+    },
+    {
+      "key": "sentence-art",
+      "text": "We make pictures in art class."
+    },
+    {
+      "key": "sentence-science",
+      "text": "We learn about plants in science."
+    },
+    {
+      "key": "sentence-math",
+      "text": "We count in math class."
+    },
+    {
+      "key": "sentence-reading",
+      "text": "Reading is fun."
+    },
+    {
+      "key": "sentence-writing",
+      "text": "I practice writing my name."
+    },
+    {
+      "key": "sentence-drawing",
+      "text": "I like drawing animals."
+    },
+    {
+      "key": "sentence-music",
+      "text": "We listen to music."
+    },
+    {
+      "key": "sentence-lesson",
+      "text": "Our lesson starts now."
+    },
+    {
+      "key": "sentence-break time",
+      "text": "We play at break time."
+    },
+    {
+      "key": "sentence-house",
+      "text": "This is my house."
+    },
+    {
+      "key": "sentence-home",
+      "text": "I am happy at home."
+    },
+    {
+      "key": "sentence-garden",
+      "text": "We play in the garden."
+    },
+    {
+      "key": "sentence-door",
+      "text": "Please close the door."
+    },
+    {
+      "key": "sentence-window",
+      "text": "I look out of the window."
+    },
+    {
+      "key": "sentence-mirror",
+      "text": "I look in the mirror."
+    },
+    {
+      "key": "sentence-sofa",
+      "text": "We sit on the sofa."
+    },
+    {
+      "key": "sentence-couch",
+      "text": "The couch is soft."
+    },
+    {
+      "key": "sentence-armchair",
+      "text": "I sit in the armchair."
+    },
+    {
+      "key": "sentence-seat",
+      "text": "This is my seat."
+    },
+    {
+      "key": "sentence-lamp",
+      "text": "We turn on the lamp."
+    },
+    {
+      "key": "sentence-light bulb",
+      "text": "The light bulb is bright."
+    },
+    {
+      "key": "sentence-candle",
+      "text": "An adult lights the candle."
+    },
+    {
+      "key": "sentence-flashlight",
+      "text": "I use a flashlight in the dark."
+    },
+    {
+      "key": "sentence-bedroom",
+      "text": "My bed is in my bedroom."
+    },
+    {
+      "key": "sentence-pillow",
+      "text": "My pillow is soft."
+    },
+    {
+      "key": "sentence-blanket",
+      "text": "I sleep under a blanket."
+    },
+    {
+      "key": "sentence-quilt",
+      "text": "My quilt keeps me warm."
+    },
+    {
+      "key": "sentence-bathroom",
+      "text": "I wash in the bathroom."
+    },
+    {
+      "key": "sentence-bathtub",
+      "text": "The bathtub has water in it."
+    },
+    {
+      "key": "sentence-bath",
+      "text": "I take a warm bath."
+    },
+    {
+      "key": "sentence-shower",
+      "text": "I take a shower."
+    },
+    {
+      "key": "sentence-toilet",
+      "text": "I wash my hands after using the toilet."
+    },
+    {
+      "key": "sentence-toilet paper",
+      "text": "This is a roll of toilet paper."
+    },
+    {
+      "key": "sentence-soap",
+      "text": "I wash my hands with soap."
+    },
+    {
+      "key": "sentence-sponge",
+      "text": "We clean with a sponge."
+    },
+    {
+      "key": "sentence-toothbrush",
+      "text": "I use my toothbrush every day."
+    },
+    {
+      "key": "sentence-razor",
+      "text": "This razor is for grown-ups."
+    },
+    {
+      "key": "sentence-comb",
+      "text": "I use a comb for my hair."
+    },
+    {
+      "key": "sentence-brush",
+      "text": "I clean with a brush."
+    },
+    {
+      "key": "sentence-basket",
+      "text": "I put toys in the basket."
+    },
+    {
+      "key": "sentence-bucket",
+      "text": "We put water in the bucket."
+    },
+    {
+      "key": "sentence-broom",
+      "text": "I sweep with a broom."
+    },
+    {
+      "key": "sentence-bin",
+      "text": "I put paper in the bin."
+    },
+    {
+      "key": "sentence-trash can",
+      "text": "The trash can is by the door."
+    },
+    {
+      "key": "sentence-tissue",
+      "text": "May I have a tissue?"
+    },
+    {
+      "key": "sentence-laundry",
+      "text": "The laundry is in a basket."
+    },
+    {
+      "key": "sentence-kitchen",
+      "text": "We cook in the kitchen."
+    },
+    {
+      "key": "sentence-pot",
+      "text": "The soup is in the pot."
+    },
+    {
+      "key": "sentence-pan",
+      "text": "An adult cooks with the pan."
+    },
+    {
+      "key": "sentence-bowl",
+      "text": "I eat rice from a bowl."
+    },
+    {
+      "key": "sentence-plate",
+      "text": "My food is on a plate."
+    },
+    {
+      "key": "sentence-dish",
+      "text": "We wash the dish."
+    },
+    {
+      "key": "sentence-cup",
+      "text": "This is my cup."
+    },
+    {
+      "key": "sentence-mug",
+      "text": "The mug has a handle."
+    },
+    {
+      "key": "sentence-glass",
+      "text": "There is milk in the glass."
+    },
+    {
+      "key": "sentence-bottle",
+      "text": "This bottle has milk in it."
+    },
+    {
+      "key": "sentence-jar",
+      "text": "The jar has a lid."
+    },
+    {
+      "key": "sentence-lid",
+      "text": "I put the lid on the jar."
+    },
+    {
+      "key": "sentence-fork",
+      "text": "I eat with a fork."
+    },
+    {
+      "key": "sentence-knife",
+      "text": "An adult uses the knife."
+    },
+    {
+      "key": "sentence-chopsticks",
+      "text": "I try using chopsticks."
+    },
+    {
+      "key": "sentence-teapot",
+      "text": "The teapot is on the table."
+    },
+    {
+      "key": "sentence-straw",
+      "text": "I drink through a straw."
+    },
+    {
+      "key": "sentence-safety pin",
+      "text": "An adult closes the safety pin."
+    },
+    {
+      "key": "sentence-thread",
+      "text": "The thread is on a spool."
+    },
+    {
+      "key": "sentence-needle",
+      "text": "An adult sews with a needle."
+    },
+    {
+      "key": "sentence-yarn",
+      "text": "We use yarn for our craft."
+    },
+    {
+      "key": "sentence-knot",
+      "text": "I can tie a knot."
+    },
+    {
+      "key": "sentence-rope",
+      "text": "This rope has a knot."
+    },
+    {
+      "key": "sentence-ladder",
+      "text": "An adult climbs the ladder."
+    },
+    {
+      "key": "sentence-tool",
+      "text": "A hammer is a tool."
+    },
+    {
+      "key": "sentence-hammer",
+      "text": "An adult uses the hammer."
+    },
+    {
+      "key": "sentence-screwdriver",
+      "text": "This screwdriver is a tool."
+    },
+    {
+      "key": "sentence-wrench",
+      "text": "This wrench is a tool."
+    },
+    {
+      "key": "sentence-screw",
+      "text": "An adult turns the screw."
+    },
+    {
+      "key": "sentence-nut",
+      "text": "The nut fits on the bolt."
+    },
+    {
+      "key": "sentence-bolt",
+      "text": "This bolt is made of metal."
+    },
+    {
+      "key": "sentence-saw",
+      "text": "An adult cuts wood with a saw."
+    },
+    {
+      "key": "sentence-axe",
+      "text": "An adult uses the axe."
+    },
+    {
+      "key": "sentence-hook",
+      "text": "The bag hangs on a hook."
+    },
+    {
+      "key": "sentence-chain",
+      "text": "This chain is made of metal."
+    },
+    {
+      "key": "sentence-lock",
+      "text": "The lock keeps the door closed."
+    },
+    {
+      "key": "sentence-key",
+      "text": "I give the key to Dad."
+    },
+    {
+      "key": "sentence-doorknob",
+      "text": "I turn the doorknob."
+    },
+    {
+      "key": "sentence-handle",
+      "text": "The cup has a handle."
+    },
+    {
+      "key": "sentence-battery",
+      "text": "An adult changes the battery."
+    },
+    {
+      "key": "sentence-plug",
+      "text": "An adult uses the plug."
+    },
+    {
+      "key": "sentence-electricity",
+      "text": "Electricity makes the light work."
+    },
+    {
+      "key": "sentence-television",
+      "text": "We watch a show on television."
+    },
+    {
+      "key": "sentence-radio",
+      "text": "Music comes from the radio."
+    },
+    {
+      "key": "sentence-telephone",
+      "text": "The telephone is ringing."
+    },
+    {
+      "key": "sentence-phone",
+      "text": "I talk to Grandma on the phone."
+    },
+    {
+      "key": "sentence-computer",
+      "text": "We use a computer to draw."
+    },
+    {
+      "key": "sentence-laptop",
+      "text": "This laptop can close."
+    },
+    {
+      "key": "sentence-keyboard",
+      "text": "I type on the keyboard."
+    },
+    {
+      "key": "sentence-computer mouse",
+      "text": "I click the computer mouse."
+    },
+    {
+      "key": "sentence-printer",
+      "text": "The printer prints a picture."
+    },
+    {
+      "key": "sentence-screen",
+      "text": "I see a picture on the screen."
+    },
+    {
+      "key": "sentence-monitor",
+      "text": "The monitor is on a desk."
+    },
+    {
+      "key": "sentence-camera",
+      "text": "We take a photo with the camera."
+    },
+    {
+      "key": "sentence-video camera",
+      "text": "We use a video camera."
+    },
+    {
+      "key": "sentence-photo",
+      "text": "This photo shows my family."
+    },
+    {
+      "key": "sentence-picture",
+      "text": "I like this picture."
+    },
+    {
+      "key": "sentence-frame",
+      "text": "The picture is in a frame."
+    },
+    {
+      "key": "sentence-clock",
+      "text": "The clock shows the time."
+    },
+    {
+      "key": "sentence-alarm clock",
+      "text": "My alarm clock rings."
+    },
+    {
+      "key": "sentence-watch",
+      "text": "Dad wears a watch."
+    },
+    {
+      "key": "sentence-timer",
+      "text": "The timer rings when time is up."
+    },
+    {
+      "key": "sentence-hourglass",
+      "text": "Sand falls in the hourglass."
+    },
+    {
+      "key": "sentence-fan",
+      "text": "I wave the fan."
+    },
+    {
+      "key": "sentence-air",
+      "text": "We breathe air."
+    },
+    {
+      "key": "sentence-brick",
+      "text": "The wall is made of bricks."
+    },
+    {
+      "key": "sentence-wood",
+      "text": "This piece of wood is brown."
+    },
+    {
+      "key": "sentence-stone",
+      "text": "The stone is hard."
+    },
+    {
+      "key": "sentence-rock",
+      "text": "I see a big rock."
+    },
+    {
+      "key": "sentence-string",
+      "text": "We tie the string."
+    },
+    {
+      "key": "sentence-envelope",
+      "text": "I put a card in an envelope."
+    },
+    {
+      "key": "sentence-mailbox",
+      "text": "The letter is in the mailbox."
+    },
+    {
+      "key": "sentence-package",
+      "text": "The package is in a box."
+    },
+    {
+      "key": "sentence-parcel",
+      "text": "A parcel came today."
+    },
+    {
+      "key": "sentence-shopping bag",
+      "text": "We put fruit in a shopping bag."
+    },
+    {
+      "key": "sentence-shopping cart",
+      "text": "We push the shopping cart."
+    },
+    {
+      "key": "sentence-money",
+      "text": "We use money to buy food."
+    },
+    {
+      "key": "sentence-coin",
+      "text": "This coin is round."
+    },
+    {
+      "key": "sentence-wallet",
+      "text": "The money is in a wallet."
+    },
+    {
+      "key": "sentence-purse",
+      "text": "Mom puts a coin in her purse."
+    },
+    {
+      "key": "sentence-receipt",
+      "text": "We get a receipt at the shop."
+    },
+    {
+      "key": "sentence-ticket",
+      "text": "This is my train ticket."
+    },
+    {
+      "key": "sentence-stamp",
+      "text": "A stamp goes on an envelope."
+    },
+    {
+      "key": "sentence-recycling",
+      "text": "We put paper in the recycling bin."
+    },
+    {
+      "key": "sentence-clothes",
+      "text": "I put on clean clothes."
+    },
+    {
+      "key": "sentence-shirt",
+      "text": "This is my shirt."
+    },
+    {
+      "key": "sentence-t-shirt",
+      "text": "I wear a blue T-shirt."
+    },
+    {
+      "key": "sentence-jeans",
+      "text": "These are my jeans."
+    },
+    {
+      "key": "sentence-pants",
+      "text": "I put on my pants."
+    },
+    {
+      "key": "sentence-trousers",
+      "text": "My trousers are blue."
+    },
+    {
+      "key": "sentence-shorts",
+      "text": "I wear shorts in summer."
+    },
+    {
+      "key": "sentence-dress",
+      "text": "This dress is pretty."
+    },
+    {
+      "key": "sentence-coat",
+      "text": "I put on my coat."
+    },
+    {
+      "key": "sentence-jacket",
+      "text": "My jacket keeps me warm."
+    },
+    {
+      "key": "sentence-vest",
+      "text": "The vest is bright yellow."
+    },
+    {
+      "key": "sentence-scarf",
+      "text": "My scarf keeps me warm."
+    },
+    {
+      "key": "sentence-glove",
+      "text": "I put a glove on my hand."
+    },
+    {
+      "key": "sentence-mittens",
+      "text": "My mittens keep my hands warm."
+    },
+    {
+      "key": "sentence-socks",
+      "text": "I wear socks on my feet."
+    },
+    {
+      "key": "sentence-shoe",
+      "text": "This shoe is for running."
+    },
+    {
+      "key": "sentence-shoes",
+      "text": "I put on my shoes."
+    },
+    {
+      "key": "sentence-sneaker",
+      "text": "My sneaker is comfortable."
+    },
+    {
+      "key": "sentence-boot",
+      "text": "This boot keeps my foot dry."
+    },
+    {
+      "key": "sentence-boots",
+      "text": "I wear boots in the rain."
+    },
+    {
+      "key": "sentence-sandal",
+      "text": "I wear a sandal in summer."
+    },
+    {
+      "key": "sentence-flip-flops",
+      "text": "I wear flip-flops at the beach."
+    },
+    {
+      "key": "sentence-cap",
+      "text": "I wear a cap outside."
+    },
+    {
+      "key": "sentence-sun hat",
+      "text": "My sun hat keeps off the sun."
+    },
+    {
+      "key": "sentence-helmet",
+      "text": "I wear a helmet on my bike."
+    },
+    {
+      "key": "sentence-crown",
+      "text": "The king wears a crown."
+    },
+    {
+      "key": "sentence-glasses",
+      "text": "I wear glasses to see clearly."
+    },
+    {
+      "key": "sentence-sunglasses",
+      "text": "I wear sunglasses in the sun."
+    },
+    {
+      "key": "sentence-goggles",
+      "text": "We wear goggles to protect our eyes."
+    },
+    {
+      "key": "sentence-tie",
+      "text": "Dad wears a tie."
+    },
+    {
+      "key": "sentence-ribbon",
+      "text": "I tie a ribbon on the box."
+    },
+    {
+      "key": "sentence-bow",
+      "text": "The ribbon makes a bow."
+    },
+    {
+      "key": "sentence-handbag",
+      "text": "This handbag has a handle."
+    },
+    {
+      "key": "sentence-bag",
+      "text": "I put my book in the bag."
+    },
+    {
+      "key": "sentence-suitcase",
+      "text": "We pack a suitcase for our trip."
+    },
+    {
+      "key": "sentence-umbrella",
+      "text": "I use an umbrella in the rain."
+    },
+    {
+      "key": "sentence-swimsuit",
+      "text": "I wear a swimsuit in the pool."
+    },
+    {
+      "key": "sentence-swimming trunks",
+      "text": "I wear swimming trunks in the pool."
+    },
+    {
+      "key": "sentence-ring",
+      "text": "The ring is round."
+    },
+    {
+      "key": "sentence-necklace",
+      "text": "This necklace has beads."
+    },
+    {
+      "key": "sentence-bead",
+      "text": "The necklace has a red bead."
+    },
+    {
+      "key": "sentence-gem",
+      "text": "The gem is shiny."
+    },
+    {
+      "key": "sentence-diamond",
+      "text": "The diamond sparkles."
+    },
+    {
+      "key": "sentence-button",
+      "text": "My shirt has a button."
+    },
+    {
+      "key": "sentence-pocket",
+      "text": "My pants have a pocket."
+    },
+    {
+      "key": "sentence-shoelace",
+      "text": "I can tie my shoelace."
+    },
+    {
+      "key": "sentence-sleeve",
+      "text": "My arm goes in the sleeve."
+    },
+    {
+      "key": "sentence-collar",
+      "text": "The shirt has a collar."
+    },
+    {
+      "key": "sentence-uniform",
+      "text": "The firefighter wears a uniform."
+    },
+    {
+      "key": "sentence-costume",
+      "text": "I wear a costume for the play."
+    },
+    {
+      "key": "sentence-mask",
+      "text": "This mask has a happy face."
+    },
+    {
+      "key": "sentence-sky",
+      "text": "The sky is blue."
+    },
+    {
+      "key": "sentence-cloud",
+      "text": "A cloud is in the sky."
+    },
+    {
+      "key": "sentence-rain",
+      "text": "Rain falls from the clouds."
+    },
+    {
+      "key": "sentence-rainbow",
+      "text": "I see a rainbow after the rain."
+    },
+    {
+      "key": "sentence-snow",
+      "text": "Snow falls in winter."
+    },
+    {
+      "key": "sentence-snowflake",
+      "text": "A snowflake lands on my coat."
+    },
+    {
+      "key": "sentence-snowman",
+      "text": "We build a snowman."
+    },
+    {
+      "key": "sentence-snowball",
+      "text": "We make a snowball."
+    },
+    {
+      "key": "sentence-wind",
+      "text": "The wind moves the leaves."
+    },
+    {
+      "key": "sentence-breeze",
+      "text": "A gentle breeze moves my hair."
+    },
+    {
+      "key": "sentence-fog",
+      "text": "We walk slowly in the fog."
+    },
+    {
+      "key": "sentence-mist",
+      "text": "Mist covers the lake."
+    },
+    {
+      "key": "sentence-storm",
+      "text": "We stay inside during the storm."
+    },
+    {
+      "key": "sentence-thunder",
+      "text": "I hear thunder."
+    },
+    {
+      "key": "sentence-lightning",
+      "text": "Lightning flashes in the sky."
+    },
+    {
+      "key": "sentence-tornado",
+      "text": "A tornado is a spinning wind."
+    },
+    {
+      "key": "sentence-sunshine",
+      "text": "We enjoy the sunshine."
+    },
+    {
+      "key": "sentence-sunrise",
+      "text": "We see the sunrise in the morning."
+    },
+    {
+      "key": "sentence-sunset",
+      "text": "The sunset is orange."
+    },
+    {
+      "key": "sentence-star",
+      "text": "I see a star at night."
+    },
+    {
+      "key": "sentence-shooting star",
+      "text": "A shooting star crosses the sky."
+    },
+    {
+      "key": "sentence-comet",
+      "text": "A comet has a bright tail."
+    },
+    {
+      "key": "sentence-planet",
+      "text": "Earth is a planet."
+    },
+    {
+      "key": "sentence-earth",
+      "text": "We live on Earth."
+    },
+    {
+      "key": "sentence-world",
+      "text": "We share one world."
+    },
+    {
+      "key": "sentence-space",
+      "text": "Stars are far away in space."
+    },
+    {
+      "key": "sentence-galaxy",
+      "text": "A galaxy has many stars."
+    },
+    {
+      "key": "sentence-moonlight",
+      "text": "The moonlight shines at night."
+    },
+    {
+      "key": "sentence-crescent",
+      "text": "The moon looks like a crescent."
+    },
+    {
+      "key": "sentence-full moon",
+      "text": "The full moon is round."
+    },
+    {
+      "key": "sentence-mountain",
+      "text": "The mountain is high."
+    },
+    {
+      "key": "sentence-hill",
+      "text": "We walk up the hill."
+    },
+    {
+      "key": "sentence-volcano",
+      "text": "A volcano can send out hot lava."
+    },
+    {
+      "key": "sentence-lava",
+      "text": "Lava is very hot."
+    },
+    {
+      "key": "sentence-island",
+      "text": "Water is all around the island."
+    },
+    {
+      "key": "sentence-beach",
+      "text": "We play on the beach."
+    },
+    {
+      "key": "sentence-sand",
+      "text": "The sand feels soft."
+    },
+    {
+      "key": "sentence-sea",
+      "text": "The sea is blue."
+    },
+    {
+      "key": "sentence-ocean",
+      "text": "The ocean is very big."
+    },
+    {
+      "key": "sentence-wave",
+      "text": "A wave comes to the beach."
+    },
+    {
+      "key": "sentence-lake",
+      "text": "The lake is calm."
+    },
+    {
+      "key": "sentence-river",
+      "text": "The river flows past the trees."
+    },
+    {
+      "key": "sentence-stream",
+      "text": "We hear a little stream."
+    },
+    {
+      "key": "sentence-desert",
+      "text": "The desert has lots of sand."
+    },
+    {
+      "key": "sentence-forest",
+      "text": "Many trees grow in the forest."
+    },
+    {
+      "key": "sentence-woods",
+      "text": "We walk in the woods."
+    },
+    {
+      "key": "sentence-park",
+      "text": "We play in the park."
+    },
+    {
+      "key": "sentence-field",
+      "text": "The field is full of plants."
+    },
+    {
+      "key": "sentence-grass",
+      "text": "The grass is green."
+    },
+    {
+      "key": "sentence-plant",
+      "text": "A plant needs water and light."
+    },
+    {
+      "key": "sentence-seedling",
+      "text": "The seedling is small."
+    },
+    {
+      "key": "sentence-sprout",
+      "text": "A little sprout comes up."
+    },
+    {
+      "key": "sentence-root",
+      "text": "The root grows in the soil."
+    },
+    {
+      "key": "sentence-stem",
+      "text": "The flower has a green stem."
+    },
+    {
+      "key": "sentence-branch",
+      "text": "A bird sits on a branch."
+    },
+    {
+      "key": "sentence-trunk",
+      "text": "The tree has a strong trunk."
+    },
+    {
+      "key": "sentence-bark",
+      "text": "Bark covers the tree trunk."
+    },
+    {
+      "key": "sentence-twig",
+      "text": "I see a small twig."
+    },
+    {
+      "key": "sentence-log",
+      "text": "This log came from a tree."
+    },
+    {
+      "key": "sentence-pine tree",
+      "text": "The pine tree is green."
+    },
+    {
+      "key": "sentence-palm tree",
+      "text": "The palm tree grows near the beach."
+    },
+    {
+      "key": "sentence-cactus",
+      "text": "We look at the cactus without touching it."
+    },
+    {
+      "key": "sentence-bamboo",
+      "text": "The panda eats bamboo."
+    },
+    {
+      "key": "sentence-clover",
+      "text": "The clover has green leaves."
+    },
+    {
+      "key": "sentence-herb",
+      "text": "This herb smells nice."
+    },
+    {
+      "key": "sentence-rose",
+      "text": "The rose is red."
+    },
+    {
+      "key": "sentence-tulip",
+      "text": "This tulip is pink."
+    },
+    {
+      "key": "sentence-sunflower",
+      "text": "The sunflower is tall."
+    },
+    {
+      "key": "sentence-daisy",
+      "text": "The daisy has white petals."
+    },
+    {
+      "key": "sentence-cherry blossom",
+      "text": "Cherry blossoms bloom in spring."
+    },
+    {
+      "key": "sentence-lotus",
+      "text": "The lotus grows in water."
+    },
+    {
+      "key": "sentence-bouquet",
+      "text": "We give Grandma a bouquet."
+    },
+    {
+      "key": "sentence-petal",
+      "text": "The flower has soft petals."
+    },
+    {
+      "key": "sentence-bud",
+      "text": "The bud will open into a flower."
+    },
+    {
+      "key": "sentence-pollen",
+      "text": "A bee carries pollen."
+    },
+    {
+      "key": "sentence-soil",
+      "text": "Seeds grow in soil."
+    },
+    {
+      "key": "sentence-mud",
+      "text": "Rain makes the soil into mud."
+    },
+    {
+      "key": "sentence-pebble",
+      "text": "This pebble is smooth."
+    },
+    {
+      "key": "sentence-reef",
+      "text": "Many fish live near the reef."
+    },
+    {
+      "key": "sentence-spring",
+      "text": "Flowers bloom in spring."
+    },
+    {
+      "key": "sentence-summer",
+      "text": "Summer can be hot."
+    },
+    {
+      "key": "sentence-autumn",
+      "text": "Leaves fall in autumn."
+    },
+    {
+      "key": "sentence-fall",
+      "text": "Fall is another word for autumn."
+    },
+    {
+      "key": "sentence-winter",
+      "text": "Winter can be cold."
+    },
+    {
+      "key": "sentence-season",
+      "text": "Winter is a season."
+    },
+    {
+      "key": "sentence-weather",
+      "text": "We look outside to check the weather."
+    },
+    {
+      "key": "sentence-temperature",
+      "text": "The thermometer shows the temperature."
+    },
+    {
+      "key": "sentence-thermometer",
+      "text": "We read the thermometer."
+    },
+    {
+      "key": "sentence-day",
+      "text": "We play outside during the day."
+    },
+    {
+      "key": "sentence-night",
+      "text": "We see stars at night."
+    },
+    {
+      "key": "sentence-morning",
+      "text": "Good morning!"
+    },
+    {
+      "key": "sentence-afternoon",
+      "text": "We play in the afternoon."
+    },
+    {
+      "key": "sentence-evening",
+      "text": "We eat dinner in the evening."
+    },
+    {
+      "key": "sentence-midnight",
+      "text": "Midnight is the middle of the night."
+    },
+    {
+      "key": "sentence-noon",
+      "text": "We eat lunch at noon."
+    },
+    {
+      "key": "sentence-today",
+      "text": "Today we are going to the park."
+    },
+    {
+      "key": "sentence-tomorrow",
+      "text": "We will play again tomorrow."
+    },
+    {
+      "key": "sentence-yesterday",
+      "text": "Yesterday we read a story."
+    },
+    {
+      "key": "sentence-week",
+      "text": "A week has seven days."
+    },
+    {
+      "key": "sentence-month",
+      "text": "A month has many days."
+    },
+    {
+      "key": "sentence-year",
+      "text": "A year has twelve months."
+    },
+    {
+      "key": "sentence-bicycle",
+      "text": "I ride my bicycle with a helmet."
+    },
+    {
+      "key": "sentence-scooter",
+      "text": "I ride my scooter with a helmet."
+    },
+    {
+      "key": "sentence-skateboard",
+      "text": "I stand on a skateboard."
+    },
+    {
+      "key": "sentence-roller skate",
+      "text": "I wear a roller skate on each foot."
+    },
+    {
+      "key": "sentence-motorcycle",
+      "text": "The motorcycle has two wheels."
+    },
+    {
+      "key": "sentence-taxi",
+      "text": "We take a taxi."
+    },
+    {
+      "key": "sentence-truck",
+      "text": "The truck carries boxes."
+    },
+    {
+      "key": "sentence-delivery truck",
+      "text": "The delivery truck brings a package."
+    },
+    {
+      "key": "sentence-tractor",
+      "text": "The tractor works on the farm."
+    },
+    {
+      "key": "sentence-ambulance",
+      "text": "We make room for the ambulance."
+    },
+    {
+      "key": "sentence-fire engine",
+      "text": "The fire engine has a ladder."
+    },
+    {
+      "key": "sentence-fire truck",
+      "text": "The fire truck is red."
+    },
+    {
+      "key": "sentence-police car",
+      "text": "The police car has flashing lights."
+    },
+    {
+      "key": "sentence-racing car",
+      "text": "The racing car goes around the track."
+    },
+    {
+      "key": "sentence-minibus",
+      "text": "We get on the minibus."
+    },
+    {
+      "key": "sentence-trolleybus",
+      "text": "The trolleybus runs on the road."
+    },
+    {
+      "key": "sentence-tram",
+      "text": "The tram runs on tracks."
+    },
+    {
+      "key": "sentence-subway",
+      "text": "We take the subway."
+    },
+    {
+      "key": "sentence-metro",
+      "text": "The metro train arrives."
+    },
+    {
+      "key": "sentence-monorail",
+      "text": "The monorail runs on one rail."
+    },
+    {
+      "key": "sentence-bullet train",
+      "text": "The bullet train travels fast."
+    },
+    {
+      "key": "sentence-locomotive",
+      "text": "The locomotive pulls the train."
+    },
+    {
+      "key": "sentence-railway",
+      "text": "The train travels on the railway."
+    },
+    {
+      "key": "sentence-track",
+      "text": "We stay away from the train track."
+    },
+    {
+      "key": "sentence-station",
+      "text": "We wait at the station."
+    },
+    {
+      "key": "sentence-bus stop",
+      "text": "We wait at the bus stop."
+    },
+    {
+      "key": "sentence-road",
+      "text": "Cars travel on the road."
+    },
+    {
+      "key": "sentence-highway",
+      "text": "The bus travels on the highway."
+    },
+    {
+      "key": "sentence-bridge",
+      "text": "We cross the bridge."
+    },
+    {
+      "key": "sentence-traffic light",
+      "text": "We stop at the red traffic light."
+    },
+    {
+      "key": "sentence-stop sign",
+      "text": "The car stops at the stop sign."
+    },
+    {
+      "key": "sentence-barrier",
+      "text": "We stay behind the barrier."
+    },
+    {
+      "key": "sentence-construction",
+      "text": "The road is under construction."
+    },
+    {
+      "key": "sentence-wheel",
+      "text": "The wheel goes round."
+    },
+    {
+      "key": "sentence-tire",
+      "text": "The tire is made of rubber."
+    },
+    {
+      "key": "sentence-fuel",
+      "text": "The car needs fuel."
+    },
+    {
+      "key": "sentence-gas station",
+      "text": "The car stops at the gas station."
+    },
+    {
+      "key": "sentence-airplane",
+      "text": "The airplane flies in the sky."
+    },
+    {
+      "key": "sentence-plane",
+      "text": "I see a plane above the clouds."
+    },
+    {
+      "key": "sentence-helicopter",
+      "text": "The helicopter has spinning blades."
+    },
+    {
+      "key": "sentence-rocket",
+      "text": "The rocket goes into space."
+    },
+    {
+      "key": "sentence-satellite",
+      "text": "The satellite moves around Earth."
+    },
+    {
+      "key": "sentence-parachute",
+      "text": "The parachute opens in the sky."
+    },
+    {
+      "key": "sentence-airport",
+      "text": "We go to the airport."
+    },
+    {
+      "key": "sentence-takeoff",
+      "text": "We watch the plane at takeoff."
+    },
+    {
+      "key": "sentence-landing",
+      "text": "The plane is landing now."
+    },
+    {
+      "key": "sentence-ship",
+      "text": "The ship sails on the sea."
+    },
+    {
+      "key": "sentence-sailboat",
+      "text": "The wind moves the sailboat."
+    },
+    {
+      "key": "sentence-canoe",
+      "text": "We wear life jackets in the canoe."
+    },
+    {
+      "key": "sentence-rowboat",
+      "text": "An adult rows the rowboat."
+    },
+    {
+      "key": "sentence-speedboat",
+      "text": "The speedboat moves fast."
+    },
+    {
+      "key": "sentence-ferry",
+      "text": "We take a ferry across the water."
+    },
+    {
+      "key": "sentence-anchor",
+      "text": "The ship has an anchor."
+    },
+    {
+      "key": "sentence-sail",
+      "text": "The wind fills the sail."
+    },
+    {
+      "key": "sentence-paddle",
+      "text": "We move the canoe with a paddle."
+    },
+    {
+      "key": "sentence-oar",
+      "text": "The rower pulls the oar."
+    },
+    {
+      "key": "sentence-life jacket",
+      "text": "We wear a life jacket on the boat."
+    },
+    {
+      "key": "sentence-lifebuoy",
+      "text": "A lifebuoy can help someone float."
+    },
+    {
+      "key": "sentence-cable car",
+      "text": "We ride a cable car up the mountain."
+    },
+    {
+      "key": "sentence-ferris wheel",
+      "text": "The ferris wheel turns slowly."
+    },
+    {
+      "key": "sentence-roller coaster",
+      "text": "The roller coaster goes up and down."
+    },
+    {
+      "key": "sentence-carousel",
+      "text": "We ride on the carousel."
+    },
+    {
+      "key": "sentence-tent",
+      "text": "We sleep in a tent."
+    },
+    {
+      "key": "sentence-camp",
+      "text": "We set up camp near the trees."
+    },
+    {
+      "key": "sentence-camping",
+      "text": "We go camping with our family."
+    },
+    {
+      "key": "sentence-luggage",
+      "text": "Our luggage is ready."
+    },
+    {
+      "key": "sentence-passport",
+      "text": "An adult keeps our passports safe."
+    },
+    {
+      "key": "sentence-journey",
+      "text": "We start our journey today."
+    },
+    {
+      "key": "sentence-trip",
+      "text": "We pack for a trip."
+    },
+    {
+      "key": "sentence-vacation",
+      "text": "We go to the beach on vacation."
+    },
+    {
+      "key": "sentence-holiday",
+      "text": "We visit Grandma during the holiday."
+    },
+    {
+      "key": "sentence-person",
+      "text": "A person is standing here."
+    },
+    {
+      "key": "sentence-people",
+      "text": "Many people are in the park."
+    },
+    {
+      "key": "sentence-child",
+      "text": "The child is playing."
+    },
+    {
+      "key": "sentence-children",
+      "text": "The children play together."
+    },
+    {
+      "key": "sentence-baby",
+      "text": "The baby is sleeping."
+    },
+    {
+      "key": "sentence-boy",
+      "text": "The boy has a ball."
+    },
+    {
+      "key": "sentence-girl",
+      "text": "The girl is reading."
+    },
+    {
+      "key": "sentence-man",
+      "text": "The man waves to us."
+    },
+    {
+      "key": "sentence-woman",
+      "text": "The woman says hello."
+    },
+    {
+      "key": "sentence-adult",
+      "text": "I ask an adult for help."
+    },
+    {
+      "key": "sentence-family",
+      "text": "I love my family."
+    },
+    {
+      "key": "sentence-mother",
+      "text": "My mother reads with me."
+    },
+    {
+      "key": "sentence-mom",
+      "text": "Mom gives me a hug."
+    },
+    {
+      "key": "sentence-father",
+      "text": "My father cooks dinner."
+    },
+    {
+      "key": "sentence-dad",
+      "text": "Dad plays with me."
+    },
+    {
+      "key": "sentence-parent",
+      "text": "My parent helps me learn."
+    },
+    {
+      "key": "sentence-parents",
+      "text": "My parents listen to me."
+    },
+    {
+      "key": "sentence-sister",
+      "text": "My sister plays with me."
+    },
+    {
+      "key": "sentence-brother",
+      "text": "My brother has a book."
+    },
+    {
+      "key": "sentence-grandmother",
+      "text": "My grandmother tells a story."
+    },
+    {
+      "key": "sentence-grandma",
+      "text": "Grandma gives me a hug."
+    },
+    {
+      "key": "sentence-grandfather",
+      "text": "My grandfather walks with me."
+    },
+    {
+      "key": "sentence-grandpa",
+      "text": "Grandpa reads a book."
+    },
+    {
+      "key": "sentence-grandparents",
+      "text": "We visit our grandparents."
+    },
+    {
+      "key": "sentence-aunt",
+      "text": "My aunt visits us."
+    },
+    {
+      "key": "sentence-uncle",
+      "text": "My uncle waves to me."
+    },
+    {
+      "key": "sentence-cousin",
+      "text": "I play with my cousin."
+    },
+    {
+      "key": "sentence-friend",
+      "text": "My friend plays with me."
+    },
+    {
+      "key": "sentence-neighbor",
+      "text": "Our neighbor says hello."
+    },
+    {
+      "key": "sentence-twins",
+      "text": "The twins play together."
+    },
+    {
+      "key": "sentence-team",
+      "text": "Our team works together."
+    },
+    {
+      "key": "sentence-group",
+      "text": "We work in a small group."
+    },
+    {
+      "key": "sentence-doctor",
+      "text": "The doctor helps me feel better."
+    },
+    {
+      "key": "sentence-nurse",
+      "text": "The nurse helps the doctor."
+    },
+    {
+      "key": "sentence-dentist",
+      "text": "The dentist checks my teeth."
+    },
+    {
+      "key": "sentence-farmer",
+      "text": "The farmer grows food."
+    },
+    {
+      "key": "sentence-cook",
+      "text": "The cook makes our food."
+    },
+    {
+      "key": "sentence-chef",
+      "text": "The chef makes soup."
+    },
+    {
+      "key": "sentence-baker",
+      "text": "The baker makes bread."
+    },
+    {
+      "key": "sentence-firefighter",
+      "text": "The firefighter helps people."
+    },
+    {
+      "key": "sentence-police officer",
+      "text": "The police officer helps us cross."
+    },
+    {
+      "key": "sentence-pilot",
+      "text": "The pilot flies the plane."
+    },
+    {
+      "key": "sentence-astronaut",
+      "text": "The astronaut travels to space."
+    },
+    {
+      "key": "sentence-scientist",
+      "text": "The scientist asks questions."
+    },
+    {
+      "key": "sentence-artist",
+      "text": "The artist paints a picture."
+    },
+    {
+      "key": "sentence-singer",
+      "text": "The singer sings a song."
+    },
+    {
+      "key": "sentence-musician",
+      "text": "The musician plays music."
+    },
+    {
+      "key": "sentence-dancer",
+      "text": "The dancer moves to music."
+    },
+    {
+      "key": "sentence-builder",
+      "text": "The builder wears a helmet."
+    },
+    {
+      "key": "sentence-mechanic",
+      "text": "The mechanic fixes the car."
+    },
+    {
+      "key": "sentence-engineer",
+      "text": "The engineer makes a plan."
+    },
+    {
+      "key": "sentence-driver",
+      "text": "The driver stops the bus."
+    },
+    {
+      "key": "sentence-sailor",
+      "text": "The sailor works on a ship."
+    },
+    {
+      "key": "sentence-gardener",
+      "text": "The gardener waters the plants."
+    },
+    {
+      "key": "sentence-vet",
+      "text": "The vet helps our dog."
+    },
+    {
+      "key": "sentence-librarian",
+      "text": "The librarian helps me find a book."
+    },
+    {
+      "key": "sentence-writer",
+      "text": "The writer writes a story."
+    },
+    {
+      "key": "sentence-photographer",
+      "text": "The photographer takes a photo."
+    },
+    {
+      "key": "sentence-magician",
+      "text": "The magician does a trick."
+    },
+    {
+      "key": "sentence-clown",
+      "text": "The clown makes us laugh."
+    },
+    {
+      "key": "sentence-king",
+      "text": "The king wears a crown in the story."
+    },
+    {
+      "key": "sentence-princess",
+      "text": "The princess is in a story."
+    },
+    {
+      "key": "sentence-prince",
+      "text": "The prince is in a story."
+    },
+    {
+      "key": "sentence-fairy",
+      "text": "The fairy is in a story."
+    },
+    {
+      "key": "sentence-mermaid",
+      "text": "The mermaid is in a story."
+    },
+    {
+      "key": "sentence-superhero",
+      "text": "The superhero helps people in the story."
+    },
+    {
+      "key": "sentence-robot",
+      "text": "The robot can move its arms."
+    },
+    {
+      "key": "sentence-head",
+      "text": "I put a hat on my head."
+    },
+    {
+      "key": "sentence-face",
+      "text": "I wash my face."
+    },
+    {
+      "key": "sentence-hair",
+      "text": "I comb my hair."
+    },
+    {
+      "key": "sentence-nose",
+      "text": "I smell a flower with my nose."
+    },
+    {
+      "key": "sentence-mouth",
+      "text": "I open my mouth."
+    },
+    {
+      "key": "sentence-lip",
+      "text": "My lip helps me make sounds."
+    },
+    {
+      "key": "sentence-tongue",
+      "text": "My tongue helps me taste."
+    },
+    {
+      "key": "sentence-tooth",
+      "text": "I brush each tooth."
+    },
+    {
+      "key": "sentence-teeth",
+      "text": "I brush my teeth."
+    },
+    {
+      "key": "sentence-foot",
+      "text": "I put a sock on my foot."
+    },
+    {
+      "key": "sentence-feet",
+      "text": "I stand on my feet."
+    },
+    {
+      "key": "sentence-leg",
+      "text": "I can bend my leg."
+    },
+    {
+      "key": "sentence-knee",
+      "text": "I bend my knee."
+    },
+    {
+      "key": "sentence-arm",
+      "text": "I raise my arm."
+    },
+    {
+      "key": "sentence-elbow",
+      "text": "My elbow bends."
+    },
+    {
+      "key": "sentence-finger",
+      "text": "I point with one finger."
+    },
+    {
+      "key": "sentence-thumb",
+      "text": "I lift my thumb."
+    },
+    {
+      "key": "sentence-palm",
+      "text": "I open my palm."
+    },
+    {
+      "key": "sentence-fist",
+      "text": "I gently close my hand into a fist."
+    },
+    {
+      "key": "sentence-toe",
+      "text": "I can wiggle my toes."
+    },
+    {
+      "key": "sentence-heel",
+      "text": "My heel touches the floor."
+    },
+    {
+      "key": "sentence-muscle",
+      "text": "A muscle helps my arm move."
+    },
+    {
+      "key": "sentence-bone",
+      "text": "A bone helps support my body."
+    },
+    {
+      "key": "sentence-brain",
+      "text": "My brain helps me think."
+    },
+    {
+      "key": "sentence-heart",
+      "text": "My heart beats all day."
+    },
+    {
+      "key": "sentence-lungs",
+      "text": "My lungs help me breathe."
+    },
+    {
+      "key": "sentence-body",
+      "text": "I take care of my body."
+    },
+    {
+      "key": "sentence-skin",
+      "text": "I wash my skin gently."
+    },
+    {
+      "key": "sentence-eyes",
+      "text": "I see with my eyes."
+    },
+    {
+      "key": "sentence-eyebrow",
+      "text": "I can raise one eyebrow."
+    },
+    {
+      "key": "sentence-cheek",
+      "text": "My cheeks get warm."
+    },
+    {
+      "key": "sentence-chin",
+      "text": "I rest my chin on my hand."
+    },
+    {
+      "key": "sentence-beard",
+      "text": "Grandpa has a beard."
+    },
+    {
+      "key": "sentence-mustache",
+      "text": "A mustache grows above the lip."
+    },
+    {
+      "key": "sentence-curly hair",
+      "text": "My friend has curly hair."
+    },
+    {
+      "key": "sentence-red hair",
+      "text": "The child has red hair."
+    },
+    {
+      "key": "sentence-white hair",
+      "text": "Grandma has white hair."
+    },
+    {
+      "key": "sentence-footprints",
+      "text": "We leave footprints in the sand."
+    },
+    {
+      "key": "sentence-handprint",
+      "text": "I make a handprint with paint."
+    },
+    {
+      "key": "sentence-fingerprint",
+      "text": "Each finger has a fingerprint."
+    },
+    {
+      "key": "sentence-senses",
+      "text": "We use our senses to learn."
+    },
+    {
+      "key": "sentence-hearing",
+      "text": "My hearing helps me enjoy music."
+    },
+    {
+      "key": "sentence-sight",
+      "text": "My sight helps me see colors."
+    },
+    {
+      "key": "sentence-soccer",
+      "text": "We play soccer together."
+    },
+    {
+      "key": "sentence-football",
+      "text": "I kick the football."
+    },
+    {
+      "key": "sentence-basketball",
+      "text": "I bounce the basketball."
+    },
+    {
+      "key": "sentence-baseball",
+      "text": "We play baseball."
+    },
+    {
+      "key": "sentence-softball",
+      "text": "This is a softball."
+    },
+    {
+      "key": "sentence-tennis",
+      "text": "We play tennis with a racket."
+    },
+    {
+      "key": "sentence-volleyball",
+      "text": "We pass the volleyball."
+    },
+    {
+      "key": "sentence-rugby",
+      "text": "The rugby ball is oval."
+    },
+    {
+      "key": "sentence-badminton",
+      "text": "We play badminton outside."
+    },
+    {
+      "key": "sentence-shuttlecock",
+      "text": "The shuttlecock flies over the net."
+    },
+    {
+      "key": "sentence-table tennis",
+      "text": "We play table tennis."
+    },
+    {
+      "key": "sentence-ping-pong",
+      "text": "Ping-pong is fun."
+    },
+    {
+      "key": "sentence-hockey",
+      "text": "Players use a stick in hockey."
+    },
+    {
+      "key": "sentence-ice hockey",
+      "text": "Players skate in ice hockey."
+    },
+    {
+      "key": "sentence-golf",
+      "text": "The ball goes toward the golf hole."
+    },
+    {
+      "key": "sentence-bowling",
+      "text": "The bowling ball rolls forward."
+    },
+    {
+      "key": "sentence-fishing",
+      "text": "We go fishing with an adult."
+    },
+    {
+      "key": "sentence-swimming",
+      "text": "I practice swimming with a grown-up."
+    },
+    {
+      "key": "sentence-diving",
+      "text": "The diver wears a mask."
+    },
+    {
+      "key": "sentence-surfing",
+      "text": "The surfer rides a wave."
+    },
+    {
+      "key": "sentence-rowing",
+      "text": "The team practices rowing."
+    },
+    {
+      "key": "sentence-sailing",
+      "text": "We watch the boats sailing."
+    },
+    {
+      "key": "sentence-cycling",
+      "text": "I wear a helmet when cycling."
+    },
+    {
+      "key": "sentence-running",
+      "text": "Running makes my heart beat faster."
+    },
+    {
+      "key": "sentence-walking",
+      "text": "We enjoy walking in the park."
+    },
+    {
+      "key": "sentence-hiking",
+      "text": "We go hiking with our family."
+    },
+    {
+      "key": "sentence-climbing",
+      "text": "We try climbing with a teacher."
+    },
+    {
+      "key": "sentence-skating",
+      "text": "I learn skating with help."
+    },
+    {
+      "key": "sentence-skiing",
+      "text": "We watch people skiing."
+    },
+    {
+      "key": "sentence-snowboarding",
+      "text": "The rider goes snowboarding."
+    },
+    {
+      "key": "sentence-sledding",
+      "text": "We go sledding on a small hill."
+    },
+    {
+      "key": "sentence-sled",
+      "text": "We pull the sled."
+    },
+    {
+      "key": "sentence-skis",
+      "text": "These skis are long."
+    },
+    {
+      "key": "sentence-ice skate",
+      "text": "An ice skate has a blade."
+    },
+    {
+      "key": "sentence-exercise",
+      "text": "Exercise helps my body move."
+    },
+    {
+      "key": "sentence-stretch",
+      "text": "We stretch gently."
+    },
+    {
+      "key": "sentence-yoga",
+      "text": "We try a simple yoga pose."
+    },
+    {
+      "key": "sentence-balance",
+      "text": "I practice balance on one foot."
+    },
+    {
+      "key": "sentence-gymnastics",
+      "text": "We watch gymnastics."
+    },
+    {
+      "key": "sentence-cartwheel",
+      "text": "The gymnast does a cartwheel."
+    },
+    {
+      "key": "sentence-jump rope",
+      "text": "I can jump rope."
+    },
+    {
+      "key": "sentence-boxing",
+      "text": "We see boxing gloves."
+    },
+    {
+      "key": "sentence-boxing glove",
+      "text": "This boxing glove is padded."
+    },
+    {
+      "key": "sentence-martial arts",
+      "text": "We learn martial arts with a teacher."
+    },
+    {
+      "key": "sentence-racket",
+      "text": "I hold my racket."
+    },
+    {
+      "key": "sentence-goal",
+      "text": "The ball goes into the goal."
+    },
+    {
+      "key": "sentence-net",
+      "text": "The goal has a net."
+    },
+    {
+      "key": "sentence-trophy",
+      "text": "We look at the trophy."
+    },
+    {
+      "key": "sentence-medal",
+      "text": "The medal hangs on a ribbon."
+    },
+    {
+      "key": "sentence-prize",
+      "text": "This is a little prize."
+    },
+    {
+      "key": "sentence-winner",
+      "text": "We clap for the winner."
+    },
+    {
+      "key": "sentence-race",
+      "text": "We run a short race."
+    },
+    {
+      "key": "sentence-finish line",
+      "text": "We run to the finish line."
+    },
+    {
+      "key": "sentence-flag",
+      "text": "The flag moves in the wind."
+    },
+    {
+      "key": "sentence-score",
+      "text": "We look at the score."
+    },
+    {
+      "key": "sentence-player",
+      "text": "Each player gets a turn."
+    },
+    {
+      "key": "sentence-coach",
+      "text": "The coach shows us how to play."
+    },
+    {
+      "key": "sentence-referee",
+      "text": "The referee watches the game."
+    },
+    {
+      "key": "sentence-practice",
+      "text": "We practice a little each day."
+    },
+    {
+      "key": "sentence-toy",
+      "text": "I put my toy away."
+    },
+    {
+      "key": "sentence-teddy bear",
+      "text": "I hug my teddy bear."
+    },
+    {
+      "key": "sentence-doll",
+      "text": "This is my doll."
+    },
+    {
+      "key": "sentence-puzzle",
+      "text": "We put the puzzle together."
+    },
+    {
+      "key": "sentence-puzzle piece",
+      "text": "This puzzle piece fits here."
+    },
+    {
+      "key": "sentence-dice",
+      "text": "I roll the dice."
+    },
+    {
+      "key": "sentence-game",
+      "text": "We play a game together."
+    },
+    {
+      "key": "sentence-board game",
+      "text": "We take turns in the board game."
+    },
+    {
+      "key": "sentence-chess",
+      "text": "We learn to play chess."
+    },
+    {
+      "key": "sentence-chess piece",
+      "text": "I move a chess piece."
+    },
+    {
+      "key": "sentence-balloon",
+      "text": "The balloon is red."
+    },
+    {
+      "key": "sentence-bubbles",
+      "text": "We watch the bubbles float."
+    },
+    {
+      "key": "sentence-magic wand",
+      "text": "The fairy has a magic wand."
+    },
+    {
+      "key": "sentence-yo-yo",
+      "text": "The yo-yo goes up and down."
+    },
+    {
+      "key": "sentence-boomerang",
+      "text": "We watch the boomerang turn."
+    },
+    {
+      "key": "sentence-frisbee",
+      "text": "I throw the frisbee to Dad."
+    },
+    {
+      "key": "sentence-slide",
+      "text": "I take turns on the slide."
+    },
+    {
+      "key": "sentence-playground",
+      "text": "We meet at the playground."
+    },
+    {
+      "key": "sentence-water gun",
+      "text": "We play with a water gun outside."
+    },
+    {
+      "key": "sentence-video game",
+      "text": "We play a short video game."
+    },
+    {
+      "key": "sentence-controller",
+      "text": "I hold the controller."
+    },
+    {
+      "key": "sentence-joystick",
+      "text": "The joystick moves the toy."
+    },
+    {
+      "key": "sentence-craft",
+      "text": "We make a paper craft."
+    },
+    {
+      "key": "sentence-origami",
+      "text": "We fold paper for origami."
+    },
+    {
+      "key": "sentence-glitter",
+      "text": "The glitter sparkles."
+    },
+    {
+      "key": "sentence-confetti",
+      "text": "Confetti falls at the party."
+    },
+    {
+      "key": "sentence-party",
+      "text": "We have a birthday party."
+    },
+    {
+      "key": "sentence-birthday",
+      "text": "Today is my birthday."
+    },
+    {
+      "key": "sentence-birthday cake",
+      "text": "We share the birthday cake."
+    },
+    {
+      "key": "sentence-gift",
+      "text": "This gift is for you."
+    },
+    {
+      "key": "sentence-present",
+      "text": "I open my present."
+    },
+    {
+      "key": "sentence-celebration",
+      "text": "We enjoy the celebration."
+    },
+    {
+      "key": "sentence-festival",
+      "text": "We visit the festival together."
+    },
+    {
+      "key": "sentence-lantern",
+      "text": "The lantern glows."
+    },
+    {
+      "key": "sentence-fireworks",
+      "text": "We watch fireworks from far away."
+    },
+    {
+      "key": "sentence-sparkler",
+      "text": "We watch an adult with a sparkler."
+    },
+    {
+      "key": "sentence-pumpkin",
+      "text": "This pumpkin has a funny face."
+    },
+    {
+      "key": "sentence-ghost",
+      "text": "The friendly ghost is in a story."
+    },
+    {
+      "key": "sentence-song",
+      "text": "We sing a song."
+    },
+    {
+      "key": "sentence-musical note",
+      "text": "This is a musical note."
+    },
+    {
+      "key": "sentence-melody",
+      "text": "I hum a melody."
+    },
+    {
+      "key": "sentence-rhythm",
+      "text": "We clap to the rhythm."
+    },
+    {
+      "key": "sentence-beat",
+      "text": "I tap the beat."
+    },
+    {
+      "key": "sentence-drum",
+      "text": "I tap the drum gently."
+    },
+    {
+      "key": "sentence-drumstick",
+      "text": "I hold a drumstick."
+    },
+    {
+      "key": "sentence-guitar",
+      "text": "The guitar has strings."
+    },
+    {
+      "key": "sentence-violin",
+      "text": "The violin makes music."
+    },
+    {
+      "key": "sentence-piano",
+      "text": "I press a piano key."
+    },
+    {
+      "key": "sentence-piano key",
+      "text": "This piano key is white."
+    },
+    {
+      "key": "sentence-trumpet",
+      "text": "The trumpet is shiny."
+    },
+    {
+      "key": "sentence-saxophone",
+      "text": "The saxophone is a musical instrument."
+    },
+    {
+      "key": "sentence-flute",
+      "text": "The flute makes a clear sound."
+    },
+    {
+      "key": "sentence-accordion",
+      "text": "The accordion opens and closes."
+    },
+    {
+      "key": "sentence-banjo",
+      "text": "The banjo has a round body."
+    },
+    {
+      "key": "sentence-maracas",
+      "text": "We shake the maracas."
+    },
+    {
+      "key": "sentence-microphone",
+      "text": "I sing into the microphone."
+    },
+    {
+      "key": "sentence-headphones",
+      "text": "I use headphones at a low volume."
+    },
+    {
+      "key": "sentence-speaker",
+      "text": "Music comes from the speaker."
+    },
+    {
+      "key": "sentence-instrument",
+      "text": "A guitar is an instrument."
+    },
+    {
+      "key": "sentence-concert",
+      "text": "We listen at the concert."
+    },
+    {
+      "key": "sentence-band",
+      "text": "The band plays a song."
+    },
+    {
+      "key": "sentence-stage",
+      "text": "The singers stand on the stage."
+    },
+    {
+      "key": "sentence-theater",
+      "text": "We watch a play at the theater."
+    },
+    {
+      "key": "sentence-ballet",
+      "text": "The dancer practices ballet."
+    },
+    {
+      "key": "sentence-ballet shoes",
+      "text": "These are ballet shoes."
+    },
+    {
+      "key": "sentence-disco ball",
+      "text": "The disco ball sparkles."
+    },
+    {
+      "key": "sentence-town",
+      "text": "We live in a small town."
+    },
+    {
+      "key": "sentence-city",
+      "text": "The city has many buildings."
+    },
+    {
+      "key": "sentence-village",
+      "text": "The village has small houses."
+    },
+    {
+      "key": "sentence-building",
+      "text": "This building is tall."
+    },
+    {
+      "key": "sentence-office",
+      "text": "People work in the office."
+    },
+    {
+      "key": "sentence-apartment",
+      "text": "Our apartment is in this building."
+    },
+    {
+      "key": "sentence-hotel",
+      "text": "We stay at a hotel on our trip."
+    },
+    {
+      "key": "sentence-hospital",
+      "text": "Doctors and nurses work at the hospital."
+    },
+    {
+      "key": "sentence-shop",
+      "text": "We buy fruit at the shop."
+    },
+    {
+      "key": "sentence-store",
+      "text": "The store is open."
+    },
+    {
+      "key": "sentence-supermarket",
+      "text": "We buy food at the supermarket."
+    },
+    {
+      "key": "sentence-market",
+      "text": "We see fresh fruit at the market."
+    },
+    {
+      "key": "sentence-bakery",
+      "text": "The bakery smells like bread."
+    },
+    {
+      "key": "sentence-restaurant",
+      "text": "We eat at a restaurant."
+    },
+    {
+      "key": "sentence-cafe",
+      "text": "We sit at a cafe."
+    },
+    {
+      "key": "sentence-library",
+      "text": "We read quietly in the library."
+    },
+    {
+      "key": "sentence-museum",
+      "text": "We learn new things at the museum."
+    },
+    {
+      "key": "sentence-zoo",
+      "text": "We visit the zoo with our family."
+    },
+    {
+      "key": "sentence-aquarium",
+      "text": "We see fish at the aquarium."
+    },
+    {
+      "key": "sentence-farm",
+      "text": "We see animals on the farm."
+    },
+    {
+      "key": "sentence-post office",
+      "text": "We send a letter at the post office."
+    },
+    {
+      "key": "sentence-bank",
+      "text": "We go to the bank with an adult."
+    },
+    {
+      "key": "sentence-factory",
+      "text": "People make things in a factory."
+    },
+    {
+      "key": "sentence-stadium",
+      "text": "We watch a game at the stadium."
+    },
+    {
+      "key": "sentence-swimming pool",
+      "text": "We go to the swimming pool with an adult."
+    },
+    {
+      "key": "sentence-cinema",
+      "text": "We watch a film at the cinema."
+    },
+    {
+      "key": "sentence-circus",
+      "text": "We see a clown at the circus."
+    },
+    {
+      "key": "sentence-castle",
+      "text": "The castle has tall towers."
+    },
+    {
+      "key": "sentence-tower",
+      "text": "The tower is very tall."
+    },
+    {
+      "key": "sentence-fountain",
+      "text": "Water comes out of the fountain."
+    },
+    {
+      "key": "sentence-statue",
+      "text": "The statue stands in the park."
+    },
+    {
+      "key": "sentence-church",
+      "text": "The church has a bell."
+    },
+    {
+      "key": "sentence-mosque",
+      "text": "This building is a mosque."
+    },
+    {
+      "key": "sentence-temple",
+      "text": "We visit a temple quietly."
+    },
+    {
+      "key": "sentence-shrine",
+      "text": "This gate is at a shrine."
+    },
+    {
+      "key": "sentence-playroom",
+      "text": "We keep toys in the playroom."
+    },
+    {
+      "key": "sentence-living room",
+      "text": "We sit together in the living room."
+    },
+    {
+      "key": "sentence-dining room",
+      "text": "We eat in the dining room."
+    },
+    {
+      "key": "sentence-yard",
+      "text": "We play in the yard."
+    },
+    {
+      "key": "sentence-roof",
+      "text": "Rain falls on the roof."
+    },
+    {
+      "key": "sentence-wall",
+      "text": "The picture hangs on the wall."
+    },
+    {
+      "key": "sentence-elevator",
+      "text": "We ride the elevator together."
+    },
+    {
+      "key": "sentence-entrance",
+      "text": "We go in through the entrance."
+    },
+    {
+      "key": "sentence-exit",
+      "text": "This door is the exit."
+    },
+    {
+      "key": "sentence-path",
+      "text": "We follow the path through the park."
+    },
+    {
+      "key": "sentence-happy",
+      "text": "I feel happy today."
+    },
+    {
+      "key": "sentence-sad",
+      "text": "I feel sad. I need a hug."
+    },
+    {
+      "key": "sentence-angry",
+      "text": "I feel angry. I can take a breath."
+    },
+    {
+      "key": "sentence-excited",
+      "text": "I am excited about our trip."
+    },
+    {
+      "key": "sentence-surprised",
+      "text": "I am surprised to see you."
+    },
+    {
+      "key": "sentence-scared",
+      "text": "I feel scared. Please stay with me."
+    },
+    {
+      "key": "sentence-worried",
+      "text": "I feel worried. Can we talk?"
+    },
+    {
+      "key": "sentence-sleepy",
+      "text": "I feel sleepy at bedtime."
+    },
+    {
+      "key": "sentence-tired",
+      "text": "I am tired. I can rest."
+    },
+    {
+      "key": "sentence-calm",
+      "text": "I feel calm after a quiet break."
+    },
+    {
+      "key": "sentence-shy",
+      "text": "I feel shy around new people."
+    },
+    {
+      "key": "sentence-proud",
+      "text": "I feel proud that I tried."
+    },
+    {
+      "key": "sentence-silly",
+      "text": "We make silly faces."
+    },
+    {
+      "key": "sentence-confused",
+      "text": "I feel confused. Please show me again."
+    },
+    {
+      "key": "sentence-curious",
+      "text": "I am curious about this bug."
+    },
+    {
+      "key": "sentence-bored",
+      "text": "I feel bored. Let us find a game."
+    },
+    {
+      "key": "sentence-lonely",
+      "text": "I feel lonely. Can you play with me?"
+    },
+    {
+      "key": "sentence-kind",
+      "text": "It is kind to help a friend."
+    },
+    {
+      "key": "sentence-friendly",
+      "text": "My friend gives me a friendly smile."
+    },
+    {
+      "key": "sentence-brave",
+      "text": "I can be brave and ask for help."
+    },
+    {
+      "key": "sentence-patient",
+      "text": "I try to be patient while I wait."
+    },
+    {
+      "key": "sentence-gentle",
+      "text": "I give the kitten a gentle touch."
+    },
+    {
+      "key": "sentence-thankful",
+      "text": "I am thankful for your help."
+    },
+    {
+      "key": "sentence-sorry",
+      "text": "I am sorry I bumped into you."
+    },
+    {
+      "key": "sentence-hungry",
+      "text": "I feel hungry. It is time to eat."
+    },
+    {
+      "key": "sentence-thirsty",
+      "text": "I am thirsty. May I have water?"
+    },
+    {
+      "key": "sentence-sick",
+      "text": "I feel sick. I tell an adult."
+    },
+    {
+      "key": "sentence-hurt",
+      "text": "My knee hurts. I need help."
+    },
+    {
+      "key": "sentence-healthy",
+      "text": "Food and rest help me stay healthy."
+    },
+    {
+      "key": "sentence-well",
+      "text": "I feel well today."
+    },
+    {
+      "key": "sentence-hot",
+      "text": "I feel hot in the sun."
+    },
+    {
+      "key": "sentence-cold",
+      "text": "I feel cold. I put on my coat."
+    },
+    {
+      "key": "sentence-cool",
+      "text": "The breeze feels cool."
+    },
+    {
+      "key": "sentence-smile",
+      "text": "I smile at my friend."
+    },
+    {
+      "key": "sentence-laugh",
+      "text": "We laugh at the funny story."
+    },
+    {
+      "key": "sentence-giggle",
+      "text": "We giggle together."
+    },
+    {
+      "key": "sentence-cry",
+      "text": "It is okay to cry when I feel sad."
+    },
+    {
+      "key": "sentence-frown",
+      "text": "I frown when I feel unhappy."
+    },
+    {
+      "key": "sentence-wink",
+      "text": "I can wink at you."
+    },
+    {
+      "key": "sentence-yawn",
+      "text": "I yawn when I am sleepy."
+    },
+    {
+      "key": "sentence-sneeze",
+      "text": "I sneeze into my elbow."
+    },
+    {
+      "key": "sentence-cough",
+      "text": "I cover my mouth when I cough."
+    },
+    {
+      "key": "sentence-tear",
+      "text": "A tear runs down my cheek."
+    },
+    {
+      "key": "sentence-eat",
+      "text": "I eat my lunch."
+    },
+    {
+      "key": "sentence-bite",
+      "text": "I take a small bite."
+    },
+    {
+      "key": "sentence-chew",
+      "text": "I chew my food slowly."
+    },
+    {
+      "key": "sentence-taste",
+      "text": "I taste the soup."
+    },
+    {
+      "key": "sentence-smell",
+      "text": "I smell a flower."
+    },
+    {
+      "key": "sentence-see",
+      "text": "I see a bird."
+    },
+    {
+      "key": "sentence-look",
+      "text": "Look at the red ball."
+    },
+    {
+      "key": "sentence-hear",
+      "text": "I hear the bell."
+    },
+    {
+      "key": "sentence-listen",
+      "text": "I listen to a story."
+    },
+    {
+      "key": "sentence-touch",
+      "text": "I gently touch the soft blanket."
+    },
+    {
+      "key": "sentence-feel",
+      "text": "I feel the soft fur."
+    },
+    {
+      "key": "sentence-hold",
+      "text": "I hold your hand."
+    },
+    {
+      "key": "sentence-clap",
+      "text": "We clap for our friends."
+    },
+    {
+      "key": "sentence-point",
+      "text": "I point to the picture."
+    },
+    {
+      "key": "sentence-raise",
+      "text": "I raise my hand."
+    },
+    {
+      "key": "sentence-hug",
+      "text": "I give Mom a hug."
+    },
+    {
+      "key": "sentence-kiss",
+      "text": "I blow Grandma a kiss."
+    },
+    {
+      "key": "sentence-walk",
+      "text": "We walk to the park."
+    },
+    {
+      "key": "sentence-run",
+      "text": "I can run on the grass."
+    },
+    {
+      "key": "sentence-stand",
+      "text": "I stand beside my chair."
+    },
+    {
+      "key": "sentence-sit",
+      "text": "I sit on my chair."
+    },
+    {
+      "key": "sentence-kneel",
+      "text": "I kneel on a soft mat."
+    },
+    {
+      "key": "sentence-crawl",
+      "text": "The baby can crawl."
+    },
+    {
+      "key": "sentence-jump",
+      "text": "I jump over a little line."
+    },
+    {
+      "key": "sentence-climb",
+      "text": "I climb with help from an adult."
+    },
+    {
+      "key": "sentence-swim",
+      "text": "I learn to swim with a teacher."
+    },
+    {
+      "key": "sentence-float",
+      "text": "The ring can float on water."
+    },
+    {
+      "key": "sentence-dive",
+      "text": "The diver can dive under water."
+    },
+    {
+      "key": "sentence-ride",
+      "text": "I ride my bike with a helmet."
+    },
+    {
+      "key": "sentence-drive",
+      "text": "An adult can drive the car."
+    },
+    {
+      "key": "sentence-row",
+      "text": "We row the boat together."
+    },
+    {
+      "key": "sentence-skate",
+      "text": "I learn to skate with help."
+    },
+    {
+      "key": "sentence-ski",
+      "text": "People ski on the snow."
+    },
+    {
+      "key": "sentence-dance",
+      "text": "We dance to the music."
+    },
+    {
+      "key": "sentence-sing",
+      "text": "I sing a song."
+    },
+    {
+      "key": "sentence-read",
+      "text": "I read a little book."
+    },
+    {
+      "key": "sentence-write",
+      "text": "I write my name."
+    },
+    {
+      "key": "sentence-draw",
+      "text": "I draw a cat."
+    },
+    {
+      "key": "sentence-color",
+      "text": "I color the flower yellow."
+    },
+    {
+      "key": "sentence-cut",
+      "text": "I cut paper with help."
+    },
+    {
+      "key": "sentence-fold",
+      "text": "I fold the paper in half."
+    },
+    {
+      "key": "sentence-count",
+      "text": "I count the apples."
+    },
+    {
+      "key": "sentence-add",
+      "text": "We add one more block."
+    },
+    {
+      "key": "sentence-subtract",
+      "text": "We subtract one from three."
+    },
+    {
+      "key": "sentence-measure",
+      "text": "We measure the book with a ruler."
+    },
+    {
+      "key": "sentence-weigh",
+      "text": "We weigh the fruit."
+    },
+    {
+      "key": "sentence-build",
+      "text": "We build a little wall."
+    },
+    {
+      "key": "sentence-fix",
+      "text": "An adult helps fix the bike."
+    },
+    {
+      "key": "sentence-repair",
+      "text": "The mechanic can repair the car."
+    },
+    {
+      "key": "sentence-sew",
+      "text": "An adult can sew a button."
+    },
+    {
+      "key": "sentence-knit",
+      "text": "Grandma can knit a scarf."
+    },
+    {
+      "key": "sentence-wash",
+      "text": "I wash my hands with soap."
+    },
+    {
+      "key": "sentence-sweep",
+      "text": "I sweep the floor."
+    },
+    {
+      "key": "sentence-wipe",
+      "text": "I wipe the table."
+    },
+    {
+      "key": "sentence-tidy",
+      "text": "I tidy my toys."
+    },
+    {
+      "key": "sentence-bake",
+      "text": "We bake bread together."
+    },
+    {
+      "key": "sentence-boil",
+      "text": "An adult boils water."
+    },
+    {
+      "key": "sentence-fry",
+      "text": "An adult fries an egg."
+    },
+    {
+      "key": "sentence-stir",
+      "text": "I stir with a spoon."
+    },
+    {
+      "key": "sentence-pour",
+      "text": "I pour water into a cup."
+    },
+    {
+      "key": "sentence-peel",
+      "text": "I peel a banana."
+    },
+    {
+      "key": "sentence-chop",
+      "text": "An adult chops the vegetables."
+    },
+    {
+      "key": "sentence-grow",
+      "text": "A seed can grow into a plant."
+    },
+    {
+      "key": "sentence-dig",
+      "text": "We dig a small hole for a seed."
+    },
+    {
+      "key": "sentence-bloom",
+      "text": "Flowers bloom in spring."
+    },
+    {
+      "key": "sentence-sleep",
+      "text": "I sleep in my bed."
+    },
+    {
+      "key": "sentence-rest",
+      "text": "I can rest when I feel tired."
+    },
+    {
+      "key": "sentence-wake up",
+      "text": "I wake up in the morning."
+    },
+    {
+      "key": "sentence-dream",
+      "text": "I dream about flying."
+    },
+    {
+      "key": "sentence-think",
+      "text": "I think about the question."
+    },
+    {
+      "key": "sentence-learn",
+      "text": "I learn one new word."
+    },
+    {
+      "key": "sentence-ask",
+      "text": "I ask for help."
+    },
+    {
+      "key": "sentence-help",
+      "text": "I help put the toys away."
+    },
+    {
+      "key": "sentence-share",
+      "text": "We share the crayons."
+    },
+    {
+      "key": "sentence-give",
+      "text": "I give you a little gift."
+    },
+    {
+      "key": "sentence-send",
+      "text": "We send a card to Grandma."
+    },
+    {
+      "key": "sentence-mail",
+      "text": "We mail a letter."
+    },
+    {
+      "key": "sentence-pack",
+      "text": "I pack my bag."
+    },
+    {
+      "key": "sentence-carry",
+      "text": "I carry my backpack."
+    },
+    {
+      "key": "sentence-open",
+      "text": "I open my book."
+    },
+    {
+      "key": "sentence-close",
+      "text": "I close my book."
+    },
+    {
+      "key": "sentence-unlock",
+      "text": "An adult unlocks the door."
+    },
+    {
+      "key": "sentence-turn",
+      "text": "I turn the page."
+    },
+    {
+      "key": "sentence-roll",
+      "text": "We roll the ball."
+    },
+    {
+      "key": "sentence-throw",
+      "text": "I throw the ball to Dad."
+    },
+    {
+      "key": "sentence-catch",
+      "text": "I try to catch the ball."
+    },
+    {
+      "key": "sentence-kick",
+      "text": "I kick the ball gently."
+    },
+    {
+      "key": "sentence-bounce",
+      "text": "I bounce the basketball."
+    },
+    {
+      "key": "sentence-pull",
+      "text": "We pull the sled together."
+    },
+    {
+      "key": "sentence-push",
+      "text": "I help push the cart."
+    },
+    {
+      "key": "sentence-stop",
+      "text": "We stop before crossing the road."
+    },
+    {
+      "key": "sentence-go",
+      "text": "We go when it is safe."
+    },
+    {
+      "key": "sentence-wait",
+      "text": "I wait for my turn."
+    },
+    {
+      "key": "sentence-take turns",
+      "text": "We take turns in the game."
+    },
+    {
+      "key": "sentence-cross",
+      "text": "We cross the road with an adult."
+    },
+    {
+      "key": "sentence-follow",
+      "text": "I follow my teacher."
+    },
+    {
+      "key": "sentence-visit",
+      "text": "We visit our grandparents."
+    },
+    {
+      "key": "sentence-travel",
+      "text": "We travel by train."
+    },
+    {
+      "key": "sentence-explore",
+      "text": "We explore the garden together."
+    },
+    {
+      "key": "sentence-search",
+      "text": "We search for the missing toy."
+    },
+    {
+      "key": "sentence-find",
+      "text": "I find my little toy."
+    },
+    {
+      "key": "sentence-choose",
+      "text": "I choose a book to read."
+    },
+    {
+      "key": "sentence-red",
+      "text": "The ball is red."
+    },
+    {
+      "key": "sentence-yellow",
+      "text": "The sun looks yellow."
+    },
+    {
+      "key": "sentence-green",
+      "text": "The leaf is green."
+    },
+    {
+      "key": "sentence-blue",
+      "text": "The sky is blue."
+    },
+    {
+      "key": "sentence-purple",
+      "text": "The grapes are purple."
+    },
+    {
+      "key": "sentence-brown",
+      "text": "The bear is brown."
+    },
+    {
+      "key": "sentence-black",
+      "text": "The cat is black."
+    },
+    {
+      "key": "sentence-white",
+      "text": "The snow is white."
+    },
+    {
+      "key": "sentence-pink",
+      "text": "The flower is pink."
+    },
+    {
+      "key": "sentence-rainbow colors",
+      "text": "I see rainbow colors."
+    },
+    {
+      "key": "sentence-circle",
+      "text": "I draw a circle."
+    },
+    {
+      "key": "sentence-square",
+      "text": "This square has four equal sides."
+    },
+    {
+      "key": "sentence-triangle",
+      "text": "A triangle has three sides."
+    },
+    {
+      "key": "sentence-diamond shape",
+      "text": "This is a diamond shape."
+    },
+    {
+      "key": "sentence-oval",
+      "text": "An egg has an oval shape."
+    },
+    {
+      "key": "sentence-heart shape",
+      "text": "I draw a heart shape."
+    },
+    {
+      "key": "sentence-star shape",
+      "text": "This is a star shape."
+    },
+    {
+      "key": "sentence-round",
+      "text": "The ball is round."
+    },
+    {
+      "key": "sentence-straight",
+      "text": "The ruler is straight."
+    },
+    {
+      "key": "sentence-curved",
+      "text": "The banana is curved."
+    },
+    {
+      "key": "sentence-long",
+      "text": "The ruler is long."
+    },
+    {
+      "key": "sentence-big",
+      "text": "The elephant is big."
+    },
+    {
+      "key": "sentence-small",
+      "text": "The ant is small."
+    },
+    {
+      "key": "sentence-tall",
+      "text": "The giraffe is tall."
+    },
+    {
+      "key": "sentence-tiny",
+      "text": "The ant is tiny."
+    },
+    {
+      "key": "sentence-wide",
+      "text": "The bridge is wide."
+    },
+    {
+      "key": "sentence-narrow",
+      "text": "This doorway is narrow."
+    },
+    {
+      "key": "sentence-thick",
+      "text": "This book is thick."
+    },
+    {
+      "key": "sentence-thin",
+      "text": "This paper is thin."
+    },
+    {
+      "key": "sentence-heavy",
+      "text": "The big rock is heavy."
+    },
+    {
+      "key": "sentence-light",
+      "text": "The feather is light."
+    },
+    {
+      "key": "sentence-soft",
+      "text": "My teddy bear is soft."
+    },
+    {
+      "key": "sentence-hard",
+      "text": "The rock is hard."
+    },
+    {
+      "key": "sentence-smooth",
+      "text": "This pebble feels smooth."
+    },
+    {
+      "key": "sentence-rough",
+      "text": "The bark feels rough."
+    },
+    {
+      "key": "sentence-wet",
+      "text": "My hands are wet."
+    },
+    {
+      "key": "sentence-dry",
+      "text": "My clothes are dry now."
+    },
+    {
+      "key": "sentence-fast",
+      "text": "The horse can run fast."
+    },
+    {
+      "key": "sentence-slow",
+      "text": "The turtle is slow."
+    },
+    {
+      "key": "sentence-bright",
+      "text": "The sun is bright."
+    },
+    {
+      "key": "sentence-dark",
+      "text": "It is dark at night."
+    },
+    {
+      "key": "sentence-shiny",
+      "text": "The gem is shiny."
+    },
+    {
+      "key": "sentence-colorful",
+      "text": "The rainbow is colorful."
+    },
+    {
+      "key": "sentence-striped",
+      "text": "The zebra is striped."
+    },
+    {
+      "key": "sentence-spotted",
+      "text": "The leopard is spotted."
+    },
+    {
+      "key": "sentence-empty",
+      "text": "The bowl is empty."
+    },
+    {
+      "key": "sentence-full bowl",
+      "text": "This is a full bowl of rice."
+    },
+    {
+      "key": "sentence-same",
+      "text": "These two shapes look the same."
+    },
+    {
+      "key": "sentence-different",
+      "text": "Red and blue are different colors."
+    },
+    {
+      "key": "read-red-ball-0",
+      "text": "I have a ball."
+    },
+    {
+      "key": "read-red-ball-1",
+      "text": "My ball is red."
+    },
+    {
+      "key": "read-red-ball-2",
+      "text": "Roll, roll, roll!"
+    },
+    {
+      "key": "read-red-ball-3",
+      "text": "Here is my ball."
+    },
+    {
+      "key": "read-little-dog-0",
+      "text": "I see a dog."
+    },
+    {
+      "key": "read-little-dog-1",
+      "text": "The dog sees a ball."
+    },
+    {
+      "key": "read-little-dog-2",
+      "text": "Run, little dog!"
+    },
+    {
+      "key": "read-little-dog-3",
+      "text": "Get the ball!"
+    },
+    {
+      "key": "read-banana-snack-0",
+      "text": "I see a banana."
+    },
+    {
+      "key": "read-banana-snack-1",
+      "text": "Peel the banana."
+    },
+    {
+      "key": "read-banana-snack-2",
+      "text": "I eat the banana."
+    },
+    {
+      "key": "read-banana-snack-3",
+      "text": "Yum, yum, yum!"
+    },
+    {
+      "key": "read-open-book-0",
+      "text": "Here is my book."
+    },
+    {
+      "key": "read-open-book-1",
+      "text": "Open the book."
+    },
+    {
+      "key": "read-open-book-2",
+      "text": "I see a cat."
+    },
+    {
+      "key": "read-open-book-3",
+      "text": "Hello, little cat!"
+    },
+    {
+      "key": "read-wash-hands-0",
+      "text": "Look at my hands."
+    },
+    {
+      "key": "read-wash-hands-1",
+      "text": "Wash, wash, wash."
+    },
+    {
+      "key": "read-wash-hands-2",
+      "text": "My hands are clean."
+    },
+    {
+      "key": "read-wash-hands-3",
+      "text": "Time to eat!"
+    },
+    {
+      "key": "read-bird-tree-0",
+      "text": "I see a tree."
+    },
+    {
+      "key": "read-bird-tree-1",
+      "text": "A bird is in the tree."
+    },
+    {
+      "key": "read-bird-tree-2",
+      "text": "Hello, little bird!"
+    },
+    {
+      "key": "read-bird-tree-3",
+      "text": "Bye-bye, little bird!"
+    },
+    {
+      "key": "read-bedtime-bunny-0",
+      "text": "Here is a rabbit."
+    },
+    {
+      "key": "read-bedtime-bunny-1",
+      "text": "The rabbit is sleepy."
+    },
+    {
+      "key": "read-bedtime-bunny-2",
+      "text": "Hop into bed!"
+    },
+    {
+      "key": "read-bedtime-bunny-3",
+      "text": "Good night, little rabbit."
+    },
+    {
+      "key": "read-toy-box-0",
+      "text": "Here is a box."
+    },
+    {
+      "key": "read-toy-box-1",
+      "text": "Here is my ball."
+    },
+    {
+      "key": "read-toy-box-2",
+      "text": "Put the ball in."
+    },
+    {
+      "key": "read-toy-box-3",
+      "text": "Bye-bye, ball!"
+    },
+    {
       "key": "read-cat-0",
       "text": "I see a cat."
     },
@@ -350,6 +9503,134 @@
     {
       "key": "read-river-6",
       "text": "The students decide to change the position of one sign and keep checking. They have learned to use evidence to improve a plan rather than assume the first idea will solve everything."
+    },
+    {
+      "key": "talk-my-name-0",
+      "text": "Hello!"
+    },
+    {
+      "key": "talk-my-name-1",
+      "text": "Hi!"
+    },
+    {
+      "key": "talk-my-name-2",
+      "text": "I am Mia."
+    },
+    {
+      "key": "talk-my-name-3",
+      "text": "I am Ben."
+    },
+    {
+      "key": "talk-my-age-0",
+      "text": "How old are you?"
+    },
+    {
+      "key": "talk-my-age-1",
+      "text": "I am five."
+    },
+    {
+      "key": "talk-my-age-2",
+      "text": "Five?"
+    },
+    {
+      "key": "talk-my-age-3",
+      "text": "Yes, five!"
+    },
+    {
+      "key": "talk-apple-please-0",
+      "text": "An apple?"
+    },
+    {
+      "key": "talk-apple-please-1",
+      "text": "Yes, please."
+    },
+    {
+      "key": "talk-apple-please-2",
+      "text": "Here you are."
+    },
+    {
+      "key": "talk-apple-please-3",
+      "text": "Thank you!"
+    },
+    {
+      "key": "talk-like-milk-0",
+      "text": "Do you like milk?"
+    },
+    {
+      "key": "talk-like-milk-1",
+      "text": "Yes, I do."
+    },
+    {
+      "key": "talk-like-milk-2",
+      "text": "Do you like bread?"
+    },
+    {
+      "key": "talk-like-milk-3",
+      "text": "Yes, I do."
+    },
+    {
+      "key": "talk-red-or-blue-0",
+      "text": "Look! A ball!"
+    },
+    {
+      "key": "talk-red-or-blue-1",
+      "text": "Red or blue?"
+    },
+    {
+      "key": "talk-red-or-blue-2",
+      "text": "Red!"
+    },
+    {
+      "key": "talk-red-or-blue-3",
+      "text": "Yes! A red ball."
+    },
+    {
+      "key": "talk-where-cat-0",
+      "text": "Where is the cat?"
+    },
+    {
+      "key": "talk-where-cat-1",
+      "text": "In the box!"
+    },
+    {
+      "key": "talk-where-cat-2",
+      "text": "Hello, cat!"
+    },
+    {
+      "key": "talk-where-cat-3",
+      "text": "Meow, meow!"
+    },
+    {
+      "key": "talk-can-jump-0",
+      "text": "Can you jump?"
+    },
+    {
+      "key": "talk-can-jump-1",
+      "text": "Yes, I can."
+    },
+    {
+      "key": "talk-can-jump-2",
+      "text": "Jump, jump, jump!"
+    },
+    {
+      "key": "talk-can-jump-3",
+      "text": "I can jump!"
+    },
+    {
+      "key": "talk-bye-friend-0",
+      "text": "Bye-bye!"
+    },
+    {
+      "key": "talk-bye-friend-1",
+      "text": "Bye-bye!"
+    },
+    {
+      "key": "talk-bye-friend-2",
+      "text": "See you!"
+    },
+    {
+      "key": "talk-bye-friend-3",
+      "text": "See you!"
     },
     {
       "key": "talk-hello-0",

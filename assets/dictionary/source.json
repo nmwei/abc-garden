@@ -1,0 +1,20 @@
+{
+  "name": "ECDICT",
+  "url": "https://github.com/skywind3000/ECDICT",
+  "commit": "ab22ad36302cafc6349a050e2b60894855208055",
+  "csvSha256": "d1ecbdf9ee2b920afb6f430ca6b6bb9f559588cf0dff86e04bd255f9390843cc",
+  "license": "MIT (as declared by upstream)",
+  "count": 4979,
+  "selection": "Lowercase English words/phrases up to 50 characters with Chinese translation; oxford=1 OR contemporary frequency rank 1..5000. Not a current official Oxford wordlist.",
+  "tiers": {
+    "1": "frq 1..1000",
+    "2": "frq 1001..3000",
+    "3": "frq >3000 or missing; includes other upstream core entries"
+  },
+  "notices": [
+    "Frequency tiers are not CEFR or age levels.",
+    "Translations retained from upstream; no generated examples or pictures.",
+    "General dictionary entries require parent selection for child practice.",
+    "Existing 40 picture cards are project-authored materials and take precedence in completion."
+  ]
+}

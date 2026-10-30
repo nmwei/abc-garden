@@ -1,0 +1,167 @@
+{
+  "title": "GK 26个字母拼读音",
+  "source": "source.mp3",
+  "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+  "decodedDuration": 77.4,
+  "timeline": "Seconds in decoded mono 24000 Hz PCM; decode once before applying cuts",
+  "structure": "Each letter: name repeated three times, then letter sound repeated three times",
+  "review": "A-Z structure identified by audio analysis; cut positions checked against silence and waveforms. Not a professional pronunciation certification.",
+  "clips": [
+    {
+      "letter": "A",
+      "start": 0.5,
+      "split": 1.99,
+      "end": 3.45
+    },
+    {
+      "letter": "B",
+      "start": 3.45,
+      "split": 4.88,
+      "end": 6.3
+    },
+    {
+      "letter": "C",
+      "start": 6.3,
+      "split": 7.79,
+      "end": 9.25
+    },
+    {
+      "letter": "D",
+      "start": 9.25,
+      "split": 10.85,
+      "end": 12.24
+    },
+    {
+      "letter": "E",
+      "start": 12.24,
+      "split": 13.78,
+      "end": 15.25
+    },
+    {
+      "letter": "F",
+      "start": 15.25,
+      "split": 16.55,
+      "end": 17.95
+    },
+    {
+      "letter": "G",
+      "start": 17.95,
+      "split": 19.44,
+      "end": 20.8
+    },
+    {
+      "letter": "H",
+      "start": 20.8,
+      "split": 22.3,
+      "end": 23.75
+    },
+    {
+      "letter": "I",
+      "start": 23.75,
+      "split": 25.16,
+      "end": 26.57
+    },
+    {
+      "letter": "J",
+      "start": 26.57,
+      "split": 28.06,
+      "end": 29.39
+    },
+    {
+      "letter": "K",
+      "start": 29.39,
+      "split": 30.76,
+      "end": 32.15
+    },
+    {
+      "letter": "L",
+      "start": 32.15,
+      "split": 33.62,
+      "end": 35.65
+    },
+    {
+      "letter": "M",
+      "start": 35.65,
+      "split": 37.22,
+      "end": 38.7
+    },
+    {
+      "letter": "N",
+      "start": 38.7,
+      "split": 40.18,
+      "end": 41.6
+    },
+    {
+      "letter": "O",
+      "start": 41.6,
+      "split": 43.16,
+      "end": 44.48
+    },
+    {
+      "letter": "P",
+      "start": 44.48,
+      "split": 45.87,
+      "end": 47.32
+    },
+    {
+      "letter": "Q",
+      "start": 47.32,
+      "split": 48.75,
+      "end": 51.15
+    },
+    {
+      "letter": "R",
+      "start": 51.15,
+      "split": 52.63,
+      "end": 54
+    },
+    {
+      "letter": "S",
+      "start": 54,
+      "split": 55.24,
+      "end": 56.6
+    },
+    {
+      "letter": "T",
+      "start": 56.6,
+      "split": 57.94,
+      "end": 59.3
+    },
+    {
+      "letter": "U",
+      "start": 59.3,
+      "split": 60.7,
+      "end": 62.1
+    },
+    {
+      "letter": "V",
+      "start": 62.1,
+      "split": 63.45,
+      "end": 64.77
+    },
+    {
+      "letter": "W",
+      "start": 64.77,
+      "split": 66.38,
+      "end": 68.5
+    },
+    {
+      "letter": "X",
+      "start": 68.5,
+      "split": 70.04,
+      "end": 71.55
+    },
+    {
+      "letter": "Y",
+      "start": 71.55,
+      "split": 72.99,
+      "end": 74.33
+    },
+    {
+      "letter": "Z",
+      "start": 74.33,
+      "split": 75.71,
+      "end": 77
+    }
+  ]
+}
