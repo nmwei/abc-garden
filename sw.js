@@ -1,5 +1,5 @@
 // One resource store per build; package membership pins resources without copying them.
-const CACHE='abc-garden-b1d58d53ccaa',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
+const CACHE='abc-garden-ab9e6bc87b4d',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
 const RECENT_LIMIT=40*1024*1024,RECENT_COUNT=240;
 let localPromise,resourceSpecs,pinnedPromise,manifestPromise,indexPromise,selectionPromise,cacheQueue=Promise.resolve(),download=null,mediaEpoch=0;
 const absolute=file=>new URL(file,root).href;
@@ -82,7 +82,7 @@ async function status(){
  await cacheQueue;const data=await localManifest(),keys=new Set((await (await caches.open(CACHE)).keys()).map(r=>r.url)),index=await resourceIndex(),selected=await selections(),pinned=await pinnedUrls();
  const complete=p=>p.files.every(f=>index.has(absolute(f))),packs=data.packs.filter(p=>selected.has(p.id)&&complete(p)).map(p=>p.id);
  let mediaBytes=0,recentBytes=0,recentCount=0;for(const [url,size] of index){mediaBytes+=size;if(!pinned.has(url)){recentBytes+=size;recentCount++;}}
- return {ready:data.files.every(f=>keys.has(absolute(f))),packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:complete(data.packs.find(p=>p.id==='all')),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'b1d58d53ccaa'};
+ return {ready:data.files.every(f=>keys.has(absolute(f))),packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:complete(data.packs.find(p=>p.id==='all')),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'ab9e6bc87b4d'};
 }
 async function downloadPack(id,port){
  if(download)throw Error('已有下载正在进行，请稍后再试。');

@@ -1,5 +1,4 @@
 import {WordEditor,wordRows,configWithRows} from './word-editor.js';
-import {wordCardBody} from './word-card.js';
 import {speechId,readClip,generateClip} from './generated-audio.js';
 import {freshWeekly,cleanWeekly,completeLocalWords} from './module-content.js';
 import {WORDS,WORD_BY_ID} from './course-content.js';
@@ -15,7 +14,7 @@ export class LearningContent {
   catch{this.toast('学习内容读取失败，请在家长小角重新检查。');}
   // Enrich saved words in memory; persist only when the parent saves.
   if(this.data.wordEditorVersion!==1)this.data.words=completeLocalWords(this.data.words).words;
-  this.wordEditor=new WordEditor(this.data);
+  this.wordEditor=new WordEditor(this.data);this.saveMessage='';
   this.ready=this.hydrate().catch(()=>{this.generationMessage='设备存储不可用，音频暂时无法保存。';});
  }
  get words(){return wordRows(this.data);}
@@ -26,24 +25,37 @@ export class LearningContent {
  editor(){
   return `<section class="panel parent-section" id="word-editor" aria-labelledby="word-editor-title"><h2 id="word-editor-title">添加哪些单词</h2><div class="content-editor"><fieldset ${this.generating?'disabled':''}>
    ${this.wordEditor.html()}
-   <div class="button-row">${button('save',this.generating?'正在准备发音…':'保存并准备发音','',true)}</div>
-   ${this.generationFailed&&!this.wordEditor.dirty&&!this.wordEditor.input.trim()?`<div class="button-row">${button('generate','重试未完成的发音')}</div>`:''}
+   <p id="word-save-status" class="micro" role="status">${esc(this.saveMessage)}</p><button class="button secondary small" data-learning="retry-save" ${this.saveFailed?'':'hidden'}>重试保存</button>
+   <div id="word-audio-preparation">${this.audioPreparation()}</div>
    </fieldset><p id="generation-status" role="status" aria-live="polite">${esc(this.generationMessage)}</p>
-   <p class="micro">保存后到“看图学词 → 家长添加”练习。新发音需要连接本地生成服务，准备好后可离线播放。</p>
-   </div></section>`;
+   <p class="micro">添加、编辑和排序会自动保存，到“看图学词 → 家长添加”即可练习。已有英文录音直接使用，准备新发音需生成服务。</p></div></section>`;
  }
- clipOptions(){return this.words.flatMap(w=>[['word:'+w.word,w.word+' 英文'],...(w.zh?[['zh:'+w.word,w.word+' 中文']]:[]),...(w.sentence?[['sentence:'+w.word,w.word+' 例句']]:[])]);}
- html(){
-  const list=this.practiceWords;this.index=Math.min(this.index,Math.max(0,list.length-1));const item=list[this.index];
-  if(!item&&this.words.length)return this.masteryFilters()+'<section class="learning-panel empty-content"><p>这个分类还没有单词，可以切换筛选。</p></section>';
-  if(!item)return `<section class="learning-panel empty-content"><h2>把课堂里的词带到这里</h2><p>请家长在“家长小角 → 添加单词与句型”中填写内容。</p><p class="micro">也可以切换到生活词库，先认识一个喜欢的词。</p></section>`;
-  const picture=WORD_BY_ID.get(item.word);
-  return `${this.masteryFilters()}<div class="word-layout configured-words"><aside class="word-list" aria-label="家长添加的单词">${list.map((w,i)=>`<button data-learning="select" data-index="${i}" aria-pressed="${this.index===i}"><span>${esc(w.word)}</span>${this.mastery.has(w.word)?'<small class="mastery-badge">已掌握</small>':''}<small>${esc(w.zh)}</small></button>`).join('')}</aside>
-   <section class="learning-panel">${wordCardBody({word:item.word,zh:item.zh,image:picture?.image,sentence:item.sentence,sentenceZh:item.sentenceZh,action:item.action||(picture?.pictureCue?'这张图是情境提示，可以结合例句和动作来理解。':''),listenWord:button('word','听单词','',true),listenSentence:button('sentence','听句子')})}
-   <p class="feedback" id="word-play-status" role="status" aria-live="polite"></p>
-   <div class="mastery-control word-card-actions">${button('next','换一个朋友',list.length<2?'disabled':'')}${this.mastery.has(item.word)?'<span class="mastery-badge">已掌握</span>':''}${button('mastery-toggle',this.mastery.has(item.word)?'取消已掌握':'标记为已掌握')}</div><details class="word-follow-extra"><summary>连续跟读</summary><p class="micro">跟着声音慢慢读，随时可以停止。</p><div class="button-row centered">${button('play',item.zh?'英文 → 中文 → 跟读':'跟读这个词')}${button('stop','停止')}</div></details></section></div>`;
+ audioPreparation(){
+  const missing=this.clipOptions().filter(([key])=>!this.resolve(key));
+  if(!missing.length)return '<p class="micro">已有英文音频可直接播放。</p>';
+  return `<p class="micro">尚缺 ${missing.length} 项英文发音：${missing.map(([,label])=>esc(label)).join('、')}</p>${this.generationUnavailable?'<p class="micro">当前站点未提供生成服务，已有音频仍可使用。</p>':button('generate',this.generating?'正在准备发音…':'准备缺少的发音',this.generating||this.wordEditor.dirty?'disabled':'')}`;
  }
- request(key){const [kind,value]=key.split(':');if(!['word','zh','sentence'].includes(kind))return null;const w=this.words.find(w=>w.word===value);const text=kind==='zh'?w?.zh:kind==='sentence'?w?.sentence:value;return text?{kind,text}:null;}
+ paintSave(){
+  const status=document.querySelector('#word-save-status');if(status)status.textContent=this.saveMessage;
+  const retry=document.querySelector('[data-learning="retry-save"]');if(retry)retry.hidden=!this.saveFailed;
+  const preparation=document.querySelector('#word-audio-preparation');if(preparation)preparation.innerHTML=this.audioPreparation();
+ }
+ flush(){
+  clearTimeout(this.saveTimer);
+  if(!this.wordEditor.dirty)return true;
+  try{
+   const data=cleanWeekly(configWithRows(this.data,this.wordEditor.rows));
+   if(!this.persist(data))throw Error('保存失败，请检查设备存储后重试。');
+   this.wordEditor.dirty=false;this.saveFailed=false;this.saveMessage='已保存';
+   document.querySelectorAll('[data-row-status]').forEach(el=>el.textContent='已保存');
+   this.generationMessage='';const generation=document.querySelector('#generation-status');if(generation)generation.textContent='';
+   this.paintSave();return true;
+  }catch(error){this.saveFailed=true;this.saveMessage=error.message;this.paintSave();return false;}
+ }
+
+ clipOptions(){return this.words.flatMap(w=>[['word:'+w.word,w.word+' 英文'],...(w.sentence?[['sentence:'+w.word,w.word+' 例句']]:[])]);}
+
+ request(key){const [kind,value]=key.split(':');if(!['word','sentence'].includes(kind))return null;const w=this.words.find(w=>w.word===value);const text=kind==='sentence'?w?.sentence:value;return text?{kind,text}:null;}
  resolve(key){
   const request=this.request(key);if(!request)return null;
   const generated=this.generated.get(speechId(request));if(generated)return {src:generated,repeat:this.data.repeats};
@@ -71,37 +83,36 @@ export class LearningContent {
  async hydrate(){for(const [key] of this.clipOptions()){const request=this.request(key);if(!request)continue;const id=speechId(request);if(this.generated.has(id))continue;const blob=await readClip(id);if(blob)this.generated.set(id,URL.createObjectURL(blob));}}
  generationStatus(text){this.generationMessage=text;const el=document.querySelector('#generation-status');if(el)el.textContent=text;}
  async generate(){
-  if(this.generating)return;this.generating=true;this.generationFailed=false;this.refresh();let done=0,failed=0;
+  if(this.generating)return;this.generating=true;this.generationFailed=false;this.generationUnavailable=false;this.refresh();let done=0,failed=0;const missing=[];let unavailable='';
   try{
    await this.hydrate();const entries=this.clipOptions();
    for(const [key,label] of entries){
     const request=this.request(key),id=speechId(request);this.generationStatus(`正在准备 ${++done}/${entries.length}：${label}。首次加载可能需要几分钟。`);
     if(this.resolve(key))continue;
+    if(unavailable){failed++;missing.push(label);continue;}
     try{const blob=await generateClip(request,AbortSignal.timeout(180000));this.generated.set(id,URL.createObjectURL(blob));}
-    catch(error){failed++;this.generationStatus(`${label}：${error.message}`);if(failed>=3)throw Error('生成暂未完成。请确认电脑上的生成服务正在运行，再点击重试。');}
+    catch(error){failed++;missing.push(label);if(error.code==='SPEECH_UNAVAILABLE'){unavailable=error.message;this.generationUnavailable=true;}}
    }
-   this.generationStatus(!entries.length?'内容已保存，暂未添加单词。':failed?`有 ${failed} 项未完成，请点击重试；已准备好的声音会保留。`:'音频已准备好，可以去看图学词了。');
+   this.generationStatus(!entries.length?'内容已保存，暂未添加单词。':failed?`文字已保存，已有英文音频仍可播放。尚未准备：${missing.join('、')}。${unavailable||'生成失败，可稍后重试。'}`:'音频已准备好，可以去看图学词了。');
   }catch(error){failed++;this.generationStatus(error.message);}finally{this.generationFailed=failed>0;this.generating=false;this.refresh();}
  }
- draftChanged(){if(this.wordEditor.dirty||this.wordEditor.input.trim()){this.generationStatus('');document.querySelector('[data-learning="generate"]')?.remove();}}
- editInput(el){this.wordEditor.inputChanged(el);if(el.id==='word-add-input'||el.dataset.wordField)this.draftChanged();}
+ draftChanged(){if(this.wordEditor.dirty){this.saveMessage='保存中…';this.paintSave();}}
+ editInput(el,composing=false){
+  this.wordEditor.inputChanged(el);if(!el.dataset.wordField)return;
+  clearTimeout(this.saveTimer);this.draftChanged();if(!composing)this.saveTimer=setTimeout(()=>this.flush(),800);
+ }
+
  persist(data){try{localStorage.setItem('abc-module-content-v1',JSON.stringify(data));this.data=data;return true;}catch{this.toast('保存失败，可能是设备空间不足。原有内容未被覆盖。');return false;}}
  async action(el){
   const a=el.dataset.learning;
-  if(a==='add-words'){try{this.wordEditor.add();this.wordEditor.paint();this.draftChanged();}catch(error){this.toast(error.message);}return;}
-  if(a==='remove-word'){this.wordEditor.remove(el.dataset.word);this.wordEditor.paint();this.draftChanged();return;}
-  if(a==='generate'){if(this.wordEditor.dirty||this.wordEditor.input.trim()){this.toast('内容已修改，请先保存并准备发音。');return;}await this.generate();return;}
-  if(a==='save'){
-   try{if(this.wordEditor.input.trim())this.wordEditor.add();const d=cleanWeekly(configWithRows(this.data,this.wordEditor.rows));
-    if(this.persist(d)){this.wordEditor=new WordEditor(d);this.refresh();await this.generate();}
-   }catch(error){this.toast(error.message);}return;
-  }
-  if(a==='mastery-filter'){this.stop();this.masteryFilter=el.dataset.filter;this.index=0;this.refresh();return;}
-  if(a==='mastery-toggle'){const item=this.practiceWords[this.index];if(item)this.mastery.toggle(item.word);this.refresh();return;}
-  if(a==='stop'){this.stop();return;}
-  const list=this.practiceWords;if(!list.length)return;
-  if(a==='select'||a==='next'){this.stop();this.index=a==='next'?(this.index+1)%list.length:Number(el.dataset.index);this.refresh();return;}
-  const item=list[this.index];if(!item)return;
-  return this.play(a==='sentence'?['sentence:'+item.word]:a==='word'?['word:'+item.word]:['word:'+item.word,...(item.zh?['zh:'+item.word]:[])],a==='play');
+  if(a==='retry-save'){this.flush();return;}
+  if(a==='generate'){if(!this.flush())return;await this.generate();return;}
+  try{
+   if(a==='add-words')this.wordEditor.add();
+   else if(a==='remove-word')this.wordEditor.remove(el.dataset.word);
+   else if(a==='move-word')this.wordEditor.move(el.dataset.word,el.dataset.direction==='up'?-1:1);
+   else return;
+   this.flush();this.wordEditor.paint();this.paintSave();
+  }catch(error){this.toast(error.message);}
  }
 }
