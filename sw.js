@@ -1,5 +1,5 @@
 // One resource store per build; package membership pins resources without copying them.
-const CACHE='abc-garden-34d01e7b3efe',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
+const CACHE='abc-garden-d40d4629854a',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
 const localPreview=['localhost','127.0.0.1','[::1]'].includes(root.hostname)&&new URL(self.location.href).searchParams.get('mode')!=='offline';
 const RECENT_LIMIT=40*1024*1024,RECENT_COUNT=240;
 let localPromise,resourceSpecs,pinnedPromise,manifestPromise,indexPromise,selectionPromise,cacheQueue=Promise.resolve(),download=null,mediaEpoch=0;
@@ -116,7 +116,7 @@ async function status(){
  const complete=p=>p.files.every(f=>index.has(absolute(f))),packs=data.packs.filter(p=>selected.has(p.id)&&complete(p)).map(p=>p.id);
  const packStatus=data.packs.map(p=>{const savedBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))?data.resources[f].bytes:0),0),protectedFiles=categoryIds.includes(p.id)?protectedUrls(data,selected,p.id):new Set(),clearableBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))&&!protectedFiles.has(absolute(f))?data.resources[f].bytes:0),0);return {id:p.id,savedBytes,clearableBytes,neededBytes:p.bytes-savedBytes,complete:complete(p),retained:p.files.every(f=>pinned.has(absolute(f)))};});
  let mediaBytes=0,recentBytes=0,recentCount=0;for(const [url,size] of index){mediaBytes+=size;if(!pinned.has(url)){recentBytes+=size;recentCount++;}}
- return {ready:data.files.every(f=>keys.has(absolute(f))),packStatus,packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:packStatus.some(p=>p.id==='all'&&p.complete&&p.retained),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'34d01e7b3efe'};
+ return {ready:data.files.every(f=>keys.has(absolute(f))),packStatus,packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:packStatus.some(p=>p.id==='all'&&p.complete&&p.retained),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'d40d4629854a'};
 }
 async function downloadPack(id,port){
  if(download)throw Error('已有下载正在进行，请稍后再试。');

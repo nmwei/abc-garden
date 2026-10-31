@@ -170,11 +170,12 @@ app.addEventListener('click',event=>{
   }
   if(action==='offline-download')offline.prepare(button.dataset.pack||'all');
   if(action==='offline-confirm')offline.download();
-  if(action==='offline-dismiss'){offline.plan=null;offline.paint();}
+  if(action==='offline-dismiss')offline.dismiss();
   if(action==='offline-cancel')offline.cancel();
   if(action==='offline-clear')offline.clear();
   if(action==='offline-clear-pack')offline.clear(button.dataset.pack);
 });
+app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
 app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
