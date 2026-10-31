@@ -14,7 +14,8 @@ for r in csv.DictReader(p.open()):
     rows.append([word,zh,r['phonetic'],rank,tier])
 rows.sort(key=lambda r:(r[3] or 999999,r[0]))
 assert len({r[0] for r in rows})==len(rows)
-(ROOT/'app/local-dictionary-data.js').write_text('// ECDICT subset. Source, license and selection rules: assets/dictionary/source.json\nexport const DICTIONARY_ROWS='+json.dumps(rows,ensure_ascii=False,separators=(',',':'))+';\n')
+(ROOT/'data/reference-dictionary').mkdir(parents=True,exist_ok=True)
+(ROOT/'data/reference-dictionary/entries.json').write_text(json.dumps(rows,ensure_ascii=False,separators=(',',':'))+'\n')
 meta={'name':'ECDICT','url':'https://github.com/skywind3000/ECDICT','commit':COMMIT,'csvSha256':SHA256,'license':'MIT (as declared by upstream)','count':len(rows),'selection':'Lowercase English words/phrases up to 50 characters with Chinese translation; oxford=1 OR contemporary frequency rank 1..5000. Not a current official Oxford wordlist.','tiers':{'1':'frq 1..1000','2':'frq 1001..3000','3':'frq >3000 or missing; includes other upstream core entries'},'notices':['Frequency tiers are not CEFR or age levels.','Translations retained from upstream; no generated examples or pictures.','General dictionary entries require parent selection for child practice.','Existing 40 picture cards are project-authored materials and take precedence in completion.']}
-(ROOT/'assets/dictionary/source.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
+(ROOT/'data/reference-dictionary/source.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'count':len(rows),'tiers':{t:sum(r[4]==t for r in rows) for t in [1,2,3]}}))

@@ -1,0 +1,89 @@
+{
+  "position-inside": [
+    "in",
+    "inside",
+    "within"
+  ],
+  "position-above": [
+    "above",
+    "over"
+  ],
+  "position-on": [
+    "on",
+    "onto"
+  ],
+  "direction-destination": [
+    "to",
+    "toward",
+    "towards",
+    "into"
+  ],
+  "fear-expression": [
+    "afraid",
+    "scared",
+    "frightened",
+    "fear",
+    "horror",
+    "panic"
+  ],
+  "speaking-scene": [
+    "talk",
+    "speak",
+    "say",
+    "chat",
+    "conversation",
+    "dialog",
+    "dialogue"
+  ],
+  "loud-speaking": [
+    "shout",
+    "aloud",
+    "loud"
+  ],
+  "school-institution": [
+    "school",
+    "classroom",
+    "college",
+    "university",
+    "campus"
+  ],
+  "medical-worker": [
+    "doctor",
+    "physician",
+    "surgeon"
+  ],
+  "police-worker": [
+    "police officer",
+    "policeman",
+    "policewoman",
+    "police",
+    "officer"
+  ],
+  "writing-worker": [
+    "author",
+    "writer",
+    "poet"
+  ],
+  "stage-performance": [
+    "actor",
+    "actress",
+    "perform",
+    "performance"
+  ],
+  "warning-sign": [
+    "alert",
+    "warning",
+    "danger",
+    "dangerous"
+  ],
+  "teaching-scene": [
+    "teacher",
+    "professor",
+    "lecture",
+    "teach"
+  ],
+  "combustion-fumes": [
+    "smoke",
+    "exhaust"
+  ]
+}

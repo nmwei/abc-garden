@@ -41,7 +41,7 @@ test('microphone denial is graceful and a late permission grant is stopped on na
  await action(page,'record').click();await page.waitForFunction(()=>typeof window.grantMic==='function');await page.locator('.nav [data-action=learn]').click();await page.evaluate(()=>window.grantMic());await expect.poll(()=>page.evaluate(()=>window.tracksStopped)).toBe(1);
 });
 test('new pictures and sentence audio remain available offline',async({page,context})=>{
- await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:30000});await downloadPack(page,'food');await context.setOffline(true);await page.reload();
+ await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:30000});await downloadPack(page,'all');await context.setOffline(true);await page.reload();
  await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await expect(page.locator('.learning-panel>img')).toBeVisible();await page.getByRole('button',{name:'听句子',exact:true}).click();
  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await context.setOffline(false);
 });

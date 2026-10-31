@@ -22,7 +22,7 @@ async function getPicture(source,code){
 let cursor=0,done=0;
 const results=await Promise.allSettled(Array.from({length:4},async()=>{
  while(cursor<WORDS.length){
-  const w=WORDS[cursor++];if(['top','jam'].includes(w.id))continue;
+  const w=WORDS[cursor++];if(!w.image||!w.emoji||w.emoji.startsWith('project-')||['top','jam'].includes(w.id))continue;
   const file=`pictures/${w.id}.svg`,target=new URL(file,base),previous=byFile.get(file);
   const source=`https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@${revision}/svg/emoji_u${w.emoji}.svg`;
   const exists=await access(target).then(()=>true,()=>false);

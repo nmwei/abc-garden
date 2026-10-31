@@ -1,0 +1,802 @@
+[
+  {
+    "entry": "a/an",
+    "forms": [
+      "a",
+      "an"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "a",
+      "an"
+    ]
+  },
+  {
+    "entry": "actor/actress",
+    "forms": [
+      "actor",
+      "actress"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "actor",
+      "actress"
+    ]
+  },
+  {
+    "entry": "ad (=advertisement)",
+    "forms": [
+      "ad",
+      "advertisement"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "ad"
+    ]
+  },
+  {
+    "entry": "AI (=artificial intelligence)",
+    "forms": [
+      "ai",
+      "artificial intelligence"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "ai"
+    ]
+  },
+  {
+    "entry": "analyse (analyze)",
+    "forms": [
+      "analyse",
+      "analyze"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "analyze"
+    ]
+  },
+  {
+    "entry": "anybody/anyone",
+    "forms": [
+      "anybody",
+      "anyone"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "anybody",
+      "anyone"
+    ]
+  },
+  {
+    "entry": "apologise (apologize)",
+    "forms": [
+      "apologise",
+      "apologize"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "apologize"
+    ]
+  },
+  {
+    "entry": "app (=application)",
+    "forms": [
+      "app",
+      "application"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "app"
+    ]
+  },
+  {
+    "entry": "BCE (Before the Common Era)",
+    "forms": [
+      "bce",
+      "before the common era"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "bce",
+      "before the common era"
+    ]
+  },
+  {
+    "entry": "be (am, are, is)",
+    "forms": [
+      "be",
+      "am",
+      "are",
+      "is"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "be",
+      "am",
+      "are",
+      "is"
+    ]
+  },
+  {
+    "entry": "bike (=bicycle)",
+    "forms": [
+      "bike",
+      "bicycle"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "bike"
+    ]
+  },
+  {
+    "entry": "bride/bridegroom",
+    "forms": [
+      "bride",
+      "bridegroom"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "bride",
+      "bridegroom"
+    ]
+  },
+  {
+    "entry": "CE (Common Era)",
+    "forms": [
+      "ce",
+      "common era"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "ce",
+      "common era"
+    ]
+  },
+  {
+    "entry": "centimetre (centimeter)",
+    "forms": [
+      "centimetre",
+      "centimeter"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "centimeter"
+    ]
+  },
+  {
+    "entry": "centre (center)",
+    "forms": [
+      "centre",
+      "center"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "center"
+    ]
+  },
+  {
+    "entry": "chairman/chairwoman",
+    "forms": [
+      "chairman",
+      "chairwoman"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "chairman",
+      "chairwoman"
+    ]
+  },
+  {
+    "entry": "civilisation (civilization)",
+    "forms": [
+      "civilisation",
+      "civilization"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "civilization"
+    ]
+  },
+  {
+    "entry": "colour (color)",
+    "forms": [
+      "colour",
+      "color"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "color"
+    ]
+  },
+  {
+    "entry": "criticise (criticize)",
+    "forms": [
+      "criticise",
+      "criticize"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "criticize"
+    ]
+  },
+  {
+    "entry": "dialogue (dialog)",
+    "forms": [
+      "dialogue",
+      "dialog"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "dialogue"
+    ]
+  },
+  {
+    "entry": "disc (disk)",
+    "forms": [
+      "disc",
+      "disk"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "disc"
+    ]
+  },
+  {
+    "entry": "emperor/empress",
+    "forms": [
+      "emperor",
+      "empress"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "emperor",
+      "empress"
+    ]
+  },
+  {
+    "entry": "everybody/everyone",
+    "forms": [
+      "everybody",
+      "everyone"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "everybody",
+      "everyone"
+    ]
+  },
+  {
+    "entry": "exam (=examination)",
+    "forms": [
+      "exam",
+      "examination"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "exam"
+    ]
+  },
+  {
+    "entry": "father (dad)",
+    "forms": [
+      "father",
+      "dad"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "father",
+      "dad"
+    ]
+  },
+  {
+    "entry": "favour (favor)",
+    "forms": [
+      "favour",
+      "favor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "favor"
+    ]
+  },
+  {
+    "entry": "favourite (favorite)",
+    "forms": [
+      "favourite",
+      "favorite"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "favorite"
+    ]
+  },
+  {
+    "entry": "flavour (flavor)",
+    "forms": [
+      "flavour",
+      "flavor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "flavor"
+    ]
+  },
+  {
+    "entry": "fridge (=refrigerator)",
+    "forms": [
+      "fridge",
+      "refrigerator"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "fridge"
+    ]
+  },
+  {
+    "entry": "goodbye (bye)",
+    "forms": [
+      "goodbye",
+      "bye"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "goodbye",
+      "bye"
+    ]
+  },
+  {
+    "entry": "gramme (gram)",
+    "forms": [
+      "gramme",
+      "gram"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "gram"
+    ]
+  },
+  {
+    "entry": "grandfather (grandpa)",
+    "forms": [
+      "grandfather",
+      "grandpa"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "grandfather",
+      "grandpa"
+    ]
+  },
+  {
+    "entry": "grandmother (grandma)",
+    "forms": [
+      "grandmother",
+      "grandma"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "grandmother",
+      "grandma"
+    ]
+  },
+  {
+    "entry": "grey (gray)",
+    "forms": [
+      "grey",
+      "gray"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "gray"
+    ]
+  },
+  {
+    "entry": "gym (=gymnasium)",
+    "forms": [
+      "gym",
+      "gymnasium"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "gym"
+    ]
+  },
+  {
+    "entry": "have (has)",
+    "forms": [
+      "have",
+      "has"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "have",
+      "has"
+    ]
+  },
+  {
+    "entry": "honour (honor)",
+    "forms": [
+      "honour",
+      "honor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "honor"
+    ]
+  },
+  {
+    "entry": "host/hostess",
+    "forms": [
+      "host",
+      "hostess"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "host",
+      "hostess"
+    ]
+  },
+  {
+    "entry": "humour (humor)",
+    "forms": [
+      "humour",
+      "humor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "humor"
+    ]
+  },
+  {
+    "entry": "kilo (=kilogram)",
+    "forms": [
+      "kilo",
+      "kilogram"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "kilogram"
+    ]
+  },
+  {
+    "entry": "kilometre (kilometer)",
+    "forms": [
+      "kilometre",
+      "kilometer"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "kilometer"
+    ]
+  },
+  {
+    "entry": "lab (=laboratory)",
+    "forms": [
+      "lab",
+      "laboratory"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "lab"
+    ]
+  },
+  {
+    "entry": "labour (labor)",
+    "forms": [
+      "labour",
+      "labor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "labor"
+    ]
+  },
+  {
+    "entry": "maths (=mathematics, math)",
+    "forms": [
+      "maths",
+      "mathematics",
+      "math"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "math"
+    ]
+  },
+  {
+    "entry": "metre (meter)",
+    "forms": [
+      "metre",
+      "meter"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "meter"
+    ]
+  },
+  {
+    "entry": "millimetre (millimeter)",
+    "forms": [
+      "millimetre",
+      "millimeter"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "millimeter"
+    ]
+  },
+  {
+    "entry": "mother (mum, mom)",
+    "forms": [
+      "mother",
+      "mum",
+      "mom"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "mother",
+      "mum",
+      "mom"
+    ]
+  },
+  {
+    "entry": "Mr (Mr.)",
+    "forms": [
+      "mr",
+      "mr."
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "mr"
+    ]
+  },
+  {
+    "entry": "Mrs (Mrs.)",
+    "forms": [
+      "mrs",
+      "mrs."
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "mrs"
+    ]
+  },
+  {
+    "entry": "Ms (Ms.)",
+    "forms": [
+      "ms",
+      "ms."
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "ms"
+    ]
+  },
+  {
+    "entry": "neighbour (neighbor)",
+    "forms": [
+      "neighbour",
+      "neighbor"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "neighbor"
+    ]
+  },
+  {
+    "entry": "neighbourhood (neighborhood)",
+    "forms": [
+      "neighbourhood",
+      "neighborhood"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "neighborhood"
+    ]
+  },
+  {
+    "entry": "organisation (organization)",
+    "forms": [
+      "organisation",
+      "organization"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "organization"
+    ]
+  },
+  {
+    "entry": "organise (organize)",
+    "forms": [
+      "organise",
+      "organize"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "organize"
+    ]
+  },
+  {
+    "entry": "PE (=physical education)",
+    "forms": [
+      "pe",
+      "physical education"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "pe"
+    ]
+  },
+  {
+    "entry": "per cent (percent)",
+    "forms": [
+      "per cent",
+      "percent"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "percent"
+    ]
+  },
+  {
+    "entry": "photo (=photograph)",
+    "forms": [
+      "photo",
+      "photograph"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "photo"
+    ]
+  },
+  {
+    "entry": "policeman/policewoman",
+    "forms": [
+      "policeman",
+      "policewoman"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "policeman",
+      "policewoman"
+    ]
+  },
+  {
+    "entry": "practise (practice)",
+    "forms": [
+      "practise",
+      "practice"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "practice"
+    ]
+  },
+  {
+    "entry": "prince/princess",
+    "forms": [
+      "prince",
+      "princess"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "prince",
+      "princess"
+    ]
+  },
+  {
+    "entry": "programme (program)",
+    "forms": [
+      "programme",
+      "program"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "program"
+    ]
+  },
+  {
+    "entry": "realise (realize)",
+    "forms": [
+      "realise",
+      "realize"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "realize"
+    ]
+  },
+  {
+    "entry": "recognise (recognize)",
+    "forms": [
+      "recognise",
+      "recognize"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "recognize"
+    ]
+  },
+  {
+    "entry": "salesman/saleswoman",
+    "forms": [
+      "salesman",
+      "saleswoman"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "salesman",
+      "saleswoman"
+    ]
+  },
+  {
+    "entry": "somebody/someone",
+    "forms": [
+      "somebody",
+      "someone"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "somebody",
+      "someone"
+    ]
+  },
+  {
+    "entry": "theatre (theater)",
+    "forms": [
+      "theatre",
+      "theater"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "theater"
+    ]
+  },
+  {
+    "entry": "tofu (bean curd)",
+    "forms": [
+      "tofu",
+      "bean curd"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "tofu",
+      "bean curd"
+    ]
+  },
+  {
+    "entry": "towards (toward)",
+    "forms": [
+      "towards",
+      "toward"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "toward"
+    ]
+  },
+  {
+    "entry": "TV (=television)",
+    "forms": [
+      "tv",
+      "television"
+    ],
+    "decision": "merge-variants",
+    "canonicalIds": [
+      "tv"
+    ]
+  },
+  {
+    "entry": "until (till)",
+    "forms": [
+      "until",
+      "till"
+    ],
+    "decision": "keep-distinct",
+    "canonicalIds": [
+      "until",
+      "till"
+    ]
+  }
+]

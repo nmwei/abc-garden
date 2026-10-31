@@ -17,7 +17,7 @@ try{
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
     const range=await page.evaluate(async()=>{const r=await fetch('./assets/audio/name-E.wav',{headers:{Range:'bytes=0-1'}});return {status:r.status,length:(await r.arrayBuffer()).byteLength};});
     expect(range).toEqual({status:206,length:2});
-    await downloadPack(page,'letters');await downloadPack(page,'food');await context.setOffline(true);await page.reload();await expect(page.locator('.alphabet-card')).toHaveCount(4);
+    await downloadPack(page,'other');await downloadPack(page,'all');await context.setOffline(true);await page.reload();await expect(page.locator('.alphabet-card')).toHaveCount(4);
 
   await page.getByRole('button',{name:'听字母名称 E',exact:true}).click();
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);

@@ -1,5 +1,3 @@
-import {lookupLocalWord,completionMeaning} from './local-dictionary.js';
-import {WORD_BY_ID} from './course-content.js';
 export const freshWeekly=()=>({title:'学习内容',letters:'EFGH',repeats:3,gap:1500,blends:'',words:'',clips:{}});
 export function parseBlends(text){
  const rows=text.split('\n').map(s=>s.trim().toLowerCase()).filter(Boolean);
@@ -26,20 +24,3 @@ export function cleanWeekly(raw){
  return w;
 }
 export function blendSteps(word){return [word[0],word[1],word.slice(0,2),...Array.from(word.slice(2),(letter,i)=>[letter,word.slice(0,i+3)]).flat()];}
-
-// Fill only empty fields; parent-authored meanings and sentences take precedence.
-export function completeLocalWords(text){
- const missing=[],incomplete=[];let completed=0;
- const rows=parseWords(text).map(item=>{
-  const card=WORD_BY_ID.get(item.word),entry=lookupLocalWord(item.word);
-  const known=card||(entry?{zh:completionMeaning(entry),sentence:''}:null);
-  if(!known){missing.push(item.word);return item;}
-  const wasDictionaryMeaning=card&&entry&&item.zh===completionMeaning(entry);
-  const zh=wasDictionaryMeaning?card.zh:item.zh||known.zh,sentence=item.sentence||known.sentence;
-  if(zh!==item.zh||sentence!==item.sentence)completed++;
-  if(!card)incomplete.push(item.word);
-  return {...item,zh,sentence};
- });
- const words=rows.map(({word,zh,sentence,action})=>{const fields=[word,zh,sentence,action];while(fields.length>1&&!fields.at(-1))fields.pop();return fields.join(' | ');}).join('\n');
- return {words,completed,missing,incomplete};
-}

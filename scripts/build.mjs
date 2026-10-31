@@ -1,14 +1,14 @@
 import './compile-sentence-meanings.mjs';
 import { mkdir,cp,readdir,readFile,writeFile,rm,stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import {WORDS,COURSE_AUDIO,TOPICS,READINGS,DIALOGUES} from '../app/course-content.js';
+import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../app/course-content.js';
 import { ALPHABET,BLENDS,PROMPTS } from '../app/content.js';
 const out=new URL('../dist/',import.meta.url);
 await rm(out,{recursive:true,force:true});
 await mkdir(out,{recursive:true});
 for(const path of ['index.html','manifest.webmanifest','app','assets']) await cp(new URL(`../${path}`,import.meta.url),new URL(path,out),{recursive:true});
 await writeFile(new URL('.nojekyll',out),'');
-for(const word of WORDS)await readFile(new URL(word.image,out));
+for(const word of WORDS.filter(w=>w.image))await readFile(new URL(word.image,out));
 const credits=JSON.parse(await readFile(new URL('assets/credits.json',out),'utf8'));
 const twocs=JSON.parse(await readFile(new URL('assets/audio/twocs-names.json',out),'utf8'));
 const sources=JSON.parse(await readFile(new URL('assets/audio/sources.json',out),'utf8'));
@@ -42,11 +42,15 @@ const shell=paths.filter(p=>p==='index.html'||p==='manifest.webmanifest'||p==='a
 const packs=[];
 async function pack(id,title,files){const unique=[...new Set(files)];let bytes=0;for(const file of unique)bytes+=(await stat(new URL(file,out))).size;packs.push({id,title,files:unique,bytes});}
 const wav=key=>`./assets/audio/${key}.wav`;
-await pack('letters','字母朋友',[...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,wav(`example-${a.upper}`)]),...BLENDS.map(b=>wav(`blend-${b.id}`)),...Object.keys(PROMPTS).map(k=>wav(`prompt-${k}`)),wav('silence')]);
-for(const [id,title] of Object.entries(TOPICS))if(id!=='all')await pack(id,title,WORDS.filter(w=>w.topic===id).flatMap(w=>[w.image,wav(w.audio),wav(`sentence-${w.id}`)]));
-for(const [id,title,rows,prefix] of [['reading','故事小屋',READINGS,'read'],['dialogue','开口说一说',DIALOGUES,'talk']])await pack(id,title,rows.flatMap(r=>[WORDS.find(w=>w.id===r.image).image,...r.lines.map((_,i)=>wav(`${prefix}-${r.id}-${i}`))]));
-await pack('candidate','字母发音对照样例',[...['index.html','preview.js','manifest.json','SOURCE-README.txt','GPL-3.0.txt'].map(f=>`./assets/audio/gcompris/${f}`),...candidate.clips.map(c=>`./assets/audio/gcompris/${c.file}`)]);
-await pack('all','全部学习内容',packs.flatMap(p=>p.files).concat(['./assets/credits.json','./assets/pictures/LICENSE-NOTO.txt','./assets/dictionary/source.json','./assets/dictionary/LICENSE-ECDICT.txt','./assets/audio/gk/source.mp3','./assets/audio/gk/cuts.json']));
+const other=[...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,wav(`example-${a.upper}`)]),...BLENDS.map(b=>wav(`blend-${b.id}`)),...Object.keys(PROMPTS).map(k=>wav(`prompt-${k}`)),wav('silence'),
+ ...[[READINGS,'read'],[DIALOGUES,'talk']].flatMap(([rows,prefix])=>rows.flatMap(r=>[WORDS.find(w=>w.id===r.image).image,...r.lines.map((_,i)=>wav(`${prefix}-${r.id}-${i}`))])),
+ ...['index.html','preview.js','manifest.json','SOURCE-README.txt','GPL-3.0.txt'].map(f=>`./assets/audio/gcompris/${f}`),...candidate.clips.map(c=>`./assets/audio/gcompris/${c.file}`),
+ './assets/credits.json','./assets/pictures/LICENSE-NOTO.txt','./assets/audio/gk/source.mp3','./assets/audio/gk/cuts.json'];
+await pack('pictures','词卡图片',READY_WORDS.map(w=>w.image));
+await pack('word-audio','单词读音',READY_WORDS.map(w=>wav(w.audio)));
+await pack('sentence-audio','例句读音',READY_WORDS.map(w=>wav(`sentence-${w.id}`)));
+await pack('other','其他内容',other);
+await pack('all','全部学习内容',packs.filter(p=>['pictures','word-audio','sentence-audio','other'].includes(p.id)).flatMap(p=>p.files));
 const resources={};
 for(const file of packs.at(-1).files){const bytes=await readFile(new URL(file,out));resources[file]={bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};}
 const offline={version,files:['./',...shell.map(p=>`./${p}`)],packs,resources};

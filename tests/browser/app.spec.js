@@ -18,7 +18,7 @@ test('one letter range drives follow along and listening, and only parent settin
  const choices=await page.locator('.choice').allTextContents();expect(choices.every(l=>'efgh'.includes(l.toLowerCase()))).toBe(true);
 });
 test('offline alphabet audio and legacy module links remain usable',async({page,context})=>{
- await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});await downloadPack(page,'letters');await context.setOffline(true);await page.goto('/#/letters');await page.getByRole('button',{name:'听字母名称 A',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+ await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});await downloadPack(page,'other');await context.setOffline(true);await page.goto('/#/letters');await page.getByRole('button',{name:'听字母名称 A',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
  await page.goto('/#/modules');await expect(page.getByRole('heading',{name:'看图学词',exact:true})).toBeVisible();await expect(page).toHaveURL(/#\/words$/);await expect(page.locator('[data-filter=learning]')).toHaveAttribute('aria-pressed','true');
 });
 test('name, sound and example previews keep the original library source',async({page})=>{

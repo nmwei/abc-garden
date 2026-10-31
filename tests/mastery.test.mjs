@@ -17,3 +17,10 @@ test('stored progress validates shape and preserves manual decisions',()=>{
  const data=cleanMastery({entries:{apple:{mastered:true,source:'manual',dates:['bad']},'<script>':{},cat:{dates:Array(20).fill('2026-10-30')}}});
  assert.equal(data.entries.apple.mastered,true);assert.equal(data.entries['<script>'],undefined);assert.equal(data.entries.cat.dates.length,3);
 });
+test('aliases preserve mastered and pending records without adding duplicate evidence',()=>{
+ const data=cleanMastery({entries:{colour:{mastered:true,dates:['2026-10-30']},color:{mastered:false,dates:['2026-10-31']},'per cent':{mastered:true},because:{mastered:true},favourite:{dates:['2026-10-30','2026-10-30']},favorite:{dates:['2026-10-31']}}});
+ assert.equal(data.entries.color.mastered,true);assert.equal(data.entries.percent.mastered,true);assert.equal(data.entries.because.mastered,true);assert.equal(data.entries.colour,undefined);
+ assert.equal(data.entries.favorite.mastered,false);assert.equal(data.entries.favorite.dates.length,2);
+ setMastery(data,'colour',false);assert.equal(data.entries.color.mastered,false);
+ assert.equal(cleanMastery(data).entries.color.mastered,false);
+});

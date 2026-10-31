@@ -1,0 +1,2985 @@
+{
+  "grape": {
+    "source": "grapes",
+    "topic": "food",
+    "emoji": "1f347"
+  },
+  "cloudy": {
+    "source": "cloud",
+    "topic": "nature",
+    "emoji": "2601"
+  },
+  "sunny": {
+    "source": "sun",
+    "topic": "nature",
+    "emoji": "2600"
+  },
+  "windy": {
+    "source": "wind",
+    "topic": "nature",
+    "emoji": "1f32c"
+  },
+  "tv": {
+    "source": "television",
+    "topic": "home",
+    "emoji": "1f4fa"
+  },
+  "mobile phone": {
+    "source": "phone",
+    "topic": "home",
+    "emoji": "1f4f1"
+  },
+  "cash": {
+    "source": "money",
+    "topic": "home",
+    "emoji": "1f4b5"
+  },
+  "bill": {
+    "source": "receipt",
+    "topic": "home",
+    "emoji": "1f9fe"
+  },
+  "coffee": {
+    "source": "cup",
+    "topic": "home",
+    "emoji": "2615"
+  },
+  "document": {
+    "source": "page",
+    "topic": "school",
+    "emoji": "1f4c4"
+  },
+  "cottage": {
+    "source": "house",
+    "topic": "home",
+    "emoji": "1f3e0"
+  },
+  "kid": {
+    "source": "child",
+    "topic": "people",
+    "emoji": "1f9d2"
+  },
+  "lung": {
+    "source": "lungs",
+    "topic": "body",
+    "emoji": "1fac1"
+  },
+  "physician": {
+    "source": "doctor",
+    "topic": "people",
+    "emoji": "1f9d1_200d_2695"
+  },
+  "policeman": {
+    "topic": "people",
+    "emoji": "1f46e_200d_2642"
+  },
+  "policewoman": {
+    "topic": "people",
+    "emoji": "1f46e_200d_2640"
+  },
+  "fireman": {
+    "source": "firefighter",
+    "topic": "people",
+    "emoji": "1f9d1_200d_1f692"
+  },
+  "emperor": {
+    "source": "king",
+    "topic": "people",
+    "emoji": "1f934"
+  },
+  "empress": {
+    "source": "queen",
+    "topic": "people",
+    "emoji": "1f478"
+  },
+  "bean": {
+    "source": "beans",
+    "topic": "food",
+    "emoji": "1fad8"
+  },
+  "firework": {
+    "source": "fireworks",
+    "topic": "play",
+    "emoji": "1f386"
+  },
+  "packet": {
+    "source": "package",
+    "topic": "home",
+    "emoji": "1f4e6"
+  },
+  "weep": {
+    "source": "cry",
+    "topic": "feelings",
+    "emoji": "1f622"
+  },
+  "anger": {
+    "source": "angry",
+    "topic": "feelings",
+    "emoji": "1f620"
+  },
+  "mad": {
+    "source": "angry",
+    "topic": "feelings",
+    "emoji": "1f620"
+  },
+  "afraid": {
+    "source": "scared",
+    "topic": "feelings",
+    "emoji": "1f628"
+  },
+  "frightened": {
+    "source": "scared",
+    "topic": "feelings",
+    "emoji": "1f628"
+  },
+  "ill": {
+    "source": "sick",
+    "topic": "feelings",
+    "emoji": "1f912"
+  },
+  "sorrow": {
+    "source": "sad",
+    "topic": "feelings",
+    "emoji": "1f622"
+  },
+  "joy": {
+    "source": "happy",
+    "topic": "feelings",
+    "emoji": "1f604"
+  },
+  "glad": {
+    "source": "happy",
+    "topic": "feelings",
+    "emoji": "1f604"
+  },
+  "photograph": {
+    "source": "picture",
+    "topic": "home",
+    "emoji": "1f5bc"
+  },
+  "shore": {
+    "source": "beach",
+    "topic": "nature",
+    "emoji": "1f3d6"
+  },
+  "coast": {
+    "source": "beach",
+    "topic": "nature",
+    "emoji": "1f3d6"
+  },
+  "street": {
+    "source": "road",
+    "topic": "travel",
+    "emoji": "1f6e3"
+  },
+  "dollar": {
+    "source": "money",
+    "topic": "home",
+    "emoji": "1f4b5"
+  },
+  "blackboard": {
+    "drawing": "blackboard",
+    "topic": "school",
+    "emoji": "project-blackboard"
+  },
+  "table": {
+    "drawing": "table",
+    "topic": "home",
+    "emoji": "project-table"
+  },
+  "desk": {
+    "drawing": "desk",
+    "topic": "school",
+    "emoji": "project-desk"
+  },
+  "skirt": {
+    "drawing": "skirt",
+    "topic": "clothes",
+    "emoji": "project-skirt"
+  },
+  "sock": {
+    "drawing": "sock",
+    "topic": "clothes",
+    "emoji": "project-sock"
+  },
+  "sweater": {
+    "drawing": "sweater",
+    "topic": "clothes",
+    "emoji": "project-sweater"
+  },
+  "blouse": {
+    "drawing": "blouse",
+    "topic": "clothes",
+    "emoji": "project-blouse"
+  },
+  "belt": {
+    "drawing": "belt",
+    "topic": "clothes",
+    "emoji": "project-belt"
+  },
+  "carpet": {
+    "drawing": "carpet",
+    "topic": "home",
+    "emoji": "project-carpet"
+  },
+  "floor": {
+    "drawing": "floor",
+    "topic": "home",
+    "emoji": "project-floor"
+  },
+  "curtain": {
+    "drawing": "curtain",
+    "topic": "home",
+    "emoji": "project-curtain"
+  },
+  "cupboard": {
+    "drawing": "cupboard",
+    "topic": "home",
+    "emoji": "project-cupboard"
+  },
+  "drawer": {
+    "drawing": "drawer",
+    "topic": "home",
+    "emoji": "project-drawer"
+  },
+  "fridge": {
+    "drawing": "fridge",
+    "topic": "home",
+    "emoji": "project-fridge"
+  },
+  "refrigerator": {
+    "drawing": "fridge",
+    "topic": "home",
+    "emoji": "project-fridge"
+  },
+  "oven": {
+    "drawing": "oven",
+    "topic": "home",
+    "emoji": "project-oven"
+  },
+  "sink": {
+    "drawing": "sink",
+    "topic": "home",
+    "emoji": "project-sink"
+  },
+  "tap": {
+    "drawing": "tap",
+    "topic": "home",
+    "emoji": "project-tap"
+  },
+  "fence": {
+    "drawing": "fence",
+    "topic": "home",
+    "emoji": "project-fence"
+  },
+  "gate": {
+    "drawing": "gate",
+    "topic": "home",
+    "emoji": "project-gate"
+  },
+  "cave": {
+    "drawing": "cave",
+    "topic": "nature",
+    "emoji": "project-cave"
+  },
+  "towel": {
+    "drawing": "towel",
+    "topic": "home",
+    "emoji": "project-towel"
+  },
+  "handkerchief": {
+    "drawing": "handkerchief",
+    "topic": "home",
+    "emoji": "project-handkerchief"
+  },
+  "cloth": {
+    "drawing": "towel",
+    "topic": "home",
+    "emoji": "project-towel"
+  },
+  "fabric": {
+    "drawing": "fabric",
+    "topic": "home",
+    "emoji": "project-fabric"
+  },
+  "eraser": {
+    "drawing": "eraser",
+    "topic": "school",
+    "emoji": "project-eraser"
+  },
+  "chalk": {
+    "drawing": "chalk",
+    "topic": "school",
+    "emoji": "project-chalk"
+  },
+  "nail": {
+    "drawing": "nail",
+    "topic": "home",
+    "emoji": "project-nail"
+  },
+  "match": {
+    "drawing": "match",
+    "topic": "home",
+    "emoji": "project-match"
+  },
+  "pipe": {
+    "drawing": "pipe",
+    "topic": "home",
+    "emoji": "project-pipe"
+  },
+  "remote": {
+    "drawing": "remote",
+    "topic": "home",
+    "emoji": "project-remote"
+  },
+  "glue": {
+    "drawing": "glue",
+    "topic": "school",
+    "emoji": "project-glue"
+  },
+  "ink": {
+    "drawing": "ink",
+    "topic": "school",
+    "emoji": "project-ink"
+  },
+  "sugar": {
+    "drawing": "sugar",
+    "topic": "food",
+    "emoji": "project-sugar"
+  },
+  "flour": {
+    "drawing": "sugar",
+    "topic": "food",
+    "emoji": "project-flour"
+  },
+  "cream": {
+    "drawing": "cream",
+    "topic": "food",
+    "emoji": "project-cream"
+  },
+  "yoghurt": {
+    "drawing": "cream",
+    "topic": "food",
+    "emoji": "project-yoghurt"
+  },
+  "tofu": {
+    "drawing": "tofu",
+    "topic": "food",
+    "emoji": "project-tofu"
+  },
+  "bean curd": {
+    "drawing": "tofu",
+    "topic": "food",
+    "emoji": "project-tofu"
+  },
+  "porridge": {
+    "drawing": "porridge",
+    "topic": "food",
+    "emoji": "project-porridge"
+  },
+  "coal": {
+    "drawing": "coal",
+    "topic": "nature",
+    "emoji": "project-coal"
+  },
+  "cotton": {
+    "drawing": "cotton",
+    "topic": "nature",
+    "emoji": "project-cotton"
+  },
+  "pool": {
+    "drawing": "pool",
+    "topic": "places",
+    "emoji": "project-pool"
+  },
+  "pond": {
+    "drawing": "pond",
+    "topic": "nature",
+    "emoji": "project-pond"
+  },
+  "gray": {
+    "drawing": "gray",
+    "topic": "colors",
+    "emoji": "project-gray"
+  },
+  "grey": {
+    "drawing": "gray",
+    "topic": "colors",
+    "emoji": "project-gray"
+  },
+  "line": {
+    "drawing": "line",
+    "topic": "colors",
+    "emoji": "project-line"
+  },
+  "angle": {
+    "drawing": "angle",
+    "topic": "colors",
+    "emoji": "project-angle"
+  },
+  "arrow": {
+    "drawing": "arrow",
+    "topic": "colors",
+    "emoji": "project-arrow"
+  },
+  "left": {
+    "drawing": "left",
+    "topic": "actions",
+    "emoji": "project-left"
+  },
+  "right": {
+    "drawing": "right",
+    "topic": "actions",
+    "emoji": "project-arrow"
+  },
+  "down": {
+    "drawing": "down",
+    "topic": "actions",
+    "emoji": "project-down"
+  },
+  "fire": {
+    "drawing": "fire",
+    "topic": "nature",
+    "emoji": "project-fire"
+  },
+  "flame": {
+    "drawing": "fire",
+    "topic": "nature",
+    "emoji": "project-fire"
+  },
+  "newspaper": {
+    "topic": "home",
+    "emoji": "1f4f0"
+  },
+  "disc": {
+    "topic": "home",
+    "emoji": "1f4bf"
+  },
+  "tape": {
+    "topic": "home",
+    "emoji": "1f4fc"
+  },
+  "bride": {
+    "topic": "people",
+    "emoji": "1f470"
+  },
+  "blood": {
+    "topic": "body",
+    "emoji": "1fa78"
+  },
+  "cigarette": {
+    "topic": "home",
+    "emoji": "1f6ac"
+  },
+  "vase": {
+    "drawing": "vase",
+    "topic": "home",
+    "emoji": "project-vase"
+  },
+  "kettle": {
+    "drawing": "kettle",
+    "topic": "home",
+    "emoji": "project-kettle"
+  },
+  "magazine": {
+    "drawing": "magazine",
+    "topic": "home",
+    "emoji": "project-magazine"
+  },
+  "postcard": {
+    "drawing": "postcard",
+    "topic": "home",
+    "emoji": "project-postcard"
+  },
+  "brochure": {
+    "drawing": "brochure",
+    "topic": "school",
+    "emoji": "project-brochure"
+  },
+  "shelf": {
+    "drawing": "shelf",
+    "topic": "home",
+    "emoji": "project-shelf"
+  },
+  "ceiling": {
+    "drawing": "ceiling",
+    "topic": "home",
+    "emoji": "project-ceiling"
+  },
+  "cage": {
+    "drawing": "cage",
+    "topic": "home",
+    "emoji": "project-cage"
+  },
+  "sauce": {
+    "drawing": "sauce",
+    "topic": "food",
+    "emoji": "project-sauce"
+  },
+  "pepper": {
+    "drawing": "pepper",
+    "topic": "food",
+    "emoji": "project-pepper"
+  },
+  "tobacco": {
+    "drawing": "tobacco",
+    "topic": "nature",
+    "emoji": "project-tobacco"
+  },
+  "bar": {
+    "drawing": "bar",
+    "topic": "food",
+    "emoji": "project-bar"
+  },
+  "chip": {
+    "drawing": "chip",
+    "topic": "food",
+    "emoji": "project-chip"
+  },
+  "hole": {
+    "drawing": "hole",
+    "topic": "nature",
+    "emoji": "project-hole"
+  },
+  "palace": {
+    "drawing": "palace",
+    "topic": "places",
+    "emoji": "project-palace"
+  },
+  "tunnel": {
+    "drawing": "tunnel",
+    "topic": "travel",
+    "emoji": "project-tunnel"
+  },
+  "valley": {
+    "drawing": "valley",
+    "topic": "nature",
+    "emoji": "project-valley"
+  },
+  "dam": {
+    "drawing": "dam",
+    "topic": "places",
+    "emoji": "project-dam"
+  },
+  "canal": {
+    "drawing": "canal",
+    "topic": "nature",
+    "emoji": "project-canal"
+  },
+  "greenhouse": {
+    "drawing": "greenhouse",
+    "topic": "places",
+    "emoji": "project-greenhouse"
+  },
+  "cell": {
+    "drawing": "cell",
+    "topic": "school",
+    "emoji": "project-cell"
+  },
+  "switch": {
+    "drawing": "switch",
+    "topic": "home",
+    "emoji": "project-switch"
+  },
+  "gun": {
+    "drawing": "gun",
+    "topic": "home",
+    "emoji": "project-gun"
+  },
+  "stomach": {
+    "drawing": "stomach",
+    "topic": "body",
+    "emoji": "project-stomach"
+  },
+  "ankle": {
+    "drawing": "ankle",
+    "topic": "body",
+    "emoji": "project-ankle"
+  },
+  "wrist": {
+    "drawing": "wrist",
+    "topic": "body",
+    "emoji": "project-wrist"
+  },
+  "forehead": {
+    "drawing": "forehead",
+    "topic": "body",
+    "emoji": "project-forehead"
+  },
+  "neck": {
+    "drawing": "neck",
+    "topic": "body",
+    "emoji": "project-neck"
+  },
+  "shoulder": {
+    "drawing": "shoulder",
+    "topic": "body",
+    "emoji": "project-shoulder"
+  },
+  "jaw": {
+    "drawing": "jaw",
+    "topic": "body",
+    "emoji": "project-jaw"
+  },
+  "waist": {
+    "drawing": "waist",
+    "topic": "body",
+    "emoji": "project-waist"
+  },
+  "film": {
+    "topic": "play",
+    "emoji": "1f39e"
+  },
+  "movie": {
+    "topic": "play",
+    "emoji": "1f39e"
+  },
+  "judge": {
+    "topic": "people",
+    "emoji": "1f9d1_200d_2696"
+  },
+  "detective": {
+    "topic": "people",
+    "emoji": "1f575"
+  },
+  "spy": {
+    "topic": "people",
+    "emoji": "1f575"
+  },
+  "asleep": {
+    "topic": "feelings",
+    "emoji": "1f634"
+  },
+  "card": {
+    "drawing": "card",
+    "topic": "school",
+    "emoji": "project-direct-card",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "email": {
+    "drawing": "email",
+    "topic": "home",
+    "emoji": "project-direct-email",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "food": {
+    "drawing": "food",
+    "topic": "food",
+    "emoji": "project-direct-food",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "noodle": {
+    "drawing": "noodle",
+    "topic": "food",
+    "emoji": "project-direct-noodle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "room": {
+    "drawing": "room",
+    "topic": "home",
+    "emoji": "project-direct-room",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dirty": {
+    "drawing": "dirty",
+    "topic": "home",
+    "emoji": "project-direct-dirty",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "worker": {
+    "drawing": "worker",
+    "topic": "people",
+    "emoji": "project-direct-worker",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "athlete": {
+    "drawing": "athlete",
+    "topic": "sports",
+    "emoji": "project-direct-athlete",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "actor": {
+    "drawing": "actor",
+    "topic": "people",
+    "emoji": "project-direct-actor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "actress": {
+    "drawing": "actress",
+    "topic": "people",
+    "emoji": "project-direct-actress",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "architect": {
+    "drawing": "architect",
+    "topic": "people",
+    "emoji": "project-direct-architect",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "audience": {
+    "drawing": "audience",
+    "topic": "people",
+    "emoji": "project-direct-audience",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "author": {
+    "drawing": "author",
+    "topic": "people",
+    "emoji": "project-direct-author",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "officer": {
+    "drawing": "officer",
+    "topic": "people",
+    "emoji": "project-direct-officer",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "police": {
+    "drawing": "officer",
+    "topic": "people",
+    "emoji": "project-direct-officer",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "soldier": {
+    "drawing": "soldier",
+    "topic": "people",
+    "emoji": "project-direct-soldier",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "captain": {
+    "drawing": "captain",
+    "topic": "people",
+    "emoji": "project-direct-captain",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "fisherman": {
+    "drawing": "fisherman",
+    "topic": "people",
+    "emoji": "project-direct-fisherman",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "journalist": {
+    "drawing": "journalist",
+    "topic": "people",
+    "emoji": "project-direct-journalist",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "tailor": {
+    "drawing": "tailor",
+    "topic": "people",
+    "emoji": "project-direct-tailor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "surgeon": {
+    "drawing": "surgeon",
+    "topic": "people",
+    "emoji": "project-direct-surgeon",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "postman": {
+    "drawing": "postman",
+    "topic": "people",
+    "emoji": "project-direct-postman",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "clerk": {
+    "drawing": "clerk",
+    "topic": "people",
+    "emoji": "project-direct-clerk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "salesman": {
+    "drawing": "clerk",
+    "topic": "people",
+    "emoji": "project-direct-clerk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "secretary": {
+    "drawing": "secretary",
+    "topic": "people",
+    "emoji": "project-direct-secretary",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "elderly": {
+    "drawing": "elderly",
+    "topic": "people",
+    "emoji": "project-direct-elderly",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "old": {
+    "drawing": "elderly",
+    "topic": "people",
+    "emoji": "project-direct-elderly",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "gentleman": {
+    "drawing": "gentleman",
+    "topic": "people",
+    "emoji": "project-direct-gentleman",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lady": {
+    "drawing": "lady",
+    "topic": "people",
+    "emoji": "project-direct-lady",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "madam": {
+    "drawing": "lady",
+    "topic": "people",
+    "emoji": "project-direct-lady",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "army": {
+    "drawing": "army",
+    "topic": "people",
+    "emoji": "project-direct-army",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "crowd": {
+    "drawing": "crowd",
+    "topic": "people",
+    "emoji": "project-direct-crowd",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "crowded": {
+    "drawing": "crowd",
+    "topic": "people",
+    "emoji": "project-direct-crowd",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "buffet": {
+    "drawing": "foodbuffet",
+    "topic": "food",
+    "emoji": "project-direct-foodbuffet",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "barbecue": {
+    "drawing": "barbecue",
+    "topic": "food",
+    "emoji": "project-direct-barbecue",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "oil": {
+    "drawing": "oil",
+    "topic": "food",
+    "emoji": "project-direct-oil",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "medicine": {
+    "drawing": "medicine",
+    "topic": "body",
+    "emoji": "project-direct-medicine",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pill": {
+    "drawing": "pill",
+    "topic": "body",
+    "emoji": "project-direct-pill",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "leather": {
+    "drawing": "leather",
+    "topic": "clothes",
+    "emoji": "project-direct-leather",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "silk": {
+    "drawing": "silk",
+    "topic": "clothes",
+    "emoji": "project-direct-silk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sheet": {
+    "drawing": "sheet",
+    "topic": "home",
+    "emoji": "project-direct-sheet",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "suit": {
+    "drawing": "suit",
+    "topic": "clothes",
+    "emoji": "project-direct-suit",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "block": {
+    "drawing": "block",
+    "topic": "play",
+    "emoji": "project-direct-block",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "furniture": {
+    "drawing": "furniture",
+    "topic": "home",
+    "emoji": "project-direct-furniture",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "goods": {
+    "drawing": "goods",
+    "topic": "home",
+    "emoji": "project-direct-goods",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "equipment": {
+    "drawing": "toolset",
+    "topic": "home",
+    "emoji": "project-direct-toolset",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "kit": {
+    "drawing": "kit",
+    "topic": "body",
+    "emoji": "project-direct-kit",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "engine": {
+    "drawing": "engine",
+    "topic": "travel",
+    "emoji": "project-direct-engine",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "machine": {
+    "drawing": "machine",
+    "topic": "home",
+    "emoji": "project-direct-machine",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "tank": {
+    "drawing": "tank",
+    "topic": "travel",
+    "emoji": "project-direct-tank",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "tube": {
+    "drawing": "tube",
+    "topic": "home",
+    "emoji": "project-direct-tube",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "trap": {
+    "drawing": "trap",
+    "topic": "home",
+    "emoji": "project-direct-trap",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "treasure": {
+    "drawing": "treasure",
+    "topic": "home",
+    "emoji": "project-direct-treasure",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "souvenir": {
+    "drawing": "souvenir",
+    "topic": "play",
+    "emoji": "project-direct-souvenir",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "poster": {
+    "drawing": "poster",
+    "topic": "school",
+    "emoji": "project-direct-poster",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "menu": {
+    "drawing": "menu",
+    "topic": "food",
+    "emoji": "project-direct-menu",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "form": {
+    "drawing": "form",
+    "topic": "school",
+    "emoji": "project-direct-form",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "diary": {
+    "drawing": "diary",
+    "topic": "school",
+    "emoji": "project-direct-diary",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "journal": {
+    "drawing": "journal",
+    "topic": "school",
+    "emoji": "project-direct-journal",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "comic": {
+    "drawing": "comic",
+    "topic": "school",
+    "emoji": "project-direct-comic",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "schedule": {
+    "drawing": "schedule",
+    "topic": "school",
+    "emoji": "project-direct-schedule",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "agenda": {
+    "drawing": "schedule",
+    "topic": "school",
+    "emoji": "project-direct-schedule",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "report": {
+    "drawing": "report",
+    "topic": "school",
+    "emoji": "project-direct-report",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "exam": {
+    "drawing": "exam",
+    "topic": "school",
+    "emoji": "project-direct-exam",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "examination": {
+    "drawing": "exam",
+    "topic": "school",
+    "emoji": "project-direct-exam",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "contract": {
+    "drawing": "contract",
+    "topic": "school",
+    "emoji": "project-direct-contract",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "cent": {
+    "drawing": "cent",
+    "topic": "home",
+    "emoji": "project-direct-cent",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "gold": {
+    "drawing": "gold",
+    "topic": "home",
+    "emoji": "project-direct-gold",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "silver": {
+    "drawing": "silver",
+    "topic": "home",
+    "emoji": "project-direct-silver",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "metal": {
+    "drawing": "metal",
+    "topic": "home",
+    "emoji": "project-direct-metal",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dust": {
+    "drawing": "dust",
+    "topic": "home",
+    "emoji": "project-direct-dust",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "garbage": {
+    "drawing": "garbage",
+    "topic": "home",
+    "emoji": "project-direct-garbage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "litter": {
+    "drawing": "garbage",
+    "topic": "home",
+    "emoji": "project-direct-garbage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "rubbish": {
+    "drawing": "garbage",
+    "topic": "home",
+    "emoji": "project-direct-garbage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "smoke": {
+    "drawing": "smoke",
+    "topic": "nature",
+    "emoji": "project-direct-smoke",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "exhaust": {
+    "drawing": "exhaust",
+    "topic": "nature",
+    "emoji": "project-direct-exhaust",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "steam": {
+    "drawing": "steam",
+    "topic": "nature",
+    "emoji": "project-direct-steam",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "frost": {
+    "drawing": "frost",
+    "topic": "nature",
+    "emoji": "project-direct-frost",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "flood": {
+    "drawing": "flood",
+    "topic": "nature",
+    "emoji": "project-direct-flood",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "earthquake": {
+    "drawing": "earthquake",
+    "topic": "nature",
+    "emoji": "project-direct-earthquake",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hurricane": {
+    "drawing": "hurricane",
+    "topic": "nature",
+    "emoji": "project-direct-hurricane",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "typhoon": {
+    "drawing": "hurricane",
+    "topic": "nature",
+    "emoji": "project-direct-hurricane",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "jungle": {
+    "drawing": "jungle",
+    "topic": "nature",
+    "emoji": "project-direct-jungle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "landscape": {
+    "drawing": "landscape",
+    "topic": "nature",
+    "emoji": "project-direct-landscape",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shade": {
+    "drawing": "beachshade",
+    "topic": "nature",
+    "emoji": "project-direct-beachshade",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shadow": {
+    "drawing": "shadow",
+    "topic": "nature",
+    "emoji": "project-direct-shadow",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shelter": {
+    "drawing": "shelter",
+    "topic": "places",
+    "emoji": "project-direct-shelter",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "throat": {
+    "drawing": "throat",
+    "topic": "body",
+    "emoji": "project-direct-throat",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "breast": {
+    "drawing": "breast",
+    "topic": "body",
+    "emoji": "project-direct-breast",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "wound": {
+    "drawing": "wound",
+    "topic": "body",
+    "emoji": "project-direct-wound",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "x-ray": {
+    "drawing": "xray",
+    "topic": "body",
+    "emoji": "project-direct-xray",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "fever": {
+    "drawing": "fever",
+    "topic": "body",
+    "emoji": "project-direct-fever",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "headache": {
+    "drawing": "headache",
+    "topic": "body",
+    "emoji": "project-direct-headache",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "stomachache": {
+    "drawing": "stomachache",
+    "topic": "body",
+    "emoji": "project-direct-stomachache",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "toothache": {
+    "drawing": "toothache",
+    "topic": "body",
+    "emoji": "project-direct-toothache",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sweat": {
+    "drawing": "sweaty",
+    "topic": "body",
+    "emoji": "project-direct-sweaty",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "scream": {
+    "drawing": "scream",
+    "topic": "feelings",
+    "emoji": "project-direct-scream",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "nervous": {
+    "drawing": "nervous",
+    "topic": "feelings",
+    "emoji": "project-direct-nervous",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "awake": {
+    "drawing": "awake",
+    "topic": "feelings",
+    "emoji": "project-direct-awake",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "quiet": {
+    "drawing": "quiet",
+    "topic": "feelings",
+    "emoji": "project-direct-quiet",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "silent": {
+    "drawing": "quiet",
+    "topic": "feelings",
+    "emoji": "project-direct-quiet",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "boring": {
+    "drawing": "indifferent",
+    "topic": "feelings",
+    "emoji": "project-direct-indifferent",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "liquid": {
+    "drawing": "liquid",
+    "topic": "nature",
+    "emoji": "project-direct-liquid",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "plastic": {
+    "drawing": "plastic",
+    "topic": "home",
+    "emoji": "project-direct-plastic",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "clinic": {
+    "drawing": "clinic",
+    "topic": "places",
+    "emoji": "project-direct-clinic",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "college": {
+    "drawing": "college",
+    "topic": "places",
+    "emoji": "project-direct-college",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "university": {
+    "drawing": "college",
+    "topic": "places",
+    "emoji": "project-direct-college",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "court": {
+    "drawing": "court",
+    "topic": "places",
+    "emoji": "project-direct-court",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "mall": {
+    "drawing": "mall",
+    "topic": "places",
+    "emoji": "project-direct-mall",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "gym": {
+    "drawing": "gym",
+    "topic": "places",
+    "emoji": "project-direct-gym",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "gymnasium": {
+    "drawing": "gym",
+    "topic": "places",
+    "emoji": "project-direct-gym",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hall": {
+    "drawing": "hall",
+    "topic": "places",
+    "emoji": "project-direct-hall",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "port": {
+    "drawing": "port",
+    "topic": "places",
+    "emoji": "project-direct-port",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pub": {
+    "drawing": "pub",
+    "topic": "places",
+    "emoji": "project-direct-pub",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "cafeteria": {
+    "drawing": "cafeteria",
+    "topic": "places",
+    "emoji": "project-direct-cafeteria",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "theatre": {
+    "drawing": "theatre",
+    "topic": "places",
+    "emoji": "project-direct-theatre",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "organ": {
+    "drawing": "organ",
+    "topic": "music",
+    "emoji": "project-direct-organ",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "wedding": {
+    "drawing": "wedding",
+    "topic": "play",
+    "emoji": "project-direct-wedding",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "model": {
+    "drawing": "model",
+    "topic": "play",
+    "emoji": "project-direct-model",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "cartoon": {
+    "drawing": "toycartoon",
+    "topic": "play",
+    "emoji": "project-direct-toycartoon",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "zero": {
+    "drawing": "zero",
+    "topic": "school",
+    "emoji": "project-direct-zero",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "call": {
+    "drawing": "call",
+    "topic": "actions",
+    "emoji": "project-direct-call",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "talk": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "speak": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "say": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "chat": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "conversation": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dialog": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dialogue": {
+    "drawing": "talk",
+    "topic": "actions",
+    "emoji": "project-direct-talk",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shout": {
+    "drawing": "shout",
+    "topic": "actions",
+    "emoji": "project-direct-shout",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "aloud": {
+    "drawing": "shout",
+    "topic": "actions",
+    "emoji": "project-direct-shout",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "loud": {
+    "drawing": "shout",
+    "topic": "feelings",
+    "emoji": "project-direct-shout",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hello": {
+    "drawing": "wave",
+    "topic": "actions",
+    "emoji": "project-direct-wave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hi": {
+    "drawing": "wave",
+    "topic": "actions",
+    "emoji": "project-direct-wave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "goodbye": {
+    "drawing": "wave",
+    "topic": "actions",
+    "emoji": "project-direct-wave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bye": {
+    "drawing": "wave",
+    "topic": "actions",
+    "emoji": "project-direct-wave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "greet": {
+    "drawing": "wave",
+    "topic": "actions",
+    "emoji": "project-direct-wave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bend": {
+    "drawing": "bend",
+    "topic": "actions",
+    "emoji": "project-direct-bend",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "cycle": {
+    "drawing": "cycle",
+    "topic": "sports",
+    "emoji": "project-direct-cycle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "jog": {
+    "drawing": "jog",
+    "topic": "sports",
+    "emoji": "project-direct-jog",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hike": {
+    "drawing": "hike",
+    "topic": "sports",
+    "emoji": "project-direct-hike",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "march": {
+    "drawing": "march",
+    "topic": "actions",
+    "emoji": "project-direct-march",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lean": {
+    "drawing": "lean",
+    "topic": "actions",
+    "emoji": "project-direct-lean",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lift": {
+    "drawing": "lift",
+    "topic": "actions",
+    "emoji": "project-direct-lift",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bring": {
+    "drawing": "carry",
+    "topic": "actions",
+    "emoji": "project-direct-carry",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "grab": {
+    "drawing": "grab",
+    "topic": "actions",
+    "emoji": "project-direct-grab",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "wear": {
+    "drawing": "wear",
+    "topic": "actions",
+    "emoji": "project-direct-wear",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hang": {
+    "drawing": "hang",
+    "topic": "actions",
+    "emoji": "project-direct-hang",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "knock": {
+    "drawing": "knock",
+    "topic": "actions",
+    "emoji": "project-direct-knock",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shave": {
+    "drawing": "shave",
+    "topic": "actions",
+    "emoji": "project-direct-shave",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bleed": {
+    "drawing": "bleed",
+    "topic": "body",
+    "emoji": "project-direct-bleed",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "blow": {
+    "drawing": "blow",
+    "topic": "actions",
+    "emoji": "project-direct-blow",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "breathe": {
+    "drawing": "breathe",
+    "topic": "body",
+    "emoji": "project-direct-breathe",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "breath": {
+    "drawing": "breathe",
+    "topic": "body",
+    "emoji": "project-direct-breathe",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "print": {
+    "drawing": "print",
+    "topic": "actions",
+    "emoji": "project-direct-print",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "charge": {
+    "drawing": "charge",
+    "topic": "actions",
+    "emoji": "project-direct-charge",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "feed": {
+    "drawing": "feed",
+    "topic": "actions",
+    "emoji": "project-direct-feed",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sow": {
+    "drawing": "sowseed",
+    "topic": "actions",
+    "emoji": "project-direct-sowseed",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sign": {
+    "drawing": "sign",
+    "topic": "actions",
+    "emoji": "project-direct-sign",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "polish": {
+    "drawing": "polish",
+    "topic": "actions",
+    "emoji": "project-direct-polish",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "nod": {
+    "drawing": "nod",
+    "topic": "actions",
+    "emoji": "project-direct-nod",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "study": {
+    "drawing": "read",
+    "topic": "school",
+    "emoji": "project-direct-read",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "teach": {
+    "drawing": "teach",
+    "topic": "school",
+    "emoji": "project-direct-teach",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "show": {
+    "drawing": "show",
+    "topic": "actions",
+    "emoji": "project-direct-show",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "enter": {
+    "drawing": "enter",
+    "topic": "actions",
+    "emoji": "project-direct-enter",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shut": {
+    "drawing": "shut",
+    "topic": "actions",
+    "emoji": "project-direct-shut",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "drop": {
+    "drawing": "drop",
+    "topic": "actions",
+    "emoji": "project-direct-drop",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "break": {
+    "drawing": "break",
+    "topic": "actions",
+    "emoji": "project-direct-break",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "burn": {
+    "drawing": "burn",
+    "topic": "actions",
+    "emoji": "project-direct-burn",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "explode": {
+    "drawing": "explode",
+    "topic": "actions",
+    "emoji": "project-direct-explode",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "leak": {
+    "drawing": "leak",
+    "topic": "actions",
+    "emoji": "project-direct-leak",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "slip": {
+    "drawing": "slip",
+    "topic": "actions",
+    "emoji": "project-direct-slip",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pick": {
+    "drawing": "pick",
+    "topic": "actions",
+    "emoji": "project-direct-pick",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hunt": {
+    "drawing": "hunt",
+    "topic": "actions",
+    "emoji": "project-direct-hunt",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "stare": {
+    "drawing": "stare",
+    "topic": "actions",
+    "emoji": "project-direct-stare",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "mark": {
+    "drawing": "signmark",
+    "topic": "actions",
+    "emoji": "project-direct-signmark",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "celebrate": {
+    "drawing": "celebrate",
+    "topic": "play",
+    "emoji": "project-direct-celebrate",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "vote": {
+    "drawing": "vote",
+    "topic": "actions",
+    "emoji": "project-direct-vote",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "press": {
+    "drawing": "printpress",
+    "topic": "actions",
+    "emoji": "project-direct-printpress",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shake": {
+    "drawing": "tremble",
+    "topic": "actions",
+    "emoji": "project-direct-tremble",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pray": {
+    "drawing": "pray",
+    "topic": "actions",
+    "emoji": "project-direct-pray",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "relax": {
+    "drawing": "rest",
+    "topic": "feelings",
+    "emoji": "project-direct-rest",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "accident": {
+    "drawing": "accident",
+    "topic": "travel",
+    "emoji": "project-direct-accident",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "crash": {
+    "drawing": "crash",
+    "topic": "travel",
+    "emoji": "project-direct-crash",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "passenger": {
+    "drawing": "passenger",
+    "topic": "people",
+    "emoji": "project-direct-passenger",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "tourist": {
+    "drawing": "tourist",
+    "topic": "people",
+    "emoji": "project-direct-tourist",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "director": {
+    "drawing": "director",
+    "topic": "people",
+    "emoji": "project-direct-director",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "professor": {
+    "drawing": "professor",
+    "topic": "people",
+    "emoji": "project-direct-professor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lawyer": {
+    "drawing": "lawyer",
+    "topic": "people",
+    "emoji": "project-direct-lawyer",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lab": {
+    "drawing": "lab",
+    "topic": "school",
+    "emoji": "project-direct-lab",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "laboratory": {
+    "drawing": "lab",
+    "topic": "school",
+    "emoji": "project-direct-lab",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "experiment": {
+    "drawing": "experiment",
+    "topic": "school",
+    "emoji": "project-direct-experiment",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "mutton": {
+    "drawing": "mutton",
+    "topic": "food",
+    "emoji": "project-direct-mutton",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pattern": {
+    "drawing": "pattern",
+    "topic": "colors",
+    "emoji": "project-direct-pattern",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shape": {
+    "drawing": "outlineShapes",
+    "topic": "colors",
+    "emoji": "project-direct-outlineShapes",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "award": {
+    "drawing": "prize",
+    "topic": "sports",
+    "emoji": "project-direct-prize",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "reward": {
+    "drawing": "prize",
+    "topic": "sports",
+    "emoji": "project-direct-prize",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "ad": {
+    "drawing": "advertisement",
+    "topic": "school",
+    "emoji": "project-direct-advertisement",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "advertisement": {
+    "drawing": "advertisement",
+    "topic": "school",
+    "emoji": "project-direct-advertisement",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "paragraph": {
+    "drawing": "paragraph",
+    "topic": "school",
+    "emoji": "project-direct-paragraph",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "handwriting": {
+    "drawing": "handwriting",
+    "topic": "school",
+    "emoji": "project-direct-handwriting",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "calligraphy": {
+    "drawing": "calligraphy",
+    "topic": "school",
+    "emoji": "project-direct-calligraphy",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "poem": {
+    "drawing": "poem",
+    "topic": "school",
+    "emoji": "project-direct-poem",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "novel": {
+    "drawing": "storybook",
+    "topic": "school",
+    "emoji": "project-direct-storybook",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "fiction": {
+    "drawing": "storybook",
+    "topic": "school",
+    "emoji": "project-direct-storybook",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "app": {
+    "drawing": "app",
+    "topic": "home",
+    "emoji": "project-direct-app",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "application": {
+    "drawing": "app",
+    "topic": "home",
+    "emoji": "project-direct-app",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "website": {
+    "drawing": "website",
+    "topic": "home",
+    "emoji": "project-direct-website",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "site": {
+    "drawing": "website",
+    "topic": "home",
+    "emoji": "project-direct-website",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "wi-fi": {
+    "drawing": "wifi",
+    "topic": "home",
+    "emoji": "project-direct-wifi",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "text": {
+    "drawing": "message",
+    "topic": "home",
+    "emoji": "project-direct-message",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "message": {
+    "drawing": "message",
+    "topic": "home",
+    "emoji": "project-direct-message",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sound": {
+    "drawing": "sound",
+    "topic": "music",
+    "emoji": "project-direct-sound",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "noise": {
+    "drawing": "sound",
+    "topic": "music",
+    "emoji": "project-direct-sound",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "noisy": {
+    "drawing": "sound",
+    "topic": "feelings",
+    "emoji": "project-direct-sound",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "volume": {
+    "drawing": "sound",
+    "topic": "music",
+    "emoji": "project-direct-sound",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "ray": {
+    "drawing": "ray",
+    "topic": "nature",
+    "emoji": "project-direct-ray",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "universe": {
+    "drawing": "universe",
+    "topic": "nature",
+    "emoji": "project-direct-universe",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "orbit": {
+    "drawing": "orbit",
+    "topic": "nature",
+    "emoji": "project-direct-orbit",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pain": {
+    "drawing": "pain",
+    "topic": "body",
+    "emoji": "project-direct-pain",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "ache": {
+    "drawing": "pain",
+    "topic": "body",
+    "emoji": "project-direct-pain",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "faint": {
+    "drawing": "faint",
+    "topic": "body",
+    "emoji": "project-direct-faint",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "blind": {
+    "drawing": "blind",
+    "topic": "body",
+    "emoji": "project-direct-blind",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "surgery": {
+    "drawing": "surgery",
+    "topic": "body",
+    "emoji": "project-direct-surgery",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "operation": {
+    "drawing": "surgery",
+    "topic": "body",
+    "emoji": "project-direct-surgery",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "route": {
+    "drawing": "maproute",
+    "topic": "travel",
+    "emoji": "project-direct-maproute",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dining": {
+    "drawing": "meal",
+    "topic": "food",
+    "emoji": "project-direct-meal",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "mess": {
+    "drawing": "mess",
+    "topic": "home",
+    "emoji": "project-direct-mess",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "collection": {
+    "drawing": "collection",
+    "topic": "home",
+    "emoji": "project-direct-collection",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "harvest": {
+    "drawing": "harvest",
+    "topic": "nature",
+    "emoji": "project-direct-harvest",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "ground": {
+    "drawing": "ground",
+    "topic": "nature",
+    "emoji": "project-direct-ground",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "class": {
+    "drawing": "classroom",
+    "topic": "school",
+    "emoji": "project-direct-classroom",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pe": {
+    "drawing": "gymnast",
+    "topic": "sports",
+    "emoji": "project-direct-gymnast",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "physical education": {
+    "drawing": "gymnast",
+    "topic": "sports",
+    "emoji": "project-direct-gymnast",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "kung fu": {
+    "drawing": "kungfu",
+    "topic": "sports",
+    "emoji": "project-direct-kungfu",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "conference": {
+    "drawing": "conference",
+    "topic": "people",
+    "emoji": "project-direct-conference",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "meeting": {
+    "drawing": "conference",
+    "topic": "people",
+    "emoji": "project-direct-conference",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "traffic": {
+    "drawing": "traffic",
+    "topic": "travel",
+    "emoji": "project-direct-traffic",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "border": {
+    "drawing": "border",
+    "topic": "travel",
+    "emoji": "project-direct-border",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "rescue": {
+    "drawing": "rescue",
+    "topic": "actions",
+    "emoji": "project-direct-rescue",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "rainy": {
+    "source": "rain",
+    "topic": "nature",
+    "emoji": "1f327",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "clear": {
+    "source": "sunny",
+    "topic": "nature",
+    "emoji": "2600",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "fear": {
+    "source": "afraid",
+    "topic": "feelings",
+    "emoji": "1f628",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "horror": {
+    "source": "afraid",
+    "topic": "feelings",
+    "emoji": "1f628",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "panic": {
+    "source": "afraid",
+    "topic": "feelings",
+    "emoji": "1f628",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "worry": {
+    "source": "worried",
+    "topic": "feelings",
+    "emoji": "1f61f",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "upset": {
+    "source": "sad",
+    "topic": "feelings",
+    "emoji": "1f622",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "colour": {
+    "source": "rainbow colors",
+    "topic": "colors",
+    "emoji": "1f308",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "flight": {
+    "source": "airplane",
+    "topic": "travel",
+    "emoji": "2708",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "launch": {
+    "source": "rocket",
+    "topic": "travel",
+    "emoji": "1f680",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "merry": {
+    "source": "happy",
+    "topic": "feelings",
+    "emoji": "1f604",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "attach": {
+    "drawing": "attach",
+    "topic": "actions",
+    "emoji": "project-direct-attach",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "decorate": {
+    "drawing": "decorate",
+    "topic": "play",
+    "emoji": "project-direct-decorate",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "collect": {
+    "drawing": "collect",
+    "topic": "actions",
+    "emoji": "project-direct-collect",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "deliver": {
+    "drawing": "deliver",
+    "topic": "actions",
+    "emoji": "project-direct-deliver",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "fill": {
+    "drawing": "fill",
+    "topic": "school",
+    "emoji": "project-direct-fill",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lay": {
+    "drawing": "lay",
+    "topic": "actions",
+    "emoji": "project-direct-lay",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "put": {
+    "drawing": "lay",
+    "topic": "actions",
+    "emoji": "project-direct-lay",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "move": {
+    "drawing": "move",
+    "topic": "actions",
+    "emoji": "project-direct-move",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pass": {
+    "drawing": "pass",
+    "topic": "actions",
+    "emoji": "project-direct-pass",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pay": {
+    "drawing": "pay",
+    "topic": "actions",
+    "emoji": "project-direct-pay",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "buy": {
+    "drawing": "buy",
+    "topic": "actions",
+    "emoji": "project-direct-buy",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "purchase": {
+    "drawing": "buy",
+    "topic": "actions",
+    "emoji": "project-direct-buy",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sell": {
+    "drawing": "sell",
+    "topic": "actions",
+    "emoji": "project-direct-sell",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "prepare": {
+    "drawing": "prepare",
+    "topic": "actions",
+    "emoji": "project-direct-prepare",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "reach": {
+    "drawing": "reach",
+    "topic": "actions",
+    "emoji": "project-direct-reach",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "release": {
+    "drawing": "release",
+    "topic": "actions",
+    "emoji": "project-direct-release",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "remove": {
+    "drawing": "remove",
+    "topic": "actions",
+    "emoji": "project-direct-remove",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "stick": {
+    "drawing": "stick",
+    "topic": "actions",
+    "emoji": "project-direct-stick",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "wake": {
+    "drawing": "wake",
+    "topic": "actions",
+    "emoji": "project-direct-wake",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hit": {
+    "drawing": "hit",
+    "topic": "sports",
+    "emoji": "project-direct-hit",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "freeze": {
+    "drawing": "freeze",
+    "topic": "actions",
+    "emoji": "project-direct-freeze",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "hide": {
+    "drawing": "hide",
+    "topic": "actions",
+    "emoji": "project-direct-hide",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "flat": {
+    "drawing": "flat",
+    "topic": "travel",
+    "emoji": "project-direct-flat",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "blank": {
+    "drawing": "blank",
+    "topic": "school",
+    "emoji": "project-direct-blank",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "full": {
+    "drawing": "full",
+    "topic": "home",
+    "emoji": "project-direct-full",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "neat": {
+    "drawing": "neat",
+    "topic": "home",
+    "emoji": "project-direct-neat",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "damp": {
+    "drawing": "damp",
+    "topic": "home",
+    "emoji": "project-direct-damp",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "solid": {
+    "drawing": "solid",
+    "topic": "nature",
+    "emoji": "project-direct-solid",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dead": {
+    "drawing": "dead",
+    "topic": "nature",
+    "emoji": "project-direct-dead",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "poison": {
+    "drawing": "poison",
+    "topic": "home",
+    "emoji": "project-direct-poison",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "sport": {
+    "drawing": "sport",
+    "topic": "sports",
+    "emoji": "project-direct-sport",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "play": {
+    "drawing": "cartplay",
+    "topic": "sports",
+    "emoji": "project-direct-cartplay",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "christmas": {
+    "drawing": "christmas",
+    "topic": "play",
+    "emoji": "project-direct-christmas",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "half": {
+    "drawing": "half",
+    "topic": "school",
+    "emoji": "project-direct-half",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "division": {
+    "drawing": "division",
+    "topic": "school",
+    "emoji": "project-direct-division",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pair": {
+    "drawing": "pair",
+    "topic": "clothes",
+    "emoji": "project-direct-pair",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dozen": {
+    "drawing": "dozen",
+    "topic": "school",
+    "emoji": "project-direct-dozen",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bunch": {
+    "drawing": "bunch",
+    "topic": "food",
+    "emoji": "project-direct-bunch",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "recycle": {
+    "drawing": "recycle",
+    "topic": "actions",
+    "emoji": "project-direct-recycle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shoot": {
+    "drawing": "shoot",
+    "topic": "sports",
+    "emoji": "project-direct-shoot",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "perform": {
+    "drawing": "actor",
+    "topic": "play",
+    "emoji": "project-direct-actor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "performance": {
+    "drawing": "actor",
+    "topic": "play",
+    "emoji": "project-direct-actor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "africa": {
+    "drawing": "map-africa",
+    "topic": "places",
+    "emoji": "project-map-africa",
+    "review": "Current geographic meaning; highlighted continent outlines from Natural Earth."
+  },
+  "asia": {
+    "drawing": "map-asia",
+    "topic": "places",
+    "emoji": "project-map-asia",
+    "review": "Current geographic meaning; highlighted continent outlines from Natural Earth."
+  },
+  "europe": {
+    "drawing": "map-europe",
+    "topic": "places",
+    "emoji": "project-map-europe",
+    "review": "Current geographic meaning; highlighted continent outlines from Natural Earth."
+  },
+  "america": {
+    "drawing": "map-america",
+    "topic": "places",
+    "emoji": "project-map-america",
+    "review": "Current geographic meaning; highlighted continent outlines from Natural Earth."
+  },
+  "china": {
+    "drawing": "china-flag",
+    "topic": "places",
+    "emoji": "project-china-flag"
+  },
+  "north": {
+    "drawing": "north",
+    "topic": "nature",
+    "emoji": "project-direct-north",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "east": {
+    "drawing": "east",
+    "topic": "nature",
+    "emoji": "project-direct-east",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "south": {
+    "drawing": "south",
+    "topic": "nature",
+    "emoji": "project-direct-south",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "west": {
+    "drawing": "west",
+    "topic": "nature",
+    "emoji": "project-direct-west",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "equator": {
+    "drawing": "equator",
+    "topic": "nature",
+    "emoji": "project-direct-equator",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "guide": {
+    "drawing": "guide",
+    "topic": "people",
+    "emoji": "project-direct-guide",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "host": {
+    "drawing": "host",
+    "topic": "people",
+    "emoji": "project-direct-host",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "champion": {
+    "drawing": "champion",
+    "topic": "sports",
+    "emoji": "project-direct-champion",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "win": {
+    "drawing": "champion",
+    "topic": "sports",
+    "emoji": "project-direct-champion",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "victory": {
+    "drawing": "champion",
+    "topic": "sports",
+    "emoji": "project-direct-champion",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "alarm": {
+    "drawing": "alarm",
+    "topic": "home",
+    "emoji": "project-direct-alarm",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "alert": {
+    "drawing": "warning",
+    "topic": "nature",
+    "emoji": "project-direct-warning",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "danger": {
+    "drawing": "warning",
+    "topic": "nature",
+    "emoji": "project-direct-warning",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "dangerous": {
+    "drawing": "warning",
+    "topic": "nature",
+    "emoji": "project-direct-warning",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "warning": {
+    "drawing": "warning",
+    "topic": "nature",
+    "emoji": "project-direct-warning",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "peace": {
+    "drawing": "peace",
+    "topic": "people",
+    "emoji": "project-direct-peace",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "campus": {
+    "drawing": "campus",
+    "topic": "places",
+    "emoji": "project-direct-campus",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "work": {
+    "drawing": "workhospital",
+    "topic": "actions",
+    "emoji": "project-direct-workhospital",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "shine": {
+    "drawing": "lightshine",
+    "topic": "nature",
+    "emoji": "project-direct-lightshine",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "damage": {
+    "drawing": "damage",
+    "topic": "home",
+    "emoji": "project-direct-damage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "injury": {
+    "drawing": "injury",
+    "topic": "body",
+    "emoji": "project-direct-injury",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "parking": {
+    "drawing": "parking",
+    "topic": "travel",
+    "emoji": "project-direct-parking",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "donate": {
+    "drawing": "donation",
+    "topic": "actions",
+    "emoji": "project-direct-donation",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pollute": {
+    "drawing": "pollution",
+    "topic": "nature",
+    "emoji": "project-direct-pollution",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pollution": {
+    "drawing": "pollution",
+    "topic": "nature",
+    "emoji": "project-direct-pollution",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "marry": {
+    "drawing": "marriage",
+    "topic": "people",
+    "emoji": "project-direct-marriage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "marriage": {
+    "drawing": "marriage",
+    "topic": "people",
+    "emoji": "project-direct-marriage",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "land": {
+    "drawing": "land",
+    "topic": "travel",
+    "emoji": "project-direct-land",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "deaf": {
+    "drawing": "headphonedeaf",
+    "topic": "body",
+    "emoji": "project-direct-headphonedeaf",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "chore": {
+    "drawing": "housework",
+    "topic": "home",
+    "emoji": "project-direct-housework",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "housework": {
+    "drawing": "housework",
+    "topic": "home",
+    "emoji": "project-direct-housework",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "speech": {
+    "drawing": "host",
+    "topic": "people",
+    "emoji": "project-direct-host",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "lecture": {
+    "drawing": "professor",
+    "topic": "school",
+    "emoji": "project-direct-professor",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "poet": {
+    "drawing": "author",
+    "topic": "people",
+    "emoji": "project-direct-author",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "pacific": {
+    "drawing": "map-pacific",
+    "topic": "nature",
+    "emoji": "project-map-pacific"
+  },
+  "in": {
+    "drawing": "in",
+    "topic": "actions",
+    "emoji": "project-direct-in",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "on": {
+    "drawing": "on",
+    "topic": "actions",
+    "emoji": "project-direct-on",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "under": {
+    "drawing": "under",
+    "topic": "actions",
+    "emoji": "project-direct-under",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "behind": {
+    "drawing": "behind",
+    "topic": "actions",
+    "emoji": "project-direct-behind",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "beside": {
+    "drawing": "beside",
+    "topic": "actions",
+    "emoji": "project-direct-beside",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "between": {
+    "drawing": "between",
+    "topic": "actions",
+    "emoji": "project-direct-between",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "above": {
+    "drawing": "above",
+    "topic": "actions",
+    "emoji": "project-direct-above",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "over": {
+    "drawing": "over",
+    "topic": "actions",
+    "emoji": "project-direct-over",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "near": {
+    "drawing": "near",
+    "topic": "places",
+    "emoji": "project-direct-near",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "nearby": {
+    "drawing": "near",
+    "topic": "places",
+    "emoji": "project-direct-near",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "far": {
+    "drawing": "far",
+    "topic": "places",
+    "emoji": "project-direct-far",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "front": {
+    "drawing": "front",
+    "topic": "actions",
+    "emoji": "project-direct-front",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "middle": {
+    "drawing": "middle",
+    "topic": "actions",
+    "emoji": "project-direct-middle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "center": {
+    "drawing": "middle",
+    "topic": "actions",
+    "emoji": "project-direct-middle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "centre": {
+    "drawing": "middle",
+    "topic": "actions",
+    "emoji": "project-direct-middle",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "inside": {
+    "drawing": "inside",
+    "topic": "actions",
+    "emoji": "project-direct-inside",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "within": {
+    "drawing": "inside",
+    "topic": "actions",
+    "emoji": "project-direct-inside",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "outside": {
+    "drawing": "outside",
+    "topic": "actions",
+    "emoji": "project-direct-outside",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "into": {
+    "drawing": "into",
+    "topic": "actions",
+    "emoji": "project-direct-into",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "onto": {
+    "drawing": "onto",
+    "topic": "actions",
+    "emoji": "project-direct-onto",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "through": {
+    "drawing": "through",
+    "topic": "actions",
+    "emoji": "project-direct-through",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "across": {
+    "drawing": "across",
+    "topic": "actions",
+    "emoji": "project-direct-across",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "around": {
+    "drawing": "around",
+    "topic": "actions",
+    "emoji": "project-direct-around",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "short": {
+    "drawing": "short",
+    "topic": "colors",
+    "emoji": "project-direct-short",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "little": {
+    "drawing": "small",
+    "topic": "colors",
+    "emoji": "project-direct-small",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "large": {
+    "drawing": "large",
+    "topic": "colors",
+    "emoji": "project-direct-large",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "huge": {
+    "drawing": "large",
+    "topic": "colors",
+    "emoji": "project-direct-large",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "broad": {
+    "drawing": "broad",
+    "topic": "body",
+    "emoji": "project-direct-broad",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "deep": {
+    "drawing": "deep",
+    "topic": "nature",
+    "emoji": "project-direct-deep",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "high": {
+    "drawing": "high",
+    "topic": "nature",
+    "emoji": "project-direct-high",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "low": {
+    "drawing": "low",
+    "topic": "nature",
+    "emoji": "project-direct-low",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "massive": {
+    "drawing": "massive",
+    "topic": "places",
+    "emoji": "project-direct-massive",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "downstairs": {
+    "drawing": "downstairs",
+    "topic": "home",
+    "emoji": "project-direct-downstairs",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "among": {
+    "drawing": "among",
+    "topic": "actions",
+    "emoji": "project-direct-among",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "to": {
+    "drawing": "to",
+    "topic": "actions",
+    "emoji": "project-direct-to",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "toward": {
+    "drawing": "to",
+    "topic": "actions",
+    "emoji": "project-direct-to",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "towards": {
+    "drawing": "to",
+    "topic": "actions",
+    "emoji": "project-direct-to",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "from": {
+    "drawing": "from",
+    "topic": "actions",
+    "emoji": "project-direct-from",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "out": {
+    "drawing": "exit",
+    "topic": "actions",
+    "emoji": "project-direct-exit",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "fellow": {
+    "source": "man",
+    "topic": "people",
+    "emoji": "1f468",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "guy": {
+    "source": "man",
+    "topic": "people",
+    "emoji": "1f468",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "nature": {
+    "source": "landscape",
+    "topic": "nature",
+    "emoji": "project-direct-landscape",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "device": {
+    "source": "machine",
+    "topic": "home",
+    "emoji": "project-direct-machine",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "love": {
+    "source": "heart shape",
+    "topic": "colors",
+    "emoji": "2764",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "correct": {
+    "source": "check mark",
+    "topic": "school",
+    "emoji": "2705",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "wrong": {
+    "source": "cross mark",
+    "topic": "school",
+    "emoji": "274c",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "no": {
+    "source": "cross mark",
+    "topic": "school",
+    "emoji": "274c",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "ok": {
+    "source": "check mark",
+    "topic": "school",
+    "emoji": "2705",
+    "review": "Equivalent visible sense or established pictogram checked against current gloss."
+  },
+  "height": {
+    "drawing": "height",
+    "topic": "body",
+    "emoji": "project-direct-height",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "depth": {
+    "drawing": "deep",
+    "topic": "nature",
+    "emoji": "project-direct-deep",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "weight": {
+    "drawing": "weight",
+    "topic": "home",
+    "emoji": "project-direct-weight",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "edge": {
+    "drawing": "edge",
+    "topic": "colors",
+    "emoji": "project-direct-edge",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "corner": {
+    "drawing": "corner",
+    "topic": "places",
+    "emoji": "project-direct-corner",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "bottom": {
+    "drawing": "bottom",
+    "topic": "home",
+    "emoji": "project-direct-bottom",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "side": {
+    "drawing": "beside",
+    "topic": "actions",
+    "emoji": "project-direct-beside",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  },
+  "surface": {
+    "drawing": "surface",
+    "topic": "colors",
+    "emoji": "project-direct-surface",
+    "review": "Single-frame meaning reviewed against the current gloss and sentence."
+  }
+}

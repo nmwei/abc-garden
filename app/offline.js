@@ -1,18 +1,21 @@
 import {watchSiteUpdates} from './site-update.js';
-const mb=n=>(n/1024/1024).toFixed(1);
+const categories=[['pictures','词卡图片','看图、释义和例句文字'],['word-audio','单词读音','听单词、听音找图'],['sentence-audio','例句读音','听完整例句'],['other','其他内容','字母、故事、对话']];
+const size=n=>n===0?'0 B':n<1024?`${n} B`:n<1024*1024?`${(n/1024).toFixed(1)} KiB`:`${(n/1024/1024).toFixed(1)} MiB`;
 export class OfflineLibrary {
  constructor(toast,beforeUpdate){this.beforeUpdate=beforeUpdate;this.toast=toast;this.state={ready:false,packs:[],recentBytes:0};this.packs=[];this.busy=false;this.message='';this.failed=false;this.warmed=false;this.plan=null;this.progress=null;}
  get label(){return this.state.ready?(this.state.allReady?'全部学习内容已可离线':'页面已可离线 · 素材按需保存'):this.failed?'离线页面尚未准备好，可先联网使用':'正在准备轻量离线页面…';}
- editor(){return `<section class="panel parent-section" id="parent-tools" aria-labelledby="offline-title"><h2 id="offline-title">离线使用</h2><div><p>出门前下载全部学习内容，断网也能听和学。</p><p id="offline-stats" class="micro">${this.stats()}</p><div class="button-row"><button class="button primary" id="offline-download" data-action="offline-download" ${this.busy||this.state.allReady?'disabled':''}>${this.downloadLabel()}</button><button class="button secondary" id="offline-clear" data-action="offline-clear" ${this.busy?'disabled':''}>清理离线素材</button></div><div id="offline-plan">${this.planHtml()}</div><progress id="offline-bar" aria-label="离线下载进度" max="${this.progress?.totalBytes||1}" value="${this.progress?.doneBytes||0}" ${this.progress?'':'hidden'}></progress><p id="offline-progress" role="status">${this.message}</p><button class="button secondary small" id="offline-cancel" data-action="offline-cancel" ${this.busy&&this.progress?'':'hidden'}>暂停下载</button><p class="micro offline-note">下载时保持页面打开，中断后可以继续，不重复下载。清理素材不会删除掌握记录、学习范围和历史自定义音频。</p><section class="offline-help" aria-labelledby="offline-help-title"><h3 id="offline-help-title">离线使用说明</h3><p class="micro">所选单词使用词库已有发音。浏览器清理网站数据后需要重新下载；网站更新会复用未变化的素材，新增或变化的素材可继续补齐；出门前可以检查这里的下载状态。iPad可通过Safari分享菜单“添加到主屏幕”。</p></section></div></section>`;}
- downloadLabel(){return this.busy?'正在处理…':this.state.allReady?'全部内容已下载':this.state.pending?.includes('all')?'继续下载':'下载全部内容';}
- stats(){const total=this.packs.find(p=>p.id==='all');return `${total?`全部内容约 ${mb(total.bytes)} MiB · `:''}已保存 ${mb(this.state.mediaBytes||0)} MiB。`+(this.state.allReady?'已可完整离线使用。':'平时联网使用，不需要下载。');}
+ editor(){return `<section class="panel parent-section" id="parent-tools" aria-labelledby="offline-title"><h2 id="offline-title">离线使用</h2><div><p>按需保存图片和读音，也可以一次下载全部内容。</p><p id="offline-stats" class="micro">${this.stats()}</p><div id="offline-categories">${this.categoriesHtml()}</div><div class="button-row"><button class="button primary" id="offline-download" data-action="offline-download" ${this.busy||this.state.allReady?'disabled':''}>${this.downloadLabel()}</button><button class="button secondary" id="offline-clear" data-action="offline-clear" ${this.busy?'disabled':''}>清理全部素材</button></div><div id="offline-plan">${this.planHtml()}</div><progress id="offline-bar" aria-label="离线下载进度" max="${this.progress?.totalBytes||1}" value="${this.progress?.doneBytes||0}" ${this.progress?'':'hidden'}></progress><p id="offline-progress" role="status">${this.message}</p><button class="button secondary small" id="offline-cancel" data-action="offline-cancel" ${this.busy&&this.progress?'':'hidden'}>暂停下载</button><p class="micro offline-note">浏览过的图片和听过的音频也会自动缓存。下载时保持页面打开，中断后可以继续，不重复下载。清理素材不会删除掌握记录、学习范围和历史自定义音频。</p><section class="offline-help" aria-labelledby="offline-help-title"><h3 id="offline-help-title">离线使用说明</h3><p class="micro">所选单词使用词库已有发音。浏览器清理网站数据后需要重新下载；新版启用后会清理旧版离线素材，需要重新下载；学习记录和选词范围保留；出门前可以检查这里的下载状态。iPad可通过Safari分享菜单“添加到主屏幕”。</p></section></div></section>`;}
+ categoriesHtml(){return categories.map(([id,title,description])=>{const pack=this.packs.find(p=>p.id===id),state=this.state.packStatus?.find(p=>p.id===id),complete=state?.complete&&state?.retained;return `<section class="offline-category" data-offline-category="${id}"><div><h3>${title}</h3><p class="micro">${description}</p><p class="micro">${pack?`共 ${size(pack.bytes)} · 已保存 ${size(state?.savedBytes||0)}`:'正在读取大小…'}${state?` · 还需 ${size(state.neededBytes)}`:''}</p></div><div class="button-row offline-category-actions"><button class="button secondary small" data-action="offline-download" data-pack="${id}" ${this.busy||!this.state.ready||!pack||complete?'disabled':''}>${complete?'已下载':this.state.pending?.includes(id)?'继续下载':'下载'}</button><button class="button secondary small" data-action="offline-clear-pack" data-pack="${id}" ${this.busy||!this.state.ready||!state?.clearableBytes?'disabled':''}>清理</button></div></section>`;}).join('');}
+ downloadLabel(){return this.busy?'正在处理…':this.state.allReady?'全部内容已下载':this.state.pending?.includes('all')?'继续下载':'下载全部素材';}
+ stats(){const total=this.packs.find(p=>p.id==='all');return `${total?`全部内容约 ${size(total.bytes)} · `:''}已保存 ${size(this.state.mediaBytes||0)}。`+(this.state.allReady?'已可完整离线使用。':'平时联网使用，不需要下载。');}
  planHtml(){
   const p=this.plan;if(!p)return '';
-  return `<section class="offline-estimate" aria-label="下载空间评估"><h3>${p.title}</h3><p>内容总大小 ${mb(p.totalBytes)} MiB · 已保存 ${mb(p.savedBytes)} MiB · 本次需下载 ${mb(p.neededBytes)} MiB</p><p class="micro">${p.available===null?'浏览器未提供可用配额，无法预先确认是否足够。':`浏览器估算本站可用配额 ${mb(p.available)} MiB，下载后约剩 ${mb(Math.max(0,p.available-p.neededBytes))} MiB。` }这是本站存储配额估计，不是设备总剩余空间；实际占用含额外开销。</p>${p.insufficient?'<p role="alert">可用配额不足或余量过小，请先清理设备空间，或继续联网使用。</p>':''}<div class="button-row"><button class="button primary" data-action="offline-confirm" ${p.insufficient||this.busy?'disabled':''}>确认下载${p.id==='all'?'全部内容':''}</button><button class="button secondary" data-action="offline-dismiss" ${this.busy?'disabled':''}>暂不下载</button></div></section>`;
+  return `<section class="offline-estimate" aria-label="下载空间评估"><h3>${p.title}</h3><p>内容总大小 ${size(p.totalBytes)} · 已保存 ${size(p.savedBytes)} · 本次需下载 ${size(p.neededBytes)}</p><p class="micro">${p.available===null?'浏览器未提供可用配额，无法预先确认是否足够。':`浏览器估算本站可用配额 ${size(p.available)}，下载后约剩 ${size(Math.max(0,p.available-p.neededBytes))}。` }这是本站存储配额估计，不是设备总剩余空间；实际占用含额外开销。</p>${p.insufficient?'<p role="alert">可用配额不足或余量过小，请先清理设备空间，或继续联网使用。</p>':''}<div class="button-row"><button class="button primary" data-action="offline-confirm" ${p.insufficient||this.busy?'disabled':''}>确认下载${p.id==='all'?'全部内容':''}</button><button class="button secondary" data-action="offline-dismiss" ${this.busy?'disabled':''}>暂不下载</button></div></section>`;
  }
  paint(){
   const label=document.querySelector('#offline-label');if(label)label.textContent=this.label;
   document.querySelector('.offline-dot')?.classList.toggle('ready',this.state.ready);
+  const categories=document.querySelector('#offline-categories');if(categories)categories.innerHTML=this.categoriesHtml();
   const stats=document.querySelector('#offline-stats');if(stats)stats.textContent=this.stats();
   const progress=document.querySelector('#offline-progress');if(progress)progress.textContent=this.message;
   const plan=document.querySelector('#offline-plan');if(plan)plan.innerHTML=this.planHtml();
@@ -68,14 +71,14 @@ export class OfflineLibrary {
   try{
    // Persistence is best effort; lack of permission never masquerades as a guarantee.
    try{Promise.resolve(navigator.storage?.persist?.()).catch(()=>{});}catch{}
-   this.state=await this.send('DOWNLOAD_PACK',{id:plan.id},p=>{this.progress=p;this.message=`${plan.title}：${Math.floor(p.doneBytes/p.totalBytes*100)}% · ${mb(p.doneBytes)}/${mb(p.totalBytes)} MiB · ${p.progress}/${p.total} 份`;this.paint();});
-   this.message=this.state.cancelled?'下载已暂停，已完成部分保留，下次可继续。':`${plan.title}已下载并校验，可以断网练习。`;this.plan=null;
+   this.state=await this.send('DOWNLOAD_PACK',{id:plan.id},p=>{this.progress=p;this.message=`${plan.title}：${Math.floor(p.doneBytes/p.totalBytes*100)}% · ${size(p.doneBytes)} / ${size(p.totalBytes)} · ${p.progress}/${p.total} 份`;this.paint();});
+   this.message=this.state.cancelled?'下载已暂停，已完成部分保留，下次可继续。':`${plan.title}已下载并校验，可离线使用。`;this.plan=null;
   }catch(error){this.message=error.message;await this.check();}finally{this.busy=false;this.paint();}
  }
  async cancel(){try{await this.send('CANCEL_DOWNLOAD');this.message='正在暂停，请稍候…';this.paint();}catch(error){this.toast(error.message);}}
- async clear(){
+ async clear(id){
   if(this.busy)return;this.busy=true;this.plan=null;this.progress=null;this.paint();
-  try{this.state=await this.send('CLEAR_MEDIA');this.message='已清理素材缓存；掌握状态、家长设置和自定义音频已保留。';}
+  try{this.state=await this.send(id?'CLEAR_PACK':'CLEAR_MEDIA',id?{id}:{});this.message=id?`${categories.find(c=>c[0]===id)?.[1]||'此分类'}已清理；其他已下载分类需要的共用素材已保留。`:'已清理全部素材；掌握状态、家长设置和自定义音频已保留。';}
   catch(error){this.message=error.message;}finally{this.busy=false;this.paint();}
  }
 }

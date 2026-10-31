@@ -12,38 +12,31 @@ self.addEventListener('install',event=>event.waitUntil((async()=>{
  await cache.addAll([...data.files.map(absolute),absolute('precache.json')]);if(localPreview)await self.skipWaiting();
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
- // Keep previous caches: existing tabs may still use their shell, and media is reused by hash.
+ // A new release starts with fresh offline media; learner data lives outside Cache Storage.
+ for(const name of (await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&![CACHE,MEDIA,META].includes(k))){
+  const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);
+  if(!(await cache.keys()).length)await caches.delete(name);
+ }
  await resourceIndex();
  await self.clients.claim();
 })()));
 async function localManifest(){return localPromise??=(async()=>{const r=await (await caches.open(CACHE)).match(absolute('precache.json'));return r?await r.json():manifest();})().catch(e=>{localPromise=null;throw e;});}
 async function selections(){return selectionPromise??=(async()=>{
  const current=await (await caches.open(META)).match(metadataUrl);if(current)return new Set(await current.json());
- for(const name of (await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&k.endsWith('-meta')).reverse()){const saved=await (await caches.open(name)).match(metadataUrl);if(saved)return new Set(await saved.json());}
  return new Set();
 })().catch(e=>{selectionPromise=null;throw e;});}
 async function saveSelections(){pinnedPromise=null;await (await caches.open(META)).put(metadataUrl,new Response(JSON.stringify([...(await selections())]),{headers:{'Content-Type':'application/json'}}));}
-const mediaSources=new Map();
 async function resourceIndex(){return indexPromise??=(async()=>{
- const data=await localManifest(),specs=new Map(Object.entries(data.resources||{}).map(([file,spec])=>[absolute(file),spec])),index=new Map();
- const names=[MEDIA,...(await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&k.endsWith('-media')&&k!==MEDIA)];
- for(const name of names){
-  const cache=await caches.open(name);let oldSpecs;
-  if(name!==MEDIA){const saved=await (await caches.open(name.slice(0,-6))).match(absolute('precache.json'));if(!saved)continue;oldSpecs=new Map(Object.entries((await saved.json()).resources||{}).map(([file,spec])=>[absolute(file),spec]));}
-  for(const key of await cache.keys()){
-   if(index.has(key.url))continue;
-   if(oldSpecs){const before=oldSpecs.get(key.url),now=specs.get(key.url);if(!before||!now||before.sha256!==now.sha256||before.bytes!==now.bytes)continue;}
-   const response=await cache.match(key);index.set(key.url,Number(response.headers.get('Content-Length'))||0);mediaSources.set(key.url,name);
-  }
- }
+ const cache=await caches.open(MEDIA),index=new Map();
+ for(const key of await cache.keys())if(key.url.startsWith(root.href)){const response=await cache.match(key);index.set(key.url,Number(response.headers.get('Content-Length'))||0);}
  return index;
 })().catch(e=>{indexPromise=null;throw e;});}
-async function cachedMedia(url){await resourceIndex();const name=mediaSources.get(url);return name?(await caches.open(name)).match(url):undefined;}
+async function cachedMedia(url){return (await caches.open(MEDIA)).match(url);}
 async function pinnedUrls(){return pinnedPromise??=(async()=>{const data=await localManifest(),selected=await selections();return new Set(data.packs.filter(p=>selected.has(p.id)).flatMap(p=>p.files.map(absolute)));})().catch(e=>{pinnedPromise=null;throw e;});}
 async function trimRecent(){
  const index=await resourceIndex(),pinned=await pinnedUrls(),recent=[...index].filter(([url])=>!pinned.has(url));let bytes=recent.reduce((n,[,size])=>n+size,0),count=recent.length;
  const cache=await caches.open(MEDIA);
- for(const [url,size] of recent){if(bytes<=RECENT_LIMIT&&count<=RECENT_COUNT)break;await (await caches.open(mediaSources.get(url)||MEDIA)).delete(url);index.delete(url);mediaSources.delete(url);bytes-=size;count--;}
+ for(const [url,size] of recent){if(bytes<=RECENT_LIMIT&&count<=RECENT_COUNT)break;await cache.delete(url);index.delete(url);bytes-=size;count--;}
 }
 async function storeResource(url,response,epoch=mediaEpoch){
  const bytes=await response.arrayBuffer(),data=await localManifest();
@@ -59,7 +52,7 @@ async function storeResource(url,response,epoch=mediaEpoch){
   if(epoch!==mediaEpoch)return;
   const cache=await caches.open(MEDIA),index=await resourceIndex();
   // First completed writer wins; concurrent browsing and downloading share this slot.
-  if(!index.has(url)){await cache.put(url,new Response(bytes,{headers}));index.set(url,bytes.byteLength);mediaSources.set(url,MEDIA);}
+  if(!index.has(url)){await cache.put(url,new Response(bytes,{headers}));index.set(url,bytes.byteLength);}
   await trimRecent();
  });
 }
@@ -96,11 +89,34 @@ async function packPlan(id){
  for(const file of pack.files)if(index.has(absolute(file))){savedBytes+=data.resources[file].bytes;savedCount++;}
  return {id,title:pack.title,totalBytes:pack.bytes,savedBytes,neededBytes:pack.bytes-savedBytes,total:pack.files.length,savedCount};
 }
+const categoryIds=['pictures','word-audio','sentence-audio','other'];
+function remainingSelections(data,selected,id){
+ const remaining=new Set(selected);
+ if(remaining.delete('all'))for(const key of categoryIds)if(data.packs.some(p=>p.id===key))remaining.add(key);
+ remaining.delete(id);return remaining;
+}
+function protectedUrls(data,selected,id){const remaining=remainingSelections(data,selected,id);return new Set(data.packs.filter(p=>remaining.has(p.id)).flatMap(p=>p.files.map(absolute)));}
+async function clearPack(id){
+ if(download)throw Error('请先暂停下载。');
+ const data=await localManifest(),pack=data.packs.find(p=>p.id===id);
+ if(!categoryIds.includes(id)||!pack)throw Error('没有找到这个离线分类。');
+ mediaEpoch++;
+ await serial(async()=>{
+  const selected=await selections(),protectedFiles=protectedUrls(data,selected,id),remaining=remainingSelections(data,selected,id);
+  selected.clear();for(const key of remaining)selected.add(key);await saveSelections();
+  const urls=new Set(pack.files.map(absolute).filter(url=>!protectedFiles.has(url))),index=await resourceIndex();
+  // Only this release owns downloadable media.
+  const cache=await caches.open(MEDIA);for(const url of urls)await cache.delete(url);
+  for(const url of urls){index.delete(url);}
+ });
+ return status();
+}
 async function status(){
  await cacheQueue;const data=await localManifest(),keys=new Set((await (await caches.open(CACHE)).keys()).map(r=>r.url)),index=await resourceIndex(),selected=await selections(),pinned=await pinnedUrls();
  const complete=p=>p.files.every(f=>index.has(absolute(f))),packs=data.packs.filter(p=>selected.has(p.id)&&complete(p)).map(p=>p.id);
+ const packStatus=data.packs.map(p=>{const savedBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))?data.resources[f].bytes:0),0),protectedFiles=categoryIds.includes(p.id)?protectedUrls(data,selected,p.id):new Set(),clearableBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))&&!protectedFiles.has(absolute(f))?data.resources[f].bytes:0),0);return {id:p.id,savedBytes,clearableBytes,neededBytes:p.bytes-savedBytes,complete:complete(p),retained:p.files.every(f=>pinned.has(absolute(f)))};});
  let mediaBytes=0,recentBytes=0,recentCount=0;for(const [url,size] of index){mediaBytes+=size;if(!pinned.has(url)){recentBytes+=size;recentCount++;}}
- return {ready:data.files.every(f=>keys.has(absolute(f))),packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:complete(data.packs.find(p=>p.id==='all')),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'__BUILD_ID__'};
+ return {ready:data.files.every(f=>keys.has(absolute(f))),packStatus,packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:packStatus.some(p=>p.id==='all'&&p.complete&&p.retained),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'__BUILD_ID__'};
 }
 async function downloadPack(id,port){
  if(download)throw Error('已有下载正在进行，请稍后再试。');
@@ -138,9 +154,10 @@ self.addEventListener('message',event=>{
    if(download)throw Error('请先暂停下载。');
    await serial(async()=>{(await selections()).delete(id);await saveSelections();await trimRecent();});port.postMessage(await status());return;
   }
+  if(type==='CLEAR_PACK'){port.postMessage(await clearPack(id));return;}
   if(type==='CLEAR_MEDIA'){
    if(download)throw Error('请先暂停下载。');
-   mediaEpoch++;await serial(async()=>{for(const name of await caches.keys())if(name.startsWith('abc-garden-')&&(name.endsWith('-media')||name.endsWith('-meta'))){const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);if(!(await cache.keys()).length)await caches.delete(name);}mediaSources.clear();indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
+   mediaEpoch++;await serial(async()=>{for(const name of await caches.keys())if(name.startsWith('abc-garden-')&&(name.endsWith('-media')||name.endsWith('-meta'))){const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);if(!(await cache.keys()).length)await caches.delete(name);}indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
   }
   throw Error('Unknown offline request');
  }catch(error){port.postMessage({error:error.name==='QuotaExceededError'?'设备空间不足。已完成部分已保留，清理空间后可继续下载。':error.message});}})());

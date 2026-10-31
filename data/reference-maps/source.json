@@ -1,0 +1,13 @@
+{
+  "source": "Natural Earth",
+  "version": "5.1.2",
+  "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_regions_polys.geojson",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "sha256": "4182af773bcc891f8ddbf4b34ac02e87f17b35456269695e07258cf0b4877ec9",
+  "changes": "Retained continent polygons; equirectangular display with highlighted continent, borders omitted.",
+  "marine": {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_marine_polys.geojson",
+    "sha256": "b9c3f7f557d0ff5217906adc82b66ecdac14aa7438df7e518cf6675d037bceb8"
+  }
+}

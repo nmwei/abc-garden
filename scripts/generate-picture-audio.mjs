@@ -39,6 +39,6 @@ if(process.argv[2]==='--worker'){
   worker.on('error',reject);worker.on('exit',code=>code===0?resolve():reject(Error(`Audio worker ${slot} exited ${code}`)));
  })));
  const failed=results.find(r=>r.status==='rejected');if(failed)throw failed.reason;
- await writeFile(new URL('course-sources.json',directory),JSON.stringify({model,voice,speed,notice:'Synthetic reference speech; project-authored examples; not teacher reviewed',clips:COURSE_AUDIO},null,2));
+ await writeFile(new URL('course-sources.json',directory),JSON.stringify({model,voice,speed,notice:'Synthetic reference speech; project-authored and attributed/adapted corpus examples; see data/vocabulary/sources.json; not teacher reviewed',clips:COURSE_AUDIO},null,2));
  console.log(JSON.stringify({complete:true,generated:tasks.length,clips:COURSE_AUDIO.length}));
 }

@@ -1,0 +1,37 @@
+import{rect as r,path as p,line as l,circle as c,ellipse as e,group as g,person as person,arrow as a}from'./direct-scenes.mjs';
+const ball=(x,y,rad=12)=>c(x,y,rad,'#cc977f');const table=r(16,54,96,10,'#a4b8b7',2)+r(24,64,7,50,'#a4b8b7',1)+r(97,64,7,50,'#a4b8b7',1);
+const house=p('M12 55L64 13L116 55Z','#a5b8b3')+r(24,55,80,61,'#c7d3c3',2)+r(51,77,25,39,'#92a7aa',2);
+export const spatialScenes={
+ among:[ [24,24],[64,17],[105,28],[19,70],[110,74],[35,111],[83,107] ].map(([x,y])=>c(x,y,11,'#bdcbbf')).join('')+ball(65,66,15),
+ to:g(house,74,33,.42)+a(7,94,88,94)+c(13,94,6,'#cfa180'),
+ from:g(house,1,33,.42)+a(44,94,119,94)+c(44,94,6,'#cfa180'),
+
+ in:p('M22 40L64 21L106 40L64 64Z','#e7d7b4')+ball(64,57,17)+p('M22 40L64 64V115L22 91Z','#b99e79')+p('M64 64L106 40V91L64 115Z','#d0b78c'),
+ on:table+ball(64,42),
+ under:table+ball(64,94),
+ behind:ball(76,55,18)+r(26,18,45,100,'#afc3c1',3)+r(32,25,33,83,'#cddbd1',1)+c(60,72,3,'#99a995'),
+ beside:r(12,36,47,79,'#b5c6c4',4)+ball(94,92,17),
+ between:r(8,32,28,84,'#b2c5c3',3)+r(92,32,28,84,'#b2c5c3',3)+ball(64,81,17),
+ above:table+ball(64,18),
+ over:house+ball(64,10,8)+p('M15 18Q64 -3 111 18','none','#d2ac7b',3),
+ near:g(house,4,34,.58)+g(house,62,34,.58)+l(58,109,76,109,'#cc977f',5),
+ far:g(house,0,40,.33)+g(house,88,40,.33)+l(45,108,91,108,'#cc977f',5)+[53,66,79].map(x=>c(x,108,2,'#f4edda')).join(''),
+ front:[ [25,89,'#cc977f'],[50,69,'#bcc9c1'],[76,49,'#bcc9c1'],[102,29,'#bcc9c1'] ].map(([x,y,col])=>g(person(0,0,{shirt:col}),x,y,.5)).join('')+a(7,59,20,77),
+ middle:r(8,8,112,112,'#dde4d4',7)+l(64,20,64,108,'#bbc9ba',2)+l(20,64,108,64,'#bbc9ba',2)+ball(64,64,16),
+ inside:p('M12 55L64 13L116 55Z','#a5b8b3')+r(24,55,80,61,'#a9beb8',2)+r(31,61,66,49,'#edf0dd',1)+ball(64,86,12),
+ outside:g(p('M12 55L64 13L116 55Z','#a5b8b3')+r(24,55,80,61,'#a9beb8',2)+r(31,61,66,49,'#edf0dd',1),0,8,.8)+ball(110,104,12),
+ into:g(house,25,0,.8)+a(7,91,75,91),
+ onto:table+a(8,100,64,34),
+ through:r(21,10,87,109,'#b8c9c4',5)+r(38,23,53,96,'#eaf0df',20)+a(64,108,64,33),
+ across:r(38,5,52,118,'#b6d6db',1)+[22,43,65,87,108].map(y=>l(46,y,81,y,'#dcece5',2)).join('')+a(6,65,120,65),
+ around:g(house,30,32,.54)+p('M65 12C1 12 1 111 65 111C123 111 123 18 77 13','none','#cfa180',6)+p('M78 3L66 13L79 24','none','#cfa180',5),
+ short:r(16,15,12,98,'#bdc8bd',2)+p('M16 15L22 3L28 15Z','#cdd5ca')+r(65,73,16,40,'#d0a47d',2)+p('M65 73L73 57L81 73Z','#ac8c66'),
+ small:c(40,64,30,'#c2cec0')+ball(99,89,10),
+ large:c(22,97,10,'#c2cec0')+ball(82,64,37),
+ broad:person(22,27,{shirt:'#bccac4'})+c(87,23,10,'#dfb68d')+p('M61 43Q87 31 113 43L105 85H69Z','#cca080')+p('M72 85L69 117M102 85L107 117','none','#9eb8be',7)+l(63,43,57,73,'#dfb68d',6)+l(111,43,117,73,'#dfb68d',6),
+ deep:p('M8 22H42V100H88V22H120V118H8Z','#bda783')+a(66,23,66,94),
+ high:[19,56,93].map((x,i)=>p(`M${x-15} 111L${x} ${65+i%2*15}L${x+15} 111Z`,'#b9cbb4')).join('')+p('M75 5L92 21L75 37L58 21Z','#cc9b83')+p('M75 37Q94 55 79 66','none','#bba27b',3),
+ low:p('M30 36Q6 67 20 98Q43 114 54 90Q63 65 43 12Q44 40 30 36Z','#c0cbbd')+p('M92 85Q79 105 89 114Q108 120 113 104Q114 88 101 72Q104 90 92 85Z','#d1a47c'),
+ massive:r(16,9,79,109,'#bdc9c0',3)+[28,50,72].flatMap(x=>[22,45,68,91].map(y=>r(x,y,12,14,'#8baab4',1))).join('')+g(person(0,0,{shirt:'#cc9c7d'}),114,91,.4),
+ downstairs:p('M8 44H34V65H60V86H86V108H119','none','#9eb5b9',9)+a(40,13,104,78),
+};

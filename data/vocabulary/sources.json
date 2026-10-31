@@ -1,0 +1,40 @@
+{
+  "primary": {
+    "title": "义务教育英语课程标准（2022年版）附录3二级词汇表",
+    "url": "https://www.ictr.edu.cn/Uploads/File/2022/04/28/6.%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E8%8B%B1%E8%AF%AD%E8%AF%BE%E7%A8%8B%E6%A0%87%E5%87%86%EF%BC%882022%E5%B9%B4%E7%89%88%EF%BC%89.20220428160837.pdf",
+    "sha256": "59ec3971e0dbd6ca487c4e4972cbc80effaf2fd62418d07e5f62c6698fa222fb",
+    "pdfPages": [
+      94,
+      104
+    ],
+    "declaredEntries": 505,
+    "extractedRows": 505,
+    "method": "Visual transcription of the separately printed primary table; OCR was not sufficiently complete."
+  },
+  "high": {
+    "title": "普通高中英语课程标准日常修订版（2017年版2025年修订）附录2",
+    "url": "https://cdn.zizzs.com/zixunzhan/%E6%99%AE%E9%80%9A%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%AF%BE%E7%A8%8B%E6%A0%87%E5%87%86%E6%97%A5%E5%B8%B8%E4%BF%AE%E8%AE%A2%E7%89%88%EF%BC%882017%E5%B9%B4%E7%89%882025%E5%B9%B4%E4%BF%AE%E8%AE%A2%EF%BC%891762759636958.pdf",
+    "sha256": "4d2d0f33e511dc0d239d2cdc53fe16f38a107afde9bd1ae557cec9ce7bb1bba0",
+    "pdfPages": [
+      76,
+      132
+    ],
+    "declaredEntries": 3100,
+    "extractedRows": 3099,
+    "method": "PDF text extraction, one table row per source entry, headers excluded, pronoun I retained. Country-reference supplement excluded.",
+    "countNote": "The introduction states 3100 words. The extracted printed main table contains 3099 rows; slash entries and aliases expand into more lexical forms. Counts are not silently padded or advertised as verified 3100/3100."
+  },
+  "extendedExamples": {
+    "title": "Tatoeba English-Mandarin sentence pairs curated by ManyThings",
+    "url": "https://www.manythings.org/anki/",
+    "downloadUrl": "https://www.manythings.org/anki/cmn-eng.zip",
+    "retrievedOn": "2026-10-31",
+    "archiveDate": "2026-02-13",
+    "sha256": "d606361aa7312dcdfb15ef4fc51cb1e7ed8bc2dc608a7b192626cd36e8403106",
+    "license": "CC BY 2.0 France",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+    "retainedPairs": 1519,
+    "additionalOriginalPairs": 125,
+    "method": "Selected short examples by exact word boundaries, then model-reviewed sentence meaning, example-specific Chinese gloss and part of speech; unsuitable or inaccurate examples rewritten. Traditional Chinese converted to simplified Chinese with OpenCC and revised where needed. Original sentence, translation, authors and IDs retained on each attributed source row. No teacher review or per-clip human listening acceptance."
+  }
+}

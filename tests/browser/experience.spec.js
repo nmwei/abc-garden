@@ -28,7 +28,7 @@ test('hold-to-enter parents, topic download, offline practice and cache cleanup 
  test.setTimeout(60000);await page.goto('/#/words');await page.locator('[data-filter=all]').click();await ready(page);
  await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'AB',words:'apple',repeats:3,gap:500})));
  await openParents(page);await expect(page.getByRole('heading',{name:'家长小角',exact:true})).toBeVisible();await expect(page.locator('#hold-parent')).toHaveCount(0);
- await expect(page.locator('#offline-pack')).toHaveCount(0);await downloadPack(page,'music');
+ await expect(page.locator('#offline-pack')).toHaveCount(0);await downloadPack(page,'all');
  await context.setOffline(true);await page.goto('/#/words');await page.locator('[data-filter=all]').click();await page.locator('#word-search').fill('violin');await expect(page.locator('.english-word')).toHaveText('violin');await page.locator('.learning-panel>img').evaluate(img=>img.decode());
  for(const name of ['听单词','听句子']){await page.getByRole('button',{name,exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);}
  await openParents(page);await page.getByRole('button',{name:'清理离线素材',exact:true}).click();await expect(page.locator('#offline-progress')).toContainText('已清理');

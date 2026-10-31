@@ -9,7 +9,7 @@ test('user recording supplies every name and sound in the offline letter library
   await openParents(page,true);await page.getByRole('button',{name:'全部 A–Z',exact:true}).click();await addPending(page);await page.getByRole('button',{name:'字母朋友',exact:true}).click();
   await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});
   await page.locator('.audio-sources summary').click();await expect(page.locator('.audio-sources')).toContainText('你提供的 GK 录音');
-  await downloadPack(page,'letters');await context.setOffline(true);await page.reload();await unlockParents(page);
+  await downloadPack(page,'other');await context.setOffline(true);await page.reload();await unlockParents(page);
   for(const [mode,label] of [['name','字母名称'],['sound','字母音']]){
     for(const letter of 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'){
       const source=imported.find(c=>c.file===`audio/${mode}-${letter}.wav`);

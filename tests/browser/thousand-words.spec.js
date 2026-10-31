@@ -23,7 +23,7 @@ test('large themed vocabulary paginates, searches, handles cues and works offlin
  if(await page.locator('#word-topic').isVisible())await page.locator('#word-topic').selectOption('feelings');else await page.getByRole('button',{name:'情绪感受',exact:true}).click();await expect(page.locator('#word-search')).toHaveValue('');
  if(await page.locator('#word-topic').isVisible())await page.locator('#word-topic').selectOption('all');else await page.getByRole('button',{name:'全部朋友',exact:true}).click();await page.locator('#word-search').fill('樱桃');await expect(page.locator('.english-word')).toHaveText('cherry');
  await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:120000});
- await downloadPack(page,'food');await context.setOffline(true);await page.reload();await page.locator('[data-filter=all]').click();await page.locator('#word-search').fill('cherry');
+ await downloadPack(page,'all');await context.setOffline(true);await page.reload();await page.locator('[data-filter=all]').click();await page.locator('#word-search').fill('cherry');
  await expect(page.locator('.learning-panel>img')).toHaveJSProperty('complete',true);
  expect(await page.locator('.learning-panel>img').evaluate(x=>x.naturalWidth)).toBeGreaterThan(0);
  for(const name of ['听单词','听句子']){

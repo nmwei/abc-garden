@@ -28,7 +28,7 @@ try{
  await p.locator('[data-filter=learning]').click();await p.screenshot({path:`/private/tmp/garden-words-${webkitMode?'webkit':'chrome'}.png`,fullPage:true});
  for(const size of [{width:390,height:844},{width:834,height:1194},{width:1194,height:834}]){await p.setViewportSize(size);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);}
  await p.waitForFunction(()=>document.querySelector('#offline-label')?.textContent==='页面已可离线 · 素材按需保存',null,{timeout:60000});
- await downloadPack(p,'actions');await downloadPack(p,'letters');await context.setOffline(true);await p.goto('http://localhost:4173/#/modules');await p.getByRole('heading',{name:'看图学词',exact:true}).waitFor();assert.ok(p.url().endsWith('#/words'));
+ await downloadPack(p,'all');await context.setOffline(true);await p.goto('http://localhost:4173/#/modules');await p.getByRole('heading',{name:'看图学词',exact:true}).waitFor();assert.ok(p.url().endsWith('#/words'));
  await p.reload();await p.locator('.nav [data-action="words"]').click();await p.locator('[data-filter=learning]').click();
  await p.getByRole('button',{name:'听句子',exact:true}).click();await p.waitForFunction(()=>document.querySelector('#garden-audio').currentTime>.1);
  await p.getByRole('button',{name:'字母朋友',exact:true}).click();await p.getByRole('button',{name:'听音找字母',exact:true}).click();await p.getByText('这一轮听的是字母名称。',{exact:true}).waitFor();
