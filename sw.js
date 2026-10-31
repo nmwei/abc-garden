@@ -1,5 +1,6 @@
 // One resource store per build; package membership pins resources without copying them.
-const CACHE='abc-garden-ab9e6bc87b4d',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
+const CACHE='abc-garden-34d01e7b3efe',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
+const localPreview=['localhost','127.0.0.1','[::1]'].includes(root.hostname)&&new URL(self.location.href).searchParams.get('mode')!=='offline';
 const RECENT_LIMIT=40*1024*1024,RECENT_COUNT=240;
 let localPromise,resourceSpecs,pinnedPromise,manifestPromise,indexPromise,selectionPromise,cacheQueue=Promise.resolve(),download=null,mediaEpoch=0;
 const absolute=file=>new URL(file,root).href;
@@ -8,20 +9,29 @@ const manifest=()=>manifestPromise??=fetch(absolute('precache.json'),{cache:'no-
 const serial=fn=>{const work=cacheQueue.then(fn);cacheQueue=work.catch(()=>{});return work;};
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const data=await manifest(),cache=await caches.open(CACHE);
- await cache.addAll([...data.files.map(absolute),absolute('precache.json')]);await self.skipWaiting();
+ await cache.addAll([...data.files.map(absolute),absolute('precache.json')]);if(localPreview)await self.skipWaiting();
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
- for(const key of await caches.keys())if(key.startsWith('abc-garden-')&&![CACHE,MEDIA,META].includes(key))await caches.delete(key);
+ // A new release starts with fresh offline media; learner data lives outside Cache Storage.
+ for(const name of (await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&![CACHE,MEDIA,META].includes(k))){
+  const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);
+  if(!(await cache.keys()).length)await caches.delete(name);
+ }
+ await resourceIndex();
  await self.clients.claim();
 })()));
 async function localManifest(){return localPromise??=(async()=>{const r=await (await caches.open(CACHE)).match(absolute('precache.json'));return r?await r.json():manifest();})().catch(e=>{localPromise=null;throw e;});}
-async function selections(){return selectionPromise??=(async()=>{const r=await (await caches.open(META)).match(metadataUrl);return new Set(r?await r.json():[]);})().catch(e=>{selectionPromise=null;throw e;});}
+async function selections(){return selectionPromise??=(async()=>{
+ const current=await (await caches.open(META)).match(metadataUrl);if(current)return new Set(await current.json());
+ return new Set();
+})().catch(e=>{selectionPromise=null;throw e;});}
 async function saveSelections(){pinnedPromise=null;await (await caches.open(META)).put(metadataUrl,new Response(JSON.stringify([...(await selections())]),{headers:{'Content-Type':'application/json'}}));}
 async function resourceIndex(){return indexPromise??=(async()=>{
- const cache=await caches.open(MEDIA),keys=await cache.keys(),index=new Map();
- for(let i=0;i<keys.length;i+=24)for(const [url,size] of await Promise.all(keys.slice(i,i+24).map(async key=>[key.url,Number((await cache.match(key)).headers.get('Content-Length'))||0])))index.set(url,size);
+ const cache=await caches.open(MEDIA),index=new Map();
+ for(const key of await cache.keys())if(key.url.startsWith(root.href)){const response=await cache.match(key);index.set(key.url,Number(response.headers.get('Content-Length'))||0);}
  return index;
 })().catch(e=>{indexPromise=null;throw e;});}
+async function cachedMedia(url){return (await caches.open(MEDIA)).match(url);}
 async function pinnedUrls(){return pinnedPromise??=(async()=>{const data=await localManifest(),selected=await selections();return new Set(data.packs.filter(p=>selected.has(p.id)).flatMap(p=>p.files.map(absolute)));})().catch(e=>{pinnedPromise=null;throw e;});}
 async function trimRecent(){
  const index=await resourceIndex(),pinned=await pinnedUrls(),recent=[...index].filter(([url])=>!pinned.has(url));let bytes=recent.reduce((n,[,size])=>n+size,0),count=recent.length;
@@ -63,12 +73,13 @@ self.addEventListener('fetch',event=>{
  const request=event.request;if(request.method!=='GET'||!request.url.startsWith(root.href))return;
  const url=fullUrl(request.url),epoch=mediaEpoch;
  if(isMedia(url)){
-  const result=(async()=>{const cached=await (await caches.open(CACHE)).match(url)||await (await caches.open(MEDIA)).match(url);if(cached)return {response:cached};const response=await fetch(url);return {response,store:response.ok&&response.status===200?response.clone():null};})();
+  const result=(async()=>{const cached=await (await caches.open(CACHE)).match(url)||await cachedMedia(url);if(cached)return {response:cached};const response=await fetch(url);return {response,store:response.ok&&response.status===200?response.clone():null};})();
   event.waitUntil(result.then(x=>x.store?storeResource(url,x.store,epoch):null).catch(()=>{}));
   event.respondWith(result.then(x=>withRange(x.response,request.headers.get('Range'))));return;
  }
  event.respondWith((async()=>{
-  const cached=await (await caches.open(CACHE)).match(request,{ignoreSearch:true})||await (await caches.open(MEDIA)).match(url);if(cached)return cached;
+  if(localPreview){try{const fresh=await fetch(request,{cache:'no-store'});if(fresh.ok)return fresh;}catch{}}
+  const cached=await (await caches.open(CACHE)).match(request,{ignoreSearch:true})||await cachedMedia(url);if(cached)return cached;
   try{return await fetch(request);}catch(error){if(request.mode==='navigate'){const fallback=await (await caches.open(CACHE)).match(absolute('./'));if(fallback)return fallback;}throw error;}
  })());
 });
@@ -78,11 +89,34 @@ async function packPlan(id){
  for(const file of pack.files)if(index.has(absolute(file))){savedBytes+=data.resources[file].bytes;savedCount++;}
  return {id,title:pack.title,totalBytes:pack.bytes,savedBytes,neededBytes:pack.bytes-savedBytes,total:pack.files.length,savedCount};
 }
+const categoryIds=['pictures','word-audio','sentence-audio','other'];
+function remainingSelections(data,selected,id){
+ const remaining=new Set(selected);
+ if(remaining.delete('all'))for(const key of categoryIds)if(data.packs.some(p=>p.id===key))remaining.add(key);
+ remaining.delete(id);return remaining;
+}
+function protectedUrls(data,selected,id){const remaining=remainingSelections(data,selected,id);return new Set(data.packs.filter(p=>remaining.has(p.id)).flatMap(p=>p.files.map(absolute)));}
+async function clearPack(id){
+ if(download)throw Error('请先暂停下载。');
+ const data=await localManifest(),pack=data.packs.find(p=>p.id===id);
+ if(!categoryIds.includes(id)||!pack)throw Error('没有找到这个离线分类。');
+ mediaEpoch++;
+ await serial(async()=>{
+  const selected=await selections(),protectedFiles=protectedUrls(data,selected,id),remaining=remainingSelections(data,selected,id);
+  selected.clear();for(const key of remaining)selected.add(key);await saveSelections();
+  const urls=new Set(pack.files.map(absolute).filter(url=>!protectedFiles.has(url))),index=await resourceIndex();
+  // Only this release owns downloadable media.
+  const cache=await caches.open(MEDIA);for(const url of urls)await cache.delete(url);
+  for(const url of urls){index.delete(url);}
+ });
+ return status();
+}
 async function status(){
  await cacheQueue;const data=await localManifest(),keys=new Set((await (await caches.open(CACHE)).keys()).map(r=>r.url)),index=await resourceIndex(),selected=await selections(),pinned=await pinnedUrls();
  const complete=p=>p.files.every(f=>index.has(absolute(f))),packs=data.packs.filter(p=>selected.has(p.id)&&complete(p)).map(p=>p.id);
+ const packStatus=data.packs.map(p=>{const savedBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))?data.resources[f].bytes:0),0),protectedFiles=categoryIds.includes(p.id)?protectedUrls(data,selected,p.id):new Set(),clearableBytes=p.files.reduce((n,f)=>n+(index.has(absolute(f))&&!protectedFiles.has(absolute(f))?data.resources[f].bytes:0),0);return {id:p.id,savedBytes,clearableBytes,neededBytes:p.bytes-savedBytes,complete:complete(p),retained:p.files.every(f=>pinned.has(absolute(f)))};});
  let mediaBytes=0,recentBytes=0,recentCount=0;for(const [url,size] of index){mediaBytes+=size;if(!pinned.has(url)){recentBytes+=size;recentCount++;}}
- return {ready:data.files.every(f=>keys.has(absolute(f))),packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:complete(data.packs.find(p=>p.id==='all')),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'ab9e6bc87b4d'};
+ return {ready:data.files.every(f=>keys.has(absolute(f))),packStatus,packs,pending:[...selected].filter(id=>!packs.includes(id)),selected:[...selected],allReady:packStatus.some(p=>p.id==='all'&&p.complete&&p.retained),mediaBytes,mediaCount:index.size,recentBytes,recentCount,downloading:download?.id||null,version:'34d01e7b3efe'};
 }
 async function downloadPack(id,port){
  if(download)throw Error('已有下载正在进行，请稍后再试。');
@@ -108,6 +142,7 @@ async function downloadPack(id,port){
  }finally{download=null;}
 }
 self.addEventListener('message',event=>{
+ if(event.data?.type==='APPLY_UPDATE'){event.waitUntil(self.skipWaiting());return;}
  const port=event.ports[0];if(!port)return;
  event.waitUntil((async()=>{try{
   const {type,id}=event.data||{};
@@ -119,9 +154,10 @@ self.addEventListener('message',event=>{
    if(download)throw Error('请先暂停下载。');
    await serial(async()=>{(await selections()).delete(id);await saveSelections();await trimRecent();});port.postMessage(await status());return;
   }
+  if(type==='CLEAR_PACK'){port.postMessage(await clearPack(id));return;}
   if(type==='CLEAR_MEDIA'){
    if(download)throw Error('请先暂停下载。');
-   mediaEpoch++;await serial(async()=>{await caches.delete(MEDIA);await caches.delete(META);indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
+   mediaEpoch++;await serial(async()=>{for(const name of await caches.keys())if(name.startsWith('abc-garden-')&&(name.endsWith('-media')||name.endsWith('-meta'))){const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);if(!(await cache.keys()).length)await caches.delete(name);}indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
   }
   throw Error('Unknown offline request');
  }catch(error){port.postMessage({error:error.name==='QuotaExceededError'?'设备空间不足。已完成部分已保留，清理空间后可继续下载。':error.message});}})());

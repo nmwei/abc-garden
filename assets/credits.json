@@ -11196,5 +11196,4703 @@
     "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
     "changes": "None",
     "sha256": "183b5391c0b112d320b55781721d1ed26d03dc8f4047128b06153cc78860b57e"
+  },
+  {
+    "file": "pictures/grape.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f347.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "70d1a134e7b55cf3e16ecbfd5f0e71675616cf193ee8e0e00446e8cd8cc97960"
+  },
+  {
+    "file": "pictures/cloudy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2601.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "4dde5292dd6683efa9288a78cae3ca029c340cfa544af8ef583f38ca26f610b2"
+  },
+  {
+    "file": "pictures/sunny.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2600.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "822abba4f2e39d9059d85964116b1f9300e04320ee1a9e5af09831bf2f8c82df"
+  },
+  {
+    "file": "pictures/windy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f32c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "a550dfe40bab6f2ff8b70b256ae411b38ecc1992bfc526abf6e7f034a8b34b68"
+  },
+  {
+    "file": "pictures/tv.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4fa.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "f556faaf59ec7683c90455837251e4fa288499421c1c3730620033c953bf82d6"
+  },
+  {
+    "file": "pictures/mobile phone.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4f1.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e363c1e6e9fa46e8064892468a5d188d4651f14dce222cd32798dd6621ba8840"
+  },
+  {
+    "file": "pictures/cash.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4b5.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "10862742894a70b2b5684bfb483a79666a45b524a8124861c3987e0d10d32291"
+  },
+  {
+    "file": "pictures/bill.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9fe.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "41b55c4fe65817ee28ae0b09cb488b3ecb07d86944c6a1c974b7b9d667aeeccb"
+  },
+  {
+    "file": "pictures/coffee.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2615.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "5830ae818458ee3c51208af6196a8a6c3d2a27e652aed2380c0b26a39d13d9dc"
+  },
+  {
+    "file": "pictures/document.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c4.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "5b58055e4ac92eaf220492ed322cd01ac919fefa501af2eca0767f04fd01a3e1"
+  },
+  {
+    "file": "pictures/cottage.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3e0.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "6bde40d9c8046b4e774dafdaaaa935d13ccfa06cc2fd35042548783c21a5489e"
+  },
+  {
+    "file": "pictures/kid.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d2.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e766f28db1888879fdbd10b004109e8398f6bc6107a25348c8d791db728f90fb"
+  },
+  {
+    "file": "pictures/lung.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fac1.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "2bad547018af4b2d5fc4b01da2c4ea6c6507dfb144d86cc31cb7e9ef033d5d19"
+  },
+  {
+    "file": "pictures/physician.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_2695.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "87eeaf561a64981bf09d2a7a3d08be7feb54b3c9908e0dfe5095a59425a0b468"
+  },
+  {
+    "file": "pictures/policeman.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f46e_200d_2642.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "193f380aa5e52ec59d554df5551f0060027e04753b4e824958ac20d94e4a2ad1"
+  },
+  {
+    "file": "pictures/policewoman.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f46e_200d_2640.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "576367a0797ccbbafd0397cbd08aedc7e64d222b71e43e7d17d835431cd0daf4"
+  },
+  {
+    "file": "pictures/fireman.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_1f692.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "2a2c5f4cdb65b62ecb563a8a4c9d4c3f3ec0d37e08401debdc407e89687a7e1b"
+  },
+  {
+    "file": "pictures/emperor.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f934.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "6e0c8c8d2a6588db369b69920442ccf8b975ad137148a6bb7875d318f107a89e"
+  },
+  {
+    "file": "pictures/empress.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f478.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "535e99bfef1700df707b315b543f02adb44b3796b222c724c1c34c6bbe3e47fc"
+  },
+  {
+    "file": "pictures/bean.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fad8.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "8e4a33cbdd3b86164cf6c937e66883ca198f610a95643da244e989fbec311d88"
+  },
+  {
+    "file": "pictures/firework.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f386.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "b4c1ba902c69a69884c3dd2115d58375a3f1e703e557b687b6d0d7cda17f20d5"
+  },
+  {
+    "file": "pictures/packet.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4e6.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "98ffe9a6c3b209d639ea2c5a29adabd9468f66d538ffd0ec56a978fe96f6b754"
+  },
+  {
+    "file": "pictures/weep.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f622.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "ce9402da5d480b284f06cea43ade5966761a4d508fa3d6c51b687dba67086736"
+  },
+  {
+    "file": "pictures/anger.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f620.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "44c80e81db7a19d38756fa6dba71a29e763f93d20ef7b1fe8ea7e1345fc7c0ae"
+  },
+  {
+    "file": "pictures/mad.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f620.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "44c80e81db7a19d38756fa6dba71a29e763f93d20ef7b1fe8ea7e1345fc7c0ae"
+  },
+  {
+    "file": "pictures/afraid.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f628.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "020fcc1f3d1331c08a73ed4f7dedf19a5707cadba8177c2a65f9e6f35dda60c3"
+  },
+  {
+    "file": "pictures/frightened.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f628.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "020fcc1f3d1331c08a73ed4f7dedf19a5707cadba8177c2a65f9e6f35dda60c3"
+  },
+  {
+    "file": "pictures/ill.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f912.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0014b2a5911d22d75daf72ee7e15a0d6dbaf1c20326ae71ec16daf347156b418"
+  },
+  {
+    "file": "pictures/sorrow.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f622.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "ce9402da5d480b284f06cea43ade5966761a4d508fa3d6c51b687dba67086736"
+  },
+  {
+    "file": "pictures/joy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f604.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e5457a54a1a9df8b3e6e646bfc390c72e8dd235d315c192b05f0f35c26fdd5b2"
+  },
+  {
+    "file": "pictures/glad.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f604.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e5457a54a1a9df8b3e6e646bfc390c72e8dd235d315c192b05f0f35c26fdd5b2"
+  },
+  {
+    "file": "pictures/photograph.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f5bc.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "761f1fc8ae20fe2486b2aba64a8bce6b5ba35731d5612bfd241a25869287c85e"
+  },
+  {
+    "file": "pictures/shore.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3d6.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "86748857b91c4243b9f333fce89723a655849415c160ce3dc64c4b16bf10e1f9"
+  },
+  {
+    "file": "pictures/coast.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3d6.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "86748857b91c4243b9f333fce89723a655849415c160ce3dc64c4b16bf10e1f9"
+  },
+  {
+    "file": "pictures/street.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6e3.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "1a177f5558e55f8ed20ecf8a7864e1aaa22c64bcc86d78390d7e719830935277"
+  },
+  {
+    "file": "pictures/dollar.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4b5.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "10862742894a70b2b5684bfb483a79666a45b524a8124861c3987e0d10d32291"
+  },
+  {
+    "file": "pictures/blackboard.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0ab27559f261d10be65eb275c58b8b3ea0a3450289c3118462b3ad3df0b4fe08"
+  },
+  {
+    "file": "pictures/table.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b3964d9faebf311bd46da3529c527642990d396b3db4bac0a87db15c5b9d9707"
+  },
+  {
+    "file": "pictures/desk.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3c302b443ba4b28608ab12512c0dbbbe99ffa3db3230460f90198efafce4115d"
+  },
+  {
+    "file": "pictures/skirt.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e1a827bd00064b083caa36a73da396d0028cffd935d4fd27e2e2226d62ccc5ff"
+  },
+  {
+    "file": "pictures/sock.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c90c884878450f4678bde0f75e2ecdf41973ea33b5424beccaf1ba6b8d857d0e"
+  },
+  {
+    "file": "pictures/sweater.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "35aa4694281b71996987567df54d32a68118dc0d05fe756bab9c7a4dedf0c22c"
+  },
+  {
+    "file": "pictures/blouse.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0e723e2d67e20946a3bb2dac745aab3d120eb07f456deaf55f5fddb7cb75f404"
+  },
+  {
+    "file": "pictures/belt.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e2b46be1c8efdeb3c183362828b5f67fe23aa4c1bdf7a36f69587feb93900fd3"
+  },
+  {
+    "file": "pictures/carpet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "abbcd664bec5400bbecac7179f5f739a41610c62b6eaffaa68791c2f918efa48"
+  },
+  {
+    "file": "pictures/floor.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "58cee3a005576b4f6bcafe23368bf2a63f9de0a6d3ca26181b8010571d1fe9b4"
+  },
+  {
+    "file": "pictures/curtain.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "77e3e9129e370a051dc000708c57e896e17819fbc9b6e2d05257b5ce8d0dc8c9"
+  },
+  {
+    "file": "pictures/cupboard.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3794ecc90c9b8abd75f3ae32b8070aa47cd41bd873a876cee64d7d4244d4a3c5"
+  },
+  {
+    "file": "pictures/drawer.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4fb85245632f6548848161e91f7950f909214d882e98fd999a77d10662ef040a"
+  },
+  {
+    "file": "pictures/fridge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bde2c2b2c30a9866c4c409ed5926be95dc55ff52f64f113114682cf938f684f1"
+  },
+  {
+    "file": "pictures/refrigerator.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bde2c2b2c30a9866c4c409ed5926be95dc55ff52f64f113114682cf938f684f1"
+  },
+  {
+    "file": "pictures/oven.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "38de9072d63530e2381e963587a72df1593d7ce3f4544afee41fd7a270a224e0"
+  },
+  {
+    "file": "pictures/sink.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "eb82c909e9b18971ff73c0d602779e95f0185b70951fd975e14399fa6def0d51"
+  },
+  {
+    "file": "pictures/tap.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e6dd199daddac938fe74a9188eb41ca967456ae935ba49726fddfbee6e01c106"
+  },
+  {
+    "file": "pictures/fence.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e79ab569fd677e6f3714f13711d90bed72af131ee354dad450b70cf5cb774a7a"
+  },
+  {
+    "file": "pictures/gate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "88dddb5c60609bc1b0e2ac144a91229d7f2a2ab488bb2539052d41fff858aaad"
+  },
+  {
+    "file": "pictures/cave.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2b3afc283ffeb44bc8792ec355e43632f9b7aea02c8c88c46a61a64fd1e5becd"
+  },
+  {
+    "file": "pictures/towel.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3aabf26500f348b9da288c6517e91d19ca9dfa1e6732cf4679a124f1bc5091d8"
+  },
+  {
+    "file": "pictures/handkerchief.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "be289481a2f0870887b39b1f38ea278048e09e1f69f4c459b81100c973779799"
+  },
+  {
+    "file": "pictures/cloth.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3aabf26500f348b9da288c6517e91d19ca9dfa1e6732cf4679a124f1bc5091d8"
+  },
+  {
+    "file": "pictures/fabric.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "97349de24dee45740d187c776e33334c7d55de1646b0d22d219d9a3ff3b94e4e"
+  },
+  {
+    "file": "pictures/eraser.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fb84d0a1b146d9fd730650512dc2da4fb597c7c48848b5c22511f0153c0aade9"
+  },
+  {
+    "file": "pictures/chalk.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "20fb6b834a41517c5e9d20a30ba91f5d5bccc520fd7d1f8ac1cb21566d6b634e"
+  },
+  {
+    "file": "pictures/nail.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7acc26eea370720e06dc909dd2a10274a6db1df94d2df19571fea6044fd01114"
+  },
+  {
+    "file": "pictures/match.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3345b4f61c671d3ae01f94450e123081094df1d36f15e42cb0758a747aaf588d"
+  },
+  {
+    "file": "pictures/pipe.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f7526b903f6de3340d90d079414fdb5faa504e944159b1fa51776650a44e2110"
+  },
+  {
+    "file": "pictures/remote.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "378ae491e01467f4e2693b1e1b2a050859cf1d6395ef1278310afb3e5dddda29"
+  },
+  {
+    "file": "pictures/glue.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "01312688fe5f59adb437a24f601e79b6a4276ad4daa08af654830e1759e0171f"
+  },
+  {
+    "file": "pictures/ink.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0b754cf72427cc297b2d1151dbdf28a67167db6bac85f08df88117930097ad92"
+  },
+  {
+    "file": "pictures/sugar.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9fa89ab3bc3ce3915535fbc687958c48a2ba28d1853bcc3202fe556ddf35308e"
+  },
+  {
+    "file": "pictures/flour.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ff6b9c6ad609666e6b9101e7c72c0672b4d444d5d0089d08e8ff247dc3301df5"
+  },
+  {
+    "file": "pictures/cream.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e10b79393faa326cf34563eddad3306f4feb023564b37383019af2a749b9e33f"
+  },
+  {
+    "file": "pictures/yoghurt.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "32c77859e4d6db9c153a91c117e211247c2307f3407c4210cf0164e5bf4d7716"
+  },
+  {
+    "file": "pictures/tofu.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e03f8374e802d734bc37624dff9b4a9e6bba92f4271000be27056bc5781b7ae4"
+  },
+  {
+    "file": "pictures/bean curd.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e03f8374e802d734bc37624dff9b4a9e6bba92f4271000be27056bc5781b7ae4"
+  },
+  {
+    "file": "pictures/porridge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "cf4944921bb85fb68bb8650aeb763560d309eb0a4bcd3581964662b21607549f"
+  },
+  {
+    "file": "pictures/coal.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d5fa67ee6b196fb4c21ccaafae33ce253ee2b9f4ad7812c6c489dec8c46c2fb9"
+  },
+  {
+    "file": "pictures/cotton.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "abc5dab4b6aa429ad94594a39248c5552e2fa7b96d6b0363fb6a26ce516c3478"
+  },
+  {
+    "file": "pictures/pool.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8f7e4c809312c79ae0fde3a22d376d679701c160661722a60f58b9806475d1ab"
+  },
+  {
+    "file": "pictures/pond.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dbd81cf40d1f3f241c98f2d54626d97029469e9b1335a23884fae0ea9d459152"
+  },
+  {
+    "file": "pictures/gray.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "95ef36a7f77490c73d0b5d243eacb27fa3d7c3da6b656cecf9b14fa98d5692d0"
+  },
+  {
+    "file": "pictures/grey.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "95ef36a7f77490c73d0b5d243eacb27fa3d7c3da6b656cecf9b14fa98d5692d0"
+  },
+  {
+    "file": "pictures/line.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7fb9cbcfecc4c6617cb5226c4a0b53a09fd7423e668e2ab160eaa8dc8927deb0"
+  },
+  {
+    "file": "pictures/angle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "04ba886374acea3af49f470e9747fcbe0639a55395b28207ec97832e3a6cf2ec"
+  },
+  {
+    "file": "pictures/arrow.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4c9ba004d546d7048bf5de3e5f65c60ec28c629436db74d8e22024006dea0e7e"
+  },
+  {
+    "file": "pictures/left.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d8889b4b41943167e362e9aa54c5419ecf580ca3b11c461e6de86bc308a87f5c"
+  },
+  {
+    "file": "pictures/right.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4c9ba004d546d7048bf5de3e5f65c60ec28c629436db74d8e22024006dea0e7e"
+  },
+  {
+    "file": "pictures/down.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "86f00041d31277b9665e5dd5baa466a850c6cd1dd1e64c41661d4dff1ac91a8f"
+  },
+  {
+    "file": "pictures/fire.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2b20a3489847b3e0eb3c2b487aabb1ab38fcbb69f30cd4d54f62e67f5bcbf89a"
+  },
+  {
+    "file": "pictures/flame.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2b20a3489847b3e0eb3c2b487aabb1ab38fcbb69f30cd4d54f62e67f5bcbf89a"
+  },
+  {
+    "file": "pictures/vase.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0777c6163c432e59fcac271333cb93bd72b140275c25e48280aad1c1b001c577"
+  },
+  {
+    "file": "pictures/kettle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a16ee57f76a537c4e85e537289a79ee65e4677dc5218f8b06b6c83f02bcc3a82"
+  },
+  {
+    "file": "pictures/magazine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9a419dcbb78f84e7da06e374b50d9b42c001283b3da4dd311474cd212d2cf18a"
+  },
+  {
+    "file": "pictures/postcard.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0f3444d6992de986b999a13c0575f9ab69abed46e5cfd565c7dbd27e253aeae2"
+  },
+  {
+    "file": "pictures/brochure.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "de7caeea8300185dd1b0af342437f4fb18510e4e91b9e2dc0f156e3a582fe06b"
+  },
+  {
+    "file": "pictures/shelf.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "eda0908d6a40a276a345fbbf387a3e9bd9dd2607a6e721a55ec0c260990740df"
+  },
+  {
+    "file": "pictures/ceiling.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0cca4c68220569fbbf72ffba2d3752a1d6dc4d1753db389eae4ad00295df6e6f"
+  },
+  {
+    "file": "pictures/cage.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bc59fcc327d578b5fbf8b44931cb447d1d19b283cd0ef4cdfdeb8928b82976fb"
+  },
+  {
+    "file": "pictures/sauce.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ce0280611d18ad15858e60f5173b416747f6fd6bd5ed6a3ad4afcf7c2f3ad4f9"
+  },
+  {
+    "file": "pictures/pepper.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e89115730c3bbe50bd202ab1edd515344e6489cee1b68ba4ce89da9eca6c812f"
+  },
+  {
+    "file": "pictures/tobacco.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "95bbcc31689ef023dac319e61ca689d7cfc4ae34bca00f22d4d576c273b77c3c"
+  },
+  {
+    "file": "pictures/bar.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fb0f9900e4bc27899e3d778305f9d870e4c6311fa3106a56fd37b548a79597ba"
+  },
+  {
+    "file": "pictures/chip.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "47c5f0925e22a59a6f801bea02ec2eed24528690e91628261f4d3e27dc3b7c55"
+  },
+  {
+    "file": "pictures/disc.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4bf.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0029e72a7fcfc42e8b3ecf537a39762e2fb55810f18f28917d921540de35ac62"
+  },
+  {
+    "file": "pictures/newspaper.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4f0.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "149211f7721810df26e1ba91a7ee7add02b92a33aca347a1fd43a1b053c70b1f"
+  },
+  {
+    "file": "pictures/cigarette.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6ac.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "411c5dd12ec591e8ac5073384c23510760fad36add9665967f4f88c8005e3914"
+  },
+  {
+    "file": "pictures/bride.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f470.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e25a52c05b9e1434c1e43e93f650ca8cf278f262695e1352fc7697a5a47039ac"
+  },
+  {
+    "file": "pictures/tape.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4fc.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "a4b037233bb37f062ee666f8a4329cad3112cb27b8e9c7d78f7bfe7576f5b5c9"
+  },
+  {
+    "file": "pictures/blood.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fa78.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "034f5179523a19394556625be78f54534bad0801a5eb8a0936b575f34ab48219"
+  },
+  {
+    "file": "pictures/hole.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "713cf829f0169457dad6689be0dd90cb7d03a5dafeacaa81bcdefd7af9672299"
+  },
+  {
+    "file": "pictures/palace.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e9b3551ed7a7ade57aef2e3c6174bdf24d4721ed9fcf7b9dbbab7f2185241d8e"
+  },
+  {
+    "file": "pictures/tunnel.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8bdaf73c4d7e8814f56dbc62ced858646a580e5914596e3588781187f79e4d0b"
+  },
+  {
+    "file": "pictures/valley.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9ab4e9a1fb00af60dd5dd8ddb9a223bb8baad33ea7ae3762922209eb51254021"
+  },
+  {
+    "file": "pictures/dam.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "545625a14f67680061f60cb5f317e80a11289d8552610e010e46fdd766381188"
+  },
+  {
+    "file": "pictures/canal.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "99f32ca6c0ee31d6ce8d49d6f3a81ff8ae315985dfdcd01af3730f4774bb9093"
+  },
+  {
+    "file": "pictures/greenhouse.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6f591e611cb8f465de846ce229aa1fd80e7dfae5d7ff93af610c51a73a9c8697"
+  },
+  {
+    "file": "pictures/cell.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ddd78396b9d042da5e52ac20fb4588c44dfb66eaa9f800c7f523d850bd9842d8"
+  },
+  {
+    "file": "pictures/switch.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5f3ddfa582c76c08b08402cc09f6929b096d043f203328b398bfd374c9cd598c"
+  },
+  {
+    "file": "pictures/gun.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7e36236bcf5534d10bf25c7a2b2396558105c97dffc37178e97ca09d1497bb13"
+  },
+  {
+    "file": "pictures/stomach.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "68b2c71aa0b69afc10450b54c881dda7833860910b34841fbf37820b4f21cd76"
+  },
+  {
+    "file": "pictures/ankle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9737bd6099a8260ef8f59f00e93f9d26e3401d8619e7130f7013da07b3453c72"
+  },
+  {
+    "file": "pictures/wrist.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1b5e8109ffd1ba31f7ca3194f32e7c994c170f57f4108b3ea01eca4e367a8e3c"
+  },
+  {
+    "file": "pictures/forehead.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4ad6729dec1d35384d341f95dfbff28b3126b1ffd5d78d9145bb7661506e39ba"
+  },
+  {
+    "file": "pictures/neck.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "af197fed007c2895f3eb2f44e2e03616ed70980bdda60122efef86d503d409b0"
+  },
+  {
+    "file": "pictures/shoulder.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dd150c937e6a191606b8c3bcf65efebc2385a35b1e86b41036353427327b241f"
+  },
+  {
+    "file": "pictures/jaw.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f82a1fa5fa39b0a04a4a860f29b843b83cf8a18381e269bf2ee87387ac64d9db"
+  },
+  {
+    "file": "pictures/waist.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ea2569c7436fc80c6171163e5f6e789088977188590ddc80ee3df61ef4821b69"
+  },
+  {
+    "file": "pictures/asleep.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f634.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "f96827155a40f71b6c1955af77c8e861864b7a6c0a92dadb99a919f94d10cd15"
+  },
+  {
+    "file": "pictures/detective.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f575.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "8473d1a45f5b459cd4ea1aebd2a06e2d825f4c22d5c7dfc22cc74fafe4a9728d"
+  },
+  {
+    "file": "pictures/judge.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_2696.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "71bad3469911e3b7cdb751a7f95cd11e0be6a9817d370e172e8c578b1a26fc66"
+  },
+  {
+    "file": "pictures/spy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f575.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "8473d1a45f5b459cd4ea1aebd2a06e2d825f4c22d5c7dfc22cc74fafe4a9728d"
+  },
+  {
+    "file": "pictures/film.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f39e.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0f00abdaa6e0dcd843723220ed59ad0cf062a1a71e692ea167af5ebd6842536d"
+  },
+  {
+    "file": "pictures/movie.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f39e.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0f00abdaa6e0dcd843723220ed59ad0cf062a1a71e692ea167af5ebd6842536d"
+  },
+  {
+    "file": "pictures/card.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f88656a905bd8ec7557784fbda1df937f65a0ebecda9e221ffcced01ac6f0a76"
+  },
+  {
+    "file": "pictures/email.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f8bd8fa43d6fd2364378d7162570445a95f0ef44168c85772c3be728be5daa6a"
+  },
+  {
+    "file": "pictures/food.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b43cd0041e02d661faa40d39a811dd8bc8de36df964ecddb4d1d50b27700eb0f"
+  },
+  {
+    "file": "pictures/noodle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c912d2727670a80ea49095153a1e52ac03de3fc3a5f9617ba27ee9a257caaeea"
+  },
+  {
+    "file": "pictures/room.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9639af5c32e13574a16d7789d27c50c00d8adf1b807e7fdae81bd392e9e0e8c3"
+  },
+  {
+    "file": "pictures/dirty.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2dccf0e9f7b12a0340083bb29e8a96af4b8fb29bf8a3aeb52ffff4d8b308d659"
+  },
+  {
+    "file": "pictures/worker.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c450b058c248d93829b1f29fdbb17320c78a914a99ed48eaf41b1ad04492c27d"
+  },
+  {
+    "file": "pictures/athlete.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c3fa3e3a3f5897a83e42f53a7ddbdf2d0a3b11564726a0c48f9d9d0c81869a2d"
+  },
+  {
+    "file": "pictures/actor.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "42324d02b1b8a45f97cf1f06bdf3348cbbef40b8ee890a450cbaaebd234f2aca"
+  },
+  {
+    "file": "pictures/actress.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7e2683ff3d0ccbc8353fed7b1de6128a6469c00e46f87f739f6cb9ccfa0f3b84"
+  },
+  {
+    "file": "pictures/architect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "257ac7e29d11e62936bdc3ef93d320756a210e86e6895afa000c84f9133f0a3e"
+  },
+  {
+    "file": "pictures/audience.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dee63e04b7c81c298283ee87292d7885a336c14062414fb66191c2a233c7d53f"
+  },
+  {
+    "file": "pictures/author.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "76679a4df20c8765d8d274be760b4e5dc9fc4c617fe8f72afe27721550018e5a"
+  },
+  {
+    "file": "pictures/officer.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fc37e491e967e5732d9eb962796c4ba893898fbfd9678851b52c71ac558e42df"
+  },
+  {
+    "file": "pictures/police.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fc37e491e967e5732d9eb962796c4ba893898fbfd9678851b52c71ac558e42df"
+  },
+  {
+    "file": "pictures/soldier.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "22f47fe88485c02905d11faba1f0c72f0a894ddeb0061c3dbe20ef5d142f2467"
+  },
+  {
+    "file": "pictures/captain.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0f6bb876fdcfec456e277b8e58bfd8ea7219ebcea59f4da8fdf4bdfef4d74cc9"
+  },
+  {
+    "file": "pictures/fisherman.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec79d9ca793f801b3ab22ec66f51b993da3285d19fbb45d0775ec05a5fd3af7c"
+  },
+  {
+    "file": "pictures/journalist.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e7bf5d8b22f0d03e69e6402650d59ee1da367989c83df878fe3db7416fd53880"
+  },
+  {
+    "file": "pictures/tailor.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "65bae831f6ce1d8805b17c75cf9cd2360e0930e45fd6f1f77789bdd59f7e737a"
+  },
+  {
+    "file": "pictures/surgeon.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2e9b741e71aba12782df2c5f39a51c69b8103fe7d455b10710518b9e7fc918ea"
+  },
+  {
+    "file": "pictures/postman.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e329a5edb107cef5e690d1c936d8d0e2c54b03dc4259c07c6f3d677a10e33657"
+  },
+  {
+    "file": "pictures/clerk.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e5fe84a0d9e8e533f0002d91bdd013b0074d7c769dcd6a1e40da2e471b8a807b"
+  },
+  {
+    "file": "pictures/salesman.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e5fe84a0d9e8e533f0002d91bdd013b0074d7c769dcd6a1e40da2e471b8a807b"
+  },
+  {
+    "file": "pictures/secretary.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8deab3874b8e9a22d35235d71fdeda62d69b676fcd15d3fb20f7b60ec159a3c5"
+  },
+  {
+    "file": "pictures/elderly.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "78965742620bc8485d23abfa01957ea9a2e38a71bab48795f22d81694022fa9b"
+  },
+  {
+    "file": "pictures/old.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "78965742620bc8485d23abfa01957ea9a2e38a71bab48795f22d81694022fa9b"
+  },
+  {
+    "file": "pictures/gentleman.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8ae3d3f00224227c6d864f0635d8b80f3793d7acfce699dde5708546be29e40b"
+  },
+  {
+    "file": "pictures/lady.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fc97ac0ff9b3af71c39302f9a0318a5925662bb68f2b73864226b0b06f51093a"
+  },
+  {
+    "file": "pictures/madam.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fc97ac0ff9b3af71c39302f9a0318a5925662bb68f2b73864226b0b06f51093a"
+  },
+  {
+    "file": "pictures/army.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1269a9cb0324e55f99130bae11f9d1186f7c0580a7041def38a6566a4db5268c"
+  },
+  {
+    "file": "pictures/crowd.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6e23d788fc9a6dce31c2c80a2188f31f6e5d61c0c0be060e767b04f61c875be2"
+  },
+  {
+    "file": "pictures/crowded.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6e23d788fc9a6dce31c2c80a2188f31f6e5d61c0c0be060e767b04f61c875be2"
+  },
+  {
+    "file": "pictures/buffet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4ddfa1029cfdb371381f3b0f6ad14275363b5b55f85d7ca9627080b946257ca6"
+  },
+  {
+    "file": "pictures/barbecue.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "21f42e2cf033ed5152a42613415bef395e82f3f70ca77aec9904f8b4994473db"
+  },
+  {
+    "file": "pictures/oil.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d87f6d561cf505e9d871496f7dff13f3b2343492a7495aa2c82327067584cd44"
+  },
+  {
+    "file": "pictures/medicine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ca2aff9b5fab3651ada7c5b3ce2fa077a8a59a5978b135ef5042c77a75af98f6"
+  },
+  {
+    "file": "pictures/pill.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9d6b494266c4a191b518128ca51f63db6a965c70a14767bd87e650edcf5dba42"
+  },
+  {
+    "file": "pictures/leather.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dc997da1f2831faea3ea701928f5579809e9f1b0a27a94b2bd5264480309e4c5"
+  },
+  {
+    "file": "pictures/silk.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6d3656eba7e5fcec28a487cb0cafb970a556af66fbb3681adf257dc8e8ecb0f0"
+  },
+  {
+    "file": "pictures/sheet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f39a23d7bfce465a9aec2d75312acf75a47b591930b0daff8d549e8460956807"
+  },
+  {
+    "file": "pictures/suit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1664ed18139aec482f5a956fc037f5cafc1d8bf1c279e8c49cf84751c7a2d360"
+  },
+  {
+    "file": "pictures/block.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7fb75e260ea8763b81c14a0ef8782b3fcfe2901e713085fef3964aeb2abb832d"
+  },
+  {
+    "file": "pictures/furniture.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f83b66d6f5673760728f28912c89f1f75b42804de18a39673ed68cb90d2f5b30"
+  },
+  {
+    "file": "pictures/goods.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ebf2735fda8c0662f2a6135da9bb2a3b649945fe82b0df0d6a38b4b067b6bdd2"
+  },
+  {
+    "file": "pictures/equipment.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b230c95e89c0101cffef641871443885e833dac13b1c041765c4ed1fc5de8287"
+  },
+  {
+    "file": "pictures/kit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "897e0c6f83bf700fe9fa7e5b20107257d0ff20907ce62479df865387ccd2dba5"
+  },
+  {
+    "file": "pictures/engine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6e892c13238a28be5de5ffca3eb4baaa458ab870c9404a5d66dbc8bee3126e6b"
+  },
+  {
+    "file": "pictures/machine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "176b759244df4d3f5fea9df0e3337be361e5e76780c36da9f9d6c011220e92d6"
+  },
+  {
+    "file": "pictures/tank.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "419015be5a2e16ca1d7c1b4f0dea5c7b34b95733aff01899625531c6bdb29e85"
+  },
+  {
+    "file": "pictures/tube.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "94cdcc64a509b874afff5bb89494f9f9b293ccda3cbabe4c713079833b9bb27d"
+  },
+  {
+    "file": "pictures/trap.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2f495e372210c246a6ee2c0fabf5137c2113c08c6aa847e6037174ed84b6c8a5"
+  },
+  {
+    "file": "pictures/treasure.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5a02978567bd3ec850ef007f2cdb0b4218505ddf1b16191d6718a47142768797"
+  },
+  {
+    "file": "pictures/souvenir.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a84903f08f9b10170d716b4a417c89df430daf235f84c6a60f68492b14912720"
+  },
+  {
+    "file": "pictures/poster.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "07f273b73b44a892ef5e2bb9313aceae4edf3079c5f2c07fb05de7417e57b6b3"
+  },
+  {
+    "file": "pictures/menu.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "21583ff794d425aa28efbbb774b8536b5062803562a625562257acbaea978fed"
+  },
+  {
+    "file": "pictures/form.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1d74b2311a21bcbf86c603b6c375a77ee1464847e7bfb191a4438c1579196a82"
+  },
+  {
+    "file": "pictures/diary.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3ccfa67a92fc8eccd320a4a530aaee4e14255291a396b342069ed62e52d18e7e"
+  },
+  {
+    "file": "pictures/journal.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5363fbec9c7ac0cb98098fef8851696023a256cd7beed0fe38bd5cc58ed3e0bf"
+  },
+  {
+    "file": "pictures/comic.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fca0f6141a59b749da04bd2a9b9fab2dba6649705fadf6ebaa9435c666409406"
+  },
+  {
+    "file": "pictures/schedule.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ba8f93d8cb87b292aa990d8de99a0147cc2e40372dece1444bf41649befbd6a1"
+  },
+  {
+    "file": "pictures/agenda.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ba8f93d8cb87b292aa990d8de99a0147cc2e40372dece1444bf41649befbd6a1"
+  },
+  {
+    "file": "pictures/report.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "866f58e9a830b86383f8b66facec111a08f88f5c9a700984c58bd89aa0d1c1e3"
+  },
+  {
+    "file": "pictures/exam.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3129d5823845102f0f0185e259018fb6130feb3fcf50bfea38768d73432dfbf2"
+  },
+  {
+    "file": "pictures/examination.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3129d5823845102f0f0185e259018fb6130feb3fcf50bfea38768d73432dfbf2"
+  },
+  {
+    "file": "pictures/contract.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4d11c9b5530e292139f304c0aa06ec0ab3267cd3fb752d88944b25f04bc036fd"
+  },
+  {
+    "file": "pictures/cent.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "abec346a81e20ab035a9b7661ea71b363f44433c18f426e83dc6ac7737f048fc"
+  },
+  {
+    "file": "pictures/gold.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "09cbfaf4e4f48cea7e3519f17c7cf7aff50b231913faf98785143b1af217e872"
+  },
+  {
+    "file": "pictures/silver.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "46deddadd45e2471a63887a29ddc557a08c300b1913aeb47049d3369af424748"
+  },
+  {
+    "file": "pictures/metal.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9c5e9da94681af85ff32c1c3f20715dba2e3a7dadae4bf01672da96b941b3eef"
+  },
+  {
+    "file": "pictures/dust.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6a97e45be367922d310282bb5fa887cff8fc47002d5043ac555578aba7a1ad4a"
+  },
+  {
+    "file": "pictures/garbage.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "294fe70497f29aee4544ae8c8b393b931b326550f4764f5d66ed489398e91596"
+  },
+  {
+    "file": "pictures/litter.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "294fe70497f29aee4544ae8c8b393b931b326550f4764f5d66ed489398e91596"
+  },
+  {
+    "file": "pictures/rubbish.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "294fe70497f29aee4544ae8c8b393b931b326550f4764f5d66ed489398e91596"
+  },
+  {
+    "file": "pictures/smoke.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "56d610bc8dad35f9a1efa4a44d2dc71b05257dab3808616d1959253409b3468d"
+  },
+  {
+    "file": "pictures/exhaust.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b4fb44ebcee5355112dfee4ec6208561e2611b228720029b4dd5029ef02dce84"
+  },
+  {
+    "file": "pictures/steam.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c0aad152c07c17ab774284b6c8f723141b2cb0b7f918a17a5c1f82de3ae916c1"
+  },
+  {
+    "file": "pictures/frost.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bc328d49a4c2f5c981336721bb83b56b2cb187a87da14031b77b32c8f58df040"
+  },
+  {
+    "file": "pictures/flood.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6d94df2c64d2aa8f00ffcbf59284d82d108f33083a825d1f75388cc1612c294a"
+  },
+  {
+    "file": "pictures/earthquake.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "64780521ab52d641d7589abda27ae03c29a313bc08a7756895e717ef5c8b07a8"
+  },
+  {
+    "file": "pictures/hurricane.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d65d85a97f3db13f51a0466785ac51ce0a5205fd5d3393f6cac42207917d82ba"
+  },
+  {
+    "file": "pictures/typhoon.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d65d85a97f3db13f51a0466785ac51ce0a5205fd5d3393f6cac42207917d82ba"
+  },
+  {
+    "file": "pictures/jungle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b234e399c0d96750263b73983769a0e9de425720e8533cb8942e191c12b37115"
+  },
+  {
+    "file": "pictures/landscape.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2155dd1a04a138ac45db6275fac9e80f8bc4f01c2bea762d76273620013032d8"
+  },
+  {
+    "file": "pictures/shade.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6055dbc9a2dd7375bc45cf986e248375b54ac52f41a36c123d85e2bb2cdbf866"
+  },
+  {
+    "file": "pictures/shadow.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bea556c64246aa257e293e42c4240660017d5a4484ed4b432040ee4b7dfc8f1f"
+  },
+  {
+    "file": "pictures/shelter.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9e026c766674d87b8528c08e21892c97999c8106c988d55556cb56a6b7d78b92"
+  },
+  {
+    "file": "pictures/throat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9187a24f56cb2aba66e5154f79749d33c6b798b6b5a62248880fe06bdf2e3c48"
+  },
+  {
+    "file": "pictures/breast.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bd2891dd2f89b52619bbf5590c90cb40480dcaadf79646010ffd6a016b911d4f"
+  },
+  {
+    "file": "pictures/wound.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5002e00ed382efd06996a7abbae16c489d6e3fd23c4eb0ea8d8b960a8ba88e4b"
+  },
+  {
+    "file": "pictures/x-ray.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9c03956393a26d67bf10dfe34649453a71167202569b676008adf2304e1244f7"
+  },
+  {
+    "file": "pictures/fever.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "46187381b54249f4f5d28ff6a88a94645cc03768e4ef72fa6989f07e8e4bb0a9"
+  },
+  {
+    "file": "pictures/headache.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dd49d41642452230f7520cb7449429993245687f66262b2c383653ce5d8fe804"
+  },
+  {
+    "file": "pictures/stomachache.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7913c822625eb15ec14734d96fa6adbeeaf10099f75407ad8c30df3f7df05af5"
+  },
+  {
+    "file": "pictures/toothache.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d86fdf4baa2deba49a515428308fef76f45ae61626525e8ad07ce05897536926"
+  },
+  {
+    "file": "pictures/sweat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f0e799c63e90df041995fa648d6b9038788712a82870dc0b55b3ad269f56fbc5"
+  },
+  {
+    "file": "pictures/scream.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "78fdcfa9ddb91e5ff1d08e2cd872127e25576154c6024126bc99041b7ccd70da"
+  },
+  {
+    "file": "pictures/nervous.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "98124b83f6e2030acc46df18c26093722dcf01d292c532635da88114de14c70f"
+  },
+  {
+    "file": "pictures/awake.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0de5169bc551d7f76630522482a5b5ba70dcd3cca6d5bd752b87fd0e76bb48d0"
+  },
+  {
+    "file": "pictures/quiet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "02bbffe00bf5b66955a166afbb05262aeaf47e7162010628d220ed874fde945b"
+  },
+  {
+    "file": "pictures/silent.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "02bbffe00bf5b66955a166afbb05262aeaf47e7162010628d220ed874fde945b"
+  },
+  {
+    "file": "pictures/boring.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1c2970f05ef2f176bf7c0c015952b1203079660a35f72e927adc4479c8c2c744"
+  },
+  {
+    "file": "pictures/liquid.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "428e4d3a735c2f3521f1f2392c4fdb3105870bf41d185846e6cbd226977a7c86"
+  },
+  {
+    "file": "pictures/plastic.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f423f4e55839f1b39052901da127770c9e8cf966b503002dd5fb51571c05b7cd"
+  },
+  {
+    "file": "pictures/clinic.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7e1780f3a5bc872b318f4ddd3cadfb9b8ac6729dc2d7b85554d273ffa1ff0002"
+  },
+  {
+    "file": "pictures/college.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6b44b394a015c7199460332a468b2a04bead8c23b07421d1e95206b0fd9b60e5"
+  },
+  {
+    "file": "pictures/university.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6b44b394a015c7199460332a468b2a04bead8c23b07421d1e95206b0fd9b60e5"
+  },
+  {
+    "file": "pictures/court.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "515497b799f39ce03c0e2319376176dbc43796592bae0f0dfeab279c081921a0"
+  },
+  {
+    "file": "pictures/mall.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7fb40a064eadfa45ada14f16f66ec3f3f18cba8c4ca742ab2095d9744df7ad3f"
+  },
+  {
+    "file": "pictures/gym.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f1fd128fe1b2d679f2faccce689524c28cab197792a7f5bde67440941793bab9"
+  },
+  {
+    "file": "pictures/gymnasium.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f1fd128fe1b2d679f2faccce689524c28cab197792a7f5bde67440941793bab9"
+  },
+  {
+    "file": "pictures/hall.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6e544236cae1bd91d4fae0b17273bfaac57807b482a8f51d48a191dead5b1a8c"
+  },
+  {
+    "file": "pictures/port.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "277fbfe2af57bb703d3ea5b5338311cce788919a12f7b06b91fb0aecc1d41bb0"
+  },
+  {
+    "file": "pictures/pub.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2237d03505d1e5496049792b6fe0c0214d29e2041b345007557b39be82b481e9"
+  },
+  {
+    "file": "pictures/cafeteria.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7ac1a4cd6e940e1123c0366ad9f63160670dff1182bb87c11a734e7877fa4452"
+  },
+  {
+    "file": "pictures/theatre.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f419cc21514027b9bc12618883b86ff5b5534ebc5cfd4e777ab58ea33f28c514"
+  },
+  {
+    "file": "pictures/organ.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dfec9bc396250e17e680bd34f5996d47a13f989abc387ffcea8f846a63721d51"
+  },
+  {
+    "file": "pictures/wedding.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9c0627108a5b689ce2deca6ccc598aa894077c1fedbf4851f27504f764964a27"
+  },
+  {
+    "file": "pictures/model.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "886c17767fb37379b8828cc7ec58f6588c740742e4f04a9dd9f4eb6b0de73589"
+  },
+  {
+    "file": "pictures/cartoon.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0fafb7383b6731a932357a7c56a6da7e0441f9511d4fe17696606a28de5d452b"
+  },
+  {
+    "file": "pictures/zero.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "237032b7df64cd3db3ea5caeb167fe82add679141616dcebed96b68227599524"
+  },
+  {
+    "file": "pictures/call.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "044b30e29ff82896a64ea1866b503c04fd370d0ea930b927f8e514858df0c6e0"
+  },
+  {
+    "file": "pictures/talk.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/speak.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/say.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/chat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/conversation.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/dialog.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/dialogue.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec65c60a21d5e47b5045ccdeae59dd3cdf97dd0b02326011597975fca7a8438a"
+  },
+  {
+    "file": "pictures/shout.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fbf72f50cada50010125101785d45157a43de78036761e60b37dec0aa2d70e1a"
+  },
+  {
+    "file": "pictures/aloud.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fbf72f50cada50010125101785d45157a43de78036761e60b37dec0aa2d70e1a"
+  },
+  {
+    "file": "pictures/loud.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fbf72f50cada50010125101785d45157a43de78036761e60b37dec0aa2d70e1a"
+  },
+  {
+    "file": "pictures/hello.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b52c803d35241a02177988eee4a0a022384c28b83c522f5d1c1224b32eb59c77"
+  },
+  {
+    "file": "pictures/hi.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b52c803d35241a02177988eee4a0a022384c28b83c522f5d1c1224b32eb59c77"
+  },
+  {
+    "file": "pictures/goodbye.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b52c803d35241a02177988eee4a0a022384c28b83c522f5d1c1224b32eb59c77"
+  },
+  {
+    "file": "pictures/bye.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b52c803d35241a02177988eee4a0a022384c28b83c522f5d1c1224b32eb59c77"
+  },
+  {
+    "file": "pictures/greet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b52c803d35241a02177988eee4a0a022384c28b83c522f5d1c1224b32eb59c77"
+  },
+  {
+    "file": "pictures/bend.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "177a8ceb764f4e4ca433a9230320f271654f84d436cd82408dc4a8305d300067"
+  },
+  {
+    "file": "pictures/cycle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2f414119a7faf671a33618c1a0f67090cdb192c79e47b57c6540230fa3b4d3fc"
+  },
+  {
+    "file": "pictures/jog.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "88d731ad0d5ab65b7899f56bdc23933712847bbaafe5ba1485ac14c58f0d0256"
+  },
+  {
+    "file": "pictures/hike.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "44650bf42788441963978fefd6aaa6aea3eb94a925bf79600c418641bf714c7f"
+  },
+  {
+    "file": "pictures/march.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "636e4b47355cfa344aa1b5f0020160cca7f5340da7bb14a29a11fa9524e2a0d6"
+  },
+  {
+    "file": "pictures/lean.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d267d36a1fde2c7bcd5418433c314ebc690844a44ddb057039d390d38b4738a2"
+  },
+  {
+    "file": "pictures/lift.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "785346ff36e815a0850360179375f9ddc1ff231f8f8ec1499b9a4541e4d969a2"
+  },
+  {
+    "file": "pictures/bring.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "06c85b3c4f3b1b80631454e5e840a4c36f716530d48d41140ef2a2042b7890ee"
+  },
+  {
+    "file": "pictures/grab.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b2e300c69dd9eb9542032a5281d705973a63398350a982deddba278243689fbd"
+  },
+  {
+    "file": "pictures/wear.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c6431bf173cf508c1cf7e372b39374784755df03b5ccfa00e6ab722fe0dc7964"
+  },
+  {
+    "file": "pictures/hang.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "30069b8aa4f41fcef8d2fcc93f446303828ef5695d4fe9299523fdea3eda6b7a"
+  },
+  {
+    "file": "pictures/knock.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b46ca3d7862cfb6fecb128395940f886040cacfebd8abce6044d5c792755e182"
+  },
+  {
+    "file": "pictures/shave.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "68c0c42210f71a6e75ef5ecd16c8124038190547fba34fb85ebf5260356da916"
+  },
+  {
+    "file": "pictures/bleed.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0a1677b9b3d6b3d3c337e6a091bc60c3a652ca75b5c2660650db159e535859c9"
+  },
+  {
+    "file": "pictures/blow.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "06427cf3a935578e802c947195eb4d39b5d2454689b963b97eb90a8ab29b5125"
+  },
+  {
+    "file": "pictures/breathe.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b314998fe435980b94c373dc8ddc3c6caa157386b1cfc4657417151498ea9cac"
+  },
+  {
+    "file": "pictures/breath.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b314998fe435980b94c373dc8ddc3c6caa157386b1cfc4657417151498ea9cac"
+  },
+  {
+    "file": "pictures/print.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "13a53afe7aac74490dfd909af1b9bb36581231c9420023ebb109c19fa827a40a"
+  },
+  {
+    "file": "pictures/charge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e5fd3e1ebd3d693bcb9234596154f38142230be975fd718bf6e9308c1048a49b"
+  },
+  {
+    "file": "pictures/feed.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1486cde79425812b5918871622443b7d69e1b938142c923cbae4b6d9d8536872"
+  },
+  {
+    "file": "pictures/sow.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6253013cafc7e8d8fef8ac0ef25f7264de6bcf3821b11b1c349376d65f06ce02"
+  },
+  {
+    "file": "pictures/sign.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c60a34e4b7a0b4753dc03776f5e16e161cadebb48221a27405d2896770e2824b"
+  },
+  {
+    "file": "pictures/polish.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a248f790b8699c8b59db5a67dbf2e54a6ce518269d7ccc72e1139e8492b9bb67"
+  },
+  {
+    "file": "pictures/nod.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2caabad13d4cabc3a7db1e55b6ad3b30213f4e669a89769cc1bafdc26088c366"
+  },
+  {
+    "file": "pictures/study.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ac4f97548b4f87141e913fc0b3cdab26de7ad00e48d1ac2ff3535fb4416675e1"
+  },
+  {
+    "file": "pictures/teach.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "198df2b301011b274a1e0d5814341094a3e6d0dbb0ddb10c718df0c36b89d1e3"
+  },
+  {
+    "file": "pictures/show.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7dea49c3212d45d3c6287d10712bbff7df28c0c19cc1e5751dc40484dfe37a12"
+  },
+  {
+    "file": "pictures/enter.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "81c03fb48c767b0a6572628b0367943a6de659128788058aa029ba5ba0ec6550"
+  },
+  {
+    "file": "pictures/shut.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9a9c66c126ebcb40644c489de416fa65291e9080b2487227f0a6c0669d8655f1"
+  },
+  {
+    "file": "pictures/drop.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c007d3a7707672c10d84396333e2b1f8fbb307c78e250ae73a29b6496de261b4"
+  },
+  {
+    "file": "pictures/break.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "adf45572672616e34105ac1600021cfd880387088976719237d3ca9273dc1d64"
+  },
+  {
+    "file": "pictures/burn.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f1e21363d5b9df2f83d53c17618ecb70ba9f05b9f5227d0cf052595bf38a1db5"
+  },
+  {
+    "file": "pictures/explode.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dbc3ee22424a9e28500e57794db04774a33a4fcd08159631c64e16e8cad66338"
+  },
+  {
+    "file": "pictures/leak.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4522af2812b3990ed9d6cad26ac3eac84d4d0157d92f4509ce4cf56db6f2bf1a"
+  },
+  {
+    "file": "pictures/slip.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "33f3c75ca5056c3e0ddbb928b85010e783dd8fed32fc42d20f5d334c165a8756"
+  },
+  {
+    "file": "pictures/pick.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "cdc50ffe14898c25339238cde6e9cfe606300f455c57f2ab4fddae48e1fb6bde"
+  },
+  {
+    "file": "pictures/hunt.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "531f00de044ed1894c62eb6dbbc9cd0229bc4327a758812b906b0f24455f7a7e"
+  },
+  {
+    "file": "pictures/stare.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1cef72ac9973499f2fc90a23372442a9ac8f70ef608084bc1bea3c4a804202b9"
+  },
+  {
+    "file": "pictures/mark.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e71a1830d8dfb81feb431dc21dbbe20d560bcae4978f2a9cf5ea3944bd2066e6"
+  },
+  {
+    "file": "pictures/celebrate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "51818e1f59bf4e39dadd3cca12e3c9502f01e181e4a648394c36e465231aaf16"
+  },
+  {
+    "file": "pictures/vote.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a0ea38e41e67b72458e8616c66f20641e0e72d4e8c903a9abccd8ab1cd9fa5ef"
+  },
+  {
+    "file": "pictures/press.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "83c63660937f67fd565e9fe8048b841dba237719424013fe68e51959b36e72d3"
+  },
+  {
+    "file": "pictures/shake.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f0cc633b9a181ae918fb03c6ff3333599054f5c3e3f14bc3d463c67505de5e01"
+  },
+  {
+    "file": "pictures/pray.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8189a4bf0830579267281b9fbfb13c924ce5b25826474089a8829c72e6375399"
+  },
+  {
+    "file": "pictures/relax.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "da98a15938e2c4de7c3f19003d905c3a0825bcd8659ad68d64be69097c49e3ef"
+  },
+  {
+    "file": "pictures/accident.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bfb47b01372b205abba00dc89dda803a147a32dade3cb3b81256265177c2a4d2"
+  },
+  {
+    "file": "pictures/crash.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "65c09e04a4585314872b28272b79f5918a670698ed85951220c36b6a02410860"
+  },
+  {
+    "file": "pictures/passenger.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "761511b5164bfdc5d6805e26e6579ee58ee87bff1951189785cee0921d22a200"
+  },
+  {
+    "file": "pictures/tourist.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "05f693fd5f096b64672beffb4f8d43354c98563719ae7803794bc7a92d985157"
+  },
+  {
+    "file": "pictures/director.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ba996c9a94a367ecbb7962d1ffd6a9c7f95714414352cb7e8a34341da728cc1f"
+  },
+  {
+    "file": "pictures/professor.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "28441abdb883b444ea3c911825289ee97b26cbc84a9ad9e05f334523901021ac"
+  },
+  {
+    "file": "pictures/lawyer.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2db702e12f3d0b1f30213a7419dacc438807853e3921be28564b6a730f6e46aa"
+  },
+  {
+    "file": "pictures/lab.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d42a41ae5f1c646b5b260338227983deb5a84de93d042c57df0b97cbb08990d4"
+  },
+  {
+    "file": "pictures/laboratory.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d42a41ae5f1c646b5b260338227983deb5a84de93d042c57df0b97cbb08990d4"
+  },
+  {
+    "file": "pictures/experiment.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4cc499c2ed0ec0bd3c85dc7b003ee5e7c6b89356104c0a82b88ff29d6b05e865"
+  },
+  {
+    "file": "pictures/mutton.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a3c0d5638e76d354c7a4456c3bd3c132c52fefd947268c834fd00648b0d90b4b"
+  },
+  {
+    "file": "pictures/pattern.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b8ad69c2130ad19798892800308e8871fc2aa91f98471d4eb8808ce314116e4e"
+  },
+  {
+    "file": "pictures/shape.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "43c963d26b8fe870723e8e93516a6bea3e3720342322be7709e5b1f2ff0c5e10"
+  },
+  {
+    "file": "pictures/award.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "256809a9a2ece0e8ab42a6643c7a45d0954384e7c5267aa56e31ee8bc136de11"
+  },
+  {
+    "file": "pictures/reward.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "256809a9a2ece0e8ab42a6643c7a45d0954384e7c5267aa56e31ee8bc136de11"
+  },
+  {
+    "file": "pictures/ad.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8721d5a1bd8dad980f0ef52ff106ef183da0731bc12b86201cd8bd068944b488"
+  },
+  {
+    "file": "pictures/advertisement.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8721d5a1bd8dad980f0ef52ff106ef183da0731bc12b86201cd8bd068944b488"
+  },
+  {
+    "file": "pictures/paragraph.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "847e82b52b66ca655cd8db980254ec67fa396661ec34004e8bbded2306c0bcb9"
+  },
+  {
+    "file": "pictures/handwriting.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "54a78cf96a19e3430828e5f00df838eb6ddc7d36128870e40d25a6ed20a15842"
+  },
+  {
+    "file": "pictures/calligraphy.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c9757a6601fefd903d54a8eff38dc2e2f643fdfb6cc5d2b39cd4b53165b1d692"
+  },
+  {
+    "file": "pictures/poem.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1cd680265b889453af3263cdae1f0ae03b7b4a0f38d14ee52b116980636e51e5"
+  },
+  {
+    "file": "pictures/novel.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3cecd8c0a3dba4a0c6a0669300033600c112cc612ea5f138d6fc40aa0292b63c"
+  },
+  {
+    "file": "pictures/fiction.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3cecd8c0a3dba4a0c6a0669300033600c112cc612ea5f138d6fc40aa0292b63c"
+  },
+  {
+    "file": "pictures/app.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7c28495830f46935fcc61c4f657caec46f46b82c34e4106992c4c4660ab8c8e1"
+  },
+  {
+    "file": "pictures/application.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7c28495830f46935fcc61c4f657caec46f46b82c34e4106992c4c4660ab8c8e1"
+  },
+  {
+    "file": "pictures/website.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e9f10fcfaeec16f692ce94dd0ef89427e31619352c4e961e8435414494afce84"
+  },
+  {
+    "file": "pictures/site.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e9f10fcfaeec16f692ce94dd0ef89427e31619352c4e961e8435414494afce84"
+  },
+  {
+    "file": "pictures/wi-fi.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9df3b5bb8600e475469010ae01a633e6bb56002be4bea26d19530b494626181d"
+  },
+  {
+    "file": "pictures/text.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8b9a0b1f4b375d9ac6ed9790c3f5f389295975c71b766261b99c1739864afb10"
+  },
+  {
+    "file": "pictures/message.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8b9a0b1f4b375d9ac6ed9790c3f5f389295975c71b766261b99c1739864afb10"
+  },
+  {
+    "file": "pictures/sound.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "37b388dae6306b2471e7aa2513faff34f9a541fc02d2e14217da5bf7d62f93ad"
+  },
+  {
+    "file": "pictures/noise.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "37b388dae6306b2471e7aa2513faff34f9a541fc02d2e14217da5bf7d62f93ad"
+  },
+  {
+    "file": "pictures/noisy.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "37b388dae6306b2471e7aa2513faff34f9a541fc02d2e14217da5bf7d62f93ad"
+  },
+  {
+    "file": "pictures/volume.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "37b388dae6306b2471e7aa2513faff34f9a541fc02d2e14217da5bf7d62f93ad"
+  },
+  {
+    "file": "pictures/ray.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ffe924f8c117aad560814a1d57ea463ba5f935fbbcf303f3d5f537905ba04e65"
+  },
+  {
+    "file": "pictures/universe.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2c27abf8558edfae1b39a12a1dace2185357cec46aa3386d968932e1effb5688"
+  },
+  {
+    "file": "pictures/orbit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ba5a5cc7f319cbc501f0aa8f50622307e566d41bcf7dce470dcefe5804499fae"
+  },
+  {
+    "file": "pictures/pain.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "24dc7696618d168c0a18290f249547b97d6f106a7d046600e748ce6182998ac8"
+  },
+  {
+    "file": "pictures/ache.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "24dc7696618d168c0a18290f249547b97d6f106a7d046600e748ce6182998ac8"
+  },
+  {
+    "file": "pictures/faint.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "28394c3ed3877590d954779922da59b30f3f0b50d1146af40548099926c47d7e"
+  },
+  {
+    "file": "pictures/blind.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "59250365583c680c979a4500ade00e07ad093ed3e2faa4fc48e17d58b497f24a"
+  },
+  {
+    "file": "pictures/surgery.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2556ad85a0703b0d2c5294299e6a9c773af918d934b53e31248e8df323a19f46"
+  },
+  {
+    "file": "pictures/operation.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2556ad85a0703b0d2c5294299e6a9c773af918d934b53e31248e8df323a19f46"
+  },
+  {
+    "file": "pictures/route.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "197d27b7e18beb52695dab2c4a821d568f117e8f1c9dd22a88a5fd4e03eb6734"
+  },
+  {
+    "file": "pictures/dining.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b7dd51f141de62255331fa1f30c062199787f56ac53f6c2e90d9c287e3a253de"
+  },
+  {
+    "file": "pictures/mess.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b3601ecda37b2feb4139227903212592ca8bd9971fa9a99d2d4af583a38be59e"
+  },
+  {
+    "file": "pictures/collection.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1b52b56926347d5c9316a78310fc47c0aa0ba388ea67b2f7c9481d8053218824"
+  },
+  {
+    "file": "pictures/harvest.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7d383be0076d16a960ed49fd013f496a4a34ab18481772ba5f4c4fabcceeba5e"
+  },
+  {
+    "file": "pictures/ground.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dfb52d6b827a4514e350d4924bf9d69531165dca11d5a7777024629061055658"
+  },
+  {
+    "file": "pictures/class.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "678ad6cd1251a93428eb4ee575a066dbcfc6b4c1ab26cea9486c387109948e20"
+  },
+  {
+    "file": "pictures/pe.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e34f5b42bbf8660cf2f0e5e2784e8eb753f005462ec26a99809d0feb11202787"
+  },
+  {
+    "file": "pictures/physical education.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e34f5b42bbf8660cf2f0e5e2784e8eb753f005462ec26a99809d0feb11202787"
+  },
+  {
+    "file": "pictures/kung fu.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0040b6520b9bdd2fd0eebe8acca80869bd6442785d56705960ac90e41bf16fe0"
+  },
+  {
+    "file": "pictures/conference.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8a9f10d4adea8ea989880808e15113217dfffd4f72462cd30c9a478a94b7ccc8"
+  },
+  {
+    "file": "pictures/meeting.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8a9f10d4adea8ea989880808e15113217dfffd4f72462cd30c9a478a94b7ccc8"
+  },
+  {
+    "file": "pictures/traffic.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0d71fa400a2b9284b6846f74a0915285dc4975375fb85c0fe785ee6e12cbe5be"
+  },
+  {
+    "file": "pictures/border.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2c7f57868bf13b4b7583fdeeec4ec4c32372d2190267ad9854025f5a3588f79a"
+  },
+  {
+    "file": "pictures/rescue.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "56a060ad8c7b273d9211adad1b5f485df8a8195a6e748139015faa2786dc887e"
+  },
+  {
+    "file": "pictures/rainy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f327.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "a0ec117c2afb64f206c81b4fa9c75ef333ba74e56ec4965be3d861f0b1aa48f9"
+  },
+  {
+    "file": "pictures/clear.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2600.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "822abba4f2e39d9059d85964116b1f9300e04320ee1a9e5af09831bf2f8c82df"
+  },
+  {
+    "file": "pictures/fear.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f628.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "020fcc1f3d1331c08a73ed4f7dedf19a5707cadba8177c2a65f9e6f35dda60c3"
+  },
+  {
+    "file": "pictures/horror.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f628.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "020fcc1f3d1331c08a73ed4f7dedf19a5707cadba8177c2a65f9e6f35dda60c3"
+  },
+  {
+    "file": "pictures/panic.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f628.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "020fcc1f3d1331c08a73ed4f7dedf19a5707cadba8177c2a65f9e6f35dda60c3"
+  },
+  {
+    "file": "pictures/worry.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f61f.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "30b6462482b614d30004e79d6d1dbfd0c4ee2526563b7edb34ad7f24f47d74df"
+  },
+  {
+    "file": "pictures/upset.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f622.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "ce9402da5d480b284f06cea43ade5966761a4d508fa3d6c51b687dba67086736"
+  },
+  {
+    "file": "pictures/colour.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f308.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "23a80becfb38d89ebf3ab8aa57136dce162bc74daac358668694e07499101fba"
+  },
+  {
+    "file": "pictures/flight.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2708.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "95d4e5e64dec4cd5a68cd61116467f0ccef6471b75e729f876cc262717533018"
+  },
+  {
+    "file": "pictures/launch.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f680.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e1cb1fc2f6bf275e7e5d08725f70fbd64833de75e50afdbaa481dd16cca0283a"
+  },
+  {
+    "file": "pictures/merry.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f604.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "e5457a54a1a9df8b3e6e646bfc390c72e8dd235d315c192b05f0f35c26fdd5b2"
+  },
+  {
+    "file": "pictures/attach.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6b71d6667507693d00d4449a8cd6544ed83f64bd35b10b8d6a34bb015dcd1da8"
+  },
+  {
+    "file": "pictures/decorate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c99d35011c7fe36ea6fa63d22aa6e74b4ea45712bad9a869b4346c7f722a8b17"
+  },
+  {
+    "file": "pictures/collect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0c5ec643e45fe15e8ac307b4ff6e74fceaac42f5c2dfec25bbca102577bbb5c5"
+  },
+  {
+    "file": "pictures/deliver.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "42b0470c6acfe2c9f7f13670f4ad103f432fad42af261831fa402a821780d005"
+  },
+  {
+    "file": "pictures/fill.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8538783ccae6683b2bbafdd840690645515330cbfd577c8eeeac16ddd15bfaea"
+  },
+  {
+    "file": "pictures/lay.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2abee5362f26a395a0df7731ef263414dee76a1048e0668362c0671a66ba3705"
+  },
+  {
+    "file": "pictures/put.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2abee5362f26a395a0df7731ef263414dee76a1048e0668362c0671a66ba3705"
+  },
+  {
+    "file": "pictures/move.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ac664299504b1df6969db27bb44e5d385de7eb45dbdfdad125a57b181ff63da1"
+  },
+  {
+    "file": "pictures/pass.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "1e7f8de081c174e8b2bd0012a4de10f2b9b1bdef9b965a874221c1874e63abfc"
+  },
+  {
+    "file": "pictures/pay.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "76c7ffbbaaf395cff0a06668f5ad80397beacc1cbfa0cfbddfc38efff03fb6b9"
+  },
+  {
+    "file": "pictures/buy.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e7915893d2d5db7b7eac959aac64c67c0f3351f03ed001c3cabe8b5aff2755a4"
+  },
+  {
+    "file": "pictures/purchase.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e7915893d2d5db7b7eac959aac64c67c0f3351f03ed001c3cabe8b5aff2755a4"
+  },
+  {
+    "file": "pictures/sell.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3eb5e3421a985fff3394303c59db70c81d42343c3ad3cc62086d71b79c9d9133"
+  },
+  {
+    "file": "pictures/prepare.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "85e5a85dab127f1d85e09ab7cb6fc28a45b97da6257e302ea82ab151455028ff"
+  },
+  {
+    "file": "pictures/reach.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d9a8f9379c27ca9e8a312ebd461cf86db1b226aba3d6be31bc261a3d87b9ab49"
+  },
+  {
+    "file": "pictures/release.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f6b7513944f553ea68a685b67476c000eccf6b4a78a027abf823ebd371426bd6"
+  },
+  {
+    "file": "pictures/remove.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7b99e8b51536d307e2423de96480f9e21f4d4fe397027e8f5ebaaf19dc87ccb2"
+  },
+  {
+    "file": "pictures/stick.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a38ad327a843e81cc156a624c1c6654fce8df987a9e3932e3a3de1306f37871b"
+  },
+  {
+    "file": "pictures/wake.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "21815818ac884020ce47e5b73bbedd5fca1bd8e558bfb040d4a1942e9a573023"
+  },
+  {
+    "file": "pictures/hit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d9a7f740c9ff4d0f0f0a2437284a73eb5d8d0bf9237554e50531fad0511f2114"
+  },
+  {
+    "file": "pictures/freeze.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4bcf58955ad46f40171019553ed92785c47709cec9cab81ec59eb6add54ab372"
+  },
+  {
+    "file": "pictures/hide.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3fe39a607204d8cd1c8723ddd6bf19fa113c681d9e9f0c8570df395d83d2cc17"
+  },
+  {
+    "file": "pictures/flat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "94533897c4fb2efa74832536df66fe0ea8cf961bbe2beef94f9a55ab6f5df666"
+  },
+  {
+    "file": "pictures/blank.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ce55d64a229c6871b0b8ff8131944177ba6694aa4cfd42303987772d72691dda"
+  },
+  {
+    "file": "pictures/full.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "13cc95db42cc6ada55c35d918398af94fdae3ae84ee7c30cdd5cb12b4527b627"
+  },
+  {
+    "file": "pictures/neat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "081f9c3aebb5486097a26ff4a49f3d47d27b58515f99fe52d7e4e9a2d18e9ba4"
+  },
+  {
+    "file": "pictures/damp.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0d5a21bf5ddf685f31d0ccd6d643b9b219640df18ceffd4815675354ea6c2a98"
+  },
+  {
+    "file": "pictures/solid.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8d8b5b33b274b1e32ce76d6a63ed12ac16419768d36d1c06ee9a5b8bb3420d25"
+  },
+  {
+    "file": "pictures/dead.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b7e6392f6929c3ceabcf224af08d4417eba11cddea40398160ec85fa2a0323a2"
+  },
+  {
+    "file": "pictures/poison.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "64ff4459015f3b797ffd5ca34c2ce8634106921b3d6b87d4d7e30fad04d8d64e"
+  },
+  {
+    "file": "pictures/sport.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "6168b3376a25f0f5b8377ff3138b413b96b9e9915950943d699ada02a46ab8bd"
+  },
+  {
+    "file": "pictures/play.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "589267605b2d8a7c24d36b6fd8251f95c037add7c111aec18d637f94f584b5dd"
+  },
+  {
+    "file": "pictures/christmas.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0b63316a5d730871aee3b631a462cec62accdae0378337e7121173ee99e9cfd4"
+  },
+  {
+    "file": "pictures/half.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3bbad4194ded18573440d07610ec5a2ab2caa169f2f7c681e5d4b50b18a9c790"
+  },
+  {
+    "file": "pictures/division.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "65e48cf5964529ee3708101bde0d014a519126b3404ccca7516597ec343e6771"
+  },
+  {
+    "file": "pictures/pair.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bc08034d1d4661d5bef56547d786021aba6577c7a78112a9f432a01715d2a01b"
+  },
+  {
+    "file": "pictures/dozen.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "94bc9abc279757deb598d78b262a12d37495a9c8a8ca3188f84b004f0462eee2"
+  },
+  {
+    "file": "pictures/bunch.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d916340f042ab9137ebcc6d77f897b9b1c53b914d4c6a8ea05f87948d993691b"
+  },
+  {
+    "file": "pictures/recycle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "abead41578155dc449fe3d0488deb176b47df9a49359ee1d89451d98275d5cf2"
+  },
+  {
+    "file": "pictures/shoot.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "69adfff24fb4850d66d0464288a03a7d6a4538b7fb8ab5f08f6dc3788fac259d"
+  },
+  {
+    "file": "pictures/perform.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "42324d02b1b8a45f97cf1f06bdf3348cbbef40b8ee890a450cbaaebd234f2aca"
+  },
+  {
+    "file": "pictures/performance.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "42324d02b1b8a45f97cf1f06bdf3348cbbef40b8ee890a450cbaaebd234f2aca"
+  },
+  {
+    "file": "pictures/africa.svg",
+    "author": "Natural Earth contributors; ABC Garden styling",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_regions_polys.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "changes": "Retained continent polygons; equirectangular display with highlighted continent, borders omitted.",
+    "sha256": "cb205156adc3913892a38986eaa97c8048b2c2ef5f172b996c60be5fcbf362f8"
+  },
+  {
+    "file": "pictures/asia.svg",
+    "author": "Natural Earth contributors; ABC Garden styling",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_regions_polys.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "changes": "Retained continent polygons; equirectangular display with highlighted continent, borders omitted.",
+    "sha256": "51ff501c6f1e6e79047b8320f093ec4b4cf7315a917843a105d3dfe3081ea622"
+  },
+  {
+    "file": "pictures/europe.svg",
+    "author": "Natural Earth contributors; ABC Garden styling",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_regions_polys.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "changes": "Retained continent polygons; equirectangular display with highlighted continent, borders omitted.",
+    "sha256": "5e2a9bdc8928b6d790b50ea5294aa6f089c4d51e68c3c2347d84143069d10f76"
+  },
+  {
+    "file": "pictures/america.svg",
+    "author": "Natural Earth contributors; ABC Garden styling",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_regions_polys.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "changes": "Retained continent polygons; equirectangular display with highlighted continent, borders omitted.",
+    "sha256": "ff88393eaf0ce6038c13a3be368536c4df95f23a904b62c6ab87255d01e775a8"
+  },
+  {
+    "file": "pictures/north.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f0a8e55921eab41fba386a5a28bd607657c7c44e464495273d1e517759360a17"
+  },
+  {
+    "file": "pictures/east.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "84778ea53c8759dd2907990b81cf4089c595f1f5c5af43e89d26b0bf8e40c2a1"
+  },
+  {
+    "file": "pictures/south.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "232a5567d660efabac071c9c8d552e3eec336ed7eb4a98e10aae24a94b165a28"
+  },
+  {
+    "file": "pictures/west.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b164b384fb3b482b091842bd6ff58500dd786379dd096befbb9163b9ddbd731a"
+  },
+  {
+    "file": "pictures/equator.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "ec45ae10eb088b918204bb69ddaab42c6d54739c856d03bff281228d0cddcab7"
+  },
+  {
+    "file": "pictures/guide.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d4cda261315f756daa0f4bd53b58c70a4a7ac1fc799ab547d39b6a178b254589"
+  },
+  {
+    "file": "pictures/host.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2fda33b40476aea8bc49d8d3ac15188c7303a30c1c00aff36d497edcd02f04b4"
+  },
+  {
+    "file": "pictures/champion.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2162dec823d1ad4d9f754f4203fe4baf1d34f8d0ca7122265c706168a23f4b06"
+  },
+  {
+    "file": "pictures/win.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2162dec823d1ad4d9f754f4203fe4baf1d34f8d0ca7122265c706168a23f4b06"
+  },
+  {
+    "file": "pictures/victory.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2162dec823d1ad4d9f754f4203fe4baf1d34f8d0ca7122265c706168a23f4b06"
+  },
+  {
+    "file": "pictures/alarm.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5a3c3f81a835a053bc5c5070995e5b6be2fb37f6784919fda372e4e3f857da14"
+  },
+  {
+    "file": "pictures/alert.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "261931e140bc808b7d2ca4f28bc7e9e175ad011d56c7228877c9cccd15e11423"
+  },
+  {
+    "file": "pictures/danger.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "261931e140bc808b7d2ca4f28bc7e9e175ad011d56c7228877c9cccd15e11423"
+  },
+  {
+    "file": "pictures/dangerous.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "261931e140bc808b7d2ca4f28bc7e9e175ad011d56c7228877c9cccd15e11423"
+  },
+  {
+    "file": "pictures/warning.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "261931e140bc808b7d2ca4f28bc7e9e175ad011d56c7228877c9cccd15e11423"
+  },
+  {
+    "file": "pictures/peace.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a0b3c1d6735d56cad258eccb278dbc71b31ad1ca199ba5d74d42f63564007ab4"
+  },
+  {
+    "file": "pictures/campus.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5aa192980e8b8c193cc36210bb7e327953db0b5b52a958dcc948d16d2957f29a"
+  },
+  {
+    "file": "pictures/work.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a0bc7edc449f27787c1d26d4c45fd3741394335684fe4d9f448ceb974d9f0293"
+  },
+  {
+    "file": "pictures/shine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7ce9a46781fc9dea9f29092dfd345a122be5e10d6b84886177b0e1e832edb8a5"
+  },
+  {
+    "file": "pictures/damage.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "50263b8e5f6cbd6c24d25fc83d8ade4258ee49ec3538224f067c050d294a2d98"
+  },
+  {
+    "file": "pictures/injury.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b59c6c7192d97dc8ff22ba96bfa77e1a402da2787555b3b7820b6c7e635f2163"
+  },
+  {
+    "file": "pictures/parking.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "a25f7968c1add1e8ca71d980c6080b7545cd43cea4a3f7d537c1bd9277288871"
+  },
+  {
+    "file": "pictures/donate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "8b44b10491d7adc976801e3482fc976d7d0bc7350cd2c36036158ad79123c4c9"
+  },
+  {
+    "file": "pictures/pollute.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "80764530e1ea420e228df24037bd2ae7fc92b4a06f7069cfb7ad78026a409d78"
+  },
+  {
+    "file": "pictures/pollution.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "80764530e1ea420e228df24037bd2ae7fc92b4a06f7069cfb7ad78026a409d78"
+  },
+  {
+    "file": "pictures/marry.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e71c34f14e4c0ed6515201b1d2184fa6528e94e035010957a323564741277729"
+  },
+  {
+    "file": "pictures/marriage.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e71c34f14e4c0ed6515201b1d2184fa6528e94e035010957a323564741277729"
+  },
+  {
+    "file": "pictures/land.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f3ea419603f1db7df9876452628989a9fc9efb7b69b0258b8404a03f3ae0f588"
+  },
+  {
+    "file": "pictures/deaf.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "31879ca24fe2452e46fb2fe8c8cd7beca086adb920ce4f2655fc80a017559996"
+  },
+  {
+    "file": "pictures/chore.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c4084169d48fc68ba60904d6e2da5389c658ee5ce874060fe2ca384db33213a8"
+  },
+  {
+    "file": "pictures/housework.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c4084169d48fc68ba60904d6e2da5389c658ee5ce874060fe2ca384db33213a8"
+  },
+  {
+    "file": "pictures/speech.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2fda33b40476aea8bc49d8d3ac15188c7303a30c1c00aff36d497edcd02f04b4"
+  },
+  {
+    "file": "pictures/lecture.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "28441abdb883b444ea3c911825289ee97b26cbc84a9ad9e05f334523901021ac"
+  },
+  {
+    "file": "pictures/poet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "76679a4df20c8765d8d274be760b4e5dc9fc4c617fe8f72afe27721550018e5a"
+  },
+  {
+    "file": "pictures/pacific.svg",
+    "author": "Natural Earth contributors; ABC Garden styling",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_geography_marine_polys.geojson",
+    "license": "Public domain",
+    "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "changes": "Highlighted North and South Pacific Ocean polygons.",
+    "sha256": "13cef95c2646c18d68d6a079c12b8a3b205c2442feb7b180ce2daca093cc4ab0"
+  },
+  {
+    "file": "pictures/china.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored country flag SVG",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector drawing of country flag.",
+    "sha256": "7ec546fb81980a3e23f3ca246b94e4b160c39848e6981328f72b993abf7e15eb"
+  },
+  {
+    "file": "pictures/in.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "88e3a6795886c15b2222606d42d529e832baf1798a1237db89a37e030a818faf"
+  },
+  {
+    "file": "pictures/on.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e8efa25875bee9d3db5bbdbf9080873be6bea6388ce9ad910c83b0763c08ece1"
+  },
+  {
+    "file": "pictures/under.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "57e67ef3f034df27c2bbadc89899e368af0b8fc015b90c497bd9660ab4d7b769"
+  },
+  {
+    "file": "pictures/behind.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "4ac3f3cf99718c88ec91b9b6d52d60970c98420d4dd74c7ce2a2a3d3e180317c"
+  },
+  {
+    "file": "pictures/beside.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "50419cb5c994cdaaddd86262e3bffb042f87248371a1d618d3bb80f76728db41"
+  },
+  {
+    "file": "pictures/between.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "92edf4daa6a85b672a408fa116b515c365dbc184af2a1cb5a3bcff5edd4dbb43"
+  },
+  {
+    "file": "pictures/above.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "9678e9a1d27a0549c2ab2fbbe39c21dfe065671a8c84a4090c0c65c5819f7578"
+  },
+  {
+    "file": "pictures/over.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "dc8e67daa3d0c47a400cfc9d24f45b4277d3b3eb1217c81e85a3ab8178d5ab13"
+  },
+  {
+    "file": "pictures/near.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e5e609ad03fe3ee76b626489e5e45c24d514f3c52bb0d587fcf66eed53eb7164"
+  },
+  {
+    "file": "pictures/nearby.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e5e609ad03fe3ee76b626489e5e45c24d514f3c52bb0d587fcf66eed53eb7164"
+  },
+  {
+    "file": "pictures/far.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "bbf8c691f29daa82a686a14eab24159d70a85320861eefdf61c37973af0c2c09"
+  },
+  {
+    "file": "pictures/front.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "242550bfaf5dce1166ce240492ea9997b43fb9819ac7bf1ddecba1f18970355c"
+  },
+  {
+    "file": "pictures/middle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "11bebc6bde6bec86e5cea83a5e12b25b593b5854e6534e015aafba6725c95a54"
+  },
+  {
+    "file": "pictures/center.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "11bebc6bde6bec86e5cea83a5e12b25b593b5854e6534e015aafba6725c95a54"
+  },
+  {
+    "file": "pictures/centre.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "11bebc6bde6bec86e5cea83a5e12b25b593b5854e6534e015aafba6725c95a54"
+  },
+  {
+    "file": "pictures/inside.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "00c28c5e456b2a99f124207e779387c4282a6fecf7c3617ead386275e9860ccb"
+  },
+  {
+    "file": "pictures/within.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "00c28c5e456b2a99f124207e779387c4282a6fecf7c3617ead386275e9860ccb"
+  },
+  {
+    "file": "pictures/outside.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d1c6b0c4535a0acc0f742409b56ff8e23069996e21793895b2bf6d5f30a1958d"
+  },
+  {
+    "file": "pictures/into.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "91f531d5820e0eeda796872455d094005dca7e0d9fd9d9e013f291cf332c4da1"
+  },
+  {
+    "file": "pictures/onto.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0e570db985b2078806b8ce229a8ec8566e1cbfe23d1e72644bca25056c0168cd"
+  },
+  {
+    "file": "pictures/through.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "32040c77abb52c6104f8be88e1e5b647613385dd8439805e7c8bb2a6cf62f189"
+  },
+  {
+    "file": "pictures/across.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "3f3de555466f2884510e95d11c6c02fc0bb1d9b4d63dcc93372f12f493042d39"
+  },
+  {
+    "file": "pictures/around.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "58db043a8198ccee770462342b617687458313b671759dc3b6f3d868d981950b"
+  },
+  {
+    "file": "pictures/short.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5a4e48c3d63ba2659cc25a93c06f3594095b2ac3f708a4490a58b8ff2bb883c4"
+  },
+  {
+    "file": "pictures/little.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "664e5270e98050f8aac5a4c97998c2524d60ccaa78842434cba697b32f7b7ae2"
+  },
+  {
+    "file": "pictures/large.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "14565241927f860d3c19c82c1200d34351cf74b00e34dd94be5d51b1fb044da5"
+  },
+  {
+    "file": "pictures/huge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "14565241927f860d3c19c82c1200d34351cf74b00e34dd94be5d51b1fb044da5"
+  },
+  {
+    "file": "pictures/broad.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "508fdeba82f98aacd288f70cd37f1f8aa7f605ae89323d07a1b1d3481374f4c8"
+  },
+  {
+    "file": "pictures/deep.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0e684e709bf15485e5b7bd8b29b8a3e7b1812a98e7804911cc417d6c6cd4e093"
+  },
+  {
+    "file": "pictures/high.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "c2a75df7d8971881a56142a4b3bab36288d8d5ec79f5a4c67de183bf58932c44"
+  },
+  {
+    "file": "pictures/low.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "22831155dca9bc84318e14485f374d84245d84f08fbda11f9d43f1b604bb314d"
+  },
+  {
+    "file": "pictures/massive.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5d1b0311336c6cbca12d1077858246e162715414423c475cc6bff516ee14f5f7"
+  },
+  {
+    "file": "pictures/downstairs.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "659e5a44009c02129b530d0e5a6d3e556186e7f383f909e7dc47072a9d2eadad"
+  },
+  {
+    "file": "pictures/among.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "070e7c5662e629177a4278a1648a4ea48bbc1499711e29e48c365d016695532e"
+  },
+  {
+    "file": "pictures/to.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5d05d840348db15d119d68fc65baa45eecd72dc4f1950d4aaa48dcc463719927"
+  },
+  {
+    "file": "pictures/toward.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5d05d840348db15d119d68fc65baa45eecd72dc4f1950d4aaa48dcc463719927"
+  },
+  {
+    "file": "pictures/towards.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "5d05d840348db15d119d68fc65baa45eecd72dc4f1950d4aaa48dcc463719927"
+  },
+  {
+    "file": "pictures/from.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "38505148e56a5cd5fa0de8a0a03a4b0dea562b817c6d56ca45c0e1e14af6fff7"
+  },
+  {
+    "file": "pictures/out.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "e6fe71b1faaee84010711a25c92ea3fa0a4ad1253b6e16635d409f30200111f4"
+  },
+  {
+    "file": "pictures/fellow.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f468.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "eb0499f06ef3413e79c7568dfa856050143a380dc9e517c2a869880797d425b7"
+  },
+  {
+    "file": "pictures/guy.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f468.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "eb0499f06ef3413e79c7568dfa856050143a380dc9e517c2a869880797d425b7"
+  },
+  {
+    "file": "pictures/nature.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "2155dd1a04a138ac45db6275fac9e80f8bc4f01c2bea762d76273620013032d8"
+  },
+  {
+    "file": "pictures/device.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "176b759244df4d3f5fea9df0e3337be361e5e76780c36da9f9d6c011220e92d6"
+  },
+  {
+    "file": "pictures/love.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2764.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "280a633e0e72c7f45a0bdbc819d55d3de71dc47439d3024a0b9d3d7c76642023"
+  },
+  {
+    "file": "pictures/correct.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2705.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "10d5be93c52a1fc0bcd195dee9485445daeb9f2398f9f58e513e3c27f95a52d0"
+  },
+  {
+    "file": "pictures/wrong.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u274c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0ccbebbd79d7244d142eff2838125e21c8100d51bbb29a0ad17ee7ca7fdc0c3c"
+  },
+  {
+    "file": "pictures/no.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u274c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "0ccbebbd79d7244d142eff2838125e21c8100d51bbb29a0ad17ee7ca7fdc0c3c"
+  },
+  {
+    "file": "pictures/ok.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2705.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None",
+    "sha256": "10d5be93c52a1fc0bcd195dee9485445daeb9f2398f9f58e513e3c27f95a52d0"
+  },
+  {
+    "file": "pictures/height.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "acd5b2dcf98e8dd4959865e068006c5e94153a3dba9596d76031c797b9d05a54"
+  },
+  {
+    "file": "pictures/depth.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "0e684e709bf15485e5b7bd8b29b8a3e7b1812a98e7804911cc417d6c6cd4e093"
+  },
+  {
+    "file": "pictures/weight.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "02e6f9504c94c6da766c564c9662a3010566d01ad1bef0eba3531a5b58b9fef5"
+  },
+  {
+    "file": "pictures/edge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "d933905a69cb58ba861ab95034b80944a9f8f4972a8157161e22cbb8fa4534de"
+  },
+  {
+    "file": "pictures/corner.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "7167a381ede3f974eddf37bb84655c6b91e758c521a01e54d71642073f2978cb"
+  },
+  {
+    "file": "pictures/bottom.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "f6d178f52c3e75bb2cf4af72a747962ef92376abea119ff4ec8967d557369e96"
+  },
+  {
+    "file": "pictures/side.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "50419cb5c994cdaaddd86262e3bffb042f87248371a1d618d3bb80f76728db41"
+  },
+  {
+    "file": "pictures/surface.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "b0f474a8eeb6f53259da52ba2aa07529741bcd7ea1a9136ea9b6916e8938ae4d"
   }
 ]

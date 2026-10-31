@@ -1,3 +1,6 @@
+import {WORD_ALIASES,canonicalWordId} from './word-aliases.js';
+import {PICTURE_QUIZ_GROUPS} from './picture-quiz-groups.js';
+import {CONTEXT_WORDS} from './context-words.js';
 import {isPictureCue} from './picture-cues.js';
 import {THEMED_PICTURE_WORDS} from './themed-picture-words.js';
 import {EXTRA_PICTURE_WORDS} from './extra-picture-words.js';
@@ -7,8 +10,14 @@ const rows=[
 ['banana','香蕉','food','1f34c','I like bananas.'],['milk','牛奶','food','1f95b','Can I have some milk?'],['water','水','food','1f4a7','Can I have some water?'],['bread','面包','food','1f35e','I like bread.'],['book','书','home','1f4d5','This is my book.'],['bed','床','home','1f6cf','The cat is on the bed.'],['chair','椅子','home','1fa91','Please sit on the chair.'],['tree','树','nature','1f333','The tree is tall.'],['flower','花','nature','1f33c','This is a yellow flower.'],['bird','鸟','animals','1f426','The bird can fly.'],['hand','手','people','270b','This is my hand.'],['eye','眼睛','people','1f441','This is my eye.'],['ear','耳朵','people','1f442','This is my ear.'],['bike','自行车','play','1f6b2','I can ride a bike.'],
 ];
 export const BASE_PICTURE_ROWS=[...rows,...EXTRA_PICTURE_WORDS];
-export const WORDS=[...BASE_PICTURE_ROWS,...THEMED_PICTURE_WORDS].map(([id,zh,topic,emoji,sentence],i)=>({id,zh,topic,emoji,sentence,letter:i<26?'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]:null,audio:i<26?`example-${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]}`:`word-${id}`,image:`./assets/pictures/${id}.svg`,pictureCue:isPictureCue(id,topic)}));
+export const WORDS=[...BASE_PICTURE_ROWS,...THEMED_PICTURE_WORDS].map(([id,zh,topic,emoji,sentence],i)=>({id,zh,topic,emoji,sentence,letter:i<26?'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]:null,audio:i<26?`example-${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]}`:`word-${id}`,image:`./assets/pictures/${id}.svg`,pictureCue:isPictureCue(id,topic)})).concat(CONTEXT_WORDS).map(w=>({...w,pictureGroup:PICTURE_QUIZ_GROUPS[w.id]||w.emoji}));
 export const WORD_BY_ID=new Map(WORDS.map(word=>[word.id,word]));
+// Keep source cards for attribution/assets and old records; publish only canonical pictured cards.
+export const CATALOG_WORDS=WORDS.filter(w=>canonicalWordId(w.id)===w.id).map(w=>({...w,aliases:Object.keys(WORD_ALIASES).filter(id=>WORD_ALIASES[id]===w.id)}));
+export const CATALOG_BY_ID=new Map(CATALOG_WORDS.map(w=>[w.id,w]));
+export const READY_WORDS=CATALOG_WORDS.filter(w=>w.image);
+export const PENDING_WORDS=CATALOG_WORDS.filter(w=>!w.image);
+
 export const TOPICS={all:'全部朋友',food:'食物饮品',animals:'动物朋友',home:'家庭物品',school:'学校学习',clothes:'衣物配饰',body:'身体感官',people:'家人与职业',nature:'自然四季',travel:'交通出行',sports:'运动锻炼',play:'玩具节日',music:'音乐艺术',places:'地方建筑',actions:'日常动作',feelings:'情绪感受',colors:'颜色形状'};
 export const READINGS=[
 {"id":"red-ball","level":1,"title":"红球滚呀滚","image":"ball","lines":["I have a ball.","My ball is red.","Roll, roll, roll!","Here is my ball."],"zh":"我有一个球。我的球是红色的。滚呀，滚呀，滚呀！我的球在这里。","question":"球是什么颜色？","options":["红色","蓝色","黄色"],"answer":0,"prompt":"指着球说 ball，愿意的话再试试 red ball。"},
@@ -51,4 +60,4 @@ export const WRITING=[
 {id:'letter',level:3,title:'写一封建议信',prompt:'选择一个想改进的学校或社区问题，给负责人写信，说明问题、建议和预期效果。不要填写真实地址或联系方式。',starter:'Dear Sir or Madam,\n\n',check:['读者能理解问题。','建议具体可行。','语气礼貌，并检查了拼写和标点。']},
 ];
 export const LEVELS=[{id:1,title:'小种子 · 零基础',text:'认识声音和图片，说出词语与简单句。'},{id:2,title:'小树苗 · 连成句',text:'听懂短故事，进行简单对话，写几句话。'},{id:3,title:'大树 · 自主表达',text:'阅读更长文本，复述、讨论和写作。练习包，不代表流利认证。'}];
-export const COURSE_AUDIO=[...WORDS.filter(w=>!w.letter).map(w=>({key:w.audio,text:w.id})),...WORDS.map(w=>({key:`sentence-${w.id}`,text:w.sentence})),...READINGS.flatMap(r=>r.lines.map((text,i)=>({key:`read-${r.id}-${i}`,text}))),...DIALOGUES.flatMap(d=>d.lines.map(([role,text],i)=>({key:`talk-${d.id}-${i}`,text})))];
+export const COURSE_AUDIO=[...WORDS.filter(w=>!w.letter).map(w=>({key:w.audio,text:w.spoken||w.display||w.id})),...WORDS.map(w=>({key:`sentence-${w.id}`,text:w.sentence})),...READINGS.flatMap(r=>r.lines.map((text,i)=>({key:`read-${r.id}-${i}`,text}))),...DIALOGUES.flatMap(d=>d.lines.map(([role,text],i)=>({key:`talk-${d.id}-${i}`,text})))];

@@ -32,7 +32,7 @@
 .word-follow-extra{margin-top:24px;border-top:1px solid var(--line);padding-top:12px;color:var(--muted)}.word-follow-extra summary{cursor:pointer;padding:12px;min-height:44px;font-size:14px}.word-follow-extra .micro{margin:10px 0 16px}
 
 
-.word-topic-tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;overscroll-behavior-x:contain}.word-topic-tabs button{flex-shrink:0}.word-browser{min-width:0}#word-search{width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid #cbd5c6;border-radius:13px;background:#fffdf6;color:var(--ink);margin-bottom:12px;min-width:0}.word-pagination{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:12px}.word-pagination .button{padding:9px 8px;min-height:44px;font-size:12px}.word-pagination span{font-size:11px;color:var(--muted);white-space:nowrap}.word-list button span{overflow-wrap:anywhere}.picture-choices .word-picture{max-height:128px;object-fit:contain}
+.word-topic-tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;overscroll-behavior-x:contain}.word-topic-tabs button{flex-shrink:0}.word-browser{min-width:0}#word-search{width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid #cbd5c6;border-radius:13px;background:#fffdf6;color:var(--ink);margin-bottom:12px;min-width:0}.word-pagination{display:grid;gap:8px;margin-top:12px}.word-page-controls{display:flex;gap:6px}.word-page-controls .button{flex:1}.word-page-jump{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}.word-page-jump input{width:4.5em;min-width:0;min-height:44px;font:inherit;font-size:16px;text-align:center;border:1px solid var(--line);border-radius:12px;background:#fffdf6;color:var(--ink)}.word-pagination .button{padding:9px 8px;min-height:44px;font-size:12px}.word-pagination span{font-size:11px;color:var(--muted);white-space:nowrap}.word-list button span{overflow-wrap:anywhere}.picture-choices .word-picture{max-height:128px;object-fit:contain}
 
 /* Keep categories visible and balance the word browser with the learning card. */
 .word-topic-tabs{flex-wrap:wrap;overflow:visible;gap:8px;padding:0;margin-bottom:22px}.word-topic-tabs button{padding:10px 14px;min-height:44px;font-size:14px}
@@ -88,3 +88,44 @@
 #word-save-status,#word-audio-preparation{margin-top:16px}#word-audio-preparation>.micro{margin-bottom:12px}
 @media(max-width:760px){.parent-word-preview>.word-order-actions{grid-column:1/-1;justify-content:flex-start}}
 [data-learning="retry-save"][hidden]{display:none}
+
+.letter-read-controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.letter-read-controls [hidden]{display:none}#letter-play-status{margin-top:12px}
+.alphabet-card[aria-pressed="true"]{border-color:#52795c;box-shadow:inset 0 0 0 1px #52795c;background:#e1ecd9}
+
+/* Letter browsing: compact selectors, one focal letter, equal listening actions. */
+.page:has(.letter-detail){max-width:960px;margin-inline:auto}
+.alphabet-grid.letter-picker{grid-template-columns:repeat(auto-fill,minmax(64px,84px));gap:10px}
+.letter-picker .alphabet-card{min-height:64px;padding:10px 8px;border-radius:15px;background:#f3f4eb;border-color:var(--line)}
+.letter-picker .alphabet-card .glyph{font-size:30px}
+.letter-picker .alphabet-card[aria-pressed="true"]{background:#e1ecd9;border-color:#52795c;box-shadow:inset 0 0 0 1px #52795c}
+.library-detail.letter-detail{display:block;padding:24px 28px;text-align:left;margin-top:20px}
+.letter-detail-heading{display:flex;align-items:center;gap:22px;margin-bottom:20px}
+.letter-detail-heading>.glyph{font-size:88px;line-height:1.1;flex:none;min-width:138px}
+.letter-detail-heading h2{font-size:20px;margin:0 0 8px;font-weight:600}
+.letter-detail-heading .micro{font-size:14px;line-height:1.7}
+.letter-sounds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.letter-detail .letter-sounds .sound-tile{min-height:80px;padding:14px 16px;gap:10px;border-radius:16px;background:#f1f3e9;border-color:#dce2d1}
+.letter-detail .letter-sounds strong{font-size:16px;line-height:1.5}
+.letter-detail .letter-sounds small{font-size:13px;margin-top:4px}
+.letter-detail #letter-play-status{min-height:24px;margin:10px 0;font-size:14px;line-height:1.7;color:#48654d}
+.letter-example{display:flex;align-items:center;gap:14px;padding-top:12px;border-top:1px solid #e9ecdf}
+.letter-example .example-button{margin:0;padding:8px 12px;border:0;background:transparent;gap:10px}
+@media(max-width:760px){.alphabet-grid.letter-picker{grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:8px}.letter-picker .alphabet-card{min-height:58px}.letter-picker .alphabet-card .glyph{font-size:27px}.library-detail.letter-detail{padding:20px 18px}.letter-detail-heading{gap:16px;margin-bottom:18px}.letter-detail-heading>.glyph{font-size:70px;min-width:100px}.letter-detail-heading h2{font-size:18px}.letter-detail-heading .micro{font-size:12px}.letter-sounds{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.letter-detail .letter-sounds .sound-tile{padding:12px;gap:8px;min-height:76px}.letter-detail .letter-sounds strong{font-size:14px}.letter-sounds .letter-combined{grid-column:1/-1}.letter-detail .letter-sounds small{font-size:12px}}
+
+.letter-example-meaning{font-size:14px;color:var(--muted)}
+
+.selection-search{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0}.selection-search label{display:flex;flex-direction:column;gap:8px;flex:1;min-width:140px}.selection-search input,.selection-search select{height:48px;font:inherit;padding:12px;border:1px solid var(--line);border-radius:12px;min-width:0;background:white}.selection-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.selection-grid button,.pending-grid article{display:flex;flex-direction:column;align-items:center;gap:6px;border:1px solid var(--line);border-radius:16px;background:#fffdf6;padding:14px 8px;overflow-wrap:anywhere}.selection-grid button[aria-pressed=true]{background:#e1ecd9;border-color:#52795c}.selection-grid small{color:var(--muted)}#selection-chosen{margin-top:24px}.selected-word-list{list-style:none;padding:0}.selected-word-list li{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.selected-word-list li>span{flex:1;overflow-wrap:anywhere;min-width:0}.selected-word-list img{flex:none}@media(max-width:760px){.selection-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.selected-word-list li{flex-wrap:wrap}.selected-word-list .word-order-actions{width:100%;justify-content:flex-end}}
+.word-browser .word-list button{display:flex;flex-direction:column;align-items:center}
+.word-browser .word-list>.micro{grid-column:1/-1}
+.word-browser .word-list button>.word-picture{flex:none;margin:0 0 8px}
+.word-browser .word-list button>.mastery-badge{margin-top:6px;white-space:nowrap}
+
+.site-update{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:100;display:flex;align-items:center;gap:16px;max-width:calc(100% - 32px);width:max-content;padding:12px 18px;background:#fffdf6;color:var(--ink);border:1px solid #b5c5a5;border-radius:18px;box-shadow:0 5px 22px #344d3922;font-size:14px}.site-update[hidden]{display:none}.site-update span{min-width:0}.site-update button{flex:none}@media(max-width:480px){.site-update{gap:10px;padding:10px 12px;font-size:12px}}
+
+.word-context-label{display:inline-flex;align-items:center;justify-content:center;padding:.6rem;border-radius:.6rem;background:#eef4f0;color:#426952;font-size:.8rem;min-height:2.5rem}
+
+#pending-browser{margin:16px 0;padding:14px;border:1px solid var(--line);border-radius:16px}#pending-browser summary{cursor:pointer;color:var(--ink);font-weight:600;min-height:44px;align-content:center}.pending-grid>.micro{grid-column:1/-1}.pending-grid article{text-align:center}
+
+#offline-categories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.offline-category{border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}.offline-category h3{font-size:18px;margin:0}.offline-category .micro{margin:6px 0;overflow-wrap:anywhere}.offline-category button{margin-top:auto}@media(max-width:600px){#offline-categories{grid-template-columns:1fr}}
+
+.offline-category .offline-category-actions{margin-top:auto}.offline-category-actions button{margin-top:0}

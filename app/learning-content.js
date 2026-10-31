@@ -1,118 +1,42 @@
-import {WordEditor,wordRows,configWithRows} from './word-editor.js';
-import {speechId,readClip,generateClip} from './generated-audio.js';
-import {freshWeekly,cleanWeekly,completeLocalWords} from './module-content.js';
-import {WORDS,WORD_BY_ID} from './course-content.js';
+import {matchesWord} from './word-aliases.js';
+import {freshWeekly,cleanWeekly} from './module-content.js';
+import {READY_WORDS as WORDS,CATALOG_BY_ID as WORD_BY_ID,PENDING_WORDS,TOPICS} from './course-content.js';
+import {selectedWordIds} from './word-library.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const button=(action,text,extra='',primary=false)=>`<button class="button ${primary?'primary':'secondary'}" data-learning="${action}" ${extra}>${esc(text)}</button>`;
-
-// Owns parent-authored content and word audio. Letter playback stays in the alphabet library.
+const PAGE_SIZE=12;
+const button=(action,text,extra='')=>`<button type="button" class="button secondary small" data-learning="${action}" ${extra}>${text}</button>`;
+const pagination=(prefix,page,count,label='跳转页码')=>{const pages=Math.max(1,Math.ceil(count/PAGE_SIZE));return `<div class="word-pagination"><div class="word-page-controls">${button(`${prefix}-page`,'首页',`data-page="0" ${page===0?'disabled':''}`)}${button(`${prefix}-page`,'上一页',`data-page="${page-1}" ${page===0?'disabled':''}`)}${button(`${prefix}-page`,'下一页',`data-page="${page+1}" ${page===pages-1?'disabled':''}`)}${button(`${prefix}-page`,'末页',`data-page="${pages-1}" ${page===pages-1?'disabled':''}`)}</div><form id="${prefix}-page-form" class="word-page-jump"><span role="status">${count} 个 · ${page+1}/${pages}</span><label for="${prefix}-page-input" class="sr-only">${label}</label><input id="${prefix}-page-input" type="number" inputmode="numeric" min="1" max="${pages}" step="1" required value="${page+1}" aria-label="${label}" ${pages===1?'disabled':''}><button class="button secondary small" type="submit" ${pages===1?'disabled':''}>跳转</button></form></div>`;};
 export class LearningContent {
  constructor({audio,toast,refresh,mastery}){
-  Object.assign(this,{audio,toast,refresh,mastery});this.data=freshWeekly();this.index=0;this.masteryFilter='all';this.token=0;
-  this.generated=new Map();this.generating=false;this.generationMessage='';this.generationFailed=false;
-  try{const saved=localStorage.getItem('abc-module-content-v1')||localStorage.getItem('abc-weekly-v1');if(saved)this.data=cleanWeekly(JSON.parse(saved));}
-  catch{this.toast('学习内容读取失败，请在家长小角重新检查。');}
-  // Enrich saved words in memory; persist only when the parent saves.
-  if(this.data.wordEditorVersion!==1)this.data.words=completeLocalWords(this.data.words).words;
-  this.wordEditor=new WordEditor(this.data);this.saveMessage='';
-  this.ready=this.hydrate().catch(()=>{this.generationMessage='设备存储不可用，音频暂时无法保存。';});
+  Object.assign(this,{audio,toast,refresh,mastery});this.data=freshWeekly();this.query='';this.topic='all';this.page=0;this.pendingQuery='';this.pendingPage=0;this.saveMessage='';
+  try{const raw=localStorage.getItem('abc-module-content-v1')||localStorage.getItem('abc-weekly-v1');if(raw)this.data=cleanWeekly(JSON.parse(raw));}catch{this.toast('学习范围暂时无法读取，请在家长小角重新选择。');}
+  this.ready=Promise.resolve();
  }
- get words(){return wordRows(this.data);}
- get practiceWords(){return this.words.filter(w=>this.masteryFilter==='all'||this.mastery.has(w.word)===(this.masteryFilter==='mastered'));}
- masteryFilters(){return `<div class="mastery-filters" role="group" aria-label="掌握状态筛选">${[['all','全部'],['learning','还在学'],['mastered','已掌握']].map(([id,label])=>button('mastery-filter',label,`data-filter="${id}" aria-pressed="${this.masteryFilter===id}"`)).join('')}</div>`;}
- stop(){this.token++;this.audio.stop();clearTimeout(this.timer);this.cancelDelay?.();this.cancelDelay=null;this.status('已停止');}
- status(text){const el=document.querySelector('#word-play-status');if(el)el.textContent=text;}
- editor(){
-  return `<section class="panel parent-section" id="word-editor" aria-labelledby="word-editor-title"><h2 id="word-editor-title">添加哪些单词</h2><div class="content-editor"><fieldset ${this.generating?'disabled':''}>
-   ${this.wordEditor.html()}
-   <p id="word-save-status" class="micro" role="status">${esc(this.saveMessage)}</p><button class="button secondary small" data-learning="retry-save" ${this.saveFailed?'':'hidden'}>重试保存</button>
-   <div id="word-audio-preparation">${this.audioPreparation()}</div>
-   </fieldset><p id="generation-status" role="status" aria-live="polite">${esc(this.generationMessage)}</p>
-   <p class="micro">添加、编辑和排序会自动保存，到“看图学词 → 家长添加”即可练习。已有英文录音直接使用，准备新发音需生成服务。</p></div></section>`;
+ get words(){return selectedWordIds(this.data).map(id=>({...WORD_BY_ID.get(id),word:id}));}
+ stop(){this.audio.stop();}
+ flush(){return true;}
+ persist(data){try{localStorage.setItem('abc-module-content-v1',JSON.stringify(data));this.data=data;return true;}catch{this.toast('保存失败，已保留原来的学习范围，请重试。');return false;}}
+ matches(){const q=this.query.trim().toLowerCase();return WORDS.filter(w=>(this.topic==='all'||w.topic===this.topic)&&matchesWord(w,q));}
+ editor(){return `<section class="panel parent-section" id="word-editor" aria-labelledby="word-editor-title"><h2 id="word-editor-title">选择学习单词</h2><p class="micro">从词库选择学习范围，释义、例句和英文发音已配齐。选择及排序自动保存。这里只显示已配图的词卡。另有 ${PENDING_WORDS.length} 个词待完善，暂不加入学习范围。</p>${this.pendingBrowser()}<div class="selection-search"><label>搜索词库<input id="selection-query" placeholder="搜索英文或中文" value="${esc(this.query)}"></label><label>图文主题<select id="selection-topic">${Object.entries(TOPICS).map(([id,label])=>`<option value="${id}" ${id===this.topic?'selected':''}>${label}</option>`).join('')}</select></label></div><div id="selection-results">${this.results()}</div><p id="word-save-status" class="micro" role="status">${esc(this.saveMessage)}</p><div id="selection-chosen">${this.chosen()}</div></section>`;}
+ results(){const list=this.matches(),selected=new Set(selectedWordIds(this.data));const pages=Math.max(1,Math.ceil(list.length/PAGE_SIZE));this.page=Math.min(this.page,pages-1);
+ return `<div class="selection-grid">${list.slice(this.page*PAGE_SIZE,(this.page+1)*PAGE_SIZE).map(w=>`<button type="button" data-learning="select-word" data-word="${esc(w.id)}" aria-label="选择 ${esc(w.id)}" aria-pressed="${selected.has(w.id)}">${w.image?`<img src="${w.image}" alt="" width="48" height="48" loading="lazy">`:'<span class="word-context-label">待完善</span>'}<strong>${esc(w.id)}</strong><span>${esc(w.zh)}</span><small>${selected.has(w.id)?'已选择':'选择'}${this.mastery.has(w.id)?' · 已掌握':''}</small></button>`).join('')||'<p>没有匹配的单词，换个关键词试试。</p>'}</div>${pagination('selection',this.page,list.length)}${this.query||this.topic!=='all'?`<div class="button-row">${button('select-matches','选入这些词',list.length?'':'disabled')}${button('remove-matches','取消这些选择',list.length?'':'disabled')}</div>`:''}`;
  }
- audioPreparation(){
-  const missing=this.clipOptions().filter(([key])=>!this.resolve(key));
-  if(!missing.length)return '<p class="micro">已有英文音频可直接播放。</p>';
-  return `<p class="micro">尚缺 ${missing.length} 项英文发音：${missing.map(([,label])=>esc(label)).join('、')}</p>${this.generationUnavailable?'<p class="micro">当前站点未提供生成服务，已有音频仍可使用。</p>':button('generate',this.generating?'正在准备发音…':'准备缺少的发音',this.generating||this.wordEditor.dirty?'disabled':'')}`;
- }
- paintSave(){
-  const status=document.querySelector('#word-save-status');if(status)status.textContent=this.saveMessage;
-  const retry=document.querySelector('[data-learning="retry-save"]');if(retry)retry.hidden=!this.saveFailed;
-  const preparation=document.querySelector('#word-audio-preparation');if(preparation)preparation.innerHTML=this.audioPreparation();
- }
- flush(){
-  clearTimeout(this.saveTimer);
-  if(!this.wordEditor.dirty)return true;
-  try{
-   const data=cleanWeekly(configWithRows(this.data,this.wordEditor.rows));
-   if(!this.persist(data))throw Error('保存失败，请检查设备存储后重试。');
-   this.wordEditor.dirty=false;this.saveFailed=false;this.saveMessage='已保存';
-   document.querySelectorAll('[data-row-status]').forEach(el=>el.textContent='已保存');
-   this.generationMessage='';const generation=document.querySelector('#generation-status');if(generation)generation.textContent='';
-   this.paintSave();return true;
-  }catch(error){this.saveFailed=true;this.saveMessage=error.message;this.paintSave();return false;}
- }
-
- clipOptions(){return this.words.flatMap(w=>[['word:'+w.word,w.word+' 英文'],...(w.sentence?[['sentence:'+w.word,w.word+' 例句']]:[])]);}
-
- request(key){const [kind,value]=key.split(':');if(!['word','sentence'].includes(kind))return null;const w=this.words.find(w=>w.word===value);const text=kind==='sentence'?w?.sentence:value;return text?{kind,text}:null;}
- resolve(key){
-  const request=this.request(key);if(!request)return null;
-  const generated=this.generated.get(speechId(request));if(generated)return {src:generated,repeat:this.data.repeats};
-  const [kind,value]=key.split(':'),w=WORD_BY_ID.get(value);
-  if(w&&kind==='word')return {src:`./assets/audio/${w.audio}.wav`,repeat:this.data.repeats};
-  if(w&&kind==='sentence'&&request.text===w.sentence)return {src:`./assets/audio/sentence-${value}.wav`,repeat:this.data.repeats};
-  return null;
- }
- async play(keys,continuous=false){
-  this.stop();const token=this.token;await this.ready;
-  for(const key of keys){
-   if(token!==this.token)return;const clip=this.resolve(key);
-   if(!clip){this.status('这段声音还没准备好，请家长在设置中补全音频。');return;}
-   const repeats=continuous?clip.repeat:1;
-   for(let n=0;n<repeats;n++){
-    if(token!==this.token)return;this.status(`${key.split(':')[1]} · 第 ${n+1}/${repeats} 遍`);
-    if(!await this.audio.play([{src:clip.src}]))return;if(token!==this.token)return;
-    if(!continuous)continue;
-    this.status('轮到你，慢慢跟着读。');
-    await new Promise(resolve=>{this.cancelDelay=resolve;this.timer=setTimeout(resolve,this.data.gap);});
-   }
-  }
-  if(token===this.token)this.status('');
- }
- async hydrate(){for(const [key] of this.clipOptions()){const request=this.request(key);if(!request)continue;const id=speechId(request);if(this.generated.has(id))continue;const blob=await readClip(id);if(blob)this.generated.set(id,URL.createObjectURL(blob));}}
- generationStatus(text){this.generationMessage=text;const el=document.querySelector('#generation-status');if(el)el.textContent=text;}
- async generate(){
-  if(this.generating)return;this.generating=true;this.generationFailed=false;this.generationUnavailable=false;this.refresh();let done=0,failed=0;const missing=[];let unavailable='';
-  try{
-   await this.hydrate();const entries=this.clipOptions();
-   for(const [key,label] of entries){
-    const request=this.request(key),id=speechId(request);this.generationStatus(`正在准备 ${++done}/${entries.length}：${label}。首次加载可能需要几分钟。`);
-    if(this.resolve(key))continue;
-    if(unavailable){failed++;missing.push(label);continue;}
-    try{const blob=await generateClip(request,AbortSignal.timeout(180000));this.generated.set(id,URL.createObjectURL(blob));}
-    catch(error){failed++;missing.push(label);if(error.code==='SPEECH_UNAVAILABLE'){unavailable=error.message;this.generationUnavailable=true;}}
-   }
-   this.generationStatus(!entries.length?'内容已保存，暂未添加单词。':failed?`文字已保存，已有英文音频仍可播放。尚未准备：${missing.join('、')}。${unavailable||'生成失败，可稍后重试。'}`:'音频已准备好，可以去看图学词了。');
-  }catch(error){failed++;this.generationStatus(error.message);}finally{this.generationFailed=failed>0;this.generating=false;this.refresh();}
- }
- draftChanged(){if(this.wordEditor.dirty){this.saveMessage='保存中…';this.paintSave();}}
- editInput(el,composing=false){
-  this.wordEditor.inputChanged(el);if(!el.dataset.wordField)return;
-  clearTimeout(this.saveTimer);this.draftChanged();if(!composing)this.saveTimer=setTimeout(()=>this.flush(),800);
- }
-
- persist(data){try{localStorage.setItem('abc-module-content-v1',JSON.stringify(data));this.data=data;return true;}catch{this.toast('保存失败，可能是设备空间不足。原有内容未被覆盖。');return false;}}
+ pendingMatches(){return PENDING_WORDS.filter(w=>matchesWord(w,this.pendingQuery.trim().toLowerCase()));}
+ pendingBrowser(){return `<details id="pending-browser"><summary>查看待完善单词（${PENDING_WORDS.length}）</summary><p class="micro">这些词尚未配图，仅供查看，暂时不能选入学习范围。</p><div class="selection-search"><label for="pending-query">搜索待完善单词<input id="pending-query" type="search" placeholder="搜索英文或中文" value="${esc(this.pendingQuery)}"></label></div><div id="pending-results">${this.pendingResults()}</div></details>`;}
+ pendingResults(){const list=this.pendingMatches(),pages=Math.max(1,Math.ceil(list.length/PAGE_SIZE));this.pendingPage=Math.max(0,Math.min(this.pendingPage,pages-1));return `<div class="selection-grid pending-grid">${list.slice(this.pendingPage*PAGE_SIZE,(this.pendingPage+1)*PAGE_SIZE).map(w=>`<article data-pending-word="${esc(w.id)}"><strong>${esc(w.display||w.id)}</strong><span>${esc(w.zh)}</span>${w.aliases.length?`<small>其他写法：${w.aliases.map(esc).join('、')}</small>`:''}</article>`).join('')||'<p class="micro">没有匹配的待完善单词，换个关键词试试。</p>'}</div>${pagination('pending',this.pendingPage,list.length,'待完善页码')}`;}
+ paintPending(){const results=document.querySelector('#pending-results');if(results)results.innerHTML=this.pendingResults();}
+ chosen(){return `<h3>已选 ${this.words.length} 个词</h3><p class="micro">顺序决定“正在学”的练习顺序。已掌握的词保留选择，但不再出现在“正在学”中。待完善词保留原有选择，配图完成后再进入练习。</p><ol class="selected-word-list">${this.words.map((w,i)=>`<li data-selected-word="${esc(w.id)}">${w.image?`<img src="${w.image}" alt="" width="40" height="40" loading="lazy">`:'<span class="word-context-label">待完善</span>'}<span><strong>${esc(w.id)}</strong> · ${esc(w.zh)}${this.mastery.has(w.id)?' <small class="mastery-badge">已掌握</small>':''}</span><div class="word-order-actions">${button('move-word','上移',`data-word="${esc(w.id)}" data-direction="up" aria-label="上移 ${esc(w.id)}" ${i===0?'disabled':''}`)}${button('move-word','下移',`data-word="${esc(w.id)}" data-direction="down" aria-label="下移 ${esc(w.id)}" ${i===this.words.length-1?'disabled':''}`)}${button('remove-word','移除',`data-word="${esc(w.id)}" aria-label="移除 ${esc(w.id)}"`)}</div></li>`).join('')||'<li>还没有选择单词。先从上方词库选几个吧。</li>'}</ol>`;}
+ paint(){const results=document.querySelector('#selection-results');if(results)results.innerHTML=this.results();const chosen=document.querySelector('#selection-chosen');if(chosen)chosen.innerHTML=this.chosen();const status=document.querySelector('#word-save-status');if(status)status.textContent=this.saveMessage;}
+ editInput(el,composing=false){if(el.id==='pending-query'&&!composing){this.pendingQuery=el.value;this.pendingPage=0;this.paintPending();return;}if(el.id==='selection-query'&&!composing){this.query=el.value;this.page=0;this.paint();}}
  async action(el){
-  const a=el.dataset.learning;
-  if(a==='retry-save'){this.flush();return;}
-  if(a==='generate'){if(!this.flush())return;await this.generate();return;}
-  try{
-   if(a==='add-words')this.wordEditor.add();
-   else if(a==='remove-word')this.wordEditor.remove(el.dataset.word);
-   else if(a==='move-word')this.wordEditor.move(el.dataset.word,el.dataset.direction==='up'?-1:1);
-   else return;
-   this.flush();this.wordEditor.paint();this.paintSave();
-  }catch(error){this.toast(error.message);}
+  const a=el.dataset.learning;if(a==='pending-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;this.pendingPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(this.pendingMatches().length/PAGE_SIZE)-1)));this.paintPending();return;}if(a==='selection-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;this.page=Math.max(0,Math.min(page,Math.max(0,Math.ceil(this.matches().length/PAGE_SIZE)-1)));this.paint();return;}
+  let ids=selectedWordIds(this.data);const id=el.dataset.word,index=ids.indexOf(id);
+  if(a==='select-word'&&WORD_BY_ID.get(id)?.image)ids=index<0?[...ids,id]:ids.filter(x=>x!==id);
+  else if(a==='remove-word')ids=ids.filter(x=>x!==id);
+  else if(a==='move-word'){const next=index+(el.dataset.direction==='up'?-1:1);if(index<0||next<0||next>=ids.length)return;[ids[index],ids[next]]=[ids[next],ids[index]];}
+  else if(a==='select-matches')ids=[...new Set([...ids,...this.matches().map(w=>w.id)])];
+  else if(a==='remove-matches'){const remove=new Set(this.matches().map(w=>w.id));ids=ids.filter(id=>!remove.has(id));}
+  else return;
+  this.saveMessage=this.persist({...this.data,selectedWordIds:ids})?'已保存':'保存失败，选择未改变，请重试。';this.paint();
  }
 }
