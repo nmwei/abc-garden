@@ -1,4 +1,4 @@
-import {openParents,unlockParents,addPending,prepareAudio} from './parent-helpers.js';
+import {openParents,unlockParents,addPending} from './parent-helpers.js';
 import {test,expect} from '@playwright/test';
 const send=(page,type,id)=>page.evaluate(async({type,id})=>{const reg=await navigator.serviceWorker.ready;return new Promise(resolve=>{const channel=new MessageChannel();channel.port1.onmessage=e=>{if(e.data.progress!==undefined)return;channel.port1.close();resolve(e.data)};reg.active.postMessage({type,id},[channel.port2]);});},{type,id});
 async function parents(page){await openParents(page,true);await expect(page.locator('#offline-download')).toBeEnabled();}
@@ -23,6 +23,6 @@ test('full download pauses, resumes, deduplicates and works offline',async({page
  expect((await send(page,'DOWNLOAD_PACK','all')).mediaCount).toBe(done.mediaCount);expect((await send(page,'DOWNLOAD_PACK','music')).mediaCount).toBe(done.mediaCount);expect(requests).toHaveLength(0);
  await send(page,'REMOVE_PACK','music');expect((await send(page,'CHECK_OFFLINE')).allReady).toBe(true);
  const duplicateUrls=await page.evaluate(async()=>{const keys=await caches.keys(),urls=(await Promise.all(keys.map(async key=>(await (await caches.open(key)).keys()).map(r=>r.url)))).flat();return urls.filter((u,i)=>urls.indexOf(u)!==i)});expect(duplicateUrls).toEqual([]);
- await context.setOffline(true);await page.goto('/#/words');await page.reload();await unlockParents(page);await page.locator('#word-search').fill('violin');await expect(page.locator('.english-word')).toHaveText('violin');await page.locator('.learning-panel>img').evaluate(img=>img.decode());await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+ await context.setOffline(true);await page.goto('/#/words');await page.locator('[data-filter=all]').click();await page.reload();await page.locator('[data-filter=all]').click();await unlockParents(page);await page.locator('#word-search').fill('violin');await expect(page.locator('.english-word')).toHaveText('violin');await page.locator('.learning-panel>img').evaluate(img=>img.decode());await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
  await page.goto('/assets/audio/gcompris/index.html');await expect(page.locator('.letter')).toHaveCount(26);
 });

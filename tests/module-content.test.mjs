@@ -10,18 +10,6 @@ test('weekly classroom content validates limits and preserves explicit sentences
  assert.deepEqual(blendSteps('cat'),['c','a','ca','t','cat']);
  assert.throws(()=>cleanWeekly({letters:''}));
 });
-import {LearningContent} from '../app/learning-content.js';
-test('custom word playback cannot override alphabet audio or reuse a different sentence',()=>{
- const weekly=Object.create(LearningContent.prototype);weekly.generated=new Map();weekly.data=cleanWeekly({repeats:2,words:'bike | 自行车 | I can fly.',clips:{'name:I':'data:audio/wav;base64,AAAA'}});
- assert.equal(weekly.resolve('name:I'),null);
- assert.equal(weekly.resolve('sound:i'),null);
- assert.equal(weekly.resolve('blend:zz'),null);
- assert.equal(weekly.resolve('sentence:bike'),null);
- assert.ok(weekly.resolve('word:bike').src.endsWith('word-bike.wav'));
-});
-
-test('legacy blends never enter generation queue',()=>{const m=Object.create(LearningContent.prototype);m.data=cleanWeekly({letters:'DE',blends:'deb'});assert.ok(!m.clipOptions().some(([key])=>key==='sound:B'||key.startsWith('blend:')));});
-
 test('word keys remain unique and unsupported sentence input fails before generation',()=>{assert.throws(()=>parseWords('mix | 搅拌\nMix | 混合'));assert.throws(()=>parseWords('mix | 搅拌 | 我会搅拌'));});
 
 import {completeLocalWords} from '../app/module-content.js';

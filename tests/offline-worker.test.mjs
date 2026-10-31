@@ -21,7 +21,7 @@ function worker(){
   if(String(url).endsWith(`/${failId}.wav`))throw Error('network interrupted');
   return new Response(String(url).endsWith(`/${corruptId}.wav`)?bytes.slice(0,20):bytes,{headers:{'Content-Type':'audio/wav'}});
  }});
- return {stores,get replies(){return lastReplies},get requests(){return requests},set fail(id){failId=id},set corrupt(id){corruptId=id},async message(type,id){let task;const replies=[];lastReplies=replies;listeners.get('message')({data:{type,id},ports:[{postMessage:r=>replies.push(r)}],waitUntil:p=>task=p});await task;return replies.at(-1);},async fetch(id,range){const tasks=[];let result;listeners.get('fetch')({request:new Request(`https://garden.test/app/assets/audio/${id}.wav`,{headers:range?{Range:range}:{}}),respondWith:p=>result=p,waitUntil:p=>tasks.push(p)});const response=await result;await Promise.all(tasks);return response;}};
+ return {stores,data,bytes,get replies(){return lastReplies},get requests(){return requests},set fail(id){failId=id},set corrupt(id){corruptId=id},async message(type,id){let task;const replies=[];lastReplies=replies;listeners.get('message')({data:{type,id},ports:[{postMessage:r=>replies.push(r)}],waitUntil:p=>task=p});await task;return replies.at(-1);},async fetch(id,range){const tasks=[];let result;listeners.get('fetch')({request:new Request(`https://garden.test/app/assets/audio/${id}.wav`,{headers:range?{Range:range}:{}}),respondWith:p=>result=p,waitUntil:p=>tasks.push(p)});const response=await result;await Promise.all(tasks);return response;}};
 }
 test('unselected resources evict at 40 MiB and retained ranges use no network',async()=>{
  const w=worker();for(let i=0;i<45;i++)assert.equal((await w.fetch(i)).status,200);
@@ -47,4 +47,17 @@ test('interruption retains verified files and resume only fetches missing files'
 test('corrupt content never counts as complete',async()=>{
  const w=worker();w.corrupt=1;assert.match((await w.message('DOWNLOAD_PACK','a')).error,/不完整/);assert.equal((await w.message('PLAN_PACK','a')).savedCount,1);
  assert.equal((await w.message('CHECK_OFFLINE')).packs.length,0);
+});
+
+test('upgrade reuses only matching legacy media and preserves old downloads until explicit cleanup',async()=>{
+ const w=worker(),base='https://garden.test/app/';
+ const old=JSON.parse(JSON.stringify(w.data));old.resources['./assets/audio/1.wav'].sha256='changed';
+ w.stores.set('abc-garden-old',new Map([[base+'precache.json',new Response(JSON.stringify(old))]]));
+ w.stores.set('abc-garden-old-meta',new Map([[base+'offline-selection',new Response(JSON.stringify(['a']))]]));
+ const media=new Map([0,1].map(i=>[base+`assets/audio/${i}.wav`,new Response(w.bytes,{headers:{'Content-Length':String(w.bytes.length)}})]));w.stores.set('abc-garden-old-media',media);
+ const plan=await w.message('PLAN_PACK','a');assert.equal(plan.savedCount,1);assert.equal(plan.neededBytes,w.bytes.length);
+ const before=w.requests;assert.equal((await w.fetch(0,'bytes=0-1')).status,206);assert.equal(w.requests,before);
+ const state=await w.message('CHECK_OFFLINE');assert.ok(state.pending.includes('a'));assert.ok(w.stores.has('abc-garden-old-media'));
+ await w.message('DOWNLOAD_PACK','a');assert.equal((await w.message('PLAN_PACK','a')).neededBytes,0);
+ await w.message('CLEAR_MEDIA');assert.equal((await w.message('CHECK_OFFLINE')).mediaCount,0);assert.equal(w.stores.has('abc-garden-old-media'),false);
 });

@@ -1,5 +1,6 @@
 // One resource store per build; package membership pins resources without copying them.
 const CACHE='abc-garden-__BUILD_ID__',MEDIA=CACHE+'-media',META=CACHE+'-meta',root=new URL('./',self.location.href);
+const localPreview=['localhost','127.0.0.1','[::1]'].includes(root.hostname)&&new URL(self.location.href).searchParams.get('mode')!=='offline';
 const RECENT_LIMIT=40*1024*1024,RECENT_COUNT=240;
 let localPromise,resourceSpecs,pinnedPromise,manifestPromise,indexPromise,selectionPromise,cacheQueue=Promise.resolve(),download=null,mediaEpoch=0;
 const absolute=file=>new URL(file,root).href;
@@ -8,25 +9,41 @@ const manifest=()=>manifestPromise??=fetch(absolute('precache.json'),{cache:'no-
 const serial=fn=>{const work=cacheQueue.then(fn);cacheQueue=work.catch(()=>{});return work;};
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const data=await manifest(),cache=await caches.open(CACHE);
- await cache.addAll([...data.files.map(absolute),absolute('precache.json')]);await self.skipWaiting();
+ await cache.addAll([...data.files.map(absolute),absolute('precache.json')]);if(localPreview)await self.skipWaiting();
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
- for(const key of await caches.keys())if(key.startsWith('abc-garden-')&&![CACHE,MEDIA,META].includes(key))await caches.delete(key);
+ // Keep previous caches: existing tabs may still use their shell, and media is reused by hash.
+ await resourceIndex();
  await self.clients.claim();
 })()));
 async function localManifest(){return localPromise??=(async()=>{const r=await (await caches.open(CACHE)).match(absolute('precache.json'));return r?await r.json():manifest();})().catch(e=>{localPromise=null;throw e;});}
-async function selections(){return selectionPromise??=(async()=>{const r=await (await caches.open(META)).match(metadataUrl);return new Set(r?await r.json():[]);})().catch(e=>{selectionPromise=null;throw e;});}
+async function selections(){return selectionPromise??=(async()=>{
+ const current=await (await caches.open(META)).match(metadataUrl);if(current)return new Set(await current.json());
+ for(const name of (await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&k.endsWith('-meta')).reverse()){const saved=await (await caches.open(name)).match(metadataUrl);if(saved)return new Set(await saved.json());}
+ return new Set();
+})().catch(e=>{selectionPromise=null;throw e;});}
 async function saveSelections(){pinnedPromise=null;await (await caches.open(META)).put(metadataUrl,new Response(JSON.stringify([...(await selections())]),{headers:{'Content-Type':'application/json'}}));}
+const mediaSources=new Map();
 async function resourceIndex(){return indexPromise??=(async()=>{
- const cache=await caches.open(MEDIA),keys=await cache.keys(),index=new Map();
- for(let i=0;i<keys.length;i+=24)for(const [url,size] of await Promise.all(keys.slice(i,i+24).map(async key=>[key.url,Number((await cache.match(key)).headers.get('Content-Length'))||0])))index.set(url,size);
+ const data=await localManifest(),specs=new Map(Object.entries(data.resources||{}).map(([file,spec])=>[absolute(file),spec])),index=new Map();
+ const names=[MEDIA,...(await caches.keys()).filter(k=>k.startsWith('abc-garden-')&&k.endsWith('-media')&&k!==MEDIA)];
+ for(const name of names){
+  const cache=await caches.open(name);let oldSpecs;
+  if(name!==MEDIA){const saved=await (await caches.open(name.slice(0,-6))).match(absolute('precache.json'));if(!saved)continue;oldSpecs=new Map(Object.entries((await saved.json()).resources||{}).map(([file,spec])=>[absolute(file),spec]));}
+  for(const key of await cache.keys()){
+   if(index.has(key.url))continue;
+   if(oldSpecs){const before=oldSpecs.get(key.url),now=specs.get(key.url);if(!before||!now||before.sha256!==now.sha256||before.bytes!==now.bytes)continue;}
+   const response=await cache.match(key);index.set(key.url,Number(response.headers.get('Content-Length'))||0);mediaSources.set(key.url,name);
+  }
+ }
  return index;
 })().catch(e=>{indexPromise=null;throw e;});}
+async function cachedMedia(url){await resourceIndex();const name=mediaSources.get(url);return name?(await caches.open(name)).match(url):undefined;}
 async function pinnedUrls(){return pinnedPromise??=(async()=>{const data=await localManifest(),selected=await selections();return new Set(data.packs.filter(p=>selected.has(p.id)).flatMap(p=>p.files.map(absolute)));})().catch(e=>{pinnedPromise=null;throw e;});}
 async function trimRecent(){
  const index=await resourceIndex(),pinned=await pinnedUrls(),recent=[...index].filter(([url])=>!pinned.has(url));let bytes=recent.reduce((n,[,size])=>n+size,0),count=recent.length;
  const cache=await caches.open(MEDIA);
- for(const [url,size] of recent){if(bytes<=RECENT_LIMIT&&count<=RECENT_COUNT)break;await cache.delete(url);index.delete(url);bytes-=size;count--;}
+ for(const [url,size] of recent){if(bytes<=RECENT_LIMIT&&count<=RECENT_COUNT)break;await (await caches.open(mediaSources.get(url)||MEDIA)).delete(url);index.delete(url);mediaSources.delete(url);bytes-=size;count--;}
 }
 async function storeResource(url,response,epoch=mediaEpoch){
  const bytes=await response.arrayBuffer(),data=await localManifest();
@@ -42,7 +59,7 @@ async function storeResource(url,response,epoch=mediaEpoch){
   if(epoch!==mediaEpoch)return;
   const cache=await caches.open(MEDIA),index=await resourceIndex();
   // First completed writer wins; concurrent browsing and downloading share this slot.
-  if(!index.has(url)){await cache.put(url,new Response(bytes,{headers}));index.set(url,bytes.byteLength);}
+  if(!index.has(url)){await cache.put(url,new Response(bytes,{headers}));index.set(url,bytes.byteLength);mediaSources.set(url,MEDIA);}
   await trimRecent();
  });
 }
@@ -63,12 +80,13 @@ self.addEventListener('fetch',event=>{
  const request=event.request;if(request.method!=='GET'||!request.url.startsWith(root.href))return;
  const url=fullUrl(request.url),epoch=mediaEpoch;
  if(isMedia(url)){
-  const result=(async()=>{const cached=await (await caches.open(CACHE)).match(url)||await (await caches.open(MEDIA)).match(url);if(cached)return {response:cached};const response=await fetch(url);return {response,store:response.ok&&response.status===200?response.clone():null};})();
+  const result=(async()=>{const cached=await (await caches.open(CACHE)).match(url)||await cachedMedia(url);if(cached)return {response:cached};const response=await fetch(url);return {response,store:response.ok&&response.status===200?response.clone():null};})();
   event.waitUntil(result.then(x=>x.store?storeResource(url,x.store,epoch):null).catch(()=>{}));
   event.respondWith(result.then(x=>withRange(x.response,request.headers.get('Range'))));return;
  }
  event.respondWith((async()=>{
-  const cached=await (await caches.open(CACHE)).match(request,{ignoreSearch:true})||await (await caches.open(MEDIA)).match(url);if(cached)return cached;
+  if(localPreview){try{const fresh=await fetch(request,{cache:'no-store'});if(fresh.ok)return fresh;}catch{}}
+  const cached=await (await caches.open(CACHE)).match(request,{ignoreSearch:true})||await cachedMedia(url);if(cached)return cached;
   try{return await fetch(request);}catch(error){if(request.mode==='navigate'){const fallback=await (await caches.open(CACHE)).match(absolute('./'));if(fallback)return fallback;}throw error;}
  })());
 });
@@ -108,6 +126,7 @@ async function downloadPack(id,port){
  }finally{download=null;}
 }
 self.addEventListener('message',event=>{
+ if(event.data?.type==='APPLY_UPDATE'){event.waitUntil(self.skipWaiting());return;}
  const port=event.ports[0];if(!port)return;
  event.waitUntil((async()=>{try{
   const {type,id}=event.data||{};
@@ -121,7 +140,7 @@ self.addEventListener('message',event=>{
   }
   if(type==='CLEAR_MEDIA'){
    if(download)throw Error('请先暂停下载。');
-   mediaEpoch++;await serial(async()=>{await caches.delete(MEDIA);await caches.delete(META);indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
+   mediaEpoch++;await serial(async()=>{for(const name of await caches.keys())if(name.startsWith('abc-garden-')&&(name.endsWith('-media')||name.endsWith('-meta'))){const cache=await caches.open(name);for(const key of await cache.keys())if(key.url.startsWith(root.href))await cache.delete(key);if(!(await cache.keys()).length)await caches.delete(name);}mediaSources.clear();indexPromise=null;selectionPromise=null;pinnedPromise=null;});port.postMessage(await status());return;
   }
   throw Error('Unknown offline request');
  }catch(error){port.postMessage({error:error.name==='QuotaExceededError'?'设备空间不足。已完成部分已保留，清理空间后可继续下载。':error.message});}})());

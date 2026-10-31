@@ -1,9 +1,9 @@
-import {openParents,unlockParents,addPending,prepareAudio} from './parent-helpers.js';
+import {openParents,unlockParents,addPending} from './parent-helpers.js';
 import {test,expect} from '@playwright/test';
 test('main learning and parent screens fit the device and preserve usable word proportions',async({page},info)=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const fit=async()=>expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
- await page.goto('/');await fit();await page.getByRole('button',{name:'看图学词',exact:true}).click();await fit();
+ await page.goto('/');await fit();await page.getByRole('button',{name:'看图学词',exact:true}).click();await page.locator('[data-filter=all]').click();await fit();
  await expect(page.locator('.word-list button')).toHaveCount(12);
  const browser=await page.locator('.word-browser').boundingBox(),workspace=await page.locator('.word-workspace').boundingBox();
  if(page.viewportSize().width>760){expect(browser.width/workspace.width).toBeGreaterThan(.6);expect(await page.locator('.word-topic-tabs').evaluate(el=>el.scrollWidth<=el.clientWidth)).toBe(true);}

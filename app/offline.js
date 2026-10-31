@@ -1,8 +1,9 @@
+import {watchSiteUpdates} from './site-update.js';
 const mb=n=>(n/1024/1024).toFixed(1);
 export class OfflineLibrary {
- constructor(toast){this.toast=toast;this.state={ready:false,packs:[],recentBytes:0};this.packs=[];this.busy=false;this.message='';this.failed=false;this.warmed=false;this.plan=null;this.progress=null;}
+ constructor(toast,beforeUpdate){this.beforeUpdate=beforeUpdate;this.toast=toast;this.state={ready:false,packs:[],recentBytes:0};this.packs=[];this.busy=false;this.message='';this.failed=false;this.warmed=false;this.plan=null;this.progress=null;}
  get label(){return this.state.ready?(this.state.allReady?'全部学习内容已可离线':'页面已可离线 · 素材按需保存'):this.failed?'离线页面尚未准备好，可先联网使用':'正在准备轻量离线页面…';}
- editor(){return `<section class="panel parent-section" id="parent-tools" aria-labelledby="offline-title"><h2 id="offline-title">离线使用</h2><div><p>出门前下载全部学习内容，断网也能听和学。</p><p id="offline-stats" class="micro">${this.stats()}</p><div class="button-row"><button class="button primary" id="offline-download" data-action="offline-download" ${this.busy||this.state.allReady?'disabled':''}>${this.downloadLabel()}</button><button class="button secondary" id="offline-clear" data-action="offline-clear" ${this.busy?'disabled':''}>清理离线素材</button></div><div id="offline-plan">${this.planHtml()}</div><progress id="offline-bar" aria-label="离线下载进度" max="${this.progress?.totalBytes||1}" value="${this.progress?.doneBytes||0}" ${this.progress?'':'hidden'}></progress><p id="offline-progress" role="status">${this.message}</p><button class="button secondary small" id="offline-cancel" data-action="offline-cancel" ${this.busy&&this.progress?'':'hidden'}>暂停下载</button><p class="micro offline-note">下载时保持页面打开，中断后可以继续，不重复下载。清理素材不会删除掌握记录、添加的单词和自定义音频。</p><section class="offline-help" aria-labelledby="offline-help-title"><h3 id="offline-help-title">离线使用说明</h3><p class="micro">家长添加的词请先准备发音。浏览器清理网站数据或网站更新后，可能需要重新下载；出门前可以检查这里的下载状态。iPad可通过Safari分享菜单“添加到主屏幕”。</p></section></div></section>`;}
+ editor(){return `<section class="panel parent-section" id="parent-tools" aria-labelledby="offline-title"><h2 id="offline-title">离线使用</h2><div><p>出门前下载全部学习内容，断网也能听和学。</p><p id="offline-stats" class="micro">${this.stats()}</p><div class="button-row"><button class="button primary" id="offline-download" data-action="offline-download" ${this.busy||this.state.allReady?'disabled':''}>${this.downloadLabel()}</button><button class="button secondary" id="offline-clear" data-action="offline-clear" ${this.busy?'disabled':''}>清理离线素材</button></div><div id="offline-plan">${this.planHtml()}</div><progress id="offline-bar" aria-label="离线下载进度" max="${this.progress?.totalBytes||1}" value="${this.progress?.doneBytes||0}" ${this.progress?'':'hidden'}></progress><p id="offline-progress" role="status">${this.message}</p><button class="button secondary small" id="offline-cancel" data-action="offline-cancel" ${this.busy&&this.progress?'':'hidden'}>暂停下载</button><p class="micro offline-note">下载时保持页面打开，中断后可以继续，不重复下载。清理素材不会删除掌握记录、学习范围和历史自定义音频。</p><section class="offline-help" aria-labelledby="offline-help-title"><h3 id="offline-help-title">离线使用说明</h3><p class="micro">所选单词使用词库已有发音。浏览器清理网站数据后需要重新下载；网站更新会复用未变化的素材，新增或变化的素材可继续补齐；出门前可以检查这里的下载状态。iPad可通过Safari分享菜单“添加到主屏幕”。</p></section></div></section>`;}
  downloadLabel(){return this.busy?'正在处理…':this.state.allReady?'全部内容已下载':this.state.pending?.includes('all')?'继续下载':'下载全部内容';}
  stats(){const total=this.packs.find(p=>p.id==='all');return `${total?`全部内容约 ${mb(total.bytes)} MiB · `:''}已保存 ${mb(this.state.mediaBytes||0)} MiB。`+(this.state.allReady?'已可完整离线使用。':'平时联网使用，不需要下载。');}
  planHtml(){
@@ -42,7 +43,10 @@ export class OfflineLibrary {
   const wasControlled=!!navigator.serviceWorker.controller;
   navigator.serviceWorker.addEventListener('controllerchange',()=>{this.check();this.warmVisiblePictures();});
   try{
-   await navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'});
+   const testOffline=new URLSearchParams(location.search).has('offline-test');
+   const localPreview=['localhost','127.0.0.1','[::1]'].includes(location.hostname)&&!testOffline;
+   const registration=await navigator.serviceWorker.register(testOffline?'./sw.js?mode=offline':'./sw.js',{scope:'./',updateViaCache:'none'});
+   if(!localPreview)watchSiteUpdates(registration,{beforeUpdate:this.beforeUpdate,busy:()=>this.busy});
    this.packs=await fetch('./offline-packs.json').then(r=>r.json());
    await this.check();if(!wasControlled)await this.warmVisiblePictures();
   }catch{this.failed=true;this.message='离线页面尚未准备好，可以先联网使用。';this.paint();}
