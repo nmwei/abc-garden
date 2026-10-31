@@ -8,6 +8,7 @@ test('space estimation blocks insufficient quota and handles unavailable estimat
  // Browsing the selection grid caches its visible thumbnails, even without a pack download.
  const blocked=await send(page,'CHECK_OFFLINE');expect(blocked.downloading).toBeNull();expect(blocked.selected).toEqual([]);
  const cachedAudio=await page.evaluate(async()=>{const names=(await caches.keys()).filter(n=>n.endsWith('-media'));return (await Promise.all(names.map(async n=>(await (await caches.open(n)).keys()).map(r=>r.url)))).flat().filter(url=>url.endsWith('.wav'));});expect(cachedAudio).toEqual([]);
+ await page.getByRole('button',{name:'暂不下载',exact:true}).click();
  await page.evaluate(()=>Object.defineProperty(navigator.storage,'estimate',{value:async()=>{throw Error('unsupported')},configurable:true}));await page.locator('#offline-download').click();await expect(page.locator('#offline-plan')).toContainText('未提供可用配额');await expect(page.getByRole('button',{name:'确认下载全部内容',exact:true})).toBeEnabled();
  await page.getByRole('button',{name:'暂不下载',exact:true}).click();await expect(page.locator('#offline-plan')).toBeEmpty();
 });
