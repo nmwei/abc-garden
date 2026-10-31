@@ -1,3 +1,4 @@
+import {mountParentHold} from './parent-gate.js';
 import {MasteryStore,MASTERY_KEY} from './mastery.js';
 import {OfflineLibrary} from './offline.js';
 import {LearningContent} from './learning-content.js';
@@ -28,7 +29,11 @@ function toast(text){const target=document.querySelector('#toast');target.textCo
 const btn=(action,label,style='secondary',glyph='',extra='')=>`<button type="button" class="button ${style}" data-action="${action}" ${extra}>${glyph?icon(glyph):''}${label}</button>`;
 const modeLabel=mode=>mode==='both'?'名称和字母音':mode==='sound'?'字母音':'字母名称';
 const glyph=(letter,letterCase)=>letterCase==='lower'?letter.toLowerCase():letter;
-function go(page){learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(libraryActivity!=='listen'&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
+let disposeParentHold=null,letterSaveMessage='';
+function enterParents(){draft=structuredClone(state.settings);go('parents');offline.check();}
+function requestParents(){if(route==='parents')return;follow.stop();learning.stop();audio.stop();showModal('parents');}
+function showModal(kind){modal=kind;renderModal();}
+function go(page){if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(libraryActivity!=='listen'&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
 function header(){return `<header class="topbar"><button class="brand" data-action="home" aria-label="字母小花园首页">${icon('sprout')}<span><strong>字母小花园</strong><small>ABC GARDEN</small></span></button><nav class="nav" aria-label="主导航"><button data-action="library" class="${route==='letters'?'active':''}" ${route==='letters'?'aria-current="page"':''}>${icon('book')}字母朋友</button><button data-action="words" class="${route==='words'?'active':''}" ${route==='words'?'aria-current="page"':''}>看图学词</button><button data-action="learn" class="${route==='learn'?'active':''}" ${route==='learn'?'aria-current="page"':''}>成长地图</button><button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" ${route==='parents'?'aria-current="page"':''}>${icon('heart')}家长小角</button></nav></header>`;}
 function footer(){return `<footer class="footer"><span>小小的尝试，也在悄悄长大。</span><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
 function render(){
@@ -88,20 +93,31 @@ function practice(){
 }
 function parents(){
  if(!draft)draft=structuredClone(state.settings);
- return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>学习哪些字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用保存后的范围。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><div class="button-row">${btn('save-settings','保存字母设置','primary','check')}</div></section>${learning.editor()}${offline.editor()}</div>`;
+ return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>学习哪些字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${offline.editor()}</div>`;
+}
+
+function saveLetters(){
+ if(learning.persist({...learning.data,letters:draft.letters.join(''),letterMode:'name',soundConfirmed:false})){
+  state.settings.letters=selectedLetters();state.settings.mode='name';state.settings.soundConfirmed=false;
+  audio.stop();follow.stop();state.session=null;if(!selectedLetters().includes(libraryLetter))libraryLetter=selectedLetters()[0];letterSaveMessage='已保存';
+ }else{draft.letters=selectedLetters();letterSaveMessage='保存失败，已保留原来的选择，请重试。';}
+ render();
 }
 
 function renderModal(){
+  disposeParentHold?.();disposeParentHold=null;
   document.querySelector('.modal-backdrop')?.remove();
   const backdrop=document.createElement('div');backdrop.className='modal-backdrop';
   let body='';
 
+  if(modal==='parents')body=`<h2 id="modal-title">家长小角</h2><p>请家长长按下面的按钮 1 秒进入。</p><div class="button-row"><button type="button" id="parent-hold" class="button primary parent-hold">长按 1 秒进入</button>${btn('close-modal','取消')}</div>`;
   if(modal==='pause')body=`<h2 id="modal-title">小兔也想歇一歇</h2><p>不着急，准备好了再继续。<br>今天停在这里，也可以。</p><div class="button-row">${btn('close-modal','继续玩','primary','play')}${btn('end-session','今天先到这里','secondary')}</div>`;
   backdrop.innerHTML=`<section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">${body}</section>`;
   app.append(backdrop);backdrop.querySelector('button')?.focus();
+  const hold=backdrop.querySelector('#parent-hold');if(hold)disposeParentHold=mountParentHold(hold,enterParents);
 
 }
-function closeModal(){modal=null;document.querySelector('.modal-backdrop')?.remove();lastTick=Date.now();if(route==='letters'&&libraryActivity!=='listen')document.querySelector('.activity-switch [aria-pressed="true"]')?.focus();}
+function closeModal(){disposeParentHold?.();disposeParentHold=null;modal=null;document.querySelector('.modal-backdrop')?.remove();lastTick=Date.now();if(route==='letters'&&libraryActivity!=='listen')document.querySelector('.activity-switch [aria-pressed="true"]')?.focus();}
 function taskAudio(prompt=true){
   const s=state.session;if(!s)return;
   const t=s.queue[s.index];
@@ -135,7 +151,7 @@ app.addEventListener('click',event=>{
   if(action==='words'){go('words');}
   if(action==='learn'){course.view='map';go('learn');}
 
-  if(action==='parents'){draft=structuredClone(state.settings);go('parents');offline.check();}
+  if(action==='parents'){requestParents();}
   if(action.startsWith('module-')){moduleKind=action.slice(7);if(!['pair','choose'].includes(moduleKind))return;if(newModuleTask()){libraryActivity=moduleKind;go('letters');taskAudio();}}
   if(action==='pause')showModal('pause');
   if(action==='close-modal'){closeModal();}
@@ -159,13 +175,9 @@ app.addEventListener('click',event=>{
     libraryMode=button.dataset.mode;audio.stop();render();
   }
   if(action==='letter'){if(!selectedLetters().includes(button.dataset.letter))return;libraryLetter=button.dataset.letter;render();if(libraryMode==='both'){audio.stop();follow.start([libraryLetter]);}else audio.play([`${libraryMode}-${libraryLetter}`]);}
-  if(action==='range'){draft.letters=[...button.dataset.range];render();}
+  if(action==='range'){draft.letters=[...button.dataset.range];saveLetters();}
   if(action==='toggle-letter'){
-    const l=button.dataset.letter;if(draft.letters.includes(l)){if(draft.letters.length<=2){toast('请至少保留 2 位字母朋友。');return;}draft.letters=draft.letters.filter(x=>x!==l);}else draft.letters=LETTERS.filter(x=>draft.letters.includes(x)||x===l);render();
-  }
-  if(action==='save-settings'){
-    if(draft.letters.length<2){toast('请至少选择 2 个字母。');return;}
-    if(learning.persist({...learning.data,letters:draft.letters.join(''),letterMode:'name',soundConfirmed:false})){state.settings.letters=selectedLetters();state.settings.mode='name';state.settings.soundConfirmed=false;audio.stop();follow.stop();state.session=null;if(!selectedLetters().includes(libraryLetter))libraryLetter=selectedLetters()[0];render();toast('学习范围已保存，展示、播放和练习已同步。');}
+    const l=button.dataset.letter;if(draft.letters.includes(l)){if(draft.letters.length<=2){toast('请至少保留 2 位字母朋友。');return;}draft.letters=draft.letters.filter(x=>x!==l);}else draft.letters=LETTERS.filter(x=>draft.letters.includes(x)||x===l);saveLetters();
   }
   if(action==='offline-download')offline.prepare('all');
   if(action==='offline-confirm')offline.download();
@@ -173,7 +185,9 @@ app.addEventListener('click',event=>{
   if(action==='offline-cancel')offline.cancel();
   if(action==='offline-clear')offline.clear();
 });
-app.addEventListener('input',event=>learning.editInput(event.target));
+app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
+app.addEventListener('compositionend',event=>learning.editInput(event.target));
+app.addEventListener('focusout',event=>{if(event.target.dataset.wordField)learning.flush();});
 app.addEventListener('keydown',event=>{if(event.target.id==='word-add-input'&&event.key==='Enter'&&!event.isComposing){event.preventDefault();learning.action({dataset:{learning:'add-words'}});}});
 app.addEventListener('paste',event=>{if(event.target.id!=='word-add-input')return;const text=event.clipboardData?.getData('text');if(text&&/[\r\n]/.test(text)){event.preventDefault();const el=event.target;el.setRangeText(text.replace(/[\r\n]+/g,', '),el.selectionStart,el.selectionEnd,'end');learning.wordEditor.input=el.value;learning.draftChanged();}});
 document.addEventListener('keydown',event=>{
@@ -184,20 +198,21 @@ document.addEventListener('keydown',event=>{
     if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
   }
 });
-document.addEventListener('visibilitychange',()=>{lastTick=Date.now();if(document.hidden){follow.stop();learning.stop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&libraryActivity!=='listen'&&!modal)showModal('pause');}});
-window.addEventListener('pagehide',()=>{learning.stop();course.leave();audio.stop();save();});
+document.addEventListener('visibilitychange',()=>{lastTick=Date.now();if(document.hidden){learning.flush();follow.stop();learning.stop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&libraryActivity!=='listen'&&!modal)showModal('pause');}});
+window.addEventListener('pagehide',()=>{learning.flush();learning.stop();course.leave();audio.stop();save();});
 function requestedPage(){
  const requested=location.hash.slice(2);
  if(['weekly','modules','learning'].includes(requested)){course.view='words';course.wordSource='custom';return 'words';}
  if(['practice','finish'].includes(requested)){libraryActivity='listen';return 'letters';}
  return ['home','learn','words','letters','parents'].includes(requested)?requested:'home';
 }
-window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents')draft=structuredClone(state.settings);go(page);});
+window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents'&&route!=='parents'){history.replaceState(null,'',`#/${route}`);requestParents();}else go(page);});
 const initialPage=requestedPage();
-route=initialPage;if(route==='parents')draft=structuredClone(state.settings);
+route=initialPage==='parents'?'home':initialPage;
 if(route==='words')course.view='words';
 history.replaceState(null,'',`#/${route}`);
 if(route==='words')course.open('words');else render();
+if(initialPage==='parents')requestParents();
 offline.init();
 
 window.addEventListener('storage',event=>{if(event.key===MASTERY_KEY||event.key===null){mastery.reload();if(route==='words')render();}});

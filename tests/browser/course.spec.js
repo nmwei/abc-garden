@@ -69,7 +69,7 @@ test('custom and builtin word cards share controls without inventing missing con
  await expect(page.locator('.learning-panel>.button-row').first().getByRole('button')).toHaveText(['听单词','听句子']);
  await expect(page.locator('.learning-panel>.sentence')).toHaveText('I like apples.');await expect(page.locator('.word-follow-extra')).not.toHaveAttribute('open');
  await page.getByRole('button',{name:'听单词',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
- await expect(page.locator('#word-play-status')).toContainText('听完啦');
+ await expect(page.locator('.learning-panel .feedback')).toBeEmpty();
  await page.getByRole('button',{name:'换一个朋友',exact:true}).click();await expect(page.locator('.english-word')).toHaveText('zzzzunknown');
  await expect(page.locator('.learning-panel>img')).toHaveCount(0);await expect(page.getByRole('button',{name:'听句子',exact:true})).toHaveCount(0);await expect(page.locator('.learning-panel>.sentence')).toHaveCount(0);
 });

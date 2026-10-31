@@ -78,3 +78,13 @@
 .learning-panel .spell-feedback:empty{display:none}
 .spell-feedback .spell-reference{display:block;font-size:28px;letter-spacing:2px;color:var(--ink);margin:6px 0}
 .spell-feedback small{display:block;font-size:14px;color:#62715d}
+
+.word-picture-placeholder{display:inline-flex;align-items:center;justify-content:center;background:#eff1e8;border-radius:16px;color:#778574;font-size:12px;min-height:48px;aspect-ratio:1}
+
+.parent-hold{position:relative;overflow:hidden;touch-action:none;-webkit-touch-callout:none;user-select:none;isolation:isolate}
+.parent-hold:before{content:'';position:absolute;inset:0;background:#ffffff30;transform:scaleX(0);transform-origin:left;z-index:-1}
+.parent-hold.holding:before{transform:scaleX(1);transition:transform 1s linear}
+.word-order-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.word-order-actions .button{padding:9px 12px;min-height:44px}
+#word-save-status,#word-audio-preparation{margin-top:16px}#word-audio-preparation>.micro{margin-bottom:12px}
+@media(max-width:760px){.parent-word-preview>.word-order-actions{grid-column:1/-1;justify-content:flex-start}}
+[data-learning="retry-save"][hidden]{display:none}

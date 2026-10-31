@@ -1,3 +1,4 @@
+import {openParents,unlockParents,addPending,prepareAudio} from './parent-helpers.js';
 import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
 const ready=page=>expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存');
@@ -23,14 +24,14 @@ test('real typing, caret edits, clearing and Chinese composition preserve the se
  await search.fill('');await expect(page.locator('.word-list button')).toHaveCount(12);
  await search.fill('zzzzunknown');await expect(page.locator('.learning-panel')).toContainText('没有匹配');await expect(page.locator('.english-word')).toHaveCount(0);
 });
-test('single-click parents, topic download, offline practice and cache cleanup preserve parent data',async({page,context})=>{
+test('hold-to-enter parents, topic download, offline practice and cache cleanup preserve parent data',async({page,context})=>{
  test.setTimeout(60000);await page.goto('/#/words');await ready(page);
  await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'AB',words:'apple',repeats:3,gap:500})));
- await page.getByRole('button',{name:'家长小角',exact:true}).click();await expect(page.getByRole('heading',{name:'家长小角',exact:true})).toBeVisible();await expect(page.locator('#hold-parent')).toHaveCount(0);
+ await openParents(page);await expect(page.getByRole('heading',{name:'家长小角',exact:true})).toBeVisible();await expect(page.locator('#hold-parent')).toHaveCount(0);
  await expect(page.locator('#offline-pack')).toHaveCount(0);await downloadPack(page,'music');
  await context.setOffline(true);await page.goto('/#/words');await page.locator('#word-search').fill('violin');await expect(page.locator('.english-word')).toHaveText('violin');await page.locator('.learning-panel>img').evaluate(img=>img.decode());
  for(const name of ['听单词','听句子']){await page.getByRole('button',{name,exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);}
- await page.getByRole('button',{name:'家长小角',exact:true}).click();await page.getByRole('button',{name:'清理离线素材',exact:true}).click();await expect(page.locator('#offline-progress')).toContainText('已清理');
+ await openParents(page);await page.getByRole('button',{name:'清理离线素材',exact:true}).click();await expect(page.locator('#offline-progress')).toContainText('已清理');
  expect(JSON.parse(await page.evaluate(()=>localStorage.getItem('abc-module-content-v1'))).words).toBe('apple');
  const state=await offlineStatus(page);expect(state.packs).toEqual([]);expect(state.recentBytes).toBe(0);
  await page.getByRole('button',{name:'下载全部内容',exact:true}).click();await page.getByRole('button',{name:'确认下载全部内容',exact:true}).click();await expect(page.locator('#offline-download')).toBeEnabled();expect((await offlineStatus(page)).packs).toEqual([]);
@@ -49,5 +50,5 @@ test('upgrade removes the old full-library cache',async({page})=>{
 test('pictures displayed on the first uncontrolled visit become available offline',async({page,context})=>{
  await page.goto('/#/words');await ready(page);
  await expect.poll(async()=>{const state=await offlineStatus(page);return state.recentCount;}).toBeGreaterThan(0);
- await context.setOffline(true);await page.reload();await expect(page.locator('.learning-panel>img')).toHaveJSProperty('complete',true);expect(await page.locator('.learning-panel>img').evaluate(img=>img.naturalWidth)).toBeGreaterThan(0);
+ await context.setOffline(true);await page.reload();await unlockParents(page);await expect(page.locator('.learning-panel>img')).toHaveJSProperty('complete',true);expect(await page.locator('.learning-panel>img').evaluate(img=>img.naturalWidth)).toBeGreaterThan(0);
 });
