@@ -23,7 +23,7 @@ test('word loop uses learning words, reads English then Chinese only, wraps and 
   window.clips=[];window.spoken=[];window.cancelled=0;
   const play=HTMLMediaElement.prototype.play;
   HTMLMediaElement.prototype.play=function(){window.clips.push(this.src.split('/').pop());return play.apply(this,arguments);};
-  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{window.spoken.push(u.text);window.utterance=u;},cancel:()=>{window.cancelled++;}}});
+  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{if(u.volume===0)return;window.spoken.push(u.text);window.utterance=u;},cancel:()=>{window.cancelled++;}}});
  });
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();
  await expect(page.locator('[data-course=word-loop]')).toHaveCount(0);
@@ -60,4 +60,39 @@ test('empty learning selection has no loop control',async({page})=>{
  await page.addInitScript(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:[]})));
  await page.goto('/#/words');await expect(page.locator('[data-filter=learning]')).toHaveAttribute('aria-pressed','true');
  await expect(page.locator('[data-course=word-loop]')).toHaveCount(0);
+});
+
+test('iPad speech is unlocked by the loop tap before asynchronous English playback ends',async({page})=>{
+ await page.addInitScript(()=>{
+  localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['ride','walk','hop','rake','school']}));
+  window.inSpeechGesture=false;window.speechUnlocked=false;window.spoken=[];window.primers=[];window.blockedSpeech=[];
+  window.addEventListener('click',()=>{window.inSpeechGesture=true;},true);
+  window.addEventListener('click',()=>{window.inSpeechGesture=false;});
+  // Model WebKit/iOS: the first speak() outside a user gesture is ignored without an end event.
+  Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{
+   if(window.inSpeechGesture)window.speechUnlocked=true;
+   if(!window.speechUnlocked){window.blockedSpeech.push(u.text);return;}
+   if(u.volume===0){window.primers.push({text:u.text,inGesture:window.inSpeechGesture});return;}
+   window.spoken.push(u.text);window.utterance=u;
+  },cancel:()=>{}}});
+ });
+ await page.goto('/#/words');await page.getByRole('button',{name:'循环听 · 5 个词',exact:true}).click();
+ const words=[['ride','骑'],['walk','走'],['hop','单脚跳；蹦跳'],['rake','用耙子耙'],['school','学校'],['ride','骑']];
+ for(let i=0;i<words.length;i++){
+  const [word,zh]=words[i];
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain(`word-${word}.wav`);
+  await end(page);await expect.poll(()=>page.evaluate(()=>window.spoken.at(-1))).toBe(zh);
+  if(i<words.length-1)await page.evaluate(()=>window.utterance.onend());
+ }
+ expect(await page.evaluate(()=>window.blockedSpeech)).toEqual([]);
+ expect(await page.evaluate(()=>window.primers)).toEqual([{text:'',inGesture:true}]);
+ await page.evaluate(()=>{window.staleSpeechEnd=window.utterance.onend;});
+ await page.getByRole('button',{name:'停止播放',exact:true}).click();
+ await page.evaluate(()=>window.staleSpeechEnd());
+ await expect(page.getByRole('button',{name:'循环听 · 5 个词',exact:true})).toBeVisible();
+ expect(await page.locator('#garden-audio').evaluate(a=>a.paused&&!a.getAttribute('src'))).toBe(true);
+ await page.getByRole('button',{name:'循环听 · 5 个词',exact:true}).click();await end(page);
+ await expect.poll(()=>page.evaluate(()=>window.spoken.length)).toBe(7);
+ await page.getByRole('button',{name:'字母朋友',exact:true}).click();
+ expect(await page.locator('#garden-audio').evaluate(a=>a.paused&&!a.getAttribute('src'))).toBe(true);
 });

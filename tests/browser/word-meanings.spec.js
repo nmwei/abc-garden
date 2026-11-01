@@ -4,7 +4,7 @@ const edit=page=>page.locator('#selection-results').getByRole('button',{name:'�
 test('parent gloss editing persists across reload, drives search and loop speech, and restores default',async({page})=>{
  await page.addInitScript(()=>{
   if(!localStorage.getItem('abc-module-content-v1'))localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['walk']}));
-  window.spoken=[];Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>window.spoken.push(u.text),cancel:()=>{}}});
+  window.spoken=[];Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{if(u.volume!==0)window.spoken.push(u.text);},cancel:()=>{}}});
  });
  await openParents(page,true);await page.locator('#selection-query').fill('walk');await edit(page).click();
  await page.getByLabel('中文释义',{exact:true}).fill('散步');await page.getByRole('button',{name:'保存释义',exact:true}).click();

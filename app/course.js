@@ -61,6 +61,7 @@ export class Course {
   this.masteryFilter='learning';this.topic='all';this.wordQuery='';this.mode='learn';this.review=false;
   this.answered=false;this.assisted=false;this.heard=false;this.options=null;this.message='';
   const words=this.pool();if(!words.length){this.refresh();this.toast('先在家长小角选择一些正在学的单词。');return;}
+  this.audio.unlockSpeech();
   const token=this.followToken;this.wordLoop=true;
   for(let index=0;token===this.followToken&&this.wordLoop;index=(index+1)%words.length){
    this.word=words[index];this.wordPage=Math.floor(index/PAGE_SIZE);this.refresh();
