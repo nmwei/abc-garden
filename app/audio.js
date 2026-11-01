@@ -10,6 +10,15 @@ export class GardenAudio {
     if(this.cancelWait){this.cancelWait();this.cancelWait=null;}
     if(this.current){this.current.pause();this.current.removeAttribute('src');this.current.load();this.current=null;}
   }
+  unlockSpeech(){
+    const speech=globalThis.speechSynthesis;
+    if(!speech||!globalThis.SpeechSynthesisUtterance)return;
+    // iOS unlocks speech only when speak() runs inside the tap, before awaiting audio.
+    try{
+      const silent=new SpeechSynthesisUtterance('');silent.lang='zh-CN';silent.volume=0;
+      speech.speak(silent);speech.cancel();
+    }catch{/* The normal speech step reports unavailable synthesis. */}
+  }
   speak(text){
     if(!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return Promise.resolve(false);
     const speech=globalThis.speechSynthesis,utterance=new SpeechSynthesisUtterance(text);
