@@ -4,7 +4,7 @@ import {openParents,unlockParents} from './parent-helpers.js';
 
 test('parent pagination jumps, follows filters and preserves selected words',async({page},info)=>{
  await openParents(page,true);
- const pager=page.locator('#selection-results .word-pagination'),input=page.locator('#selection-page-input'),cards=page.locator('.selection-grid button'),last=Math.ceil(WORDS.length/12);
+ const pager=page.locator('#selection-results .word-pagination'),input=page.locator('#selection-page-input'),cards=page.locator('.selection-grid [data-learning=select-word]'),last=Math.ceil(WORDS.length/12);
  await expect(pager.getByRole('button',{name:'首页',exact:true})).toBeDisabled();
  await input.fill('123');await input.press('Enter');
  await expect(pager.getByRole('status')).toHaveText(`${WORDS.length} 个 · 123/${last}`);

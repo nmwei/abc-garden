@@ -1,3 +1,4 @@
+import {cleanWordMeanings} from './word-meanings.js';
 export const freshWeekly=()=>({title:'学习内容',letters:'EFGH',repeats:3,gap:1500,blends:'',words:'',clips:{}});
 export function parseBlends(text){
  const rows=text.split('\n').map(s=>s.trim().toLowerCase()).filter(Boolean);
@@ -17,6 +18,7 @@ export function cleanWeekly(raw){
  if(!w.letters)throw Error('请填写学习字母。');
  w.repeats=[1,2,3].includes(Number(w.repeats))?Number(w.repeats):3;
  w.gap=[500,1500,3000].includes(Number(w.gap))?Number(w.gap):1500;
+ w.wordMeanings=cleanWordMeanings(w.wordMeanings);
  const rows=parseWords(w.words);const translations=Object.create(null);
  for(const row of rows){const item=w.sentenceTranslations?.[row.word];if(item&&item.sentence===row.sentence&&typeof item.zh==='string'&&item.zh.length<=160&&!/[|\r\n]/.test(item.zh))translations[row.word]={sentence:row.sentence,zh:item.zh};}
  w.sentenceTranslations=translations;

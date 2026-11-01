@@ -151,3 +151,23 @@
 .word-loop-control .button[aria-pressed=true]{background:#52795c;border-color:#52795c;color:#fffdf6}
 .word-loop-control .micro{font-size:11px;line-height:1.5}
 @media(max-width:760px){.word-loop-control{width:100%;margin-left:0;align-items:center;flex-direction:row;flex-wrap:wrap;gap:8px 12px}}
+
+/* Keep responsive text sizing stable when iPad changes orientation. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.selection-word-card{min-width:0;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:#fffdf6}
+.selection-word-card:has(>[data-learning="select-word"][aria-pressed=true]){background:#e1ecd9;border-color:#52795c}
+.selection-grid .selection-word-card>[data-learning="select-word"]{flex:1;width:100%;border:0;border-radius:15px 15px 0 0;background:transparent}
+.selection-grid .selection-word-card>[data-learning="edit-meaning"]{width:100%;min-height:44px;justify-content:center;padding:10px 8px;font-size:12px;font-weight:400;color:var(--muted);background:transparent;border:0;border-top:1px solid var(--line);border-radius:0 0 15px 15px;text-decoration:none}
+.selection-grid .selection-word-card>[data-learning="edit-meaning"]:hover{color:var(--ink);background:#52795c0a}
+.selection-word-card>button:focus-visible{outline-offset:-4px}
+#word-meaning-dialog{width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid var(--line);border-radius:24px;padding:32px;background:var(--paper);color:var(--ink)}
+#word-meaning-dialog::backdrop{background:#243a3070}
+#word-meaning-dialog h3{margin:0 0 16px;font-size:20px;line-height:1.5;overflow-wrap:anywhere}
+#word-meaning-dialog label{display:block;margin:24px 0 12px}
+#word-meaning-input{width:100%;min-height:48px;font-size:16px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fffdf6;color:inherit}
+#word-meaning-input+.micro{margin-top:18px;line-height:1.8}
+#word-meaning-status{font-size:13px;line-height:1.7;margin-top:12px}
+#word-meaning-status:empty{display:none}
+#word-meaning-dialog .button-row{display:grid;grid-template-columns:1.3fr 1fr .8fr;gap:12px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+#word-meaning-dialog .button{min-height:48px;padding:12px;font-size:14px;box-shadow:none}
+@media(max-width:520px){#word-meaning-dialog{padding:24px}#word-meaning-dialog .button-row{grid-template-columns:1fr 1fr}#word-meaning-dialog button[type="submit"]{grid-column:1/-1}}

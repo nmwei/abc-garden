@@ -4,7 +4,6 @@ import {OfflineLibrary} from './offline.js';
 import {LearningContent} from './learning-content.js';
 import {FollowAlong} from './follow-along.js';
 import {Course,wordPicture} from './course.js';
-import {WORD_BY_ID} from './course-content.js';
 import { LETTERS,byLetter } from './content.js';
 import { STORAGE_KEY,freshState,sanitizeState,shuffle } from './core.js';
 import { icon,gardenArt } from './art.js';
@@ -60,7 +59,7 @@ function playHighlighted(sequence){
   return audio.play(sequence,index=>{if(request===highlightRequest)highlightSound(sequence[index]);}).finally(()=>{if(request===highlightRequest)clearSoundHighlight();});
 }
 function soundGuide(letter){
- return `<div class="letter-sounds" aria-label="当前字母听音方式"><button class="sound-tile" data-action="listen-detail" data-letter="${letter.upper}" data-mode="name" aria-label="听字母名称 ${letter.upper}">${icon('speaker')}<span><strong>听名称</strong><small>/${letter.nameIpa}/</small></span></button><button class="sound-tile" data-action="listen-detail" data-letter="${letter.upper}" data-mode="sound" aria-label="听字母音 ${letter.upper}">${icon('speaker')}<span><strong>听字母音</strong><small>/${letter.ipa}/</small></span></button></div><div id="letter-play-status" role="status" aria-live="polite"></div><div class="letter-example"><span class="micro">例词</span><button class="example-button" data-action="listen-detail" data-letter="${letter.upper}" data-mode="example" aria-label="听示例词 ${letter.example}">${wordPicture(letter.example)}<span>${letter.example}</span><span class="letter-example-meaning">${esc(WORD_BY_ID.get(letter.example)?.zh||'')}</span>${icon('speaker')}</button></div>`;
+ return `<div class="letter-sounds" aria-label="当前字母听音方式"><button class="sound-tile" data-action="listen-detail" data-letter="${letter.upper}" data-mode="name" aria-label="听字母名称 ${letter.upper}">${icon('speaker')}<span><strong>听名称</strong><small>/${letter.nameIpa}/</small></span></button><button class="sound-tile" data-action="listen-detail" data-letter="${letter.upper}" data-mode="sound" aria-label="听字母音 ${letter.upper}">${icon('speaker')}<span><strong>听字母音</strong><small>/${letter.ipa}/</small></span></button></div><div id="letter-play-status" role="status" aria-live="polite"></div><div class="letter-example"><span class="micro">例词</span><button class="example-button" data-action="listen-detail" data-letter="${letter.upper}" data-mode="example" aria-label="听示例词 ${letter.example}">${wordPicture(letter.example)}<span>${letter.example}</span><span class="letter-example-meaning">${esc(learning.word(letter.example)?.zh||'')}</span>${icon('speaker')}</button></div>`;
 }
 function updateFollow(){
  if(route!=='letters')return;
@@ -184,6 +183,7 @@ app.addEventListener('input',event=>learning.editInput(event.target,event.isComp
 app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
 app.addEventListener('submit',event=>{
+ if(event.target.id==='word-meaning-form'){event.preventDefault();learning.saveMeaning(event.target);return;}
  const prefix=({'selection-page-form':'selection','pending-page-form':'pending'})[event.target.id];if(!prefix)return;
  event.preventDefault();const form=event.target;if(!form.reportValidity())return;
  const page=Number(form.querySelector(`#${prefix}-page-input`).value);

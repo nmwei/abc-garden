@@ -19,7 +19,7 @@
 - 当前 26 个字母的名称和基础字母音均来自用户提供的 GK 录音切片，每段保留三遍；字母卡、跟读和辨认共用这些文件，不再提供替换录音入口。
 - 英文例词、故事和对话使用 Kokoro 82M v1.0，`af_heart` 美式女声、0.9 倍语速。中文引导使用 Kokoro 1.1 中文模型、`zf_001` 女声。固定音频随网站分发，无需在 iPad 运行模型。
 - 大小写共用名称和字母音。字母音只是基础参考，Q 为 /kw/、X 为 /ks/，不覆盖全部发音规则；课程和合成音未经教师逐条审核。
-- 所选单词直接使用词库内置的英文单词和例句录音；中文释义和翻译仅显示文字。
+- 所选单词直接使用词库内置的英文单词和例句录音；“循环听”使用英文录音＋设备中文朗读，不读例句。家长可在词库或已选列表中编辑中文释义，也可恢复默认；修改保存在本机，供词卡、中文搜索和循环听共用，例句及其翻译不变。
 
 音频记录见 `assets/audio/sources.json`、`assets/audio/course-sources.json` 和 `assets/audio/gk/imported.json`。模型采用 Apache-2.0 许可：[英文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX)、[中文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.1-zh-ONNX)。模型不随网页分发；第三方素材与用户录音另有来源边界。
 
@@ -229,3 +229,9 @@ B、G 名称改用 Twocs 的真人录音；G 字母音使用 Peter Isotalo 的�
 第一轮为133张新增词卡补充可直接识图的SVG插图、主题及听音找图资格，总计1,301张有图词卡，仍有1,737张待配图。词义、双语例句、音频及已选范围保持原数据。补图映射在`data/vocabulary/picture-mappings.json`，剩余清单在`data/vocabulary/picture-coverage.json`；剩余不代表不能画图。
 
 本轮逐项复核剩余1,737个缺图词，补图389个，现有1,690张有图卡、1,348张需情境设计的词卡。逐词状态与原因见`data/vocabulary/picture-review.json`和`picture-coverage.json`，此分类为模型内容复核，不代表教师认证或剩余词不可视觉化。
+
+### 循环听节奏与个人释义
+
+字母循环和单词循环不再额外插入固定等待，录音原有留白和设备语音启动时间仍会保留；原有“英文连续跟读”的练习间隔独立设置。个人释义以 `abc-module-content-v1.wordMeanings` 按规范单词 ID 保存，只覆盖中文释义，不复制或修改内置词库，不改变选词、例句或掌握记录。取消编辑和保存失败不改变已保存释义；网站更新保留本机配置，清理网站数据后会丢失。
+
+布局固定 `text-size-adjust: 100%`，并通过 viewport 的 `initial-scale=1.0, maximum-scale=1.0, user-scalable=no` 请求限制页面缩放；实际是否执行由浏览器决定。桌面 WebKit 的尺寸切换不等于 iPad 主屏幕模式的旋转验证；反复旋转后是否仍出现缩放累积，需要真机确认。

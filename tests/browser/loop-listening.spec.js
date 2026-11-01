@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 const end=page=>page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
-test('letter loop follows the saved range, wraps and cancels during the gap',async({page})=>{
+test('letter loop follows the saved range, wraps without an added gap and stops',async({page})=>{
  await page.addInitScript(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['apple','cat']})));
  await page.goto('/#/letters');
  await page.getByRole('button',{name:'循环听',exact:true}).click();
@@ -9,7 +9,8 @@ test('letter loop follows the saved range, wraps and cancels during the gap',asy
   await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.src)).toContain(`name-${letter}.wav`);
   await page.locator('#follow-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
   await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.src)).toContain(`sound-${letter}.wav`);
-  await page.locator('#follow-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
+  const next=await page.locator('#follow-audio').evaluate(a=>{a.dispatchEvent(new Event('ended'));return a.src;});
+  expect(next).toContain(`name-${letter==='E'?'F':'E'}.wav`);
  }
  await page.getByRole('button',{name:'停止播放',exact:true}).click();
  await page.waitForTimeout(750);expect(await page.locator('#follow-audio').evaluate(a=>a.paused&&!a.getAttribute('src'))).toBe(true);
@@ -34,7 +35,8 @@ test('word loop uses learning words, reads English then Chinese only, wraps and 
   await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain(`example-${word==='apple'?'A':'C'}.wav`);
   await end(page);await expect.poll(()=>page.evaluate(()=>window.spoken.at(-1))).toBe(zh);
   if(word==='apple'&&(await page.evaluate(()=>window.spoken.length))===3)break;
-  await page.evaluate(()=>window.utterance.onend());
+  await page.evaluate(async()=>{window.utterance.onend();await Promise.resolve();await Promise.resolve();await Promise.resolve();});
+  expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain(`example-${word==='apple'?'C':'A'}.wav`);
  }
  expect(await page.evaluate(()=>window.clips)).toEqual(['example-A.wav','example-C.wav','example-A.wav']);
  await page.getByRole('button',{name:'停止播放',exact:true}).click();expect(await page.evaluate(()=>window.cancelled)).toBeGreaterThan(0);
