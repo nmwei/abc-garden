@@ -1,55 +1,30 @@
 {
-  "total": 3038,
-  "withPictures": 1690,
-  "addedPictures": 522,
+  "total": 3131,
+  "withPictures": 1920,
+  "addedPictures": 752,
+  "contextualPictures": 656,
+  "directPictures": 1264,
   "round": {
-    "reviewed": 1737,
-    "added": 389,
+    "reviewed": 1830,
+    "added": 619,
     "unresolvedDirectPictures": 0,
-    "criteria": "Reviewed against current gloss and example. Objects, observable actions, positions and established visual symbols implemented; remaining entries require contextual teaching design.",
+    "criteria": "Images reviewed against gloss and example. Direct pictures and contextual scenes are tracked separately; contextual scenes do not create picture-quiz evidence.",
     "reviewType": "Model content review and browser visual inspection, not teacher certification."
   },
-  "remainingCount": 1348,
+  "remainingCount": 1211,
   "reasonCounts": {
-    "sentence_context": 96,
-    "comparison_or_context": 398,
+    "comparison_or_context": 357,
     "measurement_or_time": 37,
-    "intent_or_process": 295,
+    "sentence_context": 60,
+    "intent_or_process": 259,
     "content_or_language": 28,
-    "internal_or_abstract": 46,
-    "contextual_concept": 363,
+    "contextual_concept": 347,
+    "internal_or_abstract": 41,
     "technical_explanation": 32,
-    "relationship": 23,
-    "role_or_status": 30
+    "relationship": 22,
+    "role_or_status": 28
   },
   "remainingWithoutPictures": [
-    {
-      "id": "a",
-      "zh": "一（个）；不定冠词",
-      "pos": "限定词",
-      "sentence": "I have a book.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "an",
-      "zh": "一（个）；用于元音开头的读音前",
-      "pos": "限定词",
-      "sentence": "This is an apple.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "about",
-      "zh": "关于",
-      "pos": "介词",
-      "sentence": "This book is about animals.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
     {
       "id": "after",
       "zh": "在……之后",
@@ -87,15 +62,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "all",
-      "zh": "所有的",
-      "pos": "限定词",
-      "sentence": "All the children are here.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "also",
       "zh": "也",
       "pos": "副词",
@@ -114,15 +80,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "and",
-      "zh": "和；并且",
-      "pos": "连词",
-      "sentence": "I have a pen and a book.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "any",
       "zh": "一些；任何",
       "pos": "限定词",
@@ -130,24 +87,6 @@
       "status": "requires_context_design",
       "reasonCode": "sentence_context",
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "at",
-      "zh": "在（某处或某时）",
-      "pos": "介词",
-      "sentence": "We meet at the school gate.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "back",
-      "zh": "回到原处",
-      "pos": "副词",
-      "sentence": "Please come back soon.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "bad",
@@ -231,33 +170,6 @@
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
-      "id": "by",
-      "zh": "乘坐（交通工具）",
-      "pos": "介词",
-      "sentence": "I go to school by bus.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "can",
-      "zh": "能够；会",
-      "pos": "情态动词",
-      "sentence": "I can swim.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "careful",
-      "zh": "小心的；仔细的",
-      "pos": "形容词",
-      "sentence": "Be careful with the hot soup.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "chinese",
       "zh": "中文；中国的",
       "pos": "名词",
@@ -265,24 +177,6 @@
       "status": "requires_context_design",
       "reasonCode": "content_or_language",
       "reason": "要阅读文字内容、语音或了解作品属性才能区分；一本书或纸张不足以说明当前义项。"
-    },
-    {
-      "id": "clever",
-      "zh": "聪明的",
-      "pos": "形容词",
-      "sentence": "The clever dog can open the door.",
-      "status": "requires_context_design",
-      "reasonCode": "internal_or_abstract",
-      "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
-    },
-    {
-      "id": "come",
-      "zh": "来",
-      "pos": "动词",
-      "sentence": "Come and play with us.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "cute",
@@ -310,15 +204,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "do",
-      "zh": "做",
-      "pos": "动词",
-      "sentence": "What do you do after school?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "early",
@@ -384,37 +269,10 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "for",
-      "zh": "给；为了",
-      "pos": "介词",
-      "sentence": "This gift is for you.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "free",
       "zh": "有空的",
       "pos": "形容词",
       "sentence": "Are you free this afternoon?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "get",
-      "zh": "得到；收到",
-      "pos": "动词",
-      "sentence": "I get a new book for my birthday.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "good",
-      "zh": "好的",
-      "pos": "形容词",
-      "sentence": "That is a good idea.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -429,24 +287,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "have",
-      "zh": "有",
-      "pos": "动词",
-      "sentence": "I have two pencils.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "he",
-      "zh": "他（主格）",
-      "pos": "代词",
-      "sentence": "He is my brother.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "helpful",
       "zh": "乐于助人的；有帮助的",
       "pos": "形容词",
@@ -456,37 +296,10 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "her",
-      "zh": "她（宾格）；她的",
-      "pos": "限定词",
-      "sentence": "This is her bag.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "here",
-      "zh": "这里",
-      "pos": "副词",
-      "sentence": "Put your bag here, please.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "him",
       "zh": "他（宾格）",
       "pos": "代词",
       "sentence": "Please give him the ball.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "his",
-      "zh": "他的",
-      "pos": "限定词",
-      "sentence": "His bike is red.",
       "status": "requires_context_design",
       "reasonCode": "sentence_context",
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
@@ -510,15 +323,6 @@
       "reason": "需要时间、量值、单位或日历上下文；静态物件本身不代表该量值含义。"
     },
     {
-      "id": "how",
-      "zh": "怎样；如何",
-      "pos": "副词",
-      "sentence": "How do you make this cake?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "hurry",
       "zh": "赶快；匆忙",
       "pos": "动词",
@@ -526,15 +330,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "i",
-      "zh": "我（主格）",
-      "pos": "代词",
-      "sentence": "I like reading.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "idea",
@@ -591,24 +386,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "keep",
-      "zh": "保持；保留",
-      "pos": "动词",
-      "sentence": "Please keep your room clean.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "know",
-      "zh": "知道；认识",
-      "pos": "动词",
-      "sentence": "I know the answer.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "last",
       "zh": "上一个的",
       "pos": "形容词",
@@ -625,24 +402,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "let",
-      "zh": "让",
-      "pos": "动词",
-      "sentence": "Let me help you.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "like",
-      "zh": "喜欢",
-      "pos": "动词",
-      "sentence": "I like this song.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "live",
@@ -681,15 +440,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "many",
-      "zh": "许多（修饰可数名词）",
-      "pos": "限定词",
-      "sentence": "How many apples do you have?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "maths",
       "zh": "数学（英式用法）",
       "pos": "名词",
@@ -697,24 +447,6 @@
       "status": "requires_context_design",
       "reasonCode": "technical_explanation",
       "reason": "当前义项涉及不可见成分、科学性质、学科或系统，需要标注与解释，不能用相关器材冒充。"
-    },
-    {
-      "id": "may",
-      "zh": "可以；可能",
-      "pos": "情态动词",
-      "sentence": "May I use your pencil?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "me",
-      "zh": "我（宾格）",
-      "pos": "代词",
-      "sentence": "Please come with me.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "meet",
@@ -789,15 +521,6 @@
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
-      "id": "my",
-      "zh": "我的",
-      "pos": "限定词",
-      "sentence": "This is my home.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "name",
       "zh": "名字",
       "pos": "名词",
@@ -811,15 +534,6 @@
       "zh": "从不",
       "pos": "副词",
       "sentence": "I never play on the road.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "new",
-      "zh": "新的",
-      "pos": "形容词",
-      "sentence": "These are my new shoes.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -843,24 +557,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "not",
-      "zh": "不",
-      "pos": "副词",
-      "sentence": "This is not my bag.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "now",
-      "zh": "现在",
-      "pos": "副词",
-      "sentence": "It is time to go now.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "o'clock",
       "zh": "……点钟",
       "pos": "副词",
@@ -868,15 +564,6 @@
       "status": "requires_context_design",
       "reasonCode": "measurement_or_time",
       "reason": "需要时间、量值、单位或日历上下文；静态物件本身不代表该量值含义。"
-    },
-    {
-      "id": "of",
-      "zh": "……的",
-      "pos": "介词",
-      "sentence": "This is a picture of my family.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "off",
@@ -897,60 +584,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "or",
-      "zh": "或者",
-      "pos": "连词",
-      "sentence": "Would you like tea or water?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "our",
-      "zh": "我们的",
-      "pos": "限定词",
-      "sentence": "This is our classroom.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "place",
-      "zh": "地方",
-      "pos": "名词",
-      "sentence": "This is a good place for a picnic.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "please",
-      "zh": "请",
-      "pos": "感叹词",
-      "sentence": "Please open the door.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "safe",
-      "zh": "安全的",
-      "pos": "形容词",
-      "sentence": "This is a safe place to play.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "she",
-      "zh": "她（主格）",
-      "pos": "代词",
-      "sentence": "She is my sister.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "should",
       "zh": "应该",
       "pos": "情态动词",
@@ -964,15 +597,6 @@
       "zh": "所以",
       "pos": "连词",
       "sentence": "It is raining, so we stay inside.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "some",
-      "zh": "一些",
-      "pos": "限定词",
-      "sentence": "Would you like some water?",
       "status": "requires_context_design",
       "reasonCode": "sentence_context",
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
@@ -1041,87 +665,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "that",
-      "zh": "那个",
-      "pos": "代词",
-      "sentence": "That is my bike.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "the",
-      "zh": "这个；那个（定冠词）",
-      "pos": "限定词",
-      "sentence": "Please close the door.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "their",
-      "zh": "他们的；她们的；它们的",
-      "pos": "限定词",
-      "sentence": "The children put away their toys.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "them",
-      "zh": "他们；她们；它们（宾格）",
-      "pos": "代词",
-      "sentence": "I see my friends and wave to them.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "then",
-      "zh": "然后；那时",
-      "pos": "副词",
-      "sentence": "Wash your hands, then eat your lunch.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "there",
-      "zh": "那里",
-      "pos": "副词",
-      "sentence": "Your bag is over there.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "these",
-      "zh": "这些",
-      "pos": "限定词",
-      "sentence": "These apples are sweet.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "they",
-      "zh": "他们；她们；它们（主格）",
-      "pos": "代词",
-      "sentence": "They are my friends.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "this",
-      "zh": "这个",
-      "pos": "代词",
-      "sentence": "This is my favourite book.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "those",
       "zh": "那些",
       "pos": "限定词",
@@ -1138,15 +681,6 @@
       "status": "requires_context_design",
       "reasonCode": "measurement_or_time",
       "reason": "需要时间、量值、单位或日历上下文；静态物件本身不代表该量值含义。"
-    },
-    {
-      "id": "too",
-      "zh": "也；太",
-      "pos": "副词",
-      "sentence": "I like apples too.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "try",
@@ -1185,15 +719,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "want",
-      "zh": "想要",
-      "pos": "动词",
-      "sentence": "I want a glass of water.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "warm",
       "zh": "温暖的",
       "pos": "形容词",
@@ -1203,24 +728,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "way",
-      "zh": "路；方式",
-      "pos": "名词",
-      "sentence": "Can you show me the way to the park?",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "we",
-      "zh": "我们（主格）",
-      "pos": "代词",
-      "sentence": "We are ready to go.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "welcome",
       "zh": "欢迎",
       "pos": "感叹词",
@@ -1228,51 +735,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "what",
-      "zh": "什么",
-      "pos": "代词",
-      "sentence": "What is in your bag?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "when",
-      "zh": "什么时候",
-      "pos": "副词",
-      "sentence": "When does the bus leave?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "where",
-      "zh": "在哪里",
-      "pos": "副词",
-      "sentence": "Where is my pencil?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "which",
-      "zh": "哪一个",
-      "pos": "代词",
-      "sentence": "Which book would you like?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "who",
-      "zh": "谁",
-      "pos": "代词",
-      "sentence": "Who is at the door?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "whose",
@@ -1293,15 +755,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "will",
-      "zh": "将要",
-      "pos": "情态动词",
-      "sentence": "We will go to the zoo tomorrow.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "wish",
       "zh": "希望；祝愿",
       "pos": "动词",
@@ -1311,15 +764,6 @@
       "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
     },
     {
-      "id": "with",
-      "zh": "和……一起；带有",
-      "pos": "介词",
-      "sentence": "I play with my friends.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "wonderful",
       "zh": "精彩的；极好的",
       "pos": "形容词",
@@ -1327,15 +771,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "you",
-      "zh": "你；你们",
-      "pos": "代词",
-      "sentence": "You are my friend.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "young",
@@ -1563,15 +998,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "active",
-      "zh": "活跃的",
-      "pos": "形容词",
-      "sentence": "Tom is more active.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "activity",
       "zh": "活动",
       "pos": "名词",
@@ -1675,15 +1101,6 @@
       "zh": "有利条件",
       "pos": "名词",
       "sentence": "Let's take advantage of the long weekend.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "adventure",
-      "zh": "冒险",
-      "pos": "名词",
-      "sentence": "He is fond of adventure.",
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
@@ -1905,15 +1322,6 @@
       "reason": "需要说明职权、参与关系、年龄或社会身份，单凭外观和通用制服容易误认。"
     },
     {
-      "id": "amazing",
-      "zh": "令人惊叹的",
-      "pos": "形容词",
-      "sentence": "This site is amazing!",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "ambition",
       "zh": "志向",
       "pos": "名词",
@@ -2110,15 +1518,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "appreciate",
-      "zh": "欣赏",
-      "pos": "动词",
-      "sentence": "I appreciate good music.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "approach",
@@ -2364,15 +1763,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "away",
-      "zh": "离开",
-      "pos": "副词",
-      "sentence": "The dog went away.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "awful",
       "zh": "糟糕的",
       "pos": "形容词",
@@ -2472,24 +1862,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "are",
-      "zh": "是（be 的一种形式）",
-      "pos": "动词",
-      "sentence": "Are you at home?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "is",
-      "zh": "是（be 的一种形式）",
-      "pos": "动词",
-      "sentence": "This is my new notebook.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "beauty",
       "zh": "美",
       "pos": "名词",
@@ -2578,15 +1950,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "bet",
-      "zh": "确信",
-      "pos": "动词",
-      "sentence": "I bet you can solve this puzzle.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "better",
@@ -2931,15 +2294,6 @@
       "reason": "需要说明职权、参与关系、年龄或社会身份，单凭外观和通用制服容易误认。"
     },
     {
-      "id": "challenge",
-      "zh": "挑战",
-      "pos": "名词",
-      "sentence": "That's a huge challenge.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
       "id": "chance",
       "zh": "机会",
       "pos": "名词",
@@ -3064,15 +2418,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "citizen",
-      "zh": "公民",
-      "pos": "名词",
-      "sentence": "I'm a citizen of the world.",
-      "status": "requires_context_design",
-      "reasonCode": "role_or_status",
-      "reason": "需要说明职权、参与关系、年龄或社会身份，单凭外观和通用制服容易误认。"
     },
     {
       "id": "claim",
@@ -3201,15 +2546,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "community",
-      "zh": "社区",
-      "pos": "名词",
-      "sentence": "Our community has a small library.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
       "id": "company",
       "zh": "公司",
       "pos": "名词",
@@ -3244,15 +2580,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "complain",
-      "zh": "抱怨",
-      "pos": "动词",
-      "sentence": "Do you wish to complain?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "complete",
@@ -3444,15 +2771,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "content",
-      "zh": "满意的",
-      "pos": "形容词",
-      "sentence": "I'm content with my job.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "contest",
       "zh": "比赛",
       "pos": "名词",
@@ -3561,28 +2879,10 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "could",
-      "zh": "能够",
-      "pos": "情态动词",
-      "sentence": "I could see that.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "council",
       "zh": "议会",
       "pos": "名词",
       "sentence": "You should run for city council.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "country",
-      "zh": "国家",
-      "pos": "名词",
-      "sentence": "I love my country.",
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
@@ -3840,15 +3140,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "decide",
-      "zh": "决定",
-      "pos": "动词",
-      "sentence": "I'll let you decide.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "decision",
       "zh": "决定",
       "pos": "名词",
@@ -3912,15 +3203,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "delicious",
-      "zh": "美味的",
-      "pos": "形容词",
-      "sentence": "The cake is delicious.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "demand",
       "zh": "需求",
       "pos": "名词",
@@ -3964,15 +3246,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "depend",
-      "zh": "依靠",
-      "pos": "动词",
-      "sentence": "Young plants depend on water and sunlight.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "describe",
@@ -4173,15 +3446,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "discover",
-      "zh": "发现",
-      "pos": "动词",
-      "sentence": "Call me if you discover anything.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "discovery",
       "zh": "发现",
       "pos": "名词",
@@ -4225,15 +3489,6 @@
       "status": "requires_context_design",
       "reasonCode": "technical_explanation",
       "reason": "当前义项涉及不可见成分、科学性质、学科或系统，需要标注与解释，不能用相关器材冒充。"
-    },
-    {
-      "id": "distance",
-      "zh": "远处；距离",
-      "pos": "名词",
-      "sentence": "I saw a light in the distance.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
       "id": "distant",
@@ -4351,15 +3606,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "each",
-      "zh": "每个",
-      "pos": "限定词",
-      "sentence": "Each child has a pencil.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "eager",
@@ -4596,15 +3842,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "enough",
-      "zh": "足够",
-      "pos": "副词",
-      "sentence": "Is it large enough?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "entirely",
       "zh": "完全",
       "pos": "副词",
@@ -4630,15 +3867,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "escape",
-      "zh": "逃离",
-      "pos": "动词",
-      "sentence": "I tried to escape.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "especially",
@@ -4875,15 +4103,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "expect",
-      "zh": "预期",
-      "pos": "动词",
-      "sentence": "We expect the train to arrive soon.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "expensive",
       "zh": "昂贵的",
       "pos": "形容词",
@@ -5032,15 +4251,6 @@
       "zh": "假的",
       "pos": "形容词",
       "sentence": "The rumors were false.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "familiar",
-      "zh": "熟悉的",
-      "pos": "形容词",
-      "sentence": "It seems so familiar.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -5397,15 +4607,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "fresh",
-      "zh": "新鲜的",
-      "pos": "形容词",
-      "sentence": "I need fresh air.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "friendship",
       "zh": "友谊",
       "pos": "名词",
@@ -5428,15 +4629,6 @@
       "zh": "基本的",
       "pos": "形容词",
       "sentence": "Respect for law is fundamental to our society.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "funny",
-      "zh": "有趣的",
-      "pos": "形容词",
-      "sentence": "He told a funny story.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -5631,15 +4823,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "grateful",
-      "zh": "感激的",
-      "pos": "形容词",
-      "sentence": "I'm grateful for that.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "gravity",
       "zh": "重力",
       "pos": "名词",
@@ -5746,15 +4929,6 @@
       "status": "requires_context_design",
       "reasonCode": "internal_or_abstract",
       "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
-    },
-    {
-      "id": "has",
-      "zh": "有（have 的第三人称单数）",
-      "pos": "动词",
-      "sentence": "He has a car.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "health",
@@ -5991,15 +5165,6 @@
       "reason": "当前义项涉及不可见成分、科学性质、学科或系统，需要标注与解释，不能用相关器材冒充。"
     },
     {
-      "id": "imagine",
-      "zh": "想象",
-      "pos": "动词",
-      "sentence": "Imagine a garden full of blue flowers.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "immediately",
       "zh": "立即",
       "pos": "副词",
@@ -6052,15 +5217,6 @@
       "status": "requires_context_design",
       "reasonCode": "internal_or_abstract",
       "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
-    },
-    {
-      "id": "improve",
-      "zh": "改善",
-      "pos": "动词",
-      "sentence": "I made efforts to improve my grades.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "inch",
@@ -6225,15 +5381,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "intelligent",
-      "zh": "聪明的",
-      "pos": "形容词",
-      "sentence": "Dolphins are intelligent animals.",
-      "status": "requires_context_design",
-      "reasonCode": "internal_or_abstract",
-      "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
-    },
-    {
       "id": "intend",
       "zh": "打算",
       "pos": "动词",
@@ -6387,24 +5534,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "join",
-      "zh": "加入",
-      "pos": "动词",
-      "sentence": "Will you join us?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "joke",
-      "zh": "玩笑",
-      "pos": "名词",
-      "sentence": "It was just a joke.",
-      "status": "requires_context_design",
-      "reasonCode": "internal_or_abstract",
-      "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
-    },
-    {
       "id": "junior",
       "zh": "初级的",
       "pos": "形容词",
@@ -6475,15 +5604,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "knowledge",
-      "zh": "知识",
-      "pos": "名词",
-      "sentence": "He has a good knowledge of French.",
-      "status": "requires_context_design",
-      "reasonCode": "internal_or_abstract",
-      "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
     },
     {
       "id": "lack",
@@ -6972,15 +6092,6 @@
       "reason": "当前义项涉及不可见成分、科学性质、学科或系统，需要标注与解释，不能用相关器材冒充。"
     },
     {
-      "id": "member",
-      "zh": "成员",
-      "pos": "名词",
-      "sentence": "Every member must attend.",
-      "status": "requires_context_design",
-      "reasonCode": "relationship",
-      "reason": "须通过人物关系或身份背景区分，不能用一个人物头像替代当前词义。"
-    },
-    {
       "id": "membership",
       "zh": "会员资格",
       "pos": "名词",
@@ -7215,15 +6326,6 @@
       "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
     },
     {
-      "id": "more",
-      "zh": "更多",
-      "pos": "代词",
-      "sentence": "Do you want more?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
       "id": "most",
       "zh": "大多数",
       "pos": "限定词",
@@ -7323,15 +6425,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "necessary",
-      "zh": "必要的",
-      "pos": "形容词",
-      "sentence": "I've done everything necessary.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "need",
       "zh": "需要",
       "pos": "动词",
@@ -7339,15 +6432,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "neighborhood",
-      "zh": "街区",
-      "pos": "名词",
-      "sentence": "The neighborhood was silent.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
       "id": "neither",
@@ -7438,15 +6522,6 @@
       "status": "requires_context_design",
       "reasonCode": "sentence_context",
       "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
-    },
-    {
-      "id": "notice",
-      "zh": "注意到",
-      "pos": "动词",
-      "sentence": "Did you notice Tom's hair?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "nowadays",
@@ -7602,15 +6677,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "only",
-      "zh": "只",
-      "pos": "副词",
-      "sentence": "I only want one.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "opera",
       "zh": "歌剧",
       "pos": "名词",
@@ -7627,15 +6693,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "opinion",
-      "zh": "意见",
-      "pos": "名词",
-      "sentence": "I have an opinion.",
-      "status": "requires_context_design",
-      "reasonCode": "internal_or_abstract",
-      "reason": "涉及内在心理、评价或抽象概念，需要情境支持，而非用任意表情或图标代替。"
     },
     {
       "id": "opportunity",
@@ -7710,28 +6767,10 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "organize",
-      "zh": "整理",
-      "pos": "动词",
-      "sentence": "I keep meaning to organize my desk.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "original",
       "zh": "原创的",
       "pos": "形容词",
       "sentence": "That's an original idea.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "other",
-      "zh": "其他的",
-      "pos": "形容词",
-      "sentence": "I made other plans.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -7845,15 +6884,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "part",
-      "zh": "部分",
-      "pos": "名词",
-      "sentence": "That part was easy.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
       "id": "participate",
       "zh": "参加",
       "pos": "动词",
@@ -7948,15 +6978,6 @@
       "zh": "每",
       "pos": "介词",
       "sentence": "How much is the rent per month?",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "perfect",
-      "zh": "完美的",
-      "pos": "形容词",
-      "sentence": "This is the perfect place for our picnic.",
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
@@ -8122,15 +7143,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "plenty",
-      "zh": "大量",
-      "pos": "代词",
-      "sentence": "There's plenty of water.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "plot",
@@ -8322,24 +7334,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "predict",
-      "zh": "预测",
-      "pos": "动词",
-      "sentence": "I can't predict what'll happen.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "prefer",
-      "zh": "更喜欢",
-      "pos": "动词",
-      "sentence": "I prefer cats to dogs.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "prejudice",
       "zh": "偏见",
       "pos": "名词",
@@ -8383,15 +7377,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "pretty",
-      "zh": "漂亮的",
-      "pos": "形容词",
-      "sentence": "What a pretty flower!",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "prevent",
@@ -8466,15 +7451,6 @@
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
-      "id": "problem",
-      "zh": "问题",
-      "pos": "名词",
-      "sentence": "No problem at all!",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
       "id": "procedure",
       "zh": "程序",
       "pos": "名词",
@@ -8491,15 +7467,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "process",
-      "zh": "过程",
-      "pos": "名词",
-      "sentence": "I explained the process to him.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
       "id": "product",
@@ -8601,15 +7568,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "protect",
-      "zh": "保护",
-      "pos": "动词",
-      "sentence": "Trees help protect the soil.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "prove",
       "zh": "证明",
       "pos": "动词",
@@ -8644,15 +7602,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "purpose",
-      "zh": "目的",
-      "pos": "名词",
-      "sentence": "What is the purpose of this tool?",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
       "id": "pursue",
@@ -8698,15 +7647,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "quit",
-      "zh": "停止",
-      "pos": "动词",
-      "sentence": "He decided to quit the game and rest.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "quite",
@@ -8896,15 +7836,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "recognize",
-      "zh": "认出",
-      "pos": "动词",
-      "sentence": "Do you recognize it?",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
       "id": "recognition",
@@ -9186,15 +8117,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "require",
-      "zh": "需要",
-      "pos": "动词",
-      "sentence": "We require your help.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "research",
       "zh": "研究",
       "pos": "名词",
@@ -9222,15 +8144,6 @@
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
     },
     {
-      "id": "respect",
-      "zh": "尊重",
-      "pos": "动词",
-      "sentence": "I respect the elderly.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "respond",
       "zh": "回答",
       "pos": "动词",
@@ -9247,24 +8160,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "responsibility",
-      "zh": "责任",
-      "pos": "名词",
-      "sentence": "Looking after the plants is my responsibility.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "responsible",
-      "zh": "负责的",
-      "pos": "形容词",
-      "sentence": "I'm responsible for that.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "result",
@@ -9771,15 +8666,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "similar",
-      "zh": "相似的",
-      "pos": "形容词",
-      "sentence": "Tom has expressed similar ideas.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "simple",
       "zh": "简单的",
       "pos": "形容词",
@@ -9996,15 +8882,6 @@
       "reason": "须通过人物关系或身份背景区分，不能用一个人物头像替代当前词义。"
     },
     {
-      "id": "soon",
-      "zh": "很快",
-      "pos": "副词",
-      "sentence": "He'll be done soon.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "sore",
       "zh": "酸痛的",
       "pos": "形容词",
@@ -10057,15 +8934,6 @@
       "status": "requires_context_design",
       "reasonCode": "intent_or_process",
       "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "special",
-      "zh": "特别的",
-      "pos": "形容词",
-      "sentence": "It was really special.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "species",
@@ -10624,15 +9492,6 @@
       "status": "requires_context_design",
       "reasonCode": "contextual_concept",
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
-      "id": "than",
-      "zh": "比",
-      "pos": "连词",
-      "sentence": "He's taller than me.",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "theft",
@@ -11373,15 +10232,6 @@
       "reason": "须通过人物关系或身份背景区分，不能用一个人物头像替代当前词义。"
     },
     {
-      "id": "wild",
-      "zh": "野生的",
-      "pos": "形容词",
-      "sentence": "Foxes are wild animals.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
       "id": "wise",
       "zh": "明智的",
       "pos": "形容词",
@@ -11443,15 +10293,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "would",
-      "zh": "会",
-      "pos": "情态动词",
-      "sentence": "What would you do?",
-      "status": "requires_context_design",
-      "reasonCode": "sentence_context",
-      "reason": "语法功能或指代取决于句子和说话者，需要放到具体表达中学习。"
     },
     {
       "id": "yet",
@@ -11562,33 +10403,6 @@
       "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
-      "id": "connect",
-      "zh": "连接",
-      "pos": "动词",
-      "sentence": "Connect the two dots with a line.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "cooperate",
-      "zh": "合作",
-      "pos": "动词",
-      "sentence": "We need to cooperate to finish the project.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "create",
-      "zh": "创造",
-      "pos": "动词",
-      "sentence": "We can create a story together.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
       "id": "creative",
       "zh": "有创造力的",
       "pos": "形容词",
@@ -11641,24 +10455,6 @@
       "status": "requires_context_design",
       "reasonCode": "technical_explanation",
       "reason": "当前义项涉及不可见成分、科学性质、学科或系统，需要标注与解释，不能用相关器材冒充。"
-    },
-    {
-      "id": "encourage",
-      "zh": "鼓励",
-      "pos": "动词",
-      "sentence": "We encourage each other to keep trying.",
-      "status": "requires_context_design",
-      "reasonCode": "intent_or_process",
-      "reason": "当前用法需要区分动作的目的、结果、前后过程或参与者；保留给情境/连续画面设计。"
-    },
-    {
-      "id": "environment",
-      "zh": "环境",
-      "pos": "名词",
-      "sentence": "We can help protect the environment.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
     },
     {
       "id": "era",
@@ -11803,15 +10599,6 @@
       "status": "requires_context_design",
       "reasonCode": "measurement_or_time",
       "reason": "需要时间、量值、单位或日历上下文；静态物件本身不代表该量值含义。"
-    },
-    {
-      "id": "local",
-      "zh": "当地的",
-      "pos": "形容词",
-      "sentence": "We borrowed books from the local library.",
-      "status": "requires_context_design",
-      "reasonCode": "comparison_or_context",
-      "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
     },
     {
       "id": "magic",
@@ -12075,15 +10862,6 @@
       "reason": "需要时间、量值、单位或日历上下文；静态物件本身不代表该量值含义。"
     },
     {
-      "id": "tradition",
-      "zh": "传统",
-      "pos": "名词",
-      "sentence": "Sharing a meal is a family tradition.",
-      "status": "requires_context_design",
-      "reasonCode": "contextual_concept",
-      "reason": "当前义项是类别、事件、社会概念或情境中的含义，需要解释和上下文才能与相关物件区分。"
-    },
-    {
       "id": "ugly",
       "zh": "难看的",
       "pos": "形容词",
@@ -12118,15 +10896,6 @@
       "status": "requires_context_design",
       "reasonCode": "comparison_or_context",
       "reason": "当前义项依赖参照、程度、时间或用法语境；本轮没有用相关物体替代词义。"
-    },
-    {
-      "id": "volunteer",
-      "zh": "志愿者",
-      "pos": "名词",
-      "sentence": "A volunteer showed us around the museum.",
-      "status": "requires_context_design",
-      "reasonCode": "role_or_status",
-      "reason": "需要说明职权、参与关系、年龄或社会身份，单凭外观和通用制服容易误认。"
     },
     {
       "id": "war",

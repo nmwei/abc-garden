@@ -4,6 +4,11 @@ const smallBox=(x,y)=>r(x,y,24,21,'#cfac79',2)+l(x+12,y,x+12,y+21,'#a58b68',2);
 const walk=(x=57,y=31)=>c(x,y,9,'#deb28c')+p(`M${x} ${y+12}L${x-5} ${y+33}L${x-19} ${y+54}M${x-5} ${y+33}L${x+14} ${y+42}L${x+19} ${y+59}`,'none','#87aab6',9)+p(`M${x-1} ${y+16}L${x+12} ${y+24}L${x+25} ${y+18}M${x-1} ${y+16}L${x-14} ${y+24}`,'none','#deb28c',5);
 const scene=(s)=>ground+s;
 export const actions={
+ // One supporting foot and one bent leg distinguish hopping from a two-foot jump.
+ hop:scene(c(62,23,10,'#deb28c')+p('M53 17Q62 7 71 17','#80634d')+c(59,23,1,'#604f43')+c(66,23,1,'#604f43')+p('M60 28Q63 30 66 27','none','#a7755a',1.5)+p('M62 37L58 63','none','#8eafb6',15)+p('M60 43L43 53L35 42M65 43L80 51L91 40','none','#deb28c',5)+p('M58 68L58 91L56 111M63 68L83 80L93 65','none','#6e879d',8)+p('M52 114H65M91 64L99 69','none','#b9856b',6)+p('M23 90Q17 78 25 66M103 92Q110 80 104 69','none','#c8b788',3)+e(59,120,12,2,'#c6c4ae')),
+ // A fan rake touching a pile of leaves shows the verb rather than just the tool.
+ rake:scene(c(33,28,10,'#deb28c')+p('M24 22Q32 11 42 22','#80634d')+p('M35 42L46 65','none','#91b198',15)+p('M44 72L32 111M49 72L60 111','none','#6e879d',8)+p('M27 114H39M55 114H67','none','#b9856b',6)+p('M36 45L51 57L68 58M42 53L52 74L78 73','none','#deb28c',5)+l(58,27,92,103,'#a48960',5)+p('M92 103L72 105L83 115M92 103L84 107L91 118M92 103L96 108L100 118M92 103L107 105L111 114','none','#6b8c98',3)+[[68,111],[80,119],[98,120],[114,104],[109,119],[76,102]].map(([x,y],i)=>p(`M${x-5} ${y}q3 -9 10 -3q-1 7 -10 3Z`,['#c58c5e','#d4aa68','#b3ad7a'][i%3])).join('')),
+
  call:scene(person(62,28,{shirt:'#94b3b2'})+p('M77 59L85 45L77 28','none','#d9ae87',6)+r(73,16,10,27,'#5b7e90',4)),
  talk:scene(person(29,46,{shirt:'#97b2bc'})+person(98,46,{shirt:'#c5a27e'})+r(38,7,50,27,'#bfd6d3',9)+p('M40 27L31 41L53 32Z','#bfd6d3')+[49,63,77].map(x=>c(x,20,2,'#658791')).join('')),
  shout:scene(person(45,46,{shirt:'#96b4b5'})+p('M56 39L87 24L87 58Z','#d7bc86')+p('M96 22L108 14M99 40H116M96 59L110 68','none','#ca9c6c',4)),

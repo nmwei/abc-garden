@@ -1,0 +1,12 @@
+{
+  "word-content": {
+    "text": "content",
+    "phonemes": "kəntˈɛnt",
+    "reason": "Adjective meaning satisfied; the default isolated-word phonemizer selects the noun stress."
+  },
+  "sentence-content": {
+    "text": "I'm content with my job.",
+    "phonemes": "aɪm kəntˈɛnt wɪð maɪ dʒˈɑːb",
+    "reason": "Use the adjective stress for the existing satisfied sense, including its example."
+  }
+}

@@ -5,10 +5,10 @@ test('new direct pictures are complete, credited and have visually distinct quiz
  const groups=new Map();for(const w of WORDS.filter(w=>w.image)){const hash=hashes.get(w.id);if(!groups.has(hash))groups.set(hash,[]);groups.get(hash).push(w);}
  for(const group of groups.values())if(group.some(w=>mappings[w.id]))assert.equal(new Set(group.map(w=>w.emoji)).size,1,group.map(w=>w.id).join(','));
  for(const id of Object.keys(mappings)){
-  const w=WORD_BY_ID.get(id);assert.ok(w.image&&TOPICS[w.topic],id);assert.equal(w.pictureCue,false);assert.ok(credits.some(c=>c.file===`pictures/${id}.svg`&&c.sha256===hashes.get(id)),id);
+  const w=WORD_BY_ID.get(id);assert.ok(w.image&&TOPICS[w.topic],id);assert.equal(w.pictureCue,mappings[id].pictureCue===true);assert.ok(credits.some(c=>c.file===`pictures/${id}.svg`&&c.sha256===hashes.get(id)),id);
   const ctx={word:w,library:()=>({all:WORDS})};Course.prototype.makeOptions.call(ctx);assert.equal(ctx.options.length,3);assert.ok(ctx.options.includes(id));assert.equal(new Set(ctx.options.map(k=>hashes.get(k))).size,3,id);assert.equal(new Set(ctx.options.map(k=>WORD_BY_ID.get(k).pictureGroup)).size,3,id);
  }
- assert.equal(WORDS.length,3038);assert.equal(WORDS.filter(w=>w.image).length,1168+Object.keys(mappings).length);
+ const additions=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk-cards.json',import.meta.url)));assert.equal(WORDS.length,3040+additions.length);assert.equal(WORDS.filter(w=>w.image).length,1168+Object.keys(mappings).length);
 });
 
 test('equivalent spatial and meaning groups cannot compete in one picture question',()=>{

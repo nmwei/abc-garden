@@ -1,0 +1,663 @@
+[
+  {
+    "id": "grasped",
+    "pos": "动词",
+    "zh": "抓住（grasp 的过去式）",
+    "sentence": "She grasped the rope with both hands.",
+    "sentenceZh": "她用双手抓住了绳子。"
+  },
+  {
+    "id": "movement",
+    "pos": "名词",
+    "zh": "移动；动作",
+    "sentence": "I watch the movement of the bird's wings.",
+    "sentenceZh": "我看着鸟翅膀的动作。"
+  },
+  {
+    "id": "exhausted",
+    "pos": "形容词",
+    "zh": "筋疲力尽的",
+    "sentence": "I feel exhausted after the race.",
+    "sentenceZh": "比赛后我感到筋疲力尽。"
+  },
+  {
+    "id": "arrived",
+    "pos": "动词",
+    "zh": "到达了（arrive 的过去式）",
+    "sentence": "We arrived at school.",
+    "sentenceZh": "我们到学校了。"
+  },
+  {
+    "id": "feast",
+    "pos": "名词",
+    "zh": "丰盛的一餐",
+    "sentence": "Our family shares a feast.",
+    "sentenceZh": "我们一家共享丰盛的一餐。"
+  },
+  {
+    "id": "finished",
+    "pos": "动词",
+    "zh": "完成了（finish 的过去式）",
+    "sentence": "I finished my puzzle.",
+    "sentenceZh": "我拼完了拼图。"
+  },
+  {
+    "id": "kneads",
+    "pos": "动词",
+    "zh": "揉捏（knead 的第三人称单数）",
+    "sentence": "She kneads the dough with her hands.",
+    "sentenceZh": "她用手揉面团。"
+  },
+  {
+    "id": "tools",
+    "pos": "名词",
+    "zh": "工具（复数）",
+    "sentence": "We use tools to fix the chair.",
+    "sentenceZh": "我们用工具修椅子。"
+  },
+  {
+    "id": "defeated",
+    "pos": "动词",
+    "zh": "打败了（defeat 的过去式）",
+    "sentence": "Our team defeated the other team.",
+    "sentenceZh": "我们队打败了另一队。"
+  },
+  {
+    "id": "fetch",
+    "pos": "动词",
+    "zh": "去取来",
+    "sentence": "The dog can fetch the ball.",
+    "sentenceZh": "狗会把球取回来。"
+  },
+  {
+    "id": "rumble",
+    "pos": "动词",
+    "zh": "发出隆隆声",
+    "sentence": "I hear thunder rumble in the sky.",
+    "sentenceZh": "我听到天空中雷声隆隆。"
+  },
+  {
+    "id": "materials",
+    "pos": "名词",
+    "zh": "材料（复数）",
+    "sentence": "Paper and wood are useful materials.",
+    "sentenceZh": "纸和木头是有用的材料。"
+  },
+  {
+    "id": "decoration",
+    "pos": "名词",
+    "zh": "装饰品",
+    "sentence": "I hang a star decoration on the wall.",
+    "sentenceZh": "我把一个星形装饰品挂在墙上。"
+  },
+  {
+    "id": "games",
+    "pos": "名词",
+    "zh": "游戏（复数）",
+    "sentence": "We play games together.",
+    "sentenceZh": "我们一起玩游戏。"
+  },
+  {
+    "id": "two",
+    "pos": "数词",
+    "zh": "二；两个",
+    "sentence": "I have two apples.",
+    "sentenceZh": "我有两个苹果。"
+  },
+  {
+    "id": "attaches",
+    "pos": "动词",
+    "zh": "把……固定在（attach 的第三人称单数）",
+    "sentence": "She attaches a photo to the paper.",
+    "sentenceZh": "她把照片贴在纸上。"
+  },
+  {
+    "id": "slender",
+    "pos": "形容词",
+    "zh": "细长的",
+    "sentence": "The plant has a slender stem.",
+    "sentenceZh": "这株植物的茎很细长。"
+  },
+  {
+    "id": "mat",
+    "pos": "名词",
+    "zh": "垫子",
+    "sentence": "The cat sits on the mat.",
+    "sentenceZh": "猫坐在垫子上。"
+  },
+  {
+    "id": "sat",
+    "pos": "动词",
+    "zh": "坐了（sit 的过去式）",
+    "sentence": "He sat on the chair.",
+    "sentenceZh": "他坐在了椅子上。"
+  },
+  {
+    "id": "rules",
+    "pos": "名词",
+    "zh": "规则（复数）",
+    "sentence": "Our rules help us play safely.",
+    "sentenceZh": "我们的规则帮助我们安全地玩耍。"
+  },
+  {
+    "id": "prank",
+    "pos": "名词",
+    "zh": "恶作剧",
+    "sentence": "The toy spider was a silly prank.",
+    "sentenceZh": "那只玩具蜘蛛是个傻乎乎的恶作剧。"
+  },
+  {
+    "id": "one",
+    "pos": "数词",
+    "zh": "一；一个",
+    "sentence": "I have one apple.",
+    "sentenceZh": "我有一个苹果。"
+  },
+  {
+    "id": "exclaimed",
+    "pos": "动词",
+    "zh": "惊呼（exclaim 的过去式）",
+    "sentence": "She exclaimed when she saw the rainbow.",
+    "sentenceZh": "看到彩虹时，她惊呼起来。"
+  },
+  {
+    "id": "routine",
+    "pos": "名词",
+    "zh": "日常惯例",
+    "sentence": "Brushing my teeth is part of my routine.",
+    "sentenceZh": "刷牙是我日常生活的一部分。"
+  },
+  {
+    "id": "ran",
+    "pos": "动词",
+    "zh": "跑了（run 的过去式）",
+    "sentence": "The dog ran to the tree.",
+    "sentenceZh": "狗跑到了树旁。"
+  },
+  {
+    "id": "utensils",
+    "pos": "名词",
+    "zh": "用具；餐具（复数）",
+    "sentence": "We use utensils to eat our lunch.",
+    "sentenceZh": "我们用餐具吃午饭。"
+  },
+  {
+    "id": "remained",
+    "pos": "动词",
+    "zh": "仍然留在（remain 的过去式）",
+    "sentence": "One apple remained in the basket.",
+    "sentenceZh": "篮子里还剩一个苹果。"
+  },
+  {
+    "id": "four",
+    "pos": "数词",
+    "zh": "四；四个",
+    "sentence": "I have four blocks.",
+    "sentenceZh": "我有四块积木。"
+  },
+  {
+    "id": "cultures",
+    "pos": "名词",
+    "zh": "文化（复数）",
+    "sentence": "We learn about different cultures at school.",
+    "sentenceZh": "我们在学校了解不同的文化。"
+  },
+  {
+    "id": "quarrel",
+    "pos": "动词",
+    "zh": "争吵",
+    "sentence": "Please do not quarrel over the toy.",
+    "sentenceZh": "请不要为了玩具争吵。"
+  },
+  {
+    "id": "cot",
+    "pos": "名词",
+    "zh": "小床",
+    "sentence": "The baby sleeps in a cot.",
+    "sentenceZh": "宝宝睡在小床里。"
+  },
+  {
+    "id": "dot",
+    "pos": "名词",
+    "zh": "点",
+    "sentence": "Draw a red dot on the paper.",
+    "sentenceZh": "在纸上画一个红点。"
+  },
+  {
+    "id": "tot",
+    "pos": "名词",
+    "zh": "幼儿",
+    "sentence": "The little tot holds a teddy bear.",
+    "sentenceZh": "那个幼儿抱着一只玩具熊。"
+  },
+  {
+    "id": "harmful",
+    "pos": "形容词",
+    "zh": "有害的",
+    "sentence": "Smoke is harmful to our lungs.",
+    "sentenceZh": "烟对我们的肺有害。"
+  },
+  {
+    "id": "soak",
+    "pos": "动词",
+    "zh": "浸泡",
+    "sentence": "We soak the beans in water.",
+    "sentenceZh": "我们把豆子浸泡在水里。"
+  },
+  {
+    "id": "three",
+    "pos": "数词",
+    "zh": "三；三个",
+    "sentence": "I have three pencils.",
+    "sentenceZh": "我有三支铅笔。"
+  },
+  {
+    "id": "enormous",
+    "pos": "形容词",
+    "zh": "巨大的",
+    "sentence": "The elephant is enormous beside the mouse.",
+    "sentenceZh": "大象在老鼠旁边显得非常巨大。"
+  },
+  {
+    "id": "beneath",
+    "pos": "介词",
+    "zh": "在……下面",
+    "sentence": "The ball is beneath the table.",
+    "sentenceZh": "球在桌子下面。"
+  },
+  {
+    "id": "ten",
+    "pos": "数词",
+    "zh": "十；十个",
+    "sentence": "I can count ten stars.",
+    "sentenceZh": "我能数出十颗星星。"
+  },
+  {
+    "id": "men",
+    "pos": "名词",
+    "zh": "男人（man 的复数）",
+    "sentence": "Two men carry the box.",
+    "sentenceZh": "两个男人抬着箱子。"
+  },
+  {
+    "id": "den",
+    "pos": "名词",
+    "zh": "兽穴",
+    "sentence": "The fox rests in its den.",
+    "sentenceZh": "狐狸在它的洞穴里休息。"
+  },
+  {
+    "id": "seasons",
+    "pos": "名词",
+    "zh": "季节（复数）",
+    "sentence": "We have four seasons in a year.",
+    "sentenceZh": "一年有四个季节。"
+  },
+  {
+    "id": "migrate",
+    "pos": "动词",
+    "zh": "迁徙",
+    "sentence": "Some birds migrate to warmer places.",
+    "sentenceZh": "有些鸟迁徙到更温暖的地方。"
+  },
+  {
+    "id": "drought",
+    "pos": "名词",
+    "zh": "干旱",
+    "sentence": "The soil is dry during a drought.",
+    "sentenceZh": "干旱时土壤是干的。"
+  },
+  {
+    "id": "was",
+    "pos": "动词",
+    "zh": "曾是；当时处于（be 的过去式）",
+    "sentence": "I was at home yesterday.",
+    "sentenceZh": "昨天我在家。"
+  },
+  {
+    "id": "rack",
+    "pos": "名词",
+    "zh": "架子",
+    "sentence": "Put the shoes on the rack.",
+    "sentenceZh": "把鞋放在架子上。"
+  },
+  {
+    "id": "sack",
+    "pos": "名词",
+    "zh": "大袋子",
+    "sentence": "The sack is full of potatoes.",
+    "sentenceZh": "这个大袋子装满了土豆。"
+  },
+  {
+    "id": "stack",
+    "pos": "名词",
+    "zh": "一摞；一叠",
+    "sentence": "I see a stack of books.",
+    "sentenceZh": "我看到一摞书。"
+  },
+  {
+    "id": "appearance",
+    "pos": "名词",
+    "zh": "外表",
+    "sentence": "The rabbit's appearance includes long ears.",
+    "sentenceZh": "兔子的外表特征包括长耳朵。"
+  },
+  {
+    "id": "behavior",
+    "pos": "名词",
+    "zh": "行为",
+    "sentence": "Sharing toys is kind behavior.",
+    "sentenceZh": "分享玩具是友善的行为。"
+  },
+  {
+    "id": "wander",
+    "pos": "动词",
+    "zh": "漫步；游荡",
+    "sentence": "We wander along the garden path.",
+    "sentenceZh": "我们沿着花园小路漫步。"
+  },
+  {
+    "id": "compared",
+    "pos": "动词",
+    "zh": "比较了（compare 的过去式）",
+    "sentence": "We compared the two leaves.",
+    "sentenceZh": "我们比较了这两片叶子。"
+  },
+  {
+    "id": "habitat",
+    "pos": "名词",
+    "zh": "栖息地",
+    "sentence": "A pond is a frog's habitat.",
+    "sentenceZh": "池塘是青蛙的栖息地。"
+  },
+  {
+    "id": "stubborn",
+    "pos": "形容词",
+    "zh": "固执的",
+    "sentence": "The stubborn donkey will not move.",
+    "sentenceZh": "那头固执的驴不肯动。"
+  },
+  {
+    "id": "said",
+    "pos": "动词",
+    "zh": "说了（say 的过去式）",
+    "sentence": "She said hello to me.",
+    "sentenceZh": "她向我问了好。"
+  },
+  {
+    "id": "transportation",
+    "pos": "名词",
+    "zh": "交通运输",
+    "sentence": "Buses and trains are forms of transportation.",
+    "sentenceZh": "公共汽车和火车是交通运输方式。"
+  },
+  {
+    "id": "vehicle",
+    "pos": "名词",
+    "zh": "交通工具",
+    "sentence": "A bus is a vehicle.",
+    "sentenceZh": "公共汽车是一种交通工具。"
+  },
+  {
+    "id": "fierce",
+    "pos": "形容词",
+    "zh": "凶猛的",
+    "sentence": "The fierce tiger shows its teeth.",
+    "sentenceZh": "凶猛的老虎露出了牙齿。"
+  },
+  {
+    "id": "lit",
+    "pos": "动词",
+    "zh": "点亮了（light 的过去式）",
+    "sentence": "Dad lit the candle.",
+    "sentenceZh": "爸爸点亮了蜡烛。"
+  },
+  {
+    "id": "chores",
+    "pos": "名词",
+    "zh": "家务活（复数）",
+    "sentence": "Putting toys away is one of my chores.",
+    "sentenceZh": "收拾玩具是我的家务活之一。"
+  },
+  {
+    "id": "contribute",
+    "pos": "动词",
+    "zh": "贡献；出一份力",
+    "sentence": "We each contribute a block to the tower.",
+    "sentenceZh": "我们每人拿出一块积木来搭塔。"
+  },
+  {
+    "id": "accomplish",
+    "pos": "动词",
+    "zh": "完成；实现",
+    "sentence": "We can accomplish the task together.",
+    "sentenceZh": "我们可以一起完成任务。"
+  },
+  {
+    "id": "hauled",
+    "pos": "动词",
+    "zh": "拖；拉（haul 的过去式）",
+    "sentence": "We hauled the wagon up the hill.",
+    "sentenceZh": "我们把小拖车拉上了山坡。"
+  },
+  {
+    "id": "were",
+    "pos": "动词",
+    "zh": "曾是；当时处于（be 的过去式）",
+    "sentence": "We were at the park yesterday.",
+    "sentenceZh": "昨天我们在公园。"
+  },
+  {
+    "id": "natural resources",
+    "pos": "名词",
+    "zh": "自然资源",
+    "sentence": "Water and trees are natural resources.",
+    "sentenceZh": "水和树木是自然资源。"
+  },
+  {
+    "id": "designs",
+    "pos": "名词",
+    "zh": "图案；设计（复数）",
+    "sentence": "The cloth has colorful designs.",
+    "sentenceZh": "这块布上有彩色图案。"
+  },
+  {
+    "id": "weave",
+    "pos": "动词",
+    "zh": "编织",
+    "sentence": "We weave strips of paper into a mat.",
+    "sentenceZh": "我们用纸条编织垫子。"
+  },
+  {
+    "id": "poke",
+    "pos": "动词",
+    "zh": "轻戳",
+    "sentence": "I poke a hole in the soft clay.",
+    "sentenceZh": "我在软陶泥上轻轻戳了一个洞。"
+  },
+  {
+    "id": "woke",
+    "pos": "动词",
+    "zh": "醒来了（wake 的过去式）",
+    "sentence": "I woke when the sun came up.",
+    "sentenceZh": "太阳升起时我醒来了。"
+  },
+  {
+    "id": "spoke",
+    "pos": "动词",
+    "zh": "说了话（speak 的过去式）",
+    "sentence": "She spoke to her friend.",
+    "sentenceZh": "她和朋友说了话。"
+  },
+  {
+    "id": "ragged",
+    "pos": "形容词",
+    "zh": "破旧的；破烂的",
+    "sentence": "The old shirt is ragged.",
+    "sentenceZh": "那件旧衬衫破破烂烂的。"
+  },
+  {
+    "id": "marvel",
+    "pos": "动词",
+    "zh": "感到惊叹",
+    "sentence": "We marvel at the bright stars.",
+    "sentenceZh": "我们对明亮的星星感到惊叹。"
+  },
+  {
+    "id": "words",
+    "pos": "名词",
+    "zh": "单词（复数）",
+    "sentence": "I can read the words in my book.",
+    "sentenceZh": "我会读书里的单词。"
+  },
+  {
+    "id": "endless",
+    "pos": "形容词",
+    "zh": "无尽的",
+    "sentence": "The road seems endless.",
+    "sentenceZh": "这条路似乎没有尽头。"
+  },
+  {
+    "id": "does",
+    "pos": "助动词",
+    "zh": "用于第三人称单数疑问句",
+    "sentence": "Does she like apples?",
+    "sentenceZh": "她喜欢苹果吗？"
+  },
+  {
+    "id": "first",
+    "pos": "序数词",
+    "zh": "第一",
+    "sentence": "The red car is first in line.",
+    "sentenceZh": "红色小汽车排在第一。"
+  },
+  {
+    "id": "wisely",
+    "pos": "副词",
+    "zh": "明智地",
+    "sentence": "We use water wisely and turn off the tap.",
+    "sentenceZh": "我们明智地用水，把水龙头关好。"
+  },
+  {
+    "id": "peep",
+    "pos": "动词",
+    "zh": "窥看；偷看",
+    "sentence": "I peep through a small gap in the door.",
+    "sentenceZh": "我从小门缝里往外看。"
+  },
+  {
+    "id": "beep",
+    "pos": "名词",
+    "zh": "嘟嘟声",
+    "sentence": "The toy car makes a beep.",
+    "sentenceZh": "玩具车发出嘟嘟声。"
+  },
+  {
+    "id": "observe-watch",
+    "pos": "动词",
+    "zh": "仔细观察",
+    "sentence": "We observe the butterfly on the leaf.",
+    "sentenceZh": "我们仔细观察叶子上的蝴蝶。",
+    "display": "observe",
+    "spoken": "observe"
+  },
+  {
+    "id": "guard-protect",
+    "pos": "动词",
+    "zh": "守卫；保护",
+    "sentence": "The dog can guard the sheep.",
+    "sentenceZh": "狗会守卫羊群。",
+    "display": "guard",
+    "spoken": "guard"
+  },
+  {
+    "id": "saw-see",
+    "pos": "动词",
+    "zh": "看见了（see 的过去式）",
+    "sentence": "I saw a bird yesterday.",
+    "sentenceZh": "昨天我看见了一只鸟。",
+    "display": "saw",
+    "spoken": "saw"
+  },
+  {
+    "id": "raise-animals",
+    "pos": "动词",
+    "zh": "饲养",
+    "sentence": "The farmers raise chickens.",
+    "sentenceZh": "农民饲养鸡。",
+    "display": "raise",
+    "spoken": "raise"
+  },
+  {
+    "id": "plant-seed",
+    "pos": "动词",
+    "zh": "种植",
+    "sentence": "We plant a seed in the soil.",
+    "sentenceZh": "我们把一颗种子种在土里。",
+    "display": "plant",
+    "spoken": "plant"
+  },
+  {
+    "id": "develop-grow",
+    "pos": "动词",
+    "zh": "生长；发育",
+    "sentence": "The roots develop as the plant grows.",
+    "sentenceZh": "随着植物生长，根也发育起来。",
+    "display": "develop",
+    "spoken": "develop"
+  },
+  {
+    "id": "spot-see",
+    "pos": "动词",
+    "zh": "发现；看见",
+    "sentence": "I can spot a bird in the tree.",
+    "sentenceZh": "我能发现树上的一只鸟。",
+    "display": "spot",
+    "spoken": "spot"
+  },
+  {
+    "id": "train-pet",
+    "pos": "动词",
+    "zh": "训练",
+    "sentence": "We train our dog to sit.",
+    "sentenceZh": "我们训练狗坐下。",
+    "display": "train",
+    "spoken": "train"
+  },
+  {
+    "id": "social-friendly",
+    "pos": "形容词",
+    "zh": "喜欢群居的；爱交往的",
+    "sentence": "Dolphins are social animals.",
+    "sentenceZh": "海豚是喜欢群居的动物。",
+    "display": "social",
+    "spoken": "social"
+  },
+  {
+    "id": "sort-group",
+    "pos": "动词",
+    "zh": "分类",
+    "sentence": "We sort the blocks by color.",
+    "sentenceZh": "我们按颜色给积木分类。",
+    "display": "sort",
+    "spoken": "sort"
+  },
+  {
+    "id": "bit-bite",
+    "pos": "动词",
+    "zh": "咬了（bite 的过去式）",
+    "sentence": "The rabbit bit the carrot.",
+    "sentenceZh": "兔子咬了胡萝卜。",
+    "display": "bit",
+    "spoken": "bit"
+  },
+  {
+    "id": "fit-healthy",
+    "pos": "形容词",
+    "zh": "健康的",
+    "sentence": "Running helps me stay fit.",
+    "sentenceZh": "跑步帮助我保持健康。",
+    "display": "fit",
+    "spoken": "fit"
+  }
+]

@@ -10,22 +10,23 @@ const words=rows.map(([id,zh,sentence,sentenceZh,...extra])=>{
  seen.add(id);return {id,pos:pos.get(id),display:display[id]||id,spoken:speech[id]||display[id]||id,zh,sentence,sentenceZh,topic:null,image:null,pictureCue:true,audio:`word-${id}`,contentSource:'primary-context-v1'};
 });
 const extended=JSON.parse(await readFile(new URL('../data/vocabulary/extended-context.json',import.meta.url),'utf8'));
+const curriculum=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk-cards.json',import.meta.url),'utf8'));
 const targets=JSON.parse(await readFile(new URL('../data/vocabulary/targets.json',import.meta.url),'utf8'));
-for(const row of extended){
+for(const row of [...extended,...curriculum]){
  const {id,zh,pos,sentence,sentenceZh,attribution}=row;
  if(![id,zh,pos,sentence,sentenceZh].every(v=>typeof v==='string'&&v.trim())||!/^[a-z][a-z '-]*$/.test(id)||seen.has(id))throw Error(`Invalid extended word: ${id}`);
  if(attribution&&!/^CC-BY 2\.0 \(France\) Attribution: tatoeba\.org #\d+ \(.+\) & #\d+ \(.+\)$/.test(attribution.credit))throw Error(`Invalid sentence credit: ${id}`);
  seen.add(id);
  const targetLabel=targets[id]?.display;
  const label=row.display||(targetLabel?.toLowerCase()===id?targetLabel:id);
- words.push({id,zh,pos,sentence,sentenceZh,display:label,spoken:row.spoken||label,topic:null,image:null,pictureCue:true,audio:`word-${id}`,contentSource:'extended-context-v1',...(attribution?{sentenceCredit:attribution.credit,sentenceAdapted:attribution.adapted}:{})});
+ words.push({id,zh,pos,sentence,sentenceZh,display:label,spoken:row.spoken||label,topic:null,image:null,pictureCue:true,audio:`word-${id}`,contentSource:curriculum.includes(row)?'wonders-gk-v1':'extended-context-v1',...(attribution?{sentenceCredit:attribution.credit,sentenceAdapted:attribution.adapted}:{})});
 }
 const pictures=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url),'utf8'));
 const topics=new Set('food animals home school clothes body people nature travel sports play music places actions feelings colors'.split(' '));
 for(const [id,picture] of Object.entries(pictures)){
  const word=words.find(w=>w.id===id);
  if(!word||!topics.has(picture.topic)||!picture.emoji)throw Error(`Invalid picture mapping: ${id}`);
- Object.assign(word,{topic:picture.topic,emoji:picture.emoji,image:`./assets/pictures/${id}.svg`,pictureCue:false});
+ Object.assign(word,{topic:picture.topic,emoji:picture.emoji,image:`./assets/pictures/${id}.svg`,pictureCue:picture.pictureCue===true});
 }
 await writeFile(new URL('../app/context-words.js',import.meta.url),'// Generated from data/vocabulary context sources. See docs/vocabulary-content.md for credits and review limits.\nexport const CONTEXT_WORDS='+JSON.stringify(words,null,1)+';\n');
 console.log(`Compiled ${words.length} contextual word cards.`);

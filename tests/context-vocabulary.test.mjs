@@ -6,15 +6,16 @@ import {CONTEXT_WORDS} from '../app/context-words.js';
 import {sentenceCreditDetails} from '../app/word-card.js';
 import {parseWords} from '../app/module-content.js';
 test('new cards fill primary headwords without replacing the original catalog or inventing picture questions',async()=>{
+ const mappings=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url)));
  const primary=JSON.parse(await readFile(new URL('../data/vocabulary/primary-2022.json',import.meta.url)));
  assert.equal(WORDS.filter(w=>!w.contentSource).length,1168);
  for(const row of primary)assert.ok(row.entry.split('/').some(id=>WORD_BY_ID.has(id.toLowerCase())),row.entry);
- for(const word of CONTEXT_WORDS){assert.ok(word.sentence&&word.sentenceZh&&word.zh&&word.pos);if(!word.image){assert.equal(word.pictureCue,true);assert.equal(word.topic,null);}else{assert.equal(word.pictureCue,false);assert.ok(word.topic&&word.emoji);}}
+ for(const word of CONTEXT_WORDS){assert.ok(word.sentence&&word.sentenceZh&&word.zh&&word.pos);if(!word.image){assert.equal(word.pictureCue,true);assert.equal(word.topic,null);}else{assert.equal(word.pictureCue,mappings[word.id]?.pictureCue===true);assert.ok(word.topic&&word.emoji);}}
  assert.equal(WORD_BY_ID.get('i').display,'I');assert.equal(WORD_BY_ID.get('mr').spoken,'Mister');
 });
 test('expanded vocabulary has concrete paired examples, example-specific glosses and retained attribution',async()=>{
  const rows=JSON.parse(await readFile(new URL('../data/vocabulary/extended-context.json',import.meta.url)));
- assert.equal(rows.length,1644);
+ assert.equal(rows.length,1646);
  assert.ok(WORDS.length>=3000);
  for(const row of rows){
   const word=WORD_BY_ID.get(row.id);

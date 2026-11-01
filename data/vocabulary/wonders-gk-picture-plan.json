@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "i",
+    "scene": "i",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "我（主格）",
+    "sentence": "I like reading."
+  },
+  {
+    "id": "can",
+    "scene": "can",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "能够；会",
+    "sentence": "I can swim."
+  },
+  {
+    "id": "problem",
+    "scene": "problem",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "问题",
+    "sentence": "No problem at all!"
+  },
+  {
+    "id": "grasped",
+    "scene": "grasped",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "抓住（grasp 的过去式）",
+    "sentence": "She grasped the rope with both hands."
+  },
+  {
+    "id": "escape",
+    "scene": "escape",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "逃离",
+    "sentence": "I tried to escape."
+  },
+  {
+    "id": "the",
+    "scene": "the",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "这个；那个（定冠词）",
+    "sentence": "Please close the door."
+  },
+  {
+    "id": "adventure",
+    "scene": "adventure",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "冒险",
+    "sentence": "He is fond of adventure."
+  },
+  {
+    "id": "movement",
+    "scene": "movement",
+    "topic": "sports",
+    "pictureCue": true,
+    "zh": "移动；动作",
+    "sentence": "I watch the movement of the bird's wings."
+  },
+  {
+    "id": "exhausted",
+    "scene": "exhausted",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "筋疲力尽的",
+    "sentence": "I feel exhausted after the race."
+  },
+  {
+    "id": "arrived",
+    "scene": "arrived",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "到达了（arrive 的过去式）",
+    "sentence": "We arrived at school."
+  },
+  {
+    "id": "we",
+    "scene": "we",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "我们（主格）",
+    "sentence": "We are ready to go."
+  },
+  {
+    "id": "feast",
+    "scene": "feast",
+    "topic": "food",
+    "pictureCue": true,
+    "zh": "丰盛的一餐",
+    "sentence": "Our family shares a feast."
+  },
+  {
+    "id": "finished",
+    "scene": "finished",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "完成了（finish 的过去式）",
+    "sentence": "I finished my puzzle."
+  },
+  {
+    "id": "kneads",
+    "scene": "kneads",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "揉捏（knead 的第三人称单数）",
+    "sentence": "She kneads the dough with her hands."
+  },
+  {
+    "id": "will",
+    "scene": "will",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "将要",
+    "sentence": "We will go to the zoo tomorrow."
+  },
+  {
+    "id": "tools",
+    "scene": "tools",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "工具（复数）",
+    "sentence": "We use tools to fix the chair."
+  },
+  {
+    "id": "discover",
+    "scene": "discover",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "发现",
+    "sentence": "Call me if you discover anything."
+  },
+  {
+    "id": "defeated",
+    "scene": "defeated",
+    "topic": "sports",
+    "pictureCue": true,
+    "zh": "打败了（defeat 的过去式）",
+    "sentence": "Our team defeated the other team."
+  },
+  {
+    "id": "fetch",
+    "scene": "fetch",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "去取来",
+    "sentence": "The dog can fetch the ball."
+  },
+  {
+    "id": "rumble",
+    "scene": "rumble",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "发出隆隆声",
+    "sentence": "I hear thunder rumble in the sky."
+  },
+  {
+    "id": "there",
+    "scene": "there",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "那里",
+    "sentence": "Your bag is over there."
+  },
+  {
+    "id": "our",
+    "scene": "our",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "我们的",
+    "sentence": "This is our classroom."
+  },
+  {
+    "id": "a",
+    "scene": "a",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "一（个）；不定冠词",
+    "sentence": "I have a book."
+  },
+  {
+    "id": "materials",
+    "scene": "materials",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "材料（复数）",
+    "sentence": "Paper and wood are useful materials."
+  },
+  {
+    "id": "decoration",
+    "scene": "decoration",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "装饰品",
+    "sentence": "I hang a star decoration on the wall."
+  },
+  {
+    "id": "games",
+    "scene": "games",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "游戏（复数）",
+    "sentence": "We play games together."
+  },
+  {
+    "id": "like",
+    "scene": "like",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "喜欢",
+    "sentence": "I like this song."
+  },
+  {
+    "id": "two",
+    "scene": "two",
+    "topic": "colors",
+    "pictureCue": false,
+    "zh": "二；两个",
+    "sentence": "I have two apples."
+  },
+  {
+    "id": "observe-watch",
+    "scene": "observe-watch",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "仔细观察",
+    "sentence": "We observe the butterfly on the leaf."
+  },
+  {
+    "id": "attaches",
+    "scene": "attaches",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "把……固定在（attach 的第三人称单数）",
+    "sentence": "She attaches a photo to the paper."
+  },
+  {
+    "id": "process",
+    "scene": "process",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "过程",
+    "sentence": "I explained the process to him."
+  },
+  {
+    "id": "slender",
+    "scene": "slender",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "细长的",
+    "sentence": "The plant has a slender stem."
+  },
+  {
+    "id": "for",
+    "scene": "for",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "给；为了",
+    "sentence": "This gift is for you."
+  },
+  {
+    "id": "at",
+    "scene": "at",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "在（某处或某时）",
+    "sentence": "We meet at the school gate."
+  },
+  {
+    "id": "mat",
+    "scene": "mat",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "垫子",
+    "sentence": "The cat sits on the mat."
+  },
+  {
+    "id": "sat",
+    "scene": "sat",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "坐了（sit 的过去式）",
+    "sentence": "He sat on the chair."
+  },
+  {
+    "id": "rules",
+    "scene": "rules",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "规则（复数）",
+    "sentence": "Our rules help us play safely."
+  },
+  {
+    "id": "cooperate",
+    "scene": "cooperate",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "合作",
+    "sentence": "We need to cooperate to finish the project."
+  },
+  {
+    "id": "guard-protect",
+    "scene": "guard-protect",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "守卫；保护",
+    "sentence": "The dog can guard the sheep."
+  },
+  {
+    "id": "prank",
+    "scene": "prank",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "恶作剧",
+    "sentence": "The toy spider was a silly prank."
+  },
+  {
+    "id": "responsible",
+    "scene": "responsible",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "负责的",
+    "sentence": "I'm responsible for that."
+  },
+  {
+    "id": "her",
+    "scene": "her",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "她（宾格）；她的",
+    "sentence": "This is her bag."
+  },
+  {
+    "id": "one",
+    "scene": "one",
+    "topic": "colors",
+    "pictureCue": false,
+    "zh": "一；一个",
+    "sentence": "I have one apple."
+  },
+  {
+    "id": "exclaimed",
+    "scene": "exclaimed",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "惊呼（exclaim 的过去式）",
+    "sentence": "She exclaimed when she saw the rainbow."
+  },
+  {
+    "id": "familiar",
+    "scene": "familiar",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "熟悉的",
+    "sentence": "It seems so familiar."
+  },
+  {
+    "id": "and",
+    "scene": "and",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "和；并且",
+    "sentence": "I have a pen and a book."
+  },
+  {
+    "id": "then",
+    "scene": "then",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "然后；那时",
+    "sentence": "Wash your hands, then eat your lunch."
+  },
+  {
+    "id": "new",
+    "scene": "new",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "新的",
+    "sentence": "These are my new shoes."
+  },
+  {
+    "id": "saw-see",
+    "scene": "saw-see",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "看见了（see 的过去式）",
+    "sentence": "I saw a bird yesterday."
+  },
+  {
+    "id": "local",
+    "scene": "local",
+    "topic": "places",
+    "pictureCue": true,
+    "zh": "当地的",
+    "sentence": "We borrowed books from the local library."
+  },
+  {
+    "id": "routine",
+    "scene": "routine",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "日常惯例",
+    "sentence": "Brushing my teeth is part of my routine."
+  },
+  {
+    "id": "neighborhood",
+    "scene": "neighborhood",
+    "topic": "places",
+    "pictureCue": true,
+    "zh": "街区",
+    "sentence": "The neighborhood was silent."
+  },
+  {
+    "id": "volunteer",
+    "scene": "volunteer",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "志愿者",
+    "sentence": "A volunteer showed us around the museum."
+  },
+  {
+    "id": "intelligent",
+    "scene": "intelligent",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "聪明的",
+    "sentence": "Dolphins are intelligent animals."
+  },
+  {
+    "id": "could",
+    "scene": "could",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "能够",
+    "sentence": "I could see that."
+  },
+  {
+    "id": "place",
+    "scene": "place",
+    "topic": "places",
+    "pictureCue": true,
+    "zh": "地方",
+    "sentence": "This is a good place for a picnic."
+  },
+  {
+    "id": "an",
+    "scene": "an",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "一（个）；用于元音开头的读音前",
+    "sentence": "This is an apple."
+  },
+  {
+    "id": "ran",
+    "scene": "ran",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "跑了（run 的过去式）",
+    "sentence": "The dog ran to the tree."
+  },
+  {
+    "id": "utensils",
+    "scene": "utensils",
+    "topic": "food",
+    "pictureCue": true,
+    "zh": "用具；餐具（复数）",
+    "sentence": "We use utensils to eat our lunch."
+  },
+  {
+    "id": "expect",
+    "scene": "expect",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "预期",
+    "sentence": "We expect the train to arrive soon."
+  },
+  {
+    "id": "remained",
+    "scene": "remained",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "仍然留在（remain 的过去式）",
+    "sentence": "One apple remained in the basket."
+  },
+  {
+    "id": "you",
+    "scene": "you",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "你；你们",
+    "sentence": "You are my friend."
+  },
+  {
+    "id": "all",
+    "scene": "all",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "所有的",
+    "sentence": "All the children are here."
+  },
+  {
+    "id": "that",
+    "scene": "that",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "那个",
+    "sentence": "That is my bike."
+  },
+  {
+    "id": "four",
+    "scene": "four",
+    "topic": "colors",
+    "pictureCue": false,
+    "zh": "四；四个",
+    "sentence": "I have four blocks."
+  },
+  {
+    "id": "appreciate",
+    "scene": "appreciate",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "欣赏",
+    "sentence": "I appreciate good music."
+  },
+  {
+    "id": "cultures",
+    "scene": "cultures",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "文化（复数）",
+    "sentence": "We learn about different cultures at school."
+  },
+  {
+    "id": "prefer",
+    "scene": "prefer",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "更喜欢",
+    "sentence": "I prefer cats to dogs."
+  },
+  {
+    "id": "tradition",
+    "scene": "tradition",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "传统",
+    "sentence": "Sharing a meal is a family tradition."
+  },
+  {
+    "id": "do",
+    "scene": "do",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "做",
+    "sentence": "What do you do after school?"
+  },
+  {
+    "id": "community",
+    "scene": "community",
+    "topic": "places",
+    "pictureCue": true,
+    "zh": "社区",
+    "sentence": "Our community has a small library."
+  },
+  {
+    "id": "improve",
+    "scene": "improve",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "改善",
+    "sentence": "I made efforts to improve my grades."
+  },
+  {
+    "id": "quarrel",
+    "scene": "quarrel",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "争吵",
+    "sentence": "Please do not quarrel over the toy."
+  },
+  {
+    "id": "not",
+    "scene": "not",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "不",
+    "sentence": "This is not my bag."
+  },
+  {
+    "id": "cot",
+    "scene": "cot",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "小床",
+    "sentence": "The baby sleeps in a cot."
+  },
+  {
+    "id": "dot",
+    "scene": "dot",
+    "topic": "colors",
+    "pictureCue": true,
+    "zh": "点",
+    "sentence": "Draw a red dot on the paper."
+  },
+  {
+    "id": "tot",
+    "scene": "tot",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "幼儿",
+    "sentence": "The little tot holds a teddy bear."
+  },
+  {
+    "id": "require",
+    "scene": "require",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "需要",
+    "sentence": "We require your help."
+  },
+  {
+    "id": "plant-seed",
+    "scene": "plant-seed",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "种植",
+    "sentence": "We plant a seed in the soil."
+  },
+  {
+    "id": "harmful",
+    "scene": "harmful",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "有害的",
+    "sentence": "Smoke is harmful to our lungs."
+  },
+  {
+    "id": "soak",
+    "scene": "soak",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "浸泡",
+    "sentence": "We soak the beans in water."
+  },
+  {
+    "id": "my",
+    "scene": "my",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "我的",
+    "sentence": "This is my home."
+  },
+  {
+    "id": "than",
+    "scene": "than",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "比",
+    "sentence": "He's taller than me."
+  },
+  {
+    "id": "his",
+    "scene": "his",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "他的",
+    "sentence": "His bike is red."
+  },
+  {
+    "id": "three",
+    "scene": "three",
+    "topic": "colors",
+    "pictureCue": false,
+    "zh": "三；三个",
+    "sentence": "I have three pencils."
+  },
+  {
+    "id": "develop-grow",
+    "scene": "develop-grow",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "生长；发育",
+    "sentence": "The roots develop as the plant grows."
+  },
+  {
+    "id": "amazing",
+    "scene": "amazing",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "令人惊叹的",
+    "sentence": "This site is amazing!"
+  },
+  {
+    "id": "content",
+    "scene": "content",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "满意的",
+    "sentence": "I'm content with my job."
+  },
+  {
+    "id": "enormous",
+    "scene": "enormous",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "巨大的",
+    "sentence": "The elephant is enormous beside the mouse."
+  },
+  {
+    "id": "imagine",
+    "scene": "imagine",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "想象",
+    "sentence": "Imagine a garden full of blue flowers."
+  },
+  {
+    "id": "are",
+    "scene": "are",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "是（be 的一种形式）",
+    "sentence": "Are you at home?"
+  },
+  {
+    "id": "when",
+    "scene": "when",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "什么时候",
+    "sentence": "When does the bus leave?"
+  },
+  {
+    "id": "which",
+    "scene": "which",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "哪一个",
+    "sentence": "Which book would you like?"
+  },
+  {
+    "id": "soon",
+    "scene": "soon",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "很快",
+    "sentence": "He'll be done soon."
+  },
+  {
+    "id": "fresh",
+    "scene": "fresh",
+    "topic": "food",
+    "pictureCue": true,
+    "zh": "新鲜的",
+    "sentence": "I need fresh air."
+  },
+  {
+    "id": "delicious",
+    "scene": "delicious",
+    "topic": "food",
+    "pictureCue": true,
+    "zh": "美味的",
+    "sentence": "The cake is delicious."
+  },
+  {
+    "id": "beneath",
+    "scene": "beneath",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "在……下面",
+    "sentence": "The ball is beneath the table."
+  },
+  {
+    "id": "raise-animals",
+    "scene": "raise-animals",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "饲养",
+    "sentence": "The farmers raise chickens."
+  },
+  {
+    "id": "special",
+    "scene": "special",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "特别的",
+    "sentence": "It was really special."
+  },
+  {
+    "id": "with",
+    "scene": "with",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "和……一起；带有",
+    "sentence": "I play with my friends."
+  },
+  {
+    "id": "he",
+    "scene": "he",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "他（主格）",
+    "sentence": "He is my brother."
+  },
+  {
+    "id": "many",
+    "scene": "many",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "许多（修饰可数名词）",
+    "sentence": "How many apples do you have?"
+  },
+  {
+    "id": "them",
+    "scene": "them",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "他们；她们；它们（宾格）",
+    "sentence": "I see my friends and wave to them."
+  },
+  {
+    "id": "ten",
+    "scene": "ten",
+    "topic": "colors",
+    "pictureCue": false,
+    "zh": "十；十个",
+    "sentence": "I can count ten stars."
+  },
+  {
+    "id": "men",
+    "scene": "men",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "男人（man 的复数）",
+    "sentence": "Two men carry the box."
+  },
+  {
+    "id": "den",
+    "scene": "den",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "兽穴",
+    "sentence": "The fox rests in its den."
+  },
+  {
+    "id": "seasons",
+    "scene": "seasons",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "季节（复数）",
+    "sentence": "We have four seasons in a year."
+  },
+  {
+    "id": "migrate",
+    "scene": "migrate",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "迁徙",
+    "sentence": "Some birds migrate to warmer places."
+  },
+  {
+    "id": "active",
+    "scene": "active",
+    "topic": "sports",
+    "pictureCue": true,
+    "zh": "活跃的",
+    "sentence": "Tom is more active."
+  },
+  {
+    "id": "spot-see",
+    "scene": "spot-see",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "发现；看见",
+    "sentence": "I can spot a bird in the tree."
+  },
+  {
+    "id": "is",
+    "scene": "is",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "是（be 的一种形式）",
+    "sentence": "This is my new notebook."
+  },
+  {
+    "id": "by",
+    "scene": "by",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "乘坐（交通工具）",
+    "sentence": "I go to school by bus."
+  },
+  {
+    "id": "some",
+    "scene": "some",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "一些",
+    "sentence": "Would you like some water?"
+  },
+  {
+    "id": "predict",
+    "scene": "predict",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "预测",
+    "sentence": "I can't predict what'll happen."
+  },
+  {
+    "id": "drought",
+    "scene": "drought",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "干旱",
+    "sentence": "The soil is dry during a drought."
+  },
+  {
+    "id": "clever",
+    "scene": "clever",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "聪明的",
+    "sentence": "The clever dog can open the door."
+  },
+  {
+    "id": "she",
+    "scene": "she",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "她（主格）",
+    "sentence": "She is my sister."
+  },
+  {
+    "id": "was",
+    "scene": "was",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "曾是；当时处于（be 的过去式）",
+    "sentence": "I was at home yesterday."
+  },
+  {
+    "id": "now",
+    "scene": "now",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "现在",
+    "sentence": "It is time to go now."
+  },
+  {
+    "id": "way",
+    "scene": "way",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "路；方式",
+    "sentence": "Can you show me the way to the park?"
+  },
+  {
+    "id": "safe",
+    "scene": "safe",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "安全的",
+    "sentence": "This is a safe place to play."
+  },
+  {
+    "id": "notice",
+    "scene": "notice",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "注意到",
+    "sentence": "Did you notice Tom's hair?"
+  },
+  {
+    "id": "enough",
+    "scene": "enough",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "足够",
+    "sentence": "Is it large enough?"
+  },
+  {
+    "id": "rack",
+    "scene": "rack",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "架子",
+    "sentence": "Put the shoes on the rack."
+  },
+  {
+    "id": "sack",
+    "scene": "sack",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "大袋子",
+    "sentence": "The sack is full of potatoes."
+  },
+  {
+    "id": "back",
+    "scene": "back",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "回到原处",
+    "sentence": "Please come back soon."
+  },
+  {
+    "id": "stack",
+    "scene": "stack",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "一摞；一叠",
+    "sentence": "I see a stack of books."
+  },
+  {
+    "id": "appearance",
+    "scene": "appearance",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "外表",
+    "sentence": "The rabbit's appearance includes long ears."
+  },
+  {
+    "id": "behavior",
+    "scene": "behavior",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "行为",
+    "sentence": "Sharing toys is kind behavior."
+  },
+  {
+    "id": "wander",
+    "scene": "wander",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "漫步；游荡",
+    "sentence": "We wander along the garden path."
+  },
+  {
+    "id": "plenty",
+    "scene": "plenty",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "大量",
+    "sentence": "There's plenty of water."
+  },
+  {
+    "id": "have",
+    "scene": "have",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "有",
+    "sentence": "I have two pencils."
+  },
+  {
+    "id": "how",
+    "scene": "how",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "怎样；如何",
+    "sentence": "How do you make this cake?"
+  },
+  {
+    "id": "pretty",
+    "scene": "pretty",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "漂亮的",
+    "sentence": "What a pretty flower!"
+  },
+  {
+    "id": "responsibility",
+    "scene": "responsibility",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "责任",
+    "sentence": "Looking after the plants is my responsibility."
+  },
+  {
+    "id": "train-pet",
+    "scene": "train-pet",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "训练",
+    "sentence": "We train our dog to sit."
+  },
+  {
+    "id": "depend",
+    "scene": "depend",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "依靠",
+    "sentence": "Young plants depend on water and sunlight."
+  },
+  {
+    "id": "compared",
+    "scene": "compared",
+    "topic": "colors",
+    "pictureCue": true,
+    "zh": "比较了（compare 的过去式）",
+    "sentence": "We compared the two leaves."
+  },
+  {
+    "id": "social-friendly",
+    "scene": "social-friendly",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "喜欢群居的；爱交往的",
+    "sentence": "Dolphins are social animals."
+  },
+  {
+    "id": "of",
+    "scene": "of",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "……的",
+    "sentence": "This is a picture of my family."
+  },
+  {
+    "id": "they",
+    "scene": "they",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "他们；她们；它们（主格）",
+    "sentence": "They are my friends."
+  },
+  {
+    "id": "these",
+    "scene": "these",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "这些",
+    "sentence": "These apples are sweet."
+  },
+  {
+    "id": "habitat",
+    "scene": "habitat",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "栖息地",
+    "sentence": "A pond is a frog's habitat."
+  },
+  {
+    "id": "wild",
+    "scene": "wild",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "野生的",
+    "sentence": "Foxes are wild animals."
+  },
+  {
+    "id": "complain",
+    "scene": "complain",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "抱怨",
+    "sentence": "Do you wish to complain?"
+  },
+  {
+    "id": "join",
+    "scene": "join",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "加入",
+    "sentence": "Will you join us?"
+  },
+  {
+    "id": "stubborn",
+    "scene": "stubborn",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "固执的",
+    "sentence": "The stubborn donkey will not move."
+  },
+  {
+    "id": "said",
+    "scene": "said",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "说了（say 的过去式）",
+    "sentence": "She said hello to me."
+  },
+  {
+    "id": "want",
+    "scene": "want",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "想要",
+    "sentence": "I want a glass of water."
+  },
+  {
+    "id": "funny",
+    "scene": "funny",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "有趣的",
+    "sentence": "He told a funny story."
+  },
+  {
+    "id": "get",
+    "scene": "get",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "得到；收到",
+    "sentence": "I get a new book for my birthday."
+  },
+  {
+    "id": "let",
+    "scene": "let",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "让",
+    "sentence": "Let me help you."
+  },
+  {
+    "id": "bet",
+    "scene": "bet",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "确信",
+    "sentence": "I bet you can solve this puzzle."
+  },
+  {
+    "id": "transportation",
+    "scene": "transportation",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "交通运输",
+    "sentence": "Buses and trains are forms of transportation."
+  },
+  {
+    "id": "vehicle",
+    "scene": "vehicle",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "交通工具",
+    "sentence": "A bus is a vehicle."
+  },
+  {
+    "id": "fierce",
+    "scene": "fierce",
+    "topic": "animals",
+    "pictureCue": true,
+    "zh": "凶猛的",
+    "sentence": "The fierce tiger shows its teeth."
+  },
+  {
+    "id": "here",
+    "scene": "here",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "这里",
+    "sentence": "Put your bag here, please."
+  },
+  {
+    "id": "me",
+    "scene": "me",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "我（宾格）",
+    "sentence": "Please come with me."
+  },
+  {
+    "id": "about",
+    "scene": "about",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "关于",
+    "sentence": "This book is about animals."
+  },
+  {
+    "id": "may",
+    "scene": "may",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "可以；可能",
+    "sentence": "May I use your pencil?"
+  },
+  {
+    "id": "away",
+    "scene": "away",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "离开",
+    "sentence": "The dog went away."
+  },
+  {
+    "id": "country",
+    "scene": "country",
+    "topic": "places",
+    "pictureCue": true,
+    "zh": "国家",
+    "sentence": "I love my country."
+  },
+  {
+    "id": "careful",
+    "scene": "careful",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "小心的；仔细的",
+    "sentence": "Be careful with the hot soup."
+  },
+  {
+    "id": "purpose",
+    "scene": "purpose",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "目的",
+    "sentence": "What is the purpose of this tool?"
+  },
+  {
+    "id": "connect",
+    "scene": "connect",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "连接",
+    "sentence": "Connect the two dots with a line."
+  },
+  {
+    "id": "this",
+    "scene": "this",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "这个",
+    "sentence": "This is my favourite book."
+  },
+  {
+    "id": "what",
+    "scene": "what",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "什么",
+    "sentence": "What is in your bag?"
+  },
+  {
+    "id": "or",
+    "scene": "or",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "或者",
+    "sentence": "Would you like tea or water?"
+  },
+  {
+    "id": "each",
+    "scene": "each",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "每个",
+    "sentence": "Each child has a pencil."
+  },
+  {
+    "id": "please",
+    "scene": "please",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "请",
+    "sentence": "Please open the door."
+  },
+  {
+    "id": "distance",
+    "scene": "distance",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "远处；距离",
+    "sentence": "I saw a light in the distance."
+  },
+  {
+    "id": "recognize",
+    "scene": "recognize",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "认出",
+    "sentence": "Do you recognize it?"
+  },
+  {
+    "id": "challenge",
+    "scene": "challenge",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "挑战",
+    "sentence": "That's a huge challenge."
+  },
+  {
+    "id": "quit",
+    "scene": "quit",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "停止",
+    "sentence": "He decided to quit the game and rest."
+  },
+  {
+    "id": "bit-bite",
+    "scene": "bit-bite",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "咬了（bite 的过去式）",
+    "sentence": "The rabbit bit the carrot."
+  },
+  {
+    "id": "lit",
+    "scene": "lit",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "点亮了（light 的过去式）",
+    "sentence": "Dad lit the candle."
+  },
+  {
+    "id": "fit-healthy",
+    "scene": "fit-healthy",
+    "topic": "sports",
+    "pictureCue": true,
+    "zh": "健康的",
+    "sentence": "Running helps me stay fit."
+  },
+  {
+    "id": "chores",
+    "scene": "chores",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "家务活（复数）",
+    "sentence": "Putting toys away is one of my chores."
+  },
+  {
+    "id": "contribute",
+    "scene": "contribute",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "贡献；出一份力",
+    "sentence": "We each contribute a block to the tower."
+  },
+  {
+    "id": "member",
+    "scene": "member",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "成员",
+    "sentence": "Every member must attend."
+  },
+  {
+    "id": "organize",
+    "scene": "organize",
+    "topic": "home",
+    "pictureCue": true,
+    "zh": "整理",
+    "sentence": "I keep meaning to organize my desk."
+  },
+  {
+    "id": "accomplish",
+    "scene": "accomplish",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "完成；实现",
+    "sentence": "We can accomplish the task together."
+  },
+  {
+    "id": "too",
+    "scene": "too",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "也；太",
+    "sentence": "I like apples too."
+  },
+  {
+    "id": "other",
+    "scene": "other",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "其他的",
+    "sentence": "I made other plans."
+  },
+  {
+    "id": "more",
+    "scene": "more",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "更多",
+    "sentence": "Do you want more?"
+  },
+  {
+    "id": "citizen",
+    "scene": "citizen",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "公民",
+    "sentence": "I'm a citizen of the world."
+  },
+  {
+    "id": "respect",
+    "scene": "respect",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "尊重",
+    "sentence": "I respect the elderly."
+  },
+  {
+    "id": "necessary",
+    "scene": "necessary",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "必要的",
+    "sentence": "I've done everything necessary."
+  },
+  {
+    "id": "hauled",
+    "scene": "hauled",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "拖；拉（haul 的过去式）",
+    "sentence": "We hauled the wagon up the hill."
+  },
+  {
+    "id": "has",
+    "scene": "has",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "有（have 的第三人称单数）",
+    "sentence": "He has a car."
+  },
+  {
+    "id": "were",
+    "scene": "were",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "曾是；当时处于（be 的过去式）",
+    "sentence": "We were at the park yesterday."
+  },
+  {
+    "id": "natural resources",
+    "scene": "natural resources",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "自然资源",
+    "sentence": "Water and trees are natural resources."
+  },
+  {
+    "id": "create",
+    "scene": "create",
+    "topic": "music",
+    "pictureCue": true,
+    "zh": "创造",
+    "sentence": "We can create a story together."
+  },
+  {
+    "id": "designs",
+    "scene": "designs",
+    "topic": "music",
+    "pictureCue": true,
+    "zh": "图案；设计（复数）",
+    "sentence": "The cloth has colorful designs."
+  },
+  {
+    "id": "weave",
+    "scene": "weave",
+    "topic": "music",
+    "pictureCue": true,
+    "zh": "编织",
+    "sentence": "We weave strips of paper into a mat."
+  },
+  {
+    "id": "knowledge",
+    "scene": "knowledge",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "知识",
+    "sentence": "He has a good knowledge of French."
+  },
+  {
+    "id": "where",
+    "scene": "where",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "在哪里",
+    "sentence": "Where is my pencil?"
+  },
+  {
+    "id": "know",
+    "scene": "know",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "知道；认识",
+    "sentence": "I know the answer."
+  },
+  {
+    "id": "would",
+    "scene": "would",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "会",
+    "sentence": "What would you do?"
+  },
+  {
+    "id": "joke",
+    "scene": "joke",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "玩笑",
+    "sentence": "It was just a joke."
+  },
+  {
+    "id": "poke",
+    "scene": "poke",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "轻戳",
+    "sentence": "I poke a hole in the soft clay."
+  },
+  {
+    "id": "woke",
+    "scene": "woke",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "醒来了（wake 的过去式）",
+    "sentence": "I woke when the sun came up."
+  },
+  {
+    "id": "spoke",
+    "scene": "spoke",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "说了话（speak 的过去式）",
+    "sentence": "She spoke to her friend."
+  },
+  {
+    "id": "decide",
+    "scene": "decide",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "决定",
+    "sentence": "I'll let you decide."
+  },
+  {
+    "id": "opinion",
+    "scene": "opinion",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "意见",
+    "sentence": "I have an opinion."
+  },
+  {
+    "id": "ragged",
+    "scene": "ragged",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "破旧的；破烂的",
+    "sentence": "The old shirt is ragged."
+  },
+  {
+    "id": "marvel",
+    "scene": "marvel",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "感到惊叹",
+    "sentence": "We marvel at the bright stars."
+  },
+  {
+    "id": "grateful",
+    "scene": "grateful",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "感激的",
+    "sentence": "I'm grateful for that."
+  },
+  {
+    "id": "good",
+    "scene": "good",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "好的",
+    "sentence": "That is a good idea."
+  },
+  {
+    "id": "who",
+    "scene": "who",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "谁",
+    "sentence": "Who is at the door?"
+  },
+  {
+    "id": "part",
+    "scene": "part",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "部分",
+    "sentence": "That part was easy."
+  },
+  {
+    "id": "only",
+    "scene": "only",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "只",
+    "sentence": "I only want one."
+  },
+  {
+    "id": "words",
+    "scene": "words",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "单词（复数）",
+    "sentence": "I can read the words in my book."
+  },
+  {
+    "id": "sort-group",
+    "scene": "sort-group",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "分类",
+    "sentence": "We sort the blocks by color."
+  },
+  {
+    "id": "similar",
+    "scene": "similar",
+    "topic": "colors",
+    "pictureCue": true,
+    "zh": "相似的",
+    "sentence": "Tom has expressed similar ideas."
+  },
+  {
+    "id": "perfect",
+    "scene": "perfect",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "完美的",
+    "sentence": "This is the perfect place for our picnic."
+  },
+  {
+    "id": "endless",
+    "scene": "endless",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "无尽的",
+    "sentence": "The road seems endless."
+  },
+  {
+    "id": "come",
+    "scene": "come",
+    "topic": "travel",
+    "pictureCue": true,
+    "zh": "来",
+    "sentence": "Come and play with us."
+  },
+  {
+    "id": "does",
+    "scene": "does",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "用于第三人称单数疑问句",
+    "sentence": "Does she like apples?"
+  },
+  {
+    "id": "first",
+    "scene": "first",
+    "topic": "school",
+    "pictureCue": true,
+    "zh": "第一",
+    "sentence": "The red car is first in line."
+  },
+  {
+    "id": "their",
+    "scene": "their",
+    "topic": "people",
+    "pictureCue": true,
+    "zh": "他们的；她们的；它们的",
+    "sentence": "The children put away their toys."
+  },
+  {
+    "id": "environment",
+    "scene": "environment",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "环境",
+    "sentence": "We can help protect the environment."
+  },
+  {
+    "id": "protect",
+    "scene": "protect",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "保护",
+    "sentence": "Trees help protect the soil."
+  },
+  {
+    "id": "wisely",
+    "scene": "wisely",
+    "topic": "nature",
+    "pictureCue": true,
+    "zh": "明智地",
+    "sentence": "We use water wisely and turn off the tap."
+  },
+  {
+    "id": "encourage",
+    "scene": "encourage",
+    "topic": "feelings",
+    "pictureCue": true,
+    "zh": "鼓励",
+    "sentence": "We encourage each other to keep trying."
+  },
+  {
+    "id": "peep",
+    "scene": "peep",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "窥看；偷看",
+    "sentence": "I peep through a small gap in the door."
+  },
+  {
+    "id": "keep",
+    "scene": "keep",
+    "topic": "actions",
+    "pictureCue": true,
+    "zh": "保持；保留",
+    "sentence": "Please keep your room clean."
+  },
+  {
+    "id": "beep",
+    "scene": "beep",
+    "topic": "play",
+    "pictureCue": true,
+    "zh": "嘟嘟声",
+    "sentence": "The toy car makes a beep."
+  }
+]

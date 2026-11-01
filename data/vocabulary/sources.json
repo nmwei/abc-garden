@@ -36,5 +36,16 @@
     "retainedPairs": 1519,
     "additionalOriginalPairs": 125,
     "method": "Selected short examples by exact word boundaries, then model-reviewed sentence meaning, example-specific Chinese gloss and part of speech; unsuitable or inaccurate examples rewritten. Traditional Chinese converted to simplified Chinese with OpenCC and revised where needed. Original sentence, translation, authors and IDs retained on each attributed source row. No teacher review or per-clip human listening acceptance."
+  },
+  "wondersGK": {
+    "title": "McGraw Hill Wonders Grade K explicit vocabulary (33-week reference scope)",
+    "manifest": "data/vocabulary/wonders-gk.json",
+    "extractedColumns": "data/vocabulary/wonders-gk-scope.json",
+    "url": "https://www.mheducation.com/unitas/school/explore/sites/florida/ela-2024/24151-fl-wonders-k-5-scope-and-sequence-gk-d02-final.pdf",
+    "explicitUniqueSpellings": 299,
+    "newHeadwordCards": 79,
+    "additionalSenseCards": 12,
+    "method": "Table columns located by header; source word forms retained. Category headings, phonemes and reader titles are excluded. Original project-authored paired examples and vector scenes. Audio locally synthesized, not teacher certified.",
+    "classroomEdition": "Not confirmed; explicit reference-scope coverage is separate from full classroom-text coverage."
   }
 }

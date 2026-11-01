@@ -85,5 +85,9 @@
   "combustion-fumes": [
     "smoke",
     "exhaust"
+  ],
+  "jumping-actions": [
+    "jump",
+    "hop"
   ]
 }

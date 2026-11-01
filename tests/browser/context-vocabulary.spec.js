@@ -9,8 +9,8 @@ test('pending words stay unavailable while old selection and mastery records sur
  await expect(page.locator('#word-editor')).toContainText(`${PENDING_WORDS.length} 个词待完善`);
  await expect(page.locator('[data-selected-word]')).toHaveCount(4);
  await expect(page.locator('[data-selected-word="percent"]')).toContainText('待完善');
- await page.locator('#selection-query').fill('because');await expect(page.locator('.selection-grid button')).toHaveCount(0);
- await page.locator('#selection-query').fill('colour');await expect(page.locator('.selection-grid button')).toHaveCount(1);await expect(page.locator('.selection-grid button')).toHaveAttribute('data-word','color');
+ await page.locator('#selection-query').fill('because');await expect(page.locator('.selection-grid [data-learning="select-word"]')).toHaveCount(0);
+ await page.locator('#selection-query').fill('colour');await expect(page.locator('.selection-grid [data-learning="select-word"]')).toHaveCount(1);await expect(page.locator('.selection-grid [data-learning="select-word"]')).toHaveAttribute('data-word','color');
  await page.locator('#selection-query').fill('apple');await page.getByRole('button',{name:'选择 apple',exact:true}).click();
  await page.getByRole('button',{name:'看图学词',exact:true}).click();await expect(page.locator('[data-filter=learning]')).toHaveText('正在学 · 2');await expect(page.locator('[data-filter=all]')).toHaveText(`词库 · ${READY_WORDS.length}`);
  await page.locator('[data-filter=mastered]').click();await expect(page.locator('.word-list button')).toHaveCount(1);await expect(page.locator('.word-list button')).toHaveAttribute('data-word','color');

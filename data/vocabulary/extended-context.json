@@ -20620,5 +20620,19 @@
     "zh": "酸奶",
     "sentence": "She added fruit to her yoghurt.",
     "sentenceZh": "她在酸奶里加了水果。"
+  },
+  {
+    "id": "hop",
+    "pos": "动词",
+    "zh": "单脚跳；蹦跳",
+    "sentence": "I can hop on one foot.",
+    "sentenceZh": "我会单脚跳。"
+  },
+  {
+    "id": "rake",
+    "pos": "动词",
+    "zh": "用耙子耙",
+    "sentence": "I can rake the leaves.",
+    "sentenceZh": "我会用耙子耙落叶。"
   }
 ]

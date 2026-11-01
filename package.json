@@ -13,7 +13,8 @@
     "check": "npm test && npm run build",
     "test:subpath": "node tests/subpath.mjs",
     "audio:course": "node scripts/generate-course-audio.mjs",
-    "assets:import": "node scripts/import-learning-assets.mjs"
+    "assets:import": "node scripts/import-learning-assets.mjs",
+    "audit:wonders": "node scripts/audit-wonders-gk.mjs"
   },
   "engines": {
     "node": ">=20"

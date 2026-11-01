@@ -1,0 +1,971 @@
+{
+  "source": "official-scope",
+  "extraction": "Table columns located by header, including the extra Unit 10 column. Targets are explicitly listed oral, high-frequency, word-bank and spelling words. Category labels, book titles, letter sounds and consonant blends are not vocabulary targets. Unit 2 Week 1 has we in High-Frequency and a in Spelling; both are retained with column provenance.",
+  "weeks": [
+    {
+      "id": "u0w1",
+      "page": 1,
+      "vocabulary": "Category Words:\nNames",
+      "frequency": "I\nELA.K.F.1.4",
+      "phonics": "Letter\nRecognition:\nAa, Bb, Cc, Dd,\nEe, Ff, Gg, Hh\nELA.K.F.1.1.f",
+      "oral": [],
+      "highFrequency": [
+        "I"
+      ],
+      "wordBank": [],
+      "spelling": [],
+      "category": "Names"
+    },
+    {
+      "id": "u0w2",
+      "page": 1,
+      "vocabulary": "Category Words:\nNumbers\nELA.K.V.1.3",
+      "frequency": "can\nELA.K.F.1.4",
+      "phonics": "Letter\nRecognition:\nIi, Jj, Kk, Ll,\nMm, Nn, Oo,\nPp, Qq, Rr\nELA.K.F.1.1.f",
+      "oral": [],
+      "highFrequency": [
+        "can"
+      ],
+      "wordBank": [],
+      "spelling": [],
+      "category": "Numbers"
+    },
+    {
+      "id": "u0w3",
+      "page": 1,
+      "vocabulary": "Category Words:\nDays of the Week\nELA.K.C.3.1",
+      "frequency": "I, can\nELA.K.F.1.4",
+      "phonics": "Letter\nRecognition:\nSs, Tt, Uu, Vv,\nWw, Xx, Yy, Zz\nELA.K.F.1.1.f",
+      "oral": [],
+      "highFrequency": [
+        "I",
+        "can"
+      ],
+      "wordBank": [],
+      "spelling": [],
+      "category": "Days of the Week"
+    },
+    {
+      "id": "u1w1",
+      "page": 2,
+      "vocabulary": "Oral Vocabulary\nWords:\nfriend\nproblem\ngrasped\nescape\nrescue\nCategory Words:\nFeeling Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "the\nBuild Your\nWord Bank:\nout\nELA.K.F.1.4",
+      "phonics": "Phonics: /m/m (initial/final)\nSpelling: Words with m; the\nHandwriting: Upper and\nLowercase Mm\nDecodable Readers:\nI Can\nCan I?\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "friend",
+        "problem",
+        "grasped",
+        "escape",
+        "rescue"
+      ],
+      "highFrequency": [
+        "the"
+      ],
+      "wordBank": [
+        "out"
+      ],
+      "spelling": [
+        "the"
+      ],
+      "category": "Feeling Words"
+    },
+    {
+      "id": "u1w2",
+      "page": 2,
+      "vocabulary": "Oral Vocabulary\nWords:\nadventure\nmovement\nexhausted\nexcited\narrived\nCategory Words:\nFamily Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "we\nBuild Your\nWord Bank:\ndown\nELA.K.F.1.4",
+      "phonics": "Phonics: /a/a (initial/medial)\nConsonant Review: /m/m\nSpelling: Words with a; we\nHandwriting: Upper and\nLowercase Aa\nDecodable Readers:\nI Am\nWe Can\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "adventure",
+        "movement",
+        "exhausted",
+        "excited",
+        "arrived"
+      ],
+      "highFrequency": [
+        "we"
+      ],
+      "wordBank": [
+        "down"
+      ],
+      "spelling": [
+        "we"
+      ],
+      "category": "Family Words"
+    },
+    {
+      "id": "u1w3",
+      "page": 2,
+      "vocabulary": "Oral Vocabulary\nWords:\nexplore\nsenses\nfeast\nfinished\nkneads\nCategory Words:\nSensory Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "see\nBuild Your\nWord Bank:\nwill\njump\nELA.K.F.1.4",
+      "phonics": "Phonics: /s/s (initial)\nConsonant/Vowel Review: /a/a,\n/m/m\nSpelling: Words with s; see\nHandwriting: Upper and\nLowercase Ss\nDecodable Readers:\nSam Can See\nSam\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "explore",
+        "senses",
+        "feast",
+        "finished",
+        "kneads"
+      ],
+      "highFrequency": [
+        "see"
+      ],
+      "wordBank": [
+        "will",
+        "jump"
+      ],
+      "spelling": [
+        "see"
+      ],
+      "category": "Sensory Words"
+    },
+    {
+      "id": "u2w1",
+      "page": 3,
+      "vocabulary": "Oral Vocabulary\nWords:\ntools\ndiscover\ndefeated\nfetch\nrumble\nCategory Words:\nColor Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "we\nBuild Your\nWord Bank:\nthere\nour\nELA.K.F.1.4",
+      "phonics": "Phonics: /p/p (initial/final)\nConsonant/Vowel/Review: /a/a,\n/m/m, /s/s\nSpelling: Words with p; a, there\nHandwriting: Upper and\nLowercase Pp\nDecodable Readers:\nA Sap Map\nPam Can See\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "tools",
+        "discover",
+        "defeated",
+        "fetch",
+        "rumble"
+      ],
+      "highFrequency": [
+        "we"
+      ],
+      "wordBank": [
+        "there",
+        "our"
+      ],
+      "spelling": [
+        "a",
+        "there"
+      ],
+      "category": "Color Words"
+    },
+    {
+      "id": "u2w2",
+      "page": 3,
+      "vocabulary": "Oral Vocabulary\nWords:\nmaterials\nnature\ndecoration\ngames\nworld\nCategory Words:\nShape Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "like\nBuild Your\nWord Bank:\ntwo\nwell\nELA.K.F.1.4",
+      "phonics": "Phonics: /t/t (initial/final)\nConsonant/Vowel/Review: /a/a,\n/m/m, /s/s\nSpelling: Words with t,\nlong: a_e; like\nHandwriting: Upper and\nLowercase Tt\nDecodable Readers:\nTap the Mat\nI Am Pat\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "materials",
+        "nature",
+        "decoration",
+        "games",
+        "world"
+      ],
+      "highFrequency": [
+        "like"
+      ],
+      "wordBank": [
+        "two",
+        "well"
+      ],
+      "spelling": [
+        "like"
+      ],
+      "category": "Shape Words"
+    },
+    {
+      "id": "u2w3",
+      "page": 4,
+      "vocabulary": "Oral Vocabulary\nWords:\ncurious\nobserve\nattaches\nprocess\nslender\nCategory Words:\nTexture words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "the\na\nsee\nwe\nlike\nBuild Your\nWord Bank:\nfor\nout\ndown\nwill\njump\nthere\nour\ntwo\nwell\nELA.K.F.1.4",
+      "phonics": "Phonics: Review /m/m, a/a, /s/s,\n/p/p, /t/t\nSpelling Pattern: at pattern\n(at, mat, sat); the, a, see, we like\nHandwriting: Write sentences\nwith Mm, Aa, Ss, Pp, Tt\nDecodable Readers:\nWe See Tam\nTap, Tap, Tap!\nELA.K.F.1.3.a, ELA.K.F.1.3.b,\nELA.K.F.1.3.c, ELA.K.F.1.3.d,\nELA.K.C.1.1",
+      "oral": [
+        "curious",
+        "observe",
+        "attaches",
+        "process",
+        "slender"
+      ],
+      "highFrequency": [
+        "the",
+        "a",
+        "see",
+        "we",
+        "like"
+      ],
+      "wordBank": [
+        "for",
+        "out",
+        "down",
+        "will",
+        "jump",
+        "there",
+        "our",
+        "two",
+        "well"
+      ],
+      "spelling": [
+        "at",
+        "mat",
+        "sat",
+        "the",
+        "a",
+        "see",
+        "we",
+        "like"
+      ],
+      "category": "Texture words"
+    },
+    {
+      "id": "u3w1",
+      "page": 5,
+      "vocabulary": "Oral Vocabulary\nWords:\nrules\ncooperate\nguard\nprank\nresponsible\nCategory Words:\nAction Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "to\nBuild Your\nWord Bank:\nher\none\nsay\nELA.K.F.1.4",
+      "phonics": "Phonics: /i/i (medial)\nConsonant/Vowel Review: /a/a,\n/m/m, /p/p, /s/s, /t/t\nExtend the Lesson: final double\nletters: ss, tt\nSpelling: Words with i; to\nHandwriting: Upper and\nLowercase Ii\nDecodable Readers:\nTim Can Sit\nWe Like It\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "rules",
+        "cooperate",
+        "guard",
+        "prank",
+        "responsible"
+      ],
+      "highFrequency": [
+        "to"
+      ],
+      "wordBank": [
+        "her",
+        "one",
+        "say"
+      ],
+      "spelling": [
+        "to"
+      ],
+      "category": "Action Words"
+    },
+    {
+      "id": "u3w2",
+      "page": 5,
+      "vocabulary": "Oral Vocabulary\nWords:\nlisten\nvolume\nchat\nexclaimed\nfamiliar\nCategory Words:\nSound Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "and\nBuild Your\nWord Bank:\nthen\nnew\nsaw\nELA.K.F.1.4",
+      "phonics": "Phonics: /n/n\nConsonant/Vowel Review: /a/a,\n/m/m, /p/p, /s/s, /t/t\nSpelling: Words with n; and\nHandwriting: Upper and\nLowercase Nn\nDecodable Readers:\nNat and Nan\nNan and Nat See\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "listen",
+        "volume",
+        "chat",
+        "exclaimed",
+        "familiar"
+      ],
+      "highFrequency": [
+        "and"
+      ],
+      "wordBank": [
+        "then",
+        "new",
+        "saw"
+      ],
+      "spelling": [
+        "and"
+      ],
+      "category": "Sound Words"
+    },
+    {
+      "id": "u3w3",
+      "page": 6,
+      "vocabulary": "Oral Vocabulary\nWords:\nlocal\nroutine\nneighborhood\nvolunteer\nintelligent\nCategory Words:\nSequence Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "go\nBuild Your\nWord Bank:\ncould\nplace\nwhite\nELA.K.F.1.4",
+      "phonics": "Phonics: /k/c\nConsonant/Vowel Review: /a/a,\n/m/m, /p/p, /s/s, /t/t\nSpelling Pattern: an pattern\n(an, can, ran, pan, man)\nHandwriting: Upper and\nLowercase Cc\nDecodable Readers:\nCam Cat\nSee the Cat\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "local",
+        "routine",
+        "neighborhood",
+        "volunteer",
+        "intelligent"
+      ],
+      "highFrequency": [
+        "go"
+      ],
+      "wordBank": [
+        "could",
+        "place",
+        "white"
+      ],
+      "spelling": [
+        "an",
+        "can",
+        "ran",
+        "pan",
+        "man"
+      ],
+      "category": "Sequence Words"
+    },
+    {
+      "id": "u4w1",
+      "page": 7,
+      "vocabulary": "Oral Vocabulary\nWords:\nequipment\nuniform\nutensils\nexpect\nremained\nCategory Words:\nJobs\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "you\nBuild Your\nWord Bank:\nall\nthat\nfour\nELA.K.F.1.4",
+      "phonics": "Phonics: /o/o (initial/medial)\nConsonant/Vowel Review: /a/a,\n/k/c, /l/l, /m/m, /n/n, /p/p, /s/s, /t/t\nSpelling: Words with o; you\nHandwriting: Upper and\nLowercase Oo\nDecodable Readers:\nTom Can\nMom and Nan\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "equipment",
+        "uniform",
+        "utensils",
+        "expect",
+        "remained"
+      ],
+      "highFrequency": [
+        "you"
+      ],
+      "wordBank": [
+        "all",
+        "that",
+        "four"
+      ],
+      "spelling": [
+        "you"
+      ],
+      "category": "Jobs"
+    },
+    {
+      "id": "u4w2",
+      "page": 7,
+      "vocabulary": "Oral Vocabulary\nWords:\nappreciate\ncultures\nprefer\nproud\ntradition\nCategory Words:\nFood Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "do\nBuild Your\nWord Bank:\nday\nlong\nblue\nELA.K.F.1.4",
+      "phonics": "Phonics: /d/d (initial/final)\nConsonant/Vowel Review: /a/a,\n/k/c, /l/l, /m/m, /n/n, /p/p, /s/s, /t/t\nSpelling: Words with d, long o:\no_e; do\nHandwriting: Upper and\nLowercase Dd\nDecodable Readers:\nDid Dan?\nDid Sid See Don?\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "appreciate",
+        "cultures",
+        "prefer",
+        "proud",
+        "tradition"
+      ],
+      "highFrequency": [
+        "do"
+      ],
+      "wordBank": [
+        "day",
+        "long",
+        "blue"
+      ],
+      "spelling": [
+        "do"
+      ],
+      "category": "Food Words"
+    },
+    {
+      "id": "u4w3",
+      "page": 8,
+      "vocabulary": "Oral Vocabulary\nWords:\ncommunity\nimprove\nconfused\nharvest\nquarrel\nCategory Words:\nPosition Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "and\ndo\ngo\nto\nyou\nBuild Your\nWord Bank:\nher\none\nsay\nthen\nnew\nsaw\ncould\nplace\nwhite\nall\nthat\nfour\nday\nlong\nblue\nELA.K.F.1.4",
+      "phonics": "Phonics: Review /i/i, n/n, /k/c,\n/o/o, /d/d; s-Blends (sn, sp, st)\nConsonant/Vowel Review: /a/a,\n/k/c, /l/l, /m/m, /n/n, /p/p, /s/s, /t/t\nLong Vowel Express (optional):\nLong a (a_e)\nSpelling Pattern: ot pattern\n(not, cot, dot, pot, tot)\nHandwriting: Write sentences\nwith i, n, c, o, d, s-Blends\n(sn, sp, st)\nDecodable Readers:\nTip It\nStop the Top!\nELA.K.F.1.3.a, ELA.K.F.1.3.b,\nELA.K.F.1.3.c, ELA.K.F.1.3.d,\nELA.K.C.1.1",
+      "oral": [
+        "community",
+        "improve",
+        "confused",
+        "harvest",
+        "quarrel"
+      ],
+      "highFrequency": [
+        "and",
+        "do",
+        "go",
+        "to",
+        "you"
+      ],
+      "wordBank": [
+        "her",
+        "one",
+        "say",
+        "then",
+        "new",
+        "saw",
+        "could",
+        "place",
+        "white",
+        "all",
+        "that",
+        "four",
+        "day",
+        "long",
+        "blue"
+      ],
+      "spelling": [
+        "not",
+        "cot",
+        "dot",
+        "pot",
+        "tot"
+      ],
+      "category": "Position Words"
+    },
+    {
+      "id": "u5w1",
+      "page": 9,
+      "vocabulary": "Oral Vocabulary\nWords:\nrequire\nplant\nharmful\nsoak\ncrowd\nCategory Words:\nSize Words\nPlurals with -s\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "my\nBuild Your\nWord Bank:\nthan\nhis\nthree\nELA.K.F.1.4",
+      "phonics": "Phonics: /h/h (initial)\nConsonant/Vowel Review:\n/a/a, /k/c, /d/d, /l/l, /m/m, /n/n,\n/o/o, /p/p, /s/s, /t/t\nExtend the Lesson: Final /z/s\nSpelling: Words with h; my\nHandwriting: Upper and\nLowercase Hh\nDecodable Readers:\nHap Hid the Ham\nHip Hop\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "require",
+        "plant",
+        "harmful",
+        "soak",
+        "crowd"
+      ],
+      "highFrequency": [
+        "my"
+      ],
+      "wordBank": [
+        "than",
+        "his",
+        "three"
+      ],
+      "spelling": [
+        "my"
+      ],
+      "category": "Size Words Plurals with -s"
+    },
+    {
+      "id": "u5w2",
+      "page": 9,
+      "vocabulary": "Oral Vocabulary\nWords:\ndevelop\namazing\ncontent\nenormous\nimagine\nCategory Words:\nTree Parts\nInflectional Ending\n-ed\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "are\nBuild Your\nWord Bank:\nwhen\nwhich\nsoon\nELA.K.F.1.4",
+      "phonics": "Phonics: /e/e (initial/medial)\nConsonant/Vowel Review: /a/a,\n/k/c, /d/d, /h/h, /l/l, /m/m, /n/n,\n/o/o, /p/p, /s/s, /t/t\nSpelling: Words with /e/e; are\nHandwriting: Upper and\nLowercase Ee\nDecodable Readers:\nEd and Ted Can Go\nNot a Pet!\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "develop",
+        "amazing",
+        "content",
+        "enormous",
+        "imagine"
+      ],
+      "highFrequency": [
+        "are"
+      ],
+      "wordBank": [
+        "when",
+        "which",
+        "soon"
+      ],
+      "spelling": [
+        "are"
+      ],
+      "category": "Tree Parts Inflectional Ending -ed"
+    },
+    {
+      "id": "u5w3",
+      "page": 10,
+      "vocabulary": "Oral Vocabulary\nWords:\nfresh\ndelicious\nbeneath\nraise\nspecial\nCategory Words:\nFood Words\nSentence Clues\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "with\nhe\nBuild Your\nWord Bank:\nmany\nthem\neat\nELA.K.F.1.4",
+      "phonics": "Phonics: /f/f (initial/final), r/r (initial)\nConsonant/Vowel Review: /a/a,\n/k/c, /d/d, /e/e, /h/h, /l/l, /m/m,\n/n/n, /o/o, /p/p, /s/s, /t/t\nSpelling Pattern: en pattern\n(pen, ten, men, den, hen)\nHandwriting: Upper and\nLowercase Ff and Rr\nDecodable Readers:\nRon Ram\nRed and Ron\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "fresh",
+        "delicious",
+        "beneath",
+        "raise",
+        "special"
+      ],
+      "highFrequency": [
+        "with",
+        "he"
+      ],
+      "wordBank": [
+        "many",
+        "them",
+        "eat"
+      ],
+      "spelling": [
+        "pen",
+        "ten",
+        "men",
+        "den",
+        "hen"
+      ],
+      "category": "Food Words Sentence Clues"
+    },
+    {
+      "id": "u6w1",
+      "page": 11,
+      "vocabulary": "Oral Vocabulary\nWords:\nweather\nseasons\nmigrate\nactive\nspot\nCategory Words:\nSeasons\nSentence Clues\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "is\nlittle\nBuild Your\nWord Bank:\nby\nsome\nbrown\nELA.K.F.1.4",
+      "phonics": "Phonics: /b/b (initial/final),\n/l/l (initial)\nConsonant/Vowel Review:\n/a/a, /k/c, /d/d, /e/e, /f/f, /h/h, /l/l,\n/m/m, /n/n, /o/o, /p/p, /r/r, /s/s, /t/t\nExtend the Lesson: Final double\nletters: ll\nSpelling: Words with b, l; is, little\nHandwriting: Upper and\nLowercase Bb, Ll\nDecodable Readers:\nBob and Ben\nBen, Deb, Lin\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "weather",
+        "seasons",
+        "migrate",
+        "active",
+        "spot"
+      ],
+      "highFrequency": [
+        "is",
+        "little"
+      ],
+      "wordBank": [
+        "by",
+        "some",
+        "brown"
+      ],
+      "spelling": [
+        "is",
+        "little"
+      ],
+      "category": "Seasons Sentence Clues"
+    },
+    {
+      "id": "u6w2",
+      "page": 11,
+      "vocabulary": "Oral Vocabulary\nWords:\npredict\ntemperature\ndrought\nclever\nstorm\nCategory Words:\nWeather Words\nShades of Meaning\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "she\nwas\nBuild Your\nWord Bank:\nnow\nway\nunder\nELA.K.F.1.4",
+      "phonics": "Phonics: /k/k (initial), /k/ck (final)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /d/d, /e/e, /f/f, /h/h, /i/i,\n/l/l, /m/m, /n/n, /o/o, /p/p, /r/r,\n/s/s, /t/t\nSpelling: Words with k, ck;\nshe, was\nHandwriting: Upper and\nLowercase Kk\nDecodable Readers:\nPack It, Kim\nKick It, Nick!\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "predict",
+        "temperature",
+        "drought",
+        "clever",
+        "storm"
+      ],
+      "highFrequency": [
+        "she",
+        "was"
+      ],
+      "wordBank": [
+        "now",
+        "way",
+        "under"
+      ],
+      "spelling": [
+        "she",
+        "was"
+      ],
+      "category": "Weather Words Shades of Meaning"
+    },
+    {
+      "id": "u6w3",
+      "page": 12,
+      "vocabulary": "Oral Vocabulary\nWords:\nsafe\nprepare\nnotice\ncelebration\nenough\nCategory Words:\nQuestion Words\nQuestion Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "are\nhe\nis\nlittle\nmy\nshe\nwas\nwith\nBuild Your\nWord Bank:\nthan\nhis\nthree\nwhen\nwhich\nsoon\nmany\nthem\neat\nby\nsome\nbrown\nnow\nway\nunder\nELA.K.F.1.4",
+      "phonics": "Phonics: Review /h/h, e/e, f/f,\n/r/r, /b/b, /l/l, /k/k, /k/ck; l-Blends\n(bl, cl, fl, sl)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/h/h, /i/i, /l/l, /m/m, /n/n, /o/o,\n/p/p, /r/r, /s/s, /t/t\nLong Vowel Express (optional):\nLong i (i_e)\nSpelling Pattern: ack pattern\n(pack, rack, sack, back, stack)\nHandwriting: Write sentences\nwith h, e, f, r, b, l, k, ck; l-Blends\n(bl, cl, fl, sl)\nDecodable Readers:\nRock Ken\nFlip, Flop, Flip!\nELA.K.F.1.3.a, ELA.K.F.1.3.b,\nELA.K.F.1.3.c, ELA.K.F.1.3.d,\nELA.K.C.1.1",
+      "oral": [
+        "safe",
+        "prepare",
+        "notice",
+        "celebration",
+        "enough"
+      ],
+      "highFrequency": [
+        "are",
+        "he",
+        "is",
+        "little",
+        "my",
+        "she",
+        "was",
+        "with"
+      ],
+      "wordBank": [
+        "than",
+        "his",
+        "three",
+        "when",
+        "which",
+        "soon",
+        "many",
+        "them",
+        "eat",
+        "by",
+        "some",
+        "brown",
+        "now",
+        "way",
+        "under"
+      ],
+      "spelling": [
+        "pack",
+        "rack",
+        "sack",
+        "back",
+        "stack"
+      ],
+      "category": "Question Words Question Words"
+    },
+    {
+      "id": "u7w1",
+      "page": 13,
+      "vocabulary": "Oral Vocabulary\nWords:\nappearance\nbehavior\nexercise\nwander\nplenty\nCategory Words:\nAnimal Parts\nCompound Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "for\nhave\nBuild Your\nWord Bank:\nfrom\nhow\npretty\nELA.K.F.1.4",
+      "phonics": "Phonics: /u/u (initial/medial)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/h/h, /i/i, /l/l, /m/m, /n/n, /o/o,\n/p/p, /r/r, /s/s, /t/t\nSpelling: Words with u; for, have\nHandwriting: Upper and\nLowercase Uu\nDecodable Readers:\nSun Fun\nPup and Cub\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "appearance",
+        "behavior",
+        "exercise",
+        "wander",
+        "plenty"
+      ],
+      "highFrequency": [
+        "for",
+        "have"
+      ],
+      "wordBank": [
+        "from",
+        "how",
+        "pretty"
+      ],
+      "spelling": [
+        "for",
+        "have"
+      ],
+      "category": "Animal Parts Compound Words"
+    },
+    {
+      "id": "u7w2",
+      "page": 13,
+      "vocabulary": "Oral Vocabulary\nWords:\nresponsibility\ntrain\ndepend\ncompared\nsocial\nCategory Words:\nPets\nPrepositions\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "of\nthey\nBuild Your\nWord Bank:\nwater\nthese\nyellow\nELA.K.F.1.4",
+      "phonics": "Phonics: /g/g (initial/final),\nw/w (initial)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/h/h, /i/i, /l/l, /m/m, /n/n, /o/o,\n/p/p, /r/r, /s/s, /t/t, /u/u\nSpelling: Words with g, w;\nshe, was\nHandwriting: Upper and\nLowercase Gg, Ww\nDecodable Readers:\nWet Gus\nSee a Bug?\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "responsibility",
+        "train",
+        "depend",
+        "compared",
+        "social"
+      ],
+      "highFrequency": [
+        "of",
+        "they"
+      ],
+      "wordBank": [
+        "water",
+        "these",
+        "yellow"
+      ],
+      "spelling": [
+        "she",
+        "was"
+      ],
+      "category": "Pets Prepositions"
+    },
+    {
+      "id": "u7w3",
+      "page": 14,
+      "vocabulary": "Oral Vocabulary\nWords:\nhabitat\nwild\ncomplain\njoin\nstubborn\nCategory Words:\nAnimal Homes\nShades of Meaning\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "said\nwant\nBuild Your\nWord Bank:\npeople\nwork\nfunny\nELA.K.F.1.4",
+      "phonics": "Phonics: /ks/x, (final), /v/v (initial)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /l/l, /m/m, /n/n,\n/o/o, /p/p, /r/r, /s/s, /t/t, /u/u, /w/w\nSpelling Pattern: et pattern\n(vet, get, pet, let, bet)\nHandwriting: Upper and\nLowercase Vv, Xx\nDecodable Readers:\nRex the Vet\nFox Had a Big Box\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "habitat",
+        "wild",
+        "complain",
+        "join",
+        "stubborn"
+      ],
+      "highFrequency": [
+        "said",
+        "want"
+      ],
+      "wordBank": [
+        "people",
+        "work",
+        "funny"
+      ],
+      "spelling": [
+        "vet",
+        "get",
+        "pet",
+        "let",
+        "bet"
+      ],
+      "category": "Animal Homes Shades of Meaning"
+    },
+    {
+      "id": "u8w1",
+      "page": 15,
+      "vocabulary": "Oral Vocabulary\nWords:\ntransportation\nvehicle\njourney\nfierce\nwide\nCategory Words:\nVehicles\nContext Clues\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "here\nme\nBuild Your\nWord Bank:\nabout\nmay\naway\nELA.K.F.1.4",
+      "phonics": "Phonics: /j/j (initial), /kw/qu (initial)\nConsonant/Vowel Review:\n/a/a, /b/b, /k/c, /k/ck, /d/d, /e/e,\n/f/f, /g/g, /h/h, /i/i, /l/l, /m/m, /n/n,\n/o/o, /p/p, /r/r, /s/s, /t/t, /u/u, /v/v,\n/w/w, /ks/x\nSpelling: Words with j, qu;\nhere, me\nHandwriting: Upper and\nLowercase Jj, Qq\nDecodable Readers:\nGet It Quick!\nJen Is Quick!\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "transportation",
+        "vehicle",
+        "journey",
+        "fierce",
+        "wide"
+      ],
+      "highFrequency": [
+        "here",
+        "me"
+      ],
+      "wordBank": [
+        "about",
+        "may",
+        "away"
+      ],
+      "spelling": [
+        "here",
+        "me"
+      ],
+      "category": "Vehicles Context Clues"
+    },
+    {
+      "id": "u8w2",
+      "page": 15,
+      "vocabulary": "Oral Vocabulary\nWords:\ncountry\ntravel\ncareful\npurpose\nconnect\nCategory Words:\nLocation Words\nSynonyms\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "this\nwhat\nBuild Your\nWord Bank:\nor\neach\nplease\nELA.K.F.1.4",
+      "phonics": "Phonics: /y/y (initial), /z/z (initial)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x\nSpelling: Words with y, z;\nshe, was\nHandwriting: Upper and\nLowercase Yy, Zz\nDecodable Readers:\nYes, Zack Can Go!\nRex, Kim, and Zig\nELA.K.F.1.3.a, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "country",
+        "travel",
+        "careful",
+        "purpose",
+        "connect"
+      ],
+      "highFrequency": [
+        "this",
+        "what"
+      ],
+      "wordBank": [
+        "or",
+        "each",
+        "please"
+      ],
+      "spelling": [
+        "she",
+        "was"
+      ],
+      "category": "Location Words Synonyms"
+    },
+    {
+      "id": "u8w3",
+      "page": 16,
+      "vocabulary": "Oral Vocabulary\nWords:\ndistance\nrecognize\nspace\nchallenge\nsurface\nCategory Words:\nOpposites\nSimiles\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "for\nhave\nthey\nof\nsaid\nwant\nhere\nme\nthis\nwhat\nBuild Your\nWord Bank:\nfrom\nhow\npretty\nwater\nthese\nyellow\npeople\nwork\nfunny\nabout\nmay\naway\nor\neach\nplease\nELA.K.F.1.4",
+      "phonics": "Phonics: Review /u/u, /g/g, w/w,\n/ks/x, /v/v, /j/j, /kw/qu, /y/y, /z/z;\nr-Blends (br, cr, dr, gr, tr)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nLong Vowel Express (optional):\nLong o (o_e)\nSpelling Pattern: it pattern\n(quit, bit, lit, hit, fit)\nHandwriting: Write sentences\nwith u, g, w, x, v, j, qu, z;\nr-Blends (br, cr, dr, gr, tr)\nDecodable Readers:\nZig-Zag Jet Can Zip\nA Big Trip for Gram\nELA.K.F.1.3.a, ELA.K.F.1.3.b,\nELA.K.F.1.3.c, ELA.K.F.1.3.d,\nELA.K.C.1.1",
+      "oral": [
+        "distance",
+        "recognize",
+        "space",
+        "challenge",
+        "surface"
+      ],
+      "highFrequency": [
+        "for",
+        "have",
+        "they",
+        "of",
+        "said",
+        "want",
+        "here",
+        "me",
+        "this",
+        "what"
+      ],
+      "wordBank": [
+        "from",
+        "how",
+        "pretty",
+        "water",
+        "these",
+        "yellow",
+        "people",
+        "work",
+        "funny",
+        "about",
+        "may",
+        "away",
+        "or",
+        "each",
+        "please"
+      ],
+      "spelling": [
+        "quit",
+        "bit",
+        "lit",
+        "hit",
+        "fit"
+      ],
+      "category": "Opposites Similes"
+    },
+    {
+      "id": "u9w1",
+      "page": 17,
+      "vocabulary": "Oral Vocabulary\nWords:\nchores\ncontribute\nmember\norganize\naccomplish\nCategory Words:\nHousehold\nFurniture\nPrefixes and\nSuffixes\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "help\ntoo\nBuild Your\nWord Bank:\nother\ninto\nmore\nELA.K.F.1.4",
+      "phonics": "Phonics: long a: a_e\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nExtend the Lesson: Digraph sh\nSpelling: Words with long a:\na_e; help, too\nHandwriting: Write sentences\nwith a_e words\nDecodable Readers:\nJake Made Cake\nWe Help Make It\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "chores",
+        "contribute",
+        "member",
+        "organize",
+        "accomplish"
+      ],
+      "highFrequency": [
+        "help",
+        "too"
+      ],
+      "wordBank": [
+        "other",
+        "into",
+        "more"
+      ],
+      "spelling": [
+        "help",
+        "too"
+      ],
+      "category": "Household Furniture Prefixes and Suffixes"
+    },
+    {
+      "id": "u9w2",
+      "page": 17,
+      "vocabulary": "Oral Vocabulary\nWords:\ncitizen\nrespect\ntidy\nnecessary\nhauled\nCategory Words:\nFarm Animals\nQuestion Words\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "has\nplay\nBuild Your\nWord Bank:\nfind\nover\nwere\nELA.K.F.1.4",
+      "phonics": "Phonics: long i: i_e\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nExtend the Lesson: Digraph ch\nSpelling: Words with long i: i_e;\nof, they\nHandwriting: Write sentences\nwith i_e words\nDecodable Readers:\nLake Time Fun\nPike Lane\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "citizen",
+        "respect",
+        "tidy",
+        "necessary",
+        "hauled"
+      ],
+      "highFrequency": [
+        "has",
+        "play"
+      ],
+      "wordBank": [
+        "find",
+        "over",
+        "were"
+      ],
+      "spelling": [
+        "of",
+        "they"
+      ],
+      "category": "Farm Animals Question Words"
+    },
+    {
+      "id": "u9w3",
+      "page": 18,
+      "vocabulary": "Oral Vocabulary\nWords:\nnatural resources\ncreate\ndesigns\nweave\nknowledge\nCategory Words:\nFoods Made from\nGrain\nSentence Clues\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "where\nlook\nBuild Your\nWord Bank:\nknow\nwould\nwrite\nELA.K.F.1.4",
+      "phonics": "Phonics: long o: o_e\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nSpelling Pattern: oke pattern\n(joke, poke, woke, spoke)\nHandwriting: Write sentences\nwith o_e words\nDecodable Readers:\nJo Made It At Home\nJoke Note\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "natural resources",
+        "create",
+        "designs",
+        "weave",
+        "knowledge"
+      ],
+      "highFrequency": [
+        "where",
+        "look"
+      ],
+      "wordBank": [
+        "know",
+        "would",
+        "write"
+      ],
+      "spelling": [
+        "joke",
+        "poke",
+        "woke",
+        "spoke"
+      ],
+      "category": "Foods Made from Grain Sentence Clues"
+    },
+    {
+      "id": "u10w1",
+      "page": 19,
+      "vocabulary": "Oral Vocabulary\nWords:\ndecide\nopinion\nragged\nmarvel\ngrateful\nCategory Words:\nDirections\nSentence Clues\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "good\nwho\nBuild Your\nWord Bank:\npart\nonly\nwords\nELA.K.F.1.4",
+      "phonics": "Phonics: long u: u_e\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nSpelling: Words with long u:\nu_e; good, who\nHandwriting: Write u_e words\nDecodable Readers:\nTube Race\nThe Sad Duke\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "decide",
+        "opinion",
+        "ragged",
+        "marvel",
+        "grateful"
+      ],
+      "highFrequency": [
+        "good",
+        "who"
+      ],
+      "wordBank": [
+        "part",
+        "only",
+        "words"
+      ],
+      "spelling": [
+        "good",
+        "who"
+      ],
+      "category": "Directions Sentence Clues"
+    },
+    {
+      "id": "u10w2",
+      "page": 19,
+      "vocabulary": "Oral Vocabulary\nWords:\nsort\nsimilar\nperfect\nendless\nexperiment\nCategory Words:\nOpposites\nAntonyms\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "come\ndoes\nBuild Your\nWord Bank:\nfirst\nsound\ntheir\nELA.K.F.1.4",
+      "phonics": "Phonics: long e: e, ee, e_e\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nExtend the Lesson: Digraph th\nSpelling Pattern: Words with\nlong e: e, ee, e_e; come, does\nHandwriting: Write words with\ne, ee, e_e\nDecodable Readers:\nPete and Eve\nPete Can Fix It\nSee It?\nDeb Bee\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "sort",
+        "similar",
+        "perfect",
+        "endless",
+        "experiment"
+      ],
+      "highFrequency": [
+        "come",
+        "does"
+      ],
+      "wordBank": [
+        "first",
+        "sound",
+        "their"
+      ],
+      "spelling": [
+        "come",
+        "does"
+      ],
+      "category": "Opposites Antonyms"
+    },
+    {
+      "id": "u10w3",
+      "page": 20,
+      "vocabulary": "Oral Vocabulary\nWords:\nenvironment\nprotect\nrecycle\nwisely\nencourage\nCategory Words:\nNames of Baby\nAnimals\nSuffixes\nELA.K.V.1.1,\nELA.K.V.1.3",
+      "frequency": "help\ntoo\nplay\nhas\nwhere\nlook\nwho\ngood\ncome\ndoes\nBuild Your\nWord Bank:\nother\ninto\nmore\nfind\nover\nwere\nknow\nwould\nwrite\npart\nonly\nwords\nfirst\nsound\ntheir\nELA.K.F.1.4",
+      "phonics": "Phonics: long a, i, o, u, e, final\nblends (st, nd, nk)\nConsonant/Vowel Review: /a/a,\n/b/b, /k/c, /k/ck, /d/d, /e/e, /f/f,\n/g/g, /h/h, /i/i, /j/j, /l/l, /m/m, /n/n,\n/o/o, /p/p, /kw/qu, /r/r, /s/s, /t/t,\n/u/u, /v/v, /w/w, /ks/x, /y/y, /z/z\nSpelling Pattern: eep pattern\n(deep, peep, keep, beep, sleep)\nHandwriting: Write sentences\nwith long a, i, o, u, e\nDecodable Readers:\nWe Can Save!\nWe Can Use It!\nELA.K.F.1.3.b, ELA.K.F.1.3.c,\nELA.K.F.1.3.d, ELA.K.C.1.1",
+      "oral": [
+        "environment",
+        "protect",
+        "recycle",
+        "wisely",
+        "encourage"
+      ],
+      "highFrequency": [
+        "help",
+        "too",
+        "play",
+        "has",
+        "where",
+        "look",
+        "who",
+        "good",
+        "come",
+        "does"
+      ],
+      "wordBank": [
+        "other",
+        "into",
+        "more",
+        "find",
+        "over",
+        "were",
+        "know",
+        "would",
+        "write",
+        "part",
+        "only",
+        "words",
+        "first",
+        "sound",
+        "their"
+      ],
+      "spelling": [
+        "deep",
+        "peep",
+        "keep",
+        "beep",
+        "sleep"
+      ],
+      "category": "Names of Baby Animals Suffixes"
+    }
+  ]
+}
