@@ -131,3 +131,23 @@
 .offline-category .offline-category-actions{margin-top:auto}.offline-category-actions button{margin-top:0}
 
 #offline-plan{width:min(600px,calc(100% - 32px));max-height:calc(100dvh - 40px);padding:0;border:1px solid var(--line);border-radius:20px;background:var(--paper,#fffdf6);color:var(--ink);box-shadow:0 20px 70px #243a3033;overflow:auto}#offline-plan::backdrop{background:#243a3070}#offline-plan .offline-estimate{margin:0;border:0;padding:24px;background:transparent}#offline-plan .offline-estimate:focus{outline:none}#offline-plan h3{margin:0 0 16px}#offline-plan .button-row{margin-top:20px}
+
+/* Separate selection and playback targets; each speaker remains finger-sized. */
+.alphabet-grid.letter-picker{grid-template-columns:repeat(auto-fill,minmax(120px,148px));gap:12px}
+.letter-picker-card{position:relative}
+.letter-picker .alphabet-card{width:100%;min-height:120px;padding:38px 12px 12px}
+.letter-picker .alphabet-card .glyph{font-size:46px}
+.letter-speaker{position:absolute;right:5px;top:5px;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:transparent}
+.letter-speaker:hover,.letter-speaker.playing{background:#d3e3c8}
+.letter-sounds{grid-template-columns:repeat(2,minmax(0,1fr))}
+.loop-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 20px}
+.loop-toolbar [aria-pressed=true]{background:#d3e3c8}
+@media(max-width:520px){.alphabet-grid.letter-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.letter-picker .alphabet-card .glyph{font-size:38px}}
+
+.word-workspace-toolbar{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:14px 20px;margin-bottom:20px}
+.word-workspace-toolbar .skill-tabs{margin:0}
+.word-loop-control{display:flex;flex-direction:column;align-items:flex-end;gap:5px;margin-left:auto}
+.word-loop-control .button{min-height:46px;padding:10px 16px;border-radius:14px;background:#e1ecd9;border:1px solid #9bb18d;white-space:nowrap}
+.word-loop-control .button[aria-pressed=true]{background:#52795c;border-color:#52795c;color:#fffdf6}
+.word-loop-control .micro{font-size:11px;line-height:1.5}
+@media(max-width:760px){.word-loop-control{width:100%;margin-left:0;align-items:center;flex-direction:row;flex-wrap:wrap;gap:8px 12px}}

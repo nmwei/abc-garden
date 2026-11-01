@@ -7,19 +7,19 @@ export class FollowAlong {
     this.audio.onended=()=>{
       if(this.status!=='playing')return;
       if(this.phase==='name'){this.phase='sound';this.play();}
-      else if(this.index+1<this.letters.length){this.phase='gap';this.changed();this.wait();}
+      else if(this.loop||this.index+1<this.letters.length){this.phase='gap';this.changed();this.wait();}
       else{this.status='done';this.changed();}
     };
   }
   stop(notify=true){this.version++;clearTimeout(this.timer);this.audio.pause();this.audio.removeAttribute('src');this.audio.load();this.status='idle';if(notify)this.changed();}
-  start(letters){this.stop(false);this.letters=[...letters];this.index=0;this.phase='name';this.play();}
+  start(letters,{loop=false}={}){this.stop(false);this.loop=loop;if(!letters.length)return;this.letters=[...letters];this.index=0;this.phase='name';this.play();}
   play(){
     const version=++this.version;this.status='playing';
     const key=`${this.phase}-${this.letters[this.index]}`;
     this.audio.src=this.customAudio()[key]||`./assets/audio/${key}.wav`;this.changed();
     this.audio.play().catch(()=>{if(version===this.version){this.status='error';this.changed();}});
   }
-  wait(){this.timer=setTimeout(()=>{this.index++;this.phase='name';this.play();},600);}
+  wait(){this.timer=setTimeout(()=>{this.index=(this.index+1)%this.letters.length;this.phase='name';this.play();},600);}
   pause(){if(this.status!=='playing')return;this.version++;clearTimeout(this.timer);this.audio.pause();this.status='paused';this.changed();}
   resume(){
     if(this.status!=='paused')return;
