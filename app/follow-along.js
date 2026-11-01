@@ -7,7 +7,7 @@ export class FollowAlong {
     this.audio.onended=()=>{
       if(this.status!=='playing')return;
       if(this.phase==='name'){this.phase='sound';this.play();}
-      else if(this.loop||this.index+1<this.letters.length){this.phase='gap';this.changed();this.wait();}
+      else if(this.loop||this.index+1<this.letters.length){this.index=(this.index+1)%this.letters.length;this.phase='name';this.play();}
       else{this.status='done';this.changed();}
     };
   }
@@ -19,12 +19,10 @@ export class FollowAlong {
     this.audio.src=this.customAudio()[key]||`./assets/audio/${key}.wav`;this.changed();
     this.audio.play().catch(()=>{if(version===this.version){this.status='error';this.changed();}});
   }
-  wait(){this.timer=setTimeout(()=>{this.index=(this.index+1)%this.letters.length;this.phase='name';this.play();},600);}
   pause(){if(this.status!=='playing')return;this.version++;clearTimeout(this.timer);this.audio.pause();this.status='paused';this.changed();}
   resume(){
     if(this.status!=='paused')return;
     this.status='playing';this.changed();
-    if(this.phase==='gap'){this.wait();return;}
     const version=++this.version;
     this.audio.play().catch(()=>{if(version===this.version){this.status='error';this.changed();}});
   }

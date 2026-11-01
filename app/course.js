@@ -31,7 +31,7 @@ export class Course {
  ['read','book','故事小屋',`${READINGS.filter(r=>r.level<=level).length} 篇可选阅读 · 逐句听 · 理解与复述`],['talk','hand','开口说一说','分角色对话 · 录音回听 · 自己表达'],['write','leaf','小小写作室','字母与词语描写 · 从一句话到一篇文章']
  ].map(([view,id,title,text])=>`<button class="course-card" data-course="open" data-view="${view}">${wordPicture(id)}<h2>${title}</h2><p>${text}</p><span>去探索 →</span></button>`).join('')}</div><div class="button-row">${button('credits','声音与图片来源')}</div><p class="page-note">阶段可自由选择，无需考试解锁。当前是分层练习包，完成活动不等于达到流利水平；开放表达需要家人或老师反馈。</p>`;
  }
- library(){return wordLibrary(this.customWords?.words||[]);}
+ library(){return wordLibrary(this.customWords?.words||[],this.customWords?.data.wordMeanings);}
  sourceWords(){const lib=this.library();return this.masteryFilter==='learning'?lib.selected:lib.all;}
  pool(){const q=this.wordQuery.trim().toLowerCase();return this.sourceWords().filter(w=>this.topic==='all'||w.topic===this.topic).filter(w=>matchesWord(w,q)).filter(w=>this.masteryFilter==='all'||this.mastery.has(w.id)===(this.masteryFilter==='mastered'));}
  picture(w,alt=''){return w.image?wordPicture(w.id,alt):'<span class="word-context-label">结合例句理解</span>';}
@@ -67,7 +67,6 @@ export class Course {
    const ok=await this.play([this.wordClip(this.word),{text:this.word.zh}]);
    if(token!==this.followToken)return;
    if(!ok){this.stopWordLoop();return;}
-   await new Promise(resolve=>setTimeout(resolve,900));
   }
  }
  searchWords(query){
