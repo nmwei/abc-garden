@@ -15894,5 +15894,2075 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "changes": "Original vector artwork",
     "sha256": "b0f474a8eeb6f53259da52ba2aa07529741bcd7ea1a9136ea9b6916e8938ae4d"
+  },
+  {
+    "file": "pictures/hop.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "48dbc75aae9c196591881ffd2ec4fd8b080d11964aa70b568ff1bf067789eda5"
+  },
+  {
+    "file": "pictures/rake.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG illustration; scripts/pictures/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original vector artwork",
+    "sha256": "fe63f053ae770dbb5742b19c811742f04129b1a46b503b737e4e84eb7d32e5f2"
+  },
+  {
+    "file": "pictures/i.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e1cac26ea064b92574874b80d1a264fa4acda82331400ae9fb057861c0ac716e"
+  },
+  {
+    "file": "pictures/can.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2577282ecc4aa247cddbed3bc1491f4749631908e375ab7a70f78da481256527"
+  },
+  {
+    "file": "pictures/problem.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5bbd6e7f4c2ee6396ba91b7be25cad8ff38cf766d1d63a9af66ff0516aabad25"
+  },
+  {
+    "file": "pictures/grasped.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0ee913f612552bca252468e16aa330073bba8df6bd5e1e1b752af06e1a603c78"
+  },
+  {
+    "file": "pictures/escape.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ba0dc364091c6e8e0352858e6883742d55dd62f07bbae6a276968650941d2a99"
+  },
+  {
+    "file": "pictures/the.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "abad8510f26f1c5a7bc129a3e84508f3ed46e9b67ae78a4eac5e5bcdce23615e"
+  },
+  {
+    "file": "pictures/adventure.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2e05ea81f94cfa3cedf5198dd46ae6c3654eb5fee13e0284b34219496ad12c82"
+  },
+  {
+    "file": "pictures/movement.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6f853e081eae9a6328f891fcdf3c2e8506fd4e0e307d137c296ed8cb280b4ef2"
+  },
+  {
+    "file": "pictures/exhausted.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "99515098dd7d222aa2242728e6cf750db8965a803896ed9a0292f48d838a6ff7"
+  },
+  {
+    "file": "pictures/arrived.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5b96f1374ed40ed5ffc5161fc9154e2845946fb88acc6b2295b35a88036ea528"
+  },
+  {
+    "file": "pictures/we.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "25209b9e376a6732ec938da9af8b932bb054cb7445ef28ff770221862dd313a5"
+  },
+  {
+    "file": "pictures/feast.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "be7b1e9182e7583ed30d5239af8ef6bd6f5b21000ac67676d4d122478997c122"
+  },
+  {
+    "file": "pictures/finished.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6109d0f30b83949bf5408ae5d666b23a6597c1b4460edbdf0d31a9a0c1ddd2e5"
+  },
+  {
+    "file": "pictures/kneads.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5404f2a639a834d0f4a756d8287a92813de6a96f353fe2eb31f82a020f17093e"
+  },
+  {
+    "file": "pictures/will.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "225c3299988d64e0aaf2e382b09335d8c79240d06b90a5fa79d357903d4c00e9"
+  },
+  {
+    "file": "pictures/tools.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "05208c467dbac914c8de6c28a6179d3ebf57926bac2edf57566c8075d757afa5"
+  },
+  {
+    "file": "pictures/discover.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "bdd9d7c621d2390380c0a733f26d58d485a9a846c17953af90db25dc87dbafba"
+  },
+  {
+    "file": "pictures/defeated.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d616b4c7448f2a3d473cf11f1e157841bc1e870f15508025d4faa8c338f39ed2"
+  },
+  {
+    "file": "pictures/fetch.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d1d14af3a824cb1ed3b40978e0aa415f0e6612e9a6b120ea703686e0c52fe81e"
+  },
+  {
+    "file": "pictures/rumble.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "315bd327681aeb2e6a6067947e53769a602b041f62a78fb35840cc52b8517bd0"
+  },
+  {
+    "file": "pictures/there.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "dc360a99c7c21d3b9ddca091ba194d3d24f1b39d5c7e9125e19830ecafbf7f3e"
+  },
+  {
+    "file": "pictures/our.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3c8fc11036a08f8a198873f3397cf0f5d9571620c1fa05c40b337345d81228a1"
+  },
+  {
+    "file": "pictures/a.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6fc043a28aa59d0fdfed9ddf8b713e180d3b4cbf830881c665cf0de21c674f00"
+  },
+  {
+    "file": "pictures/materials.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c8a3dbb927a013dd68bca45d185c6137d73a22c548b0e76abc1450090ca7bf25"
+  },
+  {
+    "file": "pictures/decoration.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "068cd00e248cfa8b66e02f6330625b790961b4c7f19eaadf694be876f2e5c5de"
+  },
+  {
+    "file": "pictures/games.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e0114a1ffd9cb4f62230ab40516663b9d58ee8793578fc0ff3672a14f1985970"
+  },
+  {
+    "file": "pictures/like.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3dca42893de702fad25763bcc58f5967d6e6a01c15231bdd7c93ae3a8fa60eba"
+  },
+  {
+    "file": "pictures/two.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0b68888c45a24befabab4ccd5ce29ae30b029fe1b6fc0fb994e7c933f3621246"
+  },
+  {
+    "file": "pictures/observe-watch.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "171572bf0ad61fc20e8dcae8c31b209d8a787d1be44dcc6d8ed85bee20752286"
+  },
+  {
+    "file": "pictures/attaches.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c2be78d54a8ec0db48eeec751f9eae22dad3eca1cc43954ab3a4d0f7a2d75c65"
+  },
+  {
+    "file": "pictures/process.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ce65311084dbf980be85160babbc1f4c404100339fb8afe051d1a1f1075e04a8"
+  },
+  {
+    "file": "pictures/slender.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e94fd62a84c2a14376ec4edfc5155a3ba8c23a6386507f8e4a568b19c188142f"
+  },
+  {
+    "file": "pictures/for.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b974d5d70780f8e6322e169b4e92556afeac0f9f239d477072603b1a414d9d0b"
+  },
+  {
+    "file": "pictures/at.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "fd2f884003b85bde085df797083455b6cab36bac80b125fbbc80404d3cb9bc02"
+  },
+  {
+    "file": "pictures/mat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e742e1364e40f1ec41d546bdf1e238d110765eab63ab9d00bd13dfb8035c46db"
+  },
+  {
+    "file": "pictures/sat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "672eb4868cafa7abb48daaf1e3c469348aa7d2fa3bef61440f05a2afa8727f0c"
+  },
+  {
+    "file": "pictures/rules.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c881b128924a64372b230eb9f3c2fddbcbb94de0a200a28395375cc392c4cc29"
+  },
+  {
+    "file": "pictures/cooperate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "867ab21674b5c86c6fb567e5c1e46b3f710ed426898c91d1568a78c7be7a49ce"
+  },
+  {
+    "file": "pictures/guard-protect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5757181fd0af8157733dd38c67542863921aa963954e79b274f28586643a6df4"
+  },
+  {
+    "file": "pictures/prank.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a638b93d0e8fdba2479ea00997408ea517b98d3713577db24fe9933b08938a37"
+  },
+  {
+    "file": "pictures/responsible.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "04cc75ef71e16330fa52e07fe69f3e07626d565e2b03c7a9c5fee2cc4e77ecfa"
+  },
+  {
+    "file": "pictures/her.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4427814014b24bddd7cfb3e12a942dbead33d8a5451c5a6fe973910f3f07c6b0"
+  },
+  {
+    "file": "pictures/one.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6d16d81a36474d1a15d03598d4590576e487f8fe063961cbb22b542d14a4de5f"
+  },
+  {
+    "file": "pictures/exclaimed.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "58eddd7c30ac74e85c9dbd322efa98d48cd46d09c8da7f10500739f73975d702"
+  },
+  {
+    "file": "pictures/familiar.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "af259524698d66e78b3c7cebca826d2c59d26e0be0e04dfab2a7ba9e3ecc59e2"
+  },
+  {
+    "file": "pictures/and.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f8adec72756e61b0a8a7ca060c1b5757546aa0ca5e713c313cd4c2495f9c0ea6"
+  },
+  {
+    "file": "pictures/then.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ca48412d2f2d2390d0e170588dfe0f813e75d0ba6943e8c67dc842aa733686d7"
+  },
+  {
+    "file": "pictures/new.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4bff27324d7bd6f31c8a99336e7eed2cad9810046bad6116725d4d23e7540a9b"
+  },
+  {
+    "file": "pictures/saw-see.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a6047f3a29bdedec61086ee3c2684deda45cc8ef7c187d228fe6034a7b990313"
+  },
+  {
+    "file": "pictures/local.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "69fe99b459c74014fd7250bd507e616d7745c893c093cf2e65f277268ec33ebc"
+  },
+  {
+    "file": "pictures/routine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "845ede41f5767d174857e80aec76771f887f9e3c58026fe42980058ae01854cc"
+  },
+  {
+    "file": "pictures/neighborhood.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "93754c46b58577c2ce6fef8150bf095ff752c9698a95d748b3a75225a0c668d5"
+  },
+  {
+    "file": "pictures/volunteer.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "9a841ba00b53596008948e4e95d2491f760c86c6f9d18162cd05518f51d9fc93"
+  },
+  {
+    "file": "pictures/intelligent.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "52afddba62817ee05c3995673a2754fcc2b196c450c32cf61cedf42f956bc4d4"
+  },
+  {
+    "file": "pictures/could.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2a900bb46fe91fb5ef767c7a9f1adf8c96eb606dd2ca8e3a180a02208168bcb7"
+  },
+  {
+    "file": "pictures/place.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a19b4dffe1769edef3c4481aa237b6dc2ab24105c5392fef91c3055d6a7477b1"
+  },
+  {
+    "file": "pictures/an.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "bd03abc217dc2fdb8fbc6b2641ce6b45a791625f2b7ce35ad808296efaf88f68"
+  },
+  {
+    "file": "pictures/ran.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b509d7a44d4791cdf024da6d9779d86c40e6867350e01e3758d6dd37308ba5ed"
+  },
+  {
+    "file": "pictures/utensils.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "28b0ed761f5f3e5d188983474e45b104ab070d6919ba21dc8482cea6e86eecaa"
+  },
+  {
+    "file": "pictures/expect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "73cce0fc6005c404c8da3b46d83f0d74c8a7aee50e3183f7ca91010b3b1f9da9"
+  },
+  {
+    "file": "pictures/remained.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6986a06bbfef91913b9c000e158b13c887cbabd5e3268aa803e1e77b17677277"
+  },
+  {
+    "file": "pictures/you.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "37cf4426008b04a4b92ea1f63e1e066bdea863fa48d77d49674bddd14e6792d2"
+  },
+  {
+    "file": "pictures/all.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "dec42404de18bce82946e7980818ef0962d085a504f38af42a4b27f79d110a33"
+  },
+  {
+    "file": "pictures/that.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "de15538f4f76b479df5d99370d25fdc154336ea445cad3713a7ab97bc0e37c94"
+  },
+  {
+    "file": "pictures/four.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "020277c21d43532e719c4c130ef2b769e708482428765724162dc0231ce9d878"
+  },
+  {
+    "file": "pictures/appreciate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "53660dc30dc39ab8ee267774aacace7037f56c45df8ae9c846bc807c3046115f"
+  },
+  {
+    "file": "pictures/cultures.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c58257c9e054544bfce686a3322e522b39cd581087cf106f64edc5ac2dfab14e"
+  },
+  {
+    "file": "pictures/prefer.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f317a620844201f05da2367156163e5bed4a8f5ffe2b6248dc2d5ccdb0f22ae9"
+  },
+  {
+    "file": "pictures/tradition.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "840b3edb9fbcc005baf2259ac5aafc4f0cb0e6b692ab67fb31a2243cae766c2f"
+  },
+  {
+    "file": "pictures/do.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0e42a64b9712e32f379ae346ee21943df60f9cd2de0d1d846f2ff88666b07323"
+  },
+  {
+    "file": "pictures/community.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1ec6407aaf8d60966d229ba0b5fcd9c47d744c163dafecc88097fac12b380e3e"
+  },
+  {
+    "file": "pictures/improve.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c78a30f0bb413810ad87f5fd076fbc709c702632a147315a9df7369f17d4376a"
+  },
+  {
+    "file": "pictures/quarrel.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3e630cda5d65f75cc34640b2e608eb044e52a2b9bdd1d1af37f8387e5d64c9c8"
+  },
+  {
+    "file": "pictures/not.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "450c26d7b4ef17d25574e8535bf75c1c4b6fd70ac2a2c0abaf4b535e75afc642"
+  },
+  {
+    "file": "pictures/cot.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "67673c6beb6239f469dd4db0a38fbeaee0189421af960e46387e82c0ee35e41e"
+  },
+  {
+    "file": "pictures/dot.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "276361e11958fee8528b82c9d5d33d0d37fca37cd82b1c60ad6905c119059e97"
+  },
+  {
+    "file": "pictures/tot.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f3fc9e41c3fe977cd41cd85c109f6e099b1222ea5f1e99c29b8669cea09454a3"
+  },
+  {
+    "file": "pictures/require.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f0ed65f12a2a8120037d4725e76a403d4c37feafd741ff09326d05f821a1d3b4"
+  },
+  {
+    "file": "pictures/plant-seed.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6bea367aa0b12c118d4b7485a64ba21c99b5058ed2503050bc613fa63f4f9764"
+  },
+  {
+    "file": "pictures/harmful.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5114e192907fd10e088bb6bf16f3e55cb53e7bd7696fe962bb9378131efd22c8"
+  },
+  {
+    "file": "pictures/soak.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7bfc45347757a49d3ec649a3c486db0c32392083fabf2b5296850230d0d87bdf"
+  },
+  {
+    "file": "pictures/my.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "089fb040e12e11d3ff7e10921dd7db9597f57ef22c3b32591b17e2654a43d23a"
+  },
+  {
+    "file": "pictures/than.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c72406d8f1956209e9cdf13dff6bded61b555d88efe6d9e8da514098935de1ef"
+  },
+  {
+    "file": "pictures/his.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "8fe5f511de3b674891bbeb542b0e3ebbfb432113df94f926f2961b02e5c31a72"
+  },
+  {
+    "file": "pictures/three.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "74100084d7cbff38e3d497a8f4306161c104d8b5882b9ba47c2f2dab0b354c8d"
+  },
+  {
+    "file": "pictures/develop-grow.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "44f77856ffb80fa0182c129af3987c7c44ac919dba18ade3c92d4db5bc94db85"
+  },
+  {
+    "file": "pictures/amazing.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1090ba24a482cb76e7ed97c8b9175e8ced79de89f40294f2a7f4f751bc73df4f"
+  },
+  {
+    "file": "pictures/content.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a1fa067ae99e7a0afedbdb98d6c17890855c3c3819f5b4cad04d949bd5510ea0"
+  },
+  {
+    "file": "pictures/enormous.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c73721a700edfb36753bdefc5a20c938595db6786bc6c0de0983365c26166713"
+  },
+  {
+    "file": "pictures/imagine.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "efc5877ac74a3c6b3b33090e19febecabf3eed13e8fdf8dedfbd0d4e19b6a749"
+  },
+  {
+    "file": "pictures/are.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "827b86c4b1f28d80baaeee83dc351a8eea82378a0eaa944e85ac48e05b11c199"
+  },
+  {
+    "file": "pictures/when.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f45ce0f9cbba6400446ad6166f67840737ffa27e30b87294ed797f62b6bbda11"
+  },
+  {
+    "file": "pictures/which.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "01351f8d425e76ecd81c435bd76b4088cc7fc59f074a9e03ed6b8aaa0d2b70e0"
+  },
+  {
+    "file": "pictures/soon.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ebc38534a7926e361a2475ec4fb2879f7d86b6fd083ad0b0e3594656f08880e8"
+  },
+  {
+    "file": "pictures/fresh.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c4008d16a5dc66124fa00d0df120f1a6c90c99b0bbb267ef2916f38dfe80a4cb"
+  },
+  {
+    "file": "pictures/delicious.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7ae9bee863a5285b4a098830db807b6221b0094da9e3a8119ee124a9eb71138a"
+  },
+  {
+    "file": "pictures/beneath.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "501cdb6d4c48e93076ab5dd20d5ce4c35a24dfd4f3651f2e2fa3eb65e8c5c8f9"
+  },
+  {
+    "file": "pictures/raise-animals.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f4131fbdde0f97f37d71eeb00ef2babd7bccbafa6d07a8bd13aee00914183ce1"
+  },
+  {
+    "file": "pictures/special.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b2e6813a89bb75d7060fc1d0a5c89c7ea98ad2e95f21a91a36a20bae1f835085"
+  },
+  {
+    "file": "pictures/with.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "73ecbda9c9ab63728e2b68d21d9612b76c6946eda9c5131d7347997f77aa6d0e"
+  },
+  {
+    "file": "pictures/he.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "54c4ba8f1bbf31ad7205899f8a79e9569d0d9db393766f4dd68cd16020f69388"
+  },
+  {
+    "file": "pictures/many.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "31820d747141426d5a958398a91d15e08e88f3c44102d65cc3c111a50326b36e"
+  },
+  {
+    "file": "pictures/them.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "28b161782bcccc1df2c77a7e8a1750e2b4035c6cb933ecd794006fb082b3f5fe"
+  },
+  {
+    "file": "pictures/ten.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b289db57b181b370037d0f9e0de6f0469eddaa5141991112690f58bdb10b25fc"
+  },
+  {
+    "file": "pictures/men.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5b5c908443189fcdc99c75e561d3cf9c5b8c68a7d3cf0fb0be36123a6ae0a542"
+  },
+  {
+    "file": "pictures/den.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2d0e912a13fe756c0a9543a776bf799268df1ff7df6f0c90c2aa8664a3c0c1b1"
+  },
+  {
+    "file": "pictures/seasons.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "448c2e426f078da000d4cbba319d87e7a3cccdfe98852cd89e6cb5cc3254daf8"
+  },
+  {
+    "file": "pictures/migrate.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "db8a7e831712bc57f692f5dfdfbae41e12d3c5e95cfcede0c106063349fd3864"
+  },
+  {
+    "file": "pictures/active.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3da3f12418a84a2d91518e2df08889a8e85c8c1a07633e6add732aea748db92b"
+  },
+  {
+    "file": "pictures/spot-see.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6fc46a4c98414eda9823b0f78121d12777832f0e450cb3c20c8c1b34d7a7f501"
+  },
+  {
+    "file": "pictures/is.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ffb12038f2cc97b4460e08ea01fe4a149b74669eb430fcd19498369c9bda79b7"
+  },
+  {
+    "file": "pictures/by.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4f91ad913b470a44ddba42ad6dc2591e9fffc5d5f67f7b1b89de8e2ba9be75e6"
+  },
+  {
+    "file": "pictures/some.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1ad5938a8cd4a4b539827e44bfb1d65889fd3e7ef00b6db580acc8f1d00d6108"
+  },
+  {
+    "file": "pictures/predict.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "45c19f23f2f14e7a71d1ef71222573f1abd00195cc361b90218fcb060e7f4fb7"
+  },
+  {
+    "file": "pictures/drought.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "79f0fd42a0a3385951b6b73e34313685ac0a5be8fd59fa7552e8929c6f22f3fb"
+  },
+  {
+    "file": "pictures/clever.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "afa92b3e2fe7cfaa5444654184300a025c07e0a884a1ba0f1bfa5d5f6961ea31"
+  },
+  {
+    "file": "pictures/she.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b8b2fa87b35d6f4556a0c2d0dc4dd9d26dd643a52813028bc0caee63b412d1d4"
+  },
+  {
+    "file": "pictures/was.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a0fe8f9e33061ead7e126db5e914600c6b9650c76b714747ec516b3d2cb0a4f2"
+  },
+  {
+    "file": "pictures/now.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "aaa398e79fe8c3ad09c17a7e754e5238ef3b5e81f81c7d67eccc4c04a9a23f07"
+  },
+  {
+    "file": "pictures/way.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f50d8c8af7d96fef5115c14506a748662a7a05c33dd57aceac5baff62ebaadba"
+  },
+  {
+    "file": "pictures/safe.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d3abd79bdcce4e495b5f0af6888357cf72de9744574acc83d30a0be6378862d2"
+  },
+  {
+    "file": "pictures/notice.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "20509a23bcbf581ce9511e4717ec9d74befbb041916d676e1b03235a9a5835f4"
+  },
+  {
+    "file": "pictures/enough.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "bbdf7ba31339d68e2461a6557f43d641415d78679333aba2e28bf359f55b9f1e"
+  },
+  {
+    "file": "pictures/rack.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "bcda2a370a28be6eb65b3b511846c7686f18f8d8a6753e1fd72a03f4fc31fdf1"
+  },
+  {
+    "file": "pictures/sack.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c00bd3510e65bf228c5862f11b42d2babe2f811ba6879cc8a5c2e0ac50ffabd7"
+  },
+  {
+    "file": "pictures/back.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "865bb1037e9dd65afe25cfd29d7f76b26b6b478c3730d477d76b5a6c35e7b54c"
+  },
+  {
+    "file": "pictures/stack.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "9e3013d543ea75d4014c0c94d3067646f7309dc2e99db045ae17d18415d20647"
+  },
+  {
+    "file": "pictures/appearance.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2cb9da623c5ea2b38e99b493a8a834f51265c56ed7b3f046a429055a6d7759d4"
+  },
+  {
+    "file": "pictures/behavior.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2fa25d575aed9af96f3e92d908ea1b986ad550fafda8a1caf7fb129b60a20f02"
+  },
+  {
+    "file": "pictures/wander.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "39e650caa839519685b4e9b7cfd753490b41c41f391ecb5a9ff27625c9ba8cdc"
+  },
+  {
+    "file": "pictures/plenty.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ac0e309398c0714e2c642efe5869e4fb3d872f32afac5d6a8f5d5a21351e615e"
+  },
+  {
+    "file": "pictures/have.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6e1b5337973e40b6aebb0b885c2dd8e19d5edaf74495e84ac06292182003eab2"
+  },
+  {
+    "file": "pictures/how.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3c4be2a9083662073c82626a17b867f83991d400b63551b509b506f6b70e212a"
+  },
+  {
+    "file": "pictures/pretty.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4a336a5d642e846106b8f475b00cedddbaa6c6bc10ddfe2dedf605a2ffd3bcee"
+  },
+  {
+    "file": "pictures/responsibility.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ef62c60e6b47f13e63d0db50fbf25484b4416234fb9f74246daf7583966a0692"
+  },
+  {
+    "file": "pictures/train-pet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "107f82367ad6733c9bd0586eabbe73fb493d8fcdd87332ced91c31534f67476a"
+  },
+  {
+    "file": "pictures/depend.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ab8f6f33053910f2fa0a416920f9e4df76651b35044ce6c054b23eb16a6d15a3"
+  },
+  {
+    "file": "pictures/compared.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "eee476d3693942970afdeaf981d2cd0f490e77392ff25a9388065d456c55fe2d"
+  },
+  {
+    "file": "pictures/social-friendly.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c1b360d45111be76679f588e85127b628a5966e12f9ac518a0f8efbf935c45a0"
+  },
+  {
+    "file": "pictures/of.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "47c2a1492e969a5e81da7061844d892df12e29638dde378f70615c86fb085b83"
+  },
+  {
+    "file": "pictures/they.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e03af1749acf351b8adb1306feeacd3cc065c8b0bc6cc042e417ee888dba4f08"
+  },
+  {
+    "file": "pictures/these.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "a030dc4759ca93dc2b2f5d67c4876819f6628ee7e8e546929ad94228c462b80d"
+  },
+  {
+    "file": "pictures/habitat.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "352419ed7d111e9c9da2436075cfa38b84ef6978bc1e61e7ea76acb1c1f35537"
+  },
+  {
+    "file": "pictures/wild.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0098978f466db9ebc84523a60d97771c1ce75f739ee94e331d0b23ca212f5870"
+  },
+  {
+    "file": "pictures/complain.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "136f80bf07882b9f66b5c552a7dafdbfc5bd53178d07c7c13340ab204cb20e9c"
+  },
+  {
+    "file": "pictures/join.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3465aaa2a277d7ed6c3d604f875f90702d5cbb32190c6990f82e07996aeef2b4"
+  },
+  {
+    "file": "pictures/stubborn.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "bf1c4ba2f871cb894cc7509dfa3466bc5be0b16b5f8c0656e6742fead369af13"
+  },
+  {
+    "file": "pictures/said.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3622054d3e90b7f2cdce49497494c466806dbb84ec3edbc79cadaa8d0e1302fc"
+  },
+  {
+    "file": "pictures/want.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c70011ef2467909e90852f6e0e49e23757ff0e0a39d57947c90c585f52e484b2"
+  },
+  {
+    "file": "pictures/funny.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "63efe53e5cd8331b52d17a8403fa25dd49f2e99ede52b17e81819df21c51ce2e"
+  },
+  {
+    "file": "pictures/get.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f25323a18d55c245aab4403a423a140864cd2f41cdb8136275589a89bad668bd"
+  },
+  {
+    "file": "pictures/let.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "61671d10ffc57acda26f1370953a88184c7472cfd6eedc926c2d63965bc924dd"
+  },
+  {
+    "file": "pictures/bet.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0f036253e2ac2d7401c8ff0c2c4af10656e17b83db161177591c98bbdc07985a"
+  },
+  {
+    "file": "pictures/transportation.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ddd6064173095bdb3ab4e7d629762385065c2a52ff95862b1ba6331574969dcf"
+  },
+  {
+    "file": "pictures/vehicle.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "250e2400c80de59f1049004eea5677e39a5b72033e29ccdf9e7becc3db19088e"
+  },
+  {
+    "file": "pictures/fierce.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "882b771c6e5d41f1fc522cfa5d8e0fe83ab737307864cb787afb19beddebcd1f"
+  },
+  {
+    "file": "pictures/here.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "18a3d3caf200438745b1a08cd0fdc1592bef033b31e90d7acae793b8d78ed122"
+  },
+  {
+    "file": "pictures/me.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b487b1d86314590e9394ce4a8c02ea3754bcaff5696ac04caaea7702e842e1c5"
+  },
+  {
+    "file": "pictures/about.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5154fae212ad5a42d236f89bd220192c1dbafdf4751103b0dce8becc3bb0891d"
+  },
+  {
+    "file": "pictures/may.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "404aff96e34a443502ea4ffb40fcc0ae644e44c6dec1e8ea5139cd809128c1f4"
+  },
+  {
+    "file": "pictures/away.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "974b74cf7855000002f9cb3434abdb56f6b79444ac4b1656d6728cfdb20acc1a"
+  },
+  {
+    "file": "pictures/country.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e8d4f315c50c73e1e44582d76cc6769404928f229c62979020e466507a06de29"
+  },
+  {
+    "file": "pictures/careful.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6860db664734882dcc65a8866f964d85fd5cb85542be834ca0bf30c7f839b67c"
+  },
+  {
+    "file": "pictures/purpose.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "105da5265ea88824c49d0193da1ebff71233f7154af39505b323f6a9cba6e35a"
+  },
+  {
+    "file": "pictures/connect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d68faa347604827644fba8467878654454e3fe9d2da978ad4fa56e70bc3c402b"
+  },
+  {
+    "file": "pictures/this.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4b94cbf5e827b0fa4163fa1e225a33bc615862da00cce54cafdc2658bf385c56"
+  },
+  {
+    "file": "pictures/what.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e627c9554e3aff96a474b7752ab2cb644e5a62d6e9039c4a91da2e51067a157f"
+  },
+  {
+    "file": "pictures/or.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b339c726dfc6a7d20ac14492136b97a5d712d3d23912e315962eeb4bccdb8784"
+  },
+  {
+    "file": "pictures/each.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5d22377035ec141a7f765b0a11c61cd4d9d3bf6dbd724400dbf38c724cec458e"
+  },
+  {
+    "file": "pictures/please.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "0b42880c19333df0c1c3a12a3664ad43181350b72981f4ad2bede4454b98ff7b"
+  },
+  {
+    "file": "pictures/distance.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c59da511dacd56144a3493e3e64a1a454097153ff577b3063ab618b2aa3f98c6"
+  },
+  {
+    "file": "pictures/recognize.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "68ad3ba769f3d14ecb43c2806f7ba8e8ad16eba1f72808a5bb2a1ca1b09933fd"
+  },
+  {
+    "file": "pictures/challenge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b46647df58efc784dde3172e93a49dd04c27c611010a9a2539dcbccb0ecb6864"
+  },
+  {
+    "file": "pictures/quit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f5e9a2040ff3ebda900f842a4fc2dbd7de7c46c679a48f6e599866214a6b3ed9"
+  },
+  {
+    "file": "pictures/bit-bite.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6b01f5cc6231e5953275a7b05a3f3962ccf401f23fbc2cae59a5017bd34b88b6"
+  },
+  {
+    "file": "pictures/lit.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ff5900a4c296e51944c5a5ba90888c5e25eabc7d030eb4168f484ae61ed28a0d"
+  },
+  {
+    "file": "pictures/fit-healthy.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e569adb9b0622e54ed783f03864df3f68617f3412184183c30f346970cbd7ac3"
+  },
+  {
+    "file": "pictures/chores.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d01ef8fb47685da80934e5a31a2150b1ad7033a969001251be5f116149203744"
+  },
+  {
+    "file": "pictures/contribute.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5a9c80378824733e9c8ba8f4535be6c9b8031ef4ad507933b284d943e7f675f7"
+  },
+  {
+    "file": "pictures/member.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c3b76d8b19f095470eae12f332d62fe966d8595072f4cd37343758f52922bed5"
+  },
+  {
+    "file": "pictures/organize.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ca5f13702ada5a72e7d19a0cde9a881423ddac70cf02e87b937a926aad3c1c5d"
+  },
+  {
+    "file": "pictures/accomplish.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c2a2525b4f18b7f13c117b8351c08e0ab8e9fdaa916588fde1e15b8fc4251aae"
+  },
+  {
+    "file": "pictures/too.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "11c2b6f6f0520de4b0037806623e57326af8c1b1def628747bcca0d35e4c9dcb"
+  },
+  {
+    "file": "pictures/other.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c55dae248ce6b2a8cf55f07f4d863419d39aa28065af942ad5ef61aa8547a9a8"
+  },
+  {
+    "file": "pictures/more.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "8f2561e03432ace6bd0bedbe3136337f5b2cf0d8617d3e7cd97fab11d56498ed"
+  },
+  {
+    "file": "pictures/citizen.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "31c0c5185d65415b5c8d4fc0c561c86ce1abb13042983fc3daf243f4d94a2151"
+  },
+  {
+    "file": "pictures/respect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f9cbeb70b85ba32e2e4dabccc8b2169e526c89ac70a2d33bbfa629fa11518a53"
+  },
+  {
+    "file": "pictures/necessary.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "38d59a59b53f55575f29bc88aa7282e0e3d58f8b5e620966b9055cfd5e68e910"
+  },
+  {
+    "file": "pictures/hauled.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e67d883ef56f693d945bb314797f8648c87728252d9ab89873236fb80aed042f"
+  },
+  {
+    "file": "pictures/has.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7370521a2ae7a21789827aa5b650fe7045a4ae39ade4dc115bbe11c03b453ccf"
+  },
+  {
+    "file": "pictures/were.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "aed0053e584d7bb224891ac6c113747c37bc77de8d31b9da5601a05dec28ae87"
+  },
+  {
+    "file": "pictures/natural resources.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1e6c4aff705aea001f564890476dce65a45c77d3642def3eeb4df1426ccbab98"
+  },
+  {
+    "file": "pictures/create.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7c13630e1edb7befb92832941106e45a7584215ce5958971bc81837780802540"
+  },
+  {
+    "file": "pictures/designs.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "24a55b36b0a1ba0d66a05e5431a24d7776cac5fc38c977f97e44250319b991e6"
+  },
+  {
+    "file": "pictures/weave.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "6a5b2b587cc4b4de6aa63fa2edcc9bbfb799ce841fdb4476a2f23e55cd8aa823"
+  },
+  {
+    "file": "pictures/knowledge.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5bb89f2306db038d0b84a899bde92ee57835bf5e4d8b9540f9b99ce882f7d5e3"
+  },
+  {
+    "file": "pictures/where.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "36c1cea8491678404ad7583e308bda72738fe28e46229ec2f3b8d73c7a694588"
+  },
+  {
+    "file": "pictures/know.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "4eeb6c7963142fdc98c4d2c4d2299e52a4d2100823e762f37b43d4c9143d1a8f"
+  },
+  {
+    "file": "pictures/would.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "821d48bc7ae2a02b082622de8300bf1f9b4342ef9f1c8febea9727efc8cbf345"
+  },
+  {
+    "file": "pictures/joke.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b2b9c2ded7d0c259e8bcabe820c838950fbfd1b5e6b1c1516d31d91a0b5966ad"
+  },
+  {
+    "file": "pictures/poke.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c6142836296cd37cddfd2d0b47404f536db3a314fdcfa85529f12deffcf06241"
+  },
+  {
+    "file": "pictures/woke.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d3ff4b21d085c4581df4a00936551e3b1257933a2cecf2efc4eb3f106988d973"
+  },
+  {
+    "file": "pictures/spoke.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "09d7334a2bdce78bf9c6d70dfdda7811baf47ba84c3aaaae6ced9cdc4b0f2336"
+  },
+  {
+    "file": "pictures/decide.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ec9060a043192d8959a61a0b8899e3987e2546ff0b87789d0f090f6620218daf"
+  },
+  {
+    "file": "pictures/opinion.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "cf768266832793739c6174f34e5bee9b8bfbdef8fd3da91027c4ea1f7a9099a7"
+  },
+  {
+    "file": "pictures/ragged.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "b91d8de52301101b79eab6df0cebebda4d794269e2e6a6bf516b3c8f93b8d148"
+  },
+  {
+    "file": "pictures/marvel.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f187017830657dd78f396d67fbea77f6cb677ea2cdcee7e78975e69fa0efe99c"
+  },
+  {
+    "file": "pictures/grateful.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "2d56ebda1cd6860cd4a9406559609451d83fcd1dbc13efb04191027854be4e73"
+  },
+  {
+    "file": "pictures/good.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ae134bf0117d89e78518b1963b45d82afabbe813d7ec519d29d19bd7b374bb25"
+  },
+  {
+    "file": "pictures/who.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "c1fb2c95761ad77e8452b9850bf97f11bc500a64b9c215a6b2d707bddee95af6"
+  },
+  {
+    "file": "pictures/part.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5c61eb1d0b5d6dc3e5c71128fa096c17fcb236380dd54d2fc203634499a53f61"
+  },
+  {
+    "file": "pictures/only.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1e5aad3d880bee0cc0e1a50ea90bff969f152b6ec182392d7b4acfd9069c5d61"
+  },
+  {
+    "file": "pictures/words.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3dcb537fff5bc4ecab2a6c2f305b68492176040a8b3dddf994384179a333427d"
+  },
+  {
+    "file": "pictures/sort-group.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d9beebad45a1baaad4c906550741e385fb438359bc580aa7a19e1d341a7156e7"
+  },
+  {
+    "file": "pictures/similar.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "5718001aafe4af59499c2071b9b4719ea3479bca5f027854e2d34227f4aed44f"
+  },
+  {
+    "file": "pictures/perfect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "679e2cbf13bb7c784d04e558a30b629b67829f5763e43d2ab2341f9b969b126d"
+  },
+  {
+    "file": "pictures/endless.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7a85f9c4beb5fbd4b8b31d3217007c55cc5e3a8ca2d715dfe1af74940f57104e"
+  },
+  {
+    "file": "pictures/come.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "3341cf7a4f86aae36eaa29c812fa8bb888e028d36e25e224ffbb5092eac044ab"
+  },
+  {
+    "file": "pictures/does.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "79f1f48d9fe388941bbb4f275830e142b9394f199a1f71711bf7b946626ed3ed"
+  },
+  {
+    "file": "pictures/first.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "d74b2d4f70ccfa768c91f2bba9750da988c764e22ddcdd82a0df447f5d118915"
+  },
+  {
+    "file": "pictures/their.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "e7622f4297f13e0e19259ec36faa4f52057820b2644c93ae24b42d0ec6b3410d"
+  },
+  {
+    "file": "pictures/environment.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "7d76cdd352b022c1e1b923d97e7e76c349e3d1486e94a7c4f066c3adbd24bf4a"
+  },
+  {
+    "file": "pictures/protect.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "1e9fa4bb8a802316fe220d6bd7607a7c1331209f232c86a3b1806b69ac83f67c"
+  },
+  {
+    "file": "pictures/wisely.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "480fdb6f6c8761966f1d65b3ed86a4c0254f7fb09574f9e1ef1abc29212231f8"
+  },
+  {
+    "file": "pictures/encourage.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "ab7e7da0b6271a70e303cb6c4c620b7d113d5a833df3b7186029ab4b561d771b"
+  },
+  {
+    "file": "pictures/peep.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "71f3b1e8c5329d0c1cce63beadefcab9cf0cad0457275fa9fa0f0b85e3db17b2"
+  },
+  {
+    "file": "pictures/keep.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "f9eea04505a6f806aab22e7bec4cbc1a30d43d1f79af7d32a83da6219272346f"
+  },
+  {
+    "file": "pictures/beep.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Original contextual vector illustration",
+    "sha256": "65e06c8b2bf8adaf3f6d529c455bdf22c643b3ea18b057d6ac925f7044dd00bd"
   }
 ]

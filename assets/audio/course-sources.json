@@ -6738,7 +6738,8 @@
     },
     {
       "key": "word-content",
-      "text": "content"
+      "text": "content",
+      "phonemes": "kəntˈɛnt"
     },
     {
       "key": "word-contest",
@@ -12051,6 +12052,378 @@
     {
       "key": "word-yoghurt",
       "text": "yoghurt"
+    },
+    {
+      "key": "word-hop",
+      "text": "hop"
+    },
+    {
+      "key": "word-rake",
+      "text": "rake"
+    },
+    {
+      "key": "word-grasped",
+      "text": "grasped"
+    },
+    {
+      "key": "word-movement",
+      "text": "movement"
+    },
+    {
+      "key": "word-exhausted",
+      "text": "exhausted"
+    },
+    {
+      "key": "word-arrived",
+      "text": "arrived"
+    },
+    {
+      "key": "word-feast",
+      "text": "feast"
+    },
+    {
+      "key": "word-finished",
+      "text": "finished"
+    },
+    {
+      "key": "word-kneads",
+      "text": "kneads"
+    },
+    {
+      "key": "word-tools",
+      "text": "tools"
+    },
+    {
+      "key": "word-defeated",
+      "text": "defeated"
+    },
+    {
+      "key": "word-fetch",
+      "text": "fetch"
+    },
+    {
+      "key": "word-rumble",
+      "text": "rumble"
+    },
+    {
+      "key": "word-materials",
+      "text": "materials"
+    },
+    {
+      "key": "word-decoration",
+      "text": "decoration"
+    },
+    {
+      "key": "word-games",
+      "text": "games"
+    },
+    {
+      "key": "word-two",
+      "text": "two"
+    },
+    {
+      "key": "word-attaches",
+      "text": "attaches"
+    },
+    {
+      "key": "word-slender",
+      "text": "slender"
+    },
+    {
+      "key": "word-mat",
+      "text": "mat"
+    },
+    {
+      "key": "word-sat",
+      "text": "sat"
+    },
+    {
+      "key": "word-rules",
+      "text": "rules"
+    },
+    {
+      "key": "word-prank",
+      "text": "prank"
+    },
+    {
+      "key": "word-one",
+      "text": "one"
+    },
+    {
+      "key": "word-exclaimed",
+      "text": "exclaimed"
+    },
+    {
+      "key": "word-routine",
+      "text": "routine"
+    },
+    {
+      "key": "word-ran",
+      "text": "ran"
+    },
+    {
+      "key": "word-utensils",
+      "text": "utensils"
+    },
+    {
+      "key": "word-remained",
+      "text": "remained"
+    },
+    {
+      "key": "word-four",
+      "text": "four"
+    },
+    {
+      "key": "word-cultures",
+      "text": "cultures"
+    },
+    {
+      "key": "word-quarrel",
+      "text": "quarrel"
+    },
+    {
+      "key": "word-cot",
+      "text": "cot"
+    },
+    {
+      "key": "word-dot",
+      "text": "dot"
+    },
+    {
+      "key": "word-tot",
+      "text": "tot"
+    },
+    {
+      "key": "word-harmful",
+      "text": "harmful"
+    },
+    {
+      "key": "word-soak",
+      "text": "soak"
+    },
+    {
+      "key": "word-three",
+      "text": "three"
+    },
+    {
+      "key": "word-enormous",
+      "text": "enormous"
+    },
+    {
+      "key": "word-beneath",
+      "text": "beneath"
+    },
+    {
+      "key": "word-ten",
+      "text": "ten"
+    },
+    {
+      "key": "word-men",
+      "text": "men"
+    },
+    {
+      "key": "word-den",
+      "text": "den"
+    },
+    {
+      "key": "word-seasons",
+      "text": "seasons"
+    },
+    {
+      "key": "word-migrate",
+      "text": "migrate"
+    },
+    {
+      "key": "word-drought",
+      "text": "drought"
+    },
+    {
+      "key": "word-was",
+      "text": "was"
+    },
+    {
+      "key": "word-rack",
+      "text": "rack"
+    },
+    {
+      "key": "word-sack",
+      "text": "sack"
+    },
+    {
+      "key": "word-stack",
+      "text": "stack"
+    },
+    {
+      "key": "word-appearance",
+      "text": "appearance"
+    },
+    {
+      "key": "word-behavior",
+      "text": "behavior"
+    },
+    {
+      "key": "word-wander",
+      "text": "wander"
+    },
+    {
+      "key": "word-compared",
+      "text": "compared"
+    },
+    {
+      "key": "word-habitat",
+      "text": "habitat"
+    },
+    {
+      "key": "word-stubborn",
+      "text": "stubborn"
+    },
+    {
+      "key": "word-said",
+      "text": "said"
+    },
+    {
+      "key": "word-transportation",
+      "text": "transportation"
+    },
+    {
+      "key": "word-vehicle",
+      "text": "vehicle"
+    },
+    {
+      "key": "word-fierce",
+      "text": "fierce"
+    },
+    {
+      "key": "word-lit",
+      "text": "lit"
+    },
+    {
+      "key": "word-chores",
+      "text": "chores"
+    },
+    {
+      "key": "word-contribute",
+      "text": "contribute"
+    },
+    {
+      "key": "word-accomplish",
+      "text": "accomplish"
+    },
+    {
+      "key": "word-hauled",
+      "text": "hauled"
+    },
+    {
+      "key": "word-were",
+      "text": "were"
+    },
+    {
+      "key": "word-natural resources",
+      "text": "natural resources"
+    },
+    {
+      "key": "word-designs",
+      "text": "designs"
+    },
+    {
+      "key": "word-weave",
+      "text": "weave"
+    },
+    {
+      "key": "word-poke",
+      "text": "poke"
+    },
+    {
+      "key": "word-woke",
+      "text": "woke"
+    },
+    {
+      "key": "word-spoke",
+      "text": "spoke"
+    },
+    {
+      "key": "word-ragged",
+      "text": "ragged"
+    },
+    {
+      "key": "word-marvel",
+      "text": "marvel"
+    },
+    {
+      "key": "word-words",
+      "text": "words"
+    },
+    {
+      "key": "word-endless",
+      "text": "endless"
+    },
+    {
+      "key": "word-does",
+      "text": "does"
+    },
+    {
+      "key": "word-first",
+      "text": "first"
+    },
+    {
+      "key": "word-wisely",
+      "text": "wisely"
+    },
+    {
+      "key": "word-peep",
+      "text": "peep"
+    },
+    {
+      "key": "word-beep",
+      "text": "beep"
+    },
+    {
+      "key": "word-observe-watch",
+      "text": "observe"
+    },
+    {
+      "key": "word-guard-protect",
+      "text": "guard"
+    },
+    {
+      "key": "word-saw-see",
+      "text": "saw"
+    },
+    {
+      "key": "word-raise-animals",
+      "text": "raise"
+    },
+    {
+      "key": "word-plant-seed",
+      "text": "plant"
+    },
+    {
+      "key": "word-develop-grow",
+      "text": "develop"
+    },
+    {
+      "key": "word-spot-see",
+      "text": "spot"
+    },
+    {
+      "key": "word-train-pet",
+      "text": "train"
+    },
+    {
+      "key": "word-social-friendly",
+      "text": "social"
+    },
+    {
+      "key": "word-sort-group",
+      "text": "sort"
+    },
+    {
+      "key": "word-bit-bite",
+      "text": "bit"
+    },
+    {
+      "key": "word-fit-healthy",
+      "text": "fit"
     },
     {
       "key": "sentence-apple",
@@ -18890,7 +19263,8 @@
     },
     {
       "key": "sentence-content",
-      "text": "I'm content with my job."
+      "text": "I'm content with my job.",
+      "phonemes": "aɪm kəntˈɛnt wɪð maɪ dʒˈɑːb"
     },
     {
       "key": "sentence-contest",
@@ -24203,6 +24577,378 @@
     {
       "key": "sentence-yoghurt",
       "text": "She added fruit to her yoghurt."
+    },
+    {
+      "key": "sentence-hop",
+      "text": "I can hop on one foot."
+    },
+    {
+      "key": "sentence-rake",
+      "text": "I can rake the leaves."
+    },
+    {
+      "key": "sentence-grasped",
+      "text": "She grasped the rope with both hands."
+    },
+    {
+      "key": "sentence-movement",
+      "text": "I watch the movement of the bird's wings."
+    },
+    {
+      "key": "sentence-exhausted",
+      "text": "I feel exhausted after the race."
+    },
+    {
+      "key": "sentence-arrived",
+      "text": "We arrived at school."
+    },
+    {
+      "key": "sentence-feast",
+      "text": "Our family shares a feast."
+    },
+    {
+      "key": "sentence-finished",
+      "text": "I finished my puzzle."
+    },
+    {
+      "key": "sentence-kneads",
+      "text": "She kneads the dough with her hands."
+    },
+    {
+      "key": "sentence-tools",
+      "text": "We use tools to fix the chair."
+    },
+    {
+      "key": "sentence-defeated",
+      "text": "Our team defeated the other team."
+    },
+    {
+      "key": "sentence-fetch",
+      "text": "The dog can fetch the ball."
+    },
+    {
+      "key": "sentence-rumble",
+      "text": "I hear thunder rumble in the sky."
+    },
+    {
+      "key": "sentence-materials",
+      "text": "Paper and wood are useful materials."
+    },
+    {
+      "key": "sentence-decoration",
+      "text": "I hang a star decoration on the wall."
+    },
+    {
+      "key": "sentence-games",
+      "text": "We play games together."
+    },
+    {
+      "key": "sentence-two",
+      "text": "I have two apples."
+    },
+    {
+      "key": "sentence-attaches",
+      "text": "She attaches a photo to the paper."
+    },
+    {
+      "key": "sentence-slender",
+      "text": "The plant has a slender stem."
+    },
+    {
+      "key": "sentence-mat",
+      "text": "The cat sits on the mat."
+    },
+    {
+      "key": "sentence-sat",
+      "text": "He sat on the chair."
+    },
+    {
+      "key": "sentence-rules",
+      "text": "Our rules help us play safely."
+    },
+    {
+      "key": "sentence-prank",
+      "text": "The toy spider was a silly prank."
+    },
+    {
+      "key": "sentence-one",
+      "text": "I have one apple."
+    },
+    {
+      "key": "sentence-exclaimed",
+      "text": "She exclaimed when she saw the rainbow."
+    },
+    {
+      "key": "sentence-routine",
+      "text": "Brushing my teeth is part of my routine."
+    },
+    {
+      "key": "sentence-ran",
+      "text": "The dog ran to the tree."
+    },
+    {
+      "key": "sentence-utensils",
+      "text": "We use utensils to eat our lunch."
+    },
+    {
+      "key": "sentence-remained",
+      "text": "One apple remained in the basket."
+    },
+    {
+      "key": "sentence-four",
+      "text": "I have four blocks."
+    },
+    {
+      "key": "sentence-cultures",
+      "text": "We learn about different cultures at school."
+    },
+    {
+      "key": "sentence-quarrel",
+      "text": "Please do not quarrel over the toy."
+    },
+    {
+      "key": "sentence-cot",
+      "text": "The baby sleeps in a cot."
+    },
+    {
+      "key": "sentence-dot",
+      "text": "Draw a red dot on the paper."
+    },
+    {
+      "key": "sentence-tot",
+      "text": "The little tot holds a teddy bear."
+    },
+    {
+      "key": "sentence-harmful",
+      "text": "Smoke is harmful to our lungs."
+    },
+    {
+      "key": "sentence-soak",
+      "text": "We soak the beans in water."
+    },
+    {
+      "key": "sentence-three",
+      "text": "I have three pencils."
+    },
+    {
+      "key": "sentence-enormous",
+      "text": "The elephant is enormous beside the mouse."
+    },
+    {
+      "key": "sentence-beneath",
+      "text": "The ball is beneath the table."
+    },
+    {
+      "key": "sentence-ten",
+      "text": "I can count ten stars."
+    },
+    {
+      "key": "sentence-men",
+      "text": "Two men carry the box."
+    },
+    {
+      "key": "sentence-den",
+      "text": "The fox rests in its den."
+    },
+    {
+      "key": "sentence-seasons",
+      "text": "We have four seasons in a year."
+    },
+    {
+      "key": "sentence-migrate",
+      "text": "Some birds migrate to warmer places."
+    },
+    {
+      "key": "sentence-drought",
+      "text": "The soil is dry during a drought."
+    },
+    {
+      "key": "sentence-was",
+      "text": "I was at home yesterday."
+    },
+    {
+      "key": "sentence-rack",
+      "text": "Put the shoes on the rack."
+    },
+    {
+      "key": "sentence-sack",
+      "text": "The sack is full of potatoes."
+    },
+    {
+      "key": "sentence-stack",
+      "text": "I see a stack of books."
+    },
+    {
+      "key": "sentence-appearance",
+      "text": "The rabbit's appearance includes long ears."
+    },
+    {
+      "key": "sentence-behavior",
+      "text": "Sharing toys is kind behavior."
+    },
+    {
+      "key": "sentence-wander",
+      "text": "We wander along the garden path."
+    },
+    {
+      "key": "sentence-compared",
+      "text": "We compared the two leaves."
+    },
+    {
+      "key": "sentence-habitat",
+      "text": "A pond is a frog's habitat."
+    },
+    {
+      "key": "sentence-stubborn",
+      "text": "The stubborn donkey will not move."
+    },
+    {
+      "key": "sentence-said",
+      "text": "She said hello to me."
+    },
+    {
+      "key": "sentence-transportation",
+      "text": "Buses and trains are forms of transportation."
+    },
+    {
+      "key": "sentence-vehicle",
+      "text": "A bus is a vehicle."
+    },
+    {
+      "key": "sentence-fierce",
+      "text": "The fierce tiger shows its teeth."
+    },
+    {
+      "key": "sentence-lit",
+      "text": "Dad lit the candle."
+    },
+    {
+      "key": "sentence-chores",
+      "text": "Putting toys away is one of my chores."
+    },
+    {
+      "key": "sentence-contribute",
+      "text": "We each contribute a block to the tower."
+    },
+    {
+      "key": "sentence-accomplish",
+      "text": "We can accomplish the task together."
+    },
+    {
+      "key": "sentence-hauled",
+      "text": "We hauled the wagon up the hill."
+    },
+    {
+      "key": "sentence-were",
+      "text": "We were at the park yesterday."
+    },
+    {
+      "key": "sentence-natural resources",
+      "text": "Water and trees are natural resources."
+    },
+    {
+      "key": "sentence-designs",
+      "text": "The cloth has colorful designs."
+    },
+    {
+      "key": "sentence-weave",
+      "text": "We weave strips of paper into a mat."
+    },
+    {
+      "key": "sentence-poke",
+      "text": "I poke a hole in the soft clay."
+    },
+    {
+      "key": "sentence-woke",
+      "text": "I woke when the sun came up."
+    },
+    {
+      "key": "sentence-spoke",
+      "text": "She spoke to her friend."
+    },
+    {
+      "key": "sentence-ragged",
+      "text": "The old shirt is ragged."
+    },
+    {
+      "key": "sentence-marvel",
+      "text": "We marvel at the bright stars."
+    },
+    {
+      "key": "sentence-words",
+      "text": "I can read the words in my book."
+    },
+    {
+      "key": "sentence-endless",
+      "text": "The road seems endless."
+    },
+    {
+      "key": "sentence-does",
+      "text": "Does she like apples?"
+    },
+    {
+      "key": "sentence-first",
+      "text": "The red car is first in line."
+    },
+    {
+      "key": "sentence-wisely",
+      "text": "We use water wisely and turn off the tap."
+    },
+    {
+      "key": "sentence-peep",
+      "text": "I peep through a small gap in the door."
+    },
+    {
+      "key": "sentence-beep",
+      "text": "The toy car makes a beep."
+    },
+    {
+      "key": "sentence-observe-watch",
+      "text": "We observe the butterfly on the leaf."
+    },
+    {
+      "key": "sentence-guard-protect",
+      "text": "The dog can guard the sheep."
+    },
+    {
+      "key": "sentence-saw-see",
+      "text": "I saw a bird yesterday."
+    },
+    {
+      "key": "sentence-raise-animals",
+      "text": "The farmers raise chickens."
+    },
+    {
+      "key": "sentence-plant-seed",
+      "text": "We plant a seed in the soil."
+    },
+    {
+      "key": "sentence-develop-grow",
+      "text": "The roots develop as the plant grows."
+    },
+    {
+      "key": "sentence-spot-see",
+      "text": "I can spot a bird in the tree."
+    },
+    {
+      "key": "sentence-train-pet",
+      "text": "We train our dog to sit."
+    },
+    {
+      "key": "sentence-social-friendly",
+      "text": "Dolphins are social animals."
+    },
+    {
+      "key": "sentence-sort-group",
+      "text": "We sort the blocks by color."
+    },
+    {
+      "key": "sentence-bit-bite",
+      "text": "The rabbit bit the carrot."
+    },
+    {
+      "key": "sentence-fit-healthy",
+      "text": "Running helps me stay fit."
     },
     {
       "key": "read-red-ball-0",

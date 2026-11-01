@@ -50,4 +50,4 @@ export const WORD_ALIASES={
  "ms.": "ms"
 };
 export const canonicalWordId=id=>Object.hasOwn(WORD_ALIASES,id)?WORD_ALIASES[id]:id;
-export const matchesWord=(word,query)=>!query||[word.id,word.zh,...(word.aliases||[])].some(value=>value?.toLowerCase().includes(query));
+export const matchesWord=(word,query)=>!query||[word.display,word.id,word.zh,...(word.aliases||[])].some(value=>value?.toLowerCase().includes(query));

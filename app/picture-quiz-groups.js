@@ -56,5 +56,7 @@ export const PICTURE_QUIZ_GROUPS={
  "lecture": "teaching-scene",
  "teach": "teaching-scene",
  "smoke": "combustion-fumes",
- "exhaust": "combustion-fumes"
+ "exhaust": "combustion-fumes",
+ "jump": "jumping-actions",
+ "hop": "jumping-actions"
 };
