@@ -48,5 +48,30 @@
     "text": "graduate",
     "phonemes": "ɡɹˈædʒuːeɪt",
     "reason": "Verb sense: 毕业; isolated phonemizer selected ɡɹˈædʒuːət."
+  },
+  "word-close": {
+    "text": "close",
+    "phonemes": "klˈoʊz",
+    "reason": "Verb meaning shut; distinguish from close /s/ meaning near."
+  },
+  "word-ms": {
+    "text": "Ms.",
+    "phonemes": "mˈɪz",
+    "reason": "Title Ms is /mɪz/, not Miss /mɪs/."
+  },
+  "sentence-ms": {
+    "text": "Ms. Lee works at the library.",
+    "phonemes": "mˈɪz lˈiː wˈɜːks æt ðə lˈaɪbɹɛɹi.",
+    "reason": "Explicit title pronunciation; avoid abbreviation expansion."
+  },
+  "word-recall": {
+    "text": "recall",
+    "phonemes": "ɹɪkˈɔːl",
+    "reason": "Use the verb stress matching the example, not the noun stress."
+  },
+  "word-transfer": {
+    "text": "transfer",
+    "phonemes": "tɹænsfˈɜː",
+    "reason": "Choose the accepted final-stress verb variant matching the example; initial-stress variants are not classified as errors."
   }
 }

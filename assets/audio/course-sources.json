@@ -4290,7 +4290,8 @@
     },
     {
       "key": "word-close",
-      "text": "close"
+      "text": "close",
+      "phonemes": "klˈoʊz"
     },
     {
       "key": "word-unlock",
@@ -5051,7 +5052,8 @@
     },
     {
       "key": "word-ms",
-      "text": "Ms."
+      "text": "Ms.",
+      "phonemes": "mˈɪz"
     },
     {
       "key": "word-much",
@@ -10013,7 +10015,8 @@
     },
     {
       "key": "word-recall",
-      "text": "recall"
+      "text": "recall",
+      "phonemes": "ɹɪkˈɔːl"
     },
     {
       "key": "word-receive",
@@ -11166,7 +11169,8 @@
     },
     {
       "key": "word-transfer",
-      "text": "transfer"
+      "text": "transfer",
+      "phonemes": "tɹænsfˈɜː"
     },
     {
       "key": "word-translate",
@@ -15722,11 +15726,11 @@
     },
     {
       "key": "sentence-diving",
-      "text": "The diver wears a mask."
+      "text": "She is diving under the water."
     },
     {
       "key": "sentence-surfing",
-      "text": "The surfer rides a wave."
+      "text": "He is surfing on a wave."
     },
     {
       "key": "sentence-rowing",
@@ -17582,7 +17586,8 @@
     },
     {
       "key": "sentence-ms",
-      "text": "Ms Lee works at the library."
+      "text": "Ms. Lee works at the library.",
+      "phonemes": "mˈɪz lˈiː wˈɜːks æt ðə lˈaɪbɹɛɹi."
     },
     {
       "key": "sentence-much",
@@ -18334,7 +18339,7 @@
     },
     {
       "key": "sentence-announce",
-      "text": "Tom found a new way to announce his news."
+      "text": "Tom will announce the winner."
     },
     {
       "key": "sentence-annoy",
@@ -19002,7 +19007,7 @@
     },
     {
       "key": "sentence-charity",
-      "text": "Tom donates half his salary to his favorite charity."
+      "text": "We give toys to a charity."
     },
     {
       "key": "sentence-charm",
@@ -20889,7 +20894,7 @@
     },
     {
       "key": "sentence-increase",
-      "text": "They asked for an increase of salary."
+      "text": "There is an increase in the number of books."
     },
     {
       "key": "sentence-indeed",
@@ -22166,7 +22171,7 @@
     },
     {
       "key": "sentence-polish",
-      "text": "I got him to polish my shoes."
+      "text": "I polish my shoes."
     },
     {
       "key": "sentence-polite",
@@ -22714,7 +22719,7 @@
     },
     {
       "key": "sentence-research",
-      "text": "Research on the causes of cancer is very expensive."
+      "text": "We do research about plants."
     },
     {
       "key": "sentence-reserve",

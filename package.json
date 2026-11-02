@@ -7,7 +7,7 @@
   "scripts": {
     "audio": "node scripts/generate-audio.mjs",
     "build": "node scripts/compile-picture-vocabulary.mjs && node scripts/compile-context-vocabulary.mjs && npm run pictures:quality && node scripts/build.mjs",
-    "pictures:quality": "node scripts/generate-context-symbols.mjs && node scripts/generate-quality-pictures.mjs && node scripts/generate-context-pictures.mjs",
+    "pictures:quality": "node scripts/generate-context-symbols.mjs && node scripts/generate-quality-pictures.mjs && node scripts/generate-context-pictures.mjs && node scripts/generate-refined-pictures.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",

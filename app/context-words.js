@@ -1789,7 +1789,7 @@ export const CONTEXT_WORDS=[
   "display": "Ms",
   "spoken": "Ms.",
   "zh": "女士（称呼）",
-  "sentence": "Ms Lee works at the library.",
+  "sentence": "Ms. Lee works at the library.",
   "sentenceZh": "李女士在图书馆工作。",
   "topic": "people",
   "image": "./assets/pictures/ms.svg",
@@ -4768,8 +4768,8 @@ export const CONTEXT_WORDS=[
   "id": "announce",
   "zh": "宣布",
   "pos": "动词",
-  "sentence": "Tom found a new way to announce his news.",
-  "sentenceZh": "汤姆发现了一种宣布他新闻的新方法。",
+  "sentence": "Tom will announce the winner.",
+  "sentenceZh": "汤姆将宣布获胜者。",
   "display": "announce",
   "spoken": "announce",
   "topic": "actions",
@@ -4777,8 +4777,6 @@ export const CONTEXT_WORDS=[
   "pictureCue": true,
   "audio": "word-announce",
   "contentSource": "extended-context-v1",
-  "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #680210 (Source_VOA) & #9960198 (GlossaMatik)",
-  "sentenceAdapted": false,
   "emoji": "project-context-02-announce"
  },
  {
@@ -7607,8 +7605,8 @@ export const CONTEXT_WORDS=[
   "id": "charity",
   "zh": "慈善机构",
   "pos": "名词",
-  "sentence": "Tom donates half his salary to his favorite charity.",
-  "sentenceZh": "汤姆捐一半他的薪水给他最喜欢的慈善机构。",
+  "sentence": "We give toys to a charity.",
+  "sentenceZh": "我们把玩具捐给一家慈善机构。",
   "display": "charity",
   "spoken": "charity",
   "topic": "home",
@@ -7616,8 +7614,6 @@ export const CONTEXT_WORDS=[
   "pictureCue": true,
   "audio": "word-charity",
   "contentSource": "extended-context-v1",
-  "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1094238 (CK) & #8658809 (slo_oth)",
-  "sentenceAdapted": false,
   "emoji": "project-context-03-charity"
  },
  {
@@ -7625,7 +7621,7 @@ export const CONTEXT_WORDS=[
   "zh": "魅力",
   "pos": "名词",
   "sentence": "The old cottage has a certain charm about it.",
-  "sentenceZh": "旧村屋有它自己一定的魅力。",
+  "sentenceZh": "这间旧屋别有一番魅力。",
   "display": "charm",
   "spoken": "charm",
   "topic": "home",
@@ -7634,7 +7630,7 @@ export const CONTEXT_WORDS=[
   "audio": "word-charm",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48155 (orcrist) & #847801 (fucongcong)",
-  "sentenceAdapted": false,
+  "sentenceAdapted": true,
   "emoji": "project-context-03-charm"
  },
  {
@@ -15614,8 +15610,8 @@ export const CONTEXT_WORDS=[
   "id": "increase",
   "zh": "增加",
   "pos": "名词",
-  "sentence": "They asked for an increase of salary.",
-  "sentenceZh": "他们要求加薪。",
+  "sentence": "There is an increase in the number of books.",
+  "sentenceZh": "书的数量增加了。",
   "display": "increase",
   "spoken": "increase",
   "topic": "home",
@@ -15623,8 +15619,6 @@ export const CONTEXT_WORDS=[
   "pictureCue": true,
   "audio": "word-increase",
   "contentSource": "extended-context-v1",
-  "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #306355 (CM) & #9962358 (GlossaMatik)",
-  "sentenceAdapted": false,
   "emoji": "project-context-06-increase"
  },
  {
@@ -21034,8 +21028,8 @@ export const CONTEXT_WORDS=[
   "id": "polish",
   "zh": "擦亮",
   "pos": "动词",
-  "sentence": "I got him to polish my shoes.",
-  "sentenceZh": "我要他擦亮我的皮鞋。",
+  "sentence": "I polish my shoes.",
+  "sentenceZh": "我把鞋擦亮。",
   "display": "polish",
   "spoken": "polish",
   "topic": "actions",
@@ -21043,8 +21037,6 @@ export const CONTEXT_WORDS=[
   "pictureCue": false,
   "audio": "word-polish",
   "contentSource": "extended-context-v1",
-  "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #260378 (CK) & #804543 (Martha)",
-  "sentenceAdapted": false,
   "emoji": "project-direct-polish"
  },
  {
@@ -23362,8 +23354,8 @@ export const CONTEXT_WORDS=[
   "id": "research",
   "zh": "研究",
   "pos": "名词",
-  "sentence": "Research on the causes of cancer is very expensive.",
-  "sentenceZh": "有关癌症成因的研究耗费颇巨。",
+  "sentence": "We do research about plants.",
+  "sentenceZh": "我们研究植物。",
   "display": "research",
   "spoken": "research",
   "topic": "people",
@@ -23371,8 +23363,6 @@ export const CONTEXT_WORDS=[
   "pictureCue": true,
   "audio": "word-research",
   "contentSource": "extended-context-v1",
-  "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681911 (Source_VOA) & #2511405 (tsayng)",
-  "sentenceAdapted": true,
   "emoji": "project-context-09-research"
  },
  {

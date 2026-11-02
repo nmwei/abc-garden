@@ -1,0 +1,571 @@
+{
+  "reviewedOn": "2026-11-02",
+  "scope": "Follow-up to full consistency and high-risk review; not a full teacher/audio certification.",
+  "entries": [
+    {
+      "id": "close",
+      "before": {
+        "zh": "合上",
+        "pos": "",
+        "sentence": "I close my book.",
+        "sentenceZh": "我合上我的书。",
+        "image": "./assets/pictures/close.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "合上",
+        "pos": "",
+        "sentence": "I close my book.",
+        "sentenceZh": "我合上我的书。",
+        "image": "./assets/pictures/refined-close.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "cfcf280abecb227c0016578ccb21bd57100afcfb021f17fc2fbdeb2f32fc84fb",
+      "audioSha256": {
+        "word-close": "a7161dd6d0ce52846fd78bd03301e580dfb1de8656dbc7701927537a083786b9",
+        "sentence-close": "fe4db659e085a441e8583df027aedb9c14f5362623f37c952762ede8610faa10"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "ms",
+      "before": {
+        "zh": "女士（称呼）",
+        "pos": "名词",
+        "sentence": "Ms Lee works at the library.",
+        "sentenceZh": "李女士在图书馆工作。",
+        "image": "./assets/pictures/ms.svg",
+        "pictureCue": true
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "女士（称呼）",
+        "pos": "名词",
+        "sentence": "Ms. Lee works at the library.",
+        "sentenceZh": "李女士在图书馆工作。",
+        "image": "./assets/pictures/ms.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "2609fee04481ac028f9c249444b2dc09fe72482347467a70391b1b954cda3869",
+      "audioSha256": {
+        "word-ms": "4fb7c56b6e3f73904b9b427ce5b29c7cfba6ace3fd2051e53fbfcda431ea23a5",
+        "sentence-ms": "7b1b16f0099493acd80ae8438ae7f3ba4559e7c29a1df61e57e5fa997eba0303"
+      }
+    },
+    {
+      "id": "recall",
+      "before": {
+        "zh": "回想",
+        "pos": "动词",
+        "sentence": "I can't recall the last time we met.",
+        "sentenceZh": "我想不起来我们上次见面的情况了。",
+        "image": "./assets/pictures/recall.svg",
+        "pictureCue": true
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "回想",
+        "pos": "动词",
+        "sentence": "I can't recall the last time we met.",
+        "sentenceZh": "我想不起来我们上次见面的情况了。",
+        "image": "./assets/pictures/recall.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "628f03195d9ca51e93ce2a4f714f829554f5013b980a9a48244113e438e7a51f",
+      "audioSha256": {
+        "word-recall": "7fd4d3476bbab0b43695795f3cb3545b9208f05ceae4ef8c6650b512da9264c8",
+        "sentence-recall": "24df7f89f0b97446cf32ce80e89a238386aa49c5d8b5797533e8c44e10af4bf1"
+      }
+    },
+    {
+      "id": "transfer",
+      "before": {
+        "zh": "换乘",
+        "pos": "动词",
+        "sentence": "Do I need to transfer?",
+        "sentenceZh": "我需要换乘吗?",
+        "image": "./assets/pictures/transfer.svg",
+        "pictureCue": true
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "换乘",
+        "pos": "动词",
+        "sentence": "Do I need to transfer?",
+        "sentenceZh": "我需要换乘吗?",
+        "image": "./assets/pictures/transfer.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "76d796ff93d8b73ffecade305bba85c3fbd53d6b5c8ed8bb7c8de12d619e02e8",
+      "audioSha256": {
+        "word-transfer": "7a57d063c9f860961f8f8ad361ceb53e1c9a0d97df51a46061aad947af7297f6",
+        "sentence-transfer": "a1a3211749df9a2960e700fc8c44e97693c6eaeba072e1ebad13bc81da15bda9"
+      }
+    },
+    {
+      "id": "jump",
+      "before": {
+        "zh": "跳",
+        "pos": "",
+        "sentence": "I jump over a little line.",
+        "sentenceZh": "我跳过一条小小的线。",
+        "image": "./assets/pictures/jump.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "跳",
+        "pos": "",
+        "sentence": "I jump over a little line.",
+        "sentenceZh": "我跳过一条小小的线。",
+        "image": "./assets/pictures/refined-jump.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "4ff0dfa1498028edb35e066c23ebcde77a60d7783e90843d98a7e295577d2ae3",
+      "audioSha256": {
+        "word-jump": "70c45e5b90da64b412b9815f76fd94ab69eabbb5751eb43c7f379ebf6f5b2c58",
+        "sentence-jump": "9fa8e73cc65f1fb8a9d1bc3d27b3ef53b51670042ead7b0ea7ea634b74fcb85c"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "fork",
+      "before": {
+        "zh": "叉子",
+        "pos": "",
+        "sentence": "I eat with a fork.",
+        "sentenceZh": "我用叉子吃饭。",
+        "image": "./assets/pictures/fork.svg",
+        "pictureCue": false
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "叉子",
+        "pos": "",
+        "sentence": "I eat with a fork.",
+        "sentenceZh": "我用叉子吃饭。",
+        "image": "./assets/pictures/refined-fork.svg",
+        "pictureCue": false
+      },
+      "imageSha256": "426525c7431967234ec2c6702cdae94ee85d49405eb5309ca2865d3722545020",
+      "audioSha256": {
+        "word-fork": "fa9fae3ff70c1bb56dcd3fd8d01d6bca031d82e367253a4c49d6e6b0527d18ea",
+        "sentence-fork": "c13083210e6ad49898bca4a3e25d3492faf9e45516cd39e8aa5424fafb4ad33d"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "knife",
+      "before": {
+        "zh": "餐刀",
+        "pos": "",
+        "sentence": "An adult uses the knife.",
+        "sentenceZh": "大人使用这把刀。",
+        "image": "./assets/pictures/knife.svg",
+        "pictureCue": false
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "餐刀",
+        "pos": "",
+        "sentence": "An adult uses the knife.",
+        "sentenceZh": "大人使用这把刀。",
+        "image": "./assets/pictures/refined-knife.svg",
+        "pictureCue": false
+      },
+      "imageSha256": "617d8e872a48554ed4d01d7d6117d51b6a6d8983683d5c27d9034d1660feff75",
+      "audioSha256": {
+        "word-knife": "9254b5d12e970aa62521de62bfe1119a9a19d7b9f91bde686853ef4755b2b80e",
+        "sentence-knife": "cc0f3be58855619d7925799fa6150328e860eda8c632318a54303fc84e822acf"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "noon",
+      "before": {
+        "zh": "中午",
+        "pos": "",
+        "sentence": "We eat lunch at noon.",
+        "sentenceZh": "我们中午吃午餐。",
+        "image": "./assets/pictures/noon.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "中午",
+        "pos": "",
+        "sentence": "We eat lunch at noon.",
+        "sentenceZh": "我们中午吃午餐。",
+        "image": "./assets/pictures/refined-noon.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "b2c40adeeb64e7cf2c778ac03ef2de3497d30c67c1a50ddfb63ecc73ada2e8e1",
+      "audioSha256": {
+        "word-noon": "29a2c02f07f0f67f61272596da6c958020a96bc6cd5f932959534a1127863627",
+        "sentence-noon": "a695ee580aec6514b0b3de6a23318284d9966497fd9c778b108efae0cb2f4c70"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "midnight",
+      "before": {
+        "zh": "午夜",
+        "pos": "",
+        "sentence": "Midnight is the middle of the night.",
+        "sentenceZh": "午夜是夜晚的中间时刻。",
+        "image": "./assets/pictures/midnight.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "午夜",
+        "pos": "",
+        "sentence": "Midnight is the middle of the night.",
+        "sentenceZh": "午夜是夜晚的中间时刻。",
+        "image": "./assets/pictures/refined-midnight.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "3c843944357db7133c101a6b15b34afb9e93a30ad3bc1bc49a77da6692593045",
+      "audioSha256": {
+        "word-midnight": "5bbfd72326229945e17ed9901b79c1587ee93bd6c82db80eb526bd4e8054e618",
+        "sentence-midnight": "24712616bd65e0036ed89cfbc37ee29a9d2ec8bd6fde17f1bfea578b53123931"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "grape",
+      "before": {
+        "zh": "葡萄",
+        "pos": "名词",
+        "sentence": "This grape is sweet.",
+        "sentenceZh": "这颗葡萄很甜。",
+        "image": "./assets/pictures/grape.svg",
+        "pictureCue": false
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "葡萄",
+        "pos": "名词",
+        "sentence": "This grape is sweet.",
+        "sentenceZh": "这颗葡萄很甜。",
+        "image": "./assets/pictures/refined-grape.svg",
+        "pictureCue": false
+      },
+      "imageSha256": "39d9cb502a00946ba46596c2355ba89479373598f8289fbbbe2a611edaa55266",
+      "audioSha256": {
+        "word-grape": "7afcb31a892f044e2c19a62f4f5430628e37d15ef21e9c2c6d9ffa8cb4922821",
+        "sentence-grape": "b6fb222c3429297b2c626e8610af5bc77d22734d6232334918bf2acf4e6179de"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "coach",
+      "before": {
+        "zh": "教练",
+        "pos": "",
+        "sentence": "The coach shows us how to play.",
+        "sentenceZh": "教练教我们怎么玩。",
+        "image": "./assets/pictures/coach.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "教练",
+        "pos": "",
+        "sentence": "The coach shows us how to play.",
+        "sentenceZh": "教练教我们怎么玩。",
+        "image": "./assets/pictures/refined-coach.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "c73ee6fb303ceda0c4f450bea040ecb2be5fae360e7d232a047c5a2946b32c03",
+      "audioSha256": {
+        "word-coach": "61b8f0ab7d5175782a6c18f52efdc60c6cdd3d8dbde4e116b652e6b00c9c12fb",
+        "sentence-coach": "368dd7fd40bd41983e47ff1146ae5d228720d487f3e33475ee997fe45187cc0b"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "lamp",
+      "before": {
+        "zh": "灯",
+        "pos": "",
+        "sentence": "We turn on the lamp.",
+        "sentenceZh": "我们打开灯。",
+        "image": "./assets/pictures/lamp.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "灯",
+        "pos": "",
+        "sentence": "We turn on the lamp.",
+        "sentenceZh": "我们打开灯。",
+        "image": "./assets/pictures/refined-lamp.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "08d6a9f25f8a9b9bcb2963de3c837e1b65c8a7a7fd2bc779b5191c85131eb280",
+      "audioSha256": {
+        "word-lamp": "ca5beef934189c5ddfb557d2cd74ed85aba77104a829934625868c8ae830b993",
+        "sentence-lamp": "9d0787add5fd1e43fd2306585e80df6b43e30612c084af93e2c27bbb2b29fc3b"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "cover",
+      "before": {
+        "zh": "封面",
+        "pos": "",
+        "sentence": "The book has a red cover.",
+        "sentenceZh": "这本书有红色的封面。",
+        "image": "./assets/pictures/cover.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "封面",
+        "pos": "",
+        "sentence": "The book has a red cover.",
+        "sentenceZh": "这本书有红色的封面。",
+        "image": "./assets/pictures/refined-cover.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "83a75c53f5b53021ff72c93d9238051be50e35bb24e16ba633c03328afc95bdc",
+      "audioSha256": {
+        "word-cover": "c5a09180dd3a37328e772de0244c3edac503f04bd6ddaf9a0a1b4dc3c63616b4",
+        "sentence-cover": "7275a02214bb720027651524410e2c138e9d28ec4c3e287d6cbec4e20a0f8cb2"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "announce",
+      "before": {
+        "zh": "宣布",
+        "pos": "动词",
+        "sentence": "Tom found a new way to announce his news.",
+        "sentenceZh": "汤姆发现了一种宣布他新闻的新方法。",
+        "image": "./assets/pictures/announce.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "宣布",
+        "pos": "动词",
+        "sentence": "Tom will announce the winner.",
+        "sentenceZh": "汤姆将宣布获胜者。",
+        "image": "./assets/pictures/refined-announce.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "7939edd27e188554490ba11e311f50eb0aac526562a37db930c0458e2f4eb842",
+      "audioSha256": {
+        "word-announce": "c21b9fe4b28a69095b2e94286d9daaafdbdd9925a93e84901568b087778bb2f4",
+        "sentence-announce": "cef73991a85f896a402c95be3ebea596e59ed945d69917c4ef070ae144d7757f"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "charity",
+      "before": {
+        "zh": "慈善机构",
+        "pos": "名词",
+        "sentence": "Tom donates half his salary to his favorite charity.",
+        "sentenceZh": "汤姆捐一半他的薪水给他最喜欢的慈善机构。",
+        "image": "./assets/pictures/charity.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "慈善机构",
+        "pos": "名词",
+        "sentence": "We give toys to a charity.",
+        "sentenceZh": "我们把玩具捐给一家慈善机构。",
+        "image": "./assets/pictures/refined-charity.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "9c346f4d00fd19c0723aa568955064cc8712511d8b4fa582984f1a04eaaff9b4",
+      "audioSha256": {
+        "word-charity": "89f862cb9190e3d294407b38bb4241534c55709c89c02080b02c550b38b594c4",
+        "sentence-charity": "a0075b63bb947b584b52589aad9ee9a94b1c151b80c9b95e3ec9e364217166af"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "increase",
+      "before": {
+        "zh": "增加",
+        "pos": "名词",
+        "sentence": "They asked for an increase of salary.",
+        "sentenceZh": "他们要求加薪。",
+        "image": "./assets/pictures/increase.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "增加",
+        "pos": "名词",
+        "sentence": "There is an increase in the number of books.",
+        "sentenceZh": "书的数量增加了。",
+        "image": "./assets/pictures/refined-increase.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "d718acdfccca212a3402c520008eed1c4c9c26738c6d6da81f73b3d38b267382",
+      "audioSha256": {
+        "word-increase": "229e0fd194b3c1565f2a5f5f92f5c96af2e965bd27d71969cccb292d7a9d3af4",
+        "sentence-increase": "dc29cfd2bf24d553be26afbcc9774846002b3cc31888ba9dd03f1adf370e289e"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "research",
+      "before": {
+        "zh": "研究",
+        "pos": "名词",
+        "sentence": "Research on the causes of cancer is very expensive.",
+        "sentenceZh": "有关癌症成因的研究耗费颇巨。",
+        "image": "./assets/pictures/research.svg",
+        "pictureCue": true
+      },
+      "newImage": true,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "研究",
+        "pos": "名词",
+        "sentence": "We do research about plants.",
+        "sentenceZh": "我们研究植物。",
+        "image": "./assets/pictures/refined-research.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "148d00b82355f864d028ca1c8b1fcd2e52a291c4c2e9e8aaedfcd126a6df0924",
+      "audioSha256": {
+        "word-research": "91058ea8264e29ec759600d794e68bf59299fb2c414bba28e0a199452dcaa99a",
+        "sentence-research": "a6a2bf62c521a972b7904dddecc758f310de3473c15e43c3834ac84581cbae79"
+      },
+      "visualReviewedOn": "2026-11-02"
+    },
+    {
+      "id": "diving",
+      "before": {
+        "zh": "潜水",
+        "pos": "",
+        "sentence": "The diver wears a mask.",
+        "sentenceZh": "潜水员戴着面罩。",
+        "image": "./assets/pictures/diving.svg",
+        "pictureCue": true
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "潜水",
+        "pos": "",
+        "sentence": "She is diving under the water.",
+        "sentenceZh": "她正在水下潜水。",
+        "image": "./assets/pictures/diving.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "44020eec33b68438fbdee70ada2a7aabaeccc365b2fa4fdf91575bd496c12516",
+      "audioSha256": {
+        "word-diving": "ac2a6b2b6e4d73686b92dc73afbfa2714c1554e1fa27651c591139fbabf6a069",
+        "sentence-diving": "7dcce9a9df81c9806b22ec53016829415dcb5b6ea091c6f664cdaba0f0134ebb"
+      }
+    },
+    {
+      "id": "surfing",
+      "before": {
+        "zh": "冲浪",
+        "pos": "",
+        "sentence": "The surfer rides a wave.",
+        "sentenceZh": "冲浪者乘浪前行。",
+        "image": "./assets/pictures/surfing.svg",
+        "pictureCue": false
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "冲浪",
+        "pos": "",
+        "sentence": "He is surfing on a wave.",
+        "sentenceZh": "他正踏着海浪冲浪。",
+        "image": "./assets/pictures/surfing.svg",
+        "pictureCue": false
+      },
+      "imageSha256": "a460c03990dbe864dabb28ba27f03a99ae35c6cc52897f35e0336af97afbf366",
+      "audioSha256": {
+        "word-surfing": "22b397dced0cd9f4a6e033d13a79ee75a74360694dcc66ff466dde8f48fa11e1",
+        "sentence-surfing": "4af10b5bc3da31bac59eeb3db50c1548e76539ffe9a6be2628f8405e33e23ca1"
+      }
+    },
+    {
+      "id": "charm",
+      "before": {
+        "zh": "魅力",
+        "pos": "名词",
+        "sentence": "The old cottage has a certain charm about it.",
+        "sentenceZh": "旧村屋有它自己一定的魅力。",
+        "image": "./assets/pictures/charm.svg",
+        "pictureCue": true
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "魅力",
+        "pos": "名词",
+        "sentence": "The old cottage has a certain charm about it.",
+        "sentenceZh": "这间旧屋别有一番魅力。",
+        "image": "./assets/pictures/charm.svg",
+        "pictureCue": true
+      },
+      "imageSha256": "75ffddf89c79c2bf84e8f73dc889eff1fbd911be9992a3baeb2d0bda3a6a5031",
+      "audioSha256": {
+        "word-charm": "f56141a4fa66b52aa83838ada7e8ba45a9df93e68020785ba2687e905080ce9d",
+        "sentence-charm": "dabf48491717c19b0f229002d9c1105fd71bb6bfa0bf1b0694301d336a9bd345"
+      }
+    },
+    {
+      "id": "polish",
+      "before": {
+        "zh": "擦亮",
+        "pos": "动词",
+        "sentence": "I got him to polish my shoes.",
+        "sentenceZh": "我要他擦亮我的皮鞋。",
+        "image": "./assets/pictures/polish.svg",
+        "pictureCue": false
+      },
+      "newImage": false,
+      "status": "reviewed",
+      "reviewedCard": {
+        "zh": "擦亮",
+        "pos": "动词",
+        "sentence": "I polish my shoes.",
+        "sentenceZh": "我把鞋擦亮。",
+        "image": "./assets/pictures/polish.svg",
+        "pictureCue": false
+      },
+      "imageSha256": "a248f790b8699c8b59db5a67dbf2e54a6ce518269d7ccc72e1139e8492b9bb67",
+      "audioSha256": {
+        "word-polish": "1146bbf7b3a8c0233b0f6fde03403753b6fd83c65822733a42037dc826794476",
+        "sentence-polish": "cb0181f94d4c7ead33eaf6d222c9b76b4cfb41c0fd607fbc12f6fb0eeaa49562"
+      }
+    }
+  ],
+  "validation": {
+    "visual": "14 final SVG illustrations inspected together with their meanings; existing quiz restrictions retained.",
+    "audio": "12 affected clips regenerated with explicit pronunciation overrides where needed; automated waveform/source checks are not a listening certification.",
+    "stress": "Recall and transfer word clips aligned with the verb examples; other accepted stress variants are not classified as errors."
+  }
+}

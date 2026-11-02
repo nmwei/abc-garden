@@ -50,14 +50,21 @@ for(const fix of fixes.entries){
 for(const card of baseline.cards.filter(c=>c.findings.length))if(!ids.has(card.id))throw Error(`Unresolved original issue: ${card.id}`);
 for(const [priority,count] of Object.entries(fixes.scope))if(scope[priority]!==count)throw Error(`Wrong repair scope: ${priority}`);
 const collateral=new Map(fixes.collateralReviews.map(c=>[c.id,c]));
+const refinements=new Map((await json('data/vocabulary/content-refinements.json')).entries.filter(e=>e.newImage).map(e=>[e.id,e]));
 for(const card of CATALOG_WORDS.filter(c=>!ids.has(c.id))){
  const bytes=await readFile(new URL(card.image,root)),hash=sha(bytes);
  if(hash===original.get(card.id)?.sha256)continue;
+ const refinement=refinements.get(card.id);
+ if(refinement){
+  if(refinement.status!=='reviewed'||!refinement.visualReviewedOn)throw Error(`Unreviewed refinement: ${card.id}`);
+  await checkImage(card.id,refinement.imageSha256);continue;
+ }
  const review=collateral.get(card.id);
  if(review?.status!=='reviewed'||!review.visualReviewedOn)throw Error(`Unreviewed dependent image: ${card.id}`);
  await checkImage(card.id,review.afterImageSha256);
 }
 const report={scope,completed:ids.size,remaining:0,dependentImages:collateral.size,textChangedCards:rows.filter(r=>['zh','sentence','sentenceZh'].some(k=>r.before[k]!==r.after[k])).length,changedSentences,offlineVersion:offline.version,visualReview:fixes.validation,rows};
+if(process.argv.includes('--check')){console.log(JSON.stringify({...report,rows:rows.length}));process.exit(0);}
 await writeFile(new URL('data/vocabulary/quality-fixes-report.json',root),JSON.stringify(report,null,2)+'\n');
 
 const labels={priority_fix:'优先修改',improvement:'建议优化',sense_choice:'义项统一'};

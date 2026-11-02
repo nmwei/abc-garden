@@ -1,3 +1,4 @@
+import {REFINED_PICTURES} from './refined-pictures.js';
 import {WORD_ALIASES,canonicalWordId} from './word-aliases.js';
 import {PICTURE_QUIZ_GROUPS} from './picture-quiz-groups.js';
 import {CONTEXT_WORDS} from './context-words.js';
@@ -10,7 +11,7 @@ const rows=[
 ['banana','香蕉','food','1f34c','I like bananas.'],['milk','牛奶','food','1f95b','Can I have some milk?'],['water','水','food','1f4a7','Can I have some water?'],['bread','面包','food','1f35e','I like bread.'],['book','书','home','1f4d5','This is my book.'],['bed','床','home','1f6cf','The cat is on the bed.'],['chair','椅子','home','1fa91','Please sit on the chair.'],['tree','树','nature','1f333','The tree is tall.'],['flower','花','nature','1f33c','This is a yellow flower.'],['bird','鸟','animals','1f426','The bird can fly.'],['hand','手','people','270b','This is my hand.'],['eye','眼睛','people','1f441','This is my eye.'],['ear','耳朵','people','1f442','This is my ear.'],['bike','自行车','play','1f6b2','I can ride a bike.'],
 ];
 export const BASE_PICTURE_ROWS=[...rows,...EXTRA_PICTURE_WORDS];
-export const WORDS=[...BASE_PICTURE_ROWS,...THEMED_PICTURE_WORDS].map(([id,zh,topic,emoji,sentence],i)=>({id,zh,topic,emoji,sentence,letter:i<26?'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]:null,audio:i<26?`example-${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]}`:`word-${id}`,image:`./assets/pictures/${id}.svg`,pictureCue:isPictureCue(id,topic)})).concat(CONTEXT_WORDS).map(w=>({...w,pictureGroup:PICTURE_QUIZ_GROUPS[w.id]||w.emoji}));
+export const WORDS=[...BASE_PICTURE_ROWS,...THEMED_PICTURE_WORDS].map(([id,zh,topic,emoji,sentence],i)=>({id,zh,topic,emoji,sentence,letter:i<26?'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]:null,audio:i<26?`example-${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[i]}`:`word-${id}`,image:`./assets/pictures/${id}.svg`,pictureCue:isPictureCue(id,topic)})).concat(CONTEXT_WORDS).map(w=>({...w,image:REFINED_PICTURES[w.id]||w.image,pictureGroup:PICTURE_QUIZ_GROUPS[w.id]||w.emoji}));
 export const WORD_BY_ID=new Map(WORDS.map(word=>[word.id,word]));
 // Keep source cards for attribution/assets and old records; publish only canonical pictured cards.
 export const CATALOG_WORDS=WORDS.filter(w=>canonicalWordId(w.id)===w.id).map(w=>({...w,aliases:Object.keys(WORD_ALIASES).filter(id=>WORD_ALIASES[id]===w.id)}));
