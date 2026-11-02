@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 132"><rect x="0" y="0" width="128" height="132" rx="5" fill="#faf6e9"/><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="5" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<g>
+		<circle style="fill:#98C0D0;" cx="64" cy="64" r="60"/>
+		<circle style="fill:#FCEBCD;" cx="64" cy="64" r="48.14"/>
+		<path style="fill:#C2E3F0;" d="M50.3,15.06c-6.42,1.86-15.41,4.71-25.03,16.2C15.77,42.63,13.81,55.84,13.2,64.95
+			c0,0-5.49,6.87-5.75,5.59c-2.07-9.95,2.11-32.19,13.04-43.95C33.21,12.91,49.75,8.06,55.73,7.15C56.76,6.99,52.25,14.5,50.3,15.06
+			z"/>
+		<g>
+			<circle style="fill:#FFFFFF;" cx="64" cy="64" r="45.59"/>
+		</g>
+	</g>
+	<g>
+		
+			<line style="fill:none;stroke:#563428;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;" x1="64" y1="35" x2="64" y2="64"/>
+		<circle style="fill:#563428;" cx="64" cy="64" r="5.06"/>
+		
+			<line style="fill:none;stroke:#563428;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" x1="85.07" y1="63.93" x2="63.83" y2="64.07"/>
+	</g>
+	<g>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="100" x2="64" y2="105"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="23" x2="64" y2="28"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="100" x2="64" y2="105"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="23" x2="64" y2="28"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="28" y1="64" x2="23" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="105" y1="64" x2="100" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="28" y1="64" x2="23" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="105" y1="64" x2="100" y2="64"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="46" y1="95.18" x2="43.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="84.5" y1="28.49" x2="82" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="46" y1="95.18" x2="43.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="84.5" y1="28.49" x2="82" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="82" y1="95.18" x2="84.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="43.5" y1="28.49" x2="46" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="82" y1="95.18" x2="84.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="43.5" y1="28.49" x2="46" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="95.18" y1="82" x2="99.51" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="28.49" y1="43.5" x2="32.82" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="95.18" y1="82" x2="99.51" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="28.49" y1="43.5" x2="32.82" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="32.82" y1="82" x2="28.49" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="99.51" y1="43.5" x2="95.18" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="32.82" y1="82" x2="28.49" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="99.51" y1="43.5" x2="95.18" y2="46"/>
+	</g>
+</g>
+</svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="80" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<g>
+		<path style="fill:#424242;" d="M83.05,124H44.95c-5.26,0-9.53-4.27-9.53-9.53V13.53c0-5.26,4.27-9.53,9.53-9.53h38.11
+			c5.26,0,9.53,4.27,9.53,9.53v100.94C92.58,119.73,88.32,124,83.05,124z"/>
+	</g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<circle style="fill:#4CAF50;" cx="64" cy="102.92" r="13.41"/>
+					<g>
+						<path style="fill:#6FD86F;" d="M54.64,104.09c-1.14-0.36-1.45-4.36,1.22-7.57c3.98-4.79,9.71-4.67,10.32-2.12
+							c0.85,3.57-3.67,2.16-7.11,5.04C56.92,101.24,56.45,104.66,54.64,104.09z"/>
+					</g>
+				</g>
+				<g>
+					<circle style="fill:#FFCA28;" cx="64" cy="66.21" r="13.41"/>
+					<g>
+						<path style="fill:#FFF59D;" d="M54.64,67.39c-1.14-0.36-1.45-4.36,1.22-7.57c3.98-4.79,9.71-4.67,10.32-2.12
+							c0.85,3.57-3.67,2.16-7.11,5.04C56.92,64.54,56.45,67.96,54.64,67.39z"/>
+					</g>
+				</g>
+				<g>
+					<circle style="fill:#F44336;" cx="64" cy="29.5" r="13.41"/>
+					<path style="fill:#FF8155;" d="M54.64,30.68c-1.14-0.36-1.45-4.36,1.22-7.57c3.98-4.79,9.71-4.67,10.32-2.12
+						c0.85,3.57-3.67,2.16-7.11,5.04C56.92,27.83,56.45,31.25,54.64,30.68z"/>
+				</g>
+			</g>
+			<path style="fill:#757575;" d="M49.48,23.12c-0.47,0.92-1.89,0.88-1.76-0.52c0.32-3.41,2.26-6.09,3.85-7.73
+				c3.16-3.32,7.8-5.21,12.43-5.2c4.63-0.02,9.27,1.88,12.44,5.19c1.59,1.64,3.85,5.3,3.86,7.85c0,1.11-1.26,1.41-1.72,0.51
+				c-1.15-2.24-4.71-9.55-14.57-9.55C54.13,13.67,50.62,20.9,49.48,23.12z"/>
+			<path style="fill:#757575;" d="M49.48,96.62c-0.47,0.92-1.89,0.88-1.76-0.52c0.32-3.41,2.26-6.09,3.85-7.73
+				c3.16-3.32,7.8-5.21,12.43-5.2c4.63-0.02,9.27,1.88,12.44,5.19c1.59,1.64,3.85,5.3,3.86,7.85c0,1.11-1.26,1.41-1.72,0.51
+				c-1.15-2.24-4.71-9.55-14.57-9.55C54.13,87.17,50.62,94.41,49.48,96.62z"/>
+			<path style="fill:#757575;" d="M49.48,59.87c-0.47,0.92-1.89,0.88-1.76-0.52c0.32-3.41,2.26-6.09,3.85-7.73
+				c3.16-3.32,7.8-5.21,12.43-5.2c4.63-0.02,9.27,1.88,12.44,5.19c1.59,1.64,3.85,5.3,3.86,7.85c0,1.11-1.26,1.41-1.72,0.51
+				c-1.15-2.24-4.71-9.55-14.57-9.55S50.62,57.65,49.48,59.87z"/>
+		</g>
+	</g>
+</g>
+</svg><path d="M52 57L75 57" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 60.35597877022942" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 53.64402122977058" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><text x="64" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="10" fill="#526e7c">right now</text><text x="64" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="9" fill="#526e7c">leave immediately</text></svg>

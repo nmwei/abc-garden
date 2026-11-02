@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 132"><rect x="0" y="0" width="128" height="132" rx="5" fill="#faf6e9"/><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="5" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<path style="fill:#689F38;" d="M116.46,3.96h-104c-4.42,0-8,3.58-8,8v104c0,4.42,3.58,8,8,8h104c4.42,0,8-3.58,8-8v-104
+		C124.46,7.54,120.88,3.96,116.46,3.96z"/>
+	<path style="fill:#7CB342;" d="M110.16,3.96h-98.2c-4.13,0.03-7.47,3.37-7.5,7.5v97.9c-0.01,4.14,3.34,7.49,7.48,7.5
+		c0.01,0,0.01,0,0.02,0h98.1c4.14,0.01,7.49-3.34,7.5-7.48c0-0.01,0-0.01,0-0.02v-97.9c0.09-4.05-3.13-7.41-7.18-7.5
+		C110.31,3.96,110.23,3.96,110.16,3.96z"/>
+	<path style="opacity:0.3;fill:#FFFFFF;enable-background:new    ;" d="M40.16,12.86c0-2.3-1.6-3-10.8-2.7c-7.7,0.3-11.5,1.2-13.8,4
+		s-2.9,8.5-3,15.3c0,4.8,0,9.3,2.5,9.3c3.4,0,3.4-7.9,6.2-12.3C26.66,17.76,40.16,15.86,40.16,12.86z"/>
+	<path style="fill:#FBF9F9;" d="M43.26,109.46c-3.96,0.11-7.51-2.42-8.7-6.2l-15.1-45.5c-1.46-4.81,1.26-9.9,6.07-11.36
+		c4.65-1.41,9.59,1.08,11.23,5.66l9.8,29.5l47.1-59.6c3.12-3.95,8.85-4.62,12.8-1.5s4.62,8.85,1.5,12.8l-57.6,72.7
+		C48.65,108.15,46.04,109.44,43.26,109.46z"/>
+</g>
+</svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="80" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<polygon style="fill:#FFFFFF;" points="87.85,6.19 16.8,6.19 16.8,121.64 111.42,121.64 111.42,28.8 	"/>
+	<g>
+		<g>
+			<g>
+				
+					<line style="fill:none;stroke:#B0BEC5;stroke-width:3.8648;stroke-linecap:round;stroke-miterlimit:10;" x1="33.34" y1="41.05" x2="94.5" y2="41.05"/>
+				
+					<line style="fill:none;stroke:#B0BEC5;stroke-width:3.8648;stroke-linecap:round;stroke-miterlimit:10;" x1="33.34" y1="55.68" x2="94.5" y2="55.68"/>
+				
+					<line style="fill:none;stroke:#B0BEC5;stroke-width:3.8648;stroke-linecap:round;stroke-miterlimit:10;" x1="33.34" y1="70.3" x2="94.5" y2="70.3"/>
+				
+					<line style="fill:none;stroke:#B0BEC5;stroke-width:3.8648;stroke-linecap:round;stroke-miterlimit:10;" x1="33.34" y1="84.93" x2="94.5" y2="84.93"/>
+				
+					<line style="fill:none;stroke:#B0BEC5;stroke-width:3.8648;stroke-linecap:round;stroke-miterlimit:10;" x1="33.34" y1="99.56" x2="59.49" y2="99.56"/>
+			</g>
+		</g>
+	</g>
+	<path style="fill:#6FBFF0;" d="M109.45,23.59L92.79,6.88C90.83,5.03,88.24,4,85.54,4h-68.5c-1.55,0-2.81,1.26-2.81,2.81v114.38
+		c0,1.55,1.26,2.81,2.81,2.81h93.93c1.55,0,2.81-1.26,2.81-2.81l0-89.91C113.77,28.37,111.57,25.59,109.45,23.59z M109.77,120H18.23
+		V8h64.66c2.12,0,3.85,1.72,3.85,3.85v17.88h17.34c3.14,0,5.69,1.73,5.69,5.69V120z"/>
+</g>
+</svg><path d="M52 57L75 57" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 60.35597877022942" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 53.64402122977058" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><text x="64" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="10" fill="#526e7c">a key step</text><text x="64" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="7.7586206896551735" fill="#526e7c">checking the facts matters</text></svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 132"><rect x="0" y="0" width="128" height="132" rx="5" fill="#faf6e9"/><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="5" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<circle style="fill:#CC3333;" cx="63.93" cy="64" r="60"/>
+	<circle style="fill:#F44336;" cx="60.03" cy="63.1" r="56.1"/>
+	<path style="fill:#FF8A80;" d="M23.93,29.7c4.5-7.1,14.1-13,24.1-14.8c2.5-0.4,5-0.6,7.1,0.2c1.6,0.6,2.9,2.1,2,3.8
+		c-0.7,1.4-2.6,2-4.1,2.5c-9.38,3.1-17.47,9.21-23,17.4c-2,3-5,11.3-8.7,9.2C17.43,45.7,18.23,38.5,23.93,29.7z"/>
+</g>
+</svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="80" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<path style="fill:#CC3333;" d="M116,4H12c-4.42,0-8,3.58-8,8v104c0,4.42,3.58,8,8,8h104c4.42,0,8-3.58,8-8V12
+		C124,7.58,120.42,4,116,4z"/>
+	<path style="fill:#F44336;" d="M109.7,4H11.5C7.37,4.03,4.03,7.37,4,11.5v97.9c-0.01,4.14,3.34,7.49,7.48,7.5c0.01,0,0.01,0,0.02,0
+		h98.1c4.14,0.01,7.49-3.34,7.5-7.48c0-0.01,0-0.01,0-0.02V11.5c0.09-4.05-3.13-7.41-7.18-7.5C109.85,4,109.77,4,109.7,4z"/>
+	<path style="fill:#FF8A80;" d="M39.7,12.9c0-2.3-1.6-3-10.8-2.7c-7.7,0.3-11.5,1.2-13.8,4c-1.9,2.3-2.3,5.6-2.6,8.4
+		c-0.2,2.2-2.2,14.9,3.5,11.2c0.68-0.45,1.23-1.07,1.6-1.8c1.2-2.1,1.9-3.5,3.3-5.6C26.2,17.8,39.7,15.9,39.7,12.9z"/>
+</g>
+</svg><text x="64" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="14" fill="#526e7c">vs</text><text x="64" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="10" fill="#526e7c">what is different?</text><text x="64" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="9" fill="#526e7c">noticing a difference</text></svg>

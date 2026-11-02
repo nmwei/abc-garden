@@ -1,4 +1,4 @@
-// Generated from data/picture-vocabulary.tsv. Text: project-authored; pictures: Noto Emoji v2.047.
+// Generated from data/picture-vocabulary.tsv. Text: project-authored; picture sources and repair credits: assets/credits.json.
 export const THEMED_PICTURE_WORDS=[
  [
   "cherry",
@@ -3782,7 +3782,7 @@ export const THEMED_PICTURE_WORDS=[
  ],
  [
   "week",
-  "星期",
+  "一周",
   "nature",
   "1f4c5",
   "A week has seven days."
@@ -7058,7 +7058,7 @@ export const THEMED_PICTURE_WORDS=[
  ],
  [
   "ask",
-  "提问",
+  "请求；询问",
   "actions",
   "2753",
   "I ask for help."
@@ -7135,7 +7135,7 @@ export const THEMED_PICTURE_WORDS=[
  ],
  [
   "turn",
-  "转动",
+  "翻（页）；转动",
   "actions",
   "1f504",
   "I turn the page."
