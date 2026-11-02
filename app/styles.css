@@ -215,8 +215,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 .word-selection-action.is-add{background:#e9efdf;border-color:#a5b698}.word-workspace{scroll-margin-top:16px}
 
-/* Reserve the same status line on every tile; labels never resize a row. */
+/* Equal tile heights; center each visible content group without an empty status row. */
 .word-browser .word-list{grid-auto-rows:1fr}
 .word-browser .word-list [data-course="word"]>.word-status-slot{display:flex;justify-content:center;align-items:center;flex:none;min-height:18px;height:18px;width:100%;margin-top:4px}
 .word-status-slot>.learning-badge,.word-status-slot>.mastery-badge{display:inline-block;margin:0;padding:2px 6px;border:1px solid #d5e1cb;border-radius:6px;font-size:10px;font-weight:500;line-height:12px;letter-spacing:.2px;color:#49664b;background:#edf3e6;white-space:nowrap}
 .word-status-slot>.mastery-badge{color:#68725c;background:#f0f1e8;border-color:#dfe3d5}
+
+.word-browser .word-list [data-course="word"]{justify-content:center}
+.word-browser .word-list [data-course="word"]>.word-status-slot:empty{display:none}
