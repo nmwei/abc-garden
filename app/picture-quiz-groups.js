@@ -58,5 +58,8 @@ export const PICTURE_QUIZ_GROUPS={
  "smoke": "combustion-fumes",
  "exhaust": "combustion-fumes",
  "jump": "jumping-actions",
- "hop": "jumping-actions"
+ "hop": "jumping-actions",
+ "tidy": "putting-toys-away",
+ "chore": "putting-toys-away",
+ "chores": "putting-toys-away"
 };

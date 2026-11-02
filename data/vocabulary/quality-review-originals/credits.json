@@ -1,0 +1,4187 @@
+{
+  "notice": "Historical originals retained for comparison only; excluded from shipped application assets.",
+  "entries": [
+    {
+      "file": "cabbage.svg",
+      "sha256": "9ebccb784a5c9408509297c7141f40147a9ac509a436f3605d9b90df4332cf06",
+      "originalCredit": {
+        "file": "pictures/cabbage.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f96c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9ebccb784a5c9408509297c7141f40147a9ac509a436f3605d9b90df4332cf06"
+      }
+    },
+    {
+      "file": "mushroom.svg",
+      "sha256": "852dfb03510b793a74740c9e224e9d03a1fc2599bc049e16d5c5df6fc4eb211b",
+      "originalCredit": {
+        "file": "pictures/mushroom.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f344.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "852dfb03510b793a74740c9e224e9d03a1fc2599bc049e16d5c5df6fc4eb211b"
+      }
+    },
+    {
+      "file": "seed.svg",
+      "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7",
+      "originalCredit": {
+        "file": "pictures/seed.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f331.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7"
+      }
+    },
+    {
+      "file": "wheat.svg",
+      "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33",
+      "originalCredit": {
+        "file": "pictures/wheat.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33"
+      }
+    },
+    {
+      "file": "grain.svg",
+      "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33",
+      "originalCredit": {
+        "file": "pictures/grain.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33"
+      }
+    },
+    {
+      "file": "toast.svg",
+      "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea",
+      "originalCredit": {
+        "file": "pictures/toast.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f35e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea"
+      }
+    },
+    {
+      "file": "bun.svg",
+      "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea",
+      "originalCredit": {
+        "file": "pictures/bun.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f35e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea"
+      }
+    },
+    {
+      "file": "sausage.svg",
+      "sha256": "344b3d0cb94f9f2cbf1fa716648c40c774cf6abd198f7b641176db1cd9039fb3",
+      "originalCredit": {
+        "file": "pictures/sausage.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f32d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "344b3d0cb94f9f2cbf1fa716648c40c774cf6abd198f7b641176db1cd9039fb3"
+      }
+    },
+    {
+      "file": "omelet.svg",
+      "sha256": "62ac034543026b9075622da022be8a3d0568ec1a37a5358f7964bb6636261af0",
+      "originalCredit": {
+        "file": "pictures/omelet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f373.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "62ac034543026b9075622da022be8a3d0568ec1a37a5358f7964bb6636261af0"
+      }
+    },
+    {
+      "file": "reindeer.svg",
+      "sha256": "ee1bdbba6b0d6fb4aa9184172c6a5c71b00854c8741341cc4358fc67a9875ef3",
+      "originalCredit": {
+        "file": "pictures/reindeer.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f98c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ee1bdbba6b0d6fb4aa9184172c6a5c71b00854c8741341cc4358fc67a9875ef3"
+      }
+    },
+    {
+      "file": "crow.svg",
+      "sha256": "6d4fe4cca912530db570a5a8c16f01e72225f300a6ece3317077b4f6e594d96f",
+      "originalCredit": {
+        "file": "pictures/crow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f426_200d_2b1b.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6d4fe4cca912530db570a5a8c16f01e72225f300a6ece3317077b4f6e594d96f"
+      }
+    },
+    {
+      "file": "beak.svg",
+      "sha256": "09b377ca4ff10719d6f9aa573b62097aea47a400a3f61b79b2f8a01b5b83bca0",
+      "originalCredit": {
+        "file": "pictures/beak.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f426.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "09b377ca4ff10719d6f9aa573b62097aea47a400a3f61b79b2f8a01b5b83bca0"
+      }
+    },
+    {
+      "file": "claw.svg",
+      "sha256": "40201df8ad95a06eb4e22620d28c65b1f655c798bccc4720756145202c2958aa",
+      "originalCredit": {
+        "file": "pictures/claw.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f43e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "40201df8ad95a06eb4e22620d28c65b1f655c798bccc4720756145202c2958aa"
+      }
+    },
+    {
+      "file": "tail.svg",
+      "sha256": "dc0b31d27d4679846bd55d9e336462588e9cef76be1ee71b3c4ea2b3f34fd07c",
+      "originalCredit": {
+        "file": "pictures/tail.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f408.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "dc0b31d27d4679846bd55d9e336462588e9cef76be1ee71b3c4ea2b3f34fd07c"
+      }
+    },
+    {
+      "file": "fur.svg",
+      "sha256": "6c076101b2efbd2600b61a50d59f8acbc4f46cc03f65bf2476d118654099b054",
+      "originalCredit": {
+        "file": "pictures/fur.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f43b.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6c076101b2efbd2600b61a50d59f8acbc4f46cc03f65bf2476d118654099b054"
+      }
+    },
+    {
+      "file": "wool.svg",
+      "sha256": "c801eb0aec5edfad321a18a6720d58dedb05f5d8c579c247620cc78cdfab4555",
+      "originalCredit": {
+        "file": "pictures/wool.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f411.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c801eb0aec5edfad321a18a6720d58dedb05f5d8c579c247620cc78cdfab4555"
+      }
+    },
+    {
+      "file": "horn.svg",
+      "sha256": "074c436e75d572a0145c369b15d1b63c7808baa37dd3bd58c48529391dffdc28",
+      "originalCredit": {
+        "file": "pictures/horn.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f410.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "074c436e75d572a0145c369b15d1b63c7808baa37dd3bd58c48529391dffdc28"
+      }
+    },
+    {
+      "file": "antler.svg",
+      "sha256": "ee1bdbba6b0d6fb4aa9184172c6a5c71b00854c8741341cc4358fc67a9875ef3",
+      "originalCredit": {
+        "file": "pictures/antler.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f98c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ee1bdbba6b0d6fb4aa9184172c6a5c71b00854c8741341cc4358fc67a9875ef3"
+      }
+    },
+    {
+      "file": "hoof.svg",
+      "sha256": "059a23d77bf07fb1335a4f76cc2f45448721e50e791673caffe1bb6d5c08fee5",
+      "originalCredit": {
+        "file": "pictures/hoof.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f40e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "059a23d77bf07fb1335a4f76cc2f45448721e50e791673caffe1bb6d5c08fee5"
+      }
+    },
+    {
+      "file": "whisker.svg",
+      "sha256": "fbb19611e927d40ff0188f5d4da8457e8d83faeb18a3adc66d91cb5ef17f2f1c",
+      "originalCredit": {
+        "file": "pictures/whisker.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f431.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "fbb19611e927d40ff0188f5d4da8457e8d83faeb18a3adc66d91cb5ef17f2f1c"
+      }
+    },
+    {
+      "file": "alligator.svg",
+      "sha256": "0211694f0af1b08aa8449201cc2d376d1804d65d973311df9f5c8801b10b226e",
+      "originalCredit": {
+        "file": "pictures/alligator.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f40a.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0211694f0af1b08aa8449201cc2d376d1804d65d973311df9f5c8801b10b226e"
+      }
+    },
+    {
+      "file": "classroom.svg",
+      "sha256": "3191a4aea7fa64059552a384305ef260952931929c18bae5de121492b2a7a453",
+      "originalCredit": {
+        "file": "pictures/classroom.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3eb.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3191a4aea7fa64059552a384305ef260952931929c18bae5de121492b2a7a453"
+      }
+    },
+    {
+      "file": "dictionary.svg",
+      "sha256": "313fc41da742c061839771786e25a8f4f1e951c2ebca8cd94c51ead095d861f6",
+      "originalCredit": {
+        "file": "pictures/dictionary.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4d5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "313fc41da742c061839771786e25a8f4f1e951c2ebca8cd94c51ead095d861f6"
+      }
+    },
+    {
+      "file": "label.svg",
+      "sha256": "c5419361f5afbc9c14b653973465cccd41c4c8c39bc920df22cdf1e13378f4cb",
+      "originalCredit": {
+        "file": "pictures/label.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3f7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c5419361f5afbc9c14b653973465cccd41c4c8c39bc920df22cdf1e13378f4cb"
+      }
+    },
+    {
+      "file": "alphabet.svg",
+      "sha256": "38902df368e18fed7d315eedda0ee00337d49866363abd5c0cd8027fda316adc",
+      "originalCredit": {
+        "file": "pictures/alphabet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f524.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "38902df368e18fed7d315eedda0ee00337d49866363abd5c0cd8027fda316adc"
+      }
+    },
+    {
+      "file": "word.svg",
+      "sha256": "3fae26664cd6931b48fca853a3cf72570063df79825f8218e426538bbc36cf30",
+      "originalCredit": {
+        "file": "pictures/word.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4d6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3fae26664cd6931b48fca853a3cf72570063df79825f8218e426538bbc36cf30"
+      }
+    },
+    {
+      "file": "sentence.svg",
+      "sha256": "0ebf504b74f00f0f6d080b2ab3ac0c6c27199ad114819751c4b0334eb5087d6f",
+      "originalCredit": {
+        "file": "pictures/sentence.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4dd.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0ebf504b74f00f0f6d080b2ab3ac0c6c27199ad114819751c4b0334eb5087d6f"
+      }
+    },
+    {
+      "file": "list.svg",
+      "sha256": "0ebf504b74f00f0f6d080b2ab3ac0c6c27199ad114819751c4b0334eb5087d6f",
+      "originalCredit": {
+        "file": "pictures/list.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4dd.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0ebf504b74f00f0f6d080b2ab3ac0c6c27199ad114819751c4b0334eb5087d6f"
+      }
+    },
+    {
+      "file": "globe.svg",
+      "sha256": "873feb50c7ac2bc1bd22e473de017be0c3c76662def7df423d0cfff0fc3f44b7",
+      "originalCredit": {
+        "file": "pictures/globe.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f30d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "873feb50c7ac2bc1bd22e473de017be0c3c76662def7df423d0cfff0fc3f44b7"
+      }
+    },
+    {
+      "file": "school bus.svg",
+      "sha256": "600a1de5e36280847c65b2be15deb78b5bef16dc0e7eed0b9112528ce0f5ac79",
+      "originalCredit": {
+        "file": "pictures/school bus.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f68c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "600a1de5e36280847c65b2be15deb78b5bef16dc0e7eed0b9112528ce0f5ac79"
+      }
+    },
+    {
+      "file": "garden.svg",
+      "sha256": "44c68a18562340fb485297b61ec198461a897d08f643f9db32b4badce3270823",
+      "originalCredit": {
+        "file": "pictures/garden.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3e1.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "44c68a18562340fb485297b61ec198461a897d08f643f9db32b4badce3270823"
+      }
+    },
+    {
+      "file": "armchair.svg",
+      "sha256": "8c6444f7d6a82869d0606549a582f4d77c94edc890c9645dee9a0b16f1993857",
+      "originalCredit": {
+        "file": "pictures/armchair.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cb.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "8c6444f7d6a82869d0606549a582f4d77c94edc890c9645dee9a0b16f1993857"
+      }
+    },
+    {
+      "file": "bedroom.svg",
+      "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a",
+      "originalCredit": {
+        "file": "pictures/bedroom.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cf.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a"
+      }
+    },
+    {
+      "file": "pillow.svg",
+      "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a",
+      "originalCredit": {
+        "file": "pictures/pillow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cf.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a"
+      }
+    },
+    {
+      "file": "blanket.svg",
+      "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a",
+      "originalCredit": {
+        "file": "pictures/blanket.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cf.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a"
+      }
+    },
+    {
+      "file": "quilt.svg",
+      "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a",
+      "originalCredit": {
+        "file": "pictures/quilt.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cf.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6061c5e7b16cb6cdc1f12451a3fdaf248676165a6333385dc79221735e83641a"
+      }
+    },
+    {
+      "file": "tissue.svg",
+      "sha256": "7dcbc3607d62501b86575c7686e9d4bb2d52b6ae2cbadb1b8ef232a41abbece3",
+      "originalCredit": {
+        "file": "pictures/tissue.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9fb.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "7dcbc3607d62501b86575c7686e9d4bb2d52b6ae2cbadb1b8ef232a41abbece3"
+      }
+    },
+    {
+      "file": "laundry.svg",
+      "sha256": "cb1e3bfdc585ca689a8da946474c959d17a86cc222bd90a61e0b923440f47cad",
+      "originalCredit": {
+        "file": "pictures/laundry.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9fa.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cb1e3bfdc585ca689a8da946474c959d17a86cc222bd90a61e0b923440f47cad"
+      }
+    },
+    {
+      "file": "kitchen.svg",
+      "sha256": "62ac034543026b9075622da022be8a3d0568ec1a37a5358f7964bb6636261af0",
+      "originalCredit": {
+        "file": "pictures/kitchen.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f373.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "62ac034543026b9075622da022be8a3d0568ec1a37a5358f7964bb6636261af0"
+      }
+    },
+    {
+      "file": "lid.svg",
+      "sha256": "d058547dfa79bf0028ba92bec9a8e228a9d1e72de68be48dbf41a32020f36cde",
+      "originalCredit": {
+        "file": "pictures/lid.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fad9.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d058547dfa79bf0028ba92bec9a8e228a9d1e72de68be48dbf41a32020f36cde"
+      }
+    },
+    {
+      "file": "straw.svg",
+      "sha256": "edc9043ddb224075ea0a02190be75c3e6cebe2fb17928747788e2fdf0c7bf0af",
+      "originalCredit": {
+        "file": "pictures/straw.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f964.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "edc9043ddb224075ea0a02190be75c3e6cebe2fb17928747788e2fdf0c7bf0af"
+      }
+    },
+    {
+      "file": "screw.svg",
+      "sha256": "83e0289b2955cd2991dca860c3bac56dd2a33ffd6038f42ecd9417672929bcfc",
+      "originalCredit": {
+        "file": "pictures/screw.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f529.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "83e0289b2955cd2991dca860c3bac56dd2a33ffd6038f42ecd9417672929bcfc"
+      }
+    },
+    {
+      "file": "nut.svg",
+      "sha256": "83e0289b2955cd2991dca860c3bac56dd2a33ffd6038f42ecd9417672929bcfc",
+      "originalCredit": {
+        "file": "pictures/nut.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f529.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "83e0289b2955cd2991dca860c3bac56dd2a33ffd6038f42ecd9417672929bcfc"
+      }
+    },
+    {
+      "file": "doorknob.svg",
+      "sha256": "b2f299ab9e47e1278ebb44400995286d7f00f06a83c864fd41d7df19ea02493e",
+      "originalCredit": {
+        "file": "pictures/doorknob.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6aa.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "b2f299ab9e47e1278ebb44400995286d7f00f06a83c864fd41d7df19ea02493e"
+      }
+    },
+    {
+      "file": "handle.svg",
+      "sha256": "5830ae818458ee3c51208af6196a8a6c3d2a27e652aed2380c0b26a39d13d9dc",
+      "originalCredit": {
+        "file": "pictures/handle.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2615.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5830ae818458ee3c51208af6196a8a6c3d2a27e652aed2380c0b26a39d13d9dc"
+      }
+    },
+    {
+      "file": "photo.svg",
+      "sha256": "761f1fc8ae20fe2486b2aba64a8bce6b5ba35731d5612bfd241a25869287c85e",
+      "originalCredit": {
+        "file": "pictures/photo.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f5bc.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "761f1fc8ae20fe2486b2aba64a8bce6b5ba35731d5612bfd241a25869287c85e"
+      }
+    },
+    {
+      "file": "frame.svg",
+      "sha256": "761f1fc8ae20fe2486b2aba64a8bce6b5ba35731d5612bfd241a25869287c85e",
+      "originalCredit": {
+        "file": "pictures/frame.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f5bc.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "761f1fc8ae20fe2486b2aba64a8bce6b5ba35731d5612bfd241a25869287c85e"
+      }
+    },
+    {
+      "file": "brick.svg",
+      "sha256": "aab2d46f364b36bdc358ea9a69c423c0428bbfa349925388036027e723d94e8c",
+      "originalCredit": {
+        "file": "pictures/brick.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9f1.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "aab2d46f364b36bdc358ea9a69c423c0428bbfa349925388036027e723d94e8c"
+      }
+    },
+    {
+      "file": "stamp.svg",
+      "sha256": "3ae81e01ab7815a1d796f7a9873e52171f0d1f57d498d57f274ee4bad7608f7f",
+      "originalCredit": {
+        "file": "pictures/stamp.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4ee.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3ae81e01ab7815a1d796f7a9873e52171f0d1f57d498d57f274ee4bad7608f7f"
+      }
+    },
+    {
+      "file": "mittens.svg",
+      "sha256": "355a43eb2ad518a780c80e81a5f81dc9b57e61781a8ae778624a66ac40dfe008",
+      "originalCredit": {
+        "file": "pictures/mittens.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9e4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "355a43eb2ad518a780c80e81a5f81dc9b57e61781a8ae778624a66ac40dfe008"
+      }
+    },
+    {
+      "file": "helmet.svg",
+      "sha256": "3dcf903c90ffa961792d9fb1cc55a48e5d5413f02aefd1d3dcda495f953d1f7e",
+      "originalCredit": {
+        "file": "pictures/helmet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26d1.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3dcf903c90ffa961792d9fb1cc55a48e5d5413f02aefd1d3dcda495f953d1f7e"
+      }
+    },
+    {
+      "file": "bead.svg",
+      "sha256": "1b502e02d713c85e35672f4d594d5a9aedeb39be7fc18c71cb9d1279e79ca25b",
+      "originalCredit": {
+        "file": "pictures/bead.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4ff.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "1b502e02d713c85e35672f4d594d5a9aedeb39be7fc18c71cb9d1279e79ca25b"
+      }
+    },
+    {
+      "file": "button.svg",
+      "sha256": "d2b958db8ac899e1424e20e5c620eb11a46ccfb123a60fe62a8315d1e05c93a5",
+      "originalCredit": {
+        "file": "pictures/button.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f454.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d2b958db8ac899e1424e20e5c620eb11a46ccfb123a60fe62a8315d1e05c93a5"
+      }
+    },
+    {
+      "file": "pocket.svg",
+      "sha256": "797510cdf1e070dc66dcd7c1322c97b1c43e5366697258289109545ae12e5e5f",
+      "originalCredit": {
+        "file": "pictures/pocket.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f456.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "797510cdf1e070dc66dcd7c1322c97b1c43e5366697258289109545ae12e5e5f"
+      }
+    },
+    {
+      "file": "shoelace.svg",
+      "sha256": "ff32a026c46a3101b7cee48b40722ec83adfaaa4ec480f49ec0f724956d017fa",
+      "originalCredit": {
+        "file": "pictures/shoelace.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f45f.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ff32a026c46a3101b7cee48b40722ec83adfaaa4ec480f49ec0f724956d017fa"
+      }
+    },
+    {
+      "file": "sleeve.svg",
+      "sha256": "19e557d816e99aaea50d3488dbc27edb4b3d773317d199c21339d82e060b8fd8",
+      "originalCredit": {
+        "file": "pictures/sleeve.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f455.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "19e557d816e99aaea50d3488dbc27edb4b3d773317d199c21339d82e060b8fd8"
+      }
+    },
+    {
+      "file": "collar.svg",
+      "sha256": "d2b958db8ac899e1424e20e5c620eb11a46ccfb123a60fe62a8315d1e05c93a5",
+      "originalCredit": {
+        "file": "pictures/collar.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f454.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d2b958db8ac899e1424e20e5c620eb11a46ccfb123a60fe62a8315d1e05c93a5"
+      }
+    },
+    {
+      "file": "snowball.svg",
+      "sha256": "ab7c9bf039e7f75a18a2ef347e685c3d524f15b83fb324f8dd67d4e0978a2a4d",
+      "originalCredit": {
+        "file": "pictures/snowball.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26c4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ab7c9bf039e7f75a18a2ef347e685c3d524f15b83fb324f8dd67d4e0978a2a4d"
+      }
+    },
+    {
+      "file": "moonlight.svg",
+      "sha256": "b70dac08f53b2761a1eb3c0b9272f61109f7203373e78e2e1fe91e15032f642c",
+      "originalCredit": {
+        "file": "pictures/moonlight.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f319.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "b70dac08f53b2761a1eb3c0b9272f61109f7203373e78e2e1fe91e15032f642c"
+      }
+    },
+    {
+      "file": "hill.svg",
+      "sha256": "c7cbdb852d2f2b9d1892df146ce4aa6411d9f873dd8f5bcc7a60cf78d1b1c348",
+      "originalCredit": {
+        "file": "pictures/hill.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26f0.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c7cbdb852d2f2b9d1892df146ce4aa6411d9f873dd8f5bcc7a60cf78d1b1c348"
+      }
+    },
+    {
+      "file": "lava.svg",
+      "sha256": "17c27563ce2a0b783cb0e97bd1dabdde870c4b715ce99670b1334c007ce14f60",
+      "originalCredit": {
+        "file": "pictures/lava.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f30b.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "17c27563ce2a0b783cb0e97bd1dabdde870c4b715ce99670b1334c007ce14f60"
+      }
+    },
+    {
+      "file": "sand.svg",
+      "sha256": "86748857b91c4243b9f333fce89723a655849415c160ce3dc64c4b16bf10e1f9",
+      "originalCredit": {
+        "file": "pictures/sand.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3d6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "86748857b91c4243b9f333fce89723a655849415c160ce3dc64c4b16bf10e1f9"
+      }
+    },
+    {
+      "file": "lake.svg",
+      "sha256": "089a1527f476a23ecba055b59edbe4d0225c06d1c53dcc1fb6967006f3459c75",
+      "originalCredit": {
+        "file": "pictures/lake.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3de.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "089a1527f476a23ecba055b59edbe4d0225c06d1c53dcc1fb6967006f3459c75"
+      }
+    },
+    {
+      "file": "forest.svg",
+      "sha256": "3189e48d6d3aac0948743a0ff050017267905948ac2141a2c406aee38e4f770e",
+      "originalCredit": {
+        "file": "pictures/forest.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f332.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3189e48d6d3aac0948743a0ff050017267905948ac2141a2c406aee38e4f770e"
+      }
+    },
+    {
+      "file": "woods.svg",
+      "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b",
+      "originalCredit": {
+        "file": "pictures/woods.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f333.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b"
+      }
+    },
+    {
+      "file": "field.svg",
+      "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33",
+      "originalCredit": {
+        "file": "pictures/field.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c9b3e14ac3b36d93f4ff99bc7d428ba1add666c6348f8df32880c01adaed8d33"
+      }
+    },
+    {
+      "file": "grass.svg",
+      "sha256": "34d3dd811644685688b50fa0ef60e772a6b6fa747a5a855e24cf1239d6a5fce6",
+      "originalCredit": {
+        "file": "pictures/grass.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33f.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "34d3dd811644685688b50fa0ef60e772a6b6fa747a5a855e24cf1239d6a5fce6"
+      }
+    },
+    {
+      "file": "root.svg",
+      "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7",
+      "originalCredit": {
+        "file": "pictures/root.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f331.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7"
+      }
+    },
+    {
+      "file": "stem.svg",
+      "sha256": "903a426ac185391cf7801b878333aed734692676f7be02a1793f2c3292ab6c9b",
+      "originalCredit": {
+        "file": "pictures/stem.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f337.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "903a426ac185391cf7801b878333aed734692676f7be02a1793f2c3292ab6c9b"
+      }
+    },
+    {
+      "file": "branch.svg",
+      "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b",
+      "originalCredit": {
+        "file": "pictures/branch.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f333.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b"
+      }
+    },
+    {
+      "file": "trunk.svg",
+      "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b",
+      "originalCredit": {
+        "file": "pictures/trunk.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f333.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9e1a171b2d64100143265e7df251f4f74d598d84f904e807a7f02f1bb837ef8b"
+      }
+    },
+    {
+      "file": "bark.svg",
+      "sha256": "f40538b0b6f1824b9aa7cdff85a4c004c895304701db823b25d86630c4854eab",
+      "originalCredit": {
+        "file": "pictures/bark.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fab5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "f40538b0b6f1824b9aa7cdff85a4c004c895304701db823b25d86630c4854eab"
+      }
+    },
+    {
+      "file": "twig.svg",
+      "sha256": "f40538b0b6f1824b9aa7cdff85a4c004c895304701db823b25d86630c4854eab",
+      "originalCredit": {
+        "file": "pictures/twig.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fab5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "f40538b0b6f1824b9aa7cdff85a4c004c895304701db823b25d86630c4854eab"
+      }
+    },
+    {
+      "file": "daisy.svg",
+      "sha256": "d8400ae7f69c98e9ea2441014c21ebed1c5533c2e1400989342571f34fe29223",
+      "originalCredit": {
+        "file": "pictures/daisy.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d8400ae7f69c98e9ea2441014c21ebed1c5533c2e1400989342571f34fe29223"
+      }
+    },
+    {
+      "file": "pollen.svg",
+      "sha256": "95c16aa44685e1a0999a0b9739a485aee2468983ea2bd9f59b5a97e4a492ed56",
+      "originalCredit": {
+        "file": "pictures/pollen.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33b.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "95c16aa44685e1a0999a0b9739a485aee2468983ea2bd9f59b5a97e4a492ed56"
+      }
+    },
+    {
+      "file": "soil.svg",
+      "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7",
+      "originalCredit": {
+        "file": "pictures/soil.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f331.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7"
+      }
+    },
+    {
+      "file": "mud.svg",
+      "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7",
+      "originalCredit": {
+        "file": "pictures/mud.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f331.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cd0992fa3de629e3887cdf003f879875a9dfa6041a81072055fd0e92a6b5eca7"
+      }
+    },
+    {
+      "file": "pebble.svg",
+      "sha256": "a7a384c68af855e4836ff8311a72fe8706f188a63ecb7dd696b58b44f1cef1ce",
+      "originalCredit": {
+        "file": "pictures/pebble.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1faa8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "a7a384c68af855e4836ff8311a72fe8706f188a63ecb7dd696b58b44f1cef1ce"
+      }
+    },
+    {
+      "file": "today.svg",
+      "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e",
+      "originalCredit": {
+        "file": "pictures/today.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e"
+      }
+    },
+    {
+      "file": "tomorrow.svg",
+      "sha256": "2d5332cdd6f8f2d79c93003d1fd2a4be0cbce9e90ed42b49a3aa5f54d547b345",
+      "originalCredit": {
+        "file": "pictures/tomorrow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "2d5332cdd6f8f2d79c93003d1fd2a4be0cbce9e90ed42b49a3aa5f54d547b345"
+      }
+    },
+    {
+      "file": "yesterday.svg",
+      "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e",
+      "originalCredit": {
+        "file": "pictures/yesterday.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e"
+      }
+    },
+    {
+      "file": "week.svg",
+      "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e",
+      "originalCredit": {
+        "file": "pictures/week.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e"
+      }
+    },
+    {
+      "file": "month.svg",
+      "sha256": "2d5332cdd6f8f2d79c93003d1fd2a4be0cbce9e90ed42b49a3aa5f54d547b345",
+      "originalCredit": {
+        "file": "pictures/month.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "2d5332cdd6f8f2d79c93003d1fd2a4be0cbce9e90ed42b49a3aa5f54d547b345"
+      }
+    },
+    {
+      "file": "year.svg",
+      "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e",
+      "originalCredit": {
+        "file": "pictures/year.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "be2d062f483768d0199fe9e93680872281984eb3f302fd3cada1b246f59a5e4e"
+      }
+    },
+    {
+      "file": "tire.svg",
+      "sha256": "d47dc1d6bd49f36c739dd0c121cfa10a375442ad34448dae4c4235e865a10fd4",
+      "originalCredit": {
+        "file": "pictures/tire.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6de.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d47dc1d6bd49f36c739dd0c121cfa10a375442ad34448dae4c4235e865a10fd4"
+      }
+    },
+    {
+      "file": "sail.svg",
+      "sha256": "931d1b4c337f8dab7d45fa20e98401d127ab89b719512e7e02276e5b0b2337b0",
+      "originalCredit": {
+        "file": "pictures/sail.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26f5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "931d1b4c337f8dab7d45fa20e98401d127ab89b719512e7e02276e5b0b2337b0"
+      }
+    },
+    {
+      "file": "paddle.svg",
+      "sha256": "4f95328c0467d434a667ead95d86c9eff2e2546025313b50b9fc3d110a0b887d",
+      "originalCredit": {
+        "file": "pictures/paddle.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6f6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4f95328c0467d434a667ead95d86c9eff2e2546025313b50b9fc3d110a0b887d"
+      }
+    },
+    {
+      "file": "oar.svg",
+      "sha256": "23a3bec9e88242d57cb6896fb0da07fe14512103526c5d367d6f9ef1d932748a",
+      "originalCredit": {
+        "file": "pictures/oar.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6a3.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "23a3bec9e88242d57cb6896fb0da07fe14512103526c5d367d6f9ef1d932748a"
+      }
+    },
+    {
+      "file": "life jacket.svg",
+      "sha256": "3fed24926c6cd4dd0c0b3cd2bdd85c6ffc638a04e46e5700bb0f23eabb190640",
+      "originalCredit": {
+        "file": "pictures/life jacket.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9ba.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3fed24926c6cd4dd0c0b3cd2bdd85c6ffc638a04e46e5700bb0f23eabb190640"
+      }
+    },
+    {
+      "file": "passport.svg",
+      "sha256": "1076a7ef2584a2c15b50ff17c2ca8f55f7098892c37c1a48922f838f57e1b47f",
+      "originalCredit": {
+        "file": "pictures/passport.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6c2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "1076a7ef2584a2c15b50ff17c2ca8f55f7098892c37c1a48922f838f57e1b47f"
+      }
+    },
+    {
+      "file": "children.svg",
+      "sha256": "e766f28db1888879fdbd10b004109e8398f6bc6107a25348c8d791db728f90fb",
+      "originalCredit": {
+        "file": "pictures/children.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "e766f28db1888879fdbd10b004109e8398f6bc6107a25348c8d791db728f90fb"
+      }
+    },
+    {
+      "file": "grandparents.svg",
+      "sha256": "8a7a8be3a8c5cba746340064392523af70015b50a1db474b2c0fb40f5721dde5",
+      "originalCredit": {
+        "file": "pictures/grandparents.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d3.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "8a7a8be3a8c5cba746340064392523af70015b50a1db474b2c0fb40f5721dde5"
+      }
+    },
+    {
+      "file": "nurse.svg",
+      "sha256": "87eeaf561a64981bf09d2a7a3d08be7feb54b3c9908e0dfe5095a59425a0b468",
+      "originalCredit": {
+        "file": "pictures/nurse.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_2695.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "87eeaf561a64981bf09d2a7a3d08be7feb54b3c9908e0dfe5095a59425a0b468"
+      }
+    },
+    {
+      "file": "dentist.svg",
+      "sha256": "dc9309be030b442c09495df5da8d89909f390fa1cf1045a7865875e59524bba5",
+      "originalCredit": {
+        "file": "pictures/dentist.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "dc9309be030b442c09495df5da8d89909f390fa1cf1045a7865875e59524bba5"
+      }
+    },
+    {
+      "file": "baker.svg",
+      "sha256": "0b8dec17a7b43e8fd584800763c039c550488fc55c103e3995403aab3dd329af",
+      "originalCredit": {
+        "file": "pictures/baker.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_1f373.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0b8dec17a7b43e8fd584800763c039c550488fc55c103e3995403aab3dd329af"
+      }
+    },
+    {
+      "file": "driver.svg",
+      "sha256": "600a1de5e36280847c65b2be15deb78b5bef16dc0e7eed0b9112528ce0f5ac79",
+      "originalCredit": {
+        "file": "pictures/driver.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f68c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "600a1de5e36280847c65b2be15deb78b5bef16dc0e7eed0b9112528ce0f5ac79"
+      }
+    },
+    {
+      "file": "sailor.svg",
+      "sha256": "9f01d1fe9f5a2b48c36cd3e9251dcdf388270f9c0f9f7364c3dc71dac184b6a2",
+      "originalCredit": {
+        "file": "pictures/sailor.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6a2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9f01d1fe9f5a2b48c36cd3e9251dcdf388270f9c0f9f7364c3dc71dac184b6a2"
+      }
+    },
+    {
+      "file": "gardener.svg",
+      "sha256": "6250a211b31b4f74e45147fa294a193285af27d73962281db0bab64f78346e26",
+      "originalCredit": {
+        "file": "pictures/gardener.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_1f33e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6250a211b31b4f74e45147fa294a193285af27d73962281db0bab64f78346e26"
+      }
+    },
+    {
+      "file": "vet.svg",
+      "sha256": "41a792ba44a54b753fbe53f10131426aa484b3b22b57d22f79f558adfd429da3",
+      "originalCredit": {
+        "file": "pictures/vet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f415.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "41a792ba44a54b753fbe53f10131426aa484b3b22b57d22f79f558adfd429da3"
+      }
+    },
+    {
+      "file": "librarian.svg",
+      "sha256": "35a1f48870a0b4bc2dabac1b22500a82488073c437b73e5905b1472f9fe3d6e8",
+      "originalCredit": {
+        "file": "pictures/librarian.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4da.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "35a1f48870a0b4bc2dabac1b22500a82488073c437b73e5905b1472f9fe3d6e8"
+      }
+    },
+    {
+      "file": "writer.svg",
+      "sha256": "e7ffaaac174465b265466766e78e5019937120d5a3cfce5f17fffbfb4d071922",
+      "originalCredit": {
+        "file": "pictures/writer.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u270d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "e7ffaaac174465b265466766e78e5019937120d5a3cfce5f17fffbfb4d071922"
+      }
+    },
+    {
+      "file": "photographer.svg",
+      "sha256": "7e0572c943b5a8d2b1e11ecebda3521f40dd37ae10578a9d9d59a8e5945a6895",
+      "originalCredit": {
+        "file": "pictures/photographer.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4f7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "7e0572c943b5a8d2b1e11ecebda3521f40dd37ae10578a9d9d59a8e5945a6895"
+      }
+    },
+    {
+      "file": "lip.svg",
+      "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111",
+      "originalCredit": {
+        "file": "pictures/lip.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f444.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111"
+      }
+    },
+    {
+      "file": "teeth.svg",
+      "sha256": "dc9309be030b442c09495df5da8d89909f390fa1cf1045a7865875e59524bba5",
+      "originalCredit": {
+        "file": "pictures/teeth.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "dc9309be030b442c09495df5da8d89909f390fa1cf1045a7865875e59524bba5"
+      }
+    },
+    {
+      "file": "feet.svg",
+      "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740",
+      "originalCredit": {
+        "file": "pictures/feet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740"
+      }
+    },
+    {
+      "file": "knee.svg",
+      "sha256": "686e15b0069808abca52644cc1afef4ed39b417442031afa60393c9ddbc2dd0a",
+      "originalCredit": {
+        "file": "pictures/knee.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b5.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "686e15b0069808abca52644cc1afef4ed39b417442031afa60393c9ddbc2dd0a"
+      }
+    },
+    {
+      "file": "elbow.svg",
+      "sha256": "7dc3422399832437476f9ba9e0badbf63a8bf955694b5a568770ce95c97b7a25",
+      "originalCredit": {
+        "file": "pictures/elbow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4aa.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "7dc3422399832437476f9ba9e0badbf63a8bf955694b5a568770ce95c97b7a25"
+      }
+    },
+    {
+      "file": "toe.svg",
+      "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740",
+      "originalCredit": {
+        "file": "pictures/toe.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740"
+      }
+    },
+    {
+      "file": "heel.svg",
+      "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740",
+      "originalCredit": {
+        "file": "pictures/heel.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9b6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "31984fd691e8bdd8cb69a61225bbde634ff5990eae8cf56929328eb1901ca740"
+      }
+    },
+    {
+      "file": "skin.svg",
+      "sha256": "265ea9f0837353366f5adb0ddf49ec432fde1eee99bf1afb1dcd6ca3fb403063",
+      "originalCredit": {
+        "file": "pictures/skin.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f590.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "265ea9f0837353366f5adb0ddf49ec432fde1eee99bf1afb1dcd6ca3fb403063"
+      }
+    },
+    {
+      "file": "eyebrow.svg",
+      "sha256": "a1c18e58cd8b15d6df0f5fcc28d7e5cf8dc21c25fefb756d42c4bb904c0a953d",
+      "originalCredit": {
+        "file": "pictures/eyebrow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f928.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "a1c18e58cd8b15d6df0f5fcc28d7e5cf8dc21c25fefb756d42c4bb904c0a953d"
+      }
+    },
+    {
+      "file": "cheek.svg",
+      "sha256": "bbe8e48a9ee37f2fe04d4f3564804175168ff88a82778d7e35419f12895e4c27",
+      "originalCredit": {
+        "file": "pictures/cheek.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f60a.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "bbe8e48a9ee37f2fe04d4f3564804175168ff88a82778d7e35419f12895e4c27"
+      }
+    },
+    {
+      "file": "chin.svg",
+      "sha256": "c38974dfa15c609e2b751ba45710589b09f3b4b1e50a4620edf064e603b6dc5f",
+      "originalCredit": {
+        "file": "pictures/chin.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f914.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "c38974dfa15c609e2b751ba45710589b09f3b4b1e50a4620edf064e603b6dc5f"
+      }
+    },
+    {
+      "file": "mustache.svg",
+      "sha256": "824a80b521e2de9cf627c486783f21b937276ea4582f5078a24ae446d036f54c",
+      "originalCredit": {
+        "file": "pictures/mustache.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "824a80b521e2de9cf627c486783f21b937276ea4582f5078a24ae446d036f54c"
+      }
+    },
+    {
+      "file": "handprint.svg",
+      "sha256": "265ea9f0837353366f5adb0ddf49ec432fde1eee99bf1afb1dcd6ca3fb403063",
+      "originalCredit": {
+        "file": "pictures/handprint.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f590.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "265ea9f0837353366f5adb0ddf49ec432fde1eee99bf1afb1dcd6ca3fb403063"
+      }
+    },
+    {
+      "file": "fingerprint.svg",
+      "sha256": "0b8fe96e0a375af217d52a127cfedf78ea05cb08ba40d1ad35e20ecd3ffbe20a",
+      "originalCredit": {
+        "file": "pictures/fingerprint.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u261d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0b8fe96e0a375af217d52a127cfedf78ea05cb08ba40d1ad35e20ecd3ffbe20a"
+      }
+    },
+    {
+      "file": "senses.svg",
+      "sha256": "16f27c96190d66fdb56a7e5250b795a96bdd30b95b91a88e7d36c8387b166249",
+      "originalCredit": {
+        "file": "pictures/senses.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f440.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "16f27c96190d66fdb56a7e5250b795a96bdd30b95b91a88e7d36c8387b166249"
+      }
+    },
+    {
+      "file": "balance.svg",
+      "sha256": "e7eafe83a6c0c470566204eef240bb8a7d92042d145157b51b78d405c3260688",
+      "originalCredit": {
+        "file": "pictures/balance.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "e7eafe83a6c0c470566204eef240bb8a7d92042d145157b51b78d405c3260688"
+      }
+    },
+    {
+      "file": "jump rope.svg",
+      "sha256": "167cd07ace22ffb734862f392cde53945ccc4d08ed6567947395367a98e62ce4",
+      "originalCredit": {
+        "file": "pictures/jump rope.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1faa2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "167cd07ace22ffb734862f392cde53945ccc4d08ed6567947395367a98e62ce4"
+      }
+    },
+    {
+      "file": "winner.svg",
+      "sha256": "58ee1c738abfdd3559d68b953a6675a1c9d9296cde6d5248d90872d413209faf",
+      "originalCredit": {
+        "file": "pictures/winner.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3c6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "58ee1c738abfdd3559d68b953a6675a1c9d9296cde6d5248d90872d413209faf"
+      }
+    },
+    {
+      "file": "finish line.svg",
+      "sha256": "127643a146f73cee9d2d8cec69e8cbc48080900067ea1539e56610c37fe22457",
+      "originalCredit": {
+        "file": "pictures/finish line.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3c1.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "127643a146f73cee9d2d8cec69e8cbc48080900067ea1539e56610c37fe22457"
+      }
+    },
+    {
+      "file": "score.svg",
+      "sha256": "688012bc950a8674867e34a2a2f4b39d5d6dbc385f2df411aa3b28c8935bf7fd",
+      "originalCredit": {
+        "file": "pictures/score.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f522.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "688012bc950a8674867e34a2a2f4b39d5d6dbc385f2df411aa3b28c8935bf7fd"
+      }
+    },
+    {
+      "file": "player.svg",
+      "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5",
+      "originalCredit": {
+        "file": "pictures/player.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26bd.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5"
+      }
+    },
+    {
+      "file": "referee.svg",
+      "sha256": "ad0b019e6dd4d1539bd0dfdbd99413a0027af798f6e8add8ef80c58a29168472",
+      "originalCredit": {
+        "file": "pictures/referee.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6a9.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ad0b019e6dd4d1539bd0dfdbd99413a0027af798f6e8add8ef80c58a29168472"
+      }
+    },
+    {
+      "file": "puzzle.svg",
+      "sha256": "334f25f98c0440ec9035e05ae7da6bc7f04faac89440a9b31ecd22d0dd00f499",
+      "originalCredit": {
+        "file": "pictures/puzzle.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9e9.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "334f25f98c0440ec9035e05ae7da6bc7f04faac89440a9b31ecd22d0dd00f499"
+      }
+    },
+    {
+      "file": "board game.svg",
+      "sha256": "bb95234d1cb2e110c0d422259b13e993f3c07cf650cb6e6a1705c6b5640440f2",
+      "originalCredit": {
+        "file": "pictures/board game.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3b2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "bb95234d1cb2e110c0d422259b13e993f3c07cf650cb6e6a1705c6b5640440f2"
+      }
+    },
+    {
+      "file": "origami.svg",
+      "sha256": "5b58055e4ac92eaf220492ed322cd01ac919fefa501af2eca0767f04fd01a3e1",
+      "originalCredit": {
+        "file": "pictures/origami.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5b58055e4ac92eaf220492ed322cd01ac919fefa501af2eca0767f04fd01a3e1"
+      }
+    },
+    {
+      "file": "drumstick.svg",
+      "sha256": "96d4b60d77be3fe5e56a0f2924f03395b12f82114cc2cf36b4e74de4f4c4b2f3",
+      "originalCredit": {
+        "file": "pictures/drumstick.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f941.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "96d4b60d77be3fe5e56a0f2924f03395b12f82114cc2cf36b4e74de4f4c4b2f3"
+      }
+    },
+    {
+      "file": "piano key.svg",
+      "sha256": "f232cdf4a01744a4177f02d940e81572afec9d8afeb1108a868e4be7b5b7fe5b",
+      "originalCredit": {
+        "file": "pictures/piano key.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3b9.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "f232cdf4a01744a4177f02d940e81572afec9d8afeb1108a868e4be7b5b7fe5b"
+      }
+    },
+    {
+      "file": "flute.svg",
+      "sha256": "ea44fdd68ff93c6d213a95ae90245648b2d65ac24324d5c3c81dbd4b994572d6",
+      "originalCredit": {
+        "file": "pictures/flute.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fa88.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ea44fdd68ff93c6d213a95ae90245648b2d65ac24324d5c3c81dbd4b994572d6"
+      }
+    },
+    {
+      "file": "band.svg",
+      "sha256": "9819b03b27a9b55906e22439cb2264175ef84882a7502cf410afc50c062069f9",
+      "originalCredit": {
+        "file": "pictures/band.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3b8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9819b03b27a9b55906e22439cb2264175ef84882a7502cf410afc50c062069f9"
+      }
+    },
+    {
+      "file": "stage.svg",
+      "sha256": "9b9fdb73eb6b3afa1c8d0900127a707eeee60e129448392501fbb8d73fb46c21",
+      "originalCredit": {
+        "file": "pictures/stage.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3ad.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9b9fdb73eb6b3afa1c8d0900127a707eeee60e129448392501fbb8d73fb46c21"
+      }
+    },
+    {
+      "file": "office.svg",
+      "sha256": "0cc7a790aff049f1a20a89e775e6fe03a0e0dd17294aed6b0988d03e232ab6d8",
+      "originalCredit": {
+        "file": "pictures/office.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3e2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0cc7a790aff049f1a20a89e775e6fe03a0e0dd17294aed6b0988d03e232ab6d8"
+      }
+    },
+    {
+      "file": "apartment.svg",
+      "sha256": "0cc7a790aff049f1a20a89e775e6fe03a0e0dd17294aed6b0988d03e232ab6d8",
+      "originalCredit": {
+        "file": "pictures/apartment.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3e2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0cc7a790aff049f1a20a89e775e6fe03a0e0dd17294aed6b0988d03e232ab6d8"
+      }
+    },
+    {
+      "file": "supermarket.svg",
+      "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8",
+      "originalCredit": {
+        "file": "pictures/supermarket.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6d2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8"
+      }
+    },
+    {
+      "file": "market.svg",
+      "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8",
+      "originalCredit": {
+        "file": "pictures/market.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6d2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8"
+      }
+    },
+    {
+      "file": "bakery.svg",
+      "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea",
+      "originalCredit": {
+        "file": "pictures/bakery.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f35e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea"
+      }
+    },
+    {
+      "file": "restaurant.svg",
+      "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e",
+      "originalCredit": {
+        "file": "pictures/restaurant.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f37d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e"
+      }
+    },
+    {
+      "file": "cafe.svg",
+      "sha256": "5830ae818458ee3c51208af6196a8a6c3d2a27e652aed2380c0b26a39d13d9dc",
+      "originalCredit": {
+        "file": "pictures/cafe.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2615.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5830ae818458ee3c51208af6196a8a6c3d2a27e652aed2380c0b26a39d13d9dc"
+      }
+    },
+    {
+      "file": "library.svg",
+      "sha256": "35a1f48870a0b4bc2dabac1b22500a82488073c437b73e5905b1472f9fe3d6e8",
+      "originalCredit": {
+        "file": "pictures/library.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4da.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "35a1f48870a0b4bc2dabac1b22500a82488073c437b73e5905b1472f9fe3d6e8"
+      }
+    },
+    {
+      "file": "zoo.svg",
+      "sha256": "9e5321b6dc5e5e7fbcf21994e063f30d2770b6ec41b88ee4543eb84e90934bcd",
+      "originalCredit": {
+        "file": "pictures/zoo.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f98a.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9e5321b6dc5e5e7fbcf21994e063f30d2770b6ec41b88ee4543eb84e90934bcd"
+      }
+    },
+    {
+      "file": "aquarium.svg",
+      "sha256": "631446fa4890bf285313af053d6023eff8c9b98152c94635803c1af42726fccb",
+      "originalCredit": {
+        "file": "pictures/aquarium.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f420.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "631446fa4890bf285313af053d6023eff8c9b98152c94635803c1af42726fccb"
+      }
+    },
+    {
+      "file": "farm.svg",
+      "sha256": "6250a211b31b4f74e45147fa294a193285af27d73962281db0bab64f78346e26",
+      "originalCredit": {
+        "file": "pictures/farm.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9d1_200d_1f33e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6250a211b31b4f74e45147fa294a193285af27d73962281db0bab64f78346e26"
+      }
+    },
+    {
+      "file": "swimming pool.svg",
+      "sha256": "86cb42c919e0c2ebbfa832bdd6b6b3baf4e49b08dc8619285a7c0792a9f7d603",
+      "originalCredit": {
+        "file": "pictures/swimming pool.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3ca.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "86cb42c919e0c2ebbfa832bdd6b6b3baf4e49b08dc8619285a7c0792a9f7d603"
+      }
+    },
+    {
+      "file": "playroom.svg",
+      "sha256": "d38d58d5cfda9a40f2677d4787afe5c2762a10c9604c4a5c9e3c5839ce1d94a5",
+      "originalCredit": {
+        "file": "pictures/playroom.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9f8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d38d58d5cfda9a40f2677d4787afe5c2762a10c9604c4a5c9e3c5839ce1d94a5"
+      }
+    },
+    {
+      "file": "living room.svg",
+      "sha256": "8c6444f7d6a82869d0606549a582f4d77c94edc890c9645dee9a0b16f1993857",
+      "originalCredit": {
+        "file": "pictures/living room.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6cb.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "8c6444f7d6a82869d0606549a582f4d77c94edc890c9645dee9a0b16f1993857"
+      }
+    },
+    {
+      "file": "dining room.svg",
+      "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e",
+      "originalCredit": {
+        "file": "pictures/dining room.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f37d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e"
+      }
+    },
+    {
+      "file": "roof.svg",
+      "sha256": "6bde40d9c8046b4e774dafdaaaa935d13ccfa06cc2fd35042548783c21a5489e",
+      "originalCredit": {
+        "file": "pictures/roof.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3e0.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6bde40d9c8046b4e774dafdaaaa935d13ccfa06cc2fd35042548783c21a5489e"
+      }
+    },
+    {
+      "file": "path.svg",
+      "sha256": "089a1527f476a23ecba055b59edbe4d0225c06d1c53dcc1fb6967006f3459c75",
+      "originalCredit": {
+        "file": "pictures/path.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3de.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "089a1527f476a23ecba055b59edbe4d0225c06d1c53dcc1fb6967006f3459c75"
+      }
+    },
+    {
+      "file": "proud.svg",
+      "sha256": "bbe8e48a9ee37f2fe04d4f3564804175168ff88a82778d7e35419f12895e4c27",
+      "originalCredit": {
+        "file": "pictures/proud.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f60a.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "bbe8e48a9ee37f2fe04d4f3564804175168ff88a82778d7e35419f12895e4c27"
+      }
+    },
+    {
+      "file": "brave.svg",
+      "sha256": "e5b0bd579e46dd80cd1fea49968cbde22b083c38a943a271a61721beadcbfbe1",
+      "originalCredit": {
+        "file": "pictures/brave.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f981.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "e5b0bd579e46dd80cd1fea49968cbde22b083c38a943a271a61721beadcbfbe1"
+      }
+    },
+    {
+      "file": "patient.svg",
+      "sha256": "9961c39c43f92eeff318b52da54e1bfc5af68da86f9e67bc2371ee04ab5b91d1",
+      "originalCredit": {
+        "file": "pictures/patient.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f60c.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9961c39c43f92eeff318b52da54e1bfc5af68da86f9e67bc2371ee04ab5b91d1"
+      }
+    },
+    {
+      "file": "gentle.svg",
+      "sha256": "71be588abaef15efd7ac670d0df1df062f8c969c5c88913ce146e253e37b75cf",
+      "originalCredit": {
+        "file": "pictures/gentle.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f917.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "71be588abaef15efd7ac670d0df1df062f8c969c5c88913ce146e253e37b75cf"
+      }
+    },
+    {
+      "file": "thirsty.svg",
+      "sha256": "a2d3f2330aa2d12fbd293be1d9b41a15ae809548ddc4594d67ee4a723f5d76c2",
+      "originalCredit": {
+        "file": "pictures/thirsty.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f95b.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "a2d3f2330aa2d12fbd293be1d9b41a15ae809548ddc4594d67ee4a723f5d76c2"
+      }
+    },
+    {
+      "file": "cough.svg",
+      "sha256": "f0eedf3f9d433b78b0022be8f798023d0596ba41a59606088fa29a88492201eb",
+      "originalCredit": {
+        "file": "pictures/cough.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f637.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "f0eedf3f9d433b78b0022be8f798023d0596ba41a59606088fa29a88492201eb"
+      }
+    },
+    {
+      "file": "eat.svg",
+      "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e",
+      "originalCredit": {
+        "file": "pictures/eat.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f37d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4bb966c9f40c7e66937d5c17c6a7606f2355eff013e6fa15a3fc71b9ac9c2f2e"
+      }
+    },
+    {
+      "file": "bite.svg",
+      "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111",
+      "originalCredit": {
+        "file": "pictures/bite.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f444.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111"
+      }
+    },
+    {
+      "file": "chew.svg",
+      "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111",
+      "originalCredit": {
+        "file": "pictures/chew.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f444.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5c7b1439dad0545c7d5f8b230c3b8beb2798b234fb2f76b8d869e88340bab111"
+      }
+    },
+    {
+      "file": "listen.svg",
+      "sha256": "9dd6e65d930cbea916662c0b876f80e4790e5fbd15d205487e79293046c2fa7a",
+      "originalCredit": {
+        "file": "pictures/listen.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3a7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9dd6e65d930cbea916662c0b876f80e4790e5fbd15d205487e79293046c2fa7a"
+      }
+    },
+    {
+      "file": "sit.svg",
+      "sha256": "91249a6f6253fb990f54a8d331021a7f3ff54fd4a348d00cafd34b775e7732b3",
+      "originalCredit": {
+        "file": "pictures/sit.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fa91.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "91249a6f6253fb990f54a8d331021a7f3ff54fd4a348d00cafd34b775e7732b3"
+      }
+    },
+    {
+      "file": "crawl.svg",
+      "sha256": "ba2d7691421042181cf3a65046b630d2844e2795610e6b03ea4279d0f1ee6adc",
+      "originalCredit": {
+        "file": "pictures/crawl.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f476.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ba2d7691421042181cf3a65046b630d2844e2795610e6b03ea4279d0f1ee6adc"
+      }
+    },
+    {
+      "file": "dive.svg",
+      "sha256": "44020eec33b68438fbdee70ada2a7aabaeccc365b2fa4fdf91575bd496c12516",
+      "originalCredit": {
+        "file": "pictures/dive.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f93f.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "44020eec33b68438fbdee70ada2a7aabaeccc365b2fa4fdf91575bd496c12516"
+      }
+    },
+    {
+      "file": "drive.svg",
+      "sha256": "0ed788aa0d922d69a031b7ece7e862e254b9cd07e3c7e6974e0f5ac5694cb549",
+      "originalCredit": {
+        "file": "pictures/drive.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f697.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0ed788aa0d922d69a031b7ece7e862e254b9cd07e3c7e6974e0f5ac5694cb549"
+      }
+    },
+    {
+      "file": "skate.svg",
+      "sha256": "47d2dc9d8427d41f1838fc65acf9ddb3180dfe3c7feb5f3e1e315065dc24a96e",
+      "originalCredit": {
+        "file": "pictures/skate.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26f8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "47d2dc9d8427d41f1838fc65acf9ddb3180dfe3c7feb5f3e1e315065dc24a96e"
+      }
+    },
+    {
+      "file": "sing.svg",
+      "sha256": "8e58f4ee925adc2445106c1f55defec97a36b20b0a4a3dd8a15bb1b6a01d151a",
+      "originalCredit": {
+        "file": "pictures/sing.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3a4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "8e58f4ee925adc2445106c1f55defec97a36b20b0a4a3dd8a15bb1b6a01d151a"
+      }
+    },
+    {
+      "file": "fold.svg",
+      "sha256": "5b58055e4ac92eaf220492ed322cd01ac919fefa501af2eca0767f04fd01a3e1",
+      "originalCredit": {
+        "file": "pictures/fold.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4c4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5b58055e4ac92eaf220492ed322cd01ac919fefa501af2eca0767f04fd01a3e1"
+      }
+    },
+    {
+      "file": "fix.svg",
+      "sha256": "585050ccfcdaa032b836e008b71995086b4f734352cf6ab933d173e8add83976",
+      "originalCredit": {
+        "file": "pictures/fix.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f527.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "585050ccfcdaa032b836e008b71995086b4f734352cf6ab933d173e8add83976"
+      }
+    },
+    {
+      "file": "repair.svg",
+      "sha256": "eed1e0a5d26a2df86ed1bccc9672c54e71572ace1cbf7f87e146967183f73b95",
+      "originalCredit": {
+        "file": "pictures/repair.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6e0.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "eed1e0a5d26a2df86ed1bccc9672c54e71572ace1cbf7f87e146967183f73b95"
+      }
+    },
+    {
+      "file": "knit.svg",
+      "sha256": "1d59bc48b90b65b330c4f8d37ff469d1dda9736265bcce13781be148f18618ed",
+      "originalCredit": {
+        "file": "pictures/knit.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9f6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "1d59bc48b90b65b330c4f8d37ff469d1dda9736265bcce13781be148f18618ed"
+      }
+    },
+    {
+      "file": "tidy.svg",
+      "sha256": "cb1e3bfdc585ca689a8da946474c959d17a86cc222bd90a61e0b923440f47cad",
+      "originalCredit": {
+        "file": "pictures/tidy.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9fa.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "cb1e3bfdc585ca689a8da946474c959d17a86cc222bd90a61e0b923440f47cad"
+      }
+    },
+    {
+      "file": "bake.svg",
+      "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea",
+      "originalCredit": {
+        "file": "pictures/bake.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f35e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "4f3a895df749b5b85ab783944f3dd52b8be5f09ed5c996bf9cbfdfe0a5ea7aea"
+      }
+    },
+    {
+      "file": "boil.svg",
+      "sha256": "d60df5891b66ca17ae86744c7b6c0a071960804b679ea6c81cc4d247d8a7bf18",
+      "originalCredit": {
+        "file": "pictures/boil.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f372.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "d60df5891b66ca17ae86744c7b6c0a071960804b679ea6c81cc4d247d8a7bf18"
+      }
+    },
+    {
+      "file": "dig.svg",
+      "sha256": "ff9f6b620a227ba17bf59b61854777af07f0281e63a9fec695988b4b2361d2e8",
+      "originalCredit": {
+        "file": "pictures/dig.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1fab4.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "ff9f6b620a227ba17bf59b61854777af07f0281e63a9fec695988b4b2361d2e8"
+      }
+    },
+    {
+      "file": "wake up.svg",
+      "sha256": "0a2f5a74d3472653c6cee686aa29eb358c43209212315ed54a5b3fe81f739a72",
+      "originalCredit": {
+        "file": "pictures/wake up.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u23f0.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0a2f5a74d3472653c6cee686aa29eb358c43209212315ed54a5b3fe81f739a72"
+      }
+    },
+    {
+      "file": "learn.svg",
+      "sha256": "3fae26664cd6931b48fca853a3cf72570063df79825f8218e426538bbc36cf30",
+      "originalCredit": {
+        "file": "pictures/learn.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4d6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3fae26664cd6931b48fca853a3cf72570063df79825f8218e426538bbc36cf30"
+      }
+    },
+    {
+      "file": "ask.svg",
+      "sha256": "9f7eb17e382785afb4c1a6696a2c77b06c46910e104efe120c595bb1b6e842e9",
+      "originalCredit": {
+        "file": "pictures/ask.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u2753.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "9f7eb17e382785afb4c1a6696a2c77b06c46910e104efe120c595bb1b6e842e9"
+      }
+    },
+    {
+      "file": "share.svg",
+      "sha256": "1c90df5f699e80ab61009a4c1e44e9473e46c2eae35a5cb5f472795475209631",
+      "originalCredit": {
+        "file": "pictures/share.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f932.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "1c90df5f699e80ab61009a4c1e44e9473e46c2eae35a5cb5f472795475209631"
+      }
+    },
+    {
+      "file": "give.svg",
+      "sha256": "f8df9f99dd7e8582de860c15f037a141f1b7f4c531e5f80f1624d5aa472ba38b",
+      "originalCredit": {
+        "file": "pictures/give.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f381.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "f8df9f99dd7e8582de860c15f037a141f1b7f4c531e5f80f1624d5aa472ba38b"
+      }
+    },
+    {
+      "file": "pack.svg",
+      "sha256": "59d574aaf5c04d2581fc4a5f656942d58590e35360c1eda2f40584138ae9a02b",
+      "originalCredit": {
+        "file": "pictures/pack.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f9f3.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "59d574aaf5c04d2581fc4a5f656942d58590e35360c1eda2f40584138ae9a02b"
+      }
+    },
+    {
+      "file": "carry.svg",
+      "sha256": "efd1cf27ed6e9e5dcaf3ac85f0d1e7dea2e4c2d3494baaea030029731be3c715",
+      "originalCredit": {
+        "file": "pictures/carry.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f392.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "efd1cf27ed6e9e5dcaf3ac85f0d1e7dea2e4c2d3494baaea030029731be3c715"
+      }
+    },
+    {
+      "file": "turn.svg",
+      "sha256": "bb88ad599df3465566b32e1bf66aeaab99047862feb1467ff3c848afbeaade88",
+      "originalCredit": {
+        "file": "pictures/turn.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f504.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "bb88ad599df3465566b32e1bf66aeaab99047862feb1467ff3c848afbeaade88"
+      }
+    },
+    {
+      "file": "roll.svg",
+      "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5",
+      "originalCredit": {
+        "file": "pictures/roll.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26bd.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5"
+      }
+    },
+    {
+      "file": "catch.svg",
+      "sha256": "3731738d67904118e8ca1bb2b9542c94b787d51db0c0480900d906ddee3e9c16",
+      "originalCredit": {
+        "file": "pictures/catch.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f93e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "3731738d67904118e8ca1bb2b9542c94b787d51db0c0480900d906ddee3e9c16"
+      }
+    },
+    {
+      "file": "kick.svg",
+      "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5",
+      "originalCredit": {
+        "file": "pictures/kick.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u26bd.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "07f69528d790b680f6ea4d07afa9d21b9e4a6670cbcc7b9749cb192c175510d5"
+      }
+    },
+    {
+      "file": "bounce.svg",
+      "sha256": "5d908316a564b3dc295b7d734098aedc95264520025e3d0da6b5f6d3016c61ec",
+      "originalCredit": {
+        "file": "pictures/bounce.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f3c0.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5d908316a564b3dc295b7d734098aedc95264520025e3d0da6b5f6d3016c61ec"
+      }
+    },
+    {
+      "file": "pull.svg",
+      "sha256": "78cea08331496880f1c21a51e7a03ee6f6edfc079b11de96f5d230cf4ca259f8",
+      "originalCredit": {
+        "file": "pictures/pull.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6f7.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "78cea08331496880f1c21a51e7a03ee6f6edfc079b11de96f5d230cf4ca259f8"
+      }
+    },
+    {
+      "file": "push.svg",
+      "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8",
+      "originalCredit": {
+        "file": "pictures/push.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6d2.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "6773a80a0d4a26ce05444bd672e5f19b0df2bc108ea38e3b71c0404bc2bdfbc8"
+      }
+    },
+    {
+      "file": "cross.svg",
+      "sha256": "5b397ef0189cffbec8566af7a886d26af41b000cb2f1c7ca81553f93c530b63a",
+      "originalCredit": {
+        "file": "pictures/cross.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6b6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5b397ef0189cffbec8566af7a886d26af41b000cb2f1c7ca81553f93c530b63a"
+      }
+    },
+    {
+      "file": "follow.svg",
+      "sha256": "5b397ef0189cffbec8566af7a886d26af41b000cb2f1c7ca81553f93c530b63a",
+      "originalCredit": {
+        "file": "pictures/follow.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f6b6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "5b397ef0189cffbec8566af7a886d26af41b000cb2f1c7ca81553f93c530b63a"
+      }
+    },
+    {
+      "file": "search.svg",
+      "sha256": "298c6b6c93d56ae301efebd909ccfe0b991510667d2068adab4d68ee4c296a30",
+      "originalCredit": {
+        "file": "pictures/search.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f50d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "298c6b6c93d56ae301efebd909ccfe0b991510667d2068adab4d68ee4c296a30"
+      }
+    },
+    {
+      "file": "find.svg",
+      "sha256": "298c6b6c93d56ae301efebd909ccfe0b991510667d2068adab4d68ee4c296a30",
+      "originalCredit": {
+        "file": "pictures/find.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f50d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "298c6b6c93d56ae301efebd909ccfe0b991510667d2068adab4d68ee4c296a30"
+      }
+    },
+    {
+      "file": "choose.svg",
+      "sha256": "0b8fe96e0a375af217d52a127cfedf78ea05cb08ba40d1ad35e20ecd3ffbe20a",
+      "originalCredit": {
+        "file": "pictures/choose.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u261d.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "0b8fe96e0a375af217d52a127cfedf78ea05cb08ba40d1ad35e20ecd3ffbe20a"
+      }
+    },
+    {
+      "file": "smooth.svg",
+      "sha256": "a7a384c68af855e4836ff8311a72fe8706f188a63ecb7dd696b58b44f1cef1ce",
+      "originalCredit": {
+        "file": "pictures/smooth.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1faa8.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "a7a384c68af855e4836ff8311a72fe8706f188a63ecb7dd696b58b44f1cef1ce"
+      }
+    },
+    {
+      "file": "dry.svg",
+      "sha256": "47d3e000baba167df1e40bfa85662ab0081ae94e179ea360b3391ca2a6dbdd2f",
+      "originalCredit": {
+        "file": "pictures/dry.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f31e.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "47d3e000baba167df1e40bfa85662ab0081ae94e179ea360b3391ca2a6dbdd2f"
+      }
+    },
+    {
+      "file": "same.svg",
+      "sha256": "933680538b85b7d9c7d60e4c867294b864c7196c4490971ea1f0947ce01b3e56",
+      "originalCredit": {
+        "file": "pictures/same.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f46f.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "933680538b85b7d9c7d60e4c867294b864c7196c4490971ea1f0947ce01b3e56"
+      }
+    },
+    {
+      "file": "and.svg",
+      "sha256": "f8adec72756e61b0a8a7ca060c1b5757546aa0ca5e713c313cd4c2495f9c0ea6",
+      "originalCredit": {
+        "file": "pictures/and.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "f8adec72756e61b0a8a7ca060c1b5757546aa0ca5e713c313cd4c2495f9c0ea6"
+      }
+    },
+    {
+      "file": "bring.svg",
+      "sha256": "06c85b3c4f3b1b80631454e5e840a4c36f716530d48d41140ef2a2042b7890ee",
+      "originalCredit": {
+        "file": "pictures/bring.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "06c85b3c4f3b1b80631454e5e840a4c36f716530d48d41140ef2a2042b7890ee"
+      }
+    },
+    {
+      "file": "but.svg",
+      "sha256": "575532ee1f7a572a79663e5a70b6eed75bfdb4e47893cb78d7b8184b7e65cd53",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-01-but",
+          "topic": "school",
+          "emoji": "project-context-01-but",
+          "pictureCue": true,
+          "completionBatch": "01",
+          "review": "小包与向下的重量箭头提示转折，不能靠物体单独辨义。"
+        }
+      }
+    },
+    {
+      "file": "can.svg",
+      "sha256": "2577282ecc4aa247cddbed3bc1491f4749631908e375ab7a70f78da481256527",
+      "originalCredit": {
+        "file": "pictures/can.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "2577282ecc4aa247cddbed3bc1491f4749631908e375ab7a70f78da481256527"
+      }
+    },
+    {
+      "file": "careful.svg",
+      "sha256": "6860db664734882dcc65a8866f964d85fd5cb85542be834ca0bf30c7f839b67c",
+      "originalCredit": {
+        "file": "pictures/careful.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "6860db664734882dcc65a8866f964d85fd5cb85542be834ca0bf30c7f839b67c"
+      }
+    },
+    {
+      "file": "chore.svg",
+      "sha256": "c4084169d48fc68ba60904d6e2da5389c658ee5ce874060fe2ca384db33213a8",
+      "originalCredit": {
+        "file": "pictures/chore.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "c4084169d48fc68ba60904d6e2da5389c658ee5ce874060fe2ca384db33213a8"
+      }
+    },
+    {
+      "file": "do.svg",
+      "sha256": "0e42a64b9712e32f379ae346ee21943df60f9cd2de0d1d846f2ff88666b07323",
+      "originalCredit": {
+        "file": "pictures/do.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "0e42a64b9712e32f379ae346ee21943df60f9cd2de0d1d846f2ff88666b07323"
+      }
+    },
+    {
+      "file": "have.svg",
+      "sha256": "6e1b5337973e40b6aebb0b885c2dd8e19d5edaf74495e84ac06292182003eab2",
+      "originalCredit": {
+        "file": "pictures/have.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "6e1b5337973e40b6aebb0b885c2dd8e19d5edaf74495e84ac06292182003eab2"
+      }
+    },
+    {
+      "file": "his.svg",
+      "sha256": "8fe5f511de3b674891bbeb542b0e3ebbfb432113df94f926f2961b02e5c31a72",
+      "originalCredit": {
+        "file": "pictures/his.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "8fe5f511de3b674891bbeb542b0e3ebbfb432113df94f926f2961b02e5c31a72"
+      }
+    },
+    {
+      "file": "how.svg",
+      "sha256": "3c4be2a9083662073c82626a17b867f83991d400b63551b509b506f6b70e212a",
+      "originalCredit": {
+        "file": "pictures/how.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "3c4be2a9083662073c82626a17b867f83991d400b63551b509b506f6b70e212a"
+      }
+    },
+    {
+      "file": "like.svg",
+      "sha256": "3dca42893de702fad25763bcc58f5967d6e6a01c15231bdd7c93ae3a8fa60eba",
+      "originalCredit": {
+        "file": "pictures/like.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "3dca42893de702fad25763bcc58f5967d6e6a01c15231bdd7c93ae3a8fa60eba"
+      }
+    },
+    {
+      "file": "may.svg",
+      "sha256": "404aff96e34a443502ea4ffb40fcc0ae644e44c6dec1e8ea5139cd809128c1f4",
+      "originalCredit": {
+        "file": "pictures/may.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "404aff96e34a443502ea4ffb40fcc0ae644e44c6dec1e8ea5139cd809128c1f4"
+      }
+    },
+    {
+      "file": "minute.svg",
+      "sha256": "ee8e72dbb49423ca14ef4a1d3eadba9ef47eb9f05feb76baee43cf3e04ded2bc",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-01-minute",
+          "topic": "school",
+          "emoji": "project-context-01-minute",
+          "pictureCue": true,
+          "completionBatch": "01",
+          "review": "钟面顶部高亮一分钟，配 1 min 单位。"
+        }
+      }
+    },
+    {
+      "file": "my.svg",
+      "sha256": "089fb040e12e11d3ff7e10921dd7db9597f57ef22c3b32591b17e2654a43d23a",
+      "originalCredit": {
+        "file": "pictures/my.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "089fb040e12e11d3ff7e10921dd7db9597f57ef22c3b32591b17e2654a43d23a"
+      }
+    },
+    {
+      "file": "new.svg",
+      "sha256": "4bff27324d7bd6f31c8a99336e7eed2cad9810046bad6116725d4d23e7540a9b",
+      "originalCredit": {
+        "file": "pictures/new.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "4bff27324d7bd6f31c8a99336e7eed2cad9810046bad6116725d4d23e7540a9b"
+      }
+    },
+    {
+      "file": "of.svg",
+      "sha256": "47c2a1492e969a5e81da7061844d892df12e29638dde378f70615c86fb085b83",
+      "originalCredit": {
+        "file": "pictures/of.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "47c2a1492e969a5e81da7061844d892df12e29638dde378f70615c86fb085b83"
+      }
+    },
+    {
+      "file": "old.svg",
+      "sha256": "78965742620bc8485d23abfa01957ea9a2e38a71bab48795f22d81694022fa9b",
+      "originalCredit": {
+        "file": "pictures/old.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "78965742620bc8485d23abfa01957ea9a2e38a71bab48795f22d81694022fa9b"
+      }
+    },
+    {
+      "file": "on.svg",
+      "sha256": "e8efa25875bee9d3db5bbdbf9080873be6bea6388ce9ad910c83b0763c08ece1",
+      "originalCredit": {
+        "file": "pictures/on.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "e8efa25875bee9d3db5bbdbf9080873be6bea6388ce9ad910c83b0763c08ece1"
+      }
+    },
+    {
+      "file": "or.svg",
+      "sha256": "b339c726dfc6a7d20ac14492136b97a5d712d3d23912e315962eeb4bccdb8784",
+      "originalCredit": {
+        "file": "pictures/or.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "b339c726dfc6a7d20ac14492136b97a5d712d3d23912e315962eeb4bccdb8784"
+      }
+    },
+    {
+      "file": "our.svg",
+      "sha256": "3c8fc11036a08f8a198873f3397cf0f5d9571620c1fa05c40b337345d81228a1",
+      "originalCredit": {
+        "file": "pictures/our.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "3c8fc11036a08f8a198873f3397cf0f5d9571620c1fa05c40b337345d81228a1"
+      }
+    },
+    {
+      "file": "skirt.svg",
+      "sha256": "e1a827bd00064b083caa36a73da396d0028cffd935d4fd27e2e2226d62ccc5ff",
+      "originalCredit": {
+        "file": "pictures/skirt.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "e1a827bd00064b083caa36a73da396d0028cffd935d4fd27e2e2226d62ccc5ff"
+      }
+    },
+    {
+      "file": "some.svg",
+      "sha256": "1ad5938a8cd4a4b539827e44bfb1d65889fd3e7ef00b6db580acc8f1d00d6108",
+      "originalCredit": {
+        "file": "pictures/some.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "1ad5938a8cd4a4b539827e44bfb1d65889fd3e7ef00b6db580acc8f1d00d6108"
+      }
+    },
+    {
+      "file": "that.svg",
+      "sha256": "de15538f4f76b479df5d99370d25fdc154336ea445cad3713a7ab97bc0e37c94",
+      "originalCredit": {
+        "file": "pictures/that.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "de15538f4f76b479df5d99370d25fdc154336ea445cad3713a7ab97bc0e37c94"
+      }
+    },
+    {
+      "file": "their.svg",
+      "sha256": "e7622f4297f13e0e19259ec36faa4f52057820b2644c93ae24b42d0ec6b3410d",
+      "originalCredit": {
+        "file": "pictures/their.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "e7622f4297f13e0e19259ec36faa4f52057820b2644c93ae24b42d0ec6b3410d"
+      }
+    },
+    {
+      "file": "there.svg",
+      "sha256": "dc360a99c7c21d3b9ddca091ba194d3d24f1b39d5c7e9125e19830ecafbf7f3e",
+      "originalCredit": {
+        "file": "pictures/there.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "dc360a99c7c21d3b9ddca091ba194d3d24f1b39d5c7e9125e19830ecafbf7f3e"
+      }
+    },
+    {
+      "file": "this.svg",
+      "sha256": "4b94cbf5e827b0fa4163fa1e225a33bc615862da00cce54cafdc2658bf385c56",
+      "originalCredit": {
+        "file": "pictures/this.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "4b94cbf5e827b0fa4163fa1e225a33bc615862da00cce54cafdc2658bf385c56"
+      }
+    },
+    {
+      "file": "under.svg",
+      "sha256": "57e67ef3f034df27c2bbadc89899e368af0b8fc015b90c497bd9660ab4d7b769",
+      "originalCredit": {
+        "file": "pictures/under.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "57e67ef3f034df27c2bbadc89899e368af0b8fc015b90c497bd9660ab4d7b769"
+      }
+    },
+    {
+      "file": "wear.svg",
+      "sha256": "c6431bf173cf508c1cf7e372b39374784755df03b5ccfa00e6ab722fe0dc7964",
+      "originalCredit": {
+        "file": "pictures/wear.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "c6431bf173cf508c1cf7e372b39374784755df03b5ccfa00e6ab722fe0dc7964"
+      }
+    },
+    {
+      "file": "which.svg",
+      "sha256": "01351f8d425e76ecd81c435bd76b4088cc7fc59f074a9e03ed6b8aaa0d2b70e0",
+      "originalCredit": {
+        "file": "pictures/which.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "01351f8d425e76ecd81c435bd76b4088cc7fc59f074a9e03ed6b8aaa0d2b70e0"
+      }
+    },
+    {
+      "file": "across.svg",
+      "sha256": "3f3de555466f2884510e95d11c6c02fc0bb1d9b4d63dcc93372f12f493042d39",
+      "originalCredit": {
+        "file": "pictures/across.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "3f3de555466f2884510e95d11c6c02fc0bb1d9b4d63dcc93372f12f493042d39"
+      }
+    },
+    {
+      "file": "act.svg",
+      "sha256": "714b2bb35877e1da3a2ca0861fa2e1834bca142023021a5c187a5e41b6b1fc30",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-02-act",
+          "topic": "actions",
+          "emoji": "project-context-02-act",
+          "pictureCue": true,
+          "completionBatch": "02",
+          "review": "行动；think, then act；put a thought into action。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "advantage.svg",
+      "sha256": "281964ace5e95f487dac7fb1f8dffe2e27a0094a32eaf906563ebfa476d79a18",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-02-advantage",
+          "topic": "school",
+          "emoji": "project-context-02-advantage",
+          "pictureCue": true,
+          "completionBatch": "02",
+          "review": "有利条件；extra time to enjoy；use the long weekend well。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "advertise.svg",
+      "sha256": "658b2ca8258c12f03f3208d7402a21226384fea244ed57ea058d7d2c60cf427d",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-02-advertise",
+          "topic": "actions",
+          "emoji": "project-context-02-advertise",
+          "pictureCue": true,
+          "completionBatch": "02",
+          "review": "做广告；OUR NEW BIKES；a product advertisement。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "appreciate.svg",
+      "sha256": "53660dc30dc39ab8ee267774aacace7037f56c45df8ae9c846bc807c3046115f",
+      "originalCredit": {
+        "file": "pictures/appreciate.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "53660dc30dc39ab8ee267774aacace7037f56c45df8ae9c846bc807c3046115f"
+      }
+    },
+    {
+      "file": "artificial.svg",
+      "sha256": "58a7cae5abfa4baca208942716e172782e193cb70b1298875f717e7f264d2e91",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-02-artificial",
+          "topic": "nature",
+          "emoji": "project-context-02-artificial",
+          "pictureCue": true,
+          "completionBatch": "02",
+          "review": "人造的；a man-made flower；an artificial flower。compare 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "awkward.svg",
+      "sha256": "0d470b9ec6a4de57b8b24b05eace2f6502fe8234f51b6ad03d19412e0afd9dd1",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-02-awkward",
+          "topic": "sports",
+          "emoji": "project-context-02-awkward",
+          "pictureCue": true,
+          "completionBatch": "02",
+          "review": "笨拙的；first unsteady steps；awkward on new skates。single 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "below.svg",
+      "sha256": "d729132176d75783abe77d95cde9cbb5c7a03b6627ae45b0d3a2574086a12eb6",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-below",
+          "topic": "places",
+          "emoji": "project-context-03-below",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "在下面；one floor lower；the room below。vertical 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "belt.svg",
+      "sha256": "e2b46be1c8efdeb3c183362828b5f67fe23aa4c1bdf7a36f69587feb93900fd3",
+      "originalCredit": {
+        "file": "pictures/belt.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "e2b46be1c8efdeb3c183362828b5f67fe23aa4c1bdf7a36f69587feb93900fd3"
+      }
+    },
+    {
+      "file": "bend.svg",
+      "sha256": "177a8ceb764f4e4ca433a9230320f271654f84d436cd82408dc4a8305d300067",
+      "originalCredit": {
+        "file": "pictures/bend.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "177a8ceb764f4e4ca433a9230320f271654f84d436cd82408dc4a8305d300067"
+      }
+    },
+    {
+      "file": "boss.svg",
+      "sha256": "e7a5080af88aa46930ba2822bd81fa0f2ced5653d78be09741c0cce97b165efa",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-boss",
+          "topic": "places",
+          "emoji": "project-context-03-boss",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "老板；THE MANAGER；the person in charge。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "bunch.svg",
+      "sha256": "d916340f042ab9137ebcc6d77f897b9b1c53b914d4c6a8ea05f87948d993691b",
+      "originalCredit": {
+        "file": "pictures/bunch.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "d916340f042ab9137ebcc6d77f897b9b1c53b914d4c6a8ea05f87948d993691b"
+      }
+    },
+    {
+      "file": "capacity.svg",
+      "sha256": "80352dbdd8e0c749426422e0dd2b5c831fc728ecb7a54e8fc850aaf0fcef9b14",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-capacity",
+          "topic": "home",
+          "emoji": "project-context-03-capacity",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "容量；ALL SEATS OCCUPIED；a bus at its capacity。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "capital.svg",
+      "sha256": "3e90eb5931f001ec85ff0a4e9a9013801aba6814abbbcbb37abdd203dff10863",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-capital",
+          "topic": "school",
+          "emoji": "project-context-03-capital",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "首都；JAPAN: TOKYO；Tokyo is Japan's capital。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "chairman.svg",
+      "sha256": "ea82ac20f585ac72e6ae10f060cdd24ed417ca36ee020e89c6bcf2f3204ffea7",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-chairman",
+          "topic": "people",
+          "emoji": "project-context-03-chairman",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "主席；MEETING CHAIR；the person leading the meeting。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "chapter.svg",
+      "sha256": "222c5e41050491dd21c1a13086c7dddd3ed0e85aed41bd51e642183b6b0429b4",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-chapter",
+          "topic": "home",
+          "emoji": "project-context-03-chapter",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "章；CHAPTER 1；the first part of a book。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "characteristic.svg",
+      "sha256": "222d59a661de6554409a9f51e4faf459a143f9d9227fc9c57a097ae177e808f5",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-characteristic",
+          "topic": "people",
+          "emoji": "project-context-03-characteristic",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "特有的；usual for this person；a characteristic way of working。pair 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "chief.svg",
+      "sha256": "f826c6c8a942baa55b3fc370edfe148059c024076fa264fc3c3b85a84ca19e8b",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-chief",
+          "topic": "places",
+          "emoji": "project-context-03-chief",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "主管；DEPARTMENT HEAD；the chief of a department。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "concentrate.svg",
+      "sha256": "35674abf43b7e1cf075abfbfcf0d152a33767f03f202593ae6fbd3a03ee00327",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-03-concentrate",
+          "topic": "actions",
+          "emoji": "project-context-03-concentrate",
+          "pictureCue": true,
+          "completionBatch": "03",
+          "review": "集中注意力；focus on the letter；concentrating on one task。single 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "context.svg",
+      "sha256": "67dd4ff4c390dd56b0fdfdc83868d18ed4c688599fc2a973acc44fb1d4f52118",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-context",
+          "topic": "school",
+          "emoji": "project-context-04-context",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "语境；READ THE WHOLE SENTENCE；a word in its context。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "crime.svg",
+      "sha256": "5dbc3c945a9470202607d96fa72e56ba292cb5a0d8e7e350512b6f92b300edfb",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-crime",
+          "topic": "people",
+          "emoji": "project-context-04-crime",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "犯罪；STEALING IS A CRIME；breaking the law。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "crowded.svg",
+      "sha256": "6e23d788fc9a6dce31c2c80a2188f31f6e5d61c0c0be060e767b04f61c875be2",
+      "originalCredit": {
+        "file": "pictures/crowded.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "6e23d788fc9a6dce31c2c80a2188f31f6e5d61c0c0be060e767b04f61c875be2"
+      }
+    },
+    {
+      "file": "cruel.svg",
+      "sha256": "8f64b028e5acf4c070273044444f73b2ab7bf0e50c626488d46068c3de24e732",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-cruel",
+          "topic": "feelings",
+          "emoji": "project-context-04-cruel",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "残酷的；be kind to animals；cruel treatment is wrong。cross 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "cure.svg",
+      "sha256": "513d066b747c4597633ea3296854d45a83128abe1b49c3178cf1462ed887dc8c",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-cure",
+          "topic": "actions",
+          "emoji": "project-context-04-cure",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "治愈；a research goal；hoping to cure a disease。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "dignity.svg",
+      "sha256": "f79783fd87ee856a0d3ed58b468299eb73d668c1067f2ad7166d5a754bd12eb0",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-dignity",
+          "topic": "people",
+          "emoji": "project-context-04-dignity",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "尊严；respect for everyone；treating people with dignity。group 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "dining.svg",
+      "sha256": "b7dd51f141de62255331fa1f30c062199787f56ac53f6c2e90d9c287e3a253de",
+      "originalCredit": {
+        "file": "pictures/dining.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "b7dd51f141de62255331fa1f30c062199787f56ac53f6c2e90d9c287e3a253de"
+      }
+    },
+    {
+      "file": "district.svg",
+      "sha256": "1dae1987c6a90c0760dfa6cfde81367854d8586ea986db2e6c27011e39ff5b95",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-district",
+          "topic": "places",
+          "emoji": "project-context-04-district",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "地区；three local libraries；libraries in one district。group 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "each.svg",
+      "sha256": "5d22377035ec141a7f765b0a11c61cd4d9d3bf6dbd724400dbf38c724cec458e",
+      "originalCredit": {
+        "file": "pictures/each.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "5d22377035ec141a7f765b0a11c61cd4d9d3bf6dbd724400dbf38c724cec458e"
+      }
+    },
+    {
+      "file": "ecology.svg",
+      "sha256": "5c18df8ee54976db08c235fdd7c626e0feb017fd780a07d19b6bd1813803ca24",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-04-ecology",
+          "topic": "nature",
+          "emoji": "project-context-04-ecology",
+          "pictureCue": true,
+          "completionBatch": "04",
+          "review": "生态学；living things and habitats；studying ecology。network 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "editor.svg",
+      "sha256": "6f34be610b2c270eaf07845563b93d182333da251ae19c68bb1be3ac24c2f50e",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-05-editor",
+          "topic": "school",
+          "emoji": "project-context-05-editor",
+          "pictureCue": true,
+          "completionBatch": "05",
+          "review": "编辑；review and revise；an editor at work。pair 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "expect.svg",
+      "sha256": "73cce0fc6005c404c8da3b46d83f0d74c8a7aee50e3183f7ca91010b3b1f9da9",
+      "originalCredit": {
+        "file": "pictures/expect.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "73cce0fc6005c404c8da3b46d83f0d74c8a7aee50e3183f7ca91010b3b1f9da9"
+      }
+    },
+    {
+      "file": "extraordinary.svg",
+      "sha256": "e42f978af23c3efaa7e6ec8348d20ed9c00cfa06133df6d1f057581d2b7cedc7",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-05-extraordinary",
+          "topic": "people",
+          "emoji": "project-context-05-extraordinary",
+          "pictureCue": true,
+          "completionBatch": "05",
+          "review": "非凡的；unusually impressive；an extraordinary achievement。check 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "fence.svg",
+      "sha256": "e79ab569fd677e6f3714f13711d90bed72af131ee354dad450b70cf5cb774a7a",
+      "originalCredit": {
+        "file": "pictures/fence.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "e79ab569fd677e6f3714f13711d90bed72af131ee354dad450b70cf5cb774a7a"
+      }
+    },
+    {
+      "file": "fresh.svg",
+      "sha256": "c4008d16a5dc66124fa00d0df120f1a6c90c99b0bbb267ef2916f38dfe80a4cb",
+      "originalCredit": {
+        "file": "pictures/fresh.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "c4008d16a5dc66124fa00d0df120f1a6c90c99b0bbb267ef2916f38dfe80a4cb"
+      }
+    },
+    {
+      "file": "fridge.svg",
+      "sha256": "bde2c2b2c30a9866c4c409ed5926be95dc55ff52f64f113114682cf938f684f1",
+      "originalCredit": {
+        "file": "pictures/fridge.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "bde2c2b2c30a9866c4c409ed5926be95dc55ff52f64f113114682cf938f684f1"
+      }
+    },
+    {
+      "file": "grab.svg",
+      "sha256": "b2e300c69dd9eb9542032a5281d705973a63398350a982deddba278243689fbd",
+      "originalCredit": {
+        "file": "pictures/grab.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "b2e300c69dd9eb9542032a5281d705973a63398350a982deddba278243689fbd"
+      }
+    },
+    {
+      "file": "into.svg",
+      "sha256": "91f531d5820e0eeda796872455d094005dca7e0d9fd9d9e013f291cf332c4da1",
+      "originalCredit": {
+        "file": "pictures/into.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "91f531d5820e0eeda796872455d094005dca7e0d9fd9d9e013f291cf332c4da1"
+      }
+    },
+    {
+      "file": "item.svg",
+      "sha256": "acee6fcdc0c92596196f4b9dba4b07dcebdfa013fa729dccf3c399ad5624c3e0",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-item",
+          "topic": "home",
+          "emoji": "project-context-07-item",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "一件物品；choose one object；one item from a box。single 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "junior.svg",
+      "sha256": "23939bb4caac1c7792697366b39e1f299f2194fb0bc13a20aafd3945ec433c41",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-junior",
+          "topic": "school",
+          "emoji": "project-context-07-junior",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "初级的；JUNIOR HIGH SCHOOL；a junior-level student。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "kit.svg",
+      "sha256": "897e0c6f83bf700fe9fa7e5b20107257d0ff20907ce62479df865387ccd2dba5",
+      "originalCredit": {
+        "file": "pictures/kit.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "897e0c6f83bf700fe9fa7e5b20107257d0ff20907ce62479df865387ccd2dba5"
+      }
+    },
+    {
+      "file": "license.svg",
+      "sha256": "07d5a6642390d43e791953b422401203db6a32e7093c46159c58dcfec5666794",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-license",
+          "topic": "home",
+          "emoji": "project-context-07-license",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "执照；DRIVER'S LICENSE；permission to drive。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "manager.svg",
+      "sha256": "f23ba4899a9bff99a2ad7fc56da9f19468064bf2fe92b7b1a5d4501e934a686b",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-manager",
+          "topic": "places",
+          "emoji": "project-context-07-manager",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "经理；MANAGER: PLAN APPROVED；a manager makes a decision。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "member.svg",
+      "sha256": "c3b76d8b19f095470eae12f332d62fe966d8595072f4cd37343758f52922bed5",
+      "originalCredit": {
+        "file": "pictures/member.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "c3b76d8b19f095470eae12f332d62fe966d8595072f4cd37343758f52922bed5"
+      }
+    },
+    {
+      "file": "minister.svg",
+      "sha256": "543cec8427da603090ac3f5ee2c8f7342b6c80ed4987897bf80bfd8546fed2bc",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-minister",
+          "topic": "places",
+          "emoji": "project-context-07-minister",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "部长；GOVERNMENT MINISTER；a role in government。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "mixture.svg",
+      "sha256": "763d5bfad0b6594460157e355b0c2fa1e01c053d408337a3691e624ab5e12e87",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-07-mixture",
+          "topic": "home",
+          "emoji": "project-context-07-mixture",
+          "pictureCue": true,
+          "completionBatch": "07",
+          "review": "混合物；different gases together；air is a mixture of gases。group 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "nephew.svg",
+      "sha256": "1e69c613415792d0c29f39f47b0d7c5757b971ca5f1d3b1451eb4993167b50c1",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-08-nephew",
+          "topic": "people",
+          "emoji": "project-context-08-nephew",
+          "pictureCue": true,
+          "completionBatch": "08",
+          "review": "侄子；外甥；MY SIBLING'S SON；a nephew in the family。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "notice.svg",
+      "sha256": "20509a23bcbf581ce9511e4717ec9d74befbb041916d676e1b03235a9a5835f4",
+      "originalCredit": {
+        "file": "pictures/notice.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "20509a23bcbf581ce9511e4717ec9d74befbb041916d676e1b03235a9a5835f4"
+      }
+    },
+    {
+      "file": "onto.svg",
+      "sha256": "0e570db985b2078806b8ce229a8ec8566e1cbfe23d1e72644bca25056c0168cd",
+      "originalCredit": {
+        "file": "pictures/onto.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "0e570db985b2078806b8ce229a8ec8566e1cbfe23d1e72644bca25056c0168cd"
+      }
+    },
+    {
+      "file": "particular.svg",
+      "sha256": "88f670007b45b2e3411295c0ec371f9c107106360f449c7bb53e85e6551b3c28",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-08-particular",
+          "topic": "food",
+          "emoji": "project-context-08-particular",
+          "pictureCue": true,
+          "completionBatch": "08",
+          "review": "挑剔的；not very particular；not picky about food。compare 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "phrase.svg",
+      "sha256": "2bef3bb2a7ce531a29f9b323d3df2f5f0d0fa0ec820c2d5ef629fc5638b70b1a",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-08-phrase",
+          "topic": "school",
+          "emoji": "project-context-08-phrase",
+          "pictureCue": true,
+          "completionBatch": "08",
+          "review": "短语；IN THE BOX；a group of words: a phrase。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "plenty.svg",
+      "sha256": "ac0e309398c0714e2c642efe5869e4fb3d872f32afac5d6a8f5d5a21351e615e",
+      "originalCredit": {
+        "file": "pictures/plenty.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "ac0e309398c0714e2c642efe5869e4fb3d872f32afac5d6a8f5d5a21351e615e"
+      }
+    },
+    {
+      "file": "prefer.svg",
+      "sha256": "f317a620844201f05da2367156163e5bed4a8f5ffe2b6248dc2d5ccdb0f22ae9",
+      "originalCredit": {
+        "file": "pictures/prefer.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "f317a620844201f05da2367156163e5bed4a8f5ffe2b6248dc2d5ccdb0f22ae9"
+      }
+    },
+    {
+      "file": "principal.svg",
+      "sha256": "2dd31b31e20f79fbc10be075246b1d08742b13c803c8109583ae23f46213653f",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-09-principal",
+          "topic": "school",
+          "emoji": "project-context-09-principal",
+          "pictureCue": true,
+          "completionBatch": "09",
+          "review": "校长；HEAD OF SCHOOL；the school principal。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "process.svg",
+      "sha256": "ce65311084dbf980be85160babbc1f4c404100339fb8afe051d1a1f1075e04a8",
+      "originalCredit": {
+        "file": "pictures/process.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "ce65311084dbf980be85160babbc1f4c404100339fb8afe051d1a1f1075e04a8"
+      }
+    },
+    {
+      "file": "protect.svg",
+      "sha256": "1e9fa4bb8a802316fe220d6bd7607a7c1331209f232c86a3b1806b69ac83f67c",
+      "originalCredit": {
+        "file": "pictures/protect.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "1e9fa4bb8a802316fe220d6bd7607a7c1331209f232c86a3b1806b69ac83f67c"
+      }
+    },
+    {
+      "file": "rate.svg",
+      "sha256": "ba9ce3b4f1254875dc9d5768ff04f5915b1451c88d123466ae8afb88326ea9cf",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-09-rate",
+          "topic": "home",
+          "emoji": "project-context-09-rate",
+          "pictureCue": true,
+          "completionBatch": "09",
+          "review": "比率；1 A = 2 B；an exchange rate。pair 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "replace.svg",
+      "sha256": "323b6ffbdb6df519f006528ed95d4d295450b91c7eedc09714804c862bf30094",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-09-replace",
+          "topic": "actions",
+          "emoji": "project-context-09-replace",
+          "pictureCue": true,
+          "completionBatch": "09",
+          "review": "更换；old cartridge to new cartridge；replacing an empty cartridge。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "represent.svg",
+      "sha256": "ca0c2107426e1705128bb997a9ec3f16462681c95cc9e5e19ee3c3a1b1febe23",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-09-represent",
+          "topic": "actions",
+          "emoji": "project-context-09-represent",
+          "pictureCue": true,
+          "completionBatch": "09",
+          "review": "代表；BLUE LINE = RIVER；a symbol represents a river。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "rhyme.svg",
+      "sha256": "b3e42ca2393a23e587e292880f971b0e31029b77e6775ecba9e8bb275fceb057",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-10-rhyme",
+          "topic": "school",
+          "emoji": "project-context-10-rhyme",
+          "pictureCue": true,
+          "completionBatch": "10",
+          "review": "押韵诗；CAT / HAT；a nursery rhyme with matching sounds。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "senior.svg",
+      "sha256": "0cfbcb5c73cf1186e7280174fa4e4070f0a1bc7b725d4456ddfd69517f292aed",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-10-senior",
+          "topic": "school",
+          "emoji": "project-context-10-senior",
+          "pictureCue": true,
+          "completionBatch": "10",
+          "review": "高级的；SENIOR HIGH SCHOOL；the later school stage。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "shadow.svg",
+      "sha256": "bea556c64246aa257e293e42c4240660017d5a4484ed4b432040ee4b7dfc8f1f",
+      "originalCredit": {
+        "file": "pictures/shadow.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "bea556c64246aa257e293e42c4240660017d5a4484ed4b432040ee4b7dfc8f1f"
+      }
+    },
+    {
+      "file": "sore.svg",
+      "sha256": "ace6fda5f56833e7f2b7fdf3e9ebe14c9c641544282adb1ce9824a6b3e219df0",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-10-sore",
+          "topic": "body",
+          "emoji": "project-context-10-sore",
+          "pictureCue": true,
+          "completionBatch": "10",
+          "review": "酸痛的；aching after activity；feeling sore。single 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "spy.svg",
+      "sha256": "8473d1a45f5b459cd4ea1aebd2a06e2d825f4c22d5c7dfc22cc74fafe4a9728d",
+      "originalCredit": {
+        "file": "pictures/spy.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f575.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "8473d1a45f5b459cd4ea1aebd2a06e2d825f4c22d5c7dfc22cc74fafe4a9728d"
+      }
+    },
+    {
+      "file": "state.svg",
+      "sha256": "f6c46c17c602f816f71301b2fcdc3dc9640393fde65a801c8dc0dcf7b9652731",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-10-state",
+          "topic": "school",
+          "emoji": "project-context-10-state",
+          "pictureCue": true,
+          "completionBatch": "10",
+          "review": "州；CALIFORNIA: A US STATE；one state in a country。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "suffer.svg",
+      "sha256": "e4f76424c00c0e4abd2d9e5b8b7c628b194f2c625c2b7a1dc17eb98145fdd63e",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-11-suffer",
+          "topic": "actions",
+          "emoji": "project-context-11-suffer",
+          "pictureCue": true,
+          "completionBatch": "11",
+          "review": "遭受；not enough water；plants suffer in dry soil。pair 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "superior.svg",
+      "sha256": "9eb1d62f906b8af806ac45f4ea3e2e112c2e1e67fb4cc83782d56aadf5815079",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-11-superior",
+          "topic": "home",
+          "emoji": "project-context-11-superior",
+          "pictureCue": true,
+          "completionBatch": "11",
+          "review": "更好的；compare how well it is made；superior quality。compare 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "system.svg",
+      "sha256": "6c88f01d323188bf6fb9837382a93399250ab54cd7699af8ca2d8aede02a41a7",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-11-system",
+          "topic": "home",
+          "emoji": "project-context-11-system",
+          "pictureCue": true,
+          "completionBatch": "11",
+          "review": "系统；parts work together；a connected system。network 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "theft.svg",
+      "sha256": "24c7448cd743484ecb6b513ffa7232f3f47f794264ec4082068061599214fd45",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-11-theft",
+          "topic": "people",
+          "emoji": "project-context-11-theft",
+          "pictureCue": true,
+          "completionBatch": "11",
+          "review": "偷窃；TAKING WHAT IS NOT YOURS；a reported theft。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "version.svg",
+      "sha256": "5e40c0145afff760416fe5356596af14b8413da8599f261772e94e8a8f079cd4",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-12-version",
+          "topic": "school",
+          "emoji": "project-context-12-version",
+          "pictureCue": true,
+          "completionBatch": "12",
+          "review": "版本；different editions；a newer version of a dictionary。compare 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "worse.svg",
+      "sha256": "82ba800fb94c3e418ca5da56708802e28935ca5b56ca952b451f4d7f925280ed",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-12-worse",
+          "topic": "home",
+          "emoji": "project-context-12-worse",
+          "pictureCue": true,
+          "completionBatch": "12",
+          "review": "更糟的；a poorer condition；getting worse。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "x-ray.svg",
+      "sha256": "9c03956393a26d67bf10dfe34649453a71167202569b676008adf2304e1244f7",
+      "originalCredit": {
+        "file": "pictures/x-ray.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "9c03956393a26d67bf10dfe34649453a71167202569b676008adf2304e1244f7"
+      }
+    },
+    {
+      "file": "block.svg",
+      "sha256": "7fb75e260ea8763b81c14a0ef8782b3fcfe2901e713085fef3964aeb2abb832d",
+      "originalCredit": {
+        "file": "pictures/block.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "7fb75e260ea8763b81c14a0ef8782b3fcfe2901e713085fef3964aeb2abb832d"
+      }
+    },
+    {
+      "file": "death.svg",
+      "sha256": "8beb2030fd9c88005e7a8e56c10a1c0364450318cdad1d3bce71b8ba2a739769",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-12-death",
+          "topic": "nature",
+          "emoji": "project-context-12-death",
+          "pictureCue": true,
+          "completionBatch": "12",
+          "review": "死亡；a tree's life has ended；the death of an old tree。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "die.svg",
+      "sha256": "fbdc65043ca3fa27b25cca7b153b364046e21d4b4caace6937d9db5d73a30c7b",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-12-die",
+          "topic": "actions",
+          "emoji": "project-context-12-die",
+          "pictureCue": true,
+          "completionBatch": "12",
+          "review": "死亡；not enough water；a plant may die。flow 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "mutton.svg",
+      "sha256": "a3c0d5638e76d354c7a4456c3bd3c132c52fefd947268c834fd00648b0d90b4b",
+      "originalCredit": {
+        "file": "pictures/mutton.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG illustration; scripts/pictures/",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original vector artwork",
+        "sha256": "a3c0d5638e76d354c7a4456c3bd3c132c52fefd947268c834fd00648b0d90b4b"
+      }
+    },
+    {
+      "file": "packet.svg",
+      "sha256": "98ffe9a6c3b209d639ea2c5a29adabd9468f66d538ffd0ec56a978fe96f6b754",
+      "originalCredit": {
+        "file": "pictures/packet.svg",
+        "author": "Google Noto Emoji contributors",
+        "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f4e6.svg",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+        "changes": "None",
+        "sha256": "98ffe9a6c3b209d639ea2c5a29adabd9468f66d538ffd0ec56a978fe96f6b754"
+      }
+    },
+    {
+      "file": "pioneer.svg",
+      "sha256": "b66e5b55857abae19bbc2fc1db229d9682d5288ce3d9c184e669d0978a4bf5db",
+      "originalCredit": {
+        "author": "ABC Garden project; Google Noto Emoji contributors for Noto-derived portions",
+        "source": "Project picture generators and attributed local Noto Emoji v2.047 components",
+        "license": "Apache-2.0 for Noto-derived portions; CC0-1.0 for project-authored portions",
+        "sourceEvidence": {
+          "drawing": "context-12-pioneer",
+          "topic": "home",
+          "emoji": "project-context-12-pioneer",
+          "pictureCue": true,
+          "completionBatch": "12",
+          "review": "先驱；AN EARLY INNOVATOR；a pioneer in computer science。document 情境构图，须结合当前双语例句理解，不作为唯一识图答案。"
+        }
+      }
+    },
+    {
+      "file": "routine.svg",
+      "sha256": "845ede41f5767d174857e80aec76771f887f9e3c58026fe42980058ae01854cc",
+      "originalCredit": {
+        "file": "pictures/routine.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "845ede41f5767d174857e80aec76771f887f9e3c58026fe42980058ae01854cc"
+      }
+    },
+    {
+      "file": "ran.svg",
+      "sha256": "b509d7a44d4791cdf024da6d9779d86c40e6867350e01e3758d6dd37308ba5ed",
+      "originalCredit": {
+        "file": "pictures/ran.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "b509d7a44d4791cdf024da6d9779d86c40e6867350e01e3758d6dd37308ba5ed"
+      }
+    },
+    {
+      "file": "chores.svg",
+      "sha256": "d01ef8fb47685da80934e5a31a2150b1ad7033a969001251be5f116149203744",
+      "originalCredit": {
+        "file": "pictures/chores.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "d01ef8fb47685da80934e5a31a2150b1ad7033a969001251be5f116149203744"
+      }
+    },
+    {
+      "file": "first.svg",
+      "sha256": "d74b2d4f70ccfa768c91f2bba9750da988c764e22ddcdd82a0df447f5d118915",
+      "originalCredit": {
+        "file": "pictures/first.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "d74b2d4f70ccfa768c91f2bba9750da988c764e22ddcdd82a0df447f5d118915"
+      }
+    },
+    {
+      "file": "fit-healthy.svg",
+      "sha256": "e569adb9b0622e54ed783f03864df3f68617f3412184183c30f346970cbd7ac3",
+      "originalCredit": {
+        "file": "pictures/fit-healthy.svg",
+        "author": "ABC Garden project",
+        "source": "Project-authored SVG; scripts/pictures/wonders-scenes.mjs",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original contextual vector illustration",
+        "sha256": "e569adb9b0622e54ed783f03864df3f68617f3412184183c30f346970cbd7ac3"
+      }
+    }
+  ]
+}

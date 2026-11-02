@@ -1,0 +1,44 @@
+// Project-authored vector vocabulary. Coordinates use the existing 128px canvas.
+export {rect as r,path as p,line as l,circle as c,ellipse as e,group as g,arrow as a} from './direct-scenes.mjs';
+import {rect as r,path as p,line as l,circle as c,ellipse as e,group as g,arrow as a} from './direct-scenes.mjs';
+export const ink='#405d6b',blue='#83b7cb',green='#81a878',red='#ce766a',gold='#e6b86d',cream='#f3e8ce',skin='#dfb18b',brown='#a17b57';
+export const t=(s,x=64,y=17,size=10,color=ink)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="Arial,sans-serif" font-size="${Math.min(size,114/Math.max(1,s.length*.57))}" font-weight="600" fill="${color}">${s.replaceAll('&','&amp;').replaceAll('<','&lt;')}</text>`;
+export const cap=s=>t(s,64,123,8);
+export const focus=(body,x,y,radius=13)=>body+`<circle cx="${x}" cy="${y}" r="${radius}" fill="none" stroke="${red}" stroke-width="3"/>`+a(7,17,x-radius*.7,y-radius*.7,red);
+export const check=(x,y)=>p(`M${x} ${y}l6 6l12 -16`,'none',green,3);
+export const cross=(x,y)=>p(`M${x} ${y}l13 13m0 -13l-13 13`,'none',red,3);
+export const face=(x,y,rad=20,mood='smile')=>c(x,y,rad,skin)+c(x-rad*.31,y-rad*.15,1.5,ink)+c(x+rad*.31,y-rad*.15,1.5,ink)+p(mood==='sad'?`M${x-rad*.3} ${y+rad*.4}Q${x} ${y+rad*.05} ${x+rad*.3} ${y+rad*.4}`:mood==='open'?`M${x-3} ${y+6}a3 4 0 1 0 6 0a3 4 0 1 0 -6 0`:mood==='calm'?`M${x-5} ${y+6}H${x+5}`:`M${x-rad*.3} ${y+rad*.22}Q${x} ${y+rad*.6} ${x+rad*.3} ${y+rad*.22}`,'none',ink,1.8);
+export function human(x,y,shirt=blue,s=1,pose='stand',mood='smile'){
+ const legs=pose==='sit'?'M0 34H17V53':pose==='run'?'M0 34L-16 42L-23 34M0 34L12 51L26 51':pose==='balance'?'M0 34V57M0 34L18 40L8 48':pose==='walk'?'M0 34L-15 57M0 34L17 55':'M0 34L-9 57M0 34L9 57';
+ const arms={wave:'M0 14L-14 29M0 14L17 6V-7',eat:'M0 14L16 28L11 4M0 14L-13 29',point:'M0 14L20 13L28 6M0 14L-13 29',hold:'M0 14L-11 27L5 30M0 14L13 27L5 30',cough:'M0 14L16 17L6 2M0 14L-12 30',run:'M0 14L-13 19L-19 9M0 14L13 8L19 18',balance:'M-25 13H25',reach:'M0 14L17 22L29 13M0 14L-10 29',catch:'M0 14L20 5L27 -2M0 14L16 -1L23 -6',tailpull:'M0 14L18 25L30 20M0 14L-13 29',gentle:'M0 14L17 22L30 19M0 14L-13 29',stand:'M0 14L-13 29M0 14L13 29'}[pose]||'M0 14L-13 29M0 14L13 29';
+ return g(face(0,-3,10,mood)+p('M-8 -9Q0 -22 9 -9',brown)+p(legs,'none',ink,6)+p('M0 9V34','none',shirt,14)+p(arms,'none',skin,5),x,y,s);
+}
+export const ground=()=>l(8,111,120,111,'#cab48e',2);
+export const room=()=>r(7,10,114,100,'#eee7d7',3)+p('M7 96H121V115H7Z','#d2bc98')+l(7,96,121,96,'#b5a187',2);
+export const window=()=>r(14,18,35,29,blue,1)+l(31,18,31,47,cream,3)+l(14,33,49,33,cream,3);
+export const chair=(color=brown)=>r(22,28,62,52,color,5)+r(18,78,73,9,color,2)+l(25,87,25,119,color,6)+l(83,87,83,119,color,6);
+export const desk=()=>r(8,61,111,12,brown,2)+l(19,73,19,113,brown,7)+l(108,73,108,113,brown,7);
+export const book=(label='',color=green)=>r(14,17,98,97,color,5)+r(24,17,88,89,cream,3)+l(24,17,24,106,color,3)+t(label,69,63,12)+l(36,82,98,82,'#cdbd9b',2)+l(36,92,85,92,'#cdbd9b',2);
+export const openBook=(label='')=>p('M10 27Q35 16 64 28Q94 16 118 27V103Q91 94 64 108Q36 94 10 103Z',cream,blue,2)+l(64,28,64,108,blue,2)+t(label,64,66,12);
+export const paper=(label='')=>r(21,9,86,107,'#fffdf4',3)+t(label,64,36,12)+[52,67,82,97].map(y=>l(32,y,96,y,'#bccbca',2)).join('');
+export const house=()=>p('M7 53L64 10L121 53Z',red)+r(19,53,91,60,cream,1)+r(54,75,23,38,brown,1)+r(28,66,17,22,blue,1)+r(85,66,17,22,blue,1);
+export const bed=()=>r(8,54,111,51,brown,3)+r(13,47,101,46,'#9cb8bf',7)+r(20,51,36,21,'#fffdf4',5)+r(17,78,93,22,blue,4)+l(15,105,15,116,brown,5)+l(112,105,112,116,brown,5);
+export const shirt=(color=blue)=>p('M37 21L49 12Q64 28 79 12L91 21L117 46L99 63L90 52V115H37V52L28 63L10 46Z',color,ink,1.5);
+export const plant=(dead=false)=>p('M41 87H88L82 113H47Z',gold)+p(dead?'M64 88V48L42 34M64 66L91 56':'M64 88V31','none',dead?brown:green,4)+(dead?p('M43 34Q18 47 28 61Q48 59 43 34M91 56Q104 66 97 79Q76 73 91 56Z',brown):p('M64 49Q23 47 30 23Q62 21 64 49M64 74Q104 74 100 45Q68 46 64 74Z',green));
+export const tree=(dead=false)=>p('M55 111L58 44H70L76 111Z',brown)+(dead?p('M64 68L28 36M64 52L98 24M44 49L43 25M84 37L110 44','none',brown,6):c(64,35,26,green)+c(36,54,23,green)+c(90,54,23,green));
+export const flower=(white=false)=>p('M64 113V43','none',green,4)+p('M64 92Q35 92 39 70Q60 69 64 92Z',green)+Array.from({length:10},(_,i)=>{const v=i*Math.PI/5;return e(64+Math.cos(v)*20,36+Math.sin(v)*20,10,11,white?'#fffdf4':gold)}).join('')+c(64,36,12,gold);
+export const bowl=()=>e(64,65,49,13,'#c29263')+p('M15 65Q21 107 64 109Q107 107 113 65Z',blue)+e(64,65,45,10,'#d6a866');
+export const cup=()=>p('M87 34H103Q124 57 101 77H86','none',blue,9)+p('M24 29H90V97Q56 117 24 97Z',blue)+e(57,29,33,9,cream);
+export const ball=()=>c(64,64,43,gold)+p('M25 50Q75 50 91 98M30 90Q53 44 102 39','none',ink,2);
+export const car=(color=red)=>p('M18 57L35 29H86L109 57Z',color)+r(8,54,113,40,color,9)+p('M38 36H58V56H25ZM65 36H82L98 56H65Z','#d5e6e6')+c(32,96,13,ink)+c(97,96,13,ink)+c(32,96,6,cream)+c(97,96,6,cream);
+export const bus=(label='')=>r(6,28,116,69,gold,7)+[15,39,63,87].map(x=>r(x,39,19,30,blue,2)).join('')+c(29,99,12,ink)+c(98,99,12,ink)+t(label,64,84,9);
+export const cat=()=>e(58,77,31,23,'#b8a88e')+c(88,50,23,'#b8a88e')+p('M69 35L68 12L87 28M91 28L111 14L109 43Z','#b8a88e')+c(82,47,2,ink)+c(99,47,2,ink)+p('M88 55L94 55L91 60Z',red)+p('M28 78Q5 67 12 38','none','#b8a88e',9)+l(40,91,39,112,'#b8a88e',8)+l(79,91,82,111,'#b8a88e',8);
+export const dog=(running=false)=>e(57,77,33,22,brown)+c(88,50,22,brown)+e(71,48,9,21,'#7e604b')+e(105,60,15,10,cream)+c(97,47,2,ink)+c(117,57,4,ink)+p('M25 78L11 58','none',brown,8)+(running?p('M40 91L23 106L12 99M80 91L98 105L114 105','none',brown,8):l(40,91,38,112,brown,8)+l(80,91,84,111,brown,8));
+export const pot=()=>r(24,49,81,56,blue,7)+l(10,56,24,56,ink,5)+l(105,56,118,56,ink,5)+e(64,49,41,10,'#bfdce0')+p('M41 30Q30 20 41 9M66 30Q55 20 66 9M90 30Q79 20 90 9','none','#95aaac',3);
+export const pencil=()=>p('M27 108L82 17L101 29L46 119Z',gold)+p('M27 108L18 126L46 119Z',cream)+p('M18 126L23 115L30 121Z',ink);
+export const gift=()=>r(15,47,99,64,green,3)+r(10,34,109,19,blue,2)+r(57,35,14,76,gold,1)+p('M64 34Q30 33 32 16Q45 2 64 34Q85 2 98 16Q104 34 64 34Z','none',gold,5);
+export const sofa=()=>r(15,31,98,58,blue,10)+r(8,64,19,39,blue,6)+r(101,64,19,39,blue,6)+r(26,71,75,29,'#a6ccd5',6)+l(29,103,29,114,brown,5)+l(99,103,99,114,brown,5);
+export const shoe=(worn=false)=>p('M20 29H50L59 59L98 76Q117 78 119 99H12V60Z',worn?'#b9ada1':blue,ink,2)+p('M12 99H119V111H12Z',cream,ink,2)+p('M48 58L67 63M43 68L78 75M38 79L88 88','none',cream,4)+(worn?p('M76 94L86 83L89 96','none',brown,3):'');
+export const basket=()=>p('M12 55H117L105 113H25Z',gold)+[37,55,73,91].map(x=>l(x,61,x,105,cream,3)).join('')+l(18,78,111,78,cream,3)+l(23,97,107,97,cream,3);
+export const water=()=>p('M64 12Q19 67 28 91Q40 122 72 114Q117 100 96 65Z',blue)+p('M39 83Q38 99 54 104','none','#def0ee',5);
+export const sun=()=>c(99,24,13,gold)+[0,1,2,3,4,5,6,7].map(i=>{const v=i*Math.PI/4;return l(99+Math.cos(v)*18,24+Math.sin(v)*18,99+Math.cos(v)*23,24+Math.sin(v)*23,gold,2)}).join('');

@@ -6,7 +6,8 @@
   "description": "A gentle, offline-first alphabet garden for iPad.",
   "scripts": {
     "audio": "node scripts/generate-audio.mjs",
-    "build": "node scripts/compile-context-vocabulary.mjs && node scripts/build.mjs",
+    "build": "node scripts/compile-picture-vocabulary.mjs && node scripts/compile-context-vocabulary.mjs && npm run pictures:quality && node scripts/build.mjs",
+    "pictures:quality": "node scripts/generate-context-symbols.mjs && node scripts/generate-quality-pictures.mjs && node scripts/generate-context-pictures.mjs",
     "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
@@ -14,7 +15,9 @@
     "test:subpath": "node tests/subpath.mjs",
     "audio:course": "node scripts/generate-course-audio.mjs",
     "assets:import": "node scripts/import-learning-assets.mjs",
-    "audit:wonders": "node scripts/audit-wonders-gk.mjs"
+    "audit:wonders": "node scripts/audit-wonders-gk.mjs",
+    "audit:completion": "node scripts/audit-context-completion.mjs",
+    "audit:quality": "node scripts/audit-quality-fixes.mjs"
   },
   "engines": {
     "node": ">=20"

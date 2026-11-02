@@ -53,11 +53,12 @@ export const CONTEXT_WORDS=[
   "zh": "在……之后",
   "sentence": "We play after school.",
   "sentenceZh": "我们放学后玩耍。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/after.svg",
   "pictureCue": true,
   "audio": "word-after",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-after"
  },
  {
   "id": "again",
@@ -67,11 +68,12 @@ export const CONTEXT_WORDS=[
   "zh": "再一次",
   "sentence": "Please say it again.",
   "sentenceZh": "请再说一遍。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/again.svg",
   "pictureCue": true,
   "audio": "word-again",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-again"
  },
  {
   "id": "age",
@@ -81,11 +83,12 @@ export const CONTEXT_WORDS=[
   "zh": "年龄",
   "sentence": "What is your age?",
   "sentenceZh": "你几岁了？",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/age.svg",
   "pictureCue": true,
   "audio": "word-age",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-age"
  },
  {
   "id": "ago",
@@ -95,11 +98,12 @@ export const CONTEXT_WORDS=[
   "zh": "以前",
   "sentence": "We met two days ago.",
   "sentenceZh": "我们两天前见过面。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/ago.svg",
   "pictureCue": true,
   "audio": "word-ago",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-ago"
  },
  {
   "id": "all",
@@ -124,11 +128,12 @@ export const CONTEXT_WORDS=[
   "zh": "也",
   "sentence": "I like apples. I also like pears.",
   "sentenceZh": "我喜欢苹果。我也喜欢梨。",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/also.svg",
   "pictureCue": true,
   "audio": "word-also",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-also"
  },
  {
   "id": "always",
@@ -138,11 +143,12 @@ export const CONTEXT_WORDS=[
   "zh": "总是",
   "sentence": "I always wash my hands before lunch.",
   "sentenceZh": "我午饭前总是洗手。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/always.svg",
   "pictureCue": true,
   "audio": "word-always",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-always"
  },
  {
   "id": "and",
@@ -167,11 +173,12 @@ export const CONTEXT_WORDS=[
   "zh": "一些；任何",
   "sentence": "Do you have any questions?",
   "sentenceZh": "你有什么问题吗？",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/any.svg",
   "pictureCue": true,
   "audio": "word-any",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-any"
  },
  {
   "id": "at",
@@ -211,11 +218,12 @@ export const CONTEXT_WORDS=[
   "zh": "不好的",
   "sentence": "Too much candy is bad for your teeth.",
   "sentenceZh": "吃太多糖对牙齿不好。",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/bad.svg",
   "pictureCue": true,
   "audio": "word-bad",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-bad"
  },
  {
   "id": "be",
@@ -225,11 +233,12 @@ export const CONTEXT_WORDS=[
   "zh": "是；处于某种状态",
   "sentence": "Please be quiet.",
   "sentenceZh": "请保持安静。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/be.svg",
   "pictureCue": true,
   "audio": "word-be",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-be"
  },
  {
   "id": "beautiful",
@@ -239,11 +248,12 @@ export const CONTEXT_WORDS=[
   "zh": "美丽的",
   "sentence": "What a beautiful flower!",
   "sentenceZh": "多么美丽的一朵花！",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/beautiful.svg",
   "pictureCue": true,
   "audio": "word-beautiful",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-beautiful"
  },
  {
   "id": "because",
@@ -253,11 +263,12 @@ export const CONTEXT_WORDS=[
   "zh": "因为",
   "sentence": "I wear a coat because it is cold.",
   "sentenceZh": "我穿外套，因为天气很冷。",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/because.svg",
   "pictureCue": true,
   "audio": "word-because",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-because"
  },
  {
   "id": "before",
@@ -267,11 +278,12 @@ export const CONTEXT_WORDS=[
   "zh": "在……之前",
   "sentence": "Wash your hands before you eat.",
   "sentenceZh": "吃东西前洗洗手。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/before.svg",
   "pictureCue": true,
   "audio": "word-before",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-before"
  },
  {
   "id": "begin",
@@ -281,11 +293,12 @@ export const CONTEXT_WORDS=[
   "zh": "开始",
   "sentence": "Let us begin the game.",
   "sentenceZh": "我们开始游戏吧。",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/begin.svg",
   "pictureCue": true,
   "audio": "word-begin",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-begin"
  },
  {
   "id": "behind",
@@ -325,11 +338,12 @@ export const CONTEXT_WORDS=[
   "zh": "最好的",
   "sentence": "This is the best day of my holiday.",
   "sentenceZh": "这是我假期中最美好的一天。",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/best.svg",
   "pictureCue": true,
   "audio": "word-best",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-best"
  },
  {
   "id": "between",
@@ -384,11 +398,12 @@ export const CONTEXT_WORDS=[
   "zh": "忙碌的",
   "sentence": "Dad is busy cooking dinner.",
   "sentenceZh": "爸爸正忙着做晚饭。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/busy.svg",
   "pictureCue": true,
   "audio": "word-busy",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-busy"
  },
  {
   "id": "but",
@@ -398,11 +413,12 @@ export const CONTEXT_WORDS=[
   "zh": "但是",
   "sentence": "The box is small, but it is heavy.",
   "sentenceZh": "盒子很小，但是很重。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/but.svg",
   "pictureCue": true,
   "audio": "word-but",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-but"
  },
  {
   "id": "buy",
@@ -517,11 +533,12 @@ export const CONTEXT_WORDS=[
   "zh": "中文；中国的",
   "sentence": "We speak Chinese at home.",
   "sentenceZh": "我们在家说中文。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/chinese.svg",
   "pictureCue": true,
   "audio": "word-chinese",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-chinese"
  },
  {
   "id": "chore",
@@ -536,7 +553,7 @@ export const CONTEXT_WORDS=[
   "pictureCue": false,
   "audio": "word-chore",
   "contentSource": "primary-context-v1",
-  "emoji": "project-direct-housework"
+  "emoji": "1f9fa"
  },
  {
   "id": "class",
@@ -621,11 +638,12 @@ export const CONTEXT_WORDS=[
   "zh": "可爱的",
   "sentence": "The little rabbit is cute.",
   "sentenceZh": "这只小兔子很可爱。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/cute.svg",
   "pictureCue": true,
   "audio": "word-cute",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-cute"
  },
  {
   "id": "dear",
@@ -635,11 +653,12 @@ export const CONTEXT_WORDS=[
   "zh": "亲爱的",
   "sentence": "Dear Grandma, thank you for the gift.",
   "sentenceZh": "亲爱的奶奶，谢谢您的礼物。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/dear.svg",
   "pictureCue": true,
   "audio": "word-dear",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-dear"
  },
  {
   "id": "desk",
@@ -664,11 +683,12 @@ export const CONTEXT_WORDS=[
   "zh": "困难的",
   "sentence": "This question is difficult for me.",
   "sentenceZh": "这道题对我来说很难。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/difficult.svg",
   "pictureCue": true,
   "audio": "word-difficult",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-difficult"
  },
  {
   "id": "dirty",
@@ -723,11 +743,12 @@ export const CONTEXT_WORDS=[
   "zh": "早的；早地",
   "sentence": "We arrive early for the show.",
   "sentenceZh": "我们早早到达，准备看演出。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/early.svg",
   "pictureCue": true,
   "audio": "word-early",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-early"
  },
  {
   "id": "easy",
@@ -737,11 +758,12 @@ export const CONTEXT_WORDS=[
   "zh": "容易的",
   "sentence": "This game is easy to learn.",
   "sentenceZh": "这个游戏很容易学。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/easy.svg",
   "pictureCue": true,
   "audio": "word-easy",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-easy"
  },
  {
   "id": "email",
@@ -766,11 +788,12 @@ export const CONTEXT_WORDS=[
   "zh": "英语；英国的",
   "sentence": "We learn English at school.",
   "sentenceZh": "我们在学校学英语。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/english.svg",
   "pictureCue": true,
   "audio": "word-english",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-english"
  },
  {
   "id": "every",
@@ -780,11 +803,12 @@ export const CONTEXT_WORDS=[
   "zh": "每一个",
   "sentence": "I read a book every day.",
   "sentenceZh": "我每天读书。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/every.svg",
   "pictureCue": true,
   "audio": "word-every",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-every"
  },
  {
   "id": "famous",
@@ -794,11 +818,12 @@ export const CONTEXT_WORDS=[
   "zh": "著名的",
   "sentence": "The Great Wall is famous.",
   "sentenceZh": "长城很有名。",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/famous.svg",
   "pictureCue": true,
   "audio": "word-famous",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-famous"
  },
  {
   "id": "far",
@@ -852,11 +877,12 @@ export const CONTEXT_WORDS=[
   "zh": "身体好的；不错的",
   "sentence": "I am fine, thank you.",
   "sentenceZh": "我很好，谢谢你。",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/fine.svg",
   "pictureCue": true,
   "audio": "word-fine",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-fine"
  },
  {
   "id": "fire",
@@ -926,11 +952,12 @@ export const CONTEXT_WORDS=[
   "zh": "有空的",
   "sentence": "Are you free this afternoon?",
   "sentenceZh": "你今天下午有空吗？",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/free.svg",
   "pictureCue": true,
   "audio": "word-free",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-free"
  },
  {
   "id": "from",
@@ -1030,11 +1057,12 @@ export const CONTEXT_WORDS=[
   "zh": "很棒的",
   "sentence": "You have a great idea!",
   "sentenceZh": "你有个很棒的主意！",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/great.svg",
   "pictureCue": true,
   "audio": "word-great",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-great"
  },
  {
   "id": "half",
@@ -1104,11 +1132,12 @@ export const CONTEXT_WORDS=[
   "zh": "乐于助人的；有帮助的",
   "sentence": "My friend is kind and helpful.",
   "sentenceZh": "我的朋友善良又乐于助人。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/helpful.svg",
   "pictureCue": true,
   "audio": "word-helpful",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-helpful"
  },
  {
   "id": "her",
@@ -1163,11 +1192,12 @@ export const CONTEXT_WORDS=[
   "zh": "他（宾格）",
   "sentence": "Please give him the ball.",
   "sentenceZh": "请把球给他。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/him.svg",
   "pictureCue": true,
   "audio": "word-him",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-him"
  },
  {
   "id": "his",
@@ -1192,11 +1222,12 @@ export const CONTEXT_WORDS=[
   "zh": "家乡",
   "sentence": "My hometown is near the sea.",
   "sentenceZh": "我的家乡靠近大海。",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/hometown.svg",
   "pictureCue": true,
   "audio": "word-hometown",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-hometown"
  },
  {
   "id": "hour",
@@ -1206,11 +1237,12 @@ export const CONTEXT_WORDS=[
   "zh": "小时",
   "sentence": "The trip takes one hour.",
   "sentenceZh": "这段旅程需要一个小时。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/hour.svg",
   "pictureCue": true,
   "audio": "word-hour",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-hour"
  },
  {
   "id": "how",
@@ -1235,11 +1267,12 @@ export const CONTEXT_WORDS=[
   "zh": "赶快；匆忙",
   "sentence": "We must hurry to catch the bus.",
   "sentenceZh": "我们得赶快去赶公共汽车。",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/hurry.svg",
   "pictureCue": true,
   "audio": "word-hurry",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-hurry"
  },
  {
   "id": "i",
@@ -1264,11 +1297,12 @@ export const CONTEXT_WORDS=[
   "zh": "主意；想法",
   "sentence": "I have an idea for our game.",
   "sentenceZh": "关于我们的游戏，我有一个主意。",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/idea.svg",
   "pictureCue": true,
   "audio": "word-idea",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-idea"
  },
  {
   "id": "ill",
@@ -1308,11 +1342,12 @@ export const CONTEXT_WORDS=[
   "zh": "有趣的",
   "sentence": "This story is interesting.",
   "sentenceZh": "这个故事很有趣。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/interesting.svg",
   "pictureCue": true,
   "audio": "word-interesting",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-interesting"
  },
  {
   "id": "internet",
@@ -1322,11 +1357,12 @@ export const CONTEXT_WORDS=[
   "zh": "互联网",
   "sentence": "We find the map on the Internet.",
   "sentenceZh": "我们在互联网上找到这张地图。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/internet.svg",
   "pictureCue": true,
   "audio": "word-internet",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-internet"
  },
  {
   "id": "it",
@@ -1336,11 +1372,12 @@ export const CONTEXT_WORDS=[
   "zh": "它",
   "sentence": "It is a little bird.",
   "sentenceZh": "它是一只小鸟。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/it.svg",
   "pictureCue": true,
   "audio": "word-it",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-it"
  },
  {
   "id": "its",
@@ -1350,11 +1387,12 @@ export const CONTEXT_WORDS=[
   "zh": "它的",
   "sentence": "The dog wags its tail.",
   "sentenceZh": "狗摇着它的尾巴。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/its.svg",
   "pictureCue": true,
   "audio": "word-its",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-its"
  },
  {
   "id": "job",
@@ -1364,11 +1402,12 @@ export const CONTEXT_WORDS=[
   "zh": "工作",
   "sentence": "Her job is to teach children.",
   "sentenceZh": "她的工作是教孩子们。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/job.svg",
   "pictureCue": true,
   "audio": "word-job",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-job"
  },
  {
   "id": "keep",
@@ -1423,11 +1462,12 @@ export const CONTEXT_WORDS=[
   "zh": "上一个的",
   "sentence": "We went to the zoo last week.",
   "sentenceZh": "我们上周去了动物园。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/last.svg",
   "pictureCue": true,
   "audio": "word-last",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-last"
  },
  {
   "id": "late",
@@ -1437,11 +1477,12 @@ export const CONTEXT_WORDS=[
   "zh": "迟的；迟到的",
   "sentence": "Do not be late for school.",
   "sentenceZh": "上学不要迟到。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/late.svg",
   "pictureCue": true,
   "audio": "word-late",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-late"
  },
  {
   "id": "left",
@@ -1511,11 +1552,12 @@ export const CONTEXT_WORDS=[
   "zh": "居住",
   "sentence": "I live near the park.",
   "sentenceZh": "我住在公园附近。",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/live.svg",
   "pictureCue": true,
   "audio": "word-live",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-live"
  },
  {
   "id": "lot",
@@ -1525,11 +1567,12 @@ export const CONTEXT_WORDS=[
   "zh": "大量；许多（a lot of）",
   "sentence": "There are a lot of books here.",
   "sentenceZh": "这里有很多书。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/lot.svg",
   "pictureCue": true,
   "audio": "word-lot",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-lot"
  },
  {
   "id": "love",
@@ -1554,11 +1597,12 @@ export const CONTEXT_WORDS=[
   "zh": "可爱的；美好的",
   "sentence": "What a lovely day!",
   "sentenceZh": "多么美好的一天！",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/lovely.svg",
   "pictureCue": true,
   "audio": "word-lovely",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-lovely"
  },
  {
   "id": "make",
@@ -1568,11 +1612,12 @@ export const CONTEXT_WORDS=[
   "zh": "制作",
   "sentence": "Let us make a paper boat.",
   "sentenceZh": "我们做一只纸船吧。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/make.svg",
   "pictureCue": true,
   "audio": "word-make",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-make"
  },
  {
   "id": "many",
@@ -1641,11 +1686,12 @@ export const CONTEXT_WORDS=[
   "zh": "见面；遇见",
   "sentence": "We meet at the library.",
   "sentenceZh": "我们在图书馆见面。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/meet.svg",
   "pictureCue": true,
   "audio": "word-meet",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-meet"
  },
  {
   "id": "middle",
@@ -1670,11 +1716,12 @@ export const CONTEXT_WORDS=[
   "zh": "分钟",
   "sentence": "Please wait one minute.",
   "sentenceZh": "请等一分钟。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/minute.svg",
   "pictureCue": true,
   "audio": "word-minute",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-minute"
  },
  {
   "id": "miss",
@@ -1684,11 +1731,12 @@ export const CONTEXT_WORDS=[
   "zh": "小姐（称呼）",
   "sentence": "Miss Wang is our teacher.",
   "sentenceZh": "王老师是我们的老师。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/miss.svg",
   "pictureCue": true,
   "audio": "word-miss",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-miss"
  },
  {
   "id": "move",
@@ -1713,11 +1761,12 @@ export const CONTEXT_WORDS=[
   "zh": "先生（称呼）",
   "sentence": "Mr Brown is our new teacher.",
   "sentenceZh": "布朗先生是我们的新老师。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mr.svg",
   "pictureCue": true,
   "audio": "word-mr",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-mr"
  },
  {
   "id": "mrs",
@@ -1727,11 +1776,12 @@ export const CONTEXT_WORDS=[
   "zh": "夫人；太太（称呼）",
   "sentence": "Mrs Green is reading a book.",
   "sentenceZh": "格林太太正在读书。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mrs.svg",
   "pictureCue": true,
   "audio": "word-mrs",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-mrs"
  },
  {
   "id": "ms",
@@ -1741,11 +1791,12 @@ export const CONTEXT_WORDS=[
   "zh": "女士（称呼）",
   "sentence": "Ms Lee works at the library.",
   "sentenceZh": "李女士在图书馆工作。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ms.svg",
   "pictureCue": true,
   "audio": "word-ms",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-ms"
  },
  {
   "id": "much",
@@ -1755,11 +1806,12 @@ export const CONTEXT_WORDS=[
   "zh": "许多（修饰不可数名词）",
   "sentence": "How much water do we need?",
   "sentenceZh": "我们需要多少水？",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/much.svg",
   "pictureCue": true,
   "audio": "word-much",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-much"
  },
  {
   "id": "must",
@@ -1769,11 +1821,12 @@ export const CONTEXT_WORDS=[
   "zh": "必须",
   "sentence": "We must stop at a red light.",
   "sentenceZh": "红灯时我们必须停下。",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/must.svg",
   "pictureCue": true,
   "audio": "word-must",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-must"
  },
  {
   "id": "my",
@@ -1798,11 +1851,12 @@ export const CONTEXT_WORDS=[
   "zh": "名字",
   "sentence": "What is your name?",
   "sentenceZh": "你叫什么名字？",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/name.svg",
   "pictureCue": true,
   "audio": "word-name",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-name"
  },
  {
   "id": "near",
@@ -1827,11 +1881,12 @@ export const CONTEXT_WORDS=[
   "zh": "从不",
   "sentence": "I never play on the road.",
   "sentenceZh": "我从不在马路上玩耍。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/never.svg",
   "pictureCue": true,
   "audio": "word-never",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-never"
  },
  {
   "id": "new",
@@ -1850,17 +1905,18 @@ export const CONTEXT_WORDS=[
  },
  {
   "id": "next",
-  "pos": "副词",
+  "pos": "形容词",
   "display": "next",
   "spoken": "next",
   "zh": "下一个的",
   "sentence": "We will visit Grandma next week.",
   "sentenceZh": "我们下周要去看奶奶。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/next.svg",
   "pictureCue": true,
   "audio": "word-next",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-next"
  },
  {
   "id": "nice",
@@ -1870,11 +1926,12 @@ export const CONTEXT_WORDS=[
   "zh": "令人愉快的；友好的",
   "sentence": "It is nice to see you.",
   "sentenceZh": "见到你真高兴。",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/nice.svg",
   "pictureCue": true,
   "audio": "word-nice",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-nice"
  },
  {
   "id": "no",
@@ -1944,11 +2001,12 @@ export const CONTEXT_WORDS=[
   "zh": "……点钟",
   "sentence": "It is three o'clock.",
   "sentenceZh": "现在是三点钟。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/o'clock.svg",
   "pictureCue": true,
   "audio": "word-o'clock",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-o'clock"
  },
  {
   "id": "of",
@@ -1973,11 +2031,12 @@ export const CONTEXT_WORDS=[
   "zh": "离开；关闭（与动词搭配）",
   "sentence": "Please turn off the light.",
   "sentenceZh": "请关灯。",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/off.svg",
   "pictureCue": true,
   "audio": "word-off",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-off"
  },
  {
   "id": "often",
@@ -1987,11 +2046,12 @@ export const CONTEXT_WORDS=[
   "zh": "经常",
   "sentence": "We often play in the park.",
   "sentenceZh": "我们经常在公园里玩。",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/often.svg",
   "pictureCue": true,
   "audio": "word-often",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-often"
  },
  {
   "id": "ok",
@@ -2331,11 +2391,12 @@ export const CONTEXT_WORDS=[
   "zh": "应该",
   "sentence": "We should be kind to others.",
   "sentenceZh": "我们应该善待他人。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/should.svg",
   "pictureCue": true,
   "audio": "word-should",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-should"
  },
  {
   "id": "show",
@@ -2375,11 +2436,12 @@ export const CONTEXT_WORDS=[
   "zh": "所以",
   "sentence": "It is raining, so we stay inside.",
   "sentenceZh": "下雨了，所以我们待在室内。",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/so.svg",
   "pictureCue": true,
   "audio": "word-so",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-so"
  },
  {
   "id": "sock",
@@ -2419,11 +2481,12 @@ export const CONTEXT_WORDS=[
   "zh": "有时",
   "sentence": "Sometimes we walk to school.",
   "sentenceZh": "我们有时走路上学。",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/sometimes.svg",
   "pictureCue": true,
   "audio": "word-sometimes",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-sometimes"
  },
  {
   "id": "speak",
@@ -2478,11 +2541,12 @@ export const CONTEXT_WORDS=[
   "zh": "强壮的；坚固的",
   "sentence": "The horse is big and strong.",
   "sentenceZh": "这匹马又大又壮。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/strong.svg",
   "pictureCue": true,
   "audio": "word-strong",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-strong"
  },
  {
   "id": "study",
@@ -2507,11 +2571,12 @@ export const CONTEXT_WORDS=[
   "zh": "学科",
   "sentence": "What is your favourite subject?",
   "sentenceZh": "你最喜欢的学科是什么？",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/subject.svg",
   "pictureCue": true,
   "audio": "word-subject",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-subject"
  },
  {
   "id": "sunny",
@@ -2536,11 +2601,12 @@ export const CONTEXT_WORDS=[
   "zh": "确定的",
   "sentence": "Are you sure this is your bag?",
   "sentenceZh": "你确定这是你的包吗？",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/sure.svg",
   "pictureCue": true,
   "audio": "word-sure",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-sure"
  },
  {
   "id": "sweater",
@@ -2580,11 +2646,12 @@ export const CONTEXT_WORDS=[
   "zh": "拿；带走",
   "sentence": "Take your umbrella with you.",
   "sentenceZh": "带上你的雨伞。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/take.svg",
   "pictureCue": true,
   "audio": "word-take",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-take"
  },
  {
   "id": "talk",
@@ -2609,11 +2676,12 @@ export const CONTEXT_WORDS=[
   "zh": "告诉",
   "sentence": "Please tell me a story.",
   "sentenceZh": "请给我讲个故事。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/tell.svg",
   "pictureCue": true,
   "audio": "word-tell",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-tell"
  },
  {
   "id": "thank",
@@ -2623,11 +2691,12 @@ export const CONTEXT_WORDS=[
   "zh": "感谢",
   "sentence": "I want to thank you for your help.",
   "sentenceZh": "我想感谢你的帮助。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/thank.svg",
   "pictureCue": true,
   "audio": "word-thank",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-thank"
  },
  {
   "id": "that",
@@ -2772,11 +2841,12 @@ export const CONTEXT_WORDS=[
   "zh": "那些",
   "sentence": "Those birds are flying south.",
   "sentenceZh": "那些鸟正在向南飞。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/those.svg",
   "pictureCue": true,
   "audio": "word-those",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-those"
  },
  {
   "id": "time",
@@ -2786,11 +2856,12 @@ export const CONTEXT_WORDS=[
   "zh": "时间",
   "sentence": "What time is it?",
   "sentenceZh": "现在几点了？",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/time.svg",
   "pictureCue": true,
   "audio": "word-time",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-time"
  },
  {
   "id": "to",
@@ -2830,11 +2901,12 @@ export const CONTEXT_WORDS=[
   "zh": "尝试",
   "sentence": "Let me try again.",
   "sentenceZh": "让我再试一次。",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/try.svg",
   "pictureCue": true,
   "audio": "word-try",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-try"
  },
  {
   "id": "tv",
@@ -2874,11 +2946,12 @@ export const CONTEXT_WORDS=[
   "zh": "我们（宾格）",
   "sentence": "Please play with us.",
   "sentenceZh": "请和我们一起玩。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/us.svg",
   "pictureCue": true,
   "audio": "word-us",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-us"
  },
  {
   "id": "use",
@@ -2888,11 +2961,12 @@ export const CONTEXT_WORDS=[
   "zh": "使用",
   "sentence": "May I use your ruler?",
   "sentenceZh": "我可以用你的尺子吗？",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/use.svg",
   "pictureCue": true,
   "audio": "word-use",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-use"
  },
  {
   "id": "very",
@@ -2902,11 +2976,12 @@ export const CONTEXT_WORDS=[
   "zh": "非常",
   "sentence": "The water is very cold.",
   "sentenceZh": "水很冷。",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/very.svg",
   "pictureCue": true,
   "audio": "word-very",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-very"
  },
  {
   "id": "wake",
@@ -2946,11 +3021,12 @@ export const CONTEXT_WORDS=[
   "zh": "温暖的",
   "sentence": "The sun feels warm on my face.",
   "sentenceZh": "阳光照在脸上暖暖的。",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/warm.svg",
   "pictureCue": true,
   "audio": "word-warm",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-warm"
  },
  {
   "id": "way",
@@ -3005,11 +3081,12 @@ export const CONTEXT_WORDS=[
   "zh": "欢迎",
   "sentence": "Welcome to our school!",
   "sentenceZh": "欢迎来到我们学校！",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/welcome.svg",
   "pictureCue": true,
   "audio": "word-welcome",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-welcome"
  },
  {
   "id": "what",
@@ -3094,11 +3171,12 @@ export const CONTEXT_WORDS=[
   "zh": "谁的",
   "sentence": "Whose bag is this?",
   "sentenceZh": "这是谁的包？",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/whose.svg",
   "pictureCue": true,
   "audio": "word-whose",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-whose"
  },
  {
   "id": "why",
@@ -3108,11 +3186,12 @@ export const CONTEXT_WORDS=[
   "zh": "为什么",
   "sentence": "Why is the sky blue?",
   "sentenceZh": "天空为什么是蓝色的？",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/why.svg",
   "pictureCue": true,
   "audio": "word-why",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-why"
  },
  {
   "id": "will",
@@ -3167,11 +3246,12 @@ export const CONTEXT_WORDS=[
   "zh": "希望；祝愿",
   "sentence": "I wish you a happy birthday.",
   "sentenceZh": "我祝你生日快乐。",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/wish.svg",
   "pictureCue": true,
   "audio": "word-wish",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-wish"
  },
  {
   "id": "with",
@@ -3196,11 +3276,12 @@ export const CONTEXT_WORDS=[
   "zh": "精彩的；极好的",
   "sentence": "We had a wonderful day at the beach.",
   "sentenceZh": "我们在海滩度过了美好的一天。",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/wonderful.svg",
   "pictureCue": true,
   "audio": "word-wonderful",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-wonderful"
  },
  {
   "id": "work",
@@ -3285,11 +3366,12 @@ export const CONTEXT_WORDS=[
   "zh": "年轻的",
   "sentence": "The young bird cannot fly yet.",
   "sentenceZh": "这只小鸟还不会飞。",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/young.svg",
   "pictureCue": true,
   "audio": "word-young",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-young"
  },
  {
   "id": "your",
@@ -3299,43 +3381,46 @@ export const CONTEXT_WORDS=[
   "zh": "你的；你们的",
   "sentence": "Is this your pencil?",
   "sentenceZh": "这是你的铅笔吗？",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/your.svg",
   "pictureCue": true,
   "audio": "word-your",
-  "contentSource": "primary-context-v1"
+  "contentSource": "primary-context-v1",
+  "emoji": "project-context-01-your"
  },
  {
   "id": "abandon",
   "zh": "放弃",
   "pos": "动词",
-  "sentence": "I won't abandon you.",
-  "sentenceZh": "我不会放弃你的。",
+  "sentence": "We will not abandon our plan.",
+  "sentenceZh": "我们不会放弃我们的计划。",
   "display": "abandon",
   "spoken": "abandon",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/abandon.svg",
   "pictureCue": true,
   "audio": "word-abandon",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2271940 (CK) & #11236338 (klzlueylx)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-abandon"
  },
  {
   "id": "ability",
   "zh": "能力",
   "pos": "名词",
-  "sentence": "He's a man of ability.",
-  "sentenceZh": "他是个能干的男人。",
+  "sentence": "She has the ability to swim.",
+  "sentenceZh": "她有游泳的能力。",
   "display": "ability",
   "spoken": "ability",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/ability.svg",
   "pictureCue": true,
   "audio": "word-ability",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11129697 (CK) & #366865 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-ability"
  },
  {
   "id": "able",
@@ -3345,29 +3430,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我会游泳。",
   "display": "able",
   "spoken": "able",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/able.svg",
   "pictureCue": true,
   "audio": "word-able",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #256177 (CK) & #918075 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-able"
  },
  {
   "id": "abnormal",
   "zh": "异常的",
   "pos": "形容词",
-  "sentence": "Environmental pollution is causing abnormal weather conditions.",
-  "sentenceZh": "环境污染正造成异常的天气情况。",
+  "sentence": "Snow in summer is abnormal here.",
+  "sentenceZh": "这里夏天下雪是不正常的。",
   "display": "abnormal",
   "spoken": "abnormal",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/abnormal.svg",
   "pictureCue": true,
   "audio": "word-abnormal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21016 (CK) & #797018 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-abnormal"
  },
  {
   "id": "aboard",
@@ -3377,13 +3464,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那艘船上有多少人？",
   "display": "aboard",
   "spoken": "aboard",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/aboard.svg",
   "pictureCue": true,
   "audio": "word-aboard",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1963212 (CK) & #13563495 (LeviHighway)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-01-aboard"
  },
  {
   "id": "above",
@@ -3410,13 +3498,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想要出国。",
   "display": "abroad",
   "spoken": "abroad",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/abroad.svg",
   "pictureCue": true,
   "audio": "word-abroad",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21938 (CK) & #394187 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-01-abroad"
  },
  {
   "id": "absence",
@@ -3426,13 +3515,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "老师注意到他缺席了。",
   "display": "absence",
   "spoken": "absence",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/absence.svg",
   "pictureCue": true,
   "audio": "word-absence",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22559 (Dejo) & #806239 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-absence"
  },
  {
   "id": "absent",
@@ -3442,13 +3532,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆今天没来上课。",
   "display": "absent",
   "spoken": "absent",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/absent.svg",
   "pictureCue": true,
   "audio": "word-absent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7790179 (sharris123) & #2777942 (fenfang557)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-absent"
  },
  {
   "id": "absolutely",
@@ -3458,13 +3549,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你绝对肯定吗？",
   "display": "absolutely",
   "spoken": "absolutely",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/absolutely.svg",
   "pictureCue": true,
   "audio": "word-absolutely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2713496 (CK) & #9961432 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-01-absolutely"
  },
  {
   "id": "abstract",
@@ -3474,13 +3566,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一些抽象艺术是很难理解的。",
   "display": "abstract",
   "spoken": "abstract",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/abstract.svg",
   "pictureCue": true,
   "audio": "word-abstract",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #277567 (CK) & #798166 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-abstract"
  },
  {
   "id": "academic",
@@ -3490,13 +3583,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "图书馆里有很多学术书籍。",
   "display": "academic",
   "spoken": "academic",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/academic.svg",
   "pictureCue": true,
   "audio": "word-academic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3070175 (CK) & #5630453 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-academic"
  },
  {
   "id": "accent",
@@ -3506,29 +3600,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆说话的法国腔很重。",
   "display": "accent",
   "spoken": "accent",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/accent.svg",
   "pictureCue": true,
   "audio": "word-accent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6254237 (CK) & #9961341 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-01-accent"
  },
  {
   "id": "accept",
   "zh": "接受",
   "pos": "动词",
-  "sentence": "I don't accept it.",
-  "sentenceZh": "我不接受。",
+  "sentence": "I accept your gift.",
+  "sentenceZh": "我接受你的礼物。",
   "display": "accept",
   "spoken": "accept",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/accept.svg",
   "pictureCue": true,
   "audio": "word-accept",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2283760 (CK) & #5897891 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-accept"
  },
  {
   "id": "access",
@@ -3538,13 +3634,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "学生可以使用图书馆。",
   "display": "access",
   "spoken": "access",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/access.svg",
   "pictureCue": true,
   "audio": "word-access",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #312428 (CK) & #805213 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-access"
  },
  {
   "id": "accident",
@@ -3571,13 +3668,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她会弹钢琴为我伴奏。",
   "display": "accompany",
   "spoken": "accompany",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/accompany.svg",
   "pictureCue": true,
   "audio": "word-accompany",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #308125 (CK) & #902958 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-accompany"
  },
  {
   "id": "according to",
@@ -3587,29 +3685,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一切按计划进行。",
   "display": "according to",
   "spoken": "according to",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/according to.svg",
   "pictureCue": true,
   "audio": "word-according to",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #51658 (CK) & #834506 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-according to"
  },
  {
   "id": "account",
   "zh": "账户",
   "pos": "名词",
-  "sentence": "Your account is empty.",
-  "sentenceZh": "你的账户空了。",
+  "sentence": "Dad checks his bank account.",
+  "sentenceZh": "爸爸查看他的银行账户。",
   "display": "account",
   "spoken": "account",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/account.svg",
   "pictureCue": true,
   "audio": "word-account",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #70339 (CK) & #5868149 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-01-account"
  },
  {
   "id": "accurate",
@@ -3619,13 +3719,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的手表很准。",
   "display": "accurate",
   "spoken": "accurate",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/accurate.svg",
   "pictureCue": true,
   "audio": "word-accurate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #251021 (CK) & #6150021 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-accurate"
  },
  {
   "id": "ache",
@@ -3652,13 +3753,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "没有什么是不劳而获的。",
   "display": "achieve",
   "spoken": "achieve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/achieve.svg",
   "pictureCue": true,
   "audio": "word-achieve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6873382 (CK) & #334159 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-achieve"
  },
  {
   "id": "achievement",
@@ -3668,13 +3770,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "登月是一项里程碑式的成就。",
   "display": "achievement",
   "spoken": "achievement",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/achievement.svg",
   "pictureCue": true,
   "audio": "word-achievement",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238850 (CM) & #7832320 (Leolaaziano)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-achievement"
  },
  {
   "id": "acid",
@@ -3684,13 +3787,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "柠檬汁中含有一种酸。",
   "display": "acid",
   "spoken": "acid",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/acid.svg",
   "pictureCue": true,
   "audio": "word-acid",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #245176 (CK) & #2819994 (CLARET)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-acid"
  },
  {
   "id": "across",
@@ -3717,13 +3821,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "三思而后行！",
   "display": "act",
   "spoken": "act",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/act.svg",
   "pictureCue": true,
   "audio": "word-act",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4495480 (CK) & #873444 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-act"
  },
  {
   "id": "action",
@@ -3733,13 +3838,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "现在是行动的时候了。",
   "display": "action",
   "spoken": "action",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/action.svg",
   "pictureCue": true,
   "audio": "word-action",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #241607 (CK) & #333240 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-action"
  },
  {
   "id": "active",
@@ -3766,13 +3872,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "阅读是我最喜欢的活动。",
   "display": "activity",
   "spoken": "activity",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/activity.svg",
   "pictureCue": true,
   "audio": "word-activity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48964 (CM) & #336865 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-activity"
  },
  {
   "id": "actor",
@@ -3816,13 +3923,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "实际上我错了。",
   "display": "actually",
   "spoken": "actually",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/actually.svg",
   "pictureCue": true,
   "audio": "word-actually",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7535765 (shekitten) & #7773244 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-actually"
  },
  {
   "id": "adapt",
@@ -3832,13 +3940,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我适应新环境很慢。",
   "display": "adapt",
   "spoken": "adapt",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/adapt.svg",
   "pictureCue": true,
   "audio": "word-adapt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2173049 (erikspen) & #9526055 (jin1)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-adapt"
  },
  {
   "id": "addition",
@@ -3848,13 +3957,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "除了英文，他还说德文。",
   "display": "addition",
   "spoken": "addition",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/addition.svg",
   "pictureCue": true,
   "audio": "word-addition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #26336 (CK) & #1740818 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-addition"
  },
  {
   "id": "address",
@@ -3864,13 +3974,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我知道她的地址。",
   "display": "address",
   "spoken": "address",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/address.svg",
   "pictureCue": true,
   "audio": "word-address",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #309397 (CK) & #782136 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-address"
  },
  {
   "id": "adjust",
@@ -3880,13 +3991,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不能适应这里的气候。",
   "display": "adjust",
   "spoken": "adjust",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/adjust.svg",
   "pictureCue": true,
   "audio": "word-adjust",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2264264 (sharptoothed) & #6091818 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-adjust"
  },
  {
   "id": "admire",
@@ -3896,13 +4008,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我佩服他的勇气。",
   "display": "admire",
   "spoken": "admire",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/admire.svg",
   "pictureCue": true,
   "audio": "word-admire",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #453385 (saasmath) & #512110 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-admire"
  },
  {
   "id": "admit",
@@ -3912,13 +4025,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我承认我错了。",
   "display": "admit",
   "spoken": "admit",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/admit.svg",
   "pictureCue": true,
   "audio": "word-admit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #713297 (Cirilo) & #819339 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-admit"
  },
  {
   "id": "adopt",
@@ -3928,13 +4042,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我妻子想收养一个孩子。",
   "display": "adopt",
   "spoken": "adopt",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/adopt.svg",
   "pictureCue": true,
   "audio": "word-adopt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1413465 (CK) & #1415755 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-adopt"
  },
  {
   "id": "adorable",
@@ -3944,13 +4059,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这只猫很可爱。",
   "display": "adorable",
   "spoken": "adorable",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/adorable.svg",
   "pictureCue": true,
   "audio": "word-adorable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #487303 (adjusting) & #874293 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-adorable"
  },
  {
   "id": "advance",
@@ -3960,29 +4076,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "您必须预先付钱。",
   "display": "advance",
   "spoken": "advance",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/advance.svg",
   "pictureCue": true,
   "audio": "word-advance",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #273598 (CK) & #787172 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-advance"
  },
  {
   "id": "advantage",
-  "zh": "有利条件",
+  "zh": "优势；有利条件",
   "pos": "名词",
-  "sentence": "Let's take advantage of the long weekend.",
-  "sentenceZh": "来好好利用大周末吧。",
+  "sentence": "A map gives us an advantage in this game.",
+  "sentenceZh": "地图让我们在这个游戏中占有优势。",
   "display": "advantage",
   "spoken": "advantage",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/advantage.svg",
   "pictureCue": true,
   "audio": "word-advantage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #278050 (CK) & #1397017 (mtdot)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-advantage"
  },
  {
   "id": "adventure",
@@ -4009,13 +4127,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在电视上宣传我们的产品。",
   "display": "advertise",
   "spoken": "advertise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/advertise.svg",
   "pictureCue": true,
   "audio": "word-advertise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3749112 (CM) & #13278119 (Enzo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-advertise"
  },
  {
   "id": "advice",
@@ -4025,13 +4144,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我喜欢你的建议。",
   "display": "advice",
   "spoken": "advice",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/advice.svg",
   "pictureCue": true,
   "audio": "word-advice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10116947 (ddnktr) & #10983045 (Elaineeeeee)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-advice"
  },
  {
   "id": "advise",
@@ -4041,13 +4161,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我建议你换衣服。",
   "display": "advise",
   "spoken": "advise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/advise.svg",
   "pictureCue": true,
   "audio": "word-advise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2291592 (CK) & #6728909 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-advise"
  },
  {
   "id": "affair",
@@ -4057,13 +4178,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那件事情使他一举成名。",
   "display": "affair",
   "spoken": "affair",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/affair.svg",
   "pictureCue": true,
   "audio": "word-affair",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #400143 (CK) & #846017 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-affair"
  },
  {
   "id": "affect",
@@ -4073,13 +4195,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "其他人的期望会影响我们的行为。",
   "display": "affect",
   "spoken": "affect",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/affect.svg",
   "pictureCue": true,
   "audio": "word-affect",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #827844 (Scott) & #828692 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-affect"
  },
  {
   "id": "afford",
@@ -4089,13 +4212,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我负担不起。",
   "display": "afford",
   "spoken": "afford",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/afford.svg",
   "pictureCue": true,
   "audio": "word-afford",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1832199 (Spamster) & #10260814 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-afford"
  },
  {
   "id": "afraid",
@@ -4139,13 +4263,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "没有人投反对票。",
   "display": "against",
   "spoken": "against",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/against.svg",
   "pictureCue": true,
   "audio": "word-against",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4502773 (CK) & #2000401 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-against"
  },
  {
   "id": "agency",
@@ -4155,13 +4280,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "最近的旅行社在哪里？",
   "display": "agency",
   "spoken": "agency",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/agency.svg",
   "pictureCue": true,
   "audio": "word-agency",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27253 (CK) & #838582 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-agency"
  },
  {
   "id": "agenda",
@@ -4188,13 +4314,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我同意他。",
   "display": "agree",
   "spoken": "agree",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/agree.svg",
   "pictureCue": true,
   "audio": "word-agree",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #260397 (CK) & #408258 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-agree"
  },
  {
   "id": "agreement",
@@ -4204,13 +4331,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们终于达成了一致意见。",
   "display": "agreement",
   "spoken": "agreement",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/agreement.svg",
   "pictureCue": true,
   "audio": "word-agreement",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4529461 (CK) & #926858 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-agreement"
  },
  {
   "id": "agriculture",
@@ -4220,13 +4348,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "农业需要消耗大量的水。",
   "display": "agriculture",
   "spoken": "agriculture",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/agriculture.svg",
   "pictureCue": true,
   "audio": "word-agriculture",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #282303 (CM) & #5640777 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-agriculture"
  },
  {
   "id": "ahead",
@@ -4236,13 +4365,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "在我前面走。",
   "display": "ahead",
   "spoken": "ahead",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ahead.svg",
   "pictureCue": true,
   "audio": "word-ahead",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #321526 (CK) & #517553 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-ahead"
  },
  {
   "id": "ai",
@@ -4252,13 +4382,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "AI是人工智能的略称。",
   "display": "AI",
   "spoken": "AI",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/ai.svg",
   "pictureCue": true,
   "audio": "word-ai",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #427666 (witbrock) & #4104741 (maple)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-ai"
  },
  {
   "id": "artificial intelligence",
@@ -4284,13 +4415,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "别忘了带上急救箱。",
   "display": "aid",
   "spoken": "aid",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/aid.svg",
   "pictureCue": true,
   "audio": "word-aid",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2649680 (sharptoothed) & #5640745 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-aid"
  },
  {
   "id": "alarm",
@@ -4334,13 +4466,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这株小植物还活着。",
   "display": "alive",
   "spoken": "alive",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/alive.svg",
   "pictureCue": true,
   "audio": "word-alive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2570960 (Hybrid) & #2771133 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-alive"
  },
  {
   "id": "allow",
@@ -4350,13 +4483,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请允许我去。",
   "display": "allow",
   "spoken": "allow",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/allow.svg",
   "pictureCue": true,
   "audio": "word-allow",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433651 (CK) & #826174 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-allow"
  },
  {
   "id": "almost",
@@ -4366,13 +4500,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "瓶子快满了。",
   "display": "almost",
   "spoken": "almost",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/almost.svg",
   "pictureCue": true,
   "audio": "word-almost",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5859017 (CK) & #13668344 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-almost"
  },
  {
   "id": "alone",
@@ -4382,13 +4517,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "让我一个人去。",
   "display": "alone",
   "spoken": "alone",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/alone.svg",
   "pictureCue": true,
   "audio": "word-alone",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27652 (CK) & #825893 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-alone"
  },
  {
   "id": "along",
@@ -4398,13 +4534,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请跟我来。",
   "display": "along",
   "spoken": "along",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/along.svg",
   "pictureCue": true,
   "audio": "word-along",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #249620 (CK) & #466246 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-along"
  },
  {
   "id": "already",
@@ -4414,13 +4551,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我已经做完作业了。",
   "display": "already",
   "spoken": "already",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/already.svg",
   "pictureCue": true,
   "audio": "word-already",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1808 (CK) & #502746 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-already"
  },
  {
   "id": "although",
@@ -4430,13 +4568,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "虽然正在下雪，但是我也非去不可。",
   "display": "although",
   "spoken": "although",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/although.svg",
   "pictureCue": true,
   "audio": "word-although",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #272543 (CM) & #1235522 (sunnywqing)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-although"
  },
  {
   "id": "altogether",
@@ -4446,13 +4585,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那不全是错的。",
   "display": "altogether",
   "spoken": "altogether",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/altogether.svg",
   "pictureCue": true,
   "audio": "word-altogether",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7492615 (CK) & #10040427 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-altogether"
  },
  {
   "id": "amateur",
@@ -4462,13 +4602,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我那时还是个外行。",
   "display": "amateur",
   "spoken": "amateur",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/amateur.svg",
   "pictureCue": true,
   "audio": "word-amateur",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5848518 (CK) & #6325054 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-amateur"
  },
  {
   "id": "amazing",
@@ -4495,13 +4636,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她的志向是成为科学家。",
   "display": "ambition",
   "spoken": "ambition",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ambition.svg",
   "pictureCue": true,
   "audio": "word-ambition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #301342 (CM) & #437937 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-ambition"
  },
  {
   "id": "america",
@@ -4545,13 +4687,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个价格含了税。",
   "display": "amount",
   "spoken": "amount",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/amount.svg",
   "pictureCue": true,
   "audio": "word-amount",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59922 (CK) & #404455 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-amount"
  },
  {
   "id": "ancient",
@@ -4561,13 +4704,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些废墟年代久远。",
   "display": "ancient",
   "spoken": "ancient",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/ancient.svg",
   "pictureCue": true,
   "audio": "word-ancient",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3231256 (CK) & #9475761 (jin1)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-ancient"
  },
  {
   "id": "anger",
@@ -4628,13 +4772,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆发现了一种宣布他新闻的新方法。",
   "display": "announce",
   "spoken": "announce",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/announce.svg",
   "pictureCue": true,
   "audio": "word-announce",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #680210 (Source_VOA) & #9960198 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-announce"
  },
  {
   "id": "annoy",
@@ -4644,13 +4789,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "很大的噪声会让邻居烦恼。",
   "display": "annoy",
   "spoken": "annoy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/annoy.svg",
   "pictureCue": true,
   "audio": "word-annoy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #298134 (CK) & #1397133 (mtdot)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-annoy"
  },
  {
   "id": "annual",
@@ -4660,13 +4806,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "学校每年举办一次运动会。",
   "display": "annual",
   "spoken": "annual",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/annual.svg",
   "pictureCue": true,
   "audio": "word-annual",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #261552 (CK) & #2045080 (ydcok)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-annual"
  },
  {
   "id": "another",
@@ -4676,13 +4823,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "再试一次。",
   "display": "another",
   "spoken": "another",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/another.svg",
   "pictureCue": true,
   "audio": "word-another",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3472486 (tabidots) & #824621 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-another"
  },
  {
   "id": "anticipate",
@@ -4692,13 +4840,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我预料会有麻烦。",
   "display": "anticipate",
   "spoken": "anticipate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/anticipate.svg",
   "pictureCue": true,
   "audio": "word-anticipate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243440 (CK) & #941094 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-anticipate"
  },
  {
   "id": "anxious",
@@ -4708,13 +4857,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我渴望见到你。",
   "display": "anxious",
   "spoken": "anxious",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/anxious.svg",
   "pictureCue": true,
   "audio": "word-anxious",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17557 (CK) & #835323 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-anxious"
  },
  {
   "id": "anybody",
@@ -4724,13 +4874,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那边有人吗？",
   "display": "anybody",
   "spoken": "anybody",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/anybody.svg",
   "pictureCue": true,
   "audio": "word-anybody",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2092546 (CK) & #5091361 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-anybody"
  },
  {
   "id": "anyone",
@@ -4740,13 +4891,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "任何人都可以做到。",
   "display": "anyone",
   "spoken": "anyone",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/anyone.svg",
   "pictureCue": true,
   "audio": "word-anyone",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #36596 (CK) & #825765 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-anyone"
  },
  {
   "id": "anything",
@@ -4756,13 +4908,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我甚么都能吃。",
   "display": "anything",
   "spoken": "anything",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/anything.svg",
   "pictureCue": true,
   "audio": "word-anything",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1782754 (Amastan) & #6145402 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-anything"
  },
  {
   "id": "anyway",
@@ -4772,13 +4925,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不管怎样，你永远不会知道。",
   "display": "anyway",
   "spoken": "anyway",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/anyway.svg",
   "pictureCue": true,
   "audio": "word-anyway",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #63264 (CK) & #825764 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-anyway"
  },
  {
   "id": "anywhere",
@@ -4788,13 +4942,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "您可以随便去哪儿。",
   "display": "anywhere",
   "spoken": "anywhere",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/anywhere.svg",
   "pictureCue": true,
   "audio": "word-anywhere",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16250 (CK) & #469416 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-anywhere"
  },
  {
   "id": "apart",
@@ -4804,13 +4959,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆把钟拆开了。",
   "display": "apart",
   "spoken": "apart",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/apart.svg",
   "pictureCue": true,
   "audio": "word-apart",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6106128 (CK) & #8736991 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-apart"
  },
  {
   "id": "apologize",
@@ -4820,13 +4976,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想为迟到道歉。",
   "display": "apologize",
   "spoken": "apologize",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/apologize.svg",
   "pictureCue": true,
   "audio": "word-apologize",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3723618 (CM) & #825188 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-apologize"
  },
  {
   "id": "app",
@@ -4870,13 +5027,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "看来这家商店今天不营业。",
   "display": "apparently",
   "spoken": "apparently",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/apparently.svg",
   "pictureCue": true,
   "audio": "word-apparently",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6223352 (CK) & #6623204 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-apparently"
  },
  {
   "id": "appeal",
@@ -4886,13 +5044,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们提出了请求支持的呼吁。",
   "display": "appeal",
   "spoken": "appeal",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/appeal.svg",
   "pictureCue": true,
   "audio": "word-appeal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #248777 (CK) & #908527 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-appeal"
  },
  {
   "id": "appear",
@@ -4902,13 +5061,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你似乎错了。",
   "display": "appear",
   "spoken": "appear",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/appear.svg",
   "pictureCue": true,
   "audio": "word-appear",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2256273 (CM) & #2255112 (Venki)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-appear"
  },
  {
   "id": "appetite",
@@ -4918,13 +5078,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的胃口很好。",
   "display": "appetite",
   "spoken": "appetite",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/appetite.svg",
   "pictureCue": true,
   "audio": "word-appetite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #299795 (CK) & #833104 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-appetite"
  },
  {
   "id": "apply",
@@ -4934,13 +5095,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这条规则不是任何情况下都奏效的。",
   "display": "apply",
   "spoken": "apply",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/apply.svg",
   "pictureCue": true,
   "audio": "word-apply",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #61201 (CK) & #1424167 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-apply"
  },
  {
   "id": "appointment",
@@ -4950,13 +5112,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我预约了看牙医。",
   "display": "appointment",
   "spoken": "appointment",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/appointment.svg",
   "pictureCue": true,
   "audio": "word-appointment",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #324174 (CK) & #855690 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-appointment"
  },
  {
   "id": "appreciate",
@@ -4983,13 +5146,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请慢慢靠近这匹马。",
   "display": "approach",
   "spoken": "approach",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/approach.svg",
   "pictureCue": true,
   "audio": "word-approach",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #68284 (CK) & #1541586 (CLARET)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-approach"
  },
  {
   "id": "approve",
@@ -4999,13 +5163,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我确定汤姆会同意。",
   "display": "approve",
   "spoken": "approve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/approve.svg",
   "pictureCue": true,
   "audio": "word-approve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3330681 (CK) & #6635876 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-approve"
  },
  {
   "id": "architect",
@@ -5032,13 +5197,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这地区很安静。",
   "display": "area",
   "spoken": "area",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/area.svg",
   "pictureCue": true,
   "audio": "word-area",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433994 (CK) & #825936 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-area"
  },
  {
   "id": "argue",
@@ -5048,13 +5214,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们没有时间来辩论。",
   "display": "argue",
   "spoken": "argue",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/argue.svg",
   "pictureCue": true,
   "audio": "word-argue",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7221544 (Hybrid) & #6093897 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-argue"
  },
  {
   "id": "army",
@@ -5098,13 +5265,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它什么时候到？",
   "display": "arrive",
   "spoken": "arrive",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/arrive.svg",
   "pictureCue": true,
   "audio": "word-arrive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #280089 (CK) & #5762988 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-arrive"
  },
  {
   "id": "arrow",
@@ -5131,13 +5299,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我读了一篇关于太空的文章。",
   "display": "article",
   "spoken": "article",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/article.svg",
   "pictureCue": true,
   "audio": "word-article",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5744380 (CM) & #6073873 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-article"
  },
  {
   "id": "artificial",
@@ -5147,13 +5316,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是朵人造花。",
   "display": "artificial",
   "spoken": "artificial",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/artificial.svg",
   "pictureCue": true,
   "audio": "word-artificial",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42254 (CK) & #1233792 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-artificial"
  },
  {
   "id": "as",
@@ -5163,13 +5333,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "按照我示范的方法折纸。",
   "display": "as",
   "spoken": "as",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/as.svg",
   "pictureCue": true,
   "audio": "word-as",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2029931 (Spamster) & #6150007 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-as"
  },
  {
   "id": "ashamed",
@@ -5179,13 +5350,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他为说了谎感到惭愧。",
   "display": "ashamed",
   "spoken": "ashamed",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ashamed.svg",
   "pictureCue": true,
   "audio": "word-ashamed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #599231 (Dejo) & #745884 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-ashamed"
  },
  {
   "id": "asia",
@@ -5229,13 +5401,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "想像力影响着我们生活的各个方面。",
   "display": "aspect",
   "spoken": "aspect",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/aspect.svg",
   "pictureCue": true,
   "audio": "word-aspect",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1601 (CK) & #334165 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-aspect"
  },
  {
   "id": "assess",
@@ -5245,13 +5418,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她能很准确地评估投资。",
   "display": "assess",
   "spoken": "assess",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/assess.svg",
   "pictureCue": true,
   "audio": "word-assess",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #802915 (CM) & #802914 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-assess"
  },
  {
   "id": "assistant",
@@ -5261,13 +5435,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我正在找一个助手。",
   "display": "assistant",
   "spoken": "assistant",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/assistant.svg",
   "pictureCue": true,
   "audio": "word-assistant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6873100 (CK) & #780401 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-assistant"
  },
  {
   "id": "association",
@@ -5277,13 +5452,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我申请成为协会会员。",
   "display": "association",
   "spoken": "association",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/association.svg",
   "pictureCue": true,
   "audio": "word-association",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #49184 (CK) & #4739246 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-association"
  },
  {
   "id": "assume",
@@ -5293,13 +5469,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "让我们假定那会发生。",
   "display": "assume",
   "spoken": "assume",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/assume.svg",
   "pictureCue": true,
   "audio": "word-assume",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5736648 (CM) & #6064674 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-assume"
  },
  {
   "id": "assumption",
@@ -5309,13 +5486,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们应该核实那个假设。",
   "display": "assumption",
   "spoken": "assumption",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/assumption.svg",
   "pictureCue": true,
   "audio": "word-assumption",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4529621 (CK) & #5691242 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-assumption"
  },
  {
   "id": "astonish",
@@ -5325,13 +5503,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的记忆力总让我吃惊。",
   "display": "astonish",
   "spoken": "astonish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/astonish.svg",
   "pictureCue": true,
   "audio": "word-astonish",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1137403 (CM) & #3043964 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-astonish"
  },
  {
   "id": "athlete",
@@ -5358,13 +5537,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个地方有一种神秘的气氛。",
   "display": "atmosphere",
   "spoken": "atmosphere",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/atmosphere.svg",
   "pictureCue": true,
   "audio": "word-atmosphere",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2105 (CK) & #1778272 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-atmosphere"
  },
  {
   "id": "attach",
@@ -5391,13 +5571,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我哮喘发作了。",
   "display": "attack",
   "spoken": "attack",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/attack.svg",
   "pictureCue": true,
   "audio": "word-attack",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #326617 (CK) & #9961656 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-attack"
  },
  {
   "id": "attempt",
@@ -5407,13 +5588,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆将尝试解开这个谜题。",
   "display": "attempt",
   "spoken": "attempt",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/attempt.svg",
   "pictureCue": true,
   "audio": "word-attempt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3729916 (CM) & #9962262 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-attempt"
  },
  {
   "id": "attend",
@@ -5423,13 +5605,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我将参加这个会议。",
   "display": "attend",
   "spoken": "attend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/attend.svg",
   "pictureCue": true,
   "audio": "word-attend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #256570 (CK) & #819443 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-attend"
  },
  {
   "id": "attention",
@@ -5439,13 +5622,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆在开小差。",
   "display": "attention",
   "spoken": "attention",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/attention.svg",
   "pictureCue": true,
   "audio": "word-attention",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2643954 (CK) & #8511513 (gumblex)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-attention"
  },
  {
   "id": "attitude",
@@ -5455,13 +5639,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我喜欢Tom的态度。",
   "display": "attitude",
   "spoken": "attitude",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/attitude.svg",
   "pictureCue": true,
   "audio": "word-attitude",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3330673 (CK) & #4262701 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-attitude"
  },
  {
   "id": "audience",
@@ -5505,13 +5690,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "老师有权限打开这个房间。",
   "display": "authority",
   "spoken": "authority",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/authority.svg",
   "pictureCue": true,
   "audio": "word-authority",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #307713 (CK) & #805193 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-authority"
  },
  {
   "id": "available",
@@ -5521,13 +5707,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个位子空着吗？",
   "display": "available",
   "spoken": "available",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/available.svg",
   "pictureCue": true,
   "audio": "word-available",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1492938 (weihaiping) & #471070 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-available"
  },
  {
   "id": "average",
@@ -5537,13 +5724,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "二和四的平均值是三。",
   "display": "average",
   "spoken": "average",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/average.svg",
   "pictureCue": true,
   "audio": "word-average",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17122 (CK) & #839519 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-average"
  },
  {
   "id": "avoid",
@@ -5553,13 +5741,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我宁愿避免这种事。",
   "display": "avoid",
   "spoken": "avoid",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/avoid.svg",
   "pictureCue": true,
   "audio": "word-avoid",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1298410 (Eldad) & #9489998 (jin1)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-avoid"
  },
  {
   "id": "awake",
@@ -5586,13 +5775,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他没有意识到自己有危险。",
   "display": "aware",
   "spoken": "aware",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/aware.svg",
   "pictureCue": true,
   "audio": "word-aware",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #290658 (CK) & #882985 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-aware"
  },
  {
   "id": "away",
@@ -5619,13 +5809,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我看那糟透了。",
   "display": "awful",
   "spoken": "awful",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/awful.svg",
   "pictureCue": true,
   "audio": "word-awful",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2408156 (CK) & #5576797 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-awful"
  },
  {
   "id": "awkward",
@@ -5635,13 +5826,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我刚穿上溜冰鞋时步子很笨拙。",
   "display": "awkward",
   "spoken": "awkward",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/awkward.svg",
   "pictureCue": true,
   "audio": "word-awkward",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #267839 (CK) & #908515 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-awkward"
  },
  {
   "id": "background",
@@ -5651,13 +5843,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "Tom有兽医背景。",
   "display": "background",
   "spoken": "background",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/background.svg",
   "pictureCue": true,
   "audio": "word-background",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4493586 (CK) & #4504477 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-background"
  },
  {
   "id": "backward",
@@ -5667,13 +5860,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆后退一步。",
   "display": "backward",
   "spoken": "backward",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/backward.svg",
   "pictureCue": true,
   "audio": "word-backward",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1024079 (CK) & #5762997 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-backward"
  },
  {
   "id": "ban",
@@ -5683,13 +5877,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们应该禁止针对儿童的广告。",
   "display": "ban",
   "spoken": "ban",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ban.svg",
   "pictureCue": true,
   "audio": "word-ban",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1372113 (Spamster) & #5698044 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-ban"
  },
  {
   "id": "bar",
@@ -5733,13 +5928,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我快看不到你了。",
   "display": "barely",
   "spoken": "barely",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/barely.svg",
   "pictureCue": true,
   "audio": "word-barely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2300615 (CK) & #6583892 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-barely"
  },
  {
   "id": "base",
@@ -5749,13 +5945,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的理论是以什么为基础?",
   "display": "base",
   "spoken": "base",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/base.svg",
   "pictureCue": true,
   "audio": "word-base",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16189 (Zifre) & #775745 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-base"
  },
  {
   "id": "basic",
@@ -5765,13 +5962,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它是基本人权。",
   "display": "basic",
   "spoken": "basic",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/basic.svg",
   "pictureCue": true,
   "audio": "word-basic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1983986 (Spamster) & #5613655 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-02-basic"
  },
  {
   "id": "basis",
@@ -5781,13 +5979,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些主张没有科学的根据。",
   "display": "basis",
   "spoken": "basis",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/basis.svg",
   "pictureCue": true,
   "audio": "word-basis",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #55192 (CM) & #881727 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-basis"
  },
  {
   "id": "battle",
@@ -5797,13 +5996,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在历史课上学习了一场著名战役。",
   "display": "battle",
   "spoken": "battle",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/battle.svg",
   "pictureCue": true,
   "audio": "word-battle",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1877 (Swift) & #349671 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-02-battle"
  },
  {
   "id": "am",
@@ -5813,13 +6013,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我准备好学习了。",
   "display": "am",
   "spoken": "am",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/am.svg",
   "pictureCue": true,
   "audio": "word-am",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #386704 (Mouseneb) & #333655 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-am"
  },
  {
   "id": "are",
@@ -5863,13 +6064,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们欣赏了湖泊的美。",
   "display": "beauty",
   "spoken": "beauty",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/beauty.svg",
   "pictureCue": true,
   "audio": "word-beauty",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #317049 (CK) & #425569 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-beauty"
  },
  {
   "id": "become",
@@ -5879,13 +6081,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想成为一名老师。",
   "display": "become",
   "spoken": "become",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/become.svg",
   "pictureCue": true,
   "audio": "word-become",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4091865 (andymakespasta) & #4061625 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-become"
  },
  {
   "id": "behalf",
@@ -5895,13 +6098,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她代表我们班发言。",
   "display": "behalf",
   "spoken": "behalf",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/behalf.svg",
   "pictureCue": true,
   "audio": "word-behalf",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #298873 (CK) & #8882024 (Rebecca)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-behalf"
  },
  {
   "id": "behave",
@@ -5911,13 +6115,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有时候成人表现得像儿童。",
   "display": "behave",
   "spoken": "behave",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/behave.svg",
   "pictureCue": true,
   "audio": "word-behave",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1637161 (Spamster) & #5581726 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-behave"
  },
  {
   "id": "being",
@@ -5927,13 +6132,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "对不起，我迟到了。",
   "display": "being",
   "spoken": "being",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/being.svg",
   "pictureCue": true,
   "audio": "word-being",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1528604 (erikspen) & #444740 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-being"
  },
  {
   "id": "belief",
@@ -5943,13 +6149,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我相信，知识就是力量。",
   "display": "belief",
   "spoken": "belief",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/belief.svg",
   "pictureCue": true,
   "audio": "word-belief",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #277047 (CK) & #1423325 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-belief"
  },
  {
   "id": "believe",
@@ -5959,13 +6166,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我相信你。",
   "display": "believe",
   "spoken": "believe",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/believe.svg",
   "pictureCue": true,
   "audio": "word-believe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #237698 (CK) & #335418 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-believe"
  },
  {
   "id": "belong",
@@ -5975,13 +6183,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是汤姆的东西吗？",
   "display": "belong",
   "spoken": "belong",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/belong.svg",
   "pictureCue": true,
   "audio": "word-belong",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3637643 (MTC) & #4879141 (musclegirlxyp)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-belong"
  },
  {
   "id": "below",
@@ -5991,20 +6200,21 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的房间就在楼下。",
   "display": "below",
   "spoken": "below",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/below.svg",
   "pictureCue": true,
   "audio": "word-below",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #251777 (U2FS) & #788810 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-below"
  },
  {
   "id": "belt",
-  "zh": "带子",
+  "zh": "腰带",
   "pos": "名词",
-  "sentence": "Fasten your seat belt.",
-  "sentenceZh": "系上您的安全带。",
+  "sentence": "This belt is brown.",
+  "sentenceZh": "这条腰带是棕色的。",
   "display": "belt",
   "spoken": "belt",
   "topic": "clothes",
@@ -6013,15 +6223,15 @@ export const CONTEXT_WORDS=[
   "audio": "word-belt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #53900 (CK) & #335035 (fucongcong)",
-  "sentenceAdapted": false,
+  "sentenceAdapted": true,
   "emoji": "project-belt"
  },
  {
   "id": "bend",
   "zh": "弯曲",
   "pos": "动词",
-  "sentence": "I can't bend my right arm.",
-  "sentenceZh": "我无法弯曲我的右手臂。",
+  "sentence": "I can bend my arm.",
+  "sentenceZh": "我会弯曲手臂。",
   "display": "bend",
   "spoken": "bend",
   "topic": "actions",
@@ -6041,13 +6251,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那儿除了我，一个人都没有。",
   "display": "besides",
   "spoken": "besides",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/besides.svg",
   "pictureCue": true,
   "audio": "word-besides",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #50966 (CK) & #333793 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-besides"
  },
  {
   "id": "bet",
@@ -6074,13 +6285,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我回家比较好。",
   "display": "better",
   "spoken": "better",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/better.svg",
   "pictureCue": true,
   "audio": "word-better",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2548818 (CK) & #8215728 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-better"
  },
  {
   "id": "beyond",
@@ -6090,13 +6302,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这风景美得无法形容。",
   "display": "beyond",
   "spoken": "beyond",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/beyond.svg",
   "pictureCue": true,
   "audio": "word-beyond",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48051 (Zifre) & #795259 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-beyond"
  },
  {
   "id": "bill",
@@ -6123,13 +6336,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在生物课上学习植物。",
   "display": "biology",
   "spoken": "biology",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/biology.svg",
   "pictureCue": true,
   "audio": "word-biology",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1317 (brauliobezerra) & #37 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-biology"
  },
  {
   "id": "birth",
@@ -6139,13 +6353,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的生日是几号？",
   "display": "birth",
   "spoken": "birth",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/birth.svg",
   "pictureCue": true,
   "audio": "word-birth",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #703328 (papabear) & #844152 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-birth"
  },
  {
   "id": "bit",
@@ -6155,13 +6370,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有点累了。",
   "display": "bit",
   "spoken": "bit",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/bit.svg",
   "pictureCue": true,
   "audio": "word-bit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258672 (CK) & #12422343 (jkyochen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-bit"
  },
  {
   "id": "bitter",
@@ -6171,13 +6387,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这药尝起来很苦。",
   "display": "bitter",
   "spoken": "bitter",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/bitter.svg",
   "pictureCue": true,
   "audio": "word-bitter",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #64512 (CK) & #824637 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-bitter"
  },
  {
   "id": "blame",
@@ -6187,13 +6404,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请不要责怪自己。",
   "display": "blame",
   "spoken": "blame",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/blame.svg",
   "pictureCue": true,
   "audio": "word-blame",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3374200 (CK) & #790573 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-blame"
  },
  {
   "id": "blank",
@@ -6254,13 +6472,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你写过博客吗？",
   "display": "blog",
   "spoken": "blog",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/blog.svg",
   "pictureCue": true,
   "audio": "word-blog",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1765121 (alec) & #1762992 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-blog"
  },
  {
   "id": "blouse",
@@ -6304,13 +6523,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "船上有医生吗?",
   "display": "board",
   "spoken": "board",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/board.svg",
   "pictureCue": true,
   "audio": "word-board",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #463451 (CK) & #790268 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-board"
  },
  {
   "id": "border",
@@ -6354,13 +6574,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她是什么时候出生的？",
   "display": "born",
   "spoken": "born",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/born.svg",
   "pictureCue": true,
   "audio": "word-born",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #310506 (CK) & #332914 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-born"
  },
  {
   "id": "borrow",
@@ -6370,13 +6591,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你借它了吗？",
   "display": "borrow",
   "spoken": "borrow",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/borrow.svg",
   "pictureCue": true,
   "audio": "word-borrow",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3393255 (CK) & #5993947 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-borrow"
  },
  {
   "id": "boss",
@@ -6386,13 +6608,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不是老板。",
   "display": "boss",
   "spoken": "boss",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/boss.svg",
   "pictureCue": true,
   "audio": "word-boss",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4500109 (CK) & #6728911 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-boss"
  },
  {
   "id": "both",
@@ -6402,13 +6625,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆两个都喜欢。",
   "display": "both",
   "spoken": "both",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/both.svg",
   "pictureCue": true,
   "audio": "word-both",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2647470 (CK) & #10199322 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-both"
  },
  {
   "id": "bother",
@@ -6418,13 +6642,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "别麻烦保安了。",
   "display": "bother",
   "spoken": "bother",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/bother.svg",
   "pictureCue": true,
   "audio": "word-bother",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2270322 (CK) & #5650531 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-bother"
  },
  {
   "id": "bottom",
@@ -6451,13 +6676,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他准会忘。",
   "display": "bound",
   "spoken": "bound",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/bound.svg",
   "pictureCue": true,
   "audio": "word-bound",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2795200 (CM) & #5550267 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-bound"
  },
  {
   "id": "break",
@@ -6552,13 +6778,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "真是太妙了。",
   "display": "brilliant",
   "spoken": "brilliant",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/brilliant.svg",
   "pictureCue": true,
   "audio": "word-brilliant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5736710 (CM) & #8570958 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-brilliant"
  },
  {
   "id": "broad",
@@ -6585,13 +6812,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那个节目现在正在播出。",
   "display": "broadcast",
   "spoken": "broadcast",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/broadcast.svg",
   "pictureCue": true,
   "audio": "word-broadcast",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #387432 (CK) & #874373 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-broadcast"
  },
  {
   "id": "brochure",
@@ -6618,13 +6846,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一部低成本的电影。",
   "display": "budget",
   "spoken": "budget",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/budget.svg",
   "pictureCue": true,
   "audio": "word-budget",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7773713 (sharris123) & #5941708 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-budget"
  },
  {
   "id": "buffet",
@@ -6645,10 +6874,10 @@ export const CONTEXT_WORDS=[
  },
  {
   "id": "bunch",
-  "zh": "一群",
+  "zh": "一串",
   "pos": "名词",
-  "sentence": "Tom was with a bunch of strangers.",
-  "sentenceZh": "汤姆和一堆陌生人在一起。",
+  "sentence": "Here is a bunch of grapes.",
+  "sentenceZh": "这是一串葡萄。",
   "display": "bunch",
   "spoken": "bunch",
   "topic": "food",
@@ -6657,7 +6886,7 @@ export const CONTEXT_WORDS=[
   "audio": "word-bunch",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8051797 (CK) & #8748585 (cxpadonis)",
-  "sentenceAdapted": false,
+  "sentenceAdapted": true,
   "emoji": "project-direct-bunch"
  },
  {
@@ -6685,13 +6914,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "孩子们突然大笑起来。",
   "display": "burst",
   "spoken": "burst",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/burst.svg",
   "pictureCue": true,
   "audio": "word-burst",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1026938 (CK) & #1416054 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-burst"
  },
  {
   "id": "business",
@@ -6701,13 +6931,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我来出差。",
   "display": "business",
   "spoken": "business",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/business.svg",
   "pictureCue": true,
   "audio": "word-business",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #13198856 (atitarev) & #13519457 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-business"
  },
  {
   "id": "cafeteria",
@@ -6802,13 +7033,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我该取消通话吗?",
   "display": "cancel",
   "spoken": "cancel",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/cancel.svg",
   "pictureCue": true,
   "audio": "word-cancel",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #278426 (CK) & #333285 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-cancel"
  },
  {
   "id": "cancer",
@@ -6818,13 +7050,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "科学家研究治疗癌症的方法。",
   "display": "cancer",
   "spoken": "cancer",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/cancer.svg",
   "pictureCue": true,
   "audio": "word-cancer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #302426 (CK) & #767035 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-cancer"
  },
  {
   "id": "candidate",
@@ -6834,13 +7067,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他是那个职位最有希望的候选人。",
   "display": "candidate",
   "spoken": "candidate",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/candidate.svg",
   "pictureCue": true,
   "audio": "word-candidate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #291051 (CK) & #2411006 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-candidate"
  },
  {
   "id": "capable",
@@ -6850,13 +7084,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有能力教授西班牙文。",
   "display": "capable",
   "spoken": "capable",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/capable.svg",
   "pictureCue": true,
   "audio": "word-capable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #290331 (CK) & #4247391 (egg0073)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-capable"
  },
  {
   "id": "capacity",
@@ -6866,13 +7101,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这辆公车客满了。",
   "display": "capacity",
   "spoken": "capacity",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/capacity.svg",
   "pictureCue": true,
   "audio": "word-capacity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #35287 (CK) & #871220 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-capacity"
  },
  {
   "id": "capital",
@@ -6882,13 +7118,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "日本的首都是东京。",
   "display": "capital",
   "spoken": "capital",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/capital.svg",
   "pictureCue": true,
   "audio": "word-capital",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #281408 (CK) & #333236 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-capital"
  },
  {
   "id": "captain",
@@ -6915,13 +7152,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这台相机能捕捉细微的细节。",
   "display": "capture",
   "spoken": "capture",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/capture.svg",
   "pictureCue": true,
   "audio": "word-capture",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #802598 (Source_VOA) & #873442 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-capture"
  },
  {
   "id": "care",
@@ -6931,13 +7169,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们关心朋友。",
   "display": "care",
   "spoken": "care",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/care.svg",
   "pictureCue": true,
   "audio": "word-care",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2271938 (CK) & #11236335 (klzlueylx)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-care"
  },
  {
   "id": "careless",
@@ -6947,13 +7186,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一个粗心造成的错误改变了答案。",
   "display": "careless",
   "spoken": "careless",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/careless.svg",
   "pictureCue": true,
   "audio": "word-careless",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1418885 (Spamster) & #5931753 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-careless"
  },
  {
   "id": "carpet",
@@ -6980,13 +7220,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "结案了。",
   "display": "case",
   "spoken": "case",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/case.svg",
   "pictureCue": true,
   "audio": "word-case",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1257651 (Triwizard) & #766447 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-case"
  },
  {
   "id": "cash",
@@ -7013,13 +7254,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们需要找到问题的原因。",
   "display": "cause",
   "spoken": "cause",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/cause.svg",
   "pictureCue": true,
   "audio": "word-cause",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3825834 (CK) & #5780609 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-cause"
  },
  {
   "id": "cave",
@@ -7080,13 +7322,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你现在是名人了。",
   "display": "celebrity",
   "spoken": "celebrity",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/celebrity.svg",
   "pictureCue": true,
   "audio": "word-celebrity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2546244 (CK) & #6089775 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-celebrity"
  },
  {
   "id": "cell",
@@ -7126,17 +7369,18 @@ export const CONTEXT_WORDS=[
   "id": "central",
   "zh": "中央的",
   "pos": "形容词",
-  "sentence": "Which way is Central Park?",
-  "sentenceZh": "中央公园在哪个方向？",
+  "sentence": "The fountain is in the central part of the park.",
+  "sentenceZh": "喷泉在公园的中央部分。",
   "display": "central",
   "spoken": "central",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/central.svg",
   "pictureCue": true,
   "audio": "word-central",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #51267 (CK) & #836330 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-central"
  },
  {
   "id": "center",
@@ -7163,13 +7407,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一百年被叫做一个世纪。",
   "display": "century",
   "spoken": "century",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/century.svg",
   "pictureCue": true,
   "audio": "word-century",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #318299 (CK) & #1695405 (Venki)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-century"
  },
  {
   "id": "ceremony",
@@ -7179,13 +7424,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "仪式以他的讲话开始。",
   "display": "ceremony",
   "spoken": "ceremony",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ceremony.svg",
   "pictureCue": true,
   "audio": "word-ceremony",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #20057 (CK) & #1394872 (mtdot)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-ceremony"
  },
  {
   "id": "certain",
@@ -7195,13 +7441,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你确定这个答案吗？",
   "display": "certain",
   "spoken": "certain",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/certain.svg",
   "pictureCue": true,
   "audio": "word-certain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #35179 (CK) & #792397 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-certain"
  },
  {
   "id": "certainly",
@@ -7211,13 +7458,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你今天确实很努力。",
   "display": "certainly",
   "spoken": "certainly",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/certainly.svg",
   "pictureCue": true,
   "audio": "word-certainly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1095422 (CK) & #9480683 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-certainly"
  },
  {
   "id": "chairman",
@@ -7227,13 +7475,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谁将当选主席呢？",
   "display": "chairman",
   "spoken": "chairman",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/chairman.svg",
   "pictureCue": true,
   "audio": "word-chairman",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7712694 (CK) & #1468440 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-chairman"
  },
  {
   "id": "challenge",
@@ -7260,13 +7509,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我错过了我的机会。",
   "display": "chance",
   "spoken": "chance",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/chance.svg",
   "pictureCue": true,
   "audio": "word-chance",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2387243 (CK) & #1959996 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-chance"
  },
  {
   "id": "change",
@@ -7276,13 +7526,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是你零钱。",
   "display": "change",
   "spoken": "change",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/change.svg",
   "pictureCue": true,
   "audio": "word-change",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2421 (CK) & #772037 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-change"
  },
  {
   "id": "chapter",
@@ -7292,13 +7543,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "从第一章开始吧。",
   "display": "chapter",
   "spoken": "chapter",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/chapter.svg",
   "pictureCue": true,
   "audio": "word-chapter",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #276047 (CK) & #13532019 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-chapter"
  },
  {
   "id": "character",
@@ -7308,29 +7560,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你最喜欢故事里的哪个人物？",
   "display": "character",
   "spoken": "character",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/character.svg",
   "pictureCue": true,
   "audio": "word-character",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #288286 (CK) & #333195 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-character"
  },
  {
   "id": "characteristic",
-  "zh": "特有的",
+  "zh": "特有的；典型的",
   "pos": "形容词",
-  "sentence": "I got over the difficulty with my characteristic tenacity.",
-  "sentenceZh": "我凭韧性克服了困难。",
+  "sentence": "A long neck is characteristic of a giraffe.",
+  "sentenceZh": "长脖子是长颈鹿的典型特征。",
   "display": "characteristic",
   "spoken": "characteristic",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/characteristic.svg",
   "pictureCue": true,
   "audio": "word-characteristic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258109 (CM) & #5655348 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-characteristic"
  },
  {
   "id": "charge",
@@ -7357,13 +7611,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆捐一半他的薪水给他最喜欢的慈善机构。",
   "display": "charity",
   "spoken": "charity",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/charity.svg",
   "pictureCue": true,
   "audio": "word-charity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1094238 (CK) & #8658809 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-charity"
  },
  {
   "id": "charm",
@@ -7373,13 +7628,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "旧村屋有它自己一定的魅力。",
   "display": "charm",
   "spoken": "charm",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/charm.svg",
   "pictureCue": true,
   "audio": "word-charm",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48155 (orcrist) & #847801 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-charm"
  },
  {
   "id": "chat",
@@ -7406,13 +7662,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它真的很便宜。",
   "display": "cheap",
   "spoken": "cheap",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/cheap.svg",
   "pictureCue": true,
   "audio": "word-cheap",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1308551 (shanghainese) & #793263 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-cheap"
  },
  {
   "id": "check",
@@ -7422,13 +7679,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你检查这个了吗？",
   "display": "check",
   "spoken": "check",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/check.svg",
   "pictureCue": true,
   "audio": "word-check",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3408654 (CK) & #5926165 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-check"
  },
  {
   "id": "cheer",
@@ -7438,13 +7696,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "情况正在改善，所以振作起来！",
   "display": "cheer",
   "spoken": "cheer",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/cheer.svg",
   "pictureCue": true,
   "audio": "word-cheer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #263782 (CK) & #819250 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-cheer"
  },
  {
   "id": "chemistry",
@@ -7454,13 +7713,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在化学课上学习了水的知识。",
   "display": "chemistry",
   "spoken": "chemistry",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/chemistry.svg",
   "pictureCue": true,
   "audio": "word-chemistry",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #294218 (CM) & #332985 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-chemistry"
  },
  {
   "id": "chief",
@@ -7470,13 +7730,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他是我部门的主管。",
   "display": "chief",
   "spoken": "chief",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/chief.svg",
   "pictureCue": true,
   "audio": "word-chief",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #283724 (CK) & #882509 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-chief"
  },
  {
   "id": "childhood",
@@ -7486,13 +7747,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的童年很快乐。",
   "display": "childhood",
   "spoken": "childhood",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/childhood.svg",
   "pictureCue": true,
   "audio": "word-childhood",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #257385 (CK) & #8727834 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-childhood"
  },
  {
   "id": "chip",
@@ -7519,13 +7781,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那时我没有选择的余地。",
   "display": "choice",
   "spoken": "choice",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/choice.svg",
   "pictureCue": true,
   "audio": "word-choice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1553472 (CK) & #1783803 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-choice"
  },
  {
   "id": "christmas",
@@ -7586,13 +7849,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以在服务台认领你的包。",
   "display": "claim",
   "spoken": "claim",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/claim.svg",
   "pictureCue": true,
   "audio": "word-claim",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27153 (CK) & #858717 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-claim"
  },
  {
   "id": "clear",
@@ -7636,13 +7900,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你听到了点击声吗？",
   "display": "click",
   "spoken": "click",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/click.svg",
   "pictureCue": true,
   "audio": "word-click",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #818087 (CK) & #818091 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-click"
  },
  {
   "id": "climate",
@@ -7652,13 +7917,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对这气候习惯了。",
   "display": "climate",
   "spoken": "climate",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/climate.svg",
   "pictureCue": true,
   "audio": "word-climate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7810469 (CK) & #5696835 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-climate"
  },
  {
   "id": "clinic",
@@ -7702,13 +7968,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "欢迎来到俱乐部。",
   "display": "club",
   "spoken": "club",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/club.svg",
   "pictureCue": true,
   "audio": "word-club",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2182552 (Hybrid) & #10204464 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-club"
  },
  {
   "id": "clue",
@@ -7718,13 +7985,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我一无所知。",
   "display": "clue",
   "spoken": "clue",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/clue.svg",
   "pictureCue": true,
   "audio": "word-clue",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2563243 (CK) & #7772071 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-clue"
  },
  {
   "id": "coal",
@@ -7836,13 +8104,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我发现这个专栏很有趣。",
   "display": "column",
   "spoken": "column",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/column.svg",
   "pictureCue": true,
   "audio": "word-column",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #61091 (CK) & #13523596 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-column"
  },
  {
   "id": "comfort",
@@ -7852,13 +8121,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可以安慰她。",
   "display": "comfort",
   "spoken": "comfort",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/comfort.svg",
   "pictureCue": true,
   "audio": "word-comfort",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #261349 (CK) & #779035 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-comfort"
  },
  {
   "id": "comfortable",
@@ -7868,13 +8138,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是张舒服的椅子。",
   "display": "comfortable",
   "spoken": "comfortable",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/comfortable.svg",
   "pictureCue": true,
   "audio": "word-comfortable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243639 (mamat) & #335033 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-comfortable"
  },
  {
   "id": "comic",
@@ -7901,13 +8172,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有很好的英语能力。",
   "display": "command",
   "spoken": "command",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/command.svg",
   "pictureCue": true,
   "audio": "word-command",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #293942 (CK) & #881589 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-command"
  },
  {
   "id": "comment",
@@ -7917,13 +8189,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谢谢您的评论。",
   "display": "comment",
   "spoken": "comment",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/comment.svg",
   "pictureCue": true,
   "audio": "word-comment",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1840167 (luca22) & #5100134 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-comment"
  },
  {
   "id": "committee",
@@ -7933,13 +8206,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你是委员会中的成员吗？",
   "display": "committee",
   "spoken": "committee",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/committee.svg",
   "pictureCue": true,
   "audio": "word-committee",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16808 (CK) & #834318 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-committee"
  },
  {
   "id": "common",
@@ -7949,13 +8223,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个常见错误。",
   "display": "common",
   "spoken": "common",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/common.svg",
   "pictureCue": true,
   "audio": "word-common",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #303009 (CK) & #1746046 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-common"
  },
  {
   "id": "communicate",
@@ -7965,13 +8240,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "飞行员用无线电与机场沟通。",
   "display": "communicate",
   "spoken": "communicate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/communicate.svg",
   "pictureCue": true,
   "audio": "word-communicate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #35510 (Eldad) & #798201 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-communicate"
  },
  {
   "id": "communication",
@@ -7981,13 +8257,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "英语是一种沟通的手段。",
   "display": "communication",
   "spoken": "communication",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/communication.svg",
   "pictureCue": true,
   "audio": "word-communication",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #26247 (CK) & #811870 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-communication"
  },
  {
   "id": "community",
@@ -8014,13 +8291,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我姑姑在一家小公司工作。",
   "display": "company",
   "spoken": "company",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/company.svg",
   "pictureCue": true,
   "audio": "word-company",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #49044 (Scott) & #1366056 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-company"
  },
  {
   "id": "compare",
@@ -8030,13 +8308,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "比较你和汤姆的答案。",
   "display": "compare",
   "spoken": "compare",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/compare.svg",
   "pictureCue": true,
   "audio": "word-compare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16945 (CK) & #834235 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-compare"
  },
  {
   "id": "comparison",
@@ -8046,13 +8325,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这张图表展示了这两座城市的对比。",
   "display": "comparison",
   "spoken": "comparison",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/comparison.svg",
   "pictureCue": true,
   "audio": "word-comparison",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #279731 (Zifre) & #784409 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-comparison"
  },
  {
   "id": "competition",
@@ -8062,13 +8342,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我参加了一个摄影比赛。",
   "display": "competition",
   "spoken": "competition",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/competition.svg",
   "pictureCue": true,
   "audio": "word-competition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7834169 (sharris123) & #5957621 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-competition"
  },
  {
   "id": "complain",
@@ -8095,13 +8376,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一片寂静无声。",
   "display": "complete",
   "spoken": "complete",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/complete.svg",
   "pictureCue": true,
   "audio": "word-complete",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3722195 (CM) & #5091663 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-complete"
  },
  {
   "id": "complex",
@@ -8111,13 +8393,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它有多复杂？",
   "display": "complex",
   "spoken": "complex",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/complex.svg",
   "pictureCue": true,
   "audio": "word-complex",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433853 (CK) & #824587 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-complex"
  },
  {
   "id": "complicated",
@@ -8127,13 +8410,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "电脑可以做极为复杂的工作。",
   "display": "complicated",
   "spoken": "complicated",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/complicated.svg",
   "pictureCue": true,
   "audio": "word-complicated",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #54559 (CM) & #2393778 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-complicated"
  },
  {
   "id": "composition",
@@ -8143,13 +8427,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的作文有一些错误。",
   "display": "composition",
   "spoken": "composition",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/composition.svg",
   "pictureCue": true,
   "audio": "word-composition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17145 (CK) & #874513 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-composition"
  },
  {
   "id": "concentrate",
@@ -8159,13 +8444,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他试图把注意力集中在信上。",
   "display": "concentrate",
   "spoken": "concentrate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/concentrate.svg",
   "pictureCue": true,
   "audio": "word-concentrate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #402506 (CK) & #609885 (sarah)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-concentrate"
  },
  {
   "id": "concept",
@@ -8175,13 +8461,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我明白这概念。",
   "display": "concept",
   "spoken": "concept",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/concept.svg",
   "pictureCue": true,
   "audio": "word-concept",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4666468 (CK) & #5911674 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-concept"
  },
  {
   "id": "concern",
@@ -8191,13 +8478,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我唯一关心的。",
   "display": "concern",
   "spoken": "concern",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/concern.svg",
   "pictureCue": true,
   "audio": "word-concern",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42050 (CM) & #2032133 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-concern"
  },
  {
   "id": "conclusion",
@@ -8207,13 +8495,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你们怎么得出这个结论的？",
   "display": "conclusion",
   "spoken": "conclusion",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/conclusion.svg",
   "pictureCue": true,
   "audio": "word-conclusion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1164849 (CK) & #1314146 (vicch)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-conclusion"
  },
  {
   "id": "concrete",
@@ -8223,13 +8512,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "工人们建了一座混凝土桥。",
   "display": "concrete",
   "spoken": "concrete",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/concrete.svg",
   "pictureCue": true,
   "audio": "word-concrete",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10540424 (sundown) & #3158529 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-concrete"
  },
  {
   "id": "condition",
@@ -8239,13 +8529,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这辆旧自行车状况良好。",
   "display": "condition",
   "spoken": "condition",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/condition.svg",
   "pictureCue": true,
   "audio": "word-condition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1177616 (CK) & #10019761 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-condition"
  },
  {
   "id": "conduct",
@@ -8255,13 +8546,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请在会上表现得有礼貌。",
   "display": "conduct",
   "spoken": "conduct",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/conduct.svg",
   "pictureCue": true,
   "audio": "word-conduct",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8645629 (hamsolo474) & #1762970 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-conduct"
  },
  {
   "id": "conference",
@@ -8288,13 +8580,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对你有信心。",
   "display": "confidence",
   "spoken": "confidence",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/confidence.svg",
   "pictureCue": true,
   "audio": "word-confidence",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #257142 (CK) & #834570 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-confidence"
  },
  {
   "id": "confident",
@@ -8304,13 +8597,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们有信心获胜。",
   "display": "confident",
   "spoken": "confident",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/confident.svg",
   "pictureCue": true,
   "audio": "word-confident",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1019893 (CM) & #1019894 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-confident"
  },
  {
   "id": "confirm",
@@ -8320,13 +8614,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我既不能确认也不能否定。",
   "display": "confirm",
   "spoken": "confirm",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/confirm.svg",
   "pictureCue": true,
   "audio": "word-confirm",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2700655 (Hybrid) & #5933767 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-confirm"
  },
  {
   "id": "conscious",
@@ -8336,13 +8631,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆有环保意识。",
   "display": "conscious",
   "spoken": "conscious",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/conscious.svg",
   "pictureCue": true,
   "audio": "word-conscious",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7564719 (Hybrid) & #13180215 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-conscious"
  },
  {
   "id": "consider",
@@ -8352,13 +8648,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们可以考虑。",
   "display": "consider",
   "spoken": "consider",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/consider.svg",
   "pictureCue": true,
   "audio": "word-consider",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5752318 (CM) & #12156076 (corina)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-consider"
  },
  {
   "id": "constant",
@@ -8368,13 +8665,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "滴水穿石。",
   "display": "constant",
   "spoken": "constant",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/constant.svg",
   "pictureCue": true,
   "audio": "word-constant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #279051 (shekitten) & #1454468 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-constant"
  },
  {
   "id": "constitution",
@@ -8384,13 +8682,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "平等是由宪法保障的。",
   "display": "constitution",
   "spoken": "constitution",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/constitution.svg",
   "pictureCue": true,
   "audio": "word-constitution",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #320163 (CK) & #397099 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-03-constitution"
  },
  {
   "id": "contact",
@@ -8400,13 +8699,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我试著联络汤姆。",
   "display": "contact",
   "spoken": "contact",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/contact.svg",
   "pictureCue": true,
   "audio": "word-contact",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6783804 (CK) & #13118936 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-03-contact"
  },
  {
   "id": "contain",
@@ -8416,13 +8716,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它包含了什么？",
   "display": "contain",
   "spoken": "contain",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/contain.svg",
   "pictureCue": true,
   "audio": "word-contain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #464564 (lukaszpp) & #469530 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-contain"
  },
  {
   "id": "contemporary",
@@ -8432,13 +8733,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他学习现代文学。",
   "display": "contemporary",
   "spoken": "contemporary",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/contemporary.svg",
   "pictureCue": true,
   "audio": "word-contemporary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #296086 (CK) & #512869 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-contemporary"
  },
  {
   "id": "content",
@@ -8465,13 +8767,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她参加了一场绘画比赛。",
   "display": "contest",
   "spoken": "contest",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/contest.svg",
   "pictureCue": true,
   "audio": "word-contest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #315693 (CM) & #5698032 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-contest"
  },
  {
   "id": "context",
@@ -8481,13 +8784,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以通过语境理解这个词。",
   "display": "context",
   "spoken": "context",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/context.svg",
   "pictureCue": true,
   "audio": "word-context",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1333 (CK) & #501316 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-context"
  },
  {
   "id": "continent",
@@ -8497,13 +8801,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "非洲是一块很大的大陆。",
   "display": "continent",
   "spoken": "continent",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/continent.svg",
   "pictureCue": true,
   "audio": "word-continent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #67751 (CK) & #801435 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-continent"
  },
  {
   "id": "continue",
@@ -8513,13 +8818,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这种事不能再继续发生。",
   "display": "continue",
   "spoken": "continue",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/continue.svg",
   "pictureCue": true,
   "audio": "word-continue",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10466194 (CK) & #12159575 (corina)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-continue"
  },
  {
   "id": "contract",
@@ -8546,13 +8852,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以用这个按钮控制音量。",
   "display": "control",
   "spoken": "control",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/control.svg",
   "pictureCue": true,
   "audio": "word-control",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16061 (CK) & #793223 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-control"
  },
  {
   "id": "controversial",
@@ -8562,13 +8869,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个理论很有争议。",
   "display": "controversial",
   "spoken": "controversial",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/controversial.svg",
   "pictureCue": true,
   "audio": "word-controversial",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5568135 (Hybrid) & #5568458 (Lunar)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-controversial"
  },
  {
   "id": "convenient",
@@ -8578,13 +8886,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这方便得多了。",
   "display": "convenient",
   "spoken": "convenient",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/convenient.svg",
   "pictureCue": true,
   "audio": "word-convenient",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #713260 (CM) & #713258 (Yashanti)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-convenient"
  },
  {
   "id": "conventional",
@@ -8594,13 +8903,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "塑料代替了许多传统的原料。",
   "display": "conventional",
   "spoken": "conventional",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/conventional.svg",
   "pictureCue": true,
   "audio": "word-conventional",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #34218 (CM) & #336863 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-conventional"
  },
  {
   "id": "conversation",
@@ -8627,13 +8937,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "电线被用来运送电力。",
   "display": "convey",
   "spoken": "convey",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/convey.svg",
   "pictureCue": true,
   "audio": "word-convey",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #269865 (CK) & #772100 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-convey"
  },
  {
   "id": "convince",
@@ -8643,13 +8954,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我试着说服汤姆回家。",
   "display": "convince",
   "spoken": "convince",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/convince.svg",
   "pictureCue": true,
   "audio": "word-convince",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4135265 (CK) & #5091609 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-convince"
  },
  {
   "id": "copy",
@@ -8659,13 +8971,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能替我拷贝这个吗？",
   "display": "copy",
   "spoken": "copy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/copy.svg",
   "pictureCue": true,
   "audio": "word-copy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #54995 (CK) & #5401637 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-copy"
  },
  {
   "id": "corner",
@@ -8709,13 +9022,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "多少钱？",
   "display": "cost",
   "spoken": "cost",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/cost.svg",
   "pictureCue": true,
   "audio": "word-cost",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2273904 (CK) & #761442 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-cost"
  },
  {
   "id": "cottage",
@@ -8776,13 +9090,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你应该去竞选城市委员会。",
   "display": "council",
   "spoken": "council",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/council.svg",
   "pictureCue": true,
   "audio": "word-council",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4834911 (CK) & #4844821 (pig8322)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-council"
  },
  {
   "id": "country",
@@ -8809,13 +9124,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "乡间有很多树。",
   "display": "countryside",
   "spoken": "countryside",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/countryside.svg",
   "pictureCue": true,
   "audio": "word-countryside",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #279100 (CK) & #332921 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-countryside"
  },
  {
   "id": "couple",
@@ -8825,13 +9141,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这对夫妇生了个儿子。",
   "display": "couple",
   "spoken": "couple",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/couple.svg",
   "pictureCue": true,
   "audio": "word-couple",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1499010 (weihaiping) & #335277 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-couple"
  },
  {
   "id": "courage",
@@ -8841,13 +9158,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我佩服他的勇气。",
   "display": "courage",
   "spoken": "courage",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/courage.svg",
   "pictureCue": true,
   "audio": "word-courage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #453385 (saasmath) & #512110 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-courage"
  },
  {
   "id": "course",
@@ -8857,13 +9175,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我正在上一门音乐课程。",
   "display": "course",
   "spoken": "course",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/course.svg",
   "pictureCue": true,
   "audio": "word-course",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6887091 (Hybrid) & #8215751 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-course"
  },
  {
   "id": "court",
@@ -8907,13 +9226,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我弟弟对火车非常着迷。",
   "display": "crazy",
   "spoken": "crazy",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/crazy.svg",
   "pictureCue": true,
   "audio": "word-crazy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2648321 (CK) & #9971445 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-crazy"
  },
  {
   "id": "cream",
@@ -8940,13 +9260,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "老鼠是胆小的生物。",
   "display": "creature",
   "spoken": "creature",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/creature.svg",
   "pictureCue": true,
   "audio": "word-creature",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #35792 (CM) & #8795175 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-creature"
  },
  {
   "id": "credit",
@@ -8956,13 +9277,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可以用信用卡付帐吗?",
   "display": "credit",
   "spoken": "credit",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/credit.svg",
   "pictureCue": true,
   "audio": "word-credit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2238 (CK) & #765559 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-credit"
  },
  {
   "id": "crew",
@@ -8972,13 +9294,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "现代船只只需要一小组的船员。",
   "display": "crew",
   "spoken": "crew",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/crew.svg",
   "pictureCue": true,
   "audio": "word-crew",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243793 (CM) & #796976 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-crew"
  },
  {
   "id": "crime",
@@ -8988,13 +9311,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "偷窃是犯罪行为。",
   "display": "crime",
   "spoken": "crime",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/crime.svg",
   "pictureCue": true,
   "audio": "word-crime",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1848864 (Spamster) & #5687003 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-crime"
  },
  {
   "id": "crisis",
@@ -9004,13 +9328,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个村庄面临水资源危机。",
   "display": "crisis",
   "spoken": "crisis",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/crisis.svg",
   "pictureCue": true,
   "audio": "word-crisis",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1530354 (erikspen) & #5496290 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-crisis"
  },
  {
   "id": "critical",
@@ -9020,13 +9345,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "核实事实是一个关键步骤。",
   "display": "critical",
   "spoken": "critical",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/critical.svg",
   "pictureCue": true,
   "audio": "word-critical",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17403 (CK) & #874511 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-critical"
  },
  {
   "id": "crowd",
@@ -9070,13 +9396,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个关键点。",
   "display": "crucial",
   "spoken": "crucial",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/crucial.svg",
   "pictureCue": true,
   "audio": "word-crucial",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8550226 (CK) & #8550380 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-crucial"
  },
  {
   "id": "cruel",
@@ -9086,13 +9413,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要虐待动物。",
   "display": "cruel",
   "spoken": "cruel",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/cruel.svg",
   "pictureCue": true,
   "audio": "word-cruel",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #280217 (CK) & #336977 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-cruel"
  },
  {
   "id": "culture",
@@ -9102,13 +9430,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他熟悉日本文化。",
   "display": "culture",
   "spoken": "culture",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/culture.svg",
   "pictureCue": true,
   "audio": "word-culture",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #302230 (CK) & #781672 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-culture"
  },
  {
   "id": "cupboard",
@@ -9135,13 +9464,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "科学家希望治愈这种疾病。",
   "display": "cure",
   "spoken": "cure",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/cure.svg",
   "pictureCue": true,
   "audio": "word-cure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #36571 (CK) & #335541 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-cure"
  },
  {
   "id": "current",
@@ -9151,13 +9481,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "电流可以产生磁性。",
   "display": "current",
   "spoken": "current",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/current.svg",
   "pictureCue": true,
   "audio": "word-current",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #279237 (CK) & #796023 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-current"
  },
  {
   "id": "curtain",
@@ -9184,13 +9515,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆给客服打电话。",
   "display": "customer",
   "spoken": "customer",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/customer.svg",
   "pictureCue": true,
   "audio": "word-customer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7371428 (Hybrid) & #13527704 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-customer"
  },
  {
   "id": "cycle",
@@ -9217,13 +9549,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "每天费用多少？",
   "display": "daily",
   "spoken": "daily",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/daily.svg",
   "pictureCue": true,
   "audio": "word-daily",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1479240 (weihaiping) & #465910 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-daily"
  },
  {
   "id": "dam",
@@ -9318,13 +9651,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你敢试试这个新滑梯吗？",
   "display": "dare",
   "spoken": "dare",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/dare.svg",
   "pictureCue": true,
   "audio": "word-dare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29999 (CM) & #796838 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-dare"
  },
  {
   "id": "data",
@@ -9334,13 +9668,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个数据一点也不准确。",
   "display": "data",
   "spoken": "data",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/data.svg",
   "pictureCue": true,
   "audio": "word-data",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #387412 (CK) & #869906 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-data"
  },
  {
   "id": "date",
@@ -9350,13 +9685,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天是几号？",
   "display": "date",
   "spoken": "date",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/date.svg",
   "pictureCue": true,
   "audio": "word-date",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #408906 (CM) & #408909 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-date"
  },
  {
   "id": "daughter",
@@ -9366,13 +9702,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有一个女儿。",
   "display": "daughter",
   "spoken": "daughter",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/daughter.svg",
   "pictureCue": true,
   "audio": "word-daughter",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #261892 (CK) & #399944 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-daughter"
  },
  {
   "id": "dawn",
@@ -9382,13 +9719,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "黎明时我们必须起床。",
   "display": "dawn",
   "spoken": "dawn",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/dawn.svg",
   "pictureCue": true,
   "audio": "word-dawn",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #263300 (Eldad) & #858785 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-dawn"
  },
  {
   "id": "deadline",
@@ -9398,13 +9736,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "期限近了。",
   "display": "deadline",
   "spoken": "deadline",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/deadline.svg",
   "pictureCue": true,
   "audio": "word-deadline",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1497746 (weihaiping) & #335315 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-deadline"
  },
  {
   "id": "deaf",
@@ -9431,13 +9770,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一笔不错的交易。",
   "display": "deal",
   "spoken": "deal",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/deal.svg",
   "pictureCue": true,
   "audio": "word-deal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2304 (CK) & #1776568 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-deal"
  },
  {
   "id": "debate",
@@ -9447,13 +9787,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是场有趣的辩论。",
   "display": "debate",
   "spoken": "debate",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/debate.svg",
   "pictureCue": true,
   "audio": "word-debate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6817300 (CK) & #9962337 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-debate"
  },
  {
   "id": "debt",
@@ -9463,13 +9804,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我得还债。",
   "display": "debt",
   "spoken": "debt",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/debt.svg",
   "pictureCue": true,
   "audio": "word-debt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258421 (CM) & #5617152 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-debt"
  },
  {
   "id": "decent",
@@ -9479,13 +9821,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是好人。",
   "display": "decent",
   "spoken": "decent",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/decent.svg",
   "pictureCue": true,
   "audio": "word-decent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5105759 (CK) & #6449458 (Penny_Bo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-decent"
  },
  {
   "id": "decide",
@@ -9512,13 +9855,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是最终决定。",
   "display": "decision",
   "spoken": "decision",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/decision.svg",
   "pictureCue": true,
   "audio": "word-decision",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59501 (CK) & #5617147 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-decision"
  },
  {
   "id": "declare",
@@ -9528,13 +9872,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你有任何要申报的东西吗？",
   "display": "declare",
   "spoken": "declare",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/declare.svg",
   "pictureCue": true,
   "audio": "word-declare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #23665 (CK) & #842436 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-declare"
  },
  {
   "id": "decorate",
@@ -9561,13 +9906,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们可以减少用纸量。",
   "display": "decrease",
   "spoken": "decrease",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/decrease.svg",
   "pictureCue": true,
   "audio": "word-decrease",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #56562 (CK) & #8709410 (slo_oth)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-decrease"
  },
  {
   "id": "deep",
@@ -9594,13 +9940,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我一定要给汤姆投票。",
   "display": "definitely",
   "spoken": "definitely",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/definitely.svg",
   "pictureCue": true,
   "audio": "word-definitely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4976768 (CK) & #6936203 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-definitely"
  },
  {
   "id": "degree",
@@ -9610,13 +9957,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他得到了法律硕士学位。",
   "display": "degree",
   "spoken": "degree",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/degree.svg",
   "pictureCue": true,
   "audio": "word-degree",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #303656 (CK) & #804605 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-degree"
  },
  {
   "id": "delay",
@@ -9626,13 +9974,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我很抱歉这么迟才回复。",
   "display": "delay",
   "spoken": "delay",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/delay.svg",
   "pictureCue": true,
   "audio": "word-delay",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #320367 (CK) & #801381 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-delay"
  },
  {
   "id": "delete",
@@ -9642,13 +9991,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你现在可以删除它。",
   "display": "delete",
   "spoken": "delete",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/delete.svg",
   "pictureCue": true,
   "audio": "word-delete",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5425623 (CK) & #5911773 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-delete"
  },
  {
   "id": "delicious",
@@ -9692,13 +10042,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须降低能源需求。",
   "display": "demand",
   "spoken": "demand",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/demand.svg",
   "pictureCue": true,
   "audio": "word-demand",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #23261 (Swift) & #5911627 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-demand"
  },
  {
   "id": "demonstrate",
@@ -9708,13 +10059,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "您可以示范一下吗?",
   "display": "demonstrate",
   "spoken": "demonstrate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/demonstrate.svg",
   "pictureCue": true,
   "audio": "word-demonstrate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10541634 (DaoSeng) & #778001 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-demonstrate"
  },
  {
   "id": "deny",
@@ -9724,13 +10076,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我无法否认。",
   "display": "deny",
   "spoken": "deny",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/deny.svg",
   "pictureCue": true,
   "audio": "word-deny",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1951468 (CK) & #13524050 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-deny"
  },
  {
   "id": "department",
@@ -9740,13 +10093,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请叫消防员。",
   "display": "department",
   "spoken": "department",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/department.svg",
   "pictureCue": true,
   "audio": "word-department",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #268171 (CK) & #791435 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-department"
  },
  {
   "id": "departure",
@@ -9756,13 +10110,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们因为风暴推迟了起程。",
   "display": "departure",
   "spoken": "departure",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/departure.svg",
   "pictureCue": true,
   "audio": "word-departure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1398749 (CK) & #6111731 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-departure"
  },
  {
   "id": "depend",
@@ -9806,13 +10161,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能描述一下你最喜欢的地方吗？",
   "display": "describe",
   "spoken": "describe",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/describe.svg",
   "pictureCue": true,
   "audio": "word-describe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #47076 (CK) & #373470 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-describe"
  },
  {
   "id": "description",
@@ -9822,13 +10178,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这风景美得无法形容。",
   "display": "description",
   "spoken": "description",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/description.svg",
   "pictureCue": true,
   "audio": "word-description",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48051 (Zifre) & #795259 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-description"
  },
  {
   "id": "deserve",
@@ -9838,13 +10195,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "做了那么多工作，你值得休息一下。",
   "display": "deserve",
   "spoken": "deserve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/deserve.svg",
   "pictureCue": true,
   "audio": "word-deserve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1815713 (Spamster) & #13111443 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-deserve"
  },
  {
   "id": "design",
@@ -9854,13 +10212,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "设计本身有问题。",
   "display": "design",
   "spoken": "design",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/design.svg",
   "pictureCue": true,
   "audio": "word-design",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4870315 (CK) & #6728899 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-design"
  },
  {
   "id": "desire",
@@ -9870,13 +10229,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她有强烈的学习愿望。",
   "display": "desire",
   "spoken": "desire",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/desire.svg",
   "pictureCue": true,
   "audio": "word-desire",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #324955 (CM) & #8798303 (crescat)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-desire"
  },
  {
   "id": "desperate",
@@ -9886,13 +10246,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "走了很久以后，我们非常渴望喝水。",
   "display": "desperate",
   "spoken": "desperate",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/desperate.svg",
   "pictureCue": true,
   "audio": "word-desperate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1486339 (CM) & #5926180 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-desperate"
  },
  {
   "id": "despite",
@@ -9902,13 +10263,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有他的缺点，但是我爱他。",
   "display": "despite",
   "spoken": "despite",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/despite.svg",
   "pictureCue": true,
   "audio": "word-despite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238511 (CK) & #11698430 (Jokubas)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-despite"
  },
  {
   "id": "destination",
@@ -9918,13 +10280,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们终于到达了目的地。",
   "display": "destination",
   "spoken": "destination",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/destination.svg",
   "pictureCue": true,
   "audio": "word-destination",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #39901 (CK) & #808213 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-destination"
  },
  {
   "id": "detail",
@@ -9934,13 +10297,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "仔细看看画中的每一处细节。",
   "display": "detail",
   "spoken": "detail",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/detail.svg",
   "pictureCue": true,
   "audio": "word-detail",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #47076 (CK) & #373470 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-detail"
  },
  {
   "id": "detective",
@@ -9967,13 +10331,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "阅读可以帮助你培养想象力。",
   "display": "develop",
   "spoken": "develop",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/develop.svg",
   "pictureCue": true,
   "audio": "word-develop",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2362013 (CK) & #2394469 (fenfang557)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-develop"
  },
  {
   "id": "device",
@@ -10034,13 +10399,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "均衡饮食包含不同种类的食物。",
   "display": "diet",
   "spoken": "diet",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/diet.svg",
   "pictureCue": true,
   "audio": "word-diet",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #241675 (CK) & #793307 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-diet"
  },
  {
   "id": "differ",
@@ -10050,13 +10416,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "各国有不同的饮食习惯。",
   "display": "differ",
   "spoken": "differ",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/differ.svg",
   "pictureCue": true,
   "audio": "word-differ",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #268755 (Eldad) & #798141 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-differ"
  },
  {
   "id": "difference",
@@ -10066,13 +10433,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这没有任何区别。",
   "display": "difference",
   "spoken": "difference",
-  "topic": null,
-  "image": null,
+  "topic": "colors",
+  "image": "./assets/pictures/difference.svg",
   "pictureCue": true,
   "audio": "word-difference",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #41534 (Swift) & #335016 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-difference"
  },
  {
   "id": "difficulty",
@@ -10082,13 +10450,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不太能嚼东西。",
   "display": "difficulty",
   "spoken": "difficulty",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/difficulty.svg",
   "pictureCue": true,
   "audio": "word-difficulty",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #268650 (CK) & #1583260 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-difficulty"
  },
  {
   "id": "digital",
@@ -10098,13 +10467,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我今晚能借你的数码相机吗？",
   "display": "digital",
   "spoken": "digital",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/digital.svg",
   "pictureCue": true,
   "audio": "word-digital",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1169630 (cruzedu73) & #5698045 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-digital"
  },
  {
   "id": "dignity",
@@ -10114,20 +10484,21 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "每个人都值得受到有尊严的对待。",
   "display": "dignity",
   "spoken": "dignity",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/dignity.svg",
   "pictureCue": true,
   "audio": "word-dignity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8645629 (hamsolo474) & #1762970 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-dignity"
  },
  {
   "id": "dining",
   "zh": "用餐",
   "pos": "名词",
-  "sentence": "Where's the dining room?",
-  "sentenceZh": "餐厅在哪里？",
+  "sentence": "We enjoy dining together.",
+  "sentenceZh": "我们喜欢一起用餐。",
   "display": "dining",
   "spoken": "dining",
   "topic": "food",
@@ -10136,7 +10507,7 @@ export const CONTEXT_WORDS=[
   "audio": "word-dining",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4704237 (CK) & #6101361 (verdastelo9604)",
-  "sentenceAdapted": false,
+  "sentenceAdapted": true,
   "emoji": "project-direct-meal"
  },
  {
@@ -10147,13 +10518,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请问波士顿和悉尼之间有直飞航班吗？",
   "display": "direct",
   "spoken": "direct",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/direct.svg",
   "pictureCue": true,
   "audio": "word-direct",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3753285 (CK) & #8929167 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-direct"
  },
  {
   "id": "direction",
@@ -10163,13 +10535,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们应该往哪个方向走？",
   "display": "direction",
   "spoken": "direction",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/direction.svg",
   "pictureCue": true,
   "audio": "word-direction",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8390 (CK) & #1780760 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-direction"
  },
  {
   "id": "director",
@@ -10196,13 +10569,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对让你失望感到抱歉。",
   "display": "disappoint",
   "spoken": "disappoint",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/disappoint.svg",
   "pictureCue": true,
   "audio": "word-disappoint",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3519544 (CK) & #6150022 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-disappoint"
  },
  {
   "id": "disappointed",
@@ -10212,13 +10586,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "比赛取消时我感到失望。",
   "display": "disappointed",
   "spoken": "disappointed",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/disappointed.svg",
   "pictureCue": true,
   "audio": "word-disappointed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2953947 (CK) & #5856787 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-disappointed"
  },
  {
   "id": "disaster",
@@ -10228,13 +10603,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是灾难。",
   "display": "disaster",
   "spoken": "disaster",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/disaster.svg",
   "pictureCue": true,
   "audio": "word-disaster",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4494884 (CK) & #6111875 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-disaster"
  },
  {
   "id": "discount",
@@ -10244,13 +10620,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "能给我打个折么？",
   "display": "discount",
   "spoken": "discount",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/discount.svg",
   "pictureCue": true,
   "audio": "word-discount",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #31283 (CK) & #1468433 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-discount"
  },
  {
   "id": "discover",
@@ -10277,13 +10654,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有了一个重要的发现。",
   "display": "discovery",
   "spoken": "discovery",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/discovery.svg",
   "pictureCue": true,
   "audio": "word-discovery",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #299357 (CK) & #833024 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-discovery"
  },
  {
   "id": "discrimination",
@@ -10293,13 +10671,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他反对种族歧视。",
   "display": "discrimination",
   "spoken": "discrimination",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/discrimination.svg",
   "pictureCue": true,
   "audio": "word-discrimination",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #600855 (baisong) & #464747 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-discrimination"
  },
  {
   "id": "discuss",
@@ -10309,13 +10688,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们来讨论一下明天的计划吧。",
   "display": "discuss",
   "spoken": "discuss",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/discuss.svg",
   "pictureCue": true,
   "audio": "word-discuss",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2007687 (CK) & #3087004 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-discuss"
  },
  {
   "id": "discussion",
@@ -10325,13 +10705,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆参加了讨论。",
   "display": "discussion",
   "spoken": "discussion",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/discussion.svg",
   "pictureCue": true,
   "audio": "word-discussion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4497350 (CK) & #5630408 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-discussion"
  },
  {
   "id": "disease",
@@ -10341,13 +10722,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我得了什么病？",
   "display": "disease",
   "spoken": "disease",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/disease.svg",
   "pictureCue": true,
   "audio": "word-disease",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #435201 (CK) & #836131 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-disease"
  },
  {
   "id": "disc",
@@ -10385,19 +10767,20 @@ export const CONTEXT_WORDS=[
  },
  {
   "id": "distant",
-  "zh": "远的",
+  "zh": "（亲属关系）远的；疏远的",
   "pos": "形容词",
   "sentence": "Tom is a distant relative of mine.",
   "sentenceZh": "汤姆是我的远亲。",
   "display": "distant",
   "spoken": "distant",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/distant.svg",
   "pictureCue": true,
   "audio": "word-distant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2549962 (sharptoothed) & #6293110 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-distant"
  },
  {
   "id": "distinguish",
@@ -10407,13 +10790,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能分辨银和锡吗?",
   "display": "distinguish",
   "spoken": "distinguish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/distinguish.svg",
   "pictureCue": true,
   "audio": "word-distinguish",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #18461 (francaisr0wlet) & #875254 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-distinguish"
  },
  {
   "id": "district",
@@ -10423,13 +10807,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个地区有三座图书馆。",
   "display": "district",
   "spoken": "district",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/district.svg",
   "pictureCue": true,
   "audio": "word-district",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #275422 (CM) & #1776532 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-district"
  },
  {
   "id": "disturb",
@@ -10439,13 +10824,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我本来不想打扰你。",
   "display": "disturb",
   "spoken": "disturb",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/disturb.svg",
   "pictureCue": true,
   "audio": "word-disturb",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2291176 (CK) & #5907525 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-disturb"
  },
  {
   "id": "divide",
@@ -10455,13 +10841,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "把披萨分成三份。",
   "display": "divide",
   "spoken": "divide",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/divide.svg",
   "pictureCue": true,
   "audio": "word-divide",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #896141 (pauldhunt) & #1544234 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-divide"
  },
  {
   "id": "division",
@@ -10539,13 +10926,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们预计今年的销售额会翻倍。",
   "display": "double",
   "spoken": "double",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/double.svg",
   "pictureCue": true,
   "audio": "word-double",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243116 (CK) & #2007052 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-double"
  },
  {
   "id": "doubt",
@@ -10555,13 +10943,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没有疑问。",
   "display": "doubt",
   "spoken": "doubt",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/doubt.svg",
   "pictureCue": true,
   "audio": "word-doubt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2271834 (CK) & #5091122 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-doubt"
  },
  {
   "id": "downstairs",
@@ -10588,13 +10977,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "载我们到市区。",
   "display": "downtown",
   "spoken": "downtown",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/downtown.svg",
   "pictureCue": true,
   "audio": "word-downtown",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21771 (CK) & #833103 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-downtown"
  },
  {
   "id": "dozen",
@@ -10621,13 +11011,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我在写演讲的草稿。",
   "display": "draft",
   "spoken": "draft",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/draft.svg",
   "pictureCue": true,
   "audio": "word-draft",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #254018 (CM) & #6633873 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-draft"
  },
  {
   "id": "drama",
@@ -10637,13 +11028,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我参加戏剧社。",
   "display": "drama",
   "spoken": "drama",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/drama.svg",
   "pictureCue": true,
   "audio": "word-drama",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #256281 (CK) & #918103 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-drama"
  },
  {
   "id": "drawer",
@@ -10687,13 +11079,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "比赛由于下雨而取消了。",
   "display": "due to",
   "spoken": "due to",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/due to.svg",
   "pictureCue": true,
   "audio": "word-due to",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #485791 (minshirui) & #5911750 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-due to"
  },
  {
   "id": "during",
@@ -10703,13 +11096,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们只在白天工作。",
   "display": "during",
   "spoken": "during",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/during.svg",
   "pictureCue": true,
   "audio": "word-during",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #307152 (CK) & #872471 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-during"
  },
  {
   "id": "dust",
@@ -10736,13 +11130,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天谁值班？",
   "display": "duty",
   "spoken": "duty",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/duty.svg",
   "pictureCue": true,
   "audio": "word-duty",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #800233 (CM) & #800232 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-duty"
  },
  {
   "id": "each",
@@ -10769,13 +11164,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他渴望去那里。",
   "display": "eager",
   "spoken": "eager",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/eager.svg",
   "pictureCue": true,
   "audio": "word-eager",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #292061 (CK) & #5863292 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-eager"
  },
  {
   "id": "earn",
@@ -10785,13 +11181,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他每个月挣多少？",
   "display": "earn",
   "spoken": "earn",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/earn.svg",
   "pictureCue": true,
   "audio": "word-earn",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1527380 (CM) & #1323989 (vicch)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-earn"
  },
  {
   "id": "earthquake",
@@ -10818,13 +11215,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她在他们家里感觉很放松。",
   "display": "ease",
   "spoken": "ease",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/ease.svg",
   "pictureCue": true,
   "audio": "word-ease",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #316473 (CM) & #8914615 (fresky)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-ease"
  },
  {
   "id": "east",
@@ -10847,17 +11245,18 @@ export const CONTEXT_WORDS=[
   "id": "ecology",
   "zh": "生态学",
   "pos": "名词",
-  "sentence": "I asked him many questions about ecology.",
-  "sentenceZh": "我问了他许多关于生态环境的问题。",
+  "sentence": "We learn about ecology.",
+  "sentenceZh": "我们学习生态学。",
   "display": "ecology",
   "spoken": "ecology",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/ecology.svg",
   "pictureCue": true,
   "audio": "word-ecology",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258992 (CK) & #926842 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-04-ecology"
  },
  {
   "id": "economic",
@@ -10867,13 +11266,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们研究了政府的经济政策。",
   "display": "economic",
   "spoken": "economic",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/economic.svg",
   "pictureCue": true,
   "audio": "word-economic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22865 (CK) & #2028011 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-04-economic"
  },
  {
   "id": "economy",
@@ -10883,13 +11283,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "经济在复苏之中。",
   "display": "economy",
   "spoken": "economy",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/economy.svg",
   "pictureCue": true,
   "audio": "word-economy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #237950 (CK) & #2030817 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-economy"
  },
  {
   "id": "edge",
@@ -10916,13 +11317,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你不想做编辑？",
   "display": "editor",
   "spoken": "editor",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/editor.svg",
   "pictureCue": true,
   "audio": "word-editor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2090865 (CK) & #5670859 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-editor"
  },
  {
   "id": "education",
@@ -10932,13 +11334,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "教育从家庭开始。",
   "display": "education",
   "spoken": "education",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/education.svg",
   "pictureCue": true,
   "audio": "word-education",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1005359 (ellasevia) & #346757 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-education"
  },
  {
   "id": "effect",
@@ -10948,13 +11351,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "阳光对植物生长有影响。",
   "display": "effect",
   "spoken": "effect",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/effect.svg",
   "pictureCue": true,
   "audio": "word-effect",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2163173 (Source_VOA) & #2581508 (fenfang557)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-effect"
  },
  {
   "id": "efficient",
@@ -10964,13 +11368,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这台新机器效率更高。",
   "display": "efficient",
   "spoken": "efficient",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/efficient.svg",
   "pictureCue": true,
   "audio": "word-efficient",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #308467 (CM) & #333786 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-efficient"
  },
  {
   "id": "effort",
@@ -10980,13 +11385,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们真的感激他们的努力。",
   "display": "effort",
   "spoken": "effort",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/effort.svg",
   "pictureCue": true,
   "audio": "word-effort",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5725884 (CM) & #5983663 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-effort"
  },
  {
   "id": "either",
@@ -10996,13 +11402,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我也不会做。",
   "display": "either",
   "spoken": "either",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/either.svg",
   "pictureCue": true,
   "audio": "word-either",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433649 (CK) & #832967 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-either"
  },
  {
   "id": "elderly",
@@ -11029,13 +11436,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们班举行了班长选举。",
   "display": "election",
   "spoken": "election",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/election.svg",
   "pictureCue": true,
   "audio": "word-election",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1538931 (SHamp) & #805192 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-election"
  },
  {
   "id": "electric",
@@ -11045,13 +11453,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这家工厂生产电炉。",
   "display": "electric",
   "spoken": "electric",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/electric.svg",
   "pictureCue": true,
   "audio": "word-electric",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681420 (Source_VOA) & #2599872 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-electric"
  },
  {
   "id": "elegant",
@@ -11061,13 +11470,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她看上去十分优雅。",
   "display": "elegant",
   "spoken": "elegant",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/elegant.svg",
   "pictureCue": true,
   "audio": "word-elegant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #311814 (CM) & #1733274 (yuzazaza)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-elegant"
  },
  {
   "id": "else",
@@ -11077,13 +11487,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "到别处去做。",
   "display": "else",
   "spoken": "else",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/else.svg",
   "pictureCue": true,
   "audio": "word-else",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1565499 (CM) & #5794105 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-else"
  },
  {
   "id": "embarrassed",
@@ -11093,13 +11504,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我忘记他的名字时感到尴尬。",
   "display": "embarrassed",
   "spoken": "embarrassed",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/embarrassed.svg",
   "pictureCue": true,
   "audio": "word-embarrassed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3824962 (CK) & #745825 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-embarrassed"
  },
  {
   "id": "emergency",
@@ -11109,13 +11521,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他按下了紧急按钮。",
   "display": "emergency",
   "spoken": "emergency",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/emergency.svg",
   "pictureCue": true,
   "audio": "word-emergency",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #303008 (CK) & #834488 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-emergency"
  },
  {
   "id": "emotion",
@@ -11125,13 +11538,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "喜悦是一种愉快的情绪。",
   "display": "emotion",
   "spoken": "emotion",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/emotion.svg",
   "pictureCue": true,
   "audio": "word-emotion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #667888 (CK) & #2426075 (huangfen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-emotion"
  },
  {
   "id": "emperor",
@@ -11158,13 +11572,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他强调了教育的重要性。",
   "display": "emphasis",
   "spoken": "emphasis",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/emphasis.svg",
   "pictureCue": true,
   "audio": "word-emphasis",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295335 (CK) & #1350119 (vicch)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-emphasis"
  },
  {
   "id": "end",
@@ -11174,13 +11589,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是结束。",
   "display": "end",
   "spoken": "end",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/end.svg",
   "pictureCue": true,
   "audio": "word-end",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #56074 (CK) & #825193 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-end"
  },
  {
   "id": "endangered",
@@ -11190,13 +11606,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个濒临灭绝的物种。",
   "display": "endangered",
   "spoken": "endangered",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/endangered.svg",
   "pictureCue": true,
   "audio": "word-endangered",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #797152 (U2FS) & #797541 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-endangered"
  },
  {
   "id": "enemy",
@@ -11206,13 +11623,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "故事里，骑士面对一个强大的敌人。",
   "display": "enemy",
   "spoken": "enemy",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/enemy.svg",
   "pictureCue": true,
   "audio": "word-enemy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2648574 (CK) & #13109997 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-enemy"
  },
  {
   "id": "energetic",
@@ -11222,13 +11640,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这只精力充沛的小狗在花园里跑来跑去。",
   "display": "energetic",
   "spoken": "energetic",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/energetic.svg",
   "pictureCue": true,
   "audio": "word-energetic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #551530 (FeuDRenais) & #336451 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-energetic"
  },
  {
   "id": "energy",
@@ -11238,13 +11657,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他充满活力。",
   "display": "energy",
   "spoken": "energy",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/energy.svg",
   "pictureCue": true,
   "audio": "word-energy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #294885 (CK) & #336432 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-energy"
  },
  {
   "id": "engine",
@@ -11271,13 +11691,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们喜欢阅读书籍。",
   "display": "enjoy",
   "spoken": "enjoy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/enjoy.svg",
   "pictureCue": true,
   "audio": "word-enjoy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #263175 (CK) & #4970084 (wzhd)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-enjoy"
  },
  {
   "id": "enough",
@@ -11321,13 +11742,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那不全是错的。",
   "display": "entirely",
   "spoken": "entirely",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/entirely.svg",
   "pictureCue": true,
   "audio": "word-entirely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8947356 (shekitten) & #10040427 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-entirely"
  },
  {
   "id": "envy",
@@ -11337,13 +11759,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我嫉妒你的幸运。",
   "display": "envy",
   "spoken": "envy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/envy.svg",
   "pictureCue": true,
   "audio": "word-envy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17185 (Dejo) & #5359473 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-envy"
  },
  {
   "id": "equator",
@@ -11387,13 +11810,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我在自己的答案中发现了一个错误。",
   "display": "error",
   "spoken": "error",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/error.svg",
   "pictureCue": true,
   "audio": "word-error",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #69515 (CK) & #334321 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-error"
  },
  {
   "id": "escape",
@@ -11420,13 +11844,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她特别喜爱音乐。",
   "display": "especially",
   "spoken": "especially",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/especially.svg",
   "pictureCue": true,
   "audio": "word-especially",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #311832 (CK) & #904795 (kanaorange)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-especially"
  },
  {
   "id": "essay",
@@ -11436,13 +11861,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆在读一篇短文。",
   "display": "essay",
   "spoken": "essay",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/essay.svg",
   "pictureCue": true,
   "audio": "word-essay",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7768549 (sharris123) & #2757105 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-essay"
  },
  {
   "id": "essential",
@@ -11452,13 +11878,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "水是生命所不可缺少的。",
   "display": "essential",
   "spoken": "essential",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/essential.svg",
   "pictureCue": true,
   "audio": "word-essential",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #270818 (CK) & #5698033 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-essential"
  },
  {
   "id": "establish",
@@ -11468,13 +11895,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们想成立一个读书俱乐部。",
   "display": "establish",
   "spoken": "establish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/establish.svg",
   "pictureCue": true,
   "audio": "word-establish",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #23432 (CK) & #6483612 (FAErika)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-establish"
  },
  {
   "id": "europe",
@@ -11501,13 +11929,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在新年前夕很晚才睡。",
   "display": "eve",
   "spoken": "eve",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/eve.svg",
   "pictureCue": true,
   "audio": "word-eve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #809841 (BraveSentry) & #810035 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-eve"
  },
  {
   "id": "even",
@@ -11517,13 +11946,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你就没在听。",
   "display": "even",
   "spoken": "even",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/even.svg",
   "pictureCue": true,
   "audio": "word-even",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3356370 (CK) & #9178037 (xiaohong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-even"
  },
  {
   "id": "event",
@@ -11533,13 +11963,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "欢迎参与我们的活动。",
   "display": "event",
   "spoken": "event",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/event.svg",
   "pictureCue": true,
   "audio": "word-event",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #12060811 (CK) & #13138842 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-event"
  },
  {
   "id": "eventually",
@@ -11549,13 +11980,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "雨终于停了。",
   "display": "eventually",
   "spoken": "eventually",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/eventually.svg",
   "pictureCue": true,
   "audio": "word-eventually",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4497278 (CK) & #13513728 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-eventually"
  },
  {
   "id": "ever",
@@ -11565,13 +11997,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你试过吗？",
   "display": "ever",
   "spoken": "ever",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ever.svg",
   "pictureCue": true,
   "audio": "word-ever",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2755313 (CM) & #5865632 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-ever"
  },
  {
   "id": "everybody",
@@ -11581,13 +12014,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我认识这里的每个人。",
   "display": "everybody",
   "spoken": "everybody",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/everybody.svg",
   "pictureCue": true,
   "audio": "word-everybody",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2094779 (CK) & #3742573 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-everybody"
  },
  {
   "id": "everyone",
@@ -11597,13 +12031,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我认识这里的每个人。",
   "display": "everyone",
   "spoken": "everyone",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/everyone.svg",
   "pictureCue": true,
   "audio": "word-everyone",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6220217 (CK) & #3742573 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-everyone"
  },
  {
   "id": "everyday",
@@ -11613,13 +12048,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "电视在日常生活中起着重要的作用。",
   "display": "everyday",
   "spoken": "everyday",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/everyday.svg",
   "pictureCue": true,
   "audio": "word-everyday",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #39189 (CK) & #472987 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-everyday"
  },
  {
   "id": "everything",
@@ -11629,13 +12065,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一切都会好的。",
   "display": "everything",
   "spoken": "everything",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/everything.svg",
   "pictureCue": true,
   "audio": "word-everything",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #710797 (CM) & #710795 (Yashanti)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-everything"
  },
  {
   "id": "everywhere",
@@ -11645,13 +12082,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的狗总是跟著我。",
   "display": "everywhere",
   "spoken": "everywhere",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/everywhere.svg",
   "pictureCue": true,
   "audio": "word-everywhere",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #250771 (CK) & #864369 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-everywhere"
  },
  {
   "id": "evidence",
@@ -11661,13 +12099,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "证据确凿了。",
   "display": "evidence",
   "spoken": "evidence",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/evidence.svg",
   "pictureCue": true,
   "audio": "word-evidence",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #268226 (CM) & #8688061 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-evidence"
  },
  {
   "id": "exactly",
@@ -11677,13 +12116,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "究竟谁要负责？",
   "display": "exactly",
   "spoken": "exactly",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/exactly.svg",
   "pictureCue": true,
   "audio": "word-exactly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5134829 (CK) & #5617298 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-exactly"
  },
  {
   "id": "exam",
@@ -11727,13 +12167,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "牙医用X光检查你的牙齿。",
   "display": "examine",
   "spoken": "examine",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/examine.svg",
   "pictureCue": true,
   "audio": "word-examine",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #682505 (Source_VOA) & #816546 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-examine"
  },
  {
   "id": "example",
@@ -11743,13 +12184,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能给我举个例子吗？",
   "display": "example",
   "spoken": "example",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/example.svg",
   "pictureCue": true,
   "audio": "word-example",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3564114 (CK) & #11698348 (Jokubas)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-example"
  },
  {
   "id": "exceed",
@@ -11759,13 +12201,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要超速。",
   "display": "exceed",
   "spoken": "exceed",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/exceed.svg",
   "pictureCue": true,
   "audio": "word-exceed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2734388 (CK) & #790852 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-exceed"
  },
  {
   "id": "excellent",
@@ -11775,13 +12218,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她的英语好极了。",
   "display": "excellent",
   "spoken": "excellent",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/excellent.svg",
   "pictureCue": true,
   "audio": "word-excellent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #309079 (CK) & #399884 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-excellent"
  },
  {
   "id": "except",
@@ -11791,13 +12235,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "除了汤姆没有人来。",
   "display": "except",
   "spoken": "except",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/except.svg",
   "pictureCue": true,
   "audio": "word-except",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4666803 (CK) & #5663448 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-except"
  },
  {
   "id": "exchange",
@@ -11807,13 +12252,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汇率是多少？",
   "display": "exchange",
   "spoken": "exchange",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/exchange.svg",
   "pictureCue": true,
   "audio": "word-exchange",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #464594 (lukaszpp) & #465003 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-exchange"
  },
  {
   "id": "exciting",
@@ -11823,13 +12269,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我读了一篇精彩的故事。",
   "display": "exciting",
   "spoken": "exciting",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/exciting.svg",
   "pictureCue": true,
   "audio": "word-exciting",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #35074 (CK) & #835348 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-exciting"
  },
  {
   "id": "excuse",
@@ -11839,13 +12286,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没有借口。",
   "display": "excuse",
   "spoken": "excuse",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/excuse.svg",
   "pictureCue": true,
   "audio": "word-excuse",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #36027 (CK) & #406687 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-excuse"
  },
  {
   "id": "exhaust",
@@ -11872,13 +12320,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "展览现在已经开放。",
   "display": "exhibition",
   "spoken": "exhibition",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/exhibition.svg",
   "pictureCue": true,
   "audio": "word-exhibition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #44922 (CK) & #1361952 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-exhibition"
  },
  {
   "id": "exist",
@@ -11888,13 +12337,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "黑洞存在吗？",
   "display": "exist",
   "spoken": "exist",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/exist.svg",
   "pictureCue": true,
   "audio": "word-exist",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8279722 (lunchmeat317) & #8496270 (maxine)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-exist"
  },
  {
   "id": "expect",
@@ -11921,13 +12371,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这太贵了。",
   "display": "expensive",
   "spoken": "expensive",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/expensive.svg",
   "pictureCue": true,
   "audio": "word-expensive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #925077 (zvaigzne) & #7771677 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-expensive"
  },
  {
   "id": "experience",
@@ -11937,13 +12388,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他缺乏经验。",
   "display": "experience",
   "spoken": "experience",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/experience.svg",
   "pictureCue": true,
   "audio": "word-experience",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295701 (CM) & #892581 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-experience"
  },
  {
   "id": "experiment",
@@ -11970,13 +12422,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他是个天文学专家。",
   "display": "expert",
   "spoken": "expert",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/expert.svg",
   "pictureCue": true,
   "audio": "word-expert",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10593002 (CK) & #469573 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-expert"
  },
  {
   "id": "explain",
@@ -11986,13 +12439,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我现在不能解释。",
   "display": "explain",
   "spoken": "explain",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/explain.svg",
   "pictureCue": true,
   "audio": "word-explain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1951585 (CK) & #5911756 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-explain"
  },
  {
   "id": "explode",
@@ -12019,13 +12473,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "把你的想法表达清楚。",
   "display": "express",
   "spoken": "express",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/express.svg",
   "pictureCue": true,
   "audio": "word-express",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17169 (CK) & #826285 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-express"
  },
  {
   "id": "extension",
@@ -12035,13 +12490,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这条延长线太短了。",
   "display": "extension",
   "spoken": "extension",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/extension.svg",
   "pictureCue": true,
   "audio": "word-extension",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3962671 (JSakuragi) & #3763511 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-extension"
  },
  {
   "id": "extent",
@@ -12051,13 +12507,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我在一定程度上同意你的意见。",
   "display": "extent",
   "spoken": "extent",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/extent.svg",
   "pictureCue": true,
   "audio": "word-extent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #67189 (CK) & #926568 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-extent"
  },
  {
   "id": "external",
@@ -12067,13 +12524,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "把它保存在外接式硬碟。",
   "display": "external",
   "spoken": "external",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/external.svg",
   "pictureCue": true,
   "audio": "word-external",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21846 (CK) & #798183 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-external"
  },
  {
   "id": "extra",
@@ -12083,13 +12541,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你有多余的钥匙吗？",
   "display": "extra",
   "spoken": "extra",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/extra.svg",
   "pictureCue": true,
   "audio": "word-extra",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3564976 (CK) & #5576820 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-extra"
  },
  {
   "id": "extraordinary",
@@ -12099,13 +12558,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是个不寻常的人。",
   "display": "extraordinary",
   "spoken": "extraordinary",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/extraordinary.svg",
   "pictureCue": true,
   "audio": "word-extraordinary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4014636 (CK) & #5911656 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-extraordinary"
  },
  {
   "id": "extremely",
@@ -12115,13 +12575,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "水非常冷。",
   "display": "extremely",
   "spoken": "extremely",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/extremely.svg",
   "pictureCue": true,
   "audio": "word-extremely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7782254 (sharris123) & #7774749 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-extremely"
  },
  {
   "id": "fabric",
@@ -12148,13 +12609,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谁也不能否定其事实。",
   "display": "fact",
   "spoken": "fact",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/fact.svg",
   "pictureCue": true,
   "audio": "word-fact",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #47059 (CK) & #7752874 (Leolaaziano)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fact"
  },
  {
   "id": "fail",
@@ -12164,13 +12626,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们为什么失败了？",
   "display": "fail",
   "spoken": "fail",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/fail.svg",
   "pictureCue": true,
   "audio": "word-fail",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3824788 (CK) & #6098444 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fail"
  },
  {
   "id": "failure",
@@ -12180,13 +12643,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一次失败并不意味着你无法进步。",
   "display": "failure",
   "spoken": "failure",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/failure.svg",
   "pictureCue": true,
   "audio": "word-failure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #298939 (CK) & #8652791 (crescat)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-failure"
  },
  {
   "id": "faint",
@@ -12213,13 +12677,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "每个人都应该得到公平的机会。",
   "display": "fair",
   "spoken": "fair",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/fair.svg",
   "pictureCue": true,
   "audio": "word-fair",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3731843 (CM) & #9972801 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fair"
  },
  {
   "id": "faith",
@@ -12229,13 +12694,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我相信你的能力。",
   "display": "faith",
   "spoken": "faith",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/faith.svg",
   "pictureCue": true,
   "audio": "word-faith",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2252822 (_undertoad) & #11841628 (Verna0072001)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-faith"
  },
  {
   "id": "false",
@@ -12245,13 +12711,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谣言是假的。",
   "display": "false",
   "spoken": "false",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/false.svg",
   "pictureCue": true,
   "audio": "word-false",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3408265 (Hybrid) & #3408579 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-false"
  },
  {
   "id": "familiar",
@@ -12278,13 +12745,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "想不到会在这里遇见你！",
   "display": "fancy",
   "spoken": "fancy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/fancy.svg",
   "pictureCue": true,
   "audio": "word-fancy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #54765 (CK) & #824549 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fancy"
  },
  {
   "id": "fantasy",
@@ -12294,13 +12762,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这本书带我们进入了一个幻想世界。",
   "display": "fantasy",
   "spoken": "fantasy",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/fantasy.svg",
   "pictureCue": true,
   "audio": "word-fantasy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295592 (CK) & #801969 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fantasy"
  },
  {
   "id": "fashion",
@@ -12310,13 +12779,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她对时尚感兴趣。",
   "display": "fashion",
   "spoken": "fashion",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/fashion.svg",
   "pictureCue": true,
   "audio": "word-fashion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7493075 (CK) & #920833 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fashion"
  },
  {
   "id": "fault",
@@ -12326,13 +12796,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我的错。",
   "display": "fault",
   "spoken": "fault",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/fault.svg",
   "pictureCue": true,
   "audio": "word-fault",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1745701 (Spamster) & #790573 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-fault"
  },
  {
   "id": "favor",
@@ -12342,13 +12813,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你欠我一个人情。",
   "display": "favor",
   "spoken": "favor",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/favor.svg",
   "pictureCue": true,
   "audio": "word-favor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3331080 (CK) & #9959182 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-favor"
  },
  {
   "id": "favorite",
@@ -12358,13 +12830,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我最喜欢的。",
   "display": "favorite",
   "spoken": "favorite",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/favorite.svg",
   "pictureCue": true,
   "audio": "word-favorite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2647581 (CK) & #5941722 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-favorite"
  },
  {
   "id": "fear",
@@ -12391,13 +12864,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这台相机有一个实用的新功能。",
   "display": "feature",
   "spoken": "feature",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/feature.svg",
   "pictureCue": true,
   "audio": "word-feature",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7198903 (CK) & #480651 (biglion)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-feature"
  },
  {
   "id": "fee",
@@ -12407,13 +12881,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "每天费用多少？",
   "display": "fee",
   "spoken": "fee",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/fee.svg",
   "pictureCue": true,
   "audio": "word-fee",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1479240 (weihaiping) & #465910 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-fee"
  },
  {
   "id": "feed",
@@ -12440,13 +12915,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我知道那种感觉。",
   "display": "feeling",
   "spoken": "feeling",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/feeling.svg",
   "pictureCue": true,
   "audio": "word-feeling",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #714322 (CM) & #714321 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-feeling"
  },
  {
   "id": "fellow",
@@ -12473,13 +12949,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "雌狮被称为 lioness。",
   "display": "female",
   "spoken": "female",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/female.svg",
   "pictureCue": true,
   "audio": "word-female",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1779777 (Spamster) & #8842856 (crescat)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-female"
  },
  {
   "id": "fence",
@@ -12523,13 +13000,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "买几颗苹果。",
   "display": "few",
   "spoken": "few",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/few.svg",
   "pictureCue": true,
   "audio": "word-few",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #13055117 (rul) & #13166895 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-few"
  },
  {
   "id": "fiction",
@@ -12556,13 +13034,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们可以共同努力对抗污染。",
   "display": "fight",
   "spoken": "fight",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/fight.svg",
   "pictureCue": true,
   "audio": "word-fight",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1107857 (Scott) & #5613699 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fight"
  },
  {
   "id": "figure",
@@ -12572,13 +13051,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不了解他。",
   "display": "figure",
   "spoken": "figure",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/figure.svg",
   "pictureCue": true,
   "audio": "word-figure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #283243 (CK) & #917793 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-figure"
  },
  {
   "id": "fill",
@@ -12605,13 +13085,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我的最终回答。",
   "display": "final",
   "spoken": "final",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/final.svg",
   "pictureCue": true,
   "audio": "word-final",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #896160 (pauldhunt) & #805175 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-final"
  },
  {
   "id": "finally",
@@ -12621,13 +13102,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她终于做到了。",
   "display": "finally",
   "spoken": "finally",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/finally.svg",
   "pictureCue": true,
   "audio": "word-finally",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2114997 (Eldad) & #6098469 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-finally"
  },
  {
   "id": "financial",
@@ -12637,13 +13119,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "俱乐部保存着清晰的财务记录。",
   "display": "financial",
   "spoken": "financial",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/financial.svg",
   "pictureCue": true,
   "audio": "word-financial",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29368 (shanghainese) & #405750 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-financial"
  },
  {
   "id": "finding",
@@ -12653,13 +13136,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这项发现让研究人员感到惊讶。",
   "display": "finding",
   "spoken": "finding",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/finding.svg",
   "pictureCue": true,
   "audio": "word-finding",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #327610 (CK) & #798310 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-finding"
  },
  {
   "id": "finish",
@@ -12669,13 +13153,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我会在晚饭前完成作业。",
   "display": "finish",
   "spoken": "finish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/finish.svg",
   "pictureCue": true,
   "audio": "word-finish",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #812410 (CM) & #812409 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-finish"
  },
  {
   "id": "firm",
@@ -12685,13 +13170,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她在一家小设计公司工作。",
   "display": "firm",
   "spoken": "firm",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/firm.svg",
   "pictureCue": true,
   "audio": "word-firm",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22382 (CK) & #793951 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-firm"
  },
  {
   "id": "fisherman",
@@ -12718,13 +13204,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我穿这条裤子很合身。",
   "display": "fit",
   "spoken": "fit",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/fit.svg",
   "pictureCue": true,
   "audio": "word-fit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #463134 (lukaszpp) & #766434 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fit"
  },
  {
   "id": "flame",
@@ -12819,13 +13306,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我因为得了流感待在家里。",
   "display": "flu",
   "spoken": "flu",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/flu.svg",
   "pictureCue": true,
   "audio": "word-flu",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #65714 (CK) & #488753 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-flu"
  },
  {
   "id": "fluent",
@@ -12835,13 +13323,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你英语说得很流利。",
   "display": "fluent",
   "spoken": "fluent",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/fluent.svg",
   "pictureCue": true,
   "audio": "word-fluent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #237639 (CK) & #517568 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-fluent"
  },
  {
   "id": "focus",
@@ -12851,13 +13340,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我只想注意积极方面。",
   "display": "focus",
   "spoken": "focus",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/focus.svg",
   "pictureCue": true,
   "audio": "word-focus",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5193450 (CK) & #5631888 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-focus"
  },
  {
   "id": "fond",
@@ -12867,13 +13357,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我喜欢车。",
   "display": "fond",
   "spoken": "fond",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/fond.svg",
   "pictureCue": true,
   "audio": "word-fond",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258386 (CM) & #6197329 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-fond"
  },
  {
   "id": "force",
@@ -12883,13 +13374,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们不能强迫人去做。",
   "display": "force",
   "spoken": "force",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/force.svg",
   "pictureCue": true,
   "audio": "word-force",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5553851 (CK) & #6534047 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-force"
  },
  {
   "id": "forecast",
@@ -12899,13 +13391,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "明天的天气预报怎么说？",
   "display": "forecast",
   "spoken": "forecast",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/forecast.svg",
   "pictureCue": true,
   "audio": "word-forecast",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #71846 (CK) & #844559 (kooler)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-forecast"
  },
  {
   "id": "forehead",
@@ -12932,13 +13425,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我收集外国硬币。",
   "display": "foreign",
   "spoken": "foreign",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/foreign.svg",
   "pictureCue": true,
   "audio": "word-foreign",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9139633 (LanguageExpert) & #9139535 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-foreign"
  },
  {
   "id": "forever",
@@ -12948,29 +13442,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不能永远地等。",
   "display": "forever",
   "spoken": "forever",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/forever.svg",
   "pictureCue": true,
   "audio": "word-forever",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1955104 (CK) & #5670783 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-forever"
  },
  {
   "id": "forget",
   "zh": "忘记",
   "pos": "动词",
-  "sentence": "He's bound to forget.",
-  "sentenceZh": "他准会忘。",
+  "sentence": "Do not forget your keys.",
+  "sentenceZh": "别忘了带钥匙。",
   "display": "forget",
   "spoken": "forget",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/forget.svg",
   "pictureCue": true,
   "audio": "word-forget",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2795200 (CM) & #5550267 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-forget"
  },
  {
   "id": "forgive",
@@ -12980,13 +13476,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我确实原谅汤姆。",
   "display": "forgive",
   "spoken": "forgive",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/forgive.svg",
   "pictureCue": true,
   "audio": "word-forgive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5576748 (CK) & #5694956 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-forgive"
  },
  {
   "id": "form",
@@ -13013,13 +13510,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你没必要那么正式。",
   "display": "formal",
   "spoken": "formal",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/formal.svg",
   "pictureCue": true,
   "audio": "word-formal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #239894 (CK) & #343952 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-formal"
  },
  {
   "id": "former",
@@ -13029,13 +13527,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们以前的老师来看望我们了。",
   "display": "former",
   "spoken": "former",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/former.svg",
   "pictureCue": true,
   "audio": "word-former",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1028543 (CK) & #6931231 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-05-former"
  },
  {
   "id": "fortunately",
@@ -13045,13 +13544,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "万幸，没乘客受伤。",
   "display": "fortunately",
   "spoken": "fortunately",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/fortunately.svg",
   "pictureCue": true,
   "audio": "word-fortunately",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1203981 (CK) & #2624589 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-05-fortunately"
  },
  {
   "id": "fortune",
@@ -13061,13 +13561,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "好运向他露出了笑容。",
   "display": "fortune",
   "spoken": "fortune",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/fortune.svg",
   "pictureCue": true,
   "audio": "word-fortune",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #240788 (CK) & #8739345 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-fortune"
  },
  {
   "id": "forward",
@@ -13077,13 +13578,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "向前走两步。",
   "display": "forward",
   "spoken": "forward",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/forward.svg",
   "pictureCue": true,
   "audio": "word-forward",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1565471 (CK) & #3610746 (slo_oth)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-forward"
  },
  {
   "id": "found",
@@ -13093,13 +13595,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们计划创办一所新学校。",
   "display": "found",
   "spoken": "found",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/found.svg",
   "pictureCue": true,
   "audio": "word-found",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3826386 (CK) & #6120767 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-found"
  },
  {
   "id": "foundation",
@@ -13109,13 +13612,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谣言是毫无根据的。",
   "display": "foundation",
   "spoken": "foundation",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/foundation.svg",
   "pictureCue": true,
   "audio": "word-foundation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #49592 (Eldad) & #781231 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-foundation"
  },
  {
   "id": "freedom",
@@ -13125,13 +13629,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "自由是有代价的。",
   "display": "freedom",
   "spoken": "freedom",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/freedom.svg",
   "pictureCue": true,
   "audio": "word-freedom",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2159 (kebukebu) & #332638 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-freedom"
  },
  {
   "id": "freeze",
@@ -13158,13 +13663,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆经常说梦话。",
   "display": "frequently",
   "spoken": "frequently",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/frequently.svg",
   "pictureCue": true,
   "audio": "word-frequently",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1652083 (Spamster) & #5091601 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-frequently"
  },
  {
   "id": "fresh",
@@ -13188,7 +13694,7 @@ export const CONTEXT_WORDS=[
   "zh": "冰箱",
   "pos": "名词",
   "sentence": "The fridge is open.",
-  "sentenceZh": "冰箱开著。",
+  "sentenceZh": "冰箱开着。",
   "display": "fridge",
   "spoken": "fridge",
   "topic": "home",
@@ -13225,13 +13731,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "还有什么比友情更好呢？",
   "display": "friendship",
   "spoken": "friendship",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/friendship.svg",
   "pictureCue": true,
   "audio": "word-friendship",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #780852 (ingenius000) & #10752757 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-friendship"
  },
  {
   "id": "frightened",
@@ -13292,13 +13799,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这可能很好玩。",
   "display": "fun",
   "spoken": "fun",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/fun.svg",
   "pictureCue": true,
   "audio": "word-fun",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3392980 (CK) & #6093350 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-fun"
  },
  {
   "id": "fundamental",
@@ -13308,13 +13816,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "尊重法律是我们社会的基础。",
   "display": "fundamental",
   "spoken": "fundamental",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/fundamental.svg",
   "pictureCue": true,
   "audio": "word-fundamental",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #321020 (CM) & #775464 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-fundamental"
  },
  {
   "id": "funny",
@@ -13358,13 +13867,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们想要更多信息。",
   "display": "further",
   "spoken": "further",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/further.svg",
   "pictureCue": true,
   "audio": "word-further",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29876 (CM) & #335897 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-further"
  },
  {
   "id": "future",
@@ -13374,13 +13884,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你会前途无量的。",
   "display": "future",
   "spoken": "future",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/future.svg",
   "pictureCue": true,
   "audio": "word-future",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11294122 (Aphima) & #805178 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-future"
  },
  {
   "id": "gain",
@@ -13390,13 +13901,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一分耕耘，一分收获。",
   "display": "gain",
   "spoken": "gain",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/gain.svg",
   "pictureCue": true,
   "audio": "word-gain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #18370 (Zifre) & #806221 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-gain"
  },
  {
   "id": "garbage",
@@ -13423,13 +13935,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "把煤气关了！",
   "display": "gas",
   "spoken": "gas",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/gas.svg",
   "pictureCue": true,
   "audio": "word-gas",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #63744 (CK) & #1411609 (asosan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-gas"
  },
  {
   "id": "gate",
@@ -13456,13 +13969,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们每周在这儿聚一次。",
   "display": "gather",
   "spoken": "gather",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/gather.svg",
   "pictureCue": true,
   "audio": "word-gather",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #248851 (CK) & #333775 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-gather"
  },
  {
   "id": "gender",
@@ -13472,13 +13986,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "表格要求填写姓名和性别。",
   "display": "gender",
   "spoken": "gender",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/gender.svg",
   "pictureCue": true,
   "audio": "word-gender",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10253678 (bekindtoall) & #10058497 (slo_oth)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-gender"
  },
  {
   "id": "gene",
@@ -13488,13 +14003,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "基因是遗传的单位。",
   "display": "gene",
   "spoken": "gene",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/gene.svg",
   "pictureCue": true,
   "audio": "word-gene",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681062 (Source_VOA) & #3630130 (suitchic)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-gene"
  },
  {
   "id": "general",
@@ -13504,13 +14020,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "指南提供了公园的基本信息。",
   "display": "general",
   "spoken": "general",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/general.svg",
   "pictureCue": true,
   "audio": "word-general",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #707095 (papabear) & #769627 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-general"
  },
  {
   "id": "generate",
@@ -13520,13 +14037,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "电流可以产生磁性。",
   "display": "generate",
   "spoken": "generate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/generate.svg",
   "pictureCue": true,
   "audio": "word-generate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #279237 (CK) & #796023 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-generate"
  },
  {
   "id": "generous",
@@ -13536,13 +14054,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "大自然很慷慨。",
   "display": "generous",
   "spoken": "generous",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/generous.svg",
   "pictureCue": true,
   "audio": "word-generous",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #792819 (U2FS) & #794063 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-generous"
  },
  {
   "id": "genius",
@@ -13552,13 +14071,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她儿子是个天才。",
   "display": "genius",
   "spoken": "genius",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/genius.svg",
   "pictureCue": true,
   "audio": "word-genius",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #309542 (CK) & #389357 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-genius"
  },
  {
   "id": "gentleman",
@@ -13585,13 +14105,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这可能不是真的钻石。",
   "display": "genuine",
   "spoken": "genuine",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/genuine.svg",
   "pictureCue": true,
   "audio": "word-genuine",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #788247 (hrin) & #781552 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-genuine"
  },
  {
   "id": "geography",
@@ -13601,13 +14122,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他喜欢地理和历史。",
   "display": "geography",
   "spoken": "geography",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/geography.svg",
   "pictureCue": true,
   "audio": "word-geography",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #301471 (CK) & #528057 (biglion)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-geography"
  },
  {
   "id": "gifted",
@@ -13617,13 +14139,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆真有才华。",
   "display": "gifted",
   "spoken": "gifted",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/gifted.svg",
   "pictureCue": true,
   "audio": "word-gifted",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4494689 (CK) & #6131481 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-gifted"
  },
  {
   "id": "glad",
@@ -13650,13 +14173,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "全球变暖让科学家担心。",
   "display": "global",
   "spoken": "global",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/global.svg",
   "pictureCue": true,
   "audio": "word-global",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6799299 (mailohilohi) & #13180347 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-global"
  },
  {
   "id": "glue",
@@ -13717,13 +14241,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们选出了新政府。",
   "display": "government",
   "spoken": "government",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/government.svg",
   "pictureCue": true,
   "audio": "word-government",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #503816 (CK) & #873215 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-government"
  },
  {
   "id": "grab",
@@ -13750,13 +14275,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你给测验评分了吗?",
   "display": "grade",
   "spoken": "grade",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/grade.svg",
   "pictureCue": true,
   "audio": "word-grade",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #435638 (CK) & #833085 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-grade"
  },
  {
   "id": "graduate",
@@ -13766,13 +14292,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆将在10月毕业。",
   "display": "graduate",
   "spoken": "graduate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/graduate.svg",
   "pictureCue": true,
   "audio": "word-graduate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4921440 (CK) & #9932503 (SbrAkr)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-graduate"
  },
  {
   "id": "grammar",
@@ -13782,13 +14309,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "语法是很复杂的。",
   "display": "grammar",
   "spoken": "grammar",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/grammar.svg",
   "pictureCue": true,
   "audio": "word-grammar",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #401607 (CM) & #5640774 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-grammar"
  },
  {
   "id": "grandson",
@@ -13798,13 +14326,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的孙子还是个婴儿。",
   "display": "grandson",
   "spoken": "grandson",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/grandson.svg",
   "pictureCue": true,
   "audio": "word-grandson",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #814624 (brauliobezerra) & #816816 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-grandson"
  },
  {
   "id": "grasp",
@@ -13814,13 +14343,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他精通英文。",
   "display": "grasp",
   "spoken": "grasp",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/grasp.svg",
   "pictureCue": true,
   "audio": "word-grasp",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #294020 (CK) & #884194 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-grasp"
  },
  {
   "id": "grateful",
@@ -13847,13 +14377,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "重力把物体拉向地球。",
   "display": "gravity",
   "spoken": "gravity",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/gravity.svg",
   "pictureCue": true,
   "audio": "word-gravity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681099 (Source_VOA) & #3338908 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-gravity"
  },
  {
   "id": "greedy",
@@ -13863,13 +14394,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那个贪婪的人物想要所有的财宝。",
   "display": "greedy",
   "spoken": "greedy",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/greedy.svg",
   "pictureCue": true,
   "audio": "word-greedy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1095422 (CK) & #9480683 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-greedy"
  },
  {
   "id": "greenhouse",
@@ -13930,13 +14462,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们为这只钟提供一年保修。",
   "display": "guarantee",
   "spoken": "guarantee",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/guarantee.svg",
   "pictureCue": true,
   "audio": "word-guarantee",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #58948 (CK) & #801932 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-guarantee"
  },
  {
   "id": "guard",
@@ -13946,13 +14479,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要放松警惕。",
   "display": "guard",
   "spoken": "guard",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/guard.svg",
   "pictureCue": true,
   "audio": "word-guard",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1123492 (Scott) & #9962879 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-guard"
  },
  {
   "id": "guess",
@@ -13962,13 +14496,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我猜你是对的。",
   "display": "guess",
   "spoken": "guess",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/guess.svg",
   "pictureCue": true,
   "audio": "word-guess",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1887329 (CK) & #835850 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-guess"
  },
  {
   "id": "guide",
@@ -13995,13 +14530,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆感到非常愧疚。",
   "display": "guilty",
   "spoken": "guilty",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/guilty.svg",
   "pictureCue": true,
   "audio": "word-guilty",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10372294 (DaoSeng) & #9990135 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-guilty"
  },
  {
   "id": "guy",
@@ -14045,13 +14581,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "睡前阅读是一个好习惯。",
   "display": "habit",
   "spoken": "habit",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/habit.svg",
   "pictureCue": true,
   "audio": "word-habit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #311294 (CK) & #779054 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-habit"
  },
  {
   "id": "hall",
@@ -14095,13 +14632,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他很英俊。",
   "display": "handsome",
   "spoken": "handsome",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/handsome.svg",
   "pictureCue": true,
   "audio": "word-handsome",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #400911 (CK) & #336228 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-handsome"
  },
  {
   "id": "handwriting",
@@ -14145,13 +14683,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "什么时候发生的？",
   "display": "happen",
   "spoken": "happen",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/happen.svg",
   "pictureCue": true,
   "audio": "word-happen",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #687502 (lukaszpp) & #5382963 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-happen"
  },
  {
   "id": "hardly",
@@ -14161,13 +14700,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我几乎不能走路。",
   "display": "hardly",
   "spoken": "hardly",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/hardly.svg",
   "pictureCue": true,
   "audio": "word-hardly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #33280 (CK) & #908505 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-hardly"
  },
  {
   "id": "harm",
@@ -14177,13 +14717,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "污染会伤害动植物。",
   "display": "harm",
   "spoken": "harm",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/harm.svg",
   "pictureCue": true,
   "audio": "word-harm",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3729096 (CM) & #6624633 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-harm"
  },
  {
   "id": "harmony",
@@ -14193,13 +14734,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须学会与自然和谐共处。",
   "display": "harmony",
   "spoken": "harmony",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/harmony.svg",
   "pictureCue": true,
   "audio": "word-harmony",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #248821 (CK) & #5613678 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-harmony"
  },
  {
   "id": "harvest",
@@ -14260,13 +14802,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "健康比财富重要。",
   "display": "health",
   "spoken": "health",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/health.svg",
   "pictureCue": true,
   "audio": "word-health",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238971 (hebrajska) & #346072 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-health"
  },
  {
   "id": "heat",
@@ -14276,13 +14819,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "太阳给我们光和热。",
   "display": "heat",
   "spoken": "heat",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/heat.svg",
   "pictureCue": true,
   "audio": "word-heat",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5085391 (Hybrid) & #5085417 (Jubilee11)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-heat"
  },
  {
   "id": "height",
@@ -14309,13 +14853,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们需要英雄。",
   "display": "hero",
   "spoken": "hero",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/hero.svg",
   "pictureCue": true,
   "audio": "word-hero",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2649076 (CK) & #8215716 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-hero"
  },
  {
   "id": "hers",
@@ -14325,13 +14870,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些鞋是她的。",
   "display": "hers",
   "spoken": "hers",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/hers.svg",
   "pictureCue": true,
   "audio": "word-hers",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #417351 (CK) & #824530 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-hers"
  },
  {
   "id": "herself",
@@ -14341,13 +14887,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她亲手做了这个蛋糕。",
   "display": "herself",
   "spoken": "herself",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/herself.svg",
   "pictureCue": true,
   "audio": "word-herself",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #313812 (CK) & #512100 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-herself"
  },
  {
   "id": "hesitate",
@@ -14357,13 +14904,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要犹豫去问问题。",
   "display": "hesitate",
   "spoken": "hesitate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/hesitate.svg",
   "pictureCue": true,
   "audio": "word-hesitate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #265037 (CK) & #834365 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-hesitate"
  },
  {
   "id": "hide",
@@ -14424,13 +14972,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "是他自己做的。",
   "display": "himself",
   "spoken": "himself",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/himself.svg",
   "pictureCue": true,
   "audio": "word-himself",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #298565 (CK) & #779528 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-himself"
  },
  {
   "id": "hire",
@@ -14440,13 +14989,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "为什么我要雇佣Tom？",
   "display": "hire",
   "spoken": "hire",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/hire.svg",
   "pictureCue": true,
   "audio": "word-hire",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4834926 (CK) & #4844761 (pig8322)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-hire"
  },
  {
   "id": "history",
@@ -14456,13 +15006,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对历史有兴趣。",
   "display": "history",
   "spoken": "history",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/history.svg",
   "pictureCue": true,
   "audio": "word-history",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #262259 (CK) & #941116 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-history"
  },
  {
   "id": "hobby",
@@ -14472,13 +15023,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的爱好是阅读。",
   "display": "hobby",
   "spoken": "hobby",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/hobby.svg",
   "pictureCue": true,
   "audio": "word-hobby",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1258651 (CK) & #9955772 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-hobby"
  },
  {
   "id": "hole",
@@ -14505,13 +15057,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我是个老实人。",
   "display": "honest",
   "spoken": "honest",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/honest.svg",
   "pictureCue": true,
   "audio": "word-honest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258975 (CK) & #426409 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-honest"
  },
  {
   "id": "honor",
@@ -14521,13 +15074,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "代表我们学校是一种荣幸。",
   "display": "honor",
   "spoken": "honor",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/honor.svg",
   "pictureCue": true,
   "audio": "word-honor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258327 (bmorsello) & #884181 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-honor"
  },
  {
   "id": "hope",
@@ -14537,13 +15091,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我希望你喜欢这个故事。",
   "display": "hope",
   "spoken": "hope",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/hope.svg",
   "pictureCue": true,
   "audio": "word-hope",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4953385 (CK) & #4953624 (umidake)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-hope"
  },
  {
   "id": "horrible",
@@ -14553,13 +15108,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我只是希望我们能离开这个可怕的地方。",
   "display": "horrible",
   "spoken": "horrible",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/horrible.svg",
   "pictureCue": true,
   "audio": "word-horrible",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #40902 (CK) & #336673 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-horrible"
  },
  {
   "id": "horror",
@@ -14586,13 +15142,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她忙于家务。",
   "display": "household",
   "spoken": "household",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/household.svg",
   "pictureCue": true,
   "audio": "word-household",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #388637 (CK) & #845995 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-household"
  },
  {
   "id": "housework",
@@ -14619,13 +15176,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "当时在下雨。然而，我们仍然玩得很开心。",
   "display": "however",
   "spoken": "however",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/however.svg",
   "pictureCue": true,
   "audio": "word-however",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1513744 (CK) & #3493410 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-however"
  },
  {
   "id": "huge",
@@ -14652,13 +15210,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它是基本人权。",
   "display": "human",
   "spoken": "human",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/human.svg",
   "pictureCue": true,
   "audio": "word-human",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1983986 (Spamster) & #5613655 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-human"
  },
  {
   "id": "humanity",
@@ -14668,13 +15227,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "清洁的水对全人类都很重要。",
   "display": "humanity",
   "spoken": "humanity",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/humanity.svg",
   "pictureCue": true,
   "audio": "word-humanity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #877881 (CM) & #10752758 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-humanity"
  },
  {
   "id": "humor",
@@ -14684,13 +15244,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她的幽默感让我们发笑。",
   "display": "humor",
   "spoken": "humor",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/humor.svg",
   "pictureCue": true,
   "audio": "word-humor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #292901 (CK) & #392676 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-humor"
  },
  {
   "id": "hunt",
@@ -14734,13 +15295,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我姑姑和她的丈夫喜欢园艺。",
   "display": "husband",
   "spoken": "husband",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/husband.svg",
   "pictureCue": true,
   "audio": "word-husband",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #388374 (CK) & #819344 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-husband"
  },
  {
   "id": "ideal",
@@ -14750,13 +15312,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个理想的野餐地点。",
   "display": "ideal",
   "spoken": "ideal",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/ideal.svg",
   "pictureCue": true,
   "audio": "word-ideal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #304626 (CM) & #343979 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-ideal"
  },
  {
   "id": "identity",
@@ -14766,13 +15329,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这张卡证明你的身份。",
   "display": "identity",
   "spoken": "identity",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/identity.svg",
   "pictureCue": true,
   "audio": "word-identity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2953682 (CK) & #6086815 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-identity"
  },
  {
   "id": "if",
@@ -14782,13 +15346,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能来就来!",
   "display": "if",
   "spoken": "if",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/if.svg",
   "pictureCue": true,
   "audio": "word-if",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #450074 (CK) & #804811 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-if"
  },
  {
   "id": "ignore",
@@ -14798,13 +15363,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要忽略警示标志。",
   "display": "ignore",
   "spoken": "ignore",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ignore.svg",
   "pictureCue": true,
   "audio": "word-ignore",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8426677 (CK) & #9955815 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-ignore"
  },
  {
   "id": "illegal",
@@ -14814,13 +15380,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "把车停在这里是违法的。",
   "display": "illegal",
   "spoken": "illegal",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/illegal.svg",
   "pictureCue": true,
   "audio": "word-illegal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #61753 (CK) & #890608 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-illegal"
  },
  {
   "id": "illness",
@@ -14830,13 +15397,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的病给他治好了。",
   "display": "illness",
   "spoken": "illness",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/illness.svg",
   "pictureCue": true,
   "audio": "word-illness",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #297977 (CK) & #2029366 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-illness"
  },
  {
   "id": "imagine",
@@ -14863,13 +15431,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须现在走。",
   "display": "immediately",
   "spoken": "immediately",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/immediately.svg",
   "pictureCue": true,
   "audio": "word-immediately",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3178449 (CK) & #11243416 (klzlueylx)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-immediately"
  },
  {
   "id": "imply",
@@ -14879,13 +15448,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没想暗示那件事。",
   "display": "imply",
   "spoken": "imply",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/imply.svg",
   "pictureCue": true,
   "audio": "word-imply",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8063699 (CK) & #13137945 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-imply"
  },
  {
   "id": "import",
@@ -14895,13 +15465,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们从印度进口茶叶。",
   "display": "import",
   "spoken": "import",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/import.svg",
   "pictureCue": true,
   "audio": "word-import",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29179 (CK) & #840804 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-import"
  },
  {
   "id": "important",
@@ -14911,13 +15482,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "认真倾听很重要。",
   "display": "important",
   "spoken": "important",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/important.svg",
   "pictureCue": true,
   "audio": "word-important",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1385 (CK) & #59 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-important"
  },
  {
   "id": "impossible",
@@ -14927,13 +15499,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我很抱歉, 但它是不可能的。",
   "display": "impossible",
   "spoken": "impossible",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/impossible.svg",
   "pictureCue": true,
   "audio": "word-impossible",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #269542 (CK) & #793330 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-impossible"
  },
  {
   "id": "impression",
@@ -14943,13 +15516,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你对美国印象如何？",
   "display": "impression",
   "spoken": "impression",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/impression.svg",
   "pictureCue": true,
   "audio": "word-impression",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #67548 (CK) & #343866 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-impression"
  },
  {
   "id": "improve",
@@ -14976,13 +15550,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "英寸是一个长度单位。",
   "display": "inch",
   "spoken": "inch",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/inch.svg",
   "pictureCue": true,
   "audio": "word-inch",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1818 (CK) & #454088 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-inch"
  },
  {
   "id": "incident",
@@ -14992,13 +15567,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "老师写了一份关于该事件的报告。",
   "display": "incident",
   "spoken": "incident",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/incident.svg",
   "pictureCue": true,
   "audio": "word-incident",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #400142 (CK) & #840429 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-incident"
  },
  {
   "id": "include",
@@ -15008,13 +15584,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个价格不包含这个箱子。",
   "display": "include",
   "spoken": "include",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/include.svg",
   "pictureCue": true,
   "audio": "word-include",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #325753 (CK) & #902969 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-include"
  },
  {
   "id": "income",
@@ -15024,13 +15601,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他收入可观。",
   "display": "income",
   "spoken": "income",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/income.svg",
   "pictureCue": true,
   "audio": "word-income",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #674128 (Eldad) & #1454454 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-income"
  },
  {
   "id": "increase",
@@ -15040,13 +15618,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们要求加薪。",
   "display": "increase",
   "spoken": "increase",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/increase.svg",
   "pictureCue": true,
   "audio": "word-increase",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #306355 (CM) & #9962358 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-increase"
  },
  {
   "id": "indeed",
@@ -15056,13 +15635,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这确实是一棵很老的树。",
   "display": "indeed",
   "spoken": "indeed",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/indeed.svg",
   "pictureCue": true,
   "audio": "word-indeed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #32841 (Zifre) & #806165 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-indeed"
  },
  {
   "id": "independent",
@@ -15072,13 +15652,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他独立于他的父母。",
   "display": "independent",
   "spoken": "independent",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/independent.svg",
   "pictureCue": true,
   "audio": "word-independent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #300071 (CK) & #769695 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-independent"
  },
  {
   "id": "indicate",
@@ -15088,13 +15669,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "微笑并不一定表示高兴。",
   "display": "indicate",
   "spoken": "indicate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/indicate.svg",
   "pictureCue": true,
   "audio": "word-indicate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #318127 (CK) & #798241 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-indicate"
  },
  {
   "id": "industry",
@@ -15104,13 +15686,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "工业发展迅速。",
   "display": "industry",
   "spoken": "industry",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/industry.svg",
   "pictureCue": true,
   "audio": "word-industry",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #807009 (Source_VOA) & #6058556 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-industry"
  },
  {
   "id": "influence",
@@ -15120,13 +15703,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的影响遍及全国。",
   "display": "influence",
   "spoken": "influence",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/influence.svg",
   "pictureCue": true,
   "audio": "word-influence",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #286902 (CK) & #6065350 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-influence"
  },
  {
   "id": "influential",
@@ -15136,13 +15720,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他在医学界有很大的影响力。",
   "display": "influential",
   "spoken": "influential",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/influential.svg",
   "pictureCue": true,
   "audio": "word-influential",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #509646 (darinmex) & #408847 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-influential"
  },
  {
   "id": "information",
@@ -15152,13 +15737,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想要了解一些信息。",
   "display": "information",
   "spoken": "information",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/information.svg",
   "pictureCue": true,
   "audio": "word-information",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3530277 (CK) & #13285175 (Ayer)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-information"
  },
  {
   "id": "injury",
@@ -15202,13 +15788,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她和一位朋友分享了内心的想法。",
   "display": "inner",
   "spoken": "inner",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/inner.svg",
   "pictureCue": true,
   "audio": "word-inner",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #271385 (CM) & #334051 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-inner"
  },
  {
   "id": "innocent",
@@ -15218,13 +15805,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆自称清白。",
   "display": "innocent",
   "spoken": "innocent",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/innocent.svg",
   "pictureCue": true,
   "audio": "word-innocent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4666419 (CK) & #13513762 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-innocent"
  },
  {
   "id": "inside",
@@ -15251,13 +15839,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们坚持让他走。",
   "display": "insist",
   "spoken": "insist",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/insist.svg",
   "pictureCue": true,
   "audio": "word-insist",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #307324 (CM) & #333037 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-insist"
  },
  {
   "id": "instant",
@@ -15267,13 +15856,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "就在那时，公交车停住了。",
   "display": "instant",
   "spoken": "instant",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/instant.svg",
   "pictureCue": true,
   "audio": "word-instant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2160716 (erikspen) & #1786150 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-instant"
  },
  {
   "id": "instead",
@@ -15283,13 +15873,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她用人造黄油代替了黄油。",
   "display": "instead",
   "spoken": "instead",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/instead.svg",
   "pictureCue": true,
   "audio": "word-instead",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1578558 (CM) & #8751019 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-instead"
  },
  {
   "id": "insurance",
@@ -15299,13 +15890,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你有医疗保险吗？",
   "display": "insurance",
   "spoken": "insurance",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/insurance.svg",
   "pictureCue": true,
   "audio": "word-insurance",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27892 (CK) & #833004 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-insurance"
  },
  {
   "id": "intelligent",
@@ -15332,13 +15924,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我打算去那里。",
   "display": "intend",
   "spoken": "intend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/intend.svg",
   "pictureCue": true,
   "audio": "word-intend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #50878 (CK) & #824353 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-intend"
  },
  {
   "id": "intention",
@@ -15348,13 +15941,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那不是我的本意。",
   "display": "intention",
   "spoken": "intention",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/intention.svg",
   "pictureCue": true,
   "audio": "word-intention",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8453183 (CK) & #461600 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-intention"
  },
  {
   "id": "interest",
@@ -15364,13 +15958,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆感兴趣吗？",
   "display": "interest",
   "spoken": "interest",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/interest.svg",
   "pictureCue": true,
   "audio": "word-interest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4497876 (CK) & #5846069 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-interest"
  },
  {
   "id": "international",
@@ -15380,13 +15975,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "英语是国际语言。",
   "display": "international",
   "spoken": "international",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/international.svg",
   "pictureCue": true,
   "audio": "word-international",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #26277 (CK) & #811873 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-international"
  },
  {
   "id": "interrupt",
@@ -15396,13 +15992,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请不要打断我。",
   "display": "interrupt",
   "spoken": "interrupt",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/interrupt.svg",
   "pictureCue": true,
   "audio": "word-interrupt",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2120494 (jjbraam) & #1889625 (Venki)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-06-interrupt"
  },
  {
   "id": "interview",
@@ -15412,13 +16009,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "面试怎么样？",
   "display": "interview",
   "spoken": "interview",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/interview.svg",
   "pictureCue": true,
   "audio": "word-interview",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2547412 (CK) & #6075674 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-interview"
  },
  {
   "id": "into",
@@ -15445,13 +16043,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可以自我介绍吗?",
   "display": "introduce",
   "spoken": "introduce",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/introduce.svg",
   "pictureCue": true,
   "audio": "word-introduce",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #264432 (CK) & #761309 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-introduce"
  },
  {
   "id": "invention",
@@ -15461,13 +16060,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "洗衣机是一个很棒的发明。",
   "display": "invention",
   "spoken": "invention",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/invention.svg",
   "pictureCue": true,
   "audio": "word-invention",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #273362 (CK) & #777944 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-06-invention"
  },
  {
   "id": "invest",
@@ -15477,13 +16077,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "政府应该加大对农业的投资。",
   "display": "invest",
   "spoken": "invest",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/invest.svg",
   "pictureCue": true,
   "audio": "word-invest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1210696 (CK) & #2515316 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-invest"
  },
  {
   "id": "investment",
@@ -15493,13 +16094,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆一年内增加了一倍的投资。",
   "display": "investment",
   "spoken": "investment",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/investment.svg",
   "pictureCue": true,
   "audio": "word-investment",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1094237 (CK) & #5091314 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-investment"
  },
  {
   "id": "invite",
@@ -15509,13 +16111,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想请你参加派对。",
   "display": "invite",
   "spoken": "invite",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/invite.svg",
   "pictureCue": true,
   "audio": "word-invite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #68815 (CK) & #347060 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-invite"
  },
  {
   "id": "involve",
@@ -15525,13 +16128,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个游戏将让全班每个人都参与。",
   "display": "involve",
   "spoken": "involve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/involve.svg",
   "pictureCue": true,
   "audio": "word-involve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2290416 (CK) & #13138195 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-involve"
  },
  {
   "id": "iron",
@@ -15541,13 +16145,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "铁是个有用的金属。",
   "display": "iron",
   "spoken": "iron",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/iron.svg",
   "pictureCue": true,
   "audio": "word-iron",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #467339 (CK) & #343769 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-iron"
  },
  {
   "id": "issue",
@@ -15557,13 +16162,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我同意你对这问题的看法。",
   "display": "issue",
   "spoken": "issue",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/issue.svg",
   "pictureCue": true,
   "audio": "word-issue",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #253590 (CK) & #883498 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-issue"
  },
  {
   "id": "item",
@@ -15573,13 +16179,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以从盒子里选一件物品。",
   "display": "item",
   "spoken": "item",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/item.svg",
   "pictureCue": true,
   "audio": "word-item",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #906790 (CK) & #2002962 (sunnywqing)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-item"
  },
  {
   "id": "itself",
@@ -15589,13 +16196,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "设计本身有问题。",
   "display": "itself",
   "spoken": "itself",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/itself.svg",
   "pictureCue": true,
   "audio": "word-itself",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4870315 (CK) & #6728899 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-itself"
  },
  {
   "id": "jaw",
@@ -15622,13 +16230,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我喜欢爵士乐。",
   "display": "jazz",
   "spoken": "jazz",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/jazz.svg",
   "pictureCue": true,
   "audio": "word-jazz",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #253907 (CK) & #826284 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-jazz"
  },
  {
   "id": "join",
@@ -15734,19 +16343,20 @@ export const CONTEXT_WORDS=[
  },
  {
   "id": "junior",
-  "zh": "初级的",
+  "zh": "（学校）初中的",
   "pos": "形容词",
   "sentence": "I'm a junior high school student.",
-  "sentenceZh": "我是个国中生。",
+  "sentenceZh": "我是个初中生。",
   "display": "junior",
   "spoken": "junior",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/junior.svg",
   "pictureCue": true,
   "audio": "word-junior",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #252301 (CK) & #881031 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-junior"
  },
  {
   "id": "just",
@@ -15756,13 +16366,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我刚才起床了。",
   "display": "just",
   "spoken": "just",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/just.svg",
   "pictureCue": true,
   "audio": "word-just",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #398493 (CM) & #398497 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-just"
  },
  {
   "id": "justice",
@@ -15772,13 +16383,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "正义终将胜利。",
   "display": "justice",
   "spoken": "justice",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/justice.svg",
   "pictureCue": true,
   "audio": "word-justice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243905 (CM) & #5907524 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-justice"
  },
  {
   "id": "justify",
@@ -15788,13 +16400,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能用证据说明你的答案为什么合理吗？",
   "display": "justify",
   "spoken": "justify",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/justify.svg",
   "pictureCue": true,
   "audio": "word-justify",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #323820 (CK) & #793969 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-justify"
  },
  {
   "id": "keen",
@@ -15804,13 +16417,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "狗的嗅觉灵敏。",
   "display": "keen",
   "spoken": "keen",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/keen.svg",
   "pictureCue": true,
   "audio": "word-keen",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #387379 (Mouseneb) & #333227 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-keen"
  },
  {
   "id": "kettle",
@@ -15853,13 +16467,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "米以公斤为单位来出售。",
   "display": "kilogram",
   "spoken": "kilogram",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/kilogram.svg",
   "pictureCue": true,
   "audio": "word-kilogram",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #320202 (CK) & #798202 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-kilogram"
  },
  {
   "id": "kingdom",
@@ -15869,17 +16484,18 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "伦敦是英国的首都。",
   "display": "kingdom",
   "spoken": "kingdom",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/kingdom.svg",
   "pictureCue": true,
   "audio": "word-kingdom",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2592902 (WestofEden) & #766462 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-kingdom"
  },
  {
   "id": "kit",
-  "zh": "成套工具",
+  "zh": "成套用品；工具包",
   "pos": "名词",
   "sentence": "Don't forget to take the first-aid kit.",
   "sentenceZh": "别忘了带上急救箱。",
@@ -15970,13 +16586,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们因缺乏准备而失败了。",
   "display": "lack",
   "spoken": "lack",
-  "topic": null,
-  "image": null,
+  "topic": "colors",
+  "image": "./assets/pictures/lack.svg",
   "pictureCue": true,
   "audio": "word-lack",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22915 (CM) & #778488 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lack"
  },
  {
   "id": "lady",
@@ -16037,13 +16654,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是什么语言？",
   "display": "language",
   "spoken": "language",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/language.svg",
   "pictureCue": true,
   "audio": "word-language",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4749473 (CK) & #5250641 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-language"
  },
  {
   "id": "large",
@@ -16070,13 +16688,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "等会儿见。",
   "display": "later",
   "spoken": "later",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/later.svg",
   "pictureCue": true,
   "audio": "word-later",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #32706 (CK) & #771643 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-later"
  },
  {
   "id": "launch",
@@ -16103,13 +16722,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须遵守法律。",
   "display": "law",
   "spoken": "law",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/law.svg",
   "pictureCue": true,
   "audio": "word-law",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #287669 (CM) & #792851 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-law"
  },
  {
   "id": "lawyer",
@@ -16153,13 +16773,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在花园里度过了一个悠闲的下午。",
   "display": "lazy",
   "spoken": "lazy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lazy.svg",
   "pictureCue": true,
   "audio": "word-lazy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1102794 (CM) & #7771883 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lazy"
  },
  {
   "id": "lead",
@@ -16169,13 +16790,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我过着忙碌的生活。",
   "display": "lead",
   "spoken": "lead",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lead.svg",
   "pictureCue": true,
   "audio": "word-lead",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #275003 (CM) & #780292 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lead"
  },
  {
   "id": "leader",
@@ -16185,13 +16807,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你是个好的领导人。",
   "display": "leader",
   "spoken": "leader",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/leader.svg",
   "pictureCue": true,
   "audio": "word-leader",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5860545 (CK) & #6159218 (rayshih715)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-leader"
  },
  {
   "id": "leadership",
@@ -16201,13 +16824,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "团队展现了很强的领导能力。",
   "display": "leadership",
   "spoken": "leadership",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/leadership.svg",
   "pictureCue": true,
   "audio": "word-leadership",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #807029 (Source_VOA) & #13201805 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-leadership"
  },
  {
   "id": "league",
@@ -16217,13 +16841,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们队参加当地联赛。",
   "display": "league",
   "spoken": "league",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/league.svg",
   "pictureCue": true,
   "audio": "word-league",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5616891 (CK) & #5637329 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-league"
  },
  {
   "id": "leak",
@@ -16267,13 +16892,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你最不喜欢的颜色是？",
   "display": "least",
   "spoken": "least",
-  "topic": null,
-  "image": null,
+  "topic": "colors",
+  "image": "./assets/pictures/least.svg",
   "pictureCue": true,
   "audio": "word-least",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10169695 (ddnktr) & #13543152 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-least"
  },
  {
   "id": "leather",
@@ -16300,13 +16926,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "让我来弄。",
   "display": "leave",
   "spoken": "leave",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/leave.svg",
   "pictureCue": true,
   "audio": "word-leave",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #321442 (CK) & #335500 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-leave"
  },
  {
   "id": "lecture",
@@ -16333,13 +16960,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她向律师寻求法律建议。",
   "display": "legal",
   "spoken": "legal",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/legal.svg",
   "pictureCue": true,
   "audio": "word-legal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681338 (Source_VOA) & #778744 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-legal"
  },
  {
   "id": "leisure",
@@ -16349,13 +16977,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她利用空闲时间做布娃娃。",
   "display": "leisure",
   "spoken": "leisure",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/leisure.svg",
   "pictureCue": true,
   "audio": "word-leisure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #317325 (Shiawase) & #2004692 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-leisure"
  },
  {
   "id": "lend",
@@ -16365,13 +16994,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我会借给你我的笔记本。",
   "display": "lend",
   "spoken": "lend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lend.svg",
   "pictureCue": true,
   "audio": "word-lend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17470 (CK) & #834927 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lend"
  },
  {
   "id": "less",
@@ -16381,13 +17011,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "其他人不那么乐观。",
   "display": "less",
   "spoken": "less",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/less.svg",
   "pictureCue": true,
   "audio": "word-less",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5738032 (CM) & #5945159 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-less"
  },
  {
   "id": "level",
@@ -16397,13 +17028,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "河的水位上升了。",
   "display": "level",
   "spoken": "level",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/level.svg",
   "pictureCue": true,
   "audio": "word-level",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1578575 (CM) & #8839878 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-level"
  },
  {
   "id": "license",
@@ -16413,13 +17045,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的驾驶执照已经过期了。",
   "display": "license",
   "spoken": "license",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/license.svg",
   "pictureCue": true,
   "audio": "word-license",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16883 (CK) & #845994 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-license"
  },
  {
   "id": "lie",
@@ -16429,13 +17062,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "说谎不好。",
   "display": "lie",
   "spoken": "lie",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lie.svg",
   "pictureCue": true,
   "audio": "word-lie",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2533402 (CK) & #343586 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-lie"
  },
  {
   "id": "life",
@@ -16445,13 +17079,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我爱我的生活。",
   "display": "life",
   "spoken": "life",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/life.svg",
   "pictureCue": true,
   "audio": "word-life",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #436789 (lukaszpp) & #465838 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-life"
  },
  {
   "id": "lift",
@@ -16478,13 +17113,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她很有可能会有所成就。",
   "display": "likely",
   "spoken": "likely",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/likely.svg",
   "pictureCue": true,
   "audio": "word-likely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #903407 (CK) & #7767678 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-likely"
  },
  {
   "id": "limit",
@@ -16494,13 +17130,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要超速。",
   "display": "limit",
   "spoken": "limit",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/limit.svg",
   "pictureCue": true,
   "audio": "word-limit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2734388 (CK) & #790852 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-limit"
  },
  {
   "id": "line",
@@ -16544,13 +17181,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他按字面意思理解了这些话。",
   "display": "literally",
   "spoken": "literally",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/literally.svg",
   "pictureCue": true,
   "audio": "word-literally",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #354503 (plover) & #785144 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-literally"
  },
  {
   "id": "literature",
@@ -16560,13 +17198,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他学习现代文学。",
   "display": "literature",
   "spoken": "literature",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/literature.svg",
   "pictureCue": true,
   "audio": "word-literature",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #296086 (CK) & #512869 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-literature"
  },
  {
   "id": "lively",
@@ -16576,13 +17215,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有点活泼。",
   "display": "lively",
   "spoken": "lively",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/lively.svg",
   "pictureCue": true,
   "audio": "word-lively",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #551529 (FeuDRenais) & #336451 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-lively"
  },
  {
   "id": "living",
@@ -16592,13 +17232,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "植物是生物。",
   "display": "living",
   "spoken": "living",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/living.svg",
   "pictureCue": true,
   "audio": "word-living",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4811752 (CK) & #4815125 (McMeao)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-living"
  },
  {
   "id": "loan",
@@ -16608,13 +17249,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他从银行得到了贷款。",
   "display": "loan",
   "spoken": "loan",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/loan.svg",
   "pictureCue": true,
   "audio": "word-loan",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295545 (CK) & #804608 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-loan"
  },
  {
   "id": "location",
@@ -16624,13 +17266,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "给我你的位置。",
   "display": "location",
   "spoken": "location",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/location.svg",
   "pictureCue": true,
   "audio": "word-location",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3151442 (CK) & #5630448 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-location"
  },
  {
   "id": "logical",
@@ -16640,13 +17283,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我觉得很有逻辑。",
   "display": "logical",
   "spoken": "logical",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/logical.svg",
   "pictureCue": true,
   "audio": "word-logical",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #13237744 (atitarev) & #13519327 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-logical"
  },
  {
   "id": "lose",
@@ -16656,13 +17300,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我要输了。",
   "display": "lose",
   "spoken": "lose",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lose.svg",
   "pictureCue": true,
   "audio": "word-lose",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2280335 (CK) & #5595189 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-lose"
  },
  {
   "id": "loss",
@@ -16672,13 +17317,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我必须弥补损失。",
   "display": "loss",
   "spoken": "loss",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/loss.svg",
   "pictureCue": true,
   "audio": "word-loss",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #254536 (CK) & #1416297 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-loss"
  },
  {
   "id": "lost",
@@ -16688,13 +17334,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "迷路的小狗找到了回家的路。",
   "display": "lost",
   "spoken": "lost",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/lost.svg",
   "pictureCue": true,
   "audio": "word-lost",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #460058 (saasmath) & #512909 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lost"
  },
  {
   "id": "loud",
@@ -16738,13 +17385,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "可以便宜点吗？",
   "display": "lower",
   "spoken": "lower",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/lower.svg",
   "pictureCue": true,
   "audio": "word-lower",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #434416 (lukaszpp) & #6284508 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-lower"
  },
  {
   "id": "luck",
@@ -16754,13 +17402,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我祝您好运。",
   "display": "luck",
   "spoken": "luck",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/luck.svg",
   "pictureCue": true,
   "audio": "word-luck",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #858589 (piksea) & #344208 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-luck"
  },
  {
   "id": "lucky",
@@ -16770,13 +17419,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你觉得幸运吗？",
   "display": "lucky",
   "spoken": "lucky",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/lucky.svg",
   "pictureCue": true,
   "audio": "word-lucky",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1808126 (Spamster) & #1808260 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-lucky"
  },
  {
   "id": "lung",
@@ -16854,13 +17504,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "主要问题是什么时候开始。",
   "display": "main",
   "spoken": "main",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/main.svg",
   "pictureCue": true,
   "audio": "word-main",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #65999 (CK) & #5978321 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-main"
  },
  {
   "id": "maintain",
@@ -16870,13 +17521,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "维持一个人的声誉是很难的。",
   "display": "maintain",
   "spoken": "maintain",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/maintain.svg",
   "pictureCue": true,
   "audio": "word-maintain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9699040 (CK) & #798116 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-maintain"
  },
  {
   "id": "major",
@@ -16886,13 +17538,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的主修是语言学。",
   "display": "major",
   "spoken": "major",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/major.svg",
   "pictureCue": true,
   "audio": "word-major",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2757450 (orcrist) & #2757119 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-major"
  },
  {
   "id": "male",
@@ -16902,13 +17555,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "雄孔雀有色彩鲜艳的尾巴。",
   "display": "male",
   "spoken": "male",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/male.svg",
   "pictureCue": true,
   "audio": "word-male",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1096366 (CK) & #9974946 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-male"
  },
  {
   "id": "mall",
@@ -16935,13 +17589,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你应该能解决。",
   "display": "manage",
   "spoken": "manage",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/manage.svg",
   "pictureCue": true,
   "audio": "word-manage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3343070 (CK) & #5911753 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-manage"
  },
  {
   "id": "manager",
@@ -16951,13 +17606,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "经理批准了我们的计划。",
   "display": "manager",
   "spoken": "manager",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/manager.svg",
   "pictureCue": true,
   "audio": "word-manager",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #246288 (CK) & #844465 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-manager"
  },
  {
   "id": "manner",
@@ -16967,13 +17623,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不喜欢他做作的说话方式。",
   "display": "manner",
   "spoken": "manner",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/manner.svg",
   "pictureCue": true,
   "audio": "word-manner",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #285468 (CM) & #7752855 (Leolaaziano)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-manner"
  },
  {
   "id": "marathon",
@@ -16983,13 +17640,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们将参加马拉松。",
   "display": "marathon",
   "spoken": "marathon",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/marathon.svg",
   "pictureCue": true,
   "audio": "word-marathon",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7791957 (CK) & #2085112 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-marathon"
  },
  {
   "id": "march",
@@ -17016,13 +17674,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆为了当海洋生物学家学习。",
   "display": "marine",
   "spoken": "marine",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/marine.svg",
   "pictureCue": true,
   "audio": "word-marine",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3419949 (CK) & #5617228 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-marine"
  },
  {
   "id": "mark",
@@ -17066,13 +17725,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们测量了这块石头的质量。",
   "display": "mass",
   "spoken": "mass",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/mass.svg",
   "pictureCue": true,
   "audio": "word-mass",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7120423 (CM) & #8748608 (cxpadonis)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-mass"
  },
  {
   "id": "massive",
@@ -17099,13 +17759,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "精通英语是困难的。",
   "display": "master",
   "spoken": "master",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/master.svg",
   "pictureCue": true,
   "audio": "word-master",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #26218 (CM) & #826195 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-master"
  },
  {
   "id": "match",
@@ -17132,13 +17793,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她为一本书收集材料。",
   "display": "material",
   "spoken": "material",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/material.svg",
   "pictureCue": true,
   "audio": "word-material",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #575318 (FeuDRenais2) & #333927 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-material"
  },
  {
   "id": "mathematics",
@@ -17164,13 +17826,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你选哪种颜色都没关系。",
   "display": "matter",
   "spoken": "matter",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/matter.svg",
   "pictureCue": true,
   "audio": "word-matter",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2272039 (CK) & #6070852 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-matter"
  },
  {
   "id": "mature",
@@ -17180,13 +17843,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他留了胡子，为了让自己看起来更成熟。",
   "display": "mature",
   "spoken": "mature",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mature.svg",
   "pictureCue": true,
   "audio": "word-mature",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #293142 (CK) & #363880 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mature"
  },
  {
   "id": "maybe",
@@ -17196,13 +17860,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "可能是汤姆做的。",
   "display": "maybe",
   "spoken": "maybe",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/maybe.svg",
   "pictureCue": true,
   "audio": "word-maybe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6233843 (CK) & #10040363 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-maybe"
  },
  {
   "id": "mean",
@@ -17212,13 +17877,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不是这个意思。",
   "display": "mean",
   "spoken": "mean",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/mean.svg",
   "pictureCue": true,
   "audio": "word-mean",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #41556 (CK) & #461601 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mean"
  },
  {
   "id": "meaning",
@@ -17228,13 +17894,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "什么赋予了人生意义？",
   "display": "meaning",
   "spoken": "meaning",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/meaning.svg",
   "pictureCue": true,
   "audio": "word-meaning",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11917877 (sundown) & #10367177 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-meaning"
  },
  {
   "id": "means",
@@ -17244,13 +17911,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "自行车是一种交通工具。",
   "display": "means",
   "spoken": "means",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/means.svg",
   "pictureCue": true,
   "audio": "word-means",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #427666 (witbrock) & #4104741 (maple)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-means"
  },
  {
   "id": "medical",
@@ -17260,13 +17928,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你有医疗保险吗？",
   "display": "medical",
   "spoken": "medical",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/medical.svg",
   "pictureCue": true,
   "audio": "word-medical",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27892 (CK) & #833004 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-medical"
  },
  {
   "id": "medicine",
@@ -17327,13 +17996,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "参加不用会员费。",
   "display": "membership",
   "spoken": "membership",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/membership.svg",
   "pictureCue": true,
   "audio": "word-membership",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #245037 (CK) & #797123 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-membership"
  },
  {
   "id": "memory",
@@ -17343,13 +18013,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的记忆力很好。",
   "display": "memory",
   "spoken": "memory",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/memory.svg",
   "pictureCue": true,
   "audio": "word-memory",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #432909 (aliene) & #3148828 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-memory"
  },
  {
   "id": "mention",
@@ -17359,13 +18030,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她提到音乐会的日期了吗？",
   "display": "mention",
   "spoken": "mention",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/mention.svg",
   "pictureCue": true,
   "audio": "word-mention",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3826887 (CK) & #9178020 (xiaohong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-mention"
  },
  {
   "id": "menu",
@@ -17392,13 +18064,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他这么说就是为了开玩笑。",
   "display": "merely",
   "spoken": "merely",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/merely.svg",
   "pictureCue": true,
   "audio": "word-merely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #301417 (CK) & #829322 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-merely"
  },
  {
   "id": "merry",
@@ -17476,13 +18149,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个方法一定会成功。",
   "display": "method",
   "spoken": "method",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/method.svg",
   "pictureCue": true,
   "audio": "word-method",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #57148 (CK) & #8388787 (wangchou)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-method"
  },
  {
   "id": "might",
@@ -17492,13 +18166,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可能会说是。",
   "display": "might",
   "spoken": "might",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/might.svg",
   "pictureCue": true,
   "audio": "word-might",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2387228 (CK) & #5945148 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-might"
  },
  {
   "id": "mild",
@@ -17508,13 +18183,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "去年冬天很暖和。",
   "display": "mild",
   "spoken": "mild",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/mild.svg",
   "pictureCue": true,
   "audio": "word-mild",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #19427 (CK) & #900230 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mild"
  },
  {
   "id": "mile",
@@ -17524,13 +18200,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我走了四分之三英里。",
   "display": "mile",
   "spoken": "mile",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/mile.svg",
   "pictureCue": true,
   "audio": "word-mile",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #72571 (CK) & #859223 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mile"
  },
  {
   "id": "military",
@@ -17540,13 +18217,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这附近有一个军事基地。",
   "display": "military",
   "spoken": "military",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/military.svg",
   "pictureCue": true,
   "audio": "word-military",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59631 (CK) & #903626 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-military"
  },
  {
   "id": "million",
@@ -17556,13 +18234,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有三百万美圆。",
   "display": "million",
   "spoken": "million",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/million.svg",
   "pictureCue": true,
   "audio": "word-million",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2360416 (CK) & #6535847 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-million"
  },
  {
   "id": "mind",
@@ -17572,13 +18251,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他改变想法了。",
   "display": "mind",
   "spoken": "mind",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/mind.svg",
   "pictureCue": true,
   "audio": "word-mind",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295863 (CK) & #7787471 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mind"
  },
  {
   "id": "mine",
@@ -17588,13 +18268,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那个包是我的。",
   "display": "mine",
   "spoken": "mine",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mine.svg",
   "pictureCue": true,
   "audio": "word-mine",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #68476 (CK) & #486991 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mine"
  },
  {
   "id": "mineral",
@@ -17604,13 +18285,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我喜欢喝天然的矿泉水。",
   "display": "mineral",
   "spoken": "mineral",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/mineral.svg",
   "pictureCue": true,
   "audio": "word-mineral",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #540113 (gracehero) & #6161733 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-mineral"
  },
  {
   "id": "minimum",
@@ -17620,13 +18302,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的国家的最低工资是多少？",
   "display": "minimum",
   "spoken": "minimum",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/minimum.svg",
   "pictureCue": true,
   "audio": "word-minimum",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1534782 (CK) & #8863035 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-minimum"
  },
  {
   "id": "minister",
@@ -17636,13 +18319,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆当上了部长。",
   "display": "minister",
   "spoken": "minister",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/minister.svg",
   "pictureCue": true,
   "audio": "word-minister",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4495984 (CK) & #5794138 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-minister"
  },
  {
   "id": "miracle",
@@ -17652,13 +18336,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个奇迹。",
   "display": "miracle",
   "spoken": "miracle",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/miracle.svg",
   "pictureCue": true,
   "audio": "word-miracle",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2185448 (Hybrid) & #2186407 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-miracle"
  },
  {
   "id": "missing",
@@ -17668,13 +18353,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我的行李丢了。",
   "display": "missing",
   "spoken": "missing",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/missing.svg",
   "pictureCue": true,
   "audio": "word-missing",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #250590 (autuno) & #794187 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-missing"
  },
  {
   "id": "mission",
@@ -17684,13 +18370,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他完成了他的使命。",
   "display": "mission",
   "spoken": "mission",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/mission.svg",
   "pictureCue": true,
   "audio": "word-mission",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #302296 (CK) & #1450478 (asosan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mission"
  },
  {
   "id": "mistake",
@@ -17700,13 +18387,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我搞错了。",
   "display": "mistake",
   "spoken": "mistake",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/mistake.svg",
   "pictureCue": true,
   "audio": "word-mistake",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433678 (CK) & #476229 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mistake"
  },
  {
   "id": "mixture",
@@ -17716,13 +18404,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "空气是气体的混合物。",
   "display": "mixture",
   "spoken": "mixture",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/mixture.svg",
   "pictureCue": true,
   "audio": "word-mixture",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #18235 (CK) & #414623 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mixture"
  },
  {
   "id": "mobile",
@@ -17732,13 +18421,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆买了个手机。",
   "display": "mobile",
   "spoken": "mobile",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/mobile.svg",
   "pictureCue": true,
   "audio": "word-mobile",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3821530 (CK) & #5945161 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-mobile"
  },
  {
   "id": "mobile phone",
@@ -17782,13 +18472,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一所现代房屋。",
   "display": "modern",
   "spoken": "modern",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/modern.svg",
   "pictureCue": true,
   "audio": "word-modern",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8229149 (meshbags) & #10696100 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-modern"
  },
  {
   "id": "modest",
@@ -17798,13 +18489,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你太谦虚了。",
   "display": "modest",
   "spoken": "modest",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/modest.svg",
   "pictureCue": true,
   "audio": "word-modest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3354138 (CK) & #4760086 (ryanwoo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-modest"
  },
  {
   "id": "moment",
@@ -17814,13 +18506,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "就等一会儿。",
   "display": "moment",
   "spoken": "moment",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/moment.svg",
   "pictureCue": true,
   "audio": "word-moment",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #435746 (CK) & #825124 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-moment"
  },
  {
   "id": "monthly",
@@ -17830,13 +18523,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你每个月的瓦斯费多少钱？",
   "display": "monthly",
   "spoken": "monthly",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/monthly.svg",
   "pictureCue": true,
   "audio": "word-monthly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #322354 (CK) & #881744 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-monthly"
  },
  {
   "id": "mood",
@@ -17846,13 +18540,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他很生气。",
   "display": "mood",
   "spoken": "mood",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/mood.svg",
   "pictureCue": true,
   "audio": "word-mood",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295086 (CK) & #13561201 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-mood"
  },
  {
   "id": "more",
@@ -17879,13 +18574,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "大部分苹果都熟了。",
   "display": "most",
   "spoken": "most",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/most.svg",
   "pictureCue": true,
   "audio": "word-most",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #33312 (CK) & #846802 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-most"
  },
  {
   "id": "mostly",
@@ -17895,13 +18591,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆大多一个人独处。",
   "display": "mostly",
   "spoken": "mostly",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mostly.svg",
   "pictureCue": true,
   "audio": "word-mostly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3174748 (CK) & #5091699 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mostly"
  },
  {
   "id": "motion",
@@ -17911,13 +18608,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "轮子正在转动。",
   "display": "motion",
   "spoken": "motion",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/motion.svg",
   "pictureCue": true,
   "audio": "word-motion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2259066 (_undertoad) & #6109356 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-07-motion"
  },
  {
   "id": "movie",
@@ -17944,13 +18642,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "相互理解能促进和平。",
   "display": "mutual",
   "spoken": "mutual",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/mutual.svg",
   "pictureCue": true,
   "audio": "word-mutual",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #274110 (CM) & #5576762 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-mutual"
  },
  {
   "id": "myself",
@@ -17960,13 +18659,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我自己做的。",
   "display": "myself",
   "spoken": "myself",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/myself.svg",
   "pictureCue": true,
   "audio": "word-myself",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #454165 (mamat) & #512813 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-07-myself"
  },
  {
   "id": "nail",
@@ -17993,13 +18693,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "总统在电视上对国民讲话。",
   "display": "nation",
   "spoken": "nation",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/nation.svg",
   "pictureCue": true,
   "audio": "word-nation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #275890 (CK) & #791425 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-nation"
  },
  {
   "id": "national",
@@ -18009,13 +18710,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他是国立大学的一名教授。",
   "display": "national",
   "spoken": "national",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/national.svg",
   "pictureCue": true,
   "audio": "word-national",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2258573 (_undertoad) & #4473128 (yuiyu)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-national"
  },
  {
   "id": "native",
@@ -18025,13 +18727,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的母语是什么？",
   "display": "native",
   "spoken": "native",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/native.svg",
   "pictureCue": true,
   "audio": "word-native",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #997544 (CK) & #4815174 (McMeao)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-native"
  },
  {
   "id": "natural",
@@ -18041,13 +18744,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆天生就是个运动员。",
   "display": "natural",
   "spoken": "natural",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/natural.svg",
   "pictureCue": true,
   "audio": "word-natural",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1483064 (Spamster) & #2394464 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-natural"
  },
  {
   "id": "nature",
@@ -18074,13 +18778,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我加入了海军。",
   "display": "navy",
   "spoken": "navy",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/navy.svg",
   "pictureCue": true,
   "audio": "word-navy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #256592 (CK) & #786117 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-navy"
  },
  {
   "id": "nearby",
@@ -18107,13 +18812,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "差不多六点了。",
   "display": "nearly",
   "spoken": "nearly",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/nearly.svg",
   "pictureCue": true,
   "audio": "word-nearly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #519113 (blay_paul) & #609853 (CLARET)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-nearly"
  },
  {
   "id": "neat",
@@ -18174,13 +18880,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我需要一辆出租车。",
   "display": "need",
   "spoken": "need",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/need.svg",
   "pictureCue": true,
   "audio": "word-need",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2387428 (CK) & #9179888 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-need"
  },
  {
   "id": "neighborhood",
@@ -18207,13 +18914,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她既没钱，也不出名。",
   "display": "neither",
   "spoken": "neither",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/neither.svg",
   "pictureCue": true,
   "audio": "word-neither",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #317303 (CK) & #829694 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-neither"
  },
  {
   "id": "nephew",
@@ -18223,13 +18931,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我侄子对鸡蛋过敏。",
   "display": "nephew",
   "spoken": "nephew",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/nephew.svg",
   "pictureCue": true,
   "audio": "word-nephew",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #250229 (CK) & #859442 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-nephew"
  },
  {
   "id": "nervous",
@@ -18256,13 +18965,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "瑞士是一个中立的国家。",
   "display": "neutral",
   "spoken": "neutral",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/neutral.svg",
   "pictureCue": true,
   "audio": "word-neutral",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #52442 (CK) & #427562 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-neutral"
  },
  {
   "id": "news",
@@ -18272,13 +18982,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有个好消息要告诉你。",
   "display": "news",
   "spoken": "news",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/news.svg",
   "pictureCue": true,
   "audio": "word-news",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42323 (CK) & #13524029 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-news"
  },
  {
   "id": "newspaper",
@@ -18305,13 +19016,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这次出游没有人迟到。",
   "display": "nobody",
   "spoken": "nobody",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/nobody.svg",
   "pictureCue": true,
   "audio": "word-nobody",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1898298 (CK) & #429067 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-nobody"
  },
  {
   "id": "noise",
@@ -18355,13 +19067,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些箱子没有一个是空的。",
   "display": "none",
   "spoken": "none",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/none.svg",
   "pictureCue": true,
   "audio": "word-none",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #324771 (CK) & #7774787 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-none"
  },
  {
   "id": "nor",
@@ -18371,13 +19084,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她既没钱，也不出名。",
   "display": "nor",
   "spoken": "nor",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/nor.svg",
   "pictureCue": true,
   "audio": "word-nor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #317303 (CK) & #829694 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-nor"
  },
  {
   "id": "normal",
@@ -18387,13 +19101,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "考试前感到紧张是正常的。",
   "display": "normal",
   "spoken": "normal",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/normal.svg",
   "pictureCue": true,
   "audio": "word-normal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5259960 (CK) & #6325099 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-normal"
  },
  {
   "id": "north",
@@ -18420,13 +19135,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "日本位于北半球。",
   "display": "northern",
   "spoken": "northern",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/northern.svg",
   "pictureCue": true,
   "audio": "word-northern",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #281608 (CM) & #798334 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-northern"
  },
  {
   "id": "nothing",
@@ -18436,20 +19152,21 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "盒子里没有东西。",
   "display": "nothing",
   "spoken": "nothing",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/nothing.svg",
   "pictureCue": true,
   "audio": "word-nothing",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2953570 (CK) & #7767669 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-nothing"
  },
  {
   "id": "notice",
   "zh": "注意到",
   "pos": "动词",
   "sentence": "Did you notice Tom's hair?",
-  "sentenceZh": "你注意到汤姆的头髪了吗？",
+  "sentenceZh": "你注意到汤姆的头发了吗？",
   "display": "notice",
   "spoken": "notice",
   "topic": "actions",
@@ -18486,13 +19203,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "如今肉类价格昂贵。",
   "display": "nowadays",
   "spoken": "nowadays",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/nowadays.svg",
   "pictureCue": true,
   "audio": "word-nowadays",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #662634 (bluepie88) & #13549533 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-nowadays"
  },
  {
   "id": "nowhere",
@@ -18502,13 +19220,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我丢的铅笔到处都找不到。",
   "display": "nowhere",
   "spoken": "nowhere",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/nowhere.svg",
   "pictureCue": true,
   "audio": "word-nowhere",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8586777 (CK) & #8589665 (tianblr)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-nowhere"
  },
  {
   "id": "numerous",
@@ -18518,13 +19237,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这片森林里生活着许多鸟。",
   "display": "numerous",
   "spoken": "numerous",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/numerous.svg",
   "pictureCue": true,
   "audio": "word-numerous",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4493603 (CK) & #4504492 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-numerous"
  },
  {
   "id": "obey",
@@ -18534,13 +19254,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须遵守交通规则。",
   "display": "obey",
   "spoken": "obey",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/obey.svg",
   "pictureCue": true,
   "audio": "word-obey",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4759178 (cairnhead) & #4764610 (ryanwoo)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-obey"
  },
  {
   "id": "object",
@@ -18550,13 +19271,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有些人反对汤姆的意见。",
   "display": "object",
   "spoken": "object",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/object.svg",
   "pictureCue": true,
   "audio": "word-object",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1027337 (CM) & #8720485 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-object"
  },
  {
   "id": "observe",
@@ -18566,13 +19288,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须遵守规则。",
   "display": "observe",
   "spoken": "observe",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/observe.svg",
   "pictureCue": true,
   "audio": "word-observe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #20225 (CK) & #334729 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-observe"
  },
  {
   "id": "obviously",
@@ -18582,13 +19305,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这两幅图显然不同。",
   "display": "obviously",
   "spoken": "obviously",
-  "topic": null,
-  "image": null,
+  "topic": "colors",
+  "image": "./assets/pictures/obviously.svg",
   "pictureCue": true,
   "audio": "word-obviously",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1956367 (CK) & #855685 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-obviously"
  },
  {
   "id": "occasion",
@@ -18598,13 +19322,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "什么事这么开心？",
   "display": "occasion",
   "spoken": "occasion",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/occasion.svg",
   "pictureCue": true,
   "audio": "word-occasion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11294139 (Aphima) & #10028154 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-occasion"
  },
  {
   "id": "occupation",
@@ -18614,13 +19339,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你做什么工作？",
   "display": "occupation",
   "spoken": "occupation",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/occupation.svg",
   "pictureCue": true,
   "audio": "word-occupation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #731142 (CM) & #3378243 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-occupation"
  },
  {
   "id": "occur",
@@ -18630,13 +19356,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这事是什么时候发生的？",
   "display": "occur",
   "spoken": "occur",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/occur.svg",
   "pictureCue": true,
   "audio": "word-occur",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #440015 (CM) & #440016 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-occur"
  },
  {
   "id": "odd",
@@ -18646,13 +19373,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "正有什么奇怪的事情发生着。",
   "display": "odd",
   "spoken": "odd",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/odd.svg",
   "pictureCue": true,
   "audio": "word-odd",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2064859 (CK) & #8720496 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-odd"
  },
  {
   "id": "offend",
@@ -18662,13 +19390,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没想要冒犯您。",
   "display": "offend",
   "spoken": "offend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/offend.svg",
   "pictureCue": true,
   "audio": "word-offend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2282414 (Hybrid) & #13138212 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-offend"
  },
  {
   "id": "offer",
@@ -18678,13 +19407,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我接受了报价。",
   "display": "offer",
   "spoken": "offer",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/offer.svg",
   "pictureCue": true,
   "audio": "word-offer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #46063 (CK) & #804837 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-offer"
  },
  {
   "id": "officer",
@@ -18711,13 +19441,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们查看了博物馆的官方网站。",
   "display": "official",
   "spoken": "official",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/official.svg",
   "pictureCue": true,
   "audio": "word-official",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1244011 (CM) & #5900363 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-official"
  },
  {
   "id": "oil",
@@ -18744,13 +19475,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是奥运会游泳运动员。",
   "display": "Olympic",
   "spoken": "Olympic",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/olympic.svg",
   "pictureCue": true,
   "audio": "word-olympic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3921516 (CK) & #10019745 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-olympic"
  },
  {
   "id": "once",
@@ -18760,13 +19492,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "再试一次。",
   "display": "once",
   "spoken": "once",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/once.svg",
   "pictureCue": true,
   "audio": "word-once",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433593 (CK) & #824621 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-once"
  },
  {
   "id": "online",
@@ -18776,13 +19509,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我在网路上卖衣服。",
   "display": "online",
   "spoken": "online",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/online.svg",
   "pictureCue": true,
   "audio": "word-online",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #844710 (CM) & #844709 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-online"
  },
  {
   "id": "only",
@@ -18826,13 +19560,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是歌剧爱好者。",
   "display": "opera",
   "spoken": "opera",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/opera.svg",
   "pictureCue": true,
   "audio": "word-opera",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9376058 (CK) & #13573914 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-opera"
  },
  {
   "id": "operate",
@@ -18842,13 +19577,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你知道如何操作这台机器吗？",
   "display": "operate",
   "spoken": "operate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/operate.svg",
   "pictureCue": true,
   "audio": "word-operate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #28013 (CK) & #6822734 (basilhan)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-operate"
  },
  {
   "id": "operation",
@@ -18892,13 +19628,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他好好地利用了这个机会。",
   "display": "opportunity",
   "spoken": "opportunity",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/opportunity.svg",
   "pictureCue": true,
   "audio": "word-opportunity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #290660 (CK) & #819236 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-opportunity"
  },
  {
   "id": "opposite",
@@ -18908,13 +19645,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们往相反的方向去。",
   "display": "opposite",
   "spoken": "opposite",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/opposite.svg",
   "pictureCue": true,
   "audio": "word-opposite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681651 (Source_VOA) & #781114 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-opposite"
  },
  {
   "id": "optimistic",
@@ -18924,13 +19662,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "其他人不那么乐观。",
   "display": "optimistic",
   "spoken": "optimistic",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/optimistic.svg",
   "pictureCue": true,
   "audio": "word-optimistic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5738032 (CM) & #5945159 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-optimistic"
  },
  {
   "id": "option",
@@ -18940,13 +19679,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "还有其他选择吗？",
   "display": "option",
   "spoken": "option",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/option.svg",
   "pictureCue": true,
   "audio": "word-option",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4012787 (CK) & #13736380 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-option"
  },
  {
   "id": "orbit",
@@ -18973,13 +19713,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没有预定这个。",
   "display": "order",
   "spoken": "order",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/order.svg",
   "pictureCue": true,
   "audio": "word-order",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2526590 (CK) & #4600736 (Seek)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-order"
  },
  {
   "id": "ordinary",
@@ -18989,13 +19730,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他不是个普通的学生。",
   "display": "ordinary",
   "spoken": "ordinary",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/ordinary.svg",
   "pictureCue": true,
   "audio": "word-ordinary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #295845 (CM) & #8897464 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-ordinary"
  },
  {
   "id": "organ",
@@ -19022,13 +19764,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆和玛丽拥有一个小型的有机农场。",
   "display": "organic",
   "spoken": "organic",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/organic.svg",
   "pictureCue": true,
   "audio": "word-organic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5085372 (Hybrid) & #5085446 (Jubilee11)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-organic"
  },
  {
   "id": "organization",
@@ -19038,13 +19781,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那个团体为难民们提供食品供给。",
   "display": "organization",
   "spoken": "organization",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/organization.svg",
   "pictureCue": true,
   "audio": "word-organization",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #45444 (CM) & #2442142 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-organization"
  },
  {
   "id": "organize",
@@ -19071,13 +19815,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是原创的想法。",
   "display": "original",
   "spoken": "original",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/original.svg",
   "pictureCue": true,
   "audio": "word-original",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2784324 (sharptoothed) & #5613646 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-original"
  },
  {
   "id": "other",
@@ -19104,13 +19849,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "带把伞，否则你可能会淋湿。",
   "display": "otherwise",
   "spoken": "otherwise",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/otherwise.svg",
   "pictureCue": true,
   "audio": "word-otherwise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2290415 (CK) & #13138197 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-otherwise"
  },
  {
   "id": "ought to",
@@ -19120,13 +19866,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你应该感谢他。",
   "display": "ought to",
   "spoken": "ought to",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ought to.svg",
   "pictureCue": true,
   "audio": "word-ought to",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #15838 (CK) & #1780777 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-ought to"
  },
  {
   "id": "ours",
@@ -19136,13 +19883,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那个房子是我们的",
   "display": "ours",
   "spoken": "ours",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ours.svg",
   "pictureCue": true,
   "audio": "word-ours",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11149103 (carlosalberto) & #11998080 (ADUTIE)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-ours"
  },
  {
   "id": "ourselves",
@@ -19152,13 +19900,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们自己做的。",
   "display": "ourselves",
   "spoken": "ourselves",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/ourselves.svg",
   "pictureCue": true,
   "audio": "word-ourselves",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258059 (CK) & #466262 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-ourselves"
  },
  {
   "id": "outside",
@@ -19202,13 +19951,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她帮助他平抚了他的悲伤。",
   "display": "overcome",
   "spoken": "overcome",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/overcome.svg",
   "pictureCue": true,
   "audio": "word-overcome",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #388342 (CK) & #861317 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-overcome"
  },
  {
   "id": "overseas",
@@ -19218,13 +19968,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你打算出国吗？",
   "display": "overseas",
   "spoken": "overseas",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/overseas.svg",
   "pictureCue": true,
   "audio": "word-overseas",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #405494 (CK) & #842437 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-overseas"
  },
  {
   "id": "owe",
@@ -19234,13 +19985,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你欠我钱。",
   "display": "owe",
   "spoken": "owe",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/owe.svg",
   "pictureCue": true,
   "audio": "word-owe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3636266 (CK) & #8688139 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-owe"
  },
  {
   "id": "own",
@@ -19250,13 +20002,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有自己的借书证。",
   "display": "own",
   "spoken": "own",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/own.svg",
   "pictureCue": true,
   "audio": "word-own",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1893628 (CK) & #10019600 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-own"
  },
  {
   "id": "oxygen",
@@ -19266,13 +20019,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们呼吸需要氧气。",
   "display": "oxygen",
   "spoken": "oxygen",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/oxygen.svg",
   "pictureCue": true,
   "audio": "word-oxygen",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1670129 (al_ex_an_der) & #5794118 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-oxygen"
  },
  {
   "id": "pacific",
@@ -19316,13 +20070,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他有点苍白。",
   "display": "pale",
   "spoken": "pale",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/pale.svg",
   "pictureCue": true,
   "audio": "word-pale",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #997834 (NickC) & #335114 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-pale"
  },
  {
   "id": "panel",
@@ -19332,13 +20087,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一个专家小组讨论这个计划。",
   "display": "panel",
   "spoken": "panel",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/panel.svg",
   "pictureCue": true,
   "audio": "word-panel",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #273161 (CK) & #797065 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-panel"
  },
  {
   "id": "panic",
@@ -19382,13 +20138,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不好意思，能请您重复一遍吗？",
   "display": "pardon",
   "spoken": "pardon",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/pardon.svg",
   "pictureCue": true,
   "audio": "word-pardon",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #24940 (CK) & #346470 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-pardon"
  },
  {
   "id": "parking",
@@ -19432,13 +20189,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想参加。",
   "display": "participate",
   "spoken": "participate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/participate.svg",
   "pictureCue": true,
   "audio": "word-participate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5288568 (AlanF_US) & #8727835 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-participate"
  },
  {
   "id": "particular",
@@ -19448,13 +20206,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对食物不是很讲究。",
   "display": "particular",
   "spoken": "particular",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/particular.svg",
   "pictureCue": true,
   "audio": "word-particular",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258748 (CK) & #851510 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-particular"
  },
  {
   "id": "partner",
@@ -19464,13 +20223,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没有伙伴。",
   "display": "partner",
   "spoken": "partner",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/partner.svg",
   "pictureCue": true,
   "audio": "word-partner",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6271854 (CK) & #6628362 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-partner"
  },
  {
   "id": "pass",
@@ -19497,13 +20257,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "逐字地翻译这个段落。",
   "display": "passage",
   "spoken": "passage",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/passage.svg",
   "pictureCue": true,
   "audio": "word-passage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #49606 (CK) & #797099 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-passage"
  },
  {
   "id": "passion",
@@ -19513,13 +20274,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她对绘画充满热情。",
   "display": "passion",
   "spoken": "passion",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/passion.svg",
   "pictureCue": true,
   "audio": "word-passion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2686397 (Joseph) & #5548513 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-passion"
  },
  {
   "id": "passive",
@@ -19529,13 +20291,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "看电视是一种被动的活动。",
   "display": "passive",
   "spoken": "passive",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/passive.svg",
   "pictureCue": true,
   "audio": "word-passive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #39161 (CK) & #797044 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-passive"
  },
  {
   "id": "past",
@@ -19545,13 +20308,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他走过这栋房子。",
   "display": "past",
   "spoken": "past",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/past.svg",
   "pictureCue": true,
   "audio": "word-past",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #290597 (CK) & #833181 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-past"
  },
  {
   "id": "patience",
@@ -19561,13 +20325,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "种树需要耐心。",
   "display": "patience",
   "spoken": "patience",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/patience.svg",
   "pictureCue": true,
   "audio": "word-patience",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1495855 (CK) & #5363959 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-patience"
  },
  {
   "id": "pattern",
@@ -19661,13 +20426,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "13% 表示反对。",
   "display": "percent",
   "spoken": "percent",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/percent.svg",
   "pictureCue": true,
   "audio": "word-percent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4501918 (CK) & #13180295 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-percent"
  },
  {
   "id": "per",
@@ -19677,13 +20443,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一个月的租金多少？",
   "display": "per",
   "spoken": "per",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/per.svg",
   "pictureCue": true,
   "audio": "word-per",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #24050 (CK) & #4262611 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-per"
  },
  {
   "id": "perfect",
@@ -19744,13 +20511,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "明天可能会下雪。",
   "display": "perhaps",
   "spoken": "perhaps",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/perhaps.svg",
   "pictureCue": true,
   "audio": "word-perhaps",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6683408 (CK) & #13551874 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-perhaps"
  },
  {
   "id": "period",
@@ -19760,13 +20528,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们第三节是法语课。",
   "display": "period",
   "spoken": "period",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/period.svg",
   "pictureCue": true,
   "audio": "word-period",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #72688 (CK) & #870113 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-period"
  },
  {
   "id": "permanent",
@@ -19776,13 +20545,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请给我你的永久地址。",
   "display": "permanent",
   "spoken": "permanent",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/permanent.svg",
   "pictureCue": true,
   "audio": "word-permanent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16859 (CK) & #859134 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-permanent"
  },
  {
   "id": "permit",
@@ -19792,13 +20562,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你需要许可证才能在这里露营。",
   "display": "permit",
   "spoken": "permit",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/permit.svg",
   "pictureCue": true,
   "audio": "word-permit",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4501385 (CK) & #5701327 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-permit"
  },
  {
   "id": "personal",
@@ -19808,13 +20579,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你收私人支票吗?",
   "display": "personal",
   "spoken": "personal",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/personal.svg",
   "pictureCue": true,
   "audio": "word-personal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #267613 (CK) & #874694 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-personal"
  },
  {
   "id": "personality",
@@ -19824,13 +20596,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她有很强的个性。",
   "display": "personality",
   "spoken": "personality",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/personality.svg",
   "pictureCue": true,
   "audio": "word-personality",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #313508 (CK) & #2031263 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-personality"
  },
  {
   "id": "persuade",
@@ -19840,13 +20613,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆没能说服玛丽。",
   "display": "persuade",
   "spoken": "persuade",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/persuade.svg",
   "pictureCue": true,
   "audio": "word-persuade",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1028952 (CK) & #8897386 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-persuade"
  },
  {
   "id": "pessimistic",
@@ -19856,13 +20630,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要感觉那么悲观。",
   "display": "pessimistic",
   "spoken": "pessimistic",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/pessimistic.svg",
   "pictureCue": true,
   "audio": "word-pessimistic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3603648 (CK) & #8850437 (morningstar)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-pessimistic"
  },
  {
   "id": "phenomenon",
@@ -19872,13 +20647,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "彩虹是一种自然现象。",
   "display": "phenomenon",
   "spoken": "phenomenon",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/phenomenon.svg",
   "pictureCue": true,
   "audio": "word-phenomenon",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7493025 (CK) & #334644 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-phenomenon"
  },
  {
   "id": "philosophy",
@@ -19888,13 +20664,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆在大学里学的是哲学。",
   "display": "philosophy",
   "spoken": "philosophy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/philosophy.svg",
   "pictureCue": true,
   "audio": "word-philosophy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4284629 (seltsameseeds) & #4270102 (notabene)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-philosophy"
  },
  {
   "id": "photograph",
@@ -19918,16 +20695,17 @@ export const CONTEXT_WORDS=[
   "zh": "短语",
   "pos": "名词",
   "sentence": "I wonder what this phrase means.",
-  "sentenceZh": "我想知道这句话的意思。",
+  "sentenceZh": "我想知道这个短语的意思。",
   "display": "phrase",
   "spoken": "phrase",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/phrase.svg",
   "pictureCue": true,
   "audio": "word-phrase",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #60565 (fucongcong) & #334097 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-phrase"
  },
  {
   "id": "physician",
@@ -19954,13 +20732,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的物理学得很好。",
   "display": "physics",
   "spoken": "physics",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/physics.svg",
   "pictureCue": true,
   "audio": "word-physics",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #836559 (CM) & #836558 (iMaple)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-physics"
  },
  {
   "id": "pick",
@@ -19987,13 +20766,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你想要一块蛋糕吗？",
   "display": "piece",
   "spoken": "piece",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/piece.svg",
   "pictureCue": true,
   "audio": "word-piece",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21259 (Eldad) & #794009 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-piece"
  },
  {
   "id": "pipe",
@@ -20020,13 +20800,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "音乐会取消了，真遗憾。",
   "display": "pity",
   "spoken": "pity",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/pity.svg",
   "pictureCue": true,
   "audio": "word-pity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #40319 (shanghainese) & #943692 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-pity"
  },
  {
   "id": "plain",
@@ -20036,13 +20817,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我只是一个普通的上班族。",
   "display": "plain",
   "spoken": "plain",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/plain.svg",
   "pictureCue": true,
   "audio": "word-plain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #477343 (CK) & #852157 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-plain"
  },
  {
   "id": "plan",
@@ -20052,13 +20834,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆有个计划。",
   "display": "plan",
   "spoken": "plan",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/plan.svg",
   "pictureCue": true,
   "audio": "word-plan",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2649102 (CK) & #6075556 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-plan"
  },
  {
   "id": "plastic",
@@ -20085,13 +20868,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "旅途愉快！",
   "display": "pleasant",
   "spoken": "pleasant",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/pleasant.svg",
   "pictureCue": true,
   "audio": "word-pleasant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3737299 (CK) & #6559029 (xjjAstrus)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-pleasant"
  },
  {
   "id": "pleasure",
@@ -20101,13 +20885,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有些人只追求快乐。",
   "display": "pleasure",
   "spoken": "pleasure",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/pleasure.svg",
   "pictureCue": true,
   "audio": "word-pleasure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22297 (CK) & #336696 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-pleasure"
  },
  {
   "id": "plenty",
@@ -20134,13 +20919,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事的情节很有趣。",
   "display": "plot",
   "spoken": "plot",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/plot.svg",
   "pictureCue": true,
   "audio": "word-plot",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #802465 (Source_VOA) & #13117586 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-plot"
  },
  {
   "id": "poem",
@@ -20201,13 +20987,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "北极熊生活在北极地区。",
   "display": "polar",
   "spoken": "polar",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/polar.svg",
   "pictureCue": true,
   "audio": "word-polar",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5739549 (CM) & #6094894 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-polar"
  },
  {
   "id": "policeman",
@@ -20234,13 +21021,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们研究了政府的经济政策。",
   "display": "policy",
   "spoken": "policy",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/policy.svg",
   "pictureCue": true,
   "audio": "word-policy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22865 (CK) & #2028011 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-policy"
  },
  {
   "id": "polish",
@@ -20267,13 +21055,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆既彬彬有礼又善解人意。",
   "display": "polite",
   "spoken": "polite",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/polite.svg",
   "pictureCue": true,
   "audio": "word-polite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1731554 (Spamster) & #10048855 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-polite"
  },
  {
   "id": "political",
@@ -20283,13 +21072,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我支持政治改革。",
   "display": "political",
   "spoken": "political",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/political.svg",
   "pictureCue": true,
   "audio": "word-political",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7819964 (sharris123) & #5384769 (xjjAstrus)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-political"
  },
  {
   "id": "politician",
@@ -20299,13 +21089,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是位政治家。",
   "display": "politician",
   "spoken": "politician",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/politician.svg",
   "pictureCue": true,
   "audio": "word-politician",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2272850 (CK) & #7767670 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-politician"
  },
  {
   "id": "politics",
@@ -20315,13 +21106,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你对政治感兴趣吗？",
   "display": "politics",
   "spoken": "politics",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/politics.svg",
   "pictureCue": true,
   "audio": "word-politics",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #69172 (CK) & #375338 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-politics"
  },
  {
   "id": "pollution",
@@ -20382,13 +21174,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们帮助穷人。",
   "display": "poor",
   "spoken": "poor",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/poor.svg",
   "pictureCue": true,
   "audio": "word-poor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3691681 (karloelkebekio) & #6560609 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-poor"
  },
  {
   "id": "popular",
@@ -20398,13 +21191,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他受到学生的欢迎。",
   "display": "popular",
   "spoken": "popular",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/popular.svg",
   "pictureCue": true,
   "audio": "word-popular",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #294856 (CK) & #848691 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-popular"
  },
  {
   "id": "population",
@@ -20414,13 +21208,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个城市人口众多。",
   "display": "population",
   "spoken": "population",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/population.svg",
   "pictureCue": true,
   "audio": "word-population",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #45043 (CK) & #1430232 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-population"
  },
  {
   "id": "port",
@@ -20447,13 +21242,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "当你提出一个问题，你期望得到答案。",
   "display": "pose",
   "spoken": "pose",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/pose.svg",
   "pictureCue": true,
   "audio": "word-pose",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #809215 (CM) & #810070 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-pose"
  },
  {
   "id": "position",
@@ -20463,13 +21259,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我十分理解你的立场。",
   "display": "position",
   "spoken": "position",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/position.svg",
   "pictureCue": true,
   "audio": "word-position",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16863 (CK) & #834946 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-position"
  },
  {
   "id": "positive",
@@ -20479,13 +21276,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我确定他是错的。",
   "display": "positive",
   "spoken": "positive",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/positive.svg",
   "pictureCue": true,
   "audio": "word-positive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21698 (CK) & #875264 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-positive"
  },
  {
   "id": "possession",
@@ -20495,13 +21293,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个球是那个男孩的宝贝。",
   "display": "possession",
   "spoken": "possession",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/possession.svg",
   "pictureCue": true,
   "audio": "word-possession",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #606874 (baisong) & #392260 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-08-possession"
  },
  {
   "id": "possible",
@@ -20511,13 +21310,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "真的是可能的吗？",
   "display": "possible",
   "spoken": "possible",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/possible.svg",
   "pictureCue": true,
   "audio": "word-possible",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1538643 (CM) & #4455714 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-08-possible"
  },
  {
   "id": "post",
@@ -20527,13 +21327,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆发布了什么？",
   "display": "post",
   "spoken": "post",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/post.svg",
   "pictureCue": true,
   "audio": "word-post",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11966064 (CK) & #13138874 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-post"
  },
  {
   "id": "postcard",
@@ -20577,13 +21378,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "每个学生都有学习的潜力。",
   "display": "potential",
   "spoken": "potential",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/potential.svg",
   "pictureCue": true,
   "audio": "word-potential",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1331901 (Eldad) & #11243446 (klzlueylx)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-potential"
  },
  {
   "id": "pound",
@@ -20593,13 +21395,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们买了一磅的茶。",
   "display": "pound",
   "spoken": "pound",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/pound.svg",
   "pictureCue": true,
   "audio": "word-pound",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #23251 (CK) & #785178 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pound"
  },
  {
   "id": "power",
@@ -20609,13 +21412,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要小看我的力量。",
   "display": "power",
   "spoken": "power",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/power.svg",
   "pictureCue": true,
   "audio": "word-power",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1461 (CK) & #335028 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-power"
  },
  {
   "id": "practical",
@@ -20625,13 +21429,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的主意总是可行的。",
   "display": "practical",
   "spoken": "practical",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/practical.svg",
   "pictureCue": true,
   "audio": "word-practical",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #286214 (CK) & #528033 (biglion)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-practical"
  },
  {
   "id": "pray",
@@ -20658,13 +21463,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "没有什么东西是跟爱一样珍贵的。",
   "display": "precious",
   "spoken": "precious",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/precious.svg",
   "pictureCue": true,
   "audio": "word-precious",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #28706 (CM) & #803909 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-precious"
  },
  {
   "id": "predict",
@@ -20708,13 +21514,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我对外籍员工没有偏见。",
   "display": "prejudice",
   "spoken": "prejudice",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/prejudice.svg",
   "pictureCue": true,
   "audio": "word-prejudice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21875 (CK) & #332656 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-prejudice"
  },
  {
   "id": "prepare",
@@ -20741,13 +21548,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "盐可以帮助保存食物避免腐烂。",
   "display": "preserve",
   "spoken": "preserve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/preserve.svg",
   "pictureCue": true,
   "audio": "word-preserve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #25752 (CK) & #798097 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-preserve"
  },
  {
   "id": "president",
@@ -20757,13 +21565,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他被选为总统。",
   "display": "president",
   "spoken": "president",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/president.svg",
   "pictureCue": true,
   "audio": "word-president",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #301323 (CK) & #410860 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-president"
  },
  {
   "id": "press",
@@ -20790,13 +21599,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "压力很巨大。",
   "display": "pressure",
   "spoken": "pressure",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/pressure.svg",
   "pictureCue": true,
   "audio": "word-pressure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4494048 (CK) & #5350376 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pressure"
  },
  {
   "id": "pretend",
@@ -20806,13 +21616,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "让我们假装是外星人。",
   "display": "pretend",
   "spoken": "pretend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/pretend.svg",
   "pictureCue": true,
   "audio": "word-pretend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4297008 (AlanF_US) & #761367 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pretend"
  },
  {
   "id": "pretty",
@@ -20839,13 +21650,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们采取了强有力的预防措施。",
   "display": "prevent",
   "spoken": "prevent",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/prevent.svg",
   "pictureCue": true,
   "audio": "word-prevent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #248182 (CK) & #332769 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-prevent"
  },
  {
   "id": "previous",
@@ -20855,13 +21667,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我前一天丢了一台相机。",
   "display": "previous",
   "spoken": "previous",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/previous.svg",
   "pictureCue": true,
   "audio": "word-previous",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #550776 (CK) & #1394986 (mtdot)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-previous"
  },
  {
   "id": "price",
@@ -20871,13 +21684,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "多少钱？",
   "display": "price",
   "spoken": "price",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/price.svg",
   "pictureCue": true,
   "audio": "word-price",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #24426 (CK) & #761442 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-price"
  },
  {
   "id": "pride",
@@ -20887,13 +21701,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她为自己的工作感到自豪。",
   "display": "pride",
   "spoken": "pride",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/pride.svg",
   "pictureCue": true,
   "audio": "word-pride",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #65099 (CM) & #3086999 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pride"
  },
  {
   "id": "primary",
@@ -20903,13 +21718,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "诚实是他成功的主要原因。",
   "display": "primary",
   "spoken": "primary",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/primary.svg",
   "pictureCue": true,
   "audio": "word-primary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1159357 (emmettricks) & #765532 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-primary"
  },
  {
   "id": "principal",
@@ -20919,13 +21735,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他一定是校长。",
   "display": "principal",
   "spoken": "principal",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/principal.svg",
   "pictureCue": true,
   "audio": "word-principal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #413023 (CK) & #832969 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-principal"
  },
  {
   "id": "private",
@@ -20935,13 +21752,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们能私下谈谈吗？",
   "display": "private",
   "spoken": "private",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/private.svg",
   "pictureCue": true,
   "audio": "word-private",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #326516 (CK) & #336455 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-private"
  },
  {
   "id": "probably",
@@ -20951,13 +21769,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他可能不会来了。",
   "display": "probably",
   "spoken": "probably",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/probably.svg",
   "pictureCue": true,
   "audio": "word-probably",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #274994 (CK) & #406705 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-probably"
  },
  {
   "id": "problem",
@@ -20984,13 +21803,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请按照正确的程序操作。",
   "display": "procedure",
   "spoken": "procedure",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/procedure.svg",
   "pictureCue": true,
   "audio": "word-procedure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5739548 (CM) & #2188454 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-procedure"
  },
  {
   "id": "proceed",
@@ -21000,13 +21820,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "准备好继续了吗？",
   "display": "proceed",
   "spoken": "proceed",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/proceed.svg",
   "pictureCue": true,
   "audio": "word-proceed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3821353 (CK) & #8500231 (black333)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-proceed"
  },
  {
   "id": "process",
@@ -21033,13 +21854,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "本产品产自中国。",
   "display": "product",
   "spoken": "product",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/product.svg",
   "pictureCue": true,
   "audio": "word-product",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5568134 (Hybrid) & #13556522 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-product"
  },
  {
   "id": "profession",
@@ -21049,13 +21871,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的职业是医生。",
   "display": "profession",
   "spoken": "profession",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/profession.svg",
   "pictureCue": true,
   "audio": "word-profession",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11129690 (CK) & #347089 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-profession"
  },
  {
   "id": "professional",
@@ -21065,13 +21888,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我是专业摄影师。",
   "display": "professional",
   "spoken": "professional",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/professional.svg",
   "pictureCue": true,
   "audio": "word-professional",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2628724 (CK) & #2629254 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-professional"
  },
  {
   "id": "professor",
@@ -21098,13 +21922,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个节目是重播。",
   "display": "program",
   "spoken": "program",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/program.svg",
   "pictureCue": true,
   "audio": "word-program",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #57468 (CK) & #8777606 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-program"
  },
  {
   "id": "progress",
@@ -21114,13 +21939,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们取得进步了吗？",
   "display": "progress",
   "spoken": "progress",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/progress.svg",
   "pictureCue": true,
   "audio": "word-progress",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4500946 (CK) & #6333818 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-progress"
  },
  {
   "id": "project",
@@ -21130,13 +21956,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我的项目。",
   "display": "project",
   "spoken": "project",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/project.svg",
   "pictureCue": true,
   "audio": "word-project",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2648005 (CK) & #5673825 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-project"
  },
  {
   "id": "promise",
@@ -21146,13 +21973,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他信守了他的承诺。",
   "display": "promise",
   "spoken": "promise",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/promise.svg",
   "pictureCue": true,
   "audio": "word-promise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1682873 (Spamster) & #7780801 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-promise"
  },
  {
   "id": "pronounce",
@@ -21162,13 +21990,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有人能发这个词的音吗？",
   "display": "pronounce",
   "spoken": "pronounce",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/pronounce.svg",
   "pictureCue": true,
   "audio": "word-pronounce",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #387555 (Mouseneb) & #333748 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-pronounce"
  },
  {
   "id": "pronunciation",
@@ -21178,13 +22007,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "听音可以帮助改善你的发音。",
   "display": "pronunciation",
   "spoken": "pronunciation",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/pronunciation.svg",
   "pictureCue": true,
   "audio": "word-pronunciation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #287309 (CK) & #7772058 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pronunciation"
  },
  {
   "id": "property",
@@ -21194,13 +22024,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我的财产。",
   "display": "property",
   "spoken": "property",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/property.svg",
   "pictureCue": true,
   "audio": "word-property",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #895085 (pauldhunt) & #757489 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-property"
  },
  {
   "id": "proposal",
@@ -21210,13 +22041,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有个提案。",
   "display": "proposal",
   "spoken": "proposal",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/proposal.svg",
   "pictureCue": true,
   "audio": "word-proposal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1484788 (CM) & #1484798 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-proposal"
  },
  {
   "id": "protect",
@@ -21243,13 +22075,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能证明吗?",
   "display": "prove",
   "spoken": "prove",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/prove.svg",
   "pictureCue": true,
   "audio": "word-prove",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #41800 (CK) & #431472 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-prove"
  },
  {
   "id": "provide",
@@ -21259,13 +22092,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "奶牛为我们提供牛奶。",
   "display": "provide",
   "spoken": "provide",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/provide.svg",
   "pictureCue": true,
   "audio": "word-provide",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #19495 (CK) & #343727 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-provide"
  },
  {
   "id": "pub",
@@ -21292,13 +22126,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "博物馆对公众开放。",
   "display": "public",
   "spoken": "public",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/public.svg",
   "pictureCue": true,
   "audio": "word-public",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #300164 (CK) & #609959 (sarah)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-public"
  },
  {
   "id": "purchase",
@@ -21325,13 +22160,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是纯金吗？",
   "display": "pure",
   "spoken": "pure",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/pure.svg",
   "pictureCue": true,
   "audio": "word-pure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #442974 (CK) & #826064 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pure"
  },
  {
   "id": "purpose",
@@ -21358,13 +22194,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她想追求当老师的梦想。",
   "display": "pursue",
   "spoken": "pursue",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/pursue.svg",
   "pictureCue": true,
   "audio": "word-pursue",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #22297 (CK) & #336696 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-pursue"
  },
  {
   "id": "quality",
@@ -21374,13 +22211,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "数量不如质量。",
   "display": "quality",
   "spoken": "quality",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/quality.svg",
   "pictureCue": true,
   "audio": "word-quality",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #325900 (CK) & #565744 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-quality"
  },
  {
   "id": "quantity",
@@ -21390,13 +22228,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "数量不如质量。",
   "display": "quantity",
   "spoken": "quantity",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/quantity.svg",
   "pictureCue": true,
   "audio": "word-quantity",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #325900 (CK) & #565744 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-quantity"
  },
  {
   "id": "quarter",
@@ -21406,13 +22245,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "现在是两点四十五分。",
   "display": "quarter",
   "spoken": "quarter",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/quarter.svg",
   "pictureCue": true,
   "audio": "word-quarter",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #703322 (papabear) & #4262052 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-quarter"
  },
  {
   "id": "quick",
@@ -21422,13 +22262,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谢谢您的迅速回复。",
   "display": "quick",
   "spoken": "quick",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/quick.svg",
   "pictureCue": true,
   "audio": "word-quick",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1157722 (Shishir) & #4517845 (yuiyu)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-quick"
  },
  {
   "id": "quit",
@@ -21455,13 +22296,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我很饿。",
   "display": "quite",
   "spoken": "quite",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/quite.svg",
   "pictureCue": true,
   "audio": "word-quite",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2548838 (CK) & #7768272 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-quite"
  },
  {
   "id": "racial",
@@ -21471,13 +22313,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他反对种族歧视。",
   "display": "racial",
   "spoken": "racial",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/racial.svg",
   "pictureCue": true,
   "audio": "word-racial",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #600855 (baisong) & #464747 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-racial"
  },
  {
   "id": "radiation",
@@ -21487,13 +22330,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "平流层的臭氧会吸收紫外线。",
   "display": "radiation",
   "spoken": "radiation",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/radiation.svg",
   "pictureCue": true,
   "audio": "word-radiation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10540285 (sundown) & #6151835 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-radiation"
  },
  {
   "id": "radium",
@@ -21503,13 +22347,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "镭是居里夫人所发现的。",
   "display": "radium",
   "spoken": "radium",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/radium.svg",
   "pictureCue": true,
   "audio": "word-radium",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29800 (CM) & #801455 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-radium"
  },
  {
   "id": "rainy",
@@ -21536,13 +22381,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们谈论了各种各样的话题。",
   "display": "range",
   "spoken": "range",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/range.svg",
   "pictureCue": true,
   "audio": "word-range",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #263015 (CK) & #1737932 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-range"
  },
  {
   "id": "rapid",
@@ -21552,13 +22398,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我被他英语的快速进步惊呆了。",
   "display": "rapid",
   "spoken": "rapid",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/rapid.svg",
   "pictureCue": true,
   "audio": "word-rapid",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #285555 (CK) & #335319 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-rapid"
  },
  {
   "id": "rare",
@@ -21568,13 +22415,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在森林里看到了一只稀有鸟类。",
   "display": "rare",
   "spoken": "rare",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/rare.svg",
   "pictureCue": true,
   "audio": "word-rare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #29546 (CK) & #834804 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-rare"
  },
  {
   "id": "rate",
@@ -21584,13 +22432,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汇率是多少？",
   "display": "rate",
   "spoken": "rate",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/rate.svg",
   "pictureCue": true,
   "audio": "word-rate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #464594 (lukaszpp) & #465003 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-rate"
  },
  {
   "id": "rather",
@@ -21600,13 +22449,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我宁愿避免这种事。",
   "display": "rather",
   "spoken": "rather",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rather.svg",
   "pictureCue": true,
   "audio": "word-rather",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1298410 (Eldad) & #9489998 (jin1)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-rather"
  },
  {
   "id": "raw",
@@ -21616,13 +22466,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能生吃牡蛎吗？",
   "display": "raw",
   "spoken": "raw",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/raw.svg",
   "pictureCue": true,
   "audio": "word-raw",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #15953 (CK) & #833134 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-raw"
  },
  {
   "id": "ray",
@@ -21666,13 +22517,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是最先作出反应的。",
   "display": "react",
   "spoken": "react",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/react.svg",
   "pictureCue": true,
   "audio": "word-react",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3446940 (CK) & #6152794 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-react"
  },
  {
   "id": "ready",
@@ -21682,13 +22534,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汽车准备好了。",
   "display": "ready",
   "spoken": "ready",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/ready.svg",
   "pictureCue": true,
   "audio": "word-ready",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #46819 (CK) & #782343 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-ready"
  },
  {
   "id": "real",
@@ -21698,13 +22551,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是真钻石吗？",
   "display": "real",
   "spoken": "real",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/real.svg",
   "pictureCue": true,
   "audio": "word-real",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1615225 (Spamster) & #4887667 (musclegirlxyp)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-real"
  },
  {
   "id": "realise",
@@ -21730,13 +22584,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你明白这是什么意思了吗？",
   "display": "realize",
   "spoken": "realize",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/realize.svg",
   "pictureCue": true,
   "audio": "word-realize",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2951754 (CK) & #6393361 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-realize"
  },
  {
   "id": "really",
@@ -21746,13 +22601,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它真的很便宜。",
   "display": "really",
   "spoken": "really",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/really.svg",
   "pictureCue": true,
   "audio": "word-really",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1308551 (shanghainese) & #793263 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-really"
  },
  {
   "id": "reason",
@@ -21762,13 +22618,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你知道是什么原因吗？",
   "display": "reason",
   "spoken": "reason",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/reason.svg",
   "pictureCue": true,
   "audio": "word-reason",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16567 (CK) & #833147 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-reason"
  },
  {
   "id": "recall",
@@ -21778,13 +22635,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想不起来我们上次见面的情况了。",
   "display": "recall",
   "spoken": "recall",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/recall.svg",
   "pictureCue": true,
   "audio": "word-recall",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1954755 (CK) & #6728910 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-recall"
  },
  {
   "id": "receive",
@@ -21794,13 +22652,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你收到了我的信了吗？",
   "display": "receive",
   "spoken": "receive",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/receive.svg",
   "pictureCue": true,
   "audio": "word-receive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #265984 (CK) & #9057894 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-receive"
  },
  {
   "id": "recent",
@@ -21810,13 +22669,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是一张近照吗？",
   "display": "recent",
   "spoken": "recent",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/recent.svg",
   "pictureCue": true,
   "audio": "word-recent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1291 (Swift) & #16 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-recent"
  },
  {
   "id": "recently",
@@ -21826,13 +22686,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我刚去过那里。",
   "display": "recently",
   "spoken": "recently",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/recently.svg",
   "pictureCue": true,
   "audio": "word-recently",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #808715 (ryanthewired) & #6075193 (mendel)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-recently"
  },
  {
   "id": "recognize",
@@ -21859,13 +22720,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她认出对方时脸上露出了喜色。",
   "display": "recognition",
   "spoken": "recognition",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/recognition.svg",
   "pictureCue": true,
   "audio": "word-recognition",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #297747 (CK) & #805224 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-recognition"
  },
  {
   "id": "recommend",
@@ -21875,13 +22737,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我强力推荐它。",
   "display": "recommend",
   "spoken": "recommend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/recommend.svg",
   "pictureCue": true,
   "audio": "word-recommend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #252186 (CK) & #5551100 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-recommend"
  },
  {
   "id": "record",
@@ -21891,13 +22754,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她创造了一项新的校游泳纪录。",
   "display": "record",
   "spoken": "record",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/record.svg",
   "pictureCue": true,
   "audio": "word-record",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21212 (CK) & #798079 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-record"
  },
  {
   "id": "recover",
@@ -21907,13 +22771,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "要很长的时间才能恢复吗？",
   "display": "recover",
   "spoken": "recover",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/recover.svg",
   "pictureCue": true,
   "audio": "word-recover",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #278098 (CK) & #872171 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-recover"
  },
  {
   "id": "reduce",
@@ -21923,13 +22788,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们必须降低能源需求。",
   "display": "reduce",
   "spoken": "reduce",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/reduce.svg",
   "pictureCue": true,
   "audio": "word-reduce",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #23261 (Swift) & #5911627 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-reduce"
  },
  {
   "id": "reform",
@@ -21939,13 +22805,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我支持政治改革。",
   "display": "reform",
   "spoken": "reform",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/reform.svg",
   "pictureCue": true,
   "audio": "word-reform",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7819964 (sharris123) & #5384769 (xjjAstrus)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-reform"
  },
  {
   "id": "refresh",
@@ -21955,13 +22822,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "适度的运动让身心焕然一新。",
   "display": "refresh",
   "spoken": "refresh",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/refresh.svg",
   "pictureCue": true,
   "audio": "word-refresh",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #278714 (CM) & #10460424 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-refresh"
  },
  {
   "id": "refuse",
@@ -21971,13 +22839,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我拒绝回答你的问题。",
   "display": "refuse",
   "spoken": "refuse",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/refuse.svg",
   "pictureCue": true,
   "audio": "word-refuse",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6010958 (szilviez) & #1762969 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-refuse"
  },
  {
   "id": "region",
@@ -21987,13 +22856,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个地区以苹果闻名。",
   "display": "region",
   "spoken": "region",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/region.svg",
   "pictureCue": true,
   "audio": "word-region",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #244189 (CK) & #797066 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-region"
  },
  {
   "id": "register",
@@ -22003,13 +22873,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可以登记这堂课吗？",
   "display": "register",
   "spoken": "register",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/register.svg",
   "pictureCue": true,
   "audio": "word-register",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2738934 (Dejo) & #5422702 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-register"
  },
  {
   "id": "regret",
@@ -22019,13 +22890,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不后悔。",
   "display": "regret",
   "spoken": "regret",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/regret.svg",
   "pictureCue": true,
   "audio": "word-regret",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #780921 (tangereeny) & #781534 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-regret"
  },
  {
   "id": "regular",
@@ -22035,13 +22907,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "时钟发出有规律的滴答声。",
   "display": "regular",
   "spoken": "regular",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/regular.svg",
   "pictureCue": true,
   "audio": "word-regular",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #287571 (CK) & #780050 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-regular"
  },
  {
   "id": "relationship",
@@ -22051,13 +22924,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们的关系非常好。",
   "display": "relationship",
   "spoken": "relationship",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/relationship.svg",
   "pictureCue": true,
   "audio": "word-relationship",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5090713 (CK) & #6077499 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-relationship"
  },
  {
   "id": "relative",
@@ -22067,13 +22941,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆是我的远亲。",
   "display": "relative",
   "spoken": "relative",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/relative.svg",
   "pictureCue": true,
   "audio": "word-relative",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2549962 (sharptoothed) & #6293110 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-relative"
  },
  {
   "id": "relax",
@@ -22117,13 +22992,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请只包含相关信息。",
   "display": "relevant",
   "spoken": "relevant",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/relevant.svg",
   "pictureCue": true,
   "audio": "word-relevant",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2891967 (CK) & #5969430 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-relevant"
  },
  {
   "id": "reliable",
@@ -22133,13 +23009,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们需要可靠的信息来源。",
   "display": "reliable",
   "spoken": "reliable",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/reliable.svg",
   "pictureCue": true,
   "audio": "word-reliable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1750564 (sysko) & #1750560 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-reliable"
  },
  {
   "id": "relief",
@@ -22149,13 +23026,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她松了一口气。",
   "display": "relief",
   "spoken": "relief",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/relief.svg",
   "pictureCue": true,
   "audio": "word-relief",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #312489 (CK) & #805103 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-relief"
  },
  {
   "id": "relieve",
@@ -22165,13 +23043,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "短暂休息可以缓解疲劳。",
   "display": "relieve",
   "spoken": "relieve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/relieve.svg",
   "pictureCue": true,
   "audio": "word-relieve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #36654 (saeb) & #6084395 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-relieve"
  },
  {
   "id": "rely",
@@ -22181,13 +23060,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以依靠他。",
   "display": "rely",
   "spoken": "rely",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rely.svg",
   "pictureCue": true,
   "audio": "word-rely",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9905 (CK) & #1780770 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-rely"
  },
  {
   "id": "remain",
@@ -22197,13 +23077,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "公交车停下之前请保持坐好。",
   "display": "remain",
   "spoken": "remain",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/remain.svg",
   "pictureCue": true,
   "audio": "word-remain",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4497136 (CK) & #13180299 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-remain"
  },
  {
   "id": "remarkable",
@@ -22213,13 +23094,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的英语有了显著的进步。",
   "display": "remarkable",
   "spoken": "remarkable",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/remarkable.svg",
   "pictureCue": true,
   "audio": "word-remarkable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #285565 (CK) & #884187 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-remarkable"
  },
  {
   "id": "remember",
@@ -22229,13 +23111,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你还记得我们吗？",
   "display": "remember",
   "spoken": "remember",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/remember.svg",
   "pictureCue": true,
   "audio": "word-remember",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #434614 (lukaszpp) & #9583405 (jin1)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-remember"
  },
  {
   "id": "remind",
@@ -22245,13 +23128,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你让我想起我自己。",
   "display": "remind",
   "spoken": "remind",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/remind.svg",
   "pictureCue": true,
   "audio": "word-remind",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3356349 (CK) & #9178026 (xiaohong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-remind"
  },
  {
   "id": "remote",
@@ -22295,13 +23179,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你租房子了吗？",
   "display": "rent",
   "spoken": "rent",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rent.svg",
   "pictureCue": true,
   "audio": "word-rent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #67769 (CK) & #334117 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-rent"
  },
  {
   "id": "repeat",
@@ -22311,13 +23196,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "能不能请你重复一下？",
   "display": "repeat",
   "spoken": "repeat",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/repeat.svg",
   "pictureCue": true,
   "audio": "word-repeat",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3329632 (CK) & #429093 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-repeat"
  },
  {
   "id": "replace",
@@ -22327,13 +23213,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请更换打印机里用空的墨盒。",
   "display": "replace",
   "spoken": "replace",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/replace.svg",
   "pictureCue": true,
   "audio": "word-replace",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #481732 (Benjameno) & #1735612 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-replace"
  },
  {
   "id": "reply",
@@ -22343,13 +23230,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你回答了什么？",
   "display": "reply",
   "spoken": "reply",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/reply.svg",
   "pictureCue": true,
   "audio": "word-reply",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #416890 (blay_paul) & #335067 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-reply"
  },
  {
   "id": "report",
@@ -22376,13 +23264,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "地图上的蓝线代表河流。",
   "display": "represent",
   "spoken": "represent",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/represent.svg",
   "pictureCue": true,
   "audio": "word-represent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #277229 (CM) & #835557 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-represent"
  },
  {
   "id": "republic",
@@ -22392,13 +23281,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "革命之后，法国成为了一个共和国。",
   "display": "republic",
   "spoken": "republic",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/republic.svg",
   "pictureCue": true,
   "audio": "word-republic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21657 (Zifre) & #796978 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-republic"
  },
  {
   "id": "reputation",
@@ -22408,13 +23298,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这家面包店口碑很好。",
   "display": "reputation",
   "spoken": "reputation",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/reputation.svg",
   "pictureCue": true,
   "audio": "word-reputation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3728386 (CM) & #5624893 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-reputation"
  },
  {
   "id": "request",
@@ -22424,13 +23315,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们批准了他的请求。",
   "display": "request",
   "spoken": "request",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/request.svg",
   "pictureCue": true,
   "audio": "word-request",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #307376 (CM) & #780064 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-request"
  },
  {
   "id": "require",
@@ -22474,13 +23366,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有关癌症成因的研究耗费颇巨。",
   "display": "research",
   "spoken": "research",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/research.svg",
   "pictureCue": true,
   "audio": "word-research",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #681911 (Source_VOA) & #2511405 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-research"
  },
  {
   "id": "reserve",
@@ -22490,13 +23383,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想预定一个房间。",
   "display": "reserve",
   "spoken": "reserve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/reserve.svg",
   "pictureCue": true,
   "audio": "word-reserve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1020024 (CM) & #1020025 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-reserve"
  },
  {
   "id": "resign",
@@ -22506,13 +23400,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她决定辞职了。",
   "display": "resign",
   "spoken": "resign",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/resign.svg",
   "pictureCue": true,
   "audio": "word-resign",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #521662 (CK) & #824635 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-resign"
  },
  {
   "id": "respect",
@@ -22539,13 +23434,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他没有回答我的问题。",
   "display": "respond",
   "spoken": "respond",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/respond.svg",
   "pictureCue": true,
   "audio": "word-respond",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #297880 (CK) & #840674 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-respond"
  },
  {
   "id": "response",
@@ -22555,13 +23451,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我很抱歉回复晚了。",
   "display": "response",
   "spoken": "response",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/response.svg",
   "pictureCue": true,
   "audio": "word-response",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1039687 (arashi_29) & #4468894 (MirendaBABY)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-09-response"
  },
  {
   "id": "responsibility",
@@ -22605,13 +23502,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "结果让每个人都感到意外。",
   "display": "result",
   "spoken": "result",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/result.svg",
   "pictureCue": true,
   "audio": "word-result",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1636105 (Spamster) & #2007050 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-result"
  },
  {
   "id": "retire",
@@ -22621,13 +23519,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想早点退休。",
   "display": "retire",
   "spoken": "retire",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/retire.svg",
   "pictureCue": true,
   "audio": "word-retire",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5193601 (CK) & #6044369 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-retire"
  },
  {
   "id": "return",
@@ -22637,13 +23536,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆打算回去。",
   "display": "return",
   "spoken": "return",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/return.svg",
   "pictureCue": true,
   "audio": "word-return",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4501440 (CK) & #6947341 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-09-return"
  },
  {
   "id": "revolution",
@@ -22653,13 +23553,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这场革命已经带来了很多改变。",
   "display": "revolution",
   "spoken": "revolution",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/revolution.svg",
   "pictureCue": true,
   "audio": "word-revolution",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21659 (CK) & #478782 (biglion)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-revolution"
  },
  {
   "id": "reward",
@@ -22680,19 +23581,20 @@ export const CONTEXT_WORDS=[
  },
  {
   "id": "rhyme",
-  "zh": "押韵诗",
+  "zh": "押韵诗；童谣",
   "pos": "名词",
   "sentence": "We learned a nursery rhyme today.",
   "sentenceZh": "我们今天学了一首童谣。",
   "display": "rhyme",
   "spoken": "rhyme",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/rhyme.svg",
   "pictureCue": true,
   "audio": "word-rhyme",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #906832 (CK) & #6154358 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-rhyme"
  },
  {
   "id": "rich",
@@ -22702,13 +23604,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我看起来很有钱吗？",
   "display": "rich",
   "spoken": "rich",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/rich.svg",
   "pictureCue": true,
   "audio": "word-rich",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10317912 (CK) & #10635237 (gumblex)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-rich"
  },
  {
   "id": "ripe",
@@ -22718,13 +23621,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那些苹果熟了吗？",
   "display": "ripe",
   "spoken": "ripe",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/ripe.svg",
   "pictureCue": true,
   "audio": "word-ripe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7898142 (CK) & #13167002 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-ripe"
  },
  {
   "id": "risk",
@@ -22734,13 +23638,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天下午可能会下雨。",
   "display": "risk",
   "spoken": "risk",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/risk.svg",
   "pictureCue": true,
   "audio": "word-risk",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2548928 (CK) & #8589271 (easononizuka)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-risk"
  },
  {
   "id": "roast",
@@ -22750,13 +23655,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "再多一些烤牛肉怎么样?",
   "display": "roast",
   "spoken": "roast",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/roast.svg",
   "pictureCue": true,
   "audio": "word-roast",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #30479 (CK) & #848664 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-roast"
  },
  {
   "id": "role",
@@ -22766,13 +23672,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "大自然在我们的生活中扮演着重要的角色。",
   "display": "role",
   "spoken": "role",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/role.svg",
   "pictureCue": true,
   "audio": "word-role",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #264462 (CM) & #1735628 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-role"
  },
  {
   "id": "romantic",
@@ -22782,13 +23689,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆非常的浪漫。",
   "display": "romantic",
   "spoken": "romantic",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/romantic.svg",
   "pictureCue": true,
   "audio": "word-romantic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4145086 (Hybrid) & #4147268 (sissima)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-romantic"
  },
  {
   "id": "route",
@@ -22815,13 +23723,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "打断别人说话是不礼貌的。",
   "display": "rude",
   "spoken": "rude",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/rude.svg",
   "pictureCue": true,
   "audio": "word-rude",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16444 (CK) & #819340 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-rude"
  },
  {
   "id": "ruin",
@@ -22831,13 +23740,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "太多水会毁掉这幅画。",
   "display": "ruin",
   "spoken": "ruin",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/ruin.svg",
   "pictureCue": true,
   "audio": "word-ruin",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1230707 (alec) & #334155 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-ruin"
  },
  {
   "id": "rule",
@@ -22847,13 +23757,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请遵守轮流进行的规则。",
   "display": "rule",
   "spoken": "rule",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rule.svg",
   "pictureCue": true,
   "audio": "word-rule",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16216 (CK) & #1992653 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-rule"
  },
  {
   "id": "rush",
@@ -22863,13 +23774,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "慢慢来，不要着急。",
   "display": "rush",
   "spoken": "rush",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rush.svg",
   "pictureCue": true,
   "audio": "word-rush",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #735152 (CM) & #735150 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-rush"
  },
  {
   "id": "safety",
@@ -22879,13 +23791,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "安全是最重要的事情。",
   "display": "safety",
   "spoken": "safety",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/safety.svg",
   "pictureCue": true,
   "audio": "word-safety",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #28486 (U2FS) & #797074 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-safety"
  },
  {
   "id": "salary",
@@ -22895,13 +23808,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他收入可观。",
   "display": "salary",
   "spoken": "salary",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/salary.svg",
   "pictureCue": true,
   "audio": "word-salary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #288945 (CK) & #1454454 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-salary"
  },
  {
   "id": "sale",
@@ -22911,13 +23825,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个卖不卖？",
   "display": "sale",
   "spoken": "sale",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/sale.svg",
   "pictureCue": true,
   "audio": "word-sale",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1425424 (Spamster) & #8689187 (jacintoo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sale"
  },
  {
   "id": "salesman",
@@ -22944,13 +23859,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这汤太咸了吗？",
   "display": "salty",
   "spoken": "salty",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/salty.svg",
   "pictureCue": true,
   "audio": "word-salty",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #995263 (NickC) & #993764 (leoyzy)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-salty"
  },
  {
   "id": "sample",
@@ -22960,13 +23876,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "样本不够纯净。",
   "display": "sample",
   "spoken": "sample",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/sample.svg",
   "pictureCue": true,
   "audio": "word-sample",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7492892 (CK) & #1787958 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sample"
  },
  {
   "id": "satisfy",
@@ -22976,13 +23893,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "众口难调。",
   "display": "satisfy",
   "spoken": "satisfy",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/satisfy.svg",
   "pictureCue": true,
   "audio": "word-satisfy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #32119 (CK) & #343373 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-satisfy"
  },
  {
   "id": "sauce",
@@ -23009,13 +23927,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能救汤姆吗？",
   "display": "save",
   "spoken": "save",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/save.svg",
   "pictureCue": true,
   "audio": "word-save",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3241643 (CK) & #5670759 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-save"
  },
  {
   "id": "saving",
@@ -23025,13 +23944,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "关灯可以节省能源。",
   "display": "saving",
   "spoken": "saving",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/saving.svg",
   "pictureCue": true,
   "audio": "word-saving",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #13565172 (CK) & #13565175 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-saving"
  },
  {
   "id": "saying",
@@ -23041,13 +23961,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有句谚语说，熟能生巧。",
   "display": "saying",
   "spoken": "saying",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/saying.svg",
   "pictureCue": true,
   "audio": "word-saying",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1140042 (CK) & #7781795 (jiangche)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-saying"
  },
  {
   "id": "scare",
@@ -23057,13 +23978,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没想吓唬汤姆的。",
   "display": "scare",
   "spoken": "scare",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/scare.svg",
   "pictureCue": true,
   "audio": "word-scare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6810463 (CK) & #13137953 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-scare"
  },
  {
   "id": "scene",
@@ -23073,13 +23995,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一群人聚集在现场。",
   "display": "scene",
   "spoken": "scene",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/scene.svg",
   "pictureCue": true,
   "audio": "word-scene",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #237748 (CK) & #8886337 (Rebecca)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-scene"
  },
  {
   "id": "schedule",
@@ -23106,13 +24029,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他申请了奖学金。",
   "display": "scholarship",
   "spoken": "scholarship",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/scholarship.svg",
   "pictureCue": true,
   "audio": "word-scholarship",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #291013 (CK) & #834492 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-scholarship"
  },
  {
   "id": "scientific",
@@ -23122,13 +24046,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的方法不科学。",
   "display": "scientific",
   "spoken": "scientific",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/scientific.svg",
   "pictureCue": true,
   "audio": "word-scientific",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #287535 (CK) & #791504 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-scientific"
  },
  {
   "id": "scream",
@@ -23155,13 +24080,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它是我们的秘密。",
   "display": "secret",
   "spoken": "secret",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/secret.svg",
   "pictureCue": true,
   "audio": "word-secret",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2648490 (CK) & #6624680 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-secret"
  },
  {
   "id": "secretary",
@@ -23188,13 +24114,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "谁负责这个部门？",
   "display": "section",
   "spoken": "section",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/section.svg",
   "pictureCue": true,
   "audio": "word-section",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #57384 (Dejo) & #811005 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-section"
  },
  {
   "id": "security",
@@ -23204,13 +24131,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "别麻烦保安了。",
   "display": "security",
   "spoken": "security",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/security.svg",
   "pictureCue": true,
   "audio": "word-security",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2270322 (CK) & #5650531 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-security"
  },
  {
   "id": "seek",
@@ -23220,13 +24148,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你需要寻求协助。",
   "display": "seek",
   "spoken": "seek",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/seek.svg",
   "pictureCue": true,
   "audio": "word-seek",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4950737 (CK) & #4962220 (umidake)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-seek"
  },
  {
   "id": "seem",
@@ -23236,13 +24165,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你看起来不高兴。",
   "display": "seem",
   "spoken": "seem",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/seem.svg",
   "pictureCue": true,
   "audio": "word-seem",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2044480 (CK) & #2694365 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-seem"
  },
  {
   "id": "seldom",
@@ -23252,13 +24182,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他很少食言。",
   "display": "seldom",
   "spoken": "seldom",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/seldom.svg",
   "pictureCue": true,
   "audio": "word-seldom",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #288064 (CK) & #12686100 (soueihin)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-seldom"
  },
  {
   "id": "selfish",
@@ -23268,13 +24199,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "自私不是我的本意。",
   "display": "selfish",
   "spoken": "selfish",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/selfish.svg",
   "pictureCue": true,
   "audio": "word-selfish",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2155929 (CM) & #501330 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-selfish"
  },
  {
   "id": "semester",
@@ -23284,29 +24216,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "第二学期结束了。",
   "display": "semester",
   "spoken": "semester",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/semester.svg",
   "pictureCue": true,
   "audio": "word-semester",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #494252 (CK) & #771384 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-semester"
  },
  {
   "id": "senior",
-  "zh": "高级的",
+  "zh": "（学校）高中的",
   "pos": "形容词",
   "sentence": "Are you a senior high school student?",
   "sentenceZh": "你是个高中生吗?",
   "display": "senior",
   "spoken": "senior",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/senior.svg",
   "pictureCue": true,
   "audio": "word-senior",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16152 (CK) & #775737 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-senior"
  },
  {
   "id": "sense",
@@ -23316,13 +24250,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她的方向感很好。",
   "display": "sense",
   "spoken": "sense",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/sense.svg",
   "pictureCue": true,
   "audio": "word-sense",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #303009 (CK) & #1746046 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-sense"
  },
  {
   "id": "sensitive",
@@ -23332,13 +24267,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他很敏感。",
   "display": "sensitive",
   "spoken": "sensitive",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/sensitive.svg",
   "pictureCue": true,
   "audio": "word-sensitive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #729951 (Martha) & #729952 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sensitive"
  },
  {
   "id": "separate",
@@ -23348,13 +24284,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们分道而行。",
   "display": "separate",
   "spoken": "separate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/separate.svg",
   "pictureCue": true,
   "audio": "word-separate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #305879 (CK) & #1424174 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-separate"
  },
  {
   "id": "series",
@@ -23364,13 +24301,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们办了一系列的音乐会。",
   "display": "series",
   "spoken": "series",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/series.svg",
   "pictureCue": true,
   "audio": "word-series",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #306172 (CK) & #818948 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-series"
  },
  {
   "id": "serious",
@@ -23380,13 +24318,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆现在是认真的。",
   "display": "serious",
   "spoken": "serious",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/serious.svg",
   "pictureCue": true,
   "audio": "word-serious",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2273491 (CK) & #5983576 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-serious"
  },
  {
   "id": "serve",
@@ -23396,13 +24335,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "现在该你发球。",
   "display": "serve",
   "spoken": "serve",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/serve.svg",
   "pictureCue": true,
   "audio": "word-serve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #242375 (CK) & #825150 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-serve"
  },
  {
   "id": "service",
@@ -23412,13 +24352,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆给客服打电话。",
   "display": "service",
   "spoken": "service",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/service.svg",
   "pictureCue": true,
   "audio": "word-service",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7371428 (Hybrid) & #13527704 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-service"
  },
  {
   "id": "set",
@@ -23428,13 +24369,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请把时钟调到正确的时间。",
   "display": "set",
   "spoken": "set",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/set.svg",
   "pictureCue": true,
   "audio": "word-set",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2184591 (FeuDRenais) & #2177323 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-set"
  },
  {
   "id": "several",
@@ -23444,13 +24386,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他来过几次。",
   "display": "several",
   "spoken": "several",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/several.svg",
   "pictureCue": true,
   "audio": "word-several",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2390 (CK) & #1776634 (sadhen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-several"
  },
  {
   "id": "severe",
@@ -23460,13 +24403,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "暴风雨造成了严重的损坏。",
   "display": "severe",
   "spoken": "severe",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/severe.svg",
   "pictureCue": true,
   "audio": "word-severe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #297156 (CK) & #343706 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-severe"
  },
  {
   "id": "shade",
@@ -23527,13 +24471,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们一起读个故事好吗？",
   "display": "shall",
   "spoken": "shall",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/shall.svg",
   "pictureCue": true,
   "audio": "word-shall",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #44579 (CM) & #10260795 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-shall"
  },
  {
   "id": "shame",
@@ -23543,13 +24488,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你错过了演出，真遗憾。",
   "display": "shame",
   "spoken": "shame",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/shame.svg",
   "pictureCue": true,
   "audio": "word-shame",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2648459 (CK) & #5091175 (mirrorvan)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-shame"
  },
  {
   "id": "shape",
@@ -23576,13 +24522,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "鳄鱼有尖利的牙齿。",
   "display": "sharp",
   "spoken": "sharp",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/sharp.svg",
   "pictureCue": true,
   "audio": "word-sharp",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1254301 (Tlustulimu) & #7781739 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sharp"
  },
  {
   "id": "shave",
@@ -23660,13 +24607,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆上夜班。",
   "display": "shift",
   "spoken": "shift",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/shift.svg",
   "pictureCue": true,
   "audio": "word-shift",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5853796 (CK) & #6119487 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-shift"
  },
  {
   "id": "shine",
@@ -23693,13 +24641,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这对我是很大的震撼。",
   "display": "shock",
   "spoken": "shock",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/shock.svg",
   "pictureCue": true,
   "audio": "word-shock",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42105 (CK) & #801471 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-shock"
  },
  {
   "id": "shore",
@@ -23726,13 +24675,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "燃料短缺。",
   "display": "shortage",
   "spoken": "shortage",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/shortage.svg",
   "pictureCue": true,
   "audio": "word-shortage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #282241 (CK) & #801472 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-shortage"
  },
  {
   "id": "shoulder",
@@ -23810,13 +24760,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆大声叹了口气。",
   "display": "sigh",
   "spoken": "sigh",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/sigh.svg",
   "pictureCue": true,
   "audio": "word-sigh",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3315028 (CK) & #8933579 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sigh"
  },
  {
   "id": "sign",
@@ -23843,13 +24794,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他给了我们开始的信号。",
   "display": "signal",
   "spoken": "signal",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/signal.svg",
   "pictureCue": true,
   "audio": "word-signal",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #297361 (CK) & #887709 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-signal"
  },
  {
   "id": "silence",
@@ -23859,13 +24811,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一片寂静无声。",
   "display": "silence",
   "spoken": "silence",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/silence.svg",
   "pictureCue": true,
   "audio": "word-silence",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3722195 (CM) & #5091663 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-silence"
  },
  {
   "id": "silent",
@@ -23926,13 +24879,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这很简单。",
   "display": "simple",
   "spoken": "simple",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/simple.svg",
   "pictureCue": true,
   "audio": "word-simple",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #619770 (ulyssemc1) & #7771897 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-simple"
  },
  {
   "id": "since",
@@ -23942,13 +24896,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我从昨天开始一直忙著。",
   "display": "since",
   "spoken": "since",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/since.svg",
   "pictureCue": true,
   "audio": "word-since",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7715146 (CK) & #846180 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-since"
  },
  {
   "id": "single",
@@ -23958,13 +24913,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "路边长着一朵花。",
   "display": "single",
   "spoken": "single",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/single.svg",
   "pictureCue": true,
   "audio": "word-single",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2353503 (CM) & #2353502 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-single"
  },
  {
   "id": "sink",
@@ -23991,13 +24947,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "先生，我可以看看你的驾驶执照吗？",
   "display": "sir",
   "spoken": "sir",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/sir.svg",
   "pictureCue": true,
   "audio": "word-sir",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #26573 (CK) & #893990 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-sir"
  },
  {
   "id": "site",
@@ -24024,13 +24981,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们有情况了。",
   "display": "situation",
   "spoken": "situation",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/situation.svg",
   "pictureCue": true,
   "audio": "word-situation",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3310028 (CK) & #5595235 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-situation"
  },
  {
   "id": "size",
@@ -24040,13 +24998,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这不是我的尺码。",
   "display": "size",
   "spoken": "size",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/size.svg",
   "pictureCue": true,
   "audio": "word-size",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10064133 (sundown) & #10054219 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-size"
  },
  {
   "id": "skill",
@@ -24056,13 +25015,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "烹饪是一项有用的技能。",
   "display": "skill",
   "spoken": "skill",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/skill.svg",
   "pictureCue": true,
   "audio": "word-skill",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243013 (CM) & #811914 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-skill"
  },
  {
   "id": "skip",
@@ -24072,13 +25032,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要跳过第一页。",
   "display": "skip",
   "spoken": "skip",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/skip.svg",
   "pictureCue": true,
   "audio": "word-skip",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #410544 (CK) & #825759 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-skip"
  },
  {
   "id": "slave",
@@ -24088,13 +25049,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事讲述一名奴隶如何获得自由。",
   "display": "slave",
   "spoken": "slave",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/slave.svg",
   "pictureCue": true,
   "audio": "word-slave",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #298162 (CK) & #848448 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-slave"
  },
  {
   "id": "slightly",
@@ -24104,13 +25066,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我开了点窗户。",
   "display": "slightly",
   "spoken": "slightly",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/slightly.svg",
   "pictureCue": true,
   "audio": "word-slightly",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9409585 (BobbyLee) & #5816155 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-slightly"
  },
  {
   "id": "slip",
@@ -24137,13 +25100,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是一个聪明的主意。",
   "display": "smart",
   "spoken": "smart",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/smart.svg",
   "pictureCue": true,
   "audio": "word-smart",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5858982 (CK) & #6128470 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-smart"
  },
  {
   "id": "social",
@@ -24153,13 +25117,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我是个社会工作人员。",
   "display": "social",
   "spoken": "social",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/social.svg",
   "pictureCue": true,
   "audio": "word-social",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1890956 (CK) & #2771148 (cienias)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-social"
  },
  {
   "id": "society",
@@ -24169,13 +25134,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "尊重法律是我们社会的基础。",
   "display": "society",
   "spoken": "society",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/society.svg",
   "pictureCue": true,
   "audio": "word-society",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #321020 (CM) & #775464 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-society"
  },
  {
   "id": "software",
@@ -24185,13 +25151,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "软件正在不断进化。",
   "display": "software",
   "spoken": "software",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/software.svg",
   "pictureCue": true,
   "audio": "word-software",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6774794 (Eccles17) & #8696302 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-software"
  },
  {
   "id": "solar",
@@ -24201,13 +25168,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "太阳能有益于环保。",
   "display": "solar",
   "spoken": "solar",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/solar.svg",
   "pictureCue": true,
   "audio": "word-solar",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5695938 (shea) & #13180231 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-solar"
  },
  {
   "id": "soldier",
@@ -24251,13 +25219,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们找到了这个问题的简单解决办法。",
   "display": "solution",
   "spoken": "solution",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/solution.svg",
   "pictureCue": true,
   "audio": "word-solution",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #266015 (CK) & #769653 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-solution"
  },
  {
   "id": "solve",
@@ -24267,13 +25236,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能解开这个谜吗？",
   "display": "solve",
   "spoken": "solve",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/solve.svg",
   "pictureCue": true,
   "audio": "word-solve",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5195285 (CK) & #6145406 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-solve"
  },
  {
   "id": "somebody",
@@ -24283,13 +25253,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有人在那里。",
   "display": "somebody",
   "spoken": "somebody",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/somebody.svg",
   "pictureCue": true,
   "audio": "word-somebody",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2892149 (CK) & #5942072 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-somebody"
  },
  {
   "id": "someone",
@@ -24299,13 +25270,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我今天雇了个人。",
   "display": "someone",
   "spoken": "someone",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/someone.svg",
   "pictureCue": true,
   "audio": "word-someone",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2095448 (CK) & #5949279 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-someone"
  },
  {
   "id": "somehow",
@@ -24315,13 +25287,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们总得找点乐子。",
   "display": "somehow",
   "spoken": "somehow",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/somehow.svg",
   "pictureCue": true,
   "audio": "word-somehow",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8626141 (Hybrid) & #8753758 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-somehow"
  },
  {
   "id": "something",
@@ -24331,13 +25304,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我可以说些什么吗?",
   "display": "something",
   "spoken": "something",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/something.svg",
   "pictureCue": true,
   "audio": "word-something",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2064623 (CK) & #759154 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-something"
  },
  {
   "id": "somewhat",
@@ -24347,13 +25321,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆有点调皮捣蛋。",
   "display": "somewhat",
   "spoken": "somewhat",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/somewhat.svg",
   "pictureCue": true,
   "audio": "word-somewhat",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7117579 (CM) & #13736369 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-somewhat"
  },
  {
   "id": "somewhere",
@@ -24363,13 +25338,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "到别处去做。",
   "display": "somewhere",
   "spoken": "somewhere",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/somewhere.svg",
   "pictureCue": true,
   "audio": "word-somewhere",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1565499 (CM) & #5794105 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-somewhere"
  },
  {
   "id": "son",
@@ -24379,13 +25355,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我认识你儿子。",
   "display": "son",
   "spoken": "son",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/son.svg",
   "pictureCue": true,
   "audio": "word-son",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1841674 (CK) & #10182738 (slo_oth)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-son"
  },
  {
   "id": "soon",
@@ -24412,13 +25389,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我全身酸痛。",
   "display": "sore",
   "spoken": "sore",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/sore.svg",
   "pictureCue": true,
   "audio": "word-sore",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1936577 (CK) & #917936 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sore"
  },
  {
   "id": "sorrow",
@@ -24445,13 +25423,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你喜欢哪种音乐？",
   "display": "sort",
   "spoken": "sort",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/sort.svg",
   "pictureCue": true,
   "audio": "word-sort",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #24996 (CK) & #12422343 (jkyochen)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-sort"
  },
  {
   "id": "soul",
@@ -24461,13 +25440,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一个人影也看不到。",
   "display": "soul",
   "spoken": "soul",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/soul.svg",
   "pictureCue": true,
   "audio": "word-soul",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #34679 (CK) & #798295 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-soul"
  },
  {
   "id": "sound",
@@ -24494,13 +25474,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "牛奶酸了。",
   "display": "sour",
   "spoken": "sour",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/sour.svg",
   "pictureCue": true,
   "audio": "word-sour",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3132271 (CK) & #3140026 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-sour"
  },
  {
   "id": "source",
@@ -24510,13 +25491,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "太阳是一种能量来源。",
   "display": "source",
   "spoken": "source",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/source.svg",
   "pictureCue": true,
   "audio": "word-source",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6011113 (mailohilohi) & #8686686 (crescat)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-source"
  },
  {
   "id": "south",
@@ -24577,13 +25559,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能抽出几分钟帮我吗？",
   "display": "spare",
   "spoken": "spare",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/spare.svg",
   "pictureCue": true,
   "audio": "word-spare",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #387442 (CK) & #845965 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-spare"
  },
  {
   "id": "special",
@@ -24610,13 +25593,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个濒临灭绝的物种。",
   "display": "species",
   "spoken": "species",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/species.svg",
   "pictureCue": true,
   "audio": "word-species",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #797152 (U2FS) & #797541 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-species"
  },
  {
   "id": "speech",
@@ -24643,13 +25627,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不要超速。",
   "display": "speed",
   "spoken": "speed",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/speed.svg",
   "pictureCue": true,
   "audio": "word-speed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2734388 (CK) & #790852 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-speed"
  },
  {
   "id": "spell",
@@ -24659,13 +25644,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请拼一下您的名字。",
   "display": "spell",
   "spoken": "spell",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/spell.svg",
   "pictureCue": true,
   "audio": "word-spell",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2149887 (CM) & #787371 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-spell"
  },
  {
   "id": "spend",
@@ -24675,13 +25661,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我每天花一小时阅读。",
   "display": "spend",
   "spoken": "spend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/spend.svg",
   "pictureCue": true,
   "audio": "word-spend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3356352 (CK) & #9178001 (xiaohong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-spend"
  },
  {
   "id": "spicy",
@@ -24691,13 +25678,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不习惯辛辣的食物。",
   "display": "spicy",
   "spoken": "spicy",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/spicy.svg",
   "pictureCue": true,
   "audio": "word-spicy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #51868 (CK) & #796006 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-spicy"
  },
  {
   "id": "split",
@@ -24707,13 +25695,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天我们AA制吧。",
   "display": "split",
   "spoken": "split",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/split.svg",
   "pictureCue": true,
   "audio": "word-split",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1230043 (CK) & #2660869 (egg0073)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-split"
  },
  {
   "id": "spot",
@@ -24723,13 +25712,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这里是湖最深的地方。",
   "display": "spot",
   "spoken": "spot",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/spot.svg",
   "pictureCue": true,
   "audio": "word-spot",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #48128 (CK) & #813578 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-spot"
  },
  {
   "id": "spread",
@@ -24739,13 +25729,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "好消息很快传开了。",
   "display": "spread",
   "spoken": "spread",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/spread.svg",
   "pictureCue": true,
   "audio": "word-spread",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #49593 (CK) & #9965488 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-spread"
  },
  {
   "id": "spy",
@@ -24772,13 +25763,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们需要更多员工。",
   "display": "staff",
   "spoken": "staff",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/staff.svg",
   "pictureCue": true,
   "audio": "word-staff",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6686711 (RainShelter) & #6685115 (basilhan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-staff"
  },
  {
   "id": "standard",
@@ -24788,13 +25780,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想学标准的英语。",
   "display": "standard",
   "spoken": "standard",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/standard.svg",
   "pictureCue": true,
   "audio": "word-standard",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #261448 (CK) & #2437235 (CLARET)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-standard"
  },
  {
   "id": "stare",
@@ -24821,13 +25814,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个好的开端。",
   "display": "start",
   "spoken": "start",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/start.svg",
   "pictureCue": true,
   "audio": "word-start",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1777529 (Spamster) & #3783113 (Debbie_Linder)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-start"
  },
  {
   "id": "state",
@@ -24837,13 +25831,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "加利福尼亚是美国的一个州。",
   "display": "state",
   "spoken": "state",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/state.svg",
   "pictureCue": true,
   "audio": "word-state",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #418525 (CM) & #418528 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-state"
  },
  {
   "id": "stay",
@@ -24853,13 +25848,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想要留下。",
   "display": "stay",
   "spoken": "stay",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/stay.svg",
   "pictureCue": true,
   "audio": "word-stay",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1887895 (CK) & #9178046 (xiaohong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-stay"
  },
  {
   "id": "steady",
@@ -24869,13 +25865,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "拿稳相机。",
   "display": "steady",
   "spoken": "steady",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/steady.svg",
   "pictureCue": true,
   "audio": "word-steady",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4145046 (danepo) & #4147271 (sissima)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-steady"
  },
  {
   "id": "steam",
@@ -24902,13 +25899,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "别走进泥地。",
   "display": "step",
   "spoken": "step",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/step.svg",
   "pictureCue": true,
   "audio": "word-step",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4376026 (Lepotdeterre) & #5869910 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-step"
  },
  {
   "id": "stick",
@@ -24935,13 +25933,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他还在这儿。",
   "display": "still",
   "spoken": "still",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/still.svg",
   "pictureCue": true,
   "audio": "word-still",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #292828 (CK) & #465860 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-10-still"
  },
  {
   "id": "stomach",
@@ -24985,13 +25984,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们听到外面有个奇怪的声音。",
   "display": "strange",
   "spoken": "strange",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/strange.svg",
   "pictureCue": true,
   "audio": "word-strange",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1047143 (CK) & #3630238 (suitchic)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-10-strange"
  },
  {
   "id": "stranger",
@@ -25001,13 +26001,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我是这里的外地人。",
   "display": "stranger",
   "spoken": "stranger",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/stranger.svg",
   "pictureCue": true,
   "audio": "word-stranger",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #61358 (CK) & #941138 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-stranger"
  },
  {
   "id": "strategy",
@@ -25017,13 +26018,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们队需要一个新策略。",
   "display": "strategy",
   "spoken": "strategy",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/strategy.svg",
   "pictureCue": true,
   "audio": "word-strategy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2298 (CM) & #437957 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-strategy"
  },
  {
   "id": "strength",
@@ -25033,13 +26035,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没力气了。",
   "display": "strength",
   "spoken": "strength",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/strength.svg",
   "pictureCue": true,
   "audio": "word-strength",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10194867 (pan176) & #9007571 (jacintoo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-strength"
  },
  {
   "id": "stress",
@@ -25049,13 +26052,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "卡拉OK对减轻压力有益。",
   "display": "stress",
   "spoken": "stress",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/stress.svg",
   "pictureCue": true,
   "audio": "word-stress",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #63538 (CK) & #779079 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-stress"
  },
  {
   "id": "strict",
@@ -25065,13 +26069,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆对此不严格。",
   "display": "strict",
   "spoken": "strict",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/strict.svg",
   "pictureCue": true,
   "audio": "word-strict",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5836373 (CK) & #6635841 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-strict"
  },
  {
   "id": "structure",
@@ -25081,13 +26086,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是我所见过的最大型的构造了。",
   "display": "structure",
   "spoken": "structure",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/structure.svg",
   "pictureCue": true,
   "audio": "word-structure",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9001354 (CK) & #333573 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-structure"
  },
  {
   "id": "struggle",
@@ -25097,13 +26103,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是个很艰难的斗争。",
   "display": "struggle",
   "spoken": "struggle",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/struggle.svg",
   "pictureCue": true,
   "audio": "word-struggle",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1226744 (PeterR) & #9958525 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-struggle"
  },
  {
   "id": "stuff",
@@ -25113,13 +26120,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请把你的东西放进包里。",
   "display": "stuff",
   "spoken": "stuff",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/stuff.svg",
   "pictureCue": true,
   "audio": "word-stuff",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1093339 (CK) & #5091232 (mirrorvan)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-stuff"
  },
  {
   "id": "style",
@@ -25129,13 +26137,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "不是你的风格。",
   "display": "style",
   "spoken": "style",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/style.svg",
   "pictureCue": true,
   "audio": "word-style",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1664103 (Spamster) & #5697805 (xjjAstrus)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-style"
  },
  {
   "id": "subscribe",
@@ -25145,13 +26154,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我订阅了两份报纸。",
   "display": "subscribe",
   "spoken": "subscribe",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/subscribe.svg",
   "pictureCue": true,
   "audio": "word-subscribe",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258831 (CK) & #835375 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-subscribe"
  },
  {
   "id": "succeed",
@@ -25161,13 +26171,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "如果她继续尝试，就可能成功。",
   "display": "succeed",
   "spoken": "succeed",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/succeed.svg",
   "pictureCue": true,
   "audio": "word-succeed",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1327568 (CK) & #3783107 (Debbie_Linder)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-succeed"
  },
  {
   "id": "success",
@@ -25177,13 +26188,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "祝你成功。",
   "display": "success",
   "spoken": "success",
-  "topic": null,
-  "image": null,
+  "topic": "sports",
+  "image": "./assets/pictures/success.svg",
   "pictureCue": true,
   "audio": "word-success",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2548825 (CK) & #1325321 (vicch)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-success"
  },
  {
   "id": "successful",
@@ -25193,13 +26205,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这实验是成功的。",
   "display": "successful",
   "spoken": "successful",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/successful.svg",
   "pictureCue": true,
   "audio": "word-successful",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #265199 (CK) & #825886 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-successful"
  },
  {
   "id": "such",
@@ -25209,13 +26222,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天天气真好。",
   "display": "such",
   "spoken": "such",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/such.svg",
   "pictureCue": true,
   "audio": "word-such",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2713694 (CK) & #10752770 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-such"
  },
  {
   "id": "sudden",
@@ -25225,13 +26239,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的突然出现，让我们都感到惊讶。",
   "display": "sudden",
   "spoken": "sudden",
-  "topic": null,
-  "image": null,
+  "topic": "colors",
+  "image": "./assets/pictures/sudden.svg",
   "pictureCue": true,
   "audio": "word-sudden",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #284074 (CK) & #479026 (biglion)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-sudden"
  },
  {
   "id": "suffer",
@@ -25241,13 +26256,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "植物得不到足够的水就会受苦。",
   "display": "suffer",
   "spoken": "suffer",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/suffer.svg",
   "pictureCue": true,
   "audio": "word-suffer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2015118 (CK) & #6635834 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-suffer"
  },
  {
   "id": "sugar",
@@ -25274,13 +26290,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "妳建议了什么？",
   "display": "suggest",
   "spoken": "suggest",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/suggest.svg",
   "pictureCue": true,
   "audio": "word-suggest",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #12201283 (CK) & #13138862 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-suggest"
  },
  {
   "id": "suggestion",
@@ -25290,13 +26307,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的建议似乎是合理的。",
   "display": "suggestion",
   "spoken": "suggestion",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/suggestion.svg",
   "pictureCue": true,
   "audio": "word-suggestion",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #70454 (CK) & #833241 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-suggestion"
  },
  {
   "id": "suit",
@@ -25323,13 +26341,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些书适合小读者。",
   "display": "suitable",
   "spoken": "suitable",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/suitable.svg",
   "pictureCue": true,
   "audio": "word-suitable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59882 (CK) & #870134 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-suitable"
  },
  {
   "id": "sum",
@@ -25339,13 +26358,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "1000美元是个大数目。",
   "display": "sum",
   "spoken": "sum",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/sum.svg",
   "pictureCue": true,
   "audio": "word-sum",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #73499 (CK) & #846538 (kooler)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-sum"
  },
  {
   "id": "superior",
@@ -25355,13 +26375,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这地毯在质量上比那个好得多。",
   "display": "superior",
   "spoken": "superior",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/superior.svg",
   "pictureCue": true,
   "audio": "word-superior",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #61254 (CK) & #5691281 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-superior"
  },
  {
   "id": "supply",
@@ -25371,13 +26392,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "油墨快没了。",
   "display": "supply",
   "spoken": "supply",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/supply.svg",
   "pictureCue": true,
   "audio": "word-supply",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27159 (CK) & #332885 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-supply"
  },
  {
   "id": "support",
@@ -25387,13 +26409,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我支持政治改革。",
   "display": "support",
   "spoken": "support",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/support.svg",
   "pictureCue": true,
   "audio": "word-support",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7819964 (sharris123) & #5384769 (xjjAstrus)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-support"
  },
  {
   "id": "suppose",
@@ -25403,13 +26426,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我猜想您饿了。",
   "display": "suppose",
   "spoken": "suppose",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/suppose.svg",
   "pictureCue": true,
   "audio": "word-suppose",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16196 (CK) & #476634 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-suppose"
  },
  {
   "id": "surgeon",
@@ -25453,13 +26477,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这并不让我惊讶。",
   "display": "surprise",
   "spoken": "surprise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/surprise.svg",
   "pictureCue": true,
   "audio": "word-surprise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1330 (CK) & #501313 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-surprise"
  },
  {
   "id": "surrounding",
@@ -25469,13 +26494,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "周围的地区非常安静。",
   "display": "surrounding",
   "spoken": "surrounding",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/surrounding.svg",
   "pictureCue": true,
   "audio": "word-surrounding",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #433992 (CK) & #872182 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-surrounding"
  },
  {
   "id": "survive",
@@ -25485,13 +26511,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "有些植物能在非常干燥的地方存活。",
   "display": "survive",
   "spoken": "survive",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/survive.svg",
   "pictureCue": true,
   "audio": "word-survive",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1530354 (erikspen) & #5496290 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-survive"
  },
  {
   "id": "suspect",
@@ -25501,13 +26528,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我没有怀疑任何事。",
   "display": "suspect",
   "spoken": "suspect",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/suspect.svg",
   "pictureCue": true,
   "audio": "word-suspect",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2473720 (Hybrid) & #6103240 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-suspect"
  },
  {
   "id": "sweat",
@@ -25534,13 +26562,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这颗苹果很甜。",
   "display": "sweet",
   "spoken": "sweet",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/sweet.svg",
   "pictureCue": true,
   "audio": "word-sweet",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #60349 (CK) & #13167245 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-sweet"
  },
  {
   "id": "switch",
@@ -25567,13 +26596,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不知道这个符号代表什么意思。",
   "display": "symbol",
   "spoken": "symbol",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/symbol.svg",
   "pictureCue": true,
   "audio": "word-symbol",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59741 (CK) & #780069 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-symbol"
  },
  {
   "id": "sympathy",
@@ -25583,29 +26613,31 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们对迷路的孩子感到同情。",
   "display": "sympathy",
   "spoken": "sympathy",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/sympathy.svg",
   "pictureCue": true,
   "audio": "word-sympathy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5836402 (CK) & #6624663 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-sympathy"
  },
  {
   "id": "system",
   "zh": "系统",
   "pos": "名词",
-  "sentence": "They changed the system.",
-  "sentenceZh": "他们改变了制度。",
+  "sentence": "The sun and planets form a system.",
+  "sentenceZh": "太阳和行星组成一个系统。",
   "display": "system",
   "spoken": "system",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/system.svg",
   "pictureCue": true,
   "audio": "word-system",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #305809 (mamat) & #858768 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-system"
  },
  {
   "id": "tailor",
@@ -25632,13 +26664,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "多么荒唐的故事！",
   "display": "tale",
   "spoken": "tale",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/tale.svg",
   "pictureCue": true,
   "audio": "word-tale",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5340981 (Objectivesea) & #5691274 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-tale"
  },
  {
   "id": "talent",
@@ -25648,13 +26681,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不禁欣赏他的才华。",
   "display": "talent",
   "spoken": "talent",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/talent.svg",
   "pictureCue": true,
   "audio": "word-talent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #252338 (CK) & #941159 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-talent"
  },
  {
   "id": "tank",
@@ -25698,13 +26732,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们的目标是这个月读十本书。",
   "display": "target",
   "spoken": "target",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/target.svg",
   "pictureCue": true,
   "audio": "word-target",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #244025 (CK) & #335859 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-target"
  },
  {
   "id": "task",
@@ -25714,13 +26749,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我无法完成这个任务。",
   "display": "task",
   "spoken": "task",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/task.svg",
   "pictureCue": true,
   "audio": "word-task",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #254379 (CK) & #887763 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-task"
  },
  {
   "id": "tax",
@@ -25730,13 +26766,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个价格含了税。",
   "display": "tax",
   "spoken": "tax",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/tax.svg",
   "pictureCue": true,
   "audio": "word-tax",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #59922 (CK) & #404455 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-tax"
  },
  {
   "id": "teach",
@@ -25763,13 +26800,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "现代科学技术让我们的生活更加舒适。",
   "display": "technology",
   "spoken": "technology",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/technology.svg",
   "pictureCue": true,
   "audio": "word-technology",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #239559 (CK) & #8690292 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-technology"
  },
  {
   "id": "teenager",
@@ -25779,13 +26817,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "青少年是指十三到十九岁的人。",
   "display": "teenager",
   "spoken": "teenager",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/teenager.svg",
   "pictureCue": true,
   "audio": "word-teenager",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5259960 (CK) & #6325099 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-teenager"
  },
  {
   "id": "temporary",
@@ -25795,13 +26834,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们说情况只是暂时的。",
   "display": "temporary",
   "spoken": "temporary",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/temporary.svg",
   "pictureCue": true,
   "audio": "word-temporary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #802472 (Source_VOA) & #5911616 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-temporary"
  },
  {
   "id": "tend",
@@ -25811,13 +26851,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "植物往往朝着光生长。",
   "display": "tend",
   "spoken": "tend",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/tend.svg",
   "pictureCue": true,
   "audio": "word-tend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #715761 (darinmex) & #10201149 (slo_oth)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tend"
  },
  {
   "id": "term",
@@ -25827,13 +26868,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个学期我们有两次考试。",
   "display": "term",
   "spoken": "term",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/term.svg",
   "pictureCue": true,
   "audio": "word-term",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #241988 (CM) & #1416248 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-term"
  },
  {
   "id": "terrible",
@@ -25843,13 +26885,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这真可怕。",
   "display": "terrible",
   "spoken": "terrible",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/terrible.svg",
   "pictureCue": true,
   "audio": "word-terrible",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2832526 (CK) & #5091294 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-terrible"
  },
  {
   "id": "territory",
@@ -25859,13 +26902,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些鸟保卫自己的领地。",
   "display": "territory",
   "spoken": "territory",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/territory.svg",
   "pictureCue": true,
   "audio": "word-territory",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16222 (kebukebu) & #760740 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-territory"
  },
  {
   "id": "test",
@@ -25875,13 +26919,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是一个测试。",
   "display": "test",
   "spoken": "test",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/test.svg",
   "pictureCue": true,
   "audio": "word-test",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2573684 (Hybrid) & #8602039 (mikeee)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-test"
  },
  {
   "id": "text",
@@ -25922,16 +26967,17 @@ export const CONTEXT_WORDS=[
   "zh": "偷窃",
   "pos": "名词",
   "sentence": "The police accused him of theft.",
-  "sentenceZh": "警察起诉他盗窃。",
+  "sentenceZh": "警方指控他盗窃。",
   "display": "theft",
   "spoken": "theft",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/theft.svg",
   "pictureCue": true,
   "audio": "word-theft",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238360 (CK) & #2031291 (ydcok)",
-  "sentenceAdapted": false
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-theft"
  },
  {
   "id": "theme",
@@ -25941,13 +26987,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "友谊是这本书的主要主题。",
   "display": "theme",
   "spoken": "theme",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/theme.svg",
   "pictureCue": true,
   "audio": "word-theme",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #285210 (Eldad) & #846795 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-theme"
  },
  {
   "id": "themselves",
@@ -25957,13 +27004,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "孩子们自己打扫了房间。",
   "display": "themselves",
   "spoken": "themselves",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/themselves.svg",
   "pictureCue": true,
   "audio": "word-themselves",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #306843 (CK) & #842421 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-themselves"
  },
  {
   "id": "theory",
@@ -25973,13 +27021,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个理论很有争议。",
   "display": "theory",
   "spoken": "theory",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/theory.svg",
   "pictureCue": true,
   "audio": "word-theory",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5568135 (Hybrid) & #5568458 (Lunar)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-theory"
  },
  {
   "id": "thing",
@@ -25989,13 +27038,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "学习一件新事物可以令人兴奋。",
   "display": "thing",
   "spoken": "thing",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/thing.svg",
   "pictureCue": true,
   "audio": "word-thing",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5756577 (Hybrid) & #6120899 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-thing"
  },
  {
   "id": "thinking",
@@ -26005,13 +27055,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "仔细思考有助于我们解决问题。",
   "display": "thinking",
   "spoken": "thinking",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/thinking.svg",
   "pictureCue": true,
   "audio": "word-thinking",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #257110 (CK) & #793311 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-thinking"
  },
  {
   "id": "though",
@@ -26021,13 +27072,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "虽然天气冷，阳光却很灿烂。",
   "display": "though",
   "spoken": "though",
-  "topic": null,
-  "image": null,
+  "topic": "feelings",
+  "image": "./assets/pictures/though.svg",
   "pictureCue": true,
   "audio": "word-though",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #62609 (CM) & #335837 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-though"
  },
  {
   "id": "thought",
@@ -26037,13 +27089,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "一个新想法浮现在脑海里。",
   "display": "thought",
   "spoken": "thought",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/thought.svg",
   "pictureCue": true,
   "audio": "word-thought",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3735291 (CK) & #1227132 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-thought"
  },
  {
   "id": "threaten",
@@ -26053,13 +27106,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "污染会威胁野生动物。",
   "display": "threaten",
   "spoken": "threaten",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/threaten.svg",
   "pictureCue": true,
   "audio": "word-threaten",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3818060 (CK) & #6728900 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-threaten"
  },
  {
   "id": "throat",
@@ -26103,13 +27157,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这双鞋太紧了。",
   "display": "tight",
   "spoken": "tight",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/tight.svg",
   "pictureCue": true,
   "audio": "word-tight",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #6874191 (CK) & #895652 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tight"
  },
  {
   "id": "tip",
@@ -26119,13 +27174,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我会给你些提示。",
   "display": "tip",
   "spoken": "tip",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/tip.svg",
   "pictureCue": true,
   "audio": "word-tip",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1129719 (CM) & #2625982 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-tip"
  },
  {
   "id": "title",
@@ -26135,13 +27191,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你新书的书名是什么？",
   "display": "title",
   "spoken": "title",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/title.svg",
   "pictureCue": true,
   "audio": "word-title",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5490606 (Mar1L) & #5452170 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-title"
  },
  {
   "id": "tobacco",
@@ -26185,13 +27242,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们一起看电视。",
   "display": "together",
   "spoken": "together",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/together.svg",
   "pictureCue": true,
   "audio": "word-together",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2547490 (CK) & #13663171 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-together"
  },
  {
   "id": "tolerate",
@@ -26201,13 +27259,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不能再忍受这个噪音了。",
   "display": "tolerate",
   "spoken": "tolerate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/tolerate.svg",
   "pictureCue": true,
   "audio": "word-tolerate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #58021 (CK) & #920110 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tolerate"
  },
  {
   "id": "tone",
@@ -26217,13 +27276,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她用友好的语气说话。",
   "display": "tone",
   "spoken": "tone",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/tone.svg",
   "pictureCue": true,
   "audio": "word-tone",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #326798 (BE) & #779463 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tone"
  },
  {
   "id": "tonight",
@@ -26233,13 +27293,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天晚上怎么样？",
   "display": "tonight",
   "spoken": "tonight",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/tonight.svg",
   "pictureCue": true,
   "audio": "word-tonight",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5757638 (CM) & #13109165 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tonight"
  },
  {
   "id": "toothache",
@@ -26266,13 +27327,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是值得探讨的话题。",
   "display": "topic",
   "spoken": "topic",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/topic.svg",
   "pictureCue": true,
   "audio": "word-topic",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #43253 (CK) & #892494 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-topic"
  },
  {
   "id": "total",
@@ -26282,13 +27344,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我完全同意。",
   "display": "total",
   "spoken": "total",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/total.svg",
   "pictureCue": true,
   "audio": "word-total",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4529461 (CK) & #926858 (Martha)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-total"
  },
  {
   "id": "tough",
@@ -26298,13 +27361,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆确实有个麻烦的工作。",
   "display": "tough",
   "spoken": "tough",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/tough.svg",
   "pictureCue": true,
   "audio": "word-tough",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1095460 (CK) & #5945155 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-tough"
  },
  {
   "id": "tour",
@@ -26314,13 +27378,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你想参观一下吗？",
   "display": "tour",
   "spoken": "tour",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/tour.svg",
   "pictureCue": true,
   "audio": "word-tour",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3123329 (CK) & #6936189 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tour"
  },
  {
   "id": "tourist",
@@ -26398,13 +27463,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这两个国家有强大的贸易关系。",
   "display": "trade",
   "spoken": "trade",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/trade.svg",
   "pictureCue": true,
   "audio": "word-trade",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2163181 (Source_VOA) & #2581548 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-trade"
  },
  {
   "id": "traditional",
@@ -26414,13 +27480,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "相扑是日本传统的体育活动。",
   "display": "traditional",
   "spoken": "traditional",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/traditional.svg",
   "pictureCue": true,
   "audio": "word-traditional",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1008915 (AOCinJAPAN) & #2394859 (fenfang557)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-traditional"
  },
  {
   "id": "traffic",
@@ -26447,13 +27514,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个队需要更多训练。",
   "display": "training",
   "spoken": "training",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/training.svg",
   "pictureCue": true,
   "audio": "word-training",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4501576 (CK) & #5670733 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-training"
  },
  {
   "id": "transfer",
@@ -26463,13 +27531,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我需要换乘吗?",
   "display": "transfer",
   "spoken": "transfer",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/transfer.svg",
   "pictureCue": true,
   "audio": "word-transfer",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #268383 (CK) & #1423977 (asosan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-transfer"
  },
  {
   "id": "translate",
@@ -26479,13 +27548,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "翻译划线部分。",
   "display": "translate",
   "spoken": "translate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/translate.svg",
   "pictureCue": true,
   "audio": "word-translate",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #25358 (CK) & #1785989 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-translate"
  },
  {
   "id": "trap",
@@ -26529,13 +27599,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "今天是我请客。",
   "display": "treat",
   "spoken": "treat",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/treat.svg",
   "pictureCue": true,
   "audio": "word-treat",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #470017 (CM) & #470019 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-treat"
  },
  {
   "id": "treatment",
@@ -26545,13 +27616,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我不习惯这样的待遇。",
   "display": "treatment",
   "spoken": "treatment",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/treatment.svg",
   "pictureCue": true,
   "audio": "word-treatment",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #253540 (CK) & #795267 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-treatment"
  },
  {
   "id": "trick",
@@ -26561,13 +27633,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你没打算耍我，对吧？",
   "display": "trick",
   "spoken": "trick",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/trick.svg",
   "pictureCue": true,
   "audio": "word-trick",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3492765 (Hybrid) & #5581799 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-trick"
  },
  {
   "id": "trouble",
@@ -26577,13 +27650,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有麻烦了。",
   "display": "trouble",
   "spoken": "trouble",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/trouble.svg",
   "pictureCue": true,
   "audio": "word-trouble",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #257640 (CK) & #917920 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-trouble"
  },
  {
   "id": "true",
@@ -26593,13 +27667,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那不可能是真的。",
   "display": "true",
   "spoken": "true",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/true.svg",
   "pictureCue": true,
   "audio": "word-true",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42088 (CK) & #346766 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-true"
  },
  {
   "id": "trust",
@@ -26609,13 +27684,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你相信她吗?",
   "display": "trust",
   "spoken": "trust",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/trust.svg",
   "pictureCue": true,
   "audio": "word-trust",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #776107 (CK) & #776999 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-trust"
  },
  {
   "id": "truth",
@@ -26625,13 +27701,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我知道真相。",
   "display": "truth",
   "spoken": "truth",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/truth.svg",
   "pictureCue": true,
   "audio": "word-truth",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258845 (CK) & #7771678 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-truth"
  },
  {
   "id": "tube",
@@ -26658,13 +27735,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请给我们演奏一首曲子。",
   "display": "tune",
   "spoken": "tune",
-  "topic": null,
-  "image": null,
+  "topic": "music",
+  "image": "./assets/pictures/tune.svg",
   "pictureCue": true,
   "audio": "word-tune",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #815666 (CM) & #815668 (GlossaMatik)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-tune"
  },
  {
   "id": "tunnel",
@@ -26691,13 +27769,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我爬过两次富士山。",
   "display": "twice",
   "spoken": "twice",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/twice.svg",
   "pictureCue": true,
   "audio": "word-twice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #261486 (CK) & #793325 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-twice"
  },
  {
   "id": "twin",
@@ -26707,13 +27786,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "Tom有个双胞胎兄弟。",
   "display": "twin",
   "spoken": "twin",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/twin.svg",
   "pictureCue": true,
   "audio": "word-twin",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4493672 (CK) & #4504493 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-twin"
  },
  {
   "id": "type",
@@ -26723,13 +27803,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是什么种类的树？",
   "display": "type",
   "spoken": "type",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/type.svg",
   "pictureCue": true,
   "audio": "word-type",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #284379 (CK) & #817282 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-type"
  },
  {
   "id": "typhoon",
@@ -26756,13 +27837,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这是典型的春季天气。",
   "display": "typical",
   "spoken": "typical",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/typical.svg",
   "pictureCue": true,
   "audio": "word-typical",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #9432248 (CK) & #4674461 (yuiyu)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-typical"
  },
  {
   "id": "understand",
@@ -26772,13 +27854,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我大概懂了。",
   "display": "understand",
   "spoken": "understand",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/understand.svg",
   "pictureCue": true,
   "audio": "word-understand",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #24900 (CK) & #333776 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-understand"
  },
  {
   "id": "unique",
@@ -26788,13 +27871,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些花有一种独特的气味。",
   "display": "unique",
   "spoken": "unique",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/unique.svg",
   "pictureCue": true,
   "audio": "word-unique",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #388322 (CK) & #869908 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-unique"
  },
  {
   "id": "universe",
@@ -26838,13 +27922,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "除非下雨，否则我们就步行。",
   "display": "unless",
   "spoken": "unless",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/unless.svg",
   "pictureCue": true,
   "audio": "word-unless",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #288309 (CK) & #849287 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-unless"
  },
  {
   "id": "until",
@@ -26854,13 +27939,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆睡到中午。",
   "display": "until",
   "spoken": "until",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/until.svg",
   "pictureCue": true,
   "audio": "word-until",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5573996 (CK) & #5574481 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-until"
  },
  {
   "id": "till",
@@ -26870,13 +27956,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "商店营业到六点。",
   "display": "till",
   "spoken": "till",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/till.svg",
   "pictureCue": true,
   "audio": "word-till",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4980205 (CK) & #13665611 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-till"
  },
  {
   "id": "unusual",
@@ -26886,13 +27973,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我听到一个不寻常的声音。",
   "display": "unusual",
   "spoken": "unusual",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/unusual.svg",
   "pictureCue": true,
   "audio": "word-unusual",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #321714 (CK) & #834607 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-unusual"
  },
  {
   "id": "update",
@@ -26902,13 +27990,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "汤姆需要更新他的网站。",
   "display": "update",
   "spoken": "update",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/update.svg",
   "pictureCue": true,
   "audio": "word-update",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1024398 (CK) & #5556063 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-update"
  },
  {
   "id": "upon",
@@ -26918,13 +28007,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "书放在桌子上。",
   "display": "upon",
   "spoken": "upon",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/upon.svg",
   "pictureCue": true,
   "audio": "word-upon",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #51677 (CK) & #6065389 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-upon"
  },
  {
   "id": "upset",
@@ -26951,13 +28041,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "交通是都市的一个主要问题。",
   "display": "urban",
   "spoken": "urban",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/urban.svg",
   "pictureCue": true,
   "audio": "word-urban",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #240309 (CM) & #786118 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-urban"
  },
  {
   "id": "urge",
@@ -26967,13 +28058,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些标志敦促司机减速。",
   "display": "urge",
   "spoken": "urge",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/urge.svg",
   "pictureCue": true,
   "audio": "word-urge",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #273148 (jakov) & #919907 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-urge"
  },
  {
   "id": "urgent",
@@ -26983,13 +28075,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这件事非常紧急。",
   "display": "urgent",
   "spoken": "urgent",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/urgent.svg",
   "pictureCue": true,
   "audio": "word-urgent",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1477124 (weihaiping) & #775892 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-urgent"
  },
  {
   "id": "used",
@@ -26999,13 +28092,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们买了一辆二手自行车。",
   "display": "used",
   "spoken": "used",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/used.svg",
   "pictureCue": true,
   "audio": "word-used",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #293512 (CK) & #426893 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-used"
  },
  {
   "id": "useful",
@@ -27015,13 +28109,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "马是种很有用的动物。",
   "display": "useful",
   "spoken": "useful",
-  "topic": null,
-  "image": null,
+  "topic": "animals",
+  "image": "./assets/pictures/useful.svg",
   "pictureCue": true,
   "audio": "word-useful",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #282391 (CM) & #346475 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-useful"
  },
  {
   "id": "usual",
@@ -27031,13 +28126,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在往常的时间见面。",
   "display": "usual",
   "spoken": "usual",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/usual.svg",
   "pictureCue": true,
   "audio": "word-usual",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8367013 (CK) & #8746410 (cxpadonis)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-usual"
  },
  {
   "id": "usually",
@@ -27047,13 +28143,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我通常在外面吃饭。",
   "display": "usually",
   "spoken": "usually",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/usually.svg",
   "pictureCue": true,
   "audio": "word-usually",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #252359 (CK) & #787548 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-11-usually"
  },
  {
   "id": "valid",
@@ -27063,13 +28160,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这张票一天内有效。",
   "display": "valid",
   "spoken": "valid",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/valid.svg",
   "pictureCue": true,
   "audio": "word-valid",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #324454 (CM) & #332767 (fucongcong)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-valid"
  },
  {
   "id": "valley",
@@ -27096,13 +28194,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "宝贵的时间已失去。",
   "display": "valuable",
   "spoken": "valuable",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/valuable.svg",
   "pictureCue": true,
   "audio": "word-valuable",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5090711 (CK) & #6101472 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-valuable"
  },
  {
   "id": "value",
@@ -27112,13 +28211,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这只旧手表对我很有价值。",
   "display": "value",
   "spoken": "value",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/value.svg",
   "pictureCue": true,
   "audio": "word-value",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #463252 (lukaszpp) & #726780 (CLARET)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-11-value"
  },
  {
   "id": "variety",
@@ -27128,13 +28228,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们种植各种的作物。",
   "display": "variety",
   "spoken": "variety",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/variety.svg",
   "pictureCue": true,
   "audio": "word-variety",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #262712 (CK) & #802026 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-variety"
  },
  {
   "id": "various",
@@ -27144,13 +28245,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们尝试了各种方法来解开谜题。",
   "display": "various",
   "spoken": "various",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/various.svg",
   "pictureCue": true,
   "audio": "word-various",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21965 (Swift) & #5591008 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-various"
  },
  {
   "id": "vary",
@@ -27160,13 +28262,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "观点因人而异。",
   "display": "vary",
   "spoken": "vary",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/vary.svg",
   "pictureCue": true,
   "audio": "word-vary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #269908 (CM) & #1695461 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-vary"
  },
  {
   "id": "vase",
@@ -27193,13 +28296,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "撒哈拉沙漠广袤无垠。",
   "display": "vast",
   "spoken": "vast",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/vast.svg",
   "pictureCue": true,
   "audio": "word-vast",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #54060 (CM) & #1454464 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-vast"
  },
  {
   "id": "version",
@@ -27209,13 +28313,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这本字典不是最新版的。",
   "display": "version",
   "spoken": "version",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/version.svg",
   "pictureCue": true,
   "audio": "word-version",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #682314 (Source_VOA) & #6332408 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-version"
  },
  {
   "id": "victim",
@@ -27225,13 +28330,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "志愿者帮助了每一位洪灾受害者。",
   "display": "victim",
   "spoken": "victim",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/victim.svg",
   "pictureCue": true,
   "audio": "word-victim",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5360753 (CK) & #6150883 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-victim"
  },
  {
   "id": "victory",
@@ -27258,13 +28364,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "影片很长。",
   "display": "video",
   "spoken": "video",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/video.svg",
   "pictureCue": true,
   "audio": "word-video",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #13189641 (ecorralest101) & #13189735 (LeviHighway)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-video"
  },
  {
   "id": "view",
@@ -27274,13 +28381,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的看法过于乐观。",
   "display": "view",
   "spoken": "view",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/view.svg",
   "pictureCue": true,
   "audio": "word-view",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #17179 (CK) & #845970 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-view"
  },
  {
   "id": "virus",
@@ -27290,13 +28398,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那台电脑中毒了。",
   "display": "virus",
   "spoken": "virus",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/virus.svg",
   "pictureCue": true,
   "audio": "word-virus",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #10110894 (ddnktr) & #12042141 (corina)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-virus"
  },
  {
   "id": "vision",
@@ -27306,13 +28415,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我有一个设想。",
   "display": "vision",
   "spoken": "vision",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/vision.svg",
   "pictureCue": true,
   "audio": "word-vision",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1887332 (CK) & #5091184 (mirrorvan)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-vision"
  },
  {
   "id": "visitor",
@@ -27322,13 +28432,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你有客人。",
   "display": "visitor",
   "spoken": "visitor",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/visitor.svg",
   "pictureCue": true,
   "audio": "word-visitor",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2548464 (CK) & #10552170 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-visitor"
  },
  {
   "id": "vocabulary",
@@ -27338,13 +28449,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你读那本书需要大量词汇。",
   "display": "vocabulary",
   "spoken": "vocabulary",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/vocabulary.svg",
   "pictureCue": true,
   "audio": "word-vocabulary",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #43868 (CK) & #6131458 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-vocabulary"
  },
  {
   "id": "voice",
@@ -27354,13 +28466,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你说话小点声。",
   "display": "voice",
   "spoken": "voice",
-  "topic": null,
-  "image": null,
+  "topic": "body",
+  "image": "./assets/pictures/voice.svg",
   "pictureCue": true,
   "audio": "word-voice",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1860649 (CK) & #7767745 (jiangche)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-voice"
  },
  {
   "id": "volume",
@@ -27404,13 +28517,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "玛丽去环游世界了。",
   "display": "voyage",
   "spoken": "voyage",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/voyage.svg",
   "pictureCue": true,
   "audio": "word-voyage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #31913 (mamat) & #472805 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-voyage"
  },
  {
   "id": "wage",
@@ -27420,13 +28534,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你的国家的最低工资是多少？",
   "display": "wage",
   "spoken": "wage",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/wage.svg",
   "pictureCue": true,
   "audio": "word-wage",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1534782 (CK) & #8863035 (crescat)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-wage"
  },
  {
   "id": "waist",
@@ -27453,13 +28568,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我来警告你别那样做。",
   "display": "warn",
   "spoken": "warn",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/warn.svg",
   "pictureCue": true,
   "audio": "word-warn",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2300275 (CK) & #5925227 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-warn"
  },
  {
   "id": "warning",
@@ -27486,13 +28602,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "请不要浪费水。",
   "display": "waste",
   "spoken": "waste",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/waste.svg",
   "pictureCue": true,
   "audio": "word-waste",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #32061 (CM) & #718437 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-waste"
  },
  {
   "id": "weak",
@@ -27502,13 +28619,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这里的收音机信号很弱。",
   "display": "weak",
   "spoken": "weak",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/weak.svg",
   "pictureCue": true,
   "audio": "word-weak",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11129748 (CK) & #8765192 (crescat)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-weak"
  },
  {
   "id": "wealth",
@@ -27518,13 +28636,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "健康比财富重要。",
   "display": "wealth",
   "spoken": "wealth",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/wealth.svg",
   "pictureCue": true,
   "audio": "word-wealth",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238971 (hebrajska) & #346072 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-wealth"
  },
  {
   "id": "website",
@@ -27568,13 +28687,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "周末愉快。",
   "display": "weekend",
   "spoken": "weekend",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/weekend.svg",
   "pictureCue": true,
   "audio": "word-weekend",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #30070 (CK) & #1878357 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-weekend"
  },
  {
   "id": "weep",
@@ -27635,13 +28755,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你喜欢什么就拿吧。",
   "display": "whatever",
   "spoken": "whatever",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/whatever.svg",
   "pictureCue": true,
   "audio": "word-whatever",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #5574902 (n1ls) & #3706733 (egg0073)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-whatever"
  },
  {
   "id": "whenever",
@@ -27651,13 +28772,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "什么时候想来就过来吧。",
   "display": "whenever",
   "spoken": "whenever",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/whenever.svg",
   "pictureCue": true,
   "audio": "word-whenever",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #508379 (blay_paul) & #5153294 (musclegirlxyp)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-whenever"
  },
  {
   "id": "whether",
@@ -27667,13 +28789,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想知道图书馆是否开门。",
   "display": "whether",
   "spoken": "whether",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/whether.svg",
   "pictureCue": true,
   "audio": "word-whether",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1028983 (CK) & #6624724 (verdastelo9604)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-whether"
  },
  {
   "id": "while",
@@ -27683,13 +28806,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他一边唱歌一边工作。",
   "display": "while",
   "spoken": "while",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/while.svg",
   "pictureCue": true,
   "audio": "word-while",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #294485 (CK) & #1454456 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-while"
  },
  {
   "id": "whole",
@@ -27699,13 +28823,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在海滩度过了一整天。",
   "display": "whole",
   "spoken": "whole",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/whole.svg",
   "pictureCue": true,
   "audio": "word-whole",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #7923942 (shekitten) & #917936 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-whole"
  },
  {
   "id": "widespread",
@@ -27715,13 +28840,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个新想法获得了广泛支持。",
   "display": "widespread",
   "spoken": "widespread",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/widespread.svg",
   "pictureCue": true,
   "audio": "word-widespread",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #45132 (CK) & #801437 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-widespread"
  },
  {
   "id": "wife",
@@ -27731,13 +28857,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我爱我的妻子。",
   "display": "wife",
   "spoken": "wife",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/wife.svg",
   "pictureCue": true,
   "audio": "word-wife",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #436791 (lukaszpp) & #4759974 (ryanwoo)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-wife"
  },
  {
   "id": "wi-fi",
@@ -27781,13 +28908,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你做了一个明智的选择。",
   "display": "wise",
   "spoken": "wise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/wise.svg",
   "pictureCue": true,
   "audio": "word-wise",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #16170 (CK) & #844482 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-wise"
  },
  {
   "id": "within",
@@ -27814,13 +28942,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "没有铅笔，我无法画圆。",
   "display": "without",
   "spoken": "without",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/without.svg",
   "pictureCue": true,
   "audio": "word-without",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #618153 (kebukebu) & #760880 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-without"
  },
  {
   "id": "wonder",
@@ -27830,13 +28959,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想知道谁来了。",
   "display": "wonder",
   "spoken": "wonder",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/wonder.svg",
   "pictureCue": true,
   "audio": "word-wonder",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #276391 (adjusting) & #334195 (fucongcong)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-wonder"
  },
  {
   "id": "worse",
@@ -27846,13 +28976,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它变糟了。",
   "display": "worse",
   "spoken": "worse",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/worse.svg",
   "pictureCue": true,
   "audio": "word-worse",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3723440 (CM) & #5842667 (verdastelo9604)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-worse"
  },
  {
   "id": "worst",
@@ -27862,13 +28993,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "最坏的已经过去了。",
   "display": "worst",
   "spoken": "worst",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/worst.svg",
   "pictureCue": true,
   "audio": "word-worst",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #243711 (CK) & #795804 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-worst"
  },
  {
   "id": "worth",
@@ -27878,13 +29010,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "它值得一试。",
   "display": "worth",
   "spoken": "worth",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/worth.svg",
   "pictureCue": true,
   "audio": "word-worth",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #42604 (CK) & #780268 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-worth"
  },
  {
   "id": "worthy",
@@ -27894,13 +29027,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他的行为值得尊重。",
   "display": "worthy",
   "spoken": "worthy",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/worthy.svg",
   "pictureCue": true,
   "audio": "word-worthy",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #286814 (CM) & #1395067 (mtdot)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-worthy"
  },
  {
   "id": "would",
@@ -27978,13 +29112,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他已经来了吗？",
   "display": "yet",
   "spoken": "yet",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/yet.svg",
   "pictureCue": true,
   "audio": "word-yet",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #293048 (CK) & #4267322 (notabene)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-yet"
  },
  {
   "id": "yield",
@@ -27994,13 +29129,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你不应该屈服在诱惑之下。",
   "display": "yield",
   "spoken": "yield",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/yield.svg",
   "pictureCue": true,
   "audio": "word-yield",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #324512 (CK) & #1228964 (tsayng)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-yield"
  },
  {
   "id": "yours",
@@ -28010,13 +29146,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是你的车吗?",
   "display": "yours",
   "spoken": "yours",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/yours.svg",
   "pictureCue": true,
   "audio": "word-yours",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2760951 (verdulo) & #785228 (Martha)",
-  "sentenceAdapted": true
+  "sentenceAdapted": true,
+  "emoji": "project-context-12-yours"
  },
  {
   "id": "yourself",
@@ -28026,13 +29163,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "就当在家一样。",
   "display": "yourself",
   "spoken": "yourself",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/yourself.svg",
   "pictureCue": true,
   "audio": "word-yourself",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2378 (CK) & #1776656 (sadhen)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-yourself"
  },
  {
   "id": "youth",
@@ -28042,13 +29180,14 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "附近有没有青年旅舍？",
   "display": "youth",
   "spoken": "youth",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/youth.svg",
   "pictureCue": true,
   "audio": "word-youth",
   "contentSource": "extended-context-v1",
   "sentenceCredit": "CC-BY 2.0 (France) Attribution: tatoeba.org #1662 (confusion) & #394981 (GlossaMatik)",
-  "sentenceAdapted": false
+  "sentenceAdapted": false,
+  "emoji": "project-context-12-youth"
  },
  {
   "id": "zero",
@@ -28105,11 +29244,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们的目标是保持公园清洁。",
   "display": "aim",
   "spoken": "aim",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/aim.svg",
   "pictureCue": true,
   "audio": "word-aim",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-aim"
  },
  {
   "id": "aloud",
@@ -28164,11 +29304,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "步行的一个益处是改善健康。",
   "display": "benefit",
   "spoken": "benefit",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/benefit.svg",
   "pictureCue": true,
   "audio": "word-benefit",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-benefit"
  },
  {
   "id": "block",
@@ -28208,11 +29349,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "欺负别人是不对的。",
   "display": "bully",
   "spoken": "bully",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/bully.svg",
   "pictureCue": true,
   "audio": "word-bully",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-bully"
  },
  {
   "id": "cartoon",
@@ -28282,11 +29424,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "在游戏中作弊是不公平的。",
   "display": "cheat",
   "spoken": "cheat",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/cheat.svg",
   "pictureCue": true,
   "audio": "word-cheat",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-cheat"
  },
  {
   "id": "classic",
@@ -28296,11 +29439,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事是适合小读者的经典作品。",
   "display": "classic",
   "spoken": "classic",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/classic.svg",
   "pictureCue": true,
   "audio": "word-classic",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-classic"
  },
  {
   "id": "compete",
@@ -28310,11 +29454,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们队将参加这场比赛。",
   "display": "compete",
   "spoken": "compete",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/compete.svg",
   "pictureCue": true,
   "audio": "word-compete",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-compete"
  },
  {
   "id": "congratulation",
@@ -28324,11 +29469,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她寄出了一封祝贺信。",
   "display": "congratulation",
   "spoken": "congratulation",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/congratulation.svg",
   "pictureCue": true,
   "audio": "word-congratulation",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-congratulation"
  },
  {
   "id": "connect",
@@ -28383,11 +29529,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那是一个有创造力的盒子用法。",
   "display": "creative",
   "spoken": "creative",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/creative.svg",
   "pictureCue": true,
   "audio": "word-creative",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-creative"
  },
  {
   "id": "dead",
@@ -28412,11 +29559,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事描述了一棵老树的死亡。",
   "display": "death",
   "spoken": "death",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/death.svg",
   "pictureCue": true,
   "audio": "word-death",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-death"
  },
  {
   "id": "dialogue",
@@ -28441,11 +29589,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "植物没有足够的水可能会死去。",
   "display": "die",
   "spoken": "die",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/die.svg",
   "pictureCue": true,
   "audio": "word-die",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-die"
  },
  {
   "id": "download",
@@ -28455,11 +29604,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你可以下载这个故事来离线阅读。",
   "display": "download",
   "spoken": "download",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/download.svg",
   "pictureCue": true,
   "audio": "word-download",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-download"
  },
  {
   "id": "elder",
@@ -28469,11 +29619,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我姐姐教会了我游泳。",
   "display": "elder",
   "spoken": "elder",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/elder.svg",
   "pictureCue": true,
   "audio": "word-elder",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-elder"
  },
  {
   "id": "electronic",
@@ -28483,11 +29634,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这家商店出售电子设备。",
   "display": "electronic",
   "spoken": "electronic",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/electronic.svg",
   "pictureCue": true,
   "audio": "word-electronic",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-electronic"
  },
  {
   "id": "empress",
@@ -28542,11 +29694,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "博物馆展示了另一个时代的生活。",
   "display": "era",
   "spoken": "era",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/era.svg",
   "pictureCue": true,
   "audio": "word-era",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-era"
  },
  {
   "id": "eraser",
@@ -28571,11 +29724,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在动物园度过了非常棒的一天。",
   "display": "fantastic",
   "spoken": "fantastic",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/fantastic.svg",
   "pictureCue": true,
   "audio": "word-fantastic",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-fantastic"
  },
  {
   "id": "fat",
@@ -28585,11 +29739,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "坚果含有脂肪和其他营养物质。",
   "display": "fat",
   "spoken": "fat",
-  "topic": null,
-  "image": null,
+  "topic": "food",
+  "image": "./assets/pictures/fat.svg",
   "pictureCue": true,
   "audio": "word-fat",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-fat"
  },
  {
   "id": "fireman",
@@ -28629,11 +29784,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "奶奶教了我们一首民歌。",
   "display": "folk",
   "spoken": "folk",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/folk.svg",
   "pictureCue": true,
   "audio": "word-folk",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-folk"
  },
  {
   "id": "fool",
@@ -28643,11 +29799,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个伪装没有骗过侦探。",
   "display": "fool",
   "spoken": "fool",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/fool.svg",
   "pictureCue": true,
   "audio": "word-fool",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-fool"
  },
  {
   "id": "god",
@@ -28657,11 +29814,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个古老的故事讲述了一位海神。",
   "display": "god",
   "spoken": "god",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/god.svg",
   "pictureCue": true,
   "audio": "word-god",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-god"
  },
  {
   "id": "bye",
@@ -28716,11 +29874,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们为客人又摆了一个盘子。",
   "display": "guest",
   "spoken": "guest",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/guest.svg",
   "pictureCue": true,
   "audio": "word-guest",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-guest"
  },
  {
   "id": "gun",
@@ -28760,11 +29919,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我讨厌赶不上公交车。",
   "display": "hate",
   "spoken": "hate",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/hate.svg",
   "pictureCue": true,
   "audio": "word-hate",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-hate"
  },
  {
   "id": "hit",
@@ -28818,11 +29978,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "女主人给客人端来了一些茶。",
   "display": "hostess",
   "spoken": "hostess",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/hostess.svg",
   "pictureCue": true,
   "audio": "word-hostess",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-hostess"
  },
  {
   "id": "humour",
@@ -28846,11 +30007,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "开始之前请阅读每条指令。",
   "display": "instruction",
   "spoken": "instruction",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/instruction.svg",
   "pictureCue": true,
   "audio": "word-instruction",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-instruction"
  },
  {
   "id": "invent",
@@ -28860,11 +30022,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "你能发明一种新游戏吗？",
   "display": "invent",
   "spoken": "invent",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/invent.svg",
   "pictureCue": true,
   "audio": "word-invent",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-invent"
  },
  {
   "id": "jog",
@@ -28904,11 +30067,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "过高的温度会使这些植物死亡。",
   "display": "kill",
   "spoken": "kill",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/kill.svg",
   "pictureCue": true,
   "audio": "word-kill",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-kill"
  },
  {
   "id": "kilometre",
@@ -28932,11 +30096,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们步行了半千米到湖边。",
   "display": "kilometer",
   "spoken": "kilometer",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/kilometer.svg",
   "pictureCue": true,
   "audio": "word-kilometer",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-kilometer"
  },
  {
   "id": "kung fu",
@@ -29006,11 +30171,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事讲的是一个魔法世界。",
   "display": "magic",
   "spoken": "magic",
-  "topic": null,
-  "image": null,
+  "topic": "play",
+  "image": "./assets/pictures/magic.svg",
   "pictureCue": true,
   "audio": "word-magic",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-magic"
  },
  {
   "id": "marry",
@@ -29035,11 +30201,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我想要一份中碗的汤。",
   "display": "medium",
   "spoken": "medium",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/medium.svg",
   "pictureCue": true,
   "audio": "word-medium",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-medium"
  },
  {
   "id": "metre",
@@ -29063,11 +30230,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这条丝带长半米。",
   "display": "meter",
   "spoken": "meter",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/meter.svg",
   "pictureCue": true,
   "audio": "word-meter",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-meter"
  },
  {
   "id": "mum",
@@ -29077,11 +30245,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "妈妈正在给我们读故事。",
   "display": "mum",
   "spoken": "mum",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/mum.svg",
   "pictureCue": true,
   "audio": "word-mum",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-mum"
  },
  {
   "id": "mutton",
@@ -29106,11 +30275,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "负数小于零。",
   "display": "negative",
   "spoken": "negative",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/negative.svg",
   "pictureCue": true,
   "audio": "word-negative",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-negative"
  },
  {
   "id": "neighbour",
@@ -29238,11 +30408,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "她是计算机科学领域的一位先驱。",
   "display": "pioneer",
   "spoken": "pioneer",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/pioneer.svg",
   "pictureCue": true,
   "audio": "word-pioneer",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-pioneer"
  },
  {
   "id": "policewoman",
@@ -29326,11 +30497,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们赞扬她帮助别人。",
   "display": "praise",
   "spoken": "praise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/praise.svg",
   "pictureCue": true,
   "audio": "word-praise",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-praise"
  },
  {
   "id": "print",
@@ -29355,11 +30527,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这些树结出甜苹果。",
   "display": "produce",
   "spoken": "produce",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/produce.svg",
   "pictureCue": true,
   "audio": "word-produce",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-produce"
  },
  {
   "id": "programme",
@@ -29383,11 +30556,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "步行时穿合适的鞋子。",
   "display": "proper",
   "spoken": "proper",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/proper.svg",
   "pictureCue": true,
   "audio": "word-proper",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-proper"
  },
  {
   "id": "publish",
@@ -29397,11 +30571,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "他们计划出版一本诗集。",
   "display": "publish",
   "spoken": "publish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/publish.svg",
   "pictureCue": true,
   "audio": "word-publish",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-publish"
  },
  {
   "id": "punish",
@@ -29411,11 +30586,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事提出了惩罚他是否公平的问题。",
   "display": "punish",
   "spoken": "punish",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/punish.svg",
   "pictureCue": true,
   "audio": "word-punish",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-punish"
  },
  {
   "id": "recognise",
@@ -29454,11 +30630,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们来复习一下昨天学过的词吧。",
   "display": "review",
   "spoken": "review",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/review.svg",
   "pictureCue": true,
   "audio": "word-review",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-review"
  },
  {
   "id": "rise",
@@ -29468,11 +30645,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们看着太阳从山丘上升起。",
   "display": "rise",
   "spoken": "rise",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/rise.svg",
   "pictureCue": true,
   "audio": "word-rise",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-rise"
  },
  {
   "id": "rubbish",
@@ -29527,11 +30705,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "树上长出了一根纤细的枝条。",
   "display": "slim",
   "spoken": "slim",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/slim.svg",
   "pictureCue": true,
   "audio": "word-slim",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-slim"
  },
  {
   "id": "smoke",
@@ -29556,11 +30735,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们在历史课上学习了社会主义。",
   "display": "socialism",
   "spoken": "socialism",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/socialism.svg",
   "pictureCue": true,
   "audio": "word-socialism",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-socialism"
  },
  {
   "id": "spirit",
@@ -29570,11 +30750,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "团队展现了很强的合作精神。",
   "display": "spirit",
   "spoken": "spirit",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/spirit.svg",
   "pictureCue": true,
   "audio": "word-spirit",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-spirit"
  },
  {
   "id": "steal",
@@ -29584,11 +30765,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个故事告诫我们不要偷东西。",
   "display": "steal",
   "spoken": "steal",
-  "topic": null,
-  "image": null,
+  "topic": "actions",
+  "image": "./assets/pictures/steal.svg",
   "pictureCue": true,
   "audio": "word-steal",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-steal"
  },
  {
   "id": "surface",
@@ -29613,11 +30795,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我们班做了一项关于最喜欢的书的调查。",
   "display": "survey",
   "spoken": "survey",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/survey.svg",
   "pictureCue": true,
   "audio": "word-survey",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-survey"
  },
  {
   "id": "tap",
@@ -29642,11 +30825,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "团队合作帮助我们拼好了拼图。",
   "display": "teamwork",
   "spoken": "teamwork",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/teamwork.svg",
   "pictureCue": true,
   "audio": "word-teamwork",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-teamwork"
  },
  {
   "id": "teenage",
@@ -29656,11 +30840,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "图书馆有适合青少年读者的书。",
   "display": "teenage",
   "spoken": "teenage",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/teenage.svg",
   "pictureCue": true,
   "audio": "word-teenage",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-teenage"
  },
  {
   "id": "theatre",
@@ -29685,11 +30870,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这个包是我们的，那个是他们的。",
   "display": "theirs",
   "spoken": "theirs",
-  "topic": null,
-  "image": null,
+  "topic": "clothes",
+  "image": "./assets/pictures/theirs.svg",
   "pictureCue": true,
   "audio": "word-theirs",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-theirs"
  },
  {
   "id": "therefore",
@@ -29699,11 +30885,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "当时在下雨，因此我们待在室内。",
   "display": "therefore",
   "spoken": "therefore",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/therefore.svg",
   "pictureCue": true,
   "audio": "word-therefore",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-therefore"
  },
  {
   "id": "bean curd",
@@ -29728,11 +30915,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这辆卡车能运载超过一吨的货物。",
   "display": "ton",
   "spoken": "ton",
-  "topic": null,
-  "image": null,
+  "topic": "travel",
+  "image": "./assets/pictures/ton.svg",
   "pictureCue": true,
   "audio": "word-ton",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-ton"
  },
  {
   "id": "tradition",
@@ -29757,11 +30945,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "那块难看的污渍洗后消失了。",
   "display": "ugly",
   "spoken": "ugly",
-  "topic": null,
-  "image": null,
+  "topic": "home",
+  "image": "./assets/pictures/ugly.svg",
   "pictureCue": true,
   "audio": "word-ugly",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-ugly"
  },
  {
   "id": "underground",
@@ -29771,11 +30960,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "许多昆虫生活在地下。",
   "display": "underground",
   "spoken": "underground",
-  "topic": null,
-  "image": null,
+  "topic": "nature",
+  "image": "./assets/pictures/underground.svg",
   "pictureCue": true,
   "audio": "word-underground",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-underground"
  },
  {
   "id": "unit",
@@ -29785,11 +30975,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "米是长度单位。",
   "display": "unit",
   "spoken": "unit",
-  "topic": null,
-  "image": null,
+  "topic": "school",
+  "image": "./assets/pictures/unit.svg",
   "pictureCue": true,
   "audio": "word-unit",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-unit"
  },
  {
   "id": "voluntary",
@@ -29799,11 +30990,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "参加这项活动是自愿的。",
   "display": "voluntary",
   "spoken": "voluntary",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/voluntary.svg",
   "pictureCue": true,
   "audio": "word-voluntary",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-voluntary"
  },
  {
   "id": "volunteer",
@@ -29828,11 +31020,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "这座博物馆让我们了解战争与和平。",
   "display": "war",
   "spoken": "war",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/war.svg",
   "pictureCue": true,
   "audio": "word-war",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-war"
  },
  {
   "id": "weekday",
@@ -29842,11 +31035,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "图书馆每个工作日都早早开门。",
   "display": "weekday",
   "spoken": "weekday",
-  "topic": null,
-  "image": null,
+  "topic": "places",
+  "image": "./assets/pictures/weekday.svg",
   "pictureCue": true,
   "audio": "word-weekday",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-weekday"
  },
  {
   "id": "whom",
@@ -29856,11 +31050,12 @@ export const CONTEXT_WORDS=[
   "sentenceZh": "我应该把这封信交给谁？",
   "display": "whom",
   "spoken": "whom",
-  "topic": null,
-  "image": null,
+  "topic": "people",
+  "image": "./assets/pictures/whom.svg",
   "pictureCue": true,
   "audio": "word-whom",
-  "contentSource": "extended-context-v1"
+  "contentSource": "extended-context-v1",
+  "emoji": "project-context-12-whom"
  },
  {
   "id": "yoghurt",
@@ -30805,7 +32000,7 @@ export const CONTEXT_WORDS=[
   "pictureCue": true,
   "audio": "word-chores",
   "contentSource": "wonders-gk-v1",
-  "emoji": "project-wonders-chores"
+  "emoji": "1f9fa"
  },
  {
   "id": "contribute",

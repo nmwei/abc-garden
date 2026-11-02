@@ -10,5 +10,5 @@ for(const [index,line] of source.split('\n').entries()){
  if(existing.has(word)){skipped.push(word);continue;}
  rows.push([word,zh,topic,emoji,sentence]);
 }
-await writeFile(new URL('../app/themed-picture-words.js',import.meta.url),'// Generated from data/picture-vocabulary.tsv. Text: project-authored; pictures: Noto Emoji v2.047.\nexport const THEMED_PICTURE_WORDS='+JSON.stringify(rows,null,1)+';\n');
+await writeFile(new URL('../app/themed-picture-words.js',import.meta.url),'// Generated from data/picture-vocabulary.tsv. Text: project-authored; picture sources and repair credits: assets/credits.json.\nexport const THEMED_PICTURE_WORDS='+JSON.stringify(rows,null,1)+';\n');
 console.log(JSON.stringify({base:existing.size,added:rows.length,total:existing.size+rows.length,skippedExisting:skipped}));

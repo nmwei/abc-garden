@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 132"><rect x="0" y="0" width="128" height="132" rx="5" fill="#faf6e9"/><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="5" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<g>
+		<circle style="fill:#98C0D0;" cx="64" cy="64" r="60"/>
+		<circle style="fill:#FCEBCD;" cx="64" cy="64" r="48.14"/>
+		<path style="fill:#C2E3F0;" d="M50.3,15.06c-6.42,1.86-15.41,4.71-25.03,16.2C15.77,42.63,13.81,55.84,13.2,64.95
+			c0,0-5.49,6.87-5.75,5.59c-2.07-9.95,2.11-32.19,13.04-43.95C33.21,12.91,49.75,8.06,55.73,7.15C56.76,6.99,52.25,14.5,50.3,15.06
+			z"/>
+		<g>
+			<circle style="fill:#FFFFFF;" cx="64" cy="64" r="45.59"/>
+		</g>
+	</g>
+	<g>
+		
+			<line style="fill:none;stroke:#563428;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;" x1="64" y1="35" x2="64" y2="64"/>
+		<circle style="fill:#563428;" cx="64" cy="64" r="5.06"/>
+		
+			<line style="fill:none;stroke:#563428;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;" x1="85.07" y1="63.93" x2="63.83" y2="64.07"/>
+	</g>
+	<g>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="100" x2="64" y2="105"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="23" x2="64" y2="28"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="100" x2="64" y2="105"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="64" y1="23" x2="64" y2="28"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="28" y1="64" x2="23" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="105" y1="64" x2="100" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="28" y1="64" x2="23" y2="64"/>
+		<line style="fill:none;stroke:#6596A3;stroke-width:5;stroke-miterlimit:10;" x1="105" y1="64" x2="100" y2="64"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="46" y1="95.18" x2="43.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="84.5" y1="28.49" x2="82" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="46" y1="95.18" x2="43.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="84.5" y1="28.49" x2="82" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="82" y1="95.18" x2="84.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="43.5" y1="28.49" x2="46" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="82" y1="95.18" x2="84.5" y2="99.51"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="43.5" y1="28.49" x2="46" y2="32.82"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="95.18" y1="82" x2="99.51" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="28.49" y1="43.5" x2="32.82" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="95.18" y1="82" x2="99.51" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="28.49" y1="43.5" x2="32.82" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="32.82" y1="82" x2="28.49" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="99.51" y1="43.5" x2="95.18" y2="46"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="32.82" y1="82" x2="28.49" y2="84.5"/>
+		<line style="fill:none;stroke:#B0BEC5;stroke-width:3;stroke-miterlimit:10;" x1="99.51" y1="43.5" x2="95.18" y2="46"/>
+	</g>
+</g>
+</svg><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="80" y="35" width="43" height="43" viewBox="0 0 128 128"><rect width="128" height="128" rx="10" fill="#faf6e9"/><g transform="translate(23 43) scale(0.85)"><g transform="translate(0 0) scale(1)"><circle cx="0" cy="0" r="9" fill="#e1b18a"/><path d="M0 12V38M0 38L-10 59M0 38L11 59" fill="none" stroke="#8aa88a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M0 18L-14 32M0 18L14 32" fill="none" stroke="#e1b18a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g></g><rect x="65" y="76" width="48" height="26" rx="3" fill="#8aa88a"/><g transform="translate(73 43) scale(0.65)"><path d="M13 12L32 31M32 12L13 31" fill="none" stroke="#b87869" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M47 61L78 61" fill="none" stroke="#dd9864" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M71.17980382352395 65.18149783144527L78 61L71.17980382352395 56.81850216855473" fill="none" stroke="#dd9864" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="50" y="6" width="58" height="25" rx="7" fill="#efe4cd"/><path d="M66 29l-6 10l16 -9Z" fill="#efe4cd" stroke="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="79" y="23" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#526e7c">Try again</text><text x="64" y="122" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="600" fill="#526e7c">try one more time</text></svg><path d="M52 57L75 57" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 60.35597877022942" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 53.64402122977058" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><text x="64" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="10" fill="#526e7c">a chance to act</text><text x="64" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="9" fill="#526e7c">using an opportunity</text></svg>

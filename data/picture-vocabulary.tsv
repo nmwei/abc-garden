@@ -540,7 +540,7 @@ nature|noon|中午|1f55b|We eat lunch at noon.
 nature|today|今天|1f4c5|Today we are going to the park.
 nature|tomorrow|明天|1f4c6|We will play again tomorrow.
 nature|yesterday|昨天|1f4c5|Yesterday we read a story.
-nature|week|星期|1f4c5|A week has seven days.
+nature|week|一周|1f4c5|A week has seven days.
 nature|month|月|1f4c6|A month has many days.
 nature|year|年|1f4c5|A year has twelve months.
 travel|bicycle|自行车|1f6b2|I ride my bicycle with a helmet.
@@ -1009,7 +1009,7 @@ actions|wake up|醒来|23f0|I wake up in the morning.
 actions|dream|做梦|1f4ad|I dream about flying.
 actions|think|思考|1f914|I think about the question.
 actions|learn|学习|1f4d6|I learn one new word.
-actions|ask|提问|2753|I ask for help.
+actions|ask|请求；询问|2753|I ask for help.
 actions|help|帮助|1fac2|I help put the toys away.
 actions|share|分享|1f932|We share the crayons.
 actions|give|给|1f381|I give you a little gift.
@@ -1020,7 +1020,7 @@ actions|carry|携带|1f392|I carry my backpack.
 actions|open|打开|1f4d6|I open my book.
 actions|close|合上|1f4d5|I close my book.
 actions|unlock|解锁|1f513|An adult unlocks the door.
-actions|turn|转动|1f504|I turn the page.
+actions|turn|翻（页）；转动|1f504|I turn the page.
 actions|roll|滚动|26bd|We roll the ball.
 actions|throw|扔|1f93e|I throw the ball to Dad.
 actions|catch|接住|1f93e|I try to catch the ball.

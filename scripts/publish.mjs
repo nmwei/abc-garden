@@ -15,7 +15,8 @@ if(localGit(['branch','--show-current'])!=='main')throw new Error('Publish from 
 const sourceCommit=localGit(['rev-parse','HEAD']);
 const directory=await mkdtemp(join(tmpdir(),'abc-garden-publish-'));
 const authorName=execFileSync('git',['config','--global','--get','user.name'],{encoding:'utf8'}).trim()||owner;
-const env={...process.env,GIT_AUTHOR_NAME:authorName,GIT_COMMITTER_NAME:authorName,GIT_AUTHOR_EMAIL:`${owner}@users.noreply.github.com`,GIT_COMMITTER_EMAIL:`${owner}@users.noreply.github.com`,GIT_SSH_COMMAND:'ssh -o BatchMode=yes -o StrictHostKeyChecking=yes'};
+// Respect an explicit SSH transport override (for example, an alternate GitHub endpoint).
+const env={...process.env,GIT_AUTHOR_NAME:authorName,GIT_COMMITTER_NAME:authorName,GIT_AUTHOR_EMAIL:`${owner}@users.noreply.github.com`,GIT_COMMITTER_EMAIL:`${owner}@users.noreply.github.com`,GIT_SSH_COMMAND:process.env.GIT_SSH_COMMAND||'ssh -o BatchMode=yes -o StrictHostKeyChecking=yes'};
 const git=(args,input)=>{
   const attempts=['fetch','ls-remote'].includes(args[0])?3:1;
   for(let attempt=1;attempt<=attempts;attempt++){

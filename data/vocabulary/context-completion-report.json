@@ -1,0 +1,8428 @@
+{
+  "baseline": 1195,
+  "completed": 1195,
+  "remaining": 0,
+  "catalog": {
+    "ready": 3099,
+    "pending": 0
+  },
+  "batches": [
+    {
+      "id": "01",
+      "count": 100
+    },
+    {
+      "id": "02",
+      "count": 100
+    },
+    {
+      "id": "03",
+      "count": 100
+    },
+    {
+      "id": "04",
+      "count": 100
+    },
+    {
+      "id": "05",
+      "count": 100
+    },
+    {
+      "id": "06",
+      "count": 100
+    },
+    {
+      "id": "07",
+      "count": 100
+    },
+    {
+      "id": "08",
+      "count": 100
+    },
+    {
+      "id": "09",
+      "count": 100
+    },
+    {
+      "id": "10",
+      "count": 100
+    },
+    {
+      "id": "11",
+      "count": 100
+    },
+    {
+      "id": "12",
+      "count": 95
+    }
+  ],
+  "rows": [
+    {
+      "batch": "01",
+      "id": "after",
+      "zh": "在……之后",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "again",
+      "zh": "再一次",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "age",
+      "zh": "年龄",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "ago",
+      "zh": "以前",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "also",
+      "zh": "也",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "always",
+      "zh": "总是",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "any",
+      "zh": "一些；任何",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "bad",
+      "zh": "不好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "be",
+      "zh": "是；处于某种状态",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "beautiful",
+      "zh": "美丽的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "because",
+      "zh": "因为",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "before",
+      "zh": "在……之前",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "begin",
+      "zh": "开始",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "best",
+      "zh": "最好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "busy",
+      "zh": "忙碌的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "but",
+      "zh": "但是",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "chinese",
+      "zh": "中文；中国的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "cute",
+      "zh": "可爱的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "dear",
+      "zh": "亲爱的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "difficult",
+      "zh": "困难的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "early",
+      "zh": "早的；早地",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "easy",
+      "zh": "容易的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "english",
+      "zh": "英语；英国的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "every",
+      "zh": "每一个",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "famous",
+      "zh": "著名的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "fine",
+      "zh": "身体好的；不错的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "free",
+      "zh": "有空的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "great",
+      "zh": "很棒的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "helpful",
+      "zh": "乐于助人的；有帮助的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "him",
+      "zh": "他（宾格）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "hometown",
+      "zh": "家乡",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "hour",
+      "zh": "小时",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "hurry",
+      "zh": "赶快；匆忙",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "idea",
+      "zh": "主意；想法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "interesting",
+      "zh": "有趣的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "internet",
+      "zh": "互联网",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "it",
+      "zh": "它",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "its",
+      "zh": "它的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "job",
+      "zh": "工作",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "last",
+      "zh": "上一个的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "late",
+      "zh": "迟的；迟到的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "live",
+      "zh": "居住",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "lot",
+      "zh": "大量；许多（a lot of）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "lovely",
+      "zh": "可爱的；美好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "make",
+      "zh": "制作",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "meet",
+      "zh": "见面；遇见",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "minute",
+      "zh": "分钟",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "miss",
+      "zh": "小姐（称呼）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "mr",
+      "zh": "先生（称呼）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "mrs",
+      "zh": "夫人；太太（称呼）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "ms",
+      "zh": "女士（称呼）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "much",
+      "zh": "许多（修饰不可数名词）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "must",
+      "zh": "必须",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "name",
+      "zh": "名字",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "never",
+      "zh": "从不",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "next",
+      "zh": "下一个的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "nice",
+      "zh": "令人愉快的；友好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "o'clock",
+      "zh": "……点钟",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "off",
+      "zh": "离开；关闭（与动词搭配）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "often",
+      "zh": "经常",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "should",
+      "zh": "应该",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "so",
+      "zh": "所以",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "sometimes",
+      "zh": "有时",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "strong",
+      "zh": "强壮的；坚固的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "subject",
+      "zh": "学科",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "sure",
+      "zh": "确定的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "take",
+      "zh": "拿；带走",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "tell",
+      "zh": "告诉",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "thank",
+      "zh": "感谢",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "those",
+      "zh": "那些",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "time",
+      "zh": "时间",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "try",
+      "zh": "尝试",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "us",
+      "zh": "我们（宾格）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "use",
+      "zh": "使用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "very",
+      "zh": "非常",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "warm",
+      "zh": "温暖的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "welcome",
+      "zh": "欢迎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "whose",
+      "zh": "谁的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "why",
+      "zh": "为什么",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "wish",
+      "zh": "希望；祝愿",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "wonderful",
+      "zh": "精彩的；极好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "young",
+      "zh": "年轻的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "your",
+      "zh": "你的；你们的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "abandon",
+      "zh": "放弃",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "ability",
+      "zh": "能力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "able",
+      "zh": "能够的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "abnormal",
+      "zh": "异常的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "aboard",
+      "zh": "在船上",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "abroad",
+      "zh": "到国外",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "absence",
+      "zh": "缺席",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "absent",
+      "zh": "缺席的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "absolutely",
+      "zh": "绝对地",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "abstract",
+      "zh": "抽象的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "academic",
+      "zh": "学术的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "accent",
+      "zh": "口音",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "accept",
+      "zh": "接受",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "access",
+      "zh": "使用权",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "accompany",
+      "zh": "为……伴奏",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "according to",
+      "zh": "按照",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "01",
+      "id": "account",
+      "zh": "账户",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "accurate",
+      "zh": "准确的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "achieve",
+      "zh": "实现",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "achievement",
+      "zh": "成就",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "acid",
+      "zh": "酸",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "act",
+      "zh": "行动",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "action",
+      "zh": "行动",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "activity",
+      "zh": "活动",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "actually",
+      "zh": "实际上",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "adapt",
+      "zh": "适应",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "addition",
+      "zh": "增加；补充",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "address",
+      "zh": "地址",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "adjust",
+      "zh": "适应；调整",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "admire",
+      "zh": "钦佩",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "admit",
+      "zh": "承认",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "adopt",
+      "zh": "收养",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "adorable",
+      "zh": "可爱的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "advance",
+      "zh": "提前（in advance）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "advantage",
+      "zh": "优势；有利条件",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "advertise",
+      "zh": "做广告",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "advice",
+      "zh": "建议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "advise",
+      "zh": "建议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "affair",
+      "zh": "事情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "affect",
+      "zh": "影响",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "afford",
+      "zh": "负担得起",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "against",
+      "zh": "反对",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "agency",
+      "zh": "代理机构",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "agree",
+      "zh": "同意",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "agreement",
+      "zh": "一致意见",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "agriculture",
+      "zh": "农业",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ahead",
+      "zh": "在前面",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ai",
+      "zh": "人工智能的缩写",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "aid",
+      "zh": "救助",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "alive",
+      "zh": "活着的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "allow",
+      "zh": "允许",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "almost",
+      "zh": "几乎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "alone",
+      "zh": "独自",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "along",
+      "zh": "一起；向前",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "already",
+      "zh": "已经",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "although",
+      "zh": "虽然",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "altogether",
+      "zh": "完全",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "amateur",
+      "zh": "业余爱好者",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ambition",
+      "zh": "志向",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "amount",
+      "zh": "金额",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ancient",
+      "zh": "古老的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "announce",
+      "zh": "宣布",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "annoy",
+      "zh": "使烦恼",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "annual",
+      "zh": "每年的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "another",
+      "zh": "另一个",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anticipate",
+      "zh": "预料",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anxious",
+      "zh": "渴望的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anybody",
+      "zh": "有人；任何人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anyone",
+      "zh": "任何人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anything",
+      "zh": "任何事物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anyway",
+      "zh": "不管怎样",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "anywhere",
+      "zh": "任何地方",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "apart",
+      "zh": "分开",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "apologize",
+      "zh": "道歉",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "apparently",
+      "zh": "看来",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "appeal",
+      "zh": "呼吁",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "appear",
+      "zh": "似乎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "appetite",
+      "zh": "胃口",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "apply",
+      "zh": "适用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "appointment",
+      "zh": "预约",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "approach",
+      "zh": "接近",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "approve",
+      "zh": "赞同",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "area",
+      "zh": "地区",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "argue",
+      "zh": "争论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "arrive",
+      "zh": "到达",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "article",
+      "zh": "文章",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "artificial",
+      "zh": "人造的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "as",
+      "zh": "按照",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ashamed",
+      "zh": "惭愧的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "aspect",
+      "zh": "方面",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "assess",
+      "zh": "评估",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "assistant",
+      "zh": "助手",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "association",
+      "zh": "协会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "assume",
+      "zh": "假定",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "assumption",
+      "zh": "假设",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "astonish",
+      "zh": "使惊讶",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "atmosphere",
+      "zh": "气氛",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "attack",
+      "zh": "发作",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "attempt",
+      "zh": "尝试",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "attend",
+      "zh": "参加",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "attention",
+      "zh": "注意力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "attitude",
+      "zh": "态度",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "authority",
+      "zh": "权限",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "available",
+      "zh": "可用的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "average",
+      "zh": "平均值",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "avoid",
+      "zh": "避免",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "aware",
+      "zh": "意识到的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "awful",
+      "zh": "糟糕的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "awkward",
+      "zh": "笨拙的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "background",
+      "zh": "经历；背景",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "backward",
+      "zh": "向后",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "ban",
+      "zh": "禁止",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "barely",
+      "zh": "几乎不",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "base",
+      "zh": "以……为依据",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "basic",
+      "zh": "基本的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "basis",
+      "zh": "依据",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "02",
+      "id": "battle",
+      "zh": "战役",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "am",
+      "zh": "是（与 I 连用）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "beauty",
+      "zh": "美",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "become",
+      "zh": "成为",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "behalf",
+      "zh": "代表（on behalf of）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "behave",
+      "zh": "表现",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "being",
+      "zh": "是；处于（be 的 ing 形式）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "belief",
+      "zh": "信念",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "believe",
+      "zh": "相信",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "belong",
+      "zh": "属于",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "below",
+      "zh": "在下面",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "besides",
+      "zh": "除……之外",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "better",
+      "zh": "最好（had better）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "beyond",
+      "zh": "超出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "biology",
+      "zh": "生物学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "birth",
+      "zh": "出生",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "bit",
+      "zh": "一点",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "bitter",
+      "zh": "苦的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "blame",
+      "zh": "责怪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "blog",
+      "zh": "博客",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "board",
+      "zh": "船上（on board）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "born",
+      "zh": "出生（be born）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "borrow",
+      "zh": "借入",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "boss",
+      "zh": "老板",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "both",
+      "zh": "两者",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "bother",
+      "zh": "麻烦",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "bound",
+      "zh": "一定会的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "brilliant",
+      "zh": "出色的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "broadcast",
+      "zh": "播出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "budget",
+      "zh": "预算",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "burst",
+      "zh": "突然爆发",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "business",
+      "zh": "业务",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "cancel",
+      "zh": "取消",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "cancer",
+      "zh": "癌症",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "candidate",
+      "zh": "候选人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "capable",
+      "zh": "有能力的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "capacity",
+      "zh": "容量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "capital",
+      "zh": "首都",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "capture",
+      "zh": "捕捉；记录",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "care",
+      "zh": "关心",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "careless",
+      "zh": "粗心的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "case",
+      "zh": "案件",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "cause",
+      "zh": "原因",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "celebrity",
+      "zh": "名人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "central",
+      "zh": "中央的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "century",
+      "zh": "世纪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "ceremony",
+      "zh": "仪式",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "certain",
+      "zh": "确定的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "certainly",
+      "zh": "确实",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "chairman",
+      "zh": "主席",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "chance",
+      "zh": "机会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "change",
+      "zh": "找回的零钱",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "chapter",
+      "zh": "章",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "character",
+      "zh": "人物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "characteristic",
+      "zh": "特有的；典型的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "charity",
+      "zh": "慈善机构",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "charm",
+      "zh": "魅力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "cheap",
+      "zh": "便宜的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "check",
+      "zh": "检查",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "cheer",
+      "zh": "振作（cheer up）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "chemistry",
+      "zh": "化学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "chief",
+      "zh": "主管",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "childhood",
+      "zh": "童年",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "choice",
+      "zh": "选择",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "claim",
+      "zh": "认领",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "click",
+      "zh": "咔哒声",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "climate",
+      "zh": "气候",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "club",
+      "zh": "俱乐部",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "clue",
+      "zh": "线索",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "column",
+      "zh": "专栏",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "comfort",
+      "zh": "安慰",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "comfortable",
+      "zh": "舒适的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "command",
+      "zh": "掌握",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "comment",
+      "zh": "评论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "committee",
+      "zh": "委员会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "common",
+      "zh": "常见的；普通的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "communicate",
+      "zh": "交流",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "communication",
+      "zh": "交流",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "company",
+      "zh": "公司",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "compare",
+      "zh": "比较",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "comparison",
+      "zh": "比较",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "competition",
+      "zh": "比赛",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "complete",
+      "zh": "完全的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "complex",
+      "zh": "复杂的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "complicated",
+      "zh": "复杂的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "composition",
+      "zh": "作文",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "concentrate",
+      "zh": "集中注意力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "concept",
+      "zh": "概念",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "concern",
+      "zh": "关心的事",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "conclusion",
+      "zh": "结论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "concrete",
+      "zh": "混凝土的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "condition",
+      "zh": "状况",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "conduct",
+      "zh": "表现",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "confidence",
+      "zh": "信心",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "confident",
+      "zh": "有信心的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "confirm",
+      "zh": "确认",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "conscious",
+      "zh": "有意识的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "consider",
+      "zh": "考虑",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "constant",
+      "zh": "持续的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "constitution",
+      "zh": "宪法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "03",
+      "id": "contact",
+      "zh": "联系",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "contain",
+      "zh": "包含",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "contemporary",
+      "zh": "当代的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "contest",
+      "zh": "比赛",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "context",
+      "zh": "语境",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "continent",
+      "zh": "大陆",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "continue",
+      "zh": "继续",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "control",
+      "zh": "控制",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "controversial",
+      "zh": "有争议的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "convenient",
+      "zh": "方便的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "conventional",
+      "zh": "传统的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "convey",
+      "zh": "输送",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "convince",
+      "zh": "说服",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "copy",
+      "zh": "复制",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "cost",
+      "zh": "花费",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "council",
+      "zh": "议会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "countryside",
+      "zh": "乡村",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "couple",
+      "zh": "夫妇",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "courage",
+      "zh": "勇气",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "course",
+      "zh": "课程",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "crazy",
+      "zh": "着迷的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "creature",
+      "zh": "生物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "credit",
+      "zh": "信用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "crew",
+      "zh": "全体船员",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "crime",
+      "zh": "犯罪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "crisis",
+      "zh": "危机",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "critical",
+      "zh": "关键的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "crucial",
+      "zh": "关键的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "cruel",
+      "zh": "残酷的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "culture",
+      "zh": "文化",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "cure",
+      "zh": "治愈",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "current",
+      "zh": "电流",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "customer",
+      "zh": "顾客",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "daily",
+      "zh": "每天的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "dare",
+      "zh": "敢于",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "data",
+      "zh": "数据",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "date",
+      "zh": "日期",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "daughter",
+      "zh": "女儿",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "dawn",
+      "zh": "黎明",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "deadline",
+      "zh": "截止日期",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "deal",
+      "zh": "交易",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "debate",
+      "zh": "辩论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "debt",
+      "zh": "债务",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "decent",
+      "zh": "正派的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "decision",
+      "zh": "决定",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "declare",
+      "zh": "申报",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "decrease",
+      "zh": "减少",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "definitely",
+      "zh": "一定",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "degree",
+      "zh": "学位",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "delay",
+      "zh": "延迟",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "delete",
+      "zh": "删除",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "demand",
+      "zh": "需求",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "demonstrate",
+      "zh": "示范",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "deny",
+      "zh": "否认",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "department",
+      "zh": "部门",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "departure",
+      "zh": "出发",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "describe",
+      "zh": "描述",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "description",
+      "zh": "描述",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "deserve",
+      "zh": "值得",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "design",
+      "zh": "设计",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "desire",
+      "zh": "愿望",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "desperate",
+      "zh": "极度渴望的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "despite",
+      "zh": "尽管",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "destination",
+      "zh": "目的地",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "detail",
+      "zh": "细节",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "develop",
+      "zh": "培养",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "diet",
+      "zh": "饮食",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "differ",
+      "zh": "不同",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "difference",
+      "zh": "区别",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "difficulty",
+      "zh": "困难",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "digital",
+      "zh": "数码的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "dignity",
+      "zh": "尊严",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "direct",
+      "zh": "直达的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "direction",
+      "zh": "方向",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "disappoint",
+      "zh": "使失望",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "disappointed",
+      "zh": "失望的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "disaster",
+      "zh": "灾难",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "discount",
+      "zh": "折扣",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "discovery",
+      "zh": "发现",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "discrimination",
+      "zh": "歧视",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "discuss",
+      "zh": "讨论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "discussion",
+      "zh": "讨论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "disease",
+      "zh": "疾病",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "distant",
+      "zh": "（亲属关系）远的；疏远的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "distinguish",
+      "zh": "区分",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "district",
+      "zh": "地区",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "disturb",
+      "zh": "打扰",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "divide",
+      "zh": "分成",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "double",
+      "zh": "加倍",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "doubt",
+      "zh": "怀疑",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "downtown",
+      "zh": "往市中心",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "draft",
+      "zh": "草稿",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "drama",
+      "zh": "戏剧",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "due to",
+      "zh": "由于",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "during",
+      "zh": "在……期间",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "duty",
+      "zh": "职责；值班",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "eager",
+      "zh": "渴望的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "earn",
+      "zh": "赚得",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "ease",
+      "zh": "自在",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "ecology",
+      "zh": "生态学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "04",
+      "id": "economic",
+      "zh": "经济的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "economy",
+      "zh": "经济",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "editor",
+      "zh": "编辑",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "education",
+      "zh": "教育",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "effect",
+      "zh": "影响",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "efficient",
+      "zh": "效率高的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "effort",
+      "zh": "努力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "either",
+      "zh": "也（用于否定句）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "election",
+      "zh": "选举",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "electric",
+      "zh": "用电的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "elegant",
+      "zh": "优雅的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "else",
+      "zh": "别的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "embarrassed",
+      "zh": "尴尬的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "emergency",
+      "zh": "紧急情况",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "emotion",
+      "zh": "情绪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "emphasis",
+      "zh": "强调",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "end",
+      "zh": "结束",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "endangered",
+      "zh": "濒危的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "enemy",
+      "zh": "敌人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "energetic",
+      "zh": "精力充沛的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "energy",
+      "zh": "精力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "enjoy",
+      "zh": "喜欢",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "entirely",
+      "zh": "完全",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "envy",
+      "zh": "羡慕",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "error",
+      "zh": "错误",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "especially",
+      "zh": "尤其",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "essay",
+      "zh": "短文",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "essential",
+      "zh": "必不可少的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "establish",
+      "zh": "建立",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "eve",
+      "zh": "前夕",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "even",
+      "zh": "甚至",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "event",
+      "zh": "活动",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "eventually",
+      "zh": "最终",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "ever",
+      "zh": "曾经",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "everybody",
+      "zh": "每个人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "everyone",
+      "zh": "每个人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "everyday",
+      "zh": "日常的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "everything",
+      "zh": "一切",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "everywhere",
+      "zh": "到处",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "evidence",
+      "zh": "证据",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exactly",
+      "zh": "究竟；确切地",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "examine",
+      "zh": "检查",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "example",
+      "zh": "例子",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exceed",
+      "zh": "超过",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "excellent",
+      "zh": "优秀的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "except",
+      "zh": "除……之外",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exchange",
+      "zh": "兑换",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exciting",
+      "zh": "令人兴奋的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "excuse",
+      "zh": "借口",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exhibition",
+      "zh": "展览",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "exist",
+      "zh": "存在",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "expensive",
+      "zh": "昂贵的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "experience",
+      "zh": "经验",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "expert",
+      "zh": "专家",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "explain",
+      "zh": "解释",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "express",
+      "zh": "表达",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "extension",
+      "zh": "延长",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "extent",
+      "zh": "程度",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "external",
+      "zh": "外部的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "extra",
+      "zh": "额外的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "extraordinary",
+      "zh": "非凡的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "extremely",
+      "zh": "极其",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fact",
+      "zh": "事实",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fail",
+      "zh": "失败",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "failure",
+      "zh": "失败",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fair",
+      "zh": "公平的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "faith",
+      "zh": "信任",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "false",
+      "zh": "假的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fancy",
+      "zh": "想不到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fantasy",
+      "zh": "幻想",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fashion",
+      "zh": "时尚",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fault",
+      "zh": "过错",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "favor",
+      "zh": "帮助；人情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "favorite",
+      "zh": "最喜欢的事物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "feature",
+      "zh": "特色",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fee",
+      "zh": "费用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "feeling",
+      "zh": "感受",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "female",
+      "zh": "雌性的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "few",
+      "zh": "几个",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fight",
+      "zh": "斗争",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "figure",
+      "zh": "理解（figure out）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "final",
+      "zh": "最后的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "finally",
+      "zh": "终于",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "financial",
+      "zh": "财务的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "finding",
+      "zh": "研究发现",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "finish",
+      "zh": "完成",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "firm",
+      "zh": "公司",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fit",
+      "zh": "合身",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "flu",
+      "zh": "流感",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fluent",
+      "zh": "流利的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "focus",
+      "zh": "集中注意力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fond",
+      "zh": "喜欢的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "force",
+      "zh": "强迫",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "forecast",
+      "zh": "天气预报",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "foreign",
+      "zh": "外国的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "forever",
+      "zh": "永远",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "forget",
+      "zh": "忘记",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "forgive",
+      "zh": "原谅",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "formal",
+      "zh": "正式的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "former",
+      "zh": "以前的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "05",
+      "id": "fortunately",
+      "zh": "幸运的是",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "fortune",
+      "zh": "好运",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "forward",
+      "zh": "向前",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "found",
+      "zh": "建立",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "foundation",
+      "zh": "依据",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "freedom",
+      "zh": "自由",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "frequently",
+      "zh": "经常",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "friendship",
+      "zh": "友谊",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "fun",
+      "zh": "有趣的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "fundamental",
+      "zh": "基本的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "further",
+      "zh": "更多的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "future",
+      "zh": "未来",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gain",
+      "zh": "收获",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gas",
+      "zh": "煤气",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gather",
+      "zh": "聚集",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gender",
+      "zh": "性别",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gene",
+      "zh": "基因",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "general",
+      "zh": "一般的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "generate",
+      "zh": "产生",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "generous",
+      "zh": "慷慨的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "genius",
+      "zh": "天才",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "genuine",
+      "zh": "真正的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "geography",
+      "zh": "地理",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gifted",
+      "zh": "有天赋的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "global",
+      "zh": "全球的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "government",
+      "zh": "政府",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "grade",
+      "zh": "评分",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "graduate",
+      "zh": "毕业",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "grammar",
+      "zh": "语法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "grandson",
+      "zh": "孙子；外孙",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "grasp",
+      "zh": "理解",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "gravity",
+      "zh": "重力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "greedy",
+      "zh": "贪婪的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "guarantee",
+      "zh": "保修",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "guard",
+      "zh": "警惕",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "guess",
+      "zh": "猜想",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "guilty",
+      "zh": "内疚的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "habit",
+      "zh": "习惯",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "handsome",
+      "zh": "英俊的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "happen",
+      "zh": "发生",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hardly",
+      "zh": "几乎不",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "harm",
+      "zh": "伤害",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "harmony",
+      "zh": "和谐",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "health",
+      "zh": "健康",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "heat",
+      "zh": "热",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hero",
+      "zh": "英雄",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hers",
+      "zh": "她的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "herself",
+      "zh": "她自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hesitate",
+      "zh": "犹豫",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "himself",
+      "zh": "他自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hire",
+      "zh": "雇用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "history",
+      "zh": "历史",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hobby",
+      "zh": "爱好",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "honest",
+      "zh": "诚实的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "honor",
+      "zh": "荣幸",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "hope",
+      "zh": "希望",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "horrible",
+      "zh": "可怕的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "household",
+      "zh": "家庭的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "however",
+      "zh": "然而",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "human",
+      "zh": "人的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "humanity",
+      "zh": "人类",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "humor",
+      "zh": "幽默",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "husband",
+      "zh": "丈夫",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "ideal",
+      "zh": "理想的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "identity",
+      "zh": "身份",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "if",
+      "zh": "如果",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "ignore",
+      "zh": "忽略",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "illegal",
+      "zh": "违法的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "illness",
+      "zh": "疾病",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "immediately",
+      "zh": "立即",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "imply",
+      "zh": "暗示",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "import",
+      "zh": "进口",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "important",
+      "zh": "重要的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "impossible",
+      "zh": "不可能的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "impression",
+      "zh": "印象",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "inch",
+      "zh": "英寸",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "incident",
+      "zh": "事件",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "include",
+      "zh": "包含",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "income",
+      "zh": "收入",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "increase",
+      "zh": "增加",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "indeed",
+      "zh": "确实",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "independent",
+      "zh": "独立的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "indicate",
+      "zh": "表明",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "industry",
+      "zh": "工业",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "influence",
+      "zh": "影响力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "influential",
+      "zh": "有影响力的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "information",
+      "zh": "信息",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "inner",
+      "zh": "内心的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "innocent",
+      "zh": "无辜的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "insist",
+      "zh": "坚持",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "instant",
+      "zh": "瞬间",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "instead",
+      "zh": "代替",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "insurance",
+      "zh": "保险",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "intend",
+      "zh": "打算",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "intention",
+      "zh": "意图",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "interest",
+      "zh": "兴趣",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "international",
+      "zh": "国际的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "interrupt",
+      "zh": "打断",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "interview",
+      "zh": "面试",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "introduce",
+      "zh": "介绍",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "06",
+      "id": "invention",
+      "zh": "发明",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "invest",
+      "zh": "投资",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "investment",
+      "zh": "投资",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "invite",
+      "zh": "邀请",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "involve",
+      "zh": "包括；涉及",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "iron",
+      "zh": "铁",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "issue",
+      "zh": "问题",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "item",
+      "zh": "一件物品",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "itself",
+      "zh": "它本身",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "jazz",
+      "zh": "爵士乐",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "junior",
+      "zh": "（学校）初中的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "just",
+      "zh": "刚刚",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "justice",
+      "zh": "正义",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "justify",
+      "zh": "证明合理",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "keen",
+      "zh": "敏锐的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "kilogram",
+      "zh": "千克",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "kingdom",
+      "zh": "王国",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lack",
+      "zh": "缺乏",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "language",
+      "zh": "语言",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "later",
+      "zh": "稍后",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "law",
+      "zh": "法律",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lazy",
+      "zh": "懒散的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lead",
+      "zh": "过（某种生活）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "leader",
+      "zh": "领导者",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "leadership",
+      "zh": "领导能力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "league",
+      "zh": "联赛",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "least",
+      "zh": "最不",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "leave",
+      "zh": "留下；交给",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "legal",
+      "zh": "法律的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "leisure",
+      "zh": "空闲",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lend",
+      "zh": "借出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "less",
+      "zh": "较少",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "level",
+      "zh": "水平",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "license",
+      "zh": "执照",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lie",
+      "zh": "说谎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "life",
+      "zh": "生活",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "likely",
+      "zh": "可能的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "limit",
+      "zh": "限度",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "literally",
+      "zh": "按字面意思",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "literature",
+      "zh": "文学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lively",
+      "zh": "活泼的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "living",
+      "zh": "活着的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "loan",
+      "zh": "贷款",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "location",
+      "zh": "位置",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "logical",
+      "zh": "合乎逻辑的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lose",
+      "zh": "输掉",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "loss",
+      "zh": "损失",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lost",
+      "zh": "迷路的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lower",
+      "zh": "降低",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "luck",
+      "zh": "好运",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "lucky",
+      "zh": "幸运的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "main",
+      "zh": "主要的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "maintain",
+      "zh": "维持",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "major",
+      "zh": "主修科目",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "male",
+      "zh": "雄性的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "manage",
+      "zh": "设法完成",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "manager",
+      "zh": "经理",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "manner",
+      "zh": "方式",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "marathon",
+      "zh": "马拉松",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "marine",
+      "zh": "海洋的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mass",
+      "zh": "质量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "master",
+      "zh": "掌握",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "material",
+      "zh": "资料；材料",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "matter",
+      "zh": "要紧",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mature",
+      "zh": "成熟的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "maybe",
+      "zh": "也许",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mean",
+      "zh": "意思是",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "meaning",
+      "zh": "意义",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "means",
+      "zh": "方式",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "medical",
+      "zh": "医疗的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "membership",
+      "zh": "会员资格",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "memory",
+      "zh": "记忆力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mention",
+      "zh": "提到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "merely",
+      "zh": "仅仅",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "method",
+      "zh": "方法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "might",
+      "zh": "可能",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mild",
+      "zh": "温和的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mile",
+      "zh": "英里",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "military",
+      "zh": "军事的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "million",
+      "zh": "百万",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mind",
+      "zh": "想法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mine",
+      "zh": "我的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mineral",
+      "zh": "矿物的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "minimum",
+      "zh": "最低的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "minister",
+      "zh": "部长",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "miracle",
+      "zh": "奇迹",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "missing",
+      "zh": "丢失的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mission",
+      "zh": "任务",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mistake",
+      "zh": "错误",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mixture",
+      "zh": "混合物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mobile",
+      "zh": "移动的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "modern",
+      "zh": "现代的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "modest",
+      "zh": "谦虚的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "moment",
+      "zh": "片刻",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "monthly",
+      "zh": "每月的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mood",
+      "zh": "心情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "most",
+      "zh": "大多数",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mostly",
+      "zh": "大部分时候",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "motion",
+      "zh": "运动",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "mutual",
+      "zh": "相互的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "07",
+      "id": "myself",
+      "zh": "我自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nation",
+      "zh": "国民；国家",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "national",
+      "zh": "国家的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "native",
+      "zh": "母语的；本地的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "natural",
+      "zh": "天生的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "navy",
+      "zh": "海军",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nearly",
+      "zh": "几乎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "need",
+      "zh": "需要",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "neither",
+      "zh": "既不（neither...nor）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nephew",
+      "zh": "侄子；外甥",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "neutral",
+      "zh": "中立的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "news",
+      "zh": "消息",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nobody",
+      "zh": "没有人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "none",
+      "zh": "一个也没有",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nor",
+      "zh": "也不（neither...nor）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "normal",
+      "zh": "正常的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "northern",
+      "zh": "北方的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nothing",
+      "zh": "没有东西",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nowadays",
+      "zh": "如今",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "nowhere",
+      "zh": "无处",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "numerous",
+      "zh": "许多的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "obey",
+      "zh": "遵守",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "object",
+      "zh": "反对",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "observe",
+      "zh": "遵守",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "obviously",
+      "zh": "显然",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "occasion",
+      "zh": "场合",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "occupation",
+      "zh": "职业",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "occur",
+      "zh": "发生",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "odd",
+      "zh": "奇怪的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "offend",
+      "zh": "冒犯",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "offer",
+      "zh": "提议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "official",
+      "zh": "官方的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "olympic",
+      "zh": "奥运会的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "once",
+      "zh": "一次",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "online",
+      "zh": "在网上",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "opera",
+      "zh": "歌剧",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "operate",
+      "zh": "操作",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "opportunity",
+      "zh": "机会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "opposite",
+      "zh": "相反的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "optimistic",
+      "zh": "乐观的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "option",
+      "zh": "选择",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "order",
+      "zh": "订购",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "ordinary",
+      "zh": "普通的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "organic",
+      "zh": "有机的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "organization",
+      "zh": "组织",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "original",
+      "zh": "原创的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "otherwise",
+      "zh": "否则",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "ought to",
+      "zh": "应该",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "ours",
+      "zh": "我们的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "ourselves",
+      "zh": "我们自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "overcome",
+      "zh": "克服",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "overseas",
+      "zh": "到海外",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "owe",
+      "zh": "欠",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "own",
+      "zh": "自己的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "oxygen",
+      "zh": "氧气",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pale",
+      "zh": "苍白的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "panel",
+      "zh": "专门小组",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pardon",
+      "zh": "原谅",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "participate",
+      "zh": "参加",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "particular",
+      "zh": "挑剔的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "partner",
+      "zh": "伙伴",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "passage",
+      "zh": "段落",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "passion",
+      "zh": "热情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "passive",
+      "zh": "被动的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "past",
+      "zh": "经过",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "patience",
+      "zh": "耐心",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "percent",
+      "zh": "百分之",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "per",
+      "zh": "每",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "perhaps",
+      "zh": "也许",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "period",
+      "zh": "课时",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "permanent",
+      "zh": "永久的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "permit",
+      "zh": "许可证",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "personal",
+      "zh": "私人的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "personality",
+      "zh": "个性",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "persuade",
+      "zh": "说服",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pessimistic",
+      "zh": "悲观的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "phenomenon",
+      "zh": "现象",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "philosophy",
+      "zh": "哲学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "phrase",
+      "zh": "短语",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "physics",
+      "zh": "物理学",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "piece",
+      "zh": "块",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pity",
+      "zh": "遗憾",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "plain",
+      "zh": "普通的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "plan",
+      "zh": "计划",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pleasant",
+      "zh": "令人愉快的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pleasure",
+      "zh": "快乐",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "plot",
+      "zh": "情节",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "polar",
+      "zh": "极地的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "policy",
+      "zh": "政策",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "polite",
+      "zh": "有礼貌的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "political",
+      "zh": "政治的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "politician",
+      "zh": "政治家",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "politics",
+      "zh": "政治",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "poor",
+      "zh": "穷人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "popular",
+      "zh": "受欢迎的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "population",
+      "zh": "人口",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "pose",
+      "zh": "提出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "position",
+      "zh": "立场",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "positive",
+      "zh": "确定的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "possession",
+      "zh": "所有物",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "08",
+      "id": "possible",
+      "zh": "可能的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "post",
+      "zh": "发布",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "potential",
+      "zh": "潜力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pound",
+      "zh": "磅",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "power",
+      "zh": "力量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "practical",
+      "zh": "切实可行的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "precious",
+      "zh": "珍贵的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "prejudice",
+      "zh": "偏见",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "preserve",
+      "zh": "保存",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "president",
+      "zh": "总统",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pressure",
+      "zh": "压力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pretend",
+      "zh": "假装",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "prevent",
+      "zh": "防止",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "previous",
+      "zh": "前一天的；以前的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "price",
+      "zh": "价格",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pride",
+      "zh": "自豪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "primary",
+      "zh": "主要的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "principal",
+      "zh": "校长",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "private",
+      "zh": "私下的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "probably",
+      "zh": "大概",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "procedure",
+      "zh": "程序",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "proceed",
+      "zh": "继续",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "product",
+      "zh": "产品",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "profession",
+      "zh": "职业",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "professional",
+      "zh": "专业的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "program",
+      "zh": "节目",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "progress",
+      "zh": "进步",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "project",
+      "zh": "项目",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "promise",
+      "zh": "承诺",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pronounce",
+      "zh": "发音",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pronunciation",
+      "zh": "发音",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "property",
+      "zh": "财产",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "proposal",
+      "zh": "提议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "prove",
+      "zh": "证明",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "provide",
+      "zh": "提供",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "public",
+      "zh": "公众",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pure",
+      "zh": "纯的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "pursue",
+      "zh": "追求",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "quality",
+      "zh": "质量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "quantity",
+      "zh": "数量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "quarter",
+      "zh": "一刻钟",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "quick",
+      "zh": "迅速的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "quite",
+      "zh": "相当",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "racial",
+      "zh": "种族的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "radiation",
+      "zh": "辐射",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "radium",
+      "zh": "镭",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "range",
+      "zh": "范围",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rapid",
+      "zh": "迅速的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rare",
+      "zh": "稀有的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rate",
+      "zh": "比率",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rather",
+      "zh": "宁愿",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "raw",
+      "zh": "生的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "react",
+      "zh": "反应",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "ready",
+      "zh": "准备好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "real",
+      "zh": "真实的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "realize",
+      "zh": "意识到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "really",
+      "zh": "真的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reason",
+      "zh": "原因",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recall",
+      "zh": "回想",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "receive",
+      "zh": "收到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recent",
+      "zh": "最近的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recently",
+      "zh": "最近",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recognition",
+      "zh": "认出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recommend",
+      "zh": "推荐",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "record",
+      "zh": "纪录",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "recover",
+      "zh": "恢复",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reduce",
+      "zh": "减少",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reform",
+      "zh": "改革",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "refresh",
+      "zh": "使恢复精神",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "refuse",
+      "zh": "拒绝",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "region",
+      "zh": "地区",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "register",
+      "zh": "报名",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "regret",
+      "zh": "后悔",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "regular",
+      "zh": "规律的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "relationship",
+      "zh": "关系",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "relative",
+      "zh": "亲戚",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "relevant",
+      "zh": "相关的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reliable",
+      "zh": "可靠的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "relief",
+      "zh": "宽慰",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "relieve",
+      "zh": "缓解",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rely",
+      "zh": "依靠",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "remain",
+      "zh": "保持",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "remarkable",
+      "zh": "显著的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "remember",
+      "zh": "记得",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "remind",
+      "zh": "使想起",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "rent",
+      "zh": "租用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "repeat",
+      "zh": "重复",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "replace",
+      "zh": "更换",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reply",
+      "zh": "回答",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "represent",
+      "zh": "代表",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "republic",
+      "zh": "共和国",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reputation",
+      "zh": "声誉",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "request",
+      "zh": "请求",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "research",
+      "zh": "研究",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "reserve",
+      "zh": "预订",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "resign",
+      "zh": "辞职",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "respond",
+      "zh": "回答",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "response",
+      "zh": "回复",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "result",
+      "zh": "结果",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "retire",
+      "zh": "退休",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "09",
+      "id": "return",
+      "zh": "返回",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "revolution",
+      "zh": "革命",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "rhyme",
+      "zh": "押韵诗；童谣",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "rich",
+      "zh": "富有的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "ripe",
+      "zh": "成熟的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "risk",
+      "zh": "风险",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "roast",
+      "zh": "烤的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "role",
+      "zh": "作用",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "romantic",
+      "zh": "浪漫的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "rude",
+      "zh": "粗鲁的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "ruin",
+      "zh": "毁坏",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "rule",
+      "zh": "规则",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "rush",
+      "zh": "匆忙行事",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "safety",
+      "zh": "安全",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "salary",
+      "zh": "薪水",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sale",
+      "zh": "出售",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "salty",
+      "zh": "咸的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sample",
+      "zh": "样本",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "satisfy",
+      "zh": "使满意",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "save",
+      "zh": "挽救",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "saving",
+      "zh": "节省",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "saying",
+      "zh": "谚语",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "scare",
+      "zh": "吓唬",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "scene",
+      "zh": "现场",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "scholarship",
+      "zh": "奖学金",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "scientific",
+      "zh": "科学的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "secret",
+      "zh": "秘密",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "section",
+      "zh": "部门",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "security",
+      "zh": "安保",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "seek",
+      "zh": "寻求",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "seem",
+      "zh": "似乎",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "seldom",
+      "zh": "很少",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "selfish",
+      "zh": "自私的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "semester",
+      "zh": "学期",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "senior",
+      "zh": "（学校）高中的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sense",
+      "zh": "感觉；判断力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sensitive",
+      "zh": "敏感的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "separate",
+      "zh": "各自的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "series",
+      "zh": "系列",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "serious",
+      "zh": "认真的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "serve",
+      "zh": "发球",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "service",
+      "zh": "服务",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "set",
+      "zh": "设置",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "several",
+      "zh": "几个",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "severe",
+      "zh": "严重的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "shall",
+      "zh": "用于提出建议（Shall we...?）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "shame",
+      "zh": "遗憾",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sharp",
+      "zh": "锋利的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "shift",
+      "zh": "轮班",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "shock",
+      "zh": "震惊",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "shortage",
+      "zh": "短缺",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sigh",
+      "zh": "叹息",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "signal",
+      "zh": "信号",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "silence",
+      "zh": "寂静",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "simple",
+      "zh": "简单的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "since",
+      "zh": "自从",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "single",
+      "zh": "单个的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sir",
+      "zh": "先生",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "situation",
+      "zh": "情况",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "size",
+      "zh": "尺码",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "skill",
+      "zh": "技能",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "skip",
+      "zh": "跳过",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "slave",
+      "zh": "奴隶",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "slightly",
+      "zh": "稍微",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "smart",
+      "zh": "聪明的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "social",
+      "zh": "社会的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "society",
+      "zh": "社会",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "software",
+      "zh": "软件",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "solar",
+      "zh": "太阳的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "solution",
+      "zh": "解决办法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "solve",
+      "zh": "解决",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "somebody",
+      "zh": "某人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "someone",
+      "zh": "某人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "somehow",
+      "zh": "以某种方式",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "something",
+      "zh": "某事",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "somewhat",
+      "zh": "有点",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "somewhere",
+      "zh": "某处",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "son",
+      "zh": "儿子",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sore",
+      "zh": "酸痛的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sort",
+      "zh": "种类",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "soul",
+      "zh": "人（用于否定语境）",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "sour",
+      "zh": "酸的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "source",
+      "zh": "来源",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spare",
+      "zh": "抽出",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "species",
+      "zh": "物种",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "speed",
+      "zh": "速度",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spell",
+      "zh": "拼写",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spend",
+      "zh": "花费",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spicy",
+      "zh": "辛辣的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "split",
+      "zh": "分摊",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spot",
+      "zh": "地点",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "spread",
+      "zh": "传播",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "staff",
+      "zh": "全体员工",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "standard",
+      "zh": "标准的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "start",
+      "zh": "开始",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "state",
+      "zh": "州",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "stay",
+      "zh": "留下",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "steady",
+      "zh": "稳定的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "step",
+      "zh": "迈步",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "still",
+      "zh": "仍然",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "10",
+      "id": "strange",
+      "zh": "奇怪的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "stranger",
+      "zh": "陌生人；外地人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "strategy",
+      "zh": "策略",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "strength",
+      "zh": "力量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "stress",
+      "zh": "压力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "strict",
+      "zh": "严格的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "structure",
+      "zh": "结构",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "struggle",
+      "zh": "艰难的努力",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "stuff",
+      "zh": "东西",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "style",
+      "zh": "风格",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "subscribe",
+      "zh": "订阅",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "succeed",
+      "zh": "成功",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "success",
+      "zh": "成功",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "successful",
+      "zh": "成功的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "such",
+      "zh": "这样的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "sudden",
+      "zh": "突然的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suffer",
+      "zh": "遭受",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suggest",
+      "zh": "建议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suggestion",
+      "zh": "建议",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suitable",
+      "zh": "合适的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "sum",
+      "zh": "金额",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "superior",
+      "zh": "更好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "supply",
+      "zh": "供应",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "support",
+      "zh": "支持",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suppose",
+      "zh": "猜想",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "surprise",
+      "zh": "使惊讶",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "surrounding",
+      "zh": "周围的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "survive",
+      "zh": "存活",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "suspect",
+      "zh": "怀疑",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "sweet",
+      "zh": "甜的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "symbol",
+      "zh": "符号",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "sympathy",
+      "zh": "同情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "system",
+      "zh": "系统",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tale",
+      "zh": "故事",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "talent",
+      "zh": "才能",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "target",
+      "zh": "目标",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "task",
+      "zh": "任务",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tax",
+      "zh": "税",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "technology",
+      "zh": "技术",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "teenager",
+      "zh": "青少年",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "temporary",
+      "zh": "暂时的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tend",
+      "zh": "往往",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "term",
+      "zh": "学期",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "terrible",
+      "zh": "可怕的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "territory",
+      "zh": "领地",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "test",
+      "zh": "测试",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "theft",
+      "zh": "偷窃",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "theme",
+      "zh": "主题",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "themselves",
+      "zh": "他们自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "theory",
+      "zh": "理论",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "thing",
+      "zh": "事情",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "thinking",
+      "zh": "思考",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "though",
+      "zh": "虽然",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "thought",
+      "zh": "想法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "threaten",
+      "zh": "威胁",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tight",
+      "zh": "紧的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tip",
+      "zh": "提示",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "title",
+      "zh": "标题",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "together",
+      "zh": "一起",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tolerate",
+      "zh": "忍受",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tone",
+      "zh": "语气",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tonight",
+      "zh": "今晚",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "topic",
+      "zh": "话题",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "total",
+      "zh": "全部的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tough",
+      "zh": "艰难的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tour",
+      "zh": "参观",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "trade",
+      "zh": "贸易",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "traditional",
+      "zh": "传统的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "training",
+      "zh": "训练",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "transfer",
+      "zh": "换乘",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "translate",
+      "zh": "翻译",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "treat",
+      "zh": "请客",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "treatment",
+      "zh": "待遇",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "trick",
+      "zh": "欺骗",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "trouble",
+      "zh": "麻烦",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "true",
+      "zh": "真的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "trust",
+      "zh": "信任",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "truth",
+      "zh": "真相",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "tune",
+      "zh": "曲调",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "twice",
+      "zh": "两次",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "twin",
+      "zh": "双胞胎的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "type",
+      "zh": "种类",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "typical",
+      "zh": "典型的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "understand",
+      "zh": "理解",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "unique",
+      "zh": "独特的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "unless",
+      "zh": "除非",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "until",
+      "zh": "直到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "till",
+      "zh": "直到",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "unusual",
+      "zh": "不寻常的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "update",
+      "zh": "更新",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "upon",
+      "zh": "在……之上",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "urban",
+      "zh": "城市的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "urge",
+      "zh": "敦促",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "urgent",
+      "zh": "紧急的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "used",
+      "zh": "用过的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "useful",
+      "zh": "有用的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "usual",
+      "zh": "通常的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "usually",
+      "zh": "通常",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "valid",
+      "zh": "有效的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "valuable",
+      "zh": "宝贵的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "11",
+      "id": "value",
+      "zh": "价值",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "variety",
+      "zh": "种类",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "various",
+      "zh": "各种各样的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "vary",
+      "zh": "不同",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "vast",
+      "zh": "广阔的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "version",
+      "zh": "版本",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "victim",
+      "zh": "受害者",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "video",
+      "zh": "视频",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "view",
+      "zh": "看法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "virus",
+      "zh": "病毒",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "vision",
+      "zh": "构想",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "visitor",
+      "zh": "访客",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "vocabulary",
+      "zh": "词汇量",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "voice",
+      "zh": "声音",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "voyage",
+      "zh": "航行",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "wage",
+      "zh": "工资",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "warn",
+      "zh": "警告",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "waste",
+      "zh": "浪费",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "weak",
+      "zh": "微弱的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "wealth",
+      "zh": "财富",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "weekend",
+      "zh": "周末",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "whatever",
+      "zh": "无论什么",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "whenever",
+      "zh": "无论何时",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "whether",
+      "zh": "是否",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "while",
+      "zh": "当……时",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "whole",
+      "zh": "整个的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "widespread",
+      "zh": "广泛的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "wife",
+      "zh": "妻子",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "wise",
+      "zh": "明智的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "without",
+      "zh": "没有",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "wonder",
+      "zh": "想知道",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "worse",
+      "zh": "更糟的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "worst",
+      "zh": "最糟的情况",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "worth",
+      "zh": "值得的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "worthy",
+      "zh": "值得的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "yet",
+      "zh": "已经；还",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "yield",
+      "zh": "屈服",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "yours",
+      "zh": "你的；你们的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "yourself",
+      "zh": "你自己",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "youth",
+      "zh": "青年",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "aim",
+      "zh": "目标",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "benefit",
+      "zh": "益处",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "bully",
+      "zh": "欺负",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "cheat",
+      "zh": "作弊",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "classic",
+      "zh": "经典作品",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "compete",
+      "zh": "比赛",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "congratulation",
+      "zh": "祝贺",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "creative",
+      "zh": "有创造力的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "death",
+      "zh": "死亡",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "die",
+      "zh": "死亡",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "download",
+      "zh": "下载",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "elder",
+      "zh": "年长的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "electronic",
+      "zh": "电子的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "era",
+      "zh": "时代",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "fantastic",
+      "zh": "极好的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "fat",
+      "zh": "脂肪",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "folk",
+      "zh": "民间的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "fool",
+      "zh": "欺骗",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "god",
+      "zh": "神",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "guest",
+      "zh": "客人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "hate",
+      "zh": "讨厌",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "hostess",
+      "zh": "女主人",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "instruction",
+      "zh": "指令",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "invent",
+      "zh": "发明",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "kill",
+      "zh": "杀死",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "kilometer",
+      "zh": "千米",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "magic",
+      "zh": "魔法",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "medium",
+      "zh": "中等的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "meter",
+      "zh": "米",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "mum",
+      "zh": "妈妈",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "negative",
+      "zh": "负的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "pioneer",
+      "zh": "先驱",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "praise",
+      "zh": "赞扬",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "produce",
+      "zh": "生产",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "proper",
+      "zh": "合适的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "publish",
+      "zh": "出版",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "punish",
+      "zh": "惩罚",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "review",
+      "zh": "复习",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "rise",
+      "zh": "上升",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "slim",
+      "zh": "纤细的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "socialism",
+      "zh": "社会主义",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "spirit",
+      "zh": "精神",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "steal",
+      "zh": "偷",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "survey",
+      "zh": "调查",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "teamwork",
+      "zh": "团队合作",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "teenage",
+      "zh": "青少年的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "theirs",
+      "zh": "他们的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "therefore",
+      "zh": "因此",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "ton",
+      "zh": "吨",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "ugly",
+      "zh": "难看的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "underground",
+      "zh": "在地下",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "unit",
+      "zh": "单位",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "voluntary",
+      "zh": "自愿的",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "war",
+      "zh": "战争",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "weekday",
+      "zh": "工作日",
+      "status": "ready",
+      "pictureCue": true
+    },
+    {
+      "batch": "12",
+      "id": "whom",
+      "zh": "谁（宾格）",
+      "status": "ready",
+      "pictureCue": true
+    }
+  ],
+  "remainingIds": [],
+  "reviewBoundary": "Sense/example and rendered-picture review by model; media format, text, pronunciation override, component provenance and offline-hash checks are automated. No teacher pronunciation certification or physical iPad acceptance."
+}

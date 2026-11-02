@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 128 132"><rect x="0" y="0" width="128" height="132" rx="5" fill="#faf6e9"/><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="5" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<g>
+		
+			<radialGradient id="part1-SVGID_1_" cx="71.3534" cy="54.7609" r="41.0418" gradientTransform="matrix(0.9977 0.0674 -0.0674 0.9977 6.4199 -16.6873)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.4702" style="stop-color:#42A5F5"/>
+			<stop  offset="1" style="stop-color:#FCE8B2"/>
+		</radialGradient>
+		<path style="fill:url(#part1-SVGID_1_);" d="M82.58,5.72c-10.59-0.71-27.85,9.87-23.63,34.9c2.61,15.47,12.62,23.12,19.68,23.6
+			s18.01-5.76,22.68-20.74C108.85,19.25,93.17,6.43,82.58,5.72z"/>
+	</g>
+	<g>
+		<linearGradient id="part1-SVGID_2_" gradientUnits="userSpaceOnUse" x1="75.6012" y1="30.5276" x2="66.5725" y2="114.1042">
+			<stop  offset="0.1283" style="stop-color:#FCE8B2"/>
+			<stop  offset="0.6399" style="stop-color:#42A5F5"/>
+		</linearGradient>
+		<path style="fill:url(#part1-SVGID_2_);" d="M117.94,83.27c-4.15-16.61-16.84-25.96-30.58-27.66c-5.48-0.68-11.04-0.92-16.48,0.01
+			c-1.27,0.22-2.7,0.82-3.97,0.86c-0.98,0.03-32.26-12.01-33.57-12.46C29.68,42.73,22.17,43,19.17,51c-3.93,10.47,12,18,35,36
+			l-0.94,37h66.79C120.02,124,121.1,95.91,117.94,83.27z"/>
+	</g>
+	<linearGradient id="part1-SVGID_3_" gradientUnits="userSpaceOnUse" x1="28.1088" y1="135.2955" x2="63.8296" y2="46.5515">
+		<stop  offset="0" style="stop-color:#0D47A1"/>
+		<stop  offset="0.6795" style="stop-color:#1976D2"/>
+	</linearGradient>
+	<path style="fill:url(#part1-SVGID_3_);" d="M89.17,70c-3-5-9.75-1.11-12,1c-16,15-19.7,17.19-22.96,15.43
+		c-0.99-0.53-2.94-1.91-8.22-5.99S22.17,62,22.17,62c-18,15-13.96,62-13.96,62h45.02l0.81-14.92c5.68,0.91,9.99-1.04,14.12-4.08
+		c7.61-5.62,13.02-10.7,18-19C89.17,81,92.17,75,89.17,70z"/>
+	
+		<radialGradient id="part1-SVGID_4_" cx="45.6283" cy="49.2045" r="46.5854" gradientTransform="matrix(0.923 -0.3847 0.3847 0.923 -14.1241 20.4323)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0.5269" style="stop-color:#1565C0"/>
+		<stop  offset="1" style="stop-color:#FADA80"/>
+	</radialGradient>
+	<path style="fill:url(#part1-SVGID_4_);" d="M39.45,7.91c-9.8,4.08-20.53,21.26-5.58,41.78c9.23,12.68,21.61,15.06,28.14,12.34
+		c6.53-2.72,13.55-13.19,11.05-28.67C69,8.3,49.25,3.83,39.45,7.91z"/>
+	<path style="fill:#1976D2;" d="M103.75,60.18c0,0-10.57,6.82-14.57-0.18c-3.58-6.26,7.1-12.75,7.1-12.75
+		c3.11-1.79,7.23-1.56,9.56,2.53C108.63,54.67,106.86,58.39,103.75,60.18z"/>
+</g>
+</svg><text x="26.5" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="8" fill="#526e7c">owner</text><svg xmlns:xlink="http://www.w3.org/1999/xlink" x="80" y="35" width="43" height="43" viewBox="0 0 128 128">
+<g>
+	<path style="fill:#C62828;" d="M106.02,121.68H36.18c-1.66,0-1.26-1.35-1.26-3.01V14.05c0-1.66,1.35-3.01,3.01-3.01h69.36
+		c2.72,0,4.93,2.21,4.93,4.93v99.76C112.22,119.59,110.39,121.68,106.02,121.68z"/>
+	<path style="fill:#94C6D6;" d="M18.53,115.14c0,1.94,3.07,3.57,5.01,3.57l80.39-0.05c2.98,0,4.54-1.58,4.54-3.52l-0.25-21.32H18.53
+		V115.14z"/>
+	<path style="fill:#F5F5F5;" d="M101.47,105.88c0,0-2.13,5.85,0.03,8.78c2.51,3.4,6.89,2.58,6.89,0.99V16.44
+		c0-0.66-0.61-1.14-1.25-1c-1.39,0.3-3.89,0.31-7.21-1.89L101.47,105.88z"/>
+	<path style="fill:#C62828;" d="M94.16,110.85H23.64V6.45c0,0,69.99,0,72.25,0c2.27,0,3.87,0.61,4.62,1.62
+		c0.98,1.31,1.5,3.3,1.5,5.48V103C102.01,107.33,98.5,110.85,94.16,110.85z"/>
+	<path style="fill:#F44336;" d="M92.01,107.78H25.54c-2.76,0-4.99-2.24-4.99-4.99V11.45c0-2.76,2.24-4.99,4.99-4.99h66.47
+		c3.82,0,6.92,2.18,6.92,6.92v87.49C98.92,104.68,95.83,107.78,92.01,107.78z"/>
+	<path style="fill:#616161;" d="M34.43,109.75c0,0-0.05-101.82-0.05-103.29h-11.2c0,0-2.31-0.4-3.85,0
+		c-2.79,0.73-3.56,2.76-3.56,6.07c0,0,0,94.41,0,94.41c0,6.7,0.41,9.6,2.44,11.72c-0.12-1.54,0.87-6.83,1.68-8.28
+		C20.61,109.1,34.43,109.75,34.43,109.75z"/>
+	<line style="fill:none;stroke:#424242;stroke-width:2;stroke-miterlimit:10;" x1="23.18" y1="6.45" x2="23.18" y2="110.85"/>
+	<path style="fill:none;stroke:#424242;stroke-width:3;stroke-miterlimit:10;" d="M34.38,109.34l-11.3,0.22
+		c-3.77,0-5.06,4.04-4.39,6.71c0.84,3.37,4.32,3.92,5.18,3.92s12.65,0,12.65,0"/>
+</g>
+</svg><text x="101.5" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="8" fill="#526e7c">borrowed</text><path d="M52 57L75 57" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 60.35597877022942" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M75 57L68.8569220667674 53.64402122977058" stroke="#d4a371" stroke-width="3" fill="none" stroke-linecap="round"/><text x="64" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="10" fill="#526e7c">return it later</text><text x="64" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="8.06896551724138" fill="#526e7c">borrowing a friend's book</text></svg>

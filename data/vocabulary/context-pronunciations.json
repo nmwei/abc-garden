@@ -1,0 +1,52 @@
+{
+  "word-live": {
+    "text": "live",
+    "phonemes": "lˈɪv",
+    "reason": "Verb meaning reside; the isolated-word phonemizer returned lˈaɪv. The example sentence already uses lˈɪv."
+  },
+  "word-use": {
+    "text": "use",
+    "phonemes": "jˈuːz",
+    "reason": "Verb meaning to employ a tool; the isolated-word phonemizer returned the noun jˈuːs. The example sentence already uses jˈuːz."
+  },
+  "word-conduct": {
+    "text": "conduct",
+    "phonemes": "kəndˈʌkt",
+    "reason": "Verb sense: 表现; isolated phonemizer selected kˈɑːndʌkt."
+  },
+  "sentence-conduct": {
+    "text": "Please conduct yourself politely at the meeting.",
+    "phonemes": "plˈiːz kəndˈʌkt joːɹsˈɛlf pəlˈaɪtli æt ðə mˈiːɾɪŋ",
+    "reason": "Correct the same verb pronunciation in its example."
+  },
+  "word-object": {
+    "text": "object",
+    "phonemes": "əbdʒˈɛkt",
+    "reason": "Verb sense: 反对; isolated phonemizer selected ˈɑːbdʒɛkt."
+  },
+  "sentence-object": {
+    "text": "Some object to Tom's opinion.",
+    "phonemes": "sˌʌm əbdʒˈɛkt tə tˈɑːmz əpˈɪniən",
+    "reason": "Correct the same verb pronunciation in its example."
+  },
+  "word-decrease": {
+    "text": "decrease",
+    "phonemes": "dɪkɹˈiːs",
+    "reason": "Verb sense: 减少; isolated phonemizer selected dˈiːkɹiːs."
+  },
+  "sentence-decrease": {
+    "text": "We can decrease the amount of paper we use.",
+    "phonemes": "wiː kæn dɪkɹˈiːs ðɪ ɐmˈaʊnt ʌv pˈeɪpɚ wiː jˈuːz",
+    "reason": "Correct the same verb pronunciation in its example."
+  },
+  "word-suspect": {
+    "text": "suspect",
+    "phonemes": "səspˈɛkt",
+    "reason": "Verb sense: 怀疑; isolated phonemizer selected sˈʌspɛkt."
+  },
+  "word-graduate": {
+    "text": "graduate",
+    "phonemes": "ɡɹˈædʒuːeɪt",
+    "reason": "Verb sense: 毕业; isolated phonemizer selected ɡɹˈædʒuːət."
+  }
+}

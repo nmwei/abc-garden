@@ -8,7 +8,14 @@ import {encodePcm16} from './audio-pcm.mjs';
 const model='onnx-community/Kokoro-82M-v1.0-ONNX',voice='af_heart',speed=.9;
 const directory=new URL('../assets/audio/',import.meta.url),cache=new URL('../.audio-cache/picture-audio/',import.meta.url);
 await mkdir(cache,{recursive:true});
-const pronunciation=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk-pronunciations.json',import.meta.url),'utf8'));
+const pronunciation={};
+for(const file of ['wonders-gk-pronunciations','context-pronunciations']){
+ const entries=JSON.parse(await readFile(new URL(`../data/vocabulary/${file}.json`,import.meta.url),'utf8'));
+ for(const [key,value] of Object.entries(entries)){
+  if(pronunciation[key])throw Error(`Duplicate pronunciation override: ${key}`);
+  pronunciation[key]=value;
+ }
+}
 const signature=(text,key)=>JSON.stringify({model,voice,speed,text,...(pronunciation[key]?{phonemes:pronunciation[key].phonemes}:{})});
 if(process.argv[2]==='--worker'){
  const tasks=JSON.parse(await readFile(process.argv[3],'utf8')),slot=Number(process.argv[4]),workers=Number(process.argv[5]);

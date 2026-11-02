@@ -4986,7 +4986,8 @@
     },
     {
       "key": "word-live",
-      "text": "live"
+      "text": "live",
+      "phonemes": "lˈɪv"
     },
     {
       "key": "word-lot",
@@ -5362,7 +5363,8 @@
     },
     {
       "key": "word-use",
-      "text": "use"
+      "text": "use",
+      "phonemes": "jˈuːz"
     },
     {
       "key": "word-very",
@@ -6690,7 +6692,8 @@
     },
     {
       "key": "word-conduct",
-      "text": "conduct"
+      "text": "conduct",
+      "phonemes": "kəndˈʌkt"
     },
     {
       "key": "word-conference",
@@ -7011,7 +7014,8 @@
     },
     {
       "key": "word-decrease",
-      "text": "decrease"
+      "text": "decrease",
+      "phonemes": "dɪkɹˈiːs"
     },
     {
       "key": "word-deep",
@@ -8043,7 +8047,8 @@
     },
     {
       "key": "word-graduate",
-      "text": "graduate"
+      "text": "graduate",
+      "phonemes": "ɡɹˈædʒuːeɪt"
     },
     {
       "key": "word-grammar",
@@ -9215,7 +9220,8 @@
     },
     {
       "key": "word-object",
-      "text": "object"
+      "text": "object",
+      "phonemes": "əbdʒˈɛkt"
     },
     {
       "key": "word-observe",
@@ -10923,7 +10929,8 @@
     },
     {
       "key": "word-suspect",
-      "text": "suspect"
+      "text": "suspect",
+      "phonemes": "səspˈɛkt"
     },
     {
       "key": "word-sweat",
@@ -18003,11 +18010,11 @@
     },
     {
       "key": "sentence-abandon",
-      "text": "I won't abandon you."
+      "text": "We will not abandon our plan."
     },
     {
       "key": "sentence-ability",
-      "text": "He's a man of ability."
+      "text": "She has the ability to swim."
     },
     {
       "key": "sentence-able",
@@ -18015,7 +18022,7 @@
     },
     {
       "key": "sentence-abnormal",
-      "text": "Environmental pollution is causing abnormal weather conditions."
+      "text": "Snow in summer is abnormal here."
     },
     {
       "key": "sentence-aboard",
@@ -18055,7 +18062,7 @@
     },
     {
       "key": "sentence-accept",
-      "text": "I don't accept it."
+      "text": "I accept your gift."
     },
     {
       "key": "sentence-access",
@@ -18075,7 +18082,7 @@
     },
     {
       "key": "sentence-account",
-      "text": "Your account is empty."
+      "text": "Dad checks his bank account."
     },
     {
       "key": "sentence-accurate",
@@ -18167,7 +18174,7 @@
     },
     {
       "key": "sentence-advantage",
-      "text": "Let's take advantage of the long weekend."
+      "text": "A map gives us an advantage in this game."
     },
     {
       "key": "sentence-adventure",
@@ -18667,11 +18674,11 @@
     },
     {
       "key": "sentence-belt",
-      "text": "Fasten your seat belt."
+      "text": "This belt is brown."
     },
     {
       "key": "sentence-bend",
-      "text": "I can't bend my right arm."
+      "text": "I can bend my arm."
     },
     {
       "key": "sentence-besides",
@@ -18823,7 +18830,7 @@
     },
     {
       "key": "sentence-bunch",
-      "text": "Tom was with a bunch of strangers."
+      "text": "Here is a bunch of grapes."
     },
     {
       "key": "sentence-burn",
@@ -18939,7 +18946,7 @@
     },
     {
       "key": "sentence-central",
-      "text": "Which way is Central Park?"
+      "text": "The fountain is in the central part of the park."
     },
     {
       "key": "sentence-center",
@@ -18987,7 +18994,7 @@
     },
     {
       "key": "sentence-characteristic",
-      "text": "I got over the difficulty with my characteristic tenacity."
+      "text": "A long neck is characteristic of a giraffe."
     },
     {
       "key": "sentence-charge",
@@ -19215,7 +19222,8 @@
     },
     {
       "key": "sentence-conduct",
-      "text": "Please conduct yourself politely at the meeting."
+      "text": "Please conduct yourself politely at the meeting.",
+      "phonemes": "plˈiːz kəndˈʌkt joːɹsˈɛlf pəlˈaɪtli æt ðə mˈiːɾɪŋ"
     },
     {
       "key": "sentence-conference",
@@ -19536,7 +19544,8 @@
     },
     {
       "key": "sentence-decrease",
-      "text": "We can decrease the amount of paper we use."
+      "text": "We can decrease the amount of paper we use.",
+      "phonemes": "wiː kæn dɪkɹˈiːs ðɪ ɐmˈaʊnt ʌv pˈeɪpɚ wiː jˈuːz"
     },
     {
       "key": "sentence-deep",
@@ -19676,7 +19685,7 @@
     },
     {
       "key": "sentence-dining",
-      "text": "Where's the dining room?"
+      "text": "We enjoy dining together."
     },
     {
       "key": "sentence-direct",
@@ -19852,7 +19861,7 @@
     },
     {
       "key": "sentence-ecology",
-      "text": "I asked him many questions about ecology."
+      "text": "We learn about ecology."
     },
     {
       "key": "sentence-economic",
@@ -20372,7 +20381,7 @@
     },
     {
       "key": "sentence-forget",
-      "text": "He's bound to forget."
+      "text": "Do not forget your keys."
     },
     {
       "key": "sentence-forgive",
@@ -21740,7 +21749,8 @@
     },
     {
       "key": "sentence-object",
-      "text": "Some object to Tom's opinion."
+      "text": "Some object to Tom's opinion.",
+      "phonemes": "sˌʌm əbdʒˈɛkt tə tˈɑːmz əpˈɪniən"
     },
     {
       "key": "sentence-observe",
@@ -23472,7 +23482,7 @@
     },
     {
       "key": "sentence-system",
-      "text": "They changed the system."
+      "text": "The sun and planets form a system."
     },
     {
       "key": "sentence-tailor",

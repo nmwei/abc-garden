@@ -3,26 +3,26 @@
     "id": "abandon",
     "zh": "放弃",
     "pos": "动词",
-    "sentence": "I won't abandon you.",
-    "sentenceZh": "我不会放弃你的。",
+    "sentence": "We will not abandon our plan.",
+    "sentenceZh": "我们不会放弃我们的计划。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2271940 (CK) & #11236338 (klzlueylx)",
       "originalSentence": "I won't abandon you.",
       "originalTranslation": "我不会放弃你的。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
     "id": "ability",
     "zh": "能力",
     "pos": "名词",
-    "sentence": "He's a man of ability.",
-    "sentenceZh": "他是个能干的男人。",
+    "sentence": "She has the ability to swim.",
+    "sentenceZh": "她有游泳的能力。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #11129697 (CK) & #366865 (fucongcong)",
       "originalSentence": "He's a man of ability.",
       "originalTranslation": "他是个能干的男人。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -42,8 +42,8 @@
     "id": "abnormal",
     "zh": "异常的",
     "pos": "形容词",
-    "sentence": "Environmental pollution is causing abnormal weather conditions.",
-    "sentenceZh": "环境污染正造成异常的天气情况。",
+    "sentence": "Snow in summer is abnormal here.",
+    "sentenceZh": "这里夏天下雪是不正常的。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #21016 (CK) & #797018 (Martha)",
       "originalSentence": "Environmental pollution is causing abnormal weather conditions.",
@@ -172,13 +172,13 @@
     "id": "accept",
     "zh": "接受",
     "pos": "动词",
-    "sentence": "I don't accept it.",
-    "sentenceZh": "我不接受。",
+    "sentence": "I accept your gift.",
+    "sentenceZh": "我接受你的礼物。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2283760 (CK) & #5897891 (verdastelo9604)",
       "originalSentence": "I don't accept it.",
       "originalTranslation": "我不接受。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -237,8 +237,8 @@
     "id": "account",
     "zh": "账户",
     "pos": "名词",
-    "sentence": "Your account is empty.",
-    "sentenceZh": "你的账户空了。",
+    "sentence": "Dad checks his bank account.",
+    "sentenceZh": "爸爸查看他的银行账户。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #70339 (CK) & #5868149 (xjjAstrus)",
       "originalSentence": "Your account is empty.",
@@ -534,15 +534,15 @@
   },
   {
     "id": "advantage",
-    "zh": "有利条件",
+    "zh": "优势；有利条件",
     "pos": "名词",
-    "sentence": "Let's take advantage of the long weekend.",
-    "sentenceZh": "来好好利用大周末吧。",
+    "sentence": "A map gives us an advantage in this game.",
+    "sentenceZh": "地图让我们在这个游戏中占有优势。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #278050 (CK) & #1397017 (mtdot)",
       "originalSentence": "Let's take advantage of the long weekend.",
       "originalTranslation": "来好好利用大周末吧。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -2159,23 +2159,23 @@
   },
   {
     "id": "belt",
-    "zh": "带子",
+    "zh": "腰带",
     "pos": "名词",
-    "sentence": "Fasten your seat belt.",
-    "sentenceZh": "系上您的安全带。",
+    "sentence": "This belt is brown.",
+    "sentenceZh": "这条腰带是棕色的。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #53900 (CK) & #335035 (fucongcong)",
       "originalSentence": "Fasten your seat belt.",
       "originalTranslation": "系上您的安全带。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
     "id": "bend",
     "zh": "弯曲",
     "pos": "动词",
-    "sentence": "I can't bend my right arm.",
-    "sentenceZh": "我无法弯曲我的右手臂。",
+    "sentence": "I can bend my arm.",
+    "sentenceZh": "我会弯曲手臂。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #27048 (CK) & #848580 (Martha)",
       "originalSentence": "I can't bend my right arm.",
@@ -2666,15 +2666,15 @@
   },
   {
     "id": "bunch",
-    "zh": "一群",
+    "zh": "一串",
     "pos": "名词",
-    "sentence": "Tom was with a bunch of strangers.",
-    "sentenceZh": "汤姆和一堆陌生人在一起。",
+    "sentence": "Here is a bunch of grapes.",
+    "sentenceZh": "这是一串葡萄。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #8051797 (CK) & #8748585 (cxpadonis)",
       "originalSentence": "Tom was with a bunch of strangers.",
       "originalTranslation": "汤姆和一堆陌生人在一起。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -3045,8 +3045,8 @@
     "id": "central",
     "zh": "中央的",
     "pos": "形容词",
-    "sentence": "Which way is Central Park?",
-    "sentenceZh": "中央公园在哪个方向？",
+    "sentence": "The fountain is in the central part of the park.",
+    "sentenceZh": "喷泉在公园的中央部分。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #51267 (CK) & #836330 (Martha)",
       "originalSentence": "Which way is Central Park?",
@@ -3199,15 +3199,15 @@
   },
   {
     "id": "characteristic",
-    "zh": "特有的",
+    "zh": "特有的；典型的",
     "pos": "形容词",
-    "sentence": "I got over the difficulty with my characteristic tenacity.",
-    "sentenceZh": "我凭韧性克服了困难。",
+    "sentence": "A long neck is characteristic of a giraffe.",
+    "sentenceZh": "长脖子是长颈鹿的典型特征。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258109 (CM) & #5655348 (verdastelo9604)",
       "originalSentence": "I got over the difficulty with my characteristic tenacity.",
       "originalTranslation": "我凭韧性克服了困难。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -5437,13 +5437,13 @@
     "id": "dining",
     "zh": "用餐",
     "pos": "名词",
-    "sentence": "Where's the dining room?",
-    "sentenceZh": "餐厅在哪里？",
+    "sentence": "We enjoy dining together.",
+    "sentenceZh": "我们喜欢一起用餐。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #4704237 (CK) & #6101361 (verdastelo9604)",
       "originalSentence": "Where's the dining room?",
       "originalTranslation": "餐厅在哪里？",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -5643,7 +5643,7 @@
   },
   {
     "id": "distant",
-    "zh": "远的",
+    "zh": "（亲属关系）远的；疏远的",
     "pos": "形容词",
     "sentence": "Tom is a distant relative of mine.",
     "sentenceZh": "汤姆是我的远亲。",
@@ -6009,8 +6009,8 @@
     "id": "ecology",
     "zh": "生态学",
     "pos": "名词",
-    "sentence": "I asked him many questions about ecology.",
-    "sentenceZh": "我问了他许多关于生态环境的问题。",
+    "sentence": "We learn about ecology.",
+    "sentenceZh": "我们学习生态学。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #258992 (CK) & #926842 (Martha)",
       "originalSentence": "I asked him many questions about ecology.",
@@ -7699,13 +7699,13 @@
     "id": "forget",
     "zh": "忘记",
     "pos": "动词",
-    "sentence": "He's bound to forget.",
-    "sentenceZh": "他准会忘。",
+    "sentence": "Do not forget your keys.",
+    "sentenceZh": "别忘了带钥匙。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #2795200 (CM) & #5550267 (verdastelo9604)",
       "originalSentence": "He's bound to forget.",
       "originalTranslation": "他准会忘。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -7882,7 +7882,7 @@
     "zh": "冰箱",
     "pos": "名词",
     "sentence": "The fridge is open.",
-    "sentenceZh": "冰箱开著。",
+    "sentenceZh": "冰箱开着。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #12231580 (sundown) & #9096091 (xjjAstrus)",
       "originalSentence": "The fridge is open.",
@@ -9907,10 +9907,10 @@
   },
   {
     "id": "junior",
-    "zh": "初级的",
+    "zh": "（学校）初中的",
     "pos": "形容词",
     "sentence": "I'm a junior high school student.",
-    "sentenceZh": "我是个国中生。",
+    "sentenceZh": "我是个初中生。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #252301 (CK) & #881031 (Martha)",
       "originalSentence": "I'm a junior high school student.",
@@ -10024,7 +10024,7 @@
   },
   {
     "id": "kit",
-    "zh": "成套工具",
+    "zh": "成套用品；工具包",
     "pos": "名词",
     "sentence": "Don't forget to take the first-aid kit.",
     "sentenceZh": "别忘了带上急救箱。",
@@ -12068,7 +12068,7 @@
     "zh": "注意到",
     "pos": "动词",
     "sentence": "Did you notice Tom's hair?",
-    "sentenceZh": "你注意到汤姆的头髪了吗？",
+    "sentenceZh": "你注意到汤姆的头发了吗？",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #3824269 (CK) & #6105182 (verdastelo9604)",
       "originalSentence": "Did you notice Tom's hair?",
@@ -13238,12 +13238,12 @@
     "zh": "短语",
     "pos": "名词",
     "sentence": "I wonder what this phrase means.",
-    "sentenceZh": "我想知道这句话的意思。",
+    "sentenceZh": "我想知道这个短语的意思。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #60565 (fucongcong) & #334097 (fucongcong)",
       "originalSentence": "I wonder what this phrase means.",
       "originalTranslation": "我想知道这句话的意思。",
-      "adapted": false
+      "adapted": true
     }
   },
   {
@@ -15445,7 +15445,7 @@
   },
   {
     "id": "rhyme",
-    "zh": "押韵诗",
+    "zh": "押韵诗；童谣",
     "pos": "名词",
     "sentence": "We learned a nursery rhyme today.",
     "sentenceZh": "我们今天学了一首童谣。",
@@ -15939,7 +15939,7 @@
   },
   {
     "id": "senior",
-    "zh": "高级的",
+    "zh": "（学校）高中的",
     "pos": "形容词",
     "sentence": "Are you a senior high school student?",
     "sentenceZh": "你是个高中生吗?",
@@ -17774,8 +17774,8 @@
     "id": "system",
     "zh": "系统",
     "pos": "名词",
-    "sentence": "They changed the system.",
-    "sentenceZh": "他们改变了制度。",
+    "sentence": "The sun and planets form a system.",
+    "sentenceZh": "太阳和行星组成一个系统。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #305809 (mamat) & #858768 (Martha)",
       "originalSentence": "They changed the system.",
@@ -18035,12 +18035,12 @@
     "zh": "偷窃",
     "pos": "名词",
     "sentence": "The police accused him of theft.",
-    "sentenceZh": "警察起诉他盗窃。",
+    "sentenceZh": "警方指控他盗窃。",
     "attribution": {
       "credit": "CC-BY 2.0 (France) Attribution: tatoeba.org #238360 (CK) & #2031291 (ydcok)",
       "originalSentence": "The police accused him of theft.",
       "originalTranslation": "警察起诉他盗窃。",
-      "adapted": false
+      "adapted": true
     }
   },
   {

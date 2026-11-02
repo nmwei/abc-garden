@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {wordLibrary,selectedWordIds} from '../app/word-library.js';
-import {READY_WORDS as WORDS} from '../app/course-content.js';
+import {READY_WORDS as WORDS,CATALOG_BY_ID} from '../app/course-content.js';
 test('selection migrates known words in order, excludes unknowns and keeps catalog canonical',()=>{
  assert.deepEqual(selectedWordIds({words:'cat | 改写 | Hello.\napple\nzzzzunknown'}),['cat','apple']);
  assert.deepEqual(selectedWordIds({selectedWordIds:['apple','cat','apple','zzzzunknown'],words:'ball'}),['apple','cat']);
@@ -15,5 +15,12 @@ test('only pictured canonical cards are learnable; pending selections survive',(
  assert.ok(wordLibrary().all.every(w=>w.image));
  assert.ok(!wordLibrary().all.some(w=>w.id==='colour'));
  assert.deepEqual(selectedWordIds({selectedWordIds:['per cent','percent','colour','color','because','cat']}),['percent','color','because','cat']);
- assert.deepEqual(wordLibrary([{word:'per cent'},{word:'colour'},{word:'color'},{word:'cat'}]).selected.map(w=>w.id),['color','cat']);
+ assert.deepEqual(wordLibrary([{word:'per cent'},{word:'colour'},{word:'color'},{word:'cat'}]).selected.map(w=>w.id),['percent','color','cat']);
+ // Keep the missing-picture contract test independent of which real words have been completed.
+ const id='test-pending-picture';
+ CATALOG_BY_ID.set(id,{id,zh:'测试词',image:null});
+ try{
+  assert.deepEqual(selectedWordIds({selectedWordIds:[id,'cat']}),[id,'cat']);
+  assert.deepEqual(wordLibrary([{word:id},{word:'cat'}]).selected.map(w=>w.id),['cat']);
+ }finally{CATALOG_BY_ID.delete(id);}
 });

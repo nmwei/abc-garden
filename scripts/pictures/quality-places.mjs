@@ -1,0 +1,55 @@
+import {r,p,l,c,e,g,a,t,cap,focus,face,human,ground,room,window,chair,desk,book,openBook,paper,house,bed,shirt,plant,tree,flower,cat,dog,car,bus,gift,sofa,basket,sun,ink,blue,green,red,gold,cream,skin,brown} from './quality-primitives.mjs';
+const shelf=(x,y,w=42,h=72)=>r(x,y,w,h,brown,2)+[0,1,2].map(i=>Array.from({length:5},(_,j)=>r(x+4+j*(w-8)/5,y+4+i*(h-4)/3,(w-11)/5,(h-12)/3,[blue,red,gold,green][(i+j)%4],1)).join('')).join('');
+const table=(x=35,y=80,w=72)=>r(x,y,w,8,brown,2)+l(x+6,y+8,x+6,y+34,brown,4)+l(x+w-6,y+8,x+w-6,y+34,brown,4);
+const board=()=>r(47,18,67,43,green,3)+t('A B C',81,45,15,cream);
+const shop=(name,inside)=>r(11,31,108,82,cream,2)+r(6,13,116,24,red,4)+t(name,64,29,11,cream)+inside;
+const food=(x,y)=>c(x,y,6,red)+c(x+11,y-2,6,gold)+c(x+22,y,6,green);
+const trophy=()=>p('M33 24H95V47Q89 76 64 76Q39 76 33 47Z',gold)+p('M33 30H16Q11 64 46 64M95 30H112Q117 64 82 64','none',gold,7)+l(64,76,64,103,gold,8)+r(40,102,48,10,gold,3);
+const laptop=()=>r(15,18,97,65,ink,4)+r(22,25,83,50,blue,2)+p('M15 83L4 105H124L112 83Z','#b9cdcb');
+export const placeScenes={
+ garden:()=>sun()+p('M6 74Q60 39 122 74V114H6Z','#b9c79c')+p('M53 115Q35 86 75 69','none',cream,15)+[7,76,95].map((x,i)=>g(flower(i%2===0),x,60,.25)).join('')+human(33,54,red,.65,'walk'),
+ classroom:()=>room()+board()+human(26,42,blue,.8,'point')+[49,83].map(x=>table(x,89,31)+g(openBook(),x+1,70,.23)).join(''),
+ bedroom:()=>room()+window()+g(bed(),5,26,.78)+r(95,66,23,34,brown,2)+l(106,45,106,68,ink,3)+p('M92 48L97 29H113L120 48Z',gold),
+ kitchen:()=>room()+r(12,69,104,34,blue,2)+r(9,63,110,8,brown,1)+r(15,18,38,30,cream,2)+r(68,18,43,30,cream,2)+r(22,76,31,23,ink,2)+r(27,81,21,12,blue,1)+[23,48].map(x=>e(x,60,9,3,ink)).join('')+p('M85 62V47Q85 35 97 47','none',ink,4)+e(91,64,17,4,'#afcdcf'),
+ photo:()=>r(10,11,108,105,'#fffdf4',4)+r(17,18,94,81,'#e2ede5',2)+human(40,42,red,.76)+human(84,40,blue,.8)+human(63,61,green,.51)+t('FAMILY',64,111,10),
+ children:()=>human(32,39,blue,.9,'wave')+human(91,39,red,.9,'wave')+g(gift(),44,76,.29)+ground(),
+ grandparents:()=>human(35,40,green,.9)+human(91,40,blue,.9)+p('M25 30Q36 12 45 30M81 29Q91 10 101 29','none','#c7cbbe',7)+p('M25 39H34M38 39H46M82 39H91M95 39H104','none',ink,2)+cap('grandparents'),
+ nurse:()=>room()+g(bed(),48,31,.53)+face(83,59,8)+human(29,39,blue,.93,'reach')+p('M53 63Q60 48 71 59','none',ink,2)+r(48,69,19,18,cream,2)+c(58,77,4,blue),
+ dentist:()=>room()+human(28,36,'#b7cecd',1,'reach')+p('M65 72H102L114 104H67Z',blue)+face(91,57,12,'open')+l(62,46,86,61,ink,2)+p('M107 28H85L79 44','none',ink,3)+e(80,44,12,5,gold),
+ baker:()=>human(30,40,cream,1,'hold')+p('M17 30Q8 12 23 16Q28 2 36 16Q52 13 44 30Z','#fffdf4')+r(63,29,55,65,ink,4)+r(70,42,41,38,red,2)+e(91,64,13,7,gold)+p('M86 60L90 65M95 60L99 65','none',brown,1.5)+e(77,103,24,8,brown)+e(78,100,21,10,gold)+p('M70 94L75 100M80 92L85 100','none',brown,2),
+ driver:()=>bus('BUS')+face(27,51,8)+p('M16 65Q25 55 37 65Z',ink)+c(28,66,7,'none')+p('M21 66a7 7 0 1 0 14 0a7 7 0 1 0 -14 0','none',ink,2)+a(8,10,24,34),
+ sailor:()=>p('M8 89H121L99 112H29Z',blue)+p('M28 61H108V89H28Z',cream)+human(66,32,blue,.78,'wave')+r(54,21,24,7,cream,1)+r(59,15,15,8,cream,2)+l(24,74,115,74,ink,2)+cap('working on a ship'),
+ gardener:()=>g(flower(true),73,56,.47)+g(flower(),93,55,.4)+human(31,36,green,.98,'reach')+l(59,47,56,65,skin,4)+p('M53 67Q42 61 44 76L53 78','none',blue,3)+r(53,65,27,20,blue,4)+p('M79 68L94 57L95 63L78 80Z',blue)+[96,104,112].map(x=>l(x,68,x+2,77,blue,1.5)).join('')+ground(),
+ vet:()=>human(28,34,'#b7cecd',1.1,'reach')+table(55,89,65)+g(dog(),58,42,.5)+p('M24 45Q34 74 54 66L88 77','none',ink,2)+c(88,77,4,blue),
+ librarian:()=>room()+shelf(74,17,40,69)+human(25,38,green,1,'point')+g(book('ABC'),47,60,.34)+human(91,68,blue,.55,'reach'),
+ writer:()=>g(chair(),4,24,.55)+human(32,34,green,.95,'sit')+table(51,74,67)+g(paper('A story'),65,48,.35)+p('M48 59L78 67','none',skin,4)+p('M73 63L83 72','none',gold,3),
+ photographer:()=>human(56,37,green,1.12,'hold')+r(52,49,35,24,ink,4)+c(72,61,9,blue)+r(57,44,14,7,ink,2)+p('M90 41L104 34M95 57H112M90 73L104 82','none',gold,2),
+ winner:()=>human(43,40,blue,1.1,'wave')+g(trophy(),73,54,.36)+r(21,103,84,11,gold,2)+t('1',64,112,10),
+ player:()=>human(56,34,green,1.15,'run')+r(50,50,15,13,cream,2)+t('7',58,60,8)+c(99,100,15,cream)+p('M98 90L107 99L102 108L91 105L89 96Z',ink)+ground(),
+ referee:()=>human(57,33,'#fffdf4',1.1,'point')+[49,55,61].map(x=>l(x,45,x,68,ink,2)).join('')+p('M63 36L85 44','none',ink,2)+c(87,44,4,ink)+p('M96 22L102 14M104 37H115','none',gold,2)+ground(),
+ band:()=>human(28,40,blue,.83,'hold')+human(91,40,red,.83,'hold')+e(35,78,14,19,brown)+c(36,74,5,ink)+l(38,70,55,49,gold,6)+p('M29 89L52 51M33 91L56 54','none',cream,1)+r(78,75,31,25,blue,5)+e(93,75,16,5,cream)+p('M77 66L92 78M108 66L96 79','none',brown,3)+t('♪',64,29,22)+ground(),
+ stage:()=>r(7,10,114,104,'#e8ddc7',1)+r(5,8,118,15,red,2)+p('M7 23H32L21 100H7ZM96 23H121V100H109Z',red)+r(9,101,110,14,brown,1)+human(48,44,blue,.83,'wave','open')+human(83,50,green,.73,'stand','open')+t('♪',64,38,20),
+ office:()=>room()+window()+g(chair(),11,30,.55)+human(35,44,blue,.85,'sit')+table(51,79,66)+g(laptop(),60,51,.4),
+ apartment:()=>r(23,8,83,105,'#c8c8b2',2)+[0,1,2].map(i=>[0,1,2].map(j=>r(32+j*23,18+i*28,16,20,i===1&&j===1?gold:blue,1)).join('')).join('')+p('M52 43H77V68H52Z','none',red,3)+a(8,81,49,61)+cap('one home in a building'),
+ supermarket:()=>room()+[13,63].map((x,i)=>r(x,18,41,66,brown,2)+[32,53,74].map((y,j)=>r(x+3,y-10,35,17,cream,0)+(j===0?[9,20,31].map((dx,k)=>c(x+dx,y,5,[red,gold,green][k])).join(''):j===1?[8,23].map(dx=>r(x+dx,y-8,10,17,'#fffdf4',1)+p(`M${x+dx} ${y-8}l5 -5l5 5Z`,blue)).join(''):[8,22].map(dx=>r(x+dx,y-9,11,17,i?green:blue,2)+l(x+dx,y-6,x+dx+11,y-6,cream,1)).join(''))).join('')).join('')+human(108,62,red,.65,'reach')+p('M69 87H103L99 106H75Z',blue,ink,1.5)+l(98,86,109,80,ink,2)+c(78,112,4,ink)+c(98,112,4,ink),
+ market:()=>shop('MARKET',human(33,52,green,.65)+r(19,76,91,22,brown,1)+[26,63,91].map(x=>food(x,71)).join(''))+human(108,74,blue,.48,'reach'),
+ bakery:()=>shop('BAKERY',r(22,46,83,50,blue,2)+r(26,78,77,20,brown,2)+[40,65,89].map(x=>e(x,71,11,8,gold)+l(x-3,67,x+2,73,brown,1.5)).join('')),
+ restaurant:()=>shop('RESTAURANT',table(23,83,73)+e(59,81,20,6,'#fffdf4')+human(108,43,green,.7,'hold')+g(chair(),4,57,.35)),
+ cafe:()=>shop('CAFE',g(window(),4,28,.8)+table(47,82,55)+r(58,65,13,16,blue,2)+p('M72 68Q83 70 72 77','none',blue,2)+g(chair(),18,60,.37)),
+ library:()=>room()+shelf(12,17,40,65)+shelf(75,17,40,65)+table(33,95,64)+g(openBook('ABC'),50,76,.28)+human(19,66,green,.52,'sit'),
+ zoo:async icon=>r(8,14,112,22,brown,2)+t('ZOO',64,30,15,cream)+await icon('giraffe',6,39,52)+await icon('elephant',66,48,55)+p('M9 108H119M17 100V115M38 100V115M60 100V115M82 100V115M104 100V115','none',green,3),
+ aquarium:async icon=>room()+r(13,23,100,64,ink,4)+r(18,28,90,54,blue,1)+await icon('fish',28,38,35)+await icon('fish',70,50,28)+p('M24 79L26 64M99 78L97 59','none',green,3)+human(60,89,red,.38),
+ farm:async icon=>g(house(),8,12,.55)+p('M16 41H66V79H16Z',red)+r(33,51,17,28,brown,1)+await icon('cow',64,45,53)+await icon('chicken',29,84,28)+p('M7 112H120','none',green,4)+sun(),
+ 'swimming pool':()=>r(9,20,110,91,'#d1d9cc',5)+r(17,33,94,66,blue,4)+p('M23 56Q35 47 48 56T73 56T104 56M23 82Q35 73 48 82T73 82T104 82','none','#d8eeeb',2)+p('M91 35V21Q86 7 81 21V50M102 35V21Q97 7 92 21V50M83 32H100M83 43H100','none',ink,3)+face(42,62,7)+face(62,74,5)+cap('an adult and a child'),
+ playroom:()=>room()+window()+g(basket(),10,59,.42)+c(94,88,15,gold)+r(50,91,18,18,red,2)+r(57,75,17,16,blue,2)+g(cat(),67,42,.28),
+ 'living room':()=>room()+window()+e(65,109,45,6,'#b9c8a5')+g(sofa(),22,33,.7),
+ 'dining room':()=>room()+window()+table(27,80,76)+g(chair(),5,57,.4)+g(chair(),87,57,.4)+e(64,79,20,5,'#fffdf4')+r(82,62,10,16,blue,2),
+ path:()=>p('M7 81Q61 60 121 79V115H7Z','#b6c89d')+p('M39 115Q78 92 58 77Q42 61 77 48','none','#d4bb91',16)+g(tree(),-3,23,.57)+g(tree(),76,21,.47)+human(70,65,blue,.54,'walk'),
+ boss:()=>human(29,49,blue,.72)+human(91,33,green,1)+g(paper('PLAN'),49,73,.32)+a(66,15,87,26)+cap('the boss leads the team'),
+ chief:()=>human(64,29,green,.82)+[26,100].map(x=>human(x,72,blue,.52)).join('')+p('M64 80V88H28M64 88H101','none',ink,2)+cap('a department chief'),
+ chairman:()=>human(64,43,green,.73,'point')+human(22,65,blue,.55,'sit')+human(107,65,red,.55,'sit')+e(64,85,54,19,brown)+a(10,13,54,32)+cap('leading the meeting'),
+ manager:()=>human(28,37,green,1,'point')+g(paper('PLAN'),69,33,.4)+l(74,65,95,65,green,3)+human(101,76,blue,.5)+cap('approving a team plan'),
+ minister:()=>g(house(),59,1,.5)+human(43,35,blue,.95)+r(22,68,44,43,brown,3)+t('PUBLIC',44,93,8,cream)+t('SERVICE',44,104,8,cream)+cap('a government minister'),
+ principal:()=>g(house(),60,3,.47)+t('SCHOOL',90,36,8)+human(29,35,green,1,'point')+human(91,71,blue,.55)+cap('leading a school'),
+ pioneer:()=>human(29,38,red,1,'point')+r(63,25,52,51,'#b9bca9',3)+r(70,32,38,30,ink,1)+t('01',89,52,12,green)+r(61,80,57,14,'#b9bca9',2)+t('early computer work',64,114,9),
+};

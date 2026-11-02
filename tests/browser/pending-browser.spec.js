@@ -9,9 +9,17 @@ test('pending browser supports independent search and pagination without selecti
  const saved=await page.evaluate(()=>localStorage.getItem('abc-module-content-v1'));
  const browser=page.locator('#pending-browser'),input=page.locator('#pending-page-input'),query=page.locator('#pending-query'),cards=page.locator('[data-pending-word]'),last=Math.ceil(PENDING_WORDS.length/12);
  await expect(browser).not.toHaveAttribute('open','');await browser.locator('summary').click();
+ if(PENDING_WORDS.length===0){
+  await expect(browser.locator('summary')).toContainText('0');await expect(cards).toHaveCount(0);
+  await expect(browser).toContainText('没有匹配的待完善单词');await expect(input).toBeDisabled();
+  await query.fill('percent');await expect(cards).toHaveCount(0);
+  await expect(page.locator('#selection-query')).toHaveValue('cat');
+  expect(await page.evaluate(()=>localStorage.getItem('abc-module-content-v1'))).toBe(saved);
+  await expect(page.locator('[data-selected-word]')).toHaveCount(1);return;
+ }
  await expect(browser).toContainText('暂时不能选入学习范围');await expect(cards).toHaveCount(12);
  await expect(browser.locator('[data-learning="select-word"],[data-learning="select-matches"]')).toHaveCount(0);
- await input.fill('100');await input.press('Enter');await expect(browser.getByRole('status')).toHaveText(`${PENDING_WORDS.length} 个 · 100/${last}`);await expect(cards.first()).toHaveAttribute('data-pending-word',PENDING_WORDS[99*12].id);
+ const jump=Math.min(100,last);await input.fill(String(jump));await input.press('Enter');await expect(browser.getByRole('status')).toHaveText(`${PENDING_WORDS.length} 个 · ${jump}/${last}`);await expect(cards.first()).toHaveAttribute('data-pending-word',PENDING_WORDS[(jump-1)*12].id);
  await browser.getByRole('button',{name:'末页',exact:true}).click();await expect(input).toHaveValue(String(last));await expect(cards).toHaveCount(PENDING_WORDS.length%12||12);await expect(browser.getByRole('button',{name:'下一页',exact:true})).toBeDisabled();
  await browser.getByRole('button',{name:'首页',exact:true}).click();await expect(input).toHaveValue('1');
  for(const value of ['0',String(last+1),'1.5','']){await input.fill(value);await browser.getByRole('button',{name:'跳转',exact:true}).click();await expect(browser.getByRole('status')).toHaveText(`${PENDING_WORDS.length} 个 · 1/${last}`);}
