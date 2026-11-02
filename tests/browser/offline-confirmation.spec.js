@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 import {openParents} from './parent-helpers.js';
 test('confirmation is modal, stable on repeated preparation and restores focus on dismissal',async({page},info)=>{
- await openParents(page,true);const download=page.locator('[data-offline-category="pictures"] [data-action="offline-download"]');await expect(download).toBeEnabled();await download.click();
+ await openParents(page,true);await page.locator('#offline-settings>summary').click();const download=page.locator('[data-offline-category="pictures"] [data-action="offline-download"]');await expect(download).toBeEnabled();await download.click();
  const dialog=page.getByRole('dialog',{name:'确认离线下载'}),panel=dialog.locator('.offline-estimate');await expect(dialog).toBeVisible();await expect(panel).toBeFocused();await expect(dialog).toBeInViewport({ratio:.95});expect(await dialog.evaluate(el=>el.matches(':modal'))).toBe(true);
  await page.evaluate(()=>{window.confirmationNode=document.querySelector('#offline-plan .offline-estimate');});
  // A queued duplicate click must not destroy the visible confirmation or make it flash.

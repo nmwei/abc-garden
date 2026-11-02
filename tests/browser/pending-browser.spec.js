@@ -8,15 +8,15 @@ test('pending browser supports independent search and pagination without selecti
  await page.locator('#selection-query').fill('cat');await page.getByRole('button',{name:'选择 cat',exact:true}).click();
  const saved=await page.evaluate(()=>localStorage.getItem('abc-module-content-v1'));
  const browser=page.locator('#pending-browser'),input=page.locator('#pending-page-input'),query=page.locator('#pending-query'),cards=page.locator('[data-pending-word]'),last=Math.ceil(PENDING_WORDS.length/12);
- await expect(browser).not.toHaveAttribute('open','');await browser.locator('summary').click();
  if(PENDING_WORDS.length===0){
-  await expect(browser.locator('summary')).toContainText('0');await expect(cards).toHaveCount(0);
-  await expect(browser).toContainText('没有匹配的待完善单词');await expect(input).toBeDisabled();
-  await query.fill('percent');await expect(cards).toHaveCount(0);
+  await expect(browser).toHaveCount(0);await expect(page.locator('#word-editor')).not.toContainText('0 个词待完善');
   await expect(page.locator('#selection-query')).toHaveValue('cat');
   expect(await page.evaluate(()=>localStorage.getItem('abc-module-content-v1'))).toBe(saved);
   await expect(page.locator('[data-selected-word]')).toHaveCount(1);return;
  }
+ await expect(browser).not.toHaveAttribute('open','');
+ expect(await browser.evaluate(el=>!!(document.querySelector('#selection-chosen').compareDocumentPosition(el)&Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+ await browser.locator('summary').click();
  await expect(browser).toContainText('暂时不能选入学习范围');await expect(cards).toHaveCount(12);
  await expect(browser.locator('[data-learning="select-word"],[data-learning="select-matches"]')).toHaveCount(0);
  const jump=Math.min(100,last);await input.fill(String(jump));await input.press('Enter');await expect(browser.getByRole('status')).toHaveText(`${PENDING_WORDS.length} 个 · ${jump}/${last}`);await expect(cards.first()).toHaveAttribute('data-pending-word',PENDING_WORDS[(jump-1)*12].id);

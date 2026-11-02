@@ -13,13 +13,15 @@ test('four download categories cover only released words and preserve other lear
  for(const p of manifest.packs)for(const f of p.files)expect(manifest.resources[f]).toBeDefined();
 });
 test('category controls plan independently, retain pictures and reuse them for all download',async({page},info)=>{
- test.setTimeout(90000);await openParents(page,true);await expect(page.locator('#offline-download')).toBeEnabled();await expect(page.locator('.offline-category')).toHaveCount(4);await expect(page.locator('#offline-download')).toHaveText('下载全部素材');await expect(page.locator('#offline-clear')).toHaveText('清理全部素材');await expect(page.locator('[data-action=offline-clear-pack]')).toHaveCount(4);
+ test.setTimeout(90000);await openParents(page,true);await page.locator('#offline-settings>summary').click();await expect(page.locator('#offline-download')).toBeEnabled();await expect(page.locator('.offline-category')).toHaveCount(4);await expect(page.locator('#offline-download')).toHaveText('下载全部素材');await expect(page.locator('#offline-clear')).toHaveText('清理全部素材');await expect(page.locator('[data-action=offline-clear-pack]')).toHaveCount(4);
  for(const [id,title] of [['pictures','词卡图片'],['word-audio','单词读音'],['sentence-audio','例句读音'],['other','其他内容']]){
   await page.locator(`[data-offline-category="${id}"] [data-action="offline-download"]`).click();await expect(page.locator('#offline-plan h3')).toHaveText(title);await expect(page.locator('#offline-plan')).toContainText('本次需下载');await page.getByRole('button',{name:'暂不下载',exact:true}).click();
  }
  const before=await send(page,'PLAN_PACK','all');
  await page.locator('[data-offline-category="pictures"] [data-action="offline-download"]').click();await page.getByRole('button',{name:'确认下载',exact:true}).click();await expect(page.locator('#offline-progress')).toContainText('词卡图片已下载并校验',{timeout:60000});
  await expect(page.locator('[data-offline-category="pictures"] [data-action="offline-download"]')).toHaveText('已下载');await expect(page.locator('[data-offline-category="pictures"] [data-action="offline-download"]')).toBeDisabled();await expect(page.locator('[data-offline-category="word-audio"] [data-action="offline-download"]')).toBeEnabled();
+ await expect(page.locator('#offline-bar')).toBeHidden();await expect(page.locator('#offline-activity')).toBeHidden({timeout:5000});
+ await expect(page.locator('#offline-settings')).toHaveAttribute('open','');
  const after=await send(page,'PLAN_PACK','all');expect(after.neededBytes).toBeLessThan(before.neededBytes);expect((await send(page,'PLAN_PACK','pictures')).neededBytes).toBe(0);
  const state=await send(page,'CHECK_OFFLINE');expect(state.selected).toEqual(['pictures']);expect(state.allReady).toBe(false);
  await page.locator('#offline-download').click();await expect(page.getByRole('button',{name:'确认下载全部内容',exact:true})).toBeEnabled();await page.getByRole('button',{name:'暂不下载',exact:true}).click();
