@@ -1,3 +1,4 @@
+import {VoiceSettings} from './voice-settings.js';
 import {mountParentHold} from './parent-gate.js';
 import {MasteryStore,MASTERY_KEY} from './mastery.js';
 import {OfflineLibrary} from './offline.js';
@@ -16,6 +17,7 @@ const offline=new OfflineLibrary(toast,()=>{if(!learning.flush())return false;fo
 const PREFERENCES_KEY='abc-garden-preferences-v2';
 try{const saved=localStorage.getItem(PREFERENCES_KEY)||localStorage.getItem(STORAGE_KEY);if(saved){const previous=sanitizeState(JSON.parse(saved));state.settings=previous.settings;state.customAudio=previous.customAudio;}}catch{storageWarning='偏好暂时无法读取，仍可直接练习。';}
 const audio=new GardenAudio(()=>({}),toast);
+const voiceSettings=new VoiceSettings(audio);
 const follow=new FollowAlong(()=>({}),updateFollow);
 window.addEventListener('pagehide',()=>follow.stop(false));
 const mastery=new MasteryStore(toast);
@@ -96,7 +98,7 @@ function practice(){
 }
 function parents(){
  if(!draft)draft=structuredClone(state.settings);
- return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>选择字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
+ return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>选择字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${voiceSettings.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
 }
 
 function saveLetters(){
@@ -139,6 +141,7 @@ app.addEventListener('click',event=>{
   const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){learning.stop();follow.stop(false);course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
+  if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}
   if(action==='letter-loop'){if(follow.status==='playing'&&follow.loop){follow.stop();return;}audio.stop();highlightRequest++;follow.start(selectedLetters(),{loop:true});return;}
   if(action==='letter-follow'){if(!selectedLetters().includes(button.dataset.letter))return;audio.stop();highlightRequest++;clearSoundHighlight();follow.stop(false);libraryLetter=button.dataset.letter;render();follow.start([libraryLetter]);return;}
   follow.stop();
@@ -183,6 +186,7 @@ app.addEventListener('click',event=>{
 });
 app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
+app.addEventListener('change',event=>{if(event.target.id==='chinese-voice')voiceSettings.save(event.target.value);});
 app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
 app.addEventListener('submit',event=>{

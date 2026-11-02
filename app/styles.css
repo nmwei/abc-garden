@@ -223,3 +223,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 .word-browser .word-list [data-course="word"]{justify-content:center}
 .word-browser .word-list [data-course="word"]>.word-status-slot:empty{display:none}
+
+.voice-controls{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}.voice-controls label{display:flex;flex:1;min-width:180px;flex-direction:column;gap:8px}.voice-controls select{width:100%;min-width:0;height:48px;min-height:48px;padding:10px;font:inherit;border:1px solid var(--line);border-radius:12px;background:#fffdf6;color:inherit}.voice-controls .button{flex:none}

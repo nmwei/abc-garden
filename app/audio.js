@@ -1,3 +1,4 @@
+import {pickVoice} from './voice-settings.js';
 // Recorded clips and device speech share one cancellable queue.
 export class GardenAudio {
   constructor(customAudio,onError){
@@ -23,8 +24,8 @@ export class GardenAudio {
     if(!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return Promise.resolve(false);
     const speech=globalThis.speechSynthesis,utterance=new SpeechSynthesisUtterance(text);
     utterance.lang=lang;utterance.rate=.85;
-    const voice=speech.getVoices().find(v=>v.lang.toLowerCase()===lang.toLowerCase())||speech.getVoices().find(v=>v.lang.startsWith(lang.split('-')[0]));
-    if(voice)utterance.voice=voice;
+    const voice=pickVoice(speech.getVoices(),lang);
+    if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
     return new Promise(resolve=>{
       let settled=false;
       const finish=ok=>{if(settled)return;settled=true;clearTimeout(timer);utterance.onend=null;utterance.onerror=null;if(this.cancelWait===cancel)this.cancelWait=null;if(!ok)speech.cancel();resolve(ok);};

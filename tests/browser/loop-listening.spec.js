@@ -96,3 +96,12 @@ test('iPad speech is unlocked by the loop tap before asynchronous English playba
  await page.getByRole('button',{name:'字母朋友',exact:true}).click();
  expect(await page.locator('#garden-audio').evaluate(a=>a.paused&&!a.getAttribute('src'))).toBe(true);
 });
+test('word tap reads current meaning after English; quizzes and English follow do not',async({page})=>{
+ await page.addInitScript(()=>{
+ localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['apple','cat'],wordMeanings:{apple:'大苹果'}}));window.spoken=[];
+ Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{if(u.volume===0)return;window.spoken.push(u.text);queueMicrotask(()=>u.onend?.());},cancel:()=>{}}});
+ });
+ await page.goto('/#/words');await page.getByRole('button',{name:'听单词',exact:true}).click();await end(page);await expect.poll(()=>page.evaluate(()=>window.spoken)).toEqual(['大苹果']);
+ await page.locator('[data-mode=listen]').click();await page.getByRole('button',{name:'听题目',exact:true}).click();await end(page);await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>!a.getAttribute('src'))).toBe(false);expect(await page.evaluate(()=>window.spoken)).toEqual(['大苹果']);
+ await page.locator('[data-mode=learn]').click();await page.locator('.word-follow-extra summary').click();await page.getByRole('button',{name:'英文连续跟读',exact:true}).click();await end(page);await page.getByRole('button',{name:'停止',exact:true}).click();expect(await page.evaluate(()=>window.spoken)).toEqual(['大苹果']);
+});

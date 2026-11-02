@@ -8,3 +8,5 @@ playwright-report/
 .playwright-cli/
 .audio-env/
 .audio-cache/
+
+.build-cache/

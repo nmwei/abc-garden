@@ -1,7 +1,8 @@
 // Push the existing source commit and a fresh site snapshot atomically.
 import {execFileSync,spawn} from 'node:child_process';
-import {mkdtemp,readdir,lstat,rm,writeFile} from 'node:fs/promises';
+import {mkdtemp,rm,writeFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
+import {snapshotTree} from './publish-tree.mjs';
 import {join,resolve} from 'node:path';
 import {parseArgs} from 'node:util';
 
@@ -16,7 +17,7 @@ const sourceCommit=localGit(['rev-parse','HEAD']);
 const directory=await mkdtemp(join(tmpdir(),'abc-garden-publish-'));
 const authorName=execFileSync('git',['config','--global','--get','user.name'],{encoding:'utf8'}).trim()||owner;
 // Respect an explicit SSH transport override (for example, an alternate GitHub endpoint).
-const env={...process.env,GIT_AUTHOR_NAME:authorName,GIT_COMMITTER_NAME:authorName,GIT_AUTHOR_EMAIL:`${owner}@users.noreply.github.com`,GIT_COMMITTER_EMAIL:`${owner}@users.noreply.github.com`,GIT_SSH_COMMAND:process.env.GIT_SSH_COMMAND||'ssh -o BatchMode=yes -o StrictHostKeyChecking=yes'};
+const env={...process.env,GIT_ALTERNATE_OBJECT_DIRECTORIES:[localGit(['rev-parse','--path-format=absolute','--git-path','objects']),process.env.GIT_ALTERNATE_OBJECT_DIRECTORIES].filter(Boolean).join(':'),GIT_INDEX_FILE:join(directory,'index'),GIT_AUTHOR_NAME:authorName,GIT_COMMITTER_NAME:authorName,GIT_AUTHOR_EMAIL:`${owner}@users.noreply.github.com`,GIT_COMMITTER_EMAIL:`${owner}@users.noreply.github.com`,GIT_SSH_COMMAND:process.env.GIT_SSH_COMMAND||'ssh -o BatchMode=yes -o StrictHostKeyChecking=yes'};
 const git=(args,input)=>{
   const attempts=['fetch','ls-remote'].includes(args[0])?3:1;
   for(let attempt=1;attempt<=attempts;attempt++){
@@ -32,24 +33,14 @@ try{
     const match=refs.split('\n').find(line=>line.endsWith(`\trefs/heads/${branch}`));
     if(match){git(['fetch','--quiet',remote,`refs/heads/${branch}:refs/heads/${branch}`]);parent[branch]=git(['rev-parse',`refs/heads/${branch}`]);}
   }
-  async function tree(path,names){
-    const entries=[];
-    for(const name of (names||await readdir(path)).sort()){
-      const full=join(path,name),stat=await lstat(full);
-      if(stat.isSymbolicLink())throw new Error(`Refuse symlink: ${full}`);
-      if(stat.isDirectory())entries.push(`040000 tree ${await tree(full)}\t${name}`);
-      else if(stat.isFile())entries.push(`100644 blob ${git(['hash-object','-w','--',full])}\t${name}`);
-    }
-    return git(['mktree'],entries.join('\n')+'\n');
-  }
   git(['fetch','--quiet',resolve('.'),`${sourceCommit}:refs/heads/source`]);
   if(parent.main)git(['merge-base','--is-ancestor',parent.main,sourceCommit]);
   // Build only after checking ancestry; never deploy a stale dist directory.
   execFileSync(process.execPath,['scripts/build.mjs'],{stdio:'inherit'});
   if(localGit(['status','--porcelain'])||localGit(['rev-parse','HEAD'])!==sourceCommit)throw new Error('Source changed during build; commit and retry.');
-  const siteTree=await tree(resolve('dist'));
+  const siteTree=await snapshotTree(resolve('dist'),git);
   const siteCommit=git(['commit-tree',siteTree,...(parent['gh-pages']?['-p',parent['gh-pages']]:[]),'-m',values.message||`deploy: ${sourceCommit.slice(0,12)}`]);
-  console.log('Committed source and fresh site snapshot prepared. Uploading audio and code…');
+  console.log('Committed source and fresh site snapshot prepared. Uploading changed source and site objects…');
   await new Promise((resolve,reject)=>{
     const child=spawn('git',['--git-dir',directory,'push','--progress','--atomic',remote,`${sourceCommit}:refs/heads/main`,`${siteCommit}:refs/heads/gh-pages`],{env,stdio:['ignore','inherit','inherit']});
     const timer=setTimeout(()=>child.kill('SIGTERM'),10*60000);
