@@ -35,6 +35,7 @@ export class MasteryStore {
   try{const next=cleanMastery(JSON.parse(localStorage.getItem(MASTERY_KEY)||'null'));const result=update(next);localStorage.setItem(MASTERY_KEY,JSON.stringify(next));this.data=next;return result;}
   catch{this.toast('掌握状态未保存，可能是设备存储不可用。请稍后再试。');return false;}
  }
+ set(word,mastered){return this.change(data=>{setMastery(data,word,mastered);return true;});}
  toggle(word){word=canonicalWordId(word);return this.change(data=>{const value=!data.entries[word]?.mastered;setMastery(data,word,value);return true;});}
  record(word,evidence){return this.change(data=>recordMastery(data,word,evidence));}
 }

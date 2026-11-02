@@ -96,7 +96,7 @@ function practice(){
 }
 function parents(){
  if(!draft)draft=structuredClone(state.settings);
- return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>学习哪些字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
+ return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>选择字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
 }
 
 function saveLetters(){
@@ -187,12 +187,7 @@ app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
 app.addEventListener('submit',event=>{
  if(event.target.id==='word-meaning-form'){event.preventDefault();learning.saveMeaning(event.target);return;}
- const prefix=({'selection-page-form':'selection','pending-page-form':'pending'})[event.target.id];if(!prefix)return;
- event.preventDefault();const form=event.target;if(!form.reportValidity())return;
- const page=Number(form.querySelector(`#${prefix}-page-input`).value);
- learning.action({dataset:{learning:`${prefix}-page`,page:String(page-1)}}).catch(()=>toast('翻页没有完成，请再试一次。'));
 });
-app.addEventListener('change',event=>{if(event.target.id==='selection-topic'){learning.topic=event.target.value;learning.page=0;learning.paint();}});
 document.addEventListener('keydown',event=>{
   if(!modal)return;
   if(event.key==='Escape'){closeModal();return;}

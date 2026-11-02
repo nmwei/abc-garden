@@ -19,11 +19,11 @@ export class GardenAudio {
       speech.speak(silent);speech.cancel();
     }catch{/* The normal speech step reports unavailable synthesis. */}
   }
-  speak(text){
+  speak(text,lang='zh-CN'){
     if(!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return Promise.resolve(false);
     const speech=globalThis.speechSynthesis,utterance=new SpeechSynthesisUtterance(text);
-    utterance.lang='zh-CN';utterance.rate=.85;
-    const voice=speech.getVoices().find(v=>/^zh[-_]CN$/i.test(v.lang))||speech.getVoices().find(v=>/^zh/i.test(v.lang));
+    utterance.lang=lang;utterance.rate=.85;
+    const voice=speech.getVoices().find(v=>v.lang.toLowerCase()===lang.toLowerCase())||speech.getVoices().find(v=>v.lang.startsWith(lang.split('-')[0]));
     if(voice)utterance.voice=voice;
     return new Promise(resolve=>{
       let settled=false;
@@ -42,9 +42,9 @@ export class GardenAudio {
       const key=sequence[index];
       onClip?.(index);
       if(typeof key==='object'&&key.text){
-        const ok=await this.speak(key.text);
+        const ok=await this.speak(key.text,key.lang);
         if(token!==this.token)return false;
-        if(!ok){this.onError?.('中文朗读未能播放，请检查设备的中文语音后重试。');return false;}
+        if(!ok){this.onError?.('朗读未能播放，请检查设备的对应语言语音后重试。');return false;}
         continue;
       }
       const audio=this.element;audio.src=typeof key==='object'?key.src:this.customAudio()[key]||`./assets/audio/${key}.wav`;

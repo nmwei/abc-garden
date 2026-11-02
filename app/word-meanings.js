@@ -1,18 +1,30 @@
+import {sentenceMeaning} from './sentence-meanings.js';
 import {CATALOG_BY_ID} from './course-content.js';
 import {canonicalWordId} from './word-aliases.js';
 
-// Store only personal glosses; catalog identity, examples and audio stay canonical.
+// Legacy string glosses and structured personal content share the same catalog identity.
 export function cleanWordMeanings(input){
  const result=Object.create(null);
  if(!input||typeof input!=='object'||Array.isArray(input))return result;
  for(const [rawId,value] of Object.entries(input)){
   const id=canonicalWordId(rawId),word=CATALOG_BY_ID.get(id);
-  if(!word||typeof value!=='string')continue;
+  if(!word)continue;
+  if(value&&typeof value==='object'&&!Array.isArray(value)){
+   const fields={};
+   for(const key of ['zh','sentence','sentenceZh']){const text=value[key];if(typeof text==='string'&&text.trim()&&text.trim().length<= (key==='zh'?160:500)&&!/[\r\n]/.test(text)&&text.trim()!==word[key])fields[key]=text.trim();}
+   if(Object.keys(fields).length)result[id]=fields;
+   continue;
+  }
+  if(typeof value!=='string')continue;
   const zh=value.trim();
   if(zh&&zh.length<=160&&!/[\r\n]/.test(zh)&&zh!==word.zh)result[id]=zh;
  }
  return result;
 }
 export function withWordMeaning(word,meanings){
- return word&&meanings&&Object.hasOwn(meanings,word.id)?{...word,zh:meanings[word.id]}:word;
+ if(!word)return word;
+ const override=meanings&&Object.hasOwn(meanings,word.id)?meanings[word.id]:{};
+ const result={...word,...(typeof override==='string'?{zh:override}:override)};
+ result.sentenceZh=result.sentenceZh?.trim()||sentenceMeaning(result.sentence||'');
+ return result;
 }
