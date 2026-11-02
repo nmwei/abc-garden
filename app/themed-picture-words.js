@@ -5199,14 +5199,14 @@ export const THEMED_PICTURE_WORDS=[
   "潜水",
   "sports",
   "1f93f",
-  "The diver wears a mask."
+  "She is diving under the water."
  ],
  [
   "surfing",
   "冲浪",
   "sports",
   "1f3c4",
-  "The surfer rides a wave."
+  "He is surfing on a wave."
  ],
  [
   "rowing",

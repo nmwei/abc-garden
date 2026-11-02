@@ -44983,5 +44983,131 @@
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "changes": "Original vector component",
     "sha256": "4d7bb30831c5401241ff1aca0b2cfb661f0b4c19af374ad15191991ae87dbce8"
+  },
+  {
+    "file": "pictures/refined-fork.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "426525c7431967234ec2c6702cdae94ee85d49405eb5309ca2865d3722545020"
+  },
+  {
+    "file": "pictures/refined-knife.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "617d8e872a48554ed4d01d7d6117d51b6a6d8983683d5c27d9034d1660feff75"
+  },
+  {
+    "file": "pictures/refined-lamp.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "08d6a9f25f8a9b9bcb2963de3c837e1b65c8a7a7fd2bc779b5191c85131eb280"
+  },
+  {
+    "file": "pictures/refined-grape.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "39d9cb502a00946ba46596c2355ba89479373598f8289fbbbe2a611edaa55266"
+  },
+  {
+    "file": "pictures/refined-noon.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "b2c40adeeb64e7cf2c778ac03ef2de3497d30c67c1a50ddfb63ecc73ada2e8e1"
+  },
+  {
+    "file": "pictures/refined-midnight.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "3c843944357db7133c101a6b15b34afb9e93a30ad3bc1bc49a77da6692593045"
+  },
+  {
+    "file": "pictures/refined-jump.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "4ff0dfa1498028edb35e066c23ebcde77a60d7783e90843d98a7e295577d2ae3"
+  },
+  {
+    "file": "pictures/refined-coach.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "c73ee6fb303ceda0c4f450bea040ecb2be5fae360e7d232a047c5a2946b32c03"
+  },
+  {
+    "file": "pictures/refined-cover.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "83a75c53f5b53021ff72c93d9238051be50e35bb24e16ba633c03328afc95bdc"
+  },
+  {
+    "file": "pictures/refined-close.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "cfcf280abecb227c0016578ccb21bd57100afcfb021f17fc2fbdeb2f32fc84fb"
+  },
+  {
+    "file": "pictures/refined-announce.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "7939edd27e188554490ba11e311f50eb0aac526562a37db930c0458e2f4eb842"
+  },
+  {
+    "file": "pictures/refined-charity.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "9c346f4d00fd19c0723aa568955064cc8712511d8b4fa582984f1a04eaaff9b4"
+  },
+  {
+    "file": "pictures/refined-increase.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "d718acdfccca212a3402c520008eed1c4c9c26738c6d6da81f73b3d38b267382"
+  },
+  {
+    "file": "pictures/refined-research.svg",
+    "author": "ABC Garden project",
+    "source": "Project-authored follow-up SVG; scripts/pictures/refinement-scenes.mjs",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "changes": "Isolated teaching illustration; shared historical components remain unchanged.",
+    "sha256": "148d00b82355f864d028ca1c8b1fcd2e52a291c4c2e9e8aaedfcd126a6df0924"
   }
 ]

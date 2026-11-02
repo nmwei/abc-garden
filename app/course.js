@@ -2,13 +2,13 @@ import {matchesWord} from './word-aliases.js';
 import {wordLibrary} from './word-library.js';
 import {sentenceMeaning} from './sentence-meanings.js';
 import {wordCardBody,sentenceCreditDetails} from './word-card.js';
-import {WORDS,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from './course-content.js';
+import {WORDS,WORD_BY_ID,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from './course-content.js';
 import {recordLearning,reviewWords,normalizeWord} from './course-core.js';
 import {LocalRecorder} from './recorder.js';
 const PAGE_SIZE=12;
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const button=(action,text,extra='',primary=false)=>`<button class="button ${primary?'primary':'secondary'}" data-course="${action}" ${extra}>${text}</button>`;
-export const wordPicture=(id,alt='')=>`<img class="word-picture" src="./assets/pictures/${id}.svg" alt="${esc(alt)}" width="128" height="128" loading="lazy" decoding="async">`;
+export const wordPicture=(id,alt='')=>`<img class="word-picture" src="${WORD_BY_ID.get(id)?.image||`./assets/pictures/${id}.svg`}" alt="${esc(alt)}" width="128" height="128" loading="lazy" decoding="async">`;
 export class Course {
  constructor({getState,save,audio,toast,refresh,customWords,mastery}){
   Object.assign(this,{getState,save,audio,toast,refresh,customWords,mastery});this.masteryFilter='learning';this.view='map';this.topic='all';this.wordPage=0;this.wordQuery='';this.word=null;this.mode='learn';this.review=false;
