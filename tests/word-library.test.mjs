@@ -8,7 +8,7 @@ test('selection migrates known words in order, excludes unknowns and keeps catal
  assert.deepEqual(selectedWordIds({selectedWordIds:[],words:'ball'}),[]);
  assert.deepEqual(selectedWordIds({words:'cat\nbecause'}),['cat']);
  assert.deepEqual(selectedWordIds({selectedWordIds:['because']}),['because']);
- const lib=wordLibrary([{word:'cat',sentence:'changed'},{word:'apple'},{word:'cat'}]);assert.equal(lib.all,WORDS);assert.deepEqual(lib.selected.map(w=>w.id),['cat','apple']);assert.notEqual(lib.selected[0].sentence,'changed');
+ const lib=wordLibrary([{word:'cat',sentence:'changed'},{word:'apple'},{word:'cat'}]);assert.deepEqual(lib.all.map(w=>w.id),WORDS.map(w=>w.id));assert.equal(lib.all.find(w=>w.id==='apple').sentenceZh,'我喜欢苹果。');assert.deepEqual(lib.selected.map(w=>w.id),['cat','apple']);assert.notEqual(lib.selected[0].sentence,'changed');
 });
 
 test('only pictured canonical cards are learnable; pending selections survive',()=>{

@@ -10,5 +10,5 @@ export function selectedWordIds(data){
 }
 export function wordLibrary(rows=[],meanings={}){
  const selected=[...new Set(rows.map(row=>canonicalWordId(row.word)))].map(id=>withWordMeaning(WORD_BY_ID.get(id),meanings)).filter(w=>w?.image);
- return {all:Object.keys(meanings).length?READY_WORDS.map(w=>withWordMeaning(w,meanings)):READY_WORDS,selected};
+ return {all:READY_WORDS.map(w=>withWordMeaning(w,meanings)),selected};
 }

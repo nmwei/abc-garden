@@ -15,3 +15,15 @@ test('personal glosses survive sanitization and override every library view with
  assert.equal(wordLibrary([{word:'walk'}],{}).selected[0].zh,'走');
  assert.deepEqual({...cleanWordMeanings({walk:'走'})},{});
 });
+test('structured edits preserve identity, survive reload and are shared by both views',()=>{
+ const data=cleanWeekly({wordMeanings:{walk:{zh:'散步',sentence:'We walk home.',sentenceZh:'我们走回家。',audio:'bad'}}});
+ const reloaded=cleanWeekly(JSON.parse(JSON.stringify(data)));
+ const lib=wordLibrary([{word:'walk'}],reloaded.wordMeanings);
+ for(const w of [lib.selected[0],lib.all.find(w=>w.id==='walk')]){assert.equal(w.zh,'散步');assert.equal(w.sentence,'We walk home.');assert.equal(w.sentenceZh,'我们走回家。');assert.equal(w.audio,CATALOG_BY_ID.get('walk').audio);}
+ assert.notEqual(CATALOG_BY_ID.get('walk').sentence,'We walk home.');
+});
+test('missing and blank translations fall back to the current sentence, never a different sentence',async()=>{
+ const {withWordMeaning}=await import('../app/word-meanings.js');
+ for(const sentenceZh of [undefined,'','   '])assert.equal(withWordMeaning({id:'apple',sentence:'I like apples.',sentenceZh},{}).sentenceZh,'我喜欢苹果。');
+ assert.equal(withWordMeaning({id:'apple',sentence:'A completely custom sentence.',sentenceZh:''},{}).sentenceZh,'');
+});
