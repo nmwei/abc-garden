@@ -1,3 +1,4 @@
+import {VoiceSettings} from './voice-settings.js';
 import {mountParentHold} from './parent-gate.js';
 import {MasteryStore,MASTERY_KEY} from './mastery.js';
 import {OfflineLibrary} from './offline.js';
@@ -16,6 +17,7 @@ const offline=new OfflineLibrary(toast,()=>{if(!learning.flush())return false;fo
 const PREFERENCES_KEY='abc-garden-preferences-v2';
 try{const saved=localStorage.getItem(PREFERENCES_KEY)||localStorage.getItem(STORAGE_KEY);if(saved){const previous=sanitizeState(JSON.parse(saved));state.settings=previous.settings;state.customAudio=previous.customAudio;}}catch{storageWarning='偏好暂时无法读取，仍可直接练习。';}
 const audio=new GardenAudio(()=>({}),toast);
+const voiceSettings=new VoiceSettings(audio);
 const follow=new FollowAlong(()=>({}),updateFollow);
 window.addEventListener('pagehide',()=>follow.stop(false));
 const mastery=new MasteryStore(toast);
@@ -31,14 +33,16 @@ const modeLabel=mode=>mode==='both'?'名称和字母音':mode==='sound'?'字母�
 const glyph=(letter,letterCase)=>letterCase==='lower'?letter.toLowerCase():letter;
 let disposeParentHold=null,letterSaveMessage='';
 function enterParents(){draft=structuredClone(state.settings);go('parents');offline.check();}
-function requestParents(){if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
+function requestParents(){pauseSong();if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
 function showModal(kind){modal=kind;renderModal();}
-function go(page){if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(libraryActivity!=='listen'&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
+function go(page){if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(!['listen','song'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
 function header(){return `<header class="topbar"><button class="brand" data-action="home" aria-label="字母小花园首页">${icon('sprout')}<span><strong>字母小花园</strong><small>ABC GARDEN</small></span></button><nav class="nav" aria-label="主导航"><button data-action="library" class="${route==='letters'?'active':''}" ${route==='letters'?'aria-current="page"':''}>${icon('book')}字母朋友</button><button data-action="words" class="${route==='words'?'active':''}" ${route==='words'?'aria-current="page"':''}>看图学词</button><button data-action="learn" class="${route==='learn'?'active':''}" ${route==='learn'?'aria-current="page"':''}>成长地图</button><button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" ${route==='parents'?'aria-current="page"':''}>${icon('heart')}家长小角</button></nav></header>`;}
 function footer(){return `<footer class="footer"><span>小小的尝试，也在悄悄长大。</span><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
+function pauseSong(){document.querySelector('#alphabet-song')?.pause();}
 function render(){
+  pauseSong();
   const focusId=document.activeElement?.id;
-  app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<main id="main" class="page ${route==='letters'&&libraryActivity!=='listen'?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div>`;
+  app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div>`;
   if(['learn','words'].includes(route))course.mount();
   if(route==='letters')updateFollow();
   if(route==='parents')offline.paintUpdates();
@@ -76,7 +80,8 @@ function updateFollow(){
 function library(){
   const letters=selectedLetters();if(!letters.includes(libraryLetter))libraryLetter=letters[0];
   const letter=byLetter(libraryLetter);
-  const tabs=`<div class="activity-switch" role="group" aria-label="字母练习方式">${[['library','认识字母','listen'],['module-pair','大小写配对','pair'],['module-choose','听音找字母','choose']].map(([action,label,id])=>`<button data-action="${action}" aria-pressed="${libraryActivity===id}">${label}</button>`).join('')}</div>`;
+  const tabs=`<div class="activity-switch" role="group" aria-label="字母练习方式">${[['library','认识字母','listen'],['module-pair','大小写配对','pair'],['module-choose','听音找字母','choose'],['letter-song','字母跟唱','song']].map(([action,label,id])=>`<button data-action="${action}" aria-pressed="${libraryActivity===id}">${label}</button>`).join('')}</div>`;
+  if(libraryActivity==='song')return `<section class="library-head"><div><p class="eyebrow">SING ALONG</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听，跟着唱，让字母变熟悉。</p></div></section>${tabs}<section class="panel letter-song"><div class="song-heading"><div><span class="song-tag">老师推荐</span><h2>跟老师唱字母</h2><p class="micro">A–Z 字母跟唱 · 约 1 分钟</p></div></div><video id="alphabet-song" controls playsinline preload="none" poster="./assets/videos/alphabet-singalong.jpg" aria-label="跟老师唱字母视频"><source src="./assets/videos/alphabet-singalong.mp4" type="video/mp4">当前浏览器不支持视频播放。</video><p class="micro song-note">先听一遍，再跟着唱。完整播放 A–Z，不受所选字母范围限制。</p></section>`;
   if(libraryActivity!=='listen')return `<section class="library-head"><div><h1 class="page-title">字母朋友</h1><p class="subtitle">当前范围：${[...learning.data.letters].join(' · ')}。忘记了也可以听提示。</p></div></section>${tabs}${practice()}`;
   return `<section class="library-head"><div><p class="eyebrow">MEET THE LETTERS</p><h1 class="page-title">字母朋友</h1><p class="subtitle" id="letter-range">本次学习：${letters.join(' · ')}。选一个字母，看看大小写，再点按钮听声音。</p></div></section>${tabs}<div class="loop-toolbar">${btn('letter-loop','循环听','secondary','speaker','aria-pressed="false"')}<span class="micro">本次 ${letters.length} 个字母 · 名称、字母音各三遍</span></div><section class="alphabet-grid letter-picker" aria-label="当前学习字母">${letters.map(l=>`<div class="letter-picker-card"><button class="alphabet-card current" data-action="letter" data-letter="${l}" aria-label="查看字母 ${l} 大小写" aria-pressed="${libraryLetter===l}"><span class="glyph">${l}<span class="glyph lower">${l.toLowerCase()}</span></span></button><button class="letter-speaker" data-action="letter-follow" data-letter="${l}" aria-label="听字母 ${l} 名称和字母音各三遍">${icon('speaker')}</button></div>`).join('')}</section><section class="library-detail letter-detail" aria-label="所选字母详情"><div class="letter-detail-heading"><div class="glyph">${letter.upper}<span class="glyph lower">${letter.lower}</span></div><div><h2>你好，我是 ${letter.upper}。</h2><p class="micro">大小写是同一个字母的两种写法。</p></div></div>${soundGuide(letter)}</section><details class="audio-sources"><summary>发音说明与来源</summary><p class="micro">名称和字母音已使用你提供的 GK 录音，每项保留三遍跟读。例词为合成示范。<br><a href="./assets/audio/gk/source.mp3" target="_blank">听完整原录音</a> · <a href="./assets/audio/gcompris/index.html">其他名称录音试听</a><br>字母展示和练习都使用家长保存的范围。成长地图可查看素材来源。</p></details>`;
 }
@@ -96,7 +101,7 @@ function practice(){
 }
 function parents(){
  if(!draft)draft=structuredClone(state.settings);
- return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>选择字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
+ return `<section class="library-head"><div><h1 class="page-title">家长小角</h1><p class="subtitle">选好内容，剩下的时间陪她一起玩。</p></div>${btn('home','返回花园','small secondary','back')}</section><div class="parent-settings"><section class="panel letter-settings"><h2>选择字母</h2><p class="micro">选择至少 2 个字母。展示、跟读、配对和听音找字母共用当前范围，选择后自动保存。</p><div class="range-buttons">${[['ABCD','A–D'],['EFGH','E–H'],['IJKLM','I–M'],[LETTERS.join(''),'全部 A–Z']].map(([letters,label])=>`<button data-action="range" data-range="${letters}">${label}</button>`).join('')}</div><div class="select-letters" role="group" aria-label="学习范围">${LETTERS.map(l=>`<button data-action="toggle-letter" data-letter="${l}" aria-label="学习字母 ${l}" aria-pressed="${draft.letters.includes(l)}">${l}</button>`).join('')}</div><p class="micro">已选：${draft.letters.join(' · ')}</p><p class="micro" id="letter-save-status" role="status">${esc(letterSaveMessage)}</p></section>${learning.editor()}${voiceSettings.editor()}${offline.editor()}${offline.updatesEditor()}</div>`;
 }
 
 function saveLetters(){
@@ -134,15 +139,19 @@ function nextTask(){if(newModuleTask()){audio.stop();render();taskAudio();}}
 
 function clearSoundHighlight(){document.querySelectorAll('.sound-tile,.example-button').forEach(el=>el.classList.remove('playing'));}
 function highlightSound(key){clearSoundHighlight();const mode=key.split('-')[0];document.querySelectorAll(`.letter-sounds [data-mode="${mode}"],.example-button[data-mode="${mode}"]`).forEach(el=>el.classList.add('playing'));}
+app.addEventListener('play',event=>{if(event.target.id==='alphabet-song'){follow.stop();course.leave();audio.stop();}},true);
+app.addEventListener('error',event=>{if(event.target.id==='alphabet-song')toast('视频暂时无法播放，请检查网络或本机预览服务。');},true);
 app.addEventListener('click',event=>{
   const learningButton=event.target.closest('[data-learning]');if(learningButton&&!learningButton.disabled){audio.stop();follow.stop();learning.action(learningButton).catch(()=>toast('操作没有完成，请再试一次。'));return;}
   const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){learning.stop();follow.stop(false);course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
+  if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}
   if(action==='letter-loop'){if(follow.status==='playing'&&follow.loop){follow.stop();return;}audio.stop();highlightRequest++;follow.start(selectedLetters(),{loop:true});return;}
   if(action==='letter-follow'){if(!selectedLetters().includes(button.dataset.letter))return;audio.stop();highlightRequest++;clearSoundHighlight();follow.stop(false);libraryLetter=button.dataset.letter;render();follow.start([libraryLetter]);return;}
   follow.stop();
   if(action==='home')go('home');
+  if(action==='letter-song'){libraryActivity='song';state.session=null;go('letters');return;}
   if(action==='library'){libraryActivity='listen';state.session=null;go('letters');}
   if(action==='words'){go('words');}
   if(action==='learn'){course.view='map';go('learn');}
@@ -183,6 +192,7 @@ app.addEventListener('click',event=>{
 });
 app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
+app.addEventListener('change',event=>{if(event.target.id==='chinese-voice')voiceSettings.save(event.target.value);});
 app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
 app.addEventListener('submit',event=>{
@@ -196,8 +206,8 @@ document.addEventListener('keydown',event=>{
     if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
   }
 });
-document.addEventListener('visibilitychange',()=>{lastTick=Date.now();if(document.hidden){learning.flush();follow.stop();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&libraryActivity!=='listen'&&!modal)showModal('pause');}});
-window.addEventListener('pagehide',()=>{learning.flush();learning.stop();course.leave();audio.stop();save();});
+document.addEventListener('visibilitychange',()=>{lastTick=Date.now();if(document.hidden){pauseSong();learning.flush();follow.stop();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&!['listen','song'].includes(libraryActivity)&&!modal)showModal('pause');}});
+window.addEventListener('pagehide',()=>{pauseSong();learning.flush();learning.stop();course.leave();audio.stop();save();});
 function requestedPage(){
  const requested=location.hash.slice(2);
  if(['weekly','modules','learning'].includes(requested)){course.view='words';course.masteryFilter='learning';return 'words';}

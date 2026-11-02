@@ -41,10 +41,10 @@ export class Course {
   return {src:`./assets/audio/${kind==='word'?w.audio:'sentence-'+w.id}.wav`};
  }
  audioButton(w,kind,label,primary=false){return button('word-audio',label,`data-kind="${kind}" ${this.wordClip(w,kind)?'':'disabled'}`,primary);}
- async playWord(kind='word'){
+ async playWord(kind='word',includeMeaning=false){
   this.audio.unlockSpeech();await this.customWords?.ready;const clip=this.wordClip(this.word,kind);
   if(!clip){this.toast('这段英文音频尚未准备好，请到家长小角查看。');return false;}
-  return this.play([clip]);
+  return this.play(includeMeaning?[clip,{text:this.word.zh}]:[clip]);
  }
 
  stopWordLoop(){
@@ -205,7 +205,7 @@ export class Course {
     if(n+1<(this.customWords?.data.repeats||3))await new Promise(resolve=>setTimeout(resolve,this.customWords?.data.gap||1500));
    }return;
   }
-  if(a==='word-audio'){this.followToken=(this.followToken||0)+1;const round=this.round;const ok=await this.playWord(el.dataset.kind);if(ok&&round===this.round&&this.mode==='listen'&&el.dataset.kind==='word')this.heard=true;return;}
+  if(a==='word-audio'){this.followToken=(this.followToken||0)+1;const round=this.round;const ok=await this.playWord(el.dataset.kind,this.mode==='learn'&&el.dataset.kind==='word');if(ok&&round===this.round&&this.mode==='listen'&&el.dataset.kind==='word')this.heard=true;return;}
   if(a==='audio'){const round=this.round;const ok=await this.play([el.dataset.key]);if(ok&&round===this.round&&this.view==='words'&&this.mode==='listen'&&el.dataset.key===this.word.audio)this.heard=true;return;}
   if(a==='choose'){
    if(this.answered)return;this.answered=true;const correct=el.dataset.word===this.word.id;this.record(this.word.id,'listen',correct&&!this.assisted?'independent':'assisted');this.message=correct?'找到啦！':`一起认识它：${this.word.display||this.word.id}，${this.word.zh}。`;this.refresh();return;
