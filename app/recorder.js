@@ -11,7 +11,7 @@ export class LocalRecorder {
    this.stream=stream;this.recorder=new MediaRecorder(stream);const chunks=[];
    this.recorder.ondataavailable=e=>{if(e.data.size)chunks.push(e.data);};
    this.recorder.onstop=()=>{
-    stream.getTracks().forEach(t=>t.stop());clearTimeout(this.timer);
+    stream.getTracks().forEach(t=>t.stop());clearTimeout(this.timer);clearInterval(this.clockTimer);
     if(generation!==this.generation)return;
     this.recording=false;this.pending=false;
     const blob=new Blob(chunks,{type:this.recorder.mimeType});
@@ -19,13 +19,14 @@ export class LocalRecorder {
     else this.onChange('没有录到声音，可以再试一次。');
    };
    this.recorder.onerror=()=>{this.dispose();this.onChange('录音遇到问题，可以直接说给家人听。');};
-   this.recorder.start();this.recording=true;this.pending=false;
+   this.recorder.start();this.recording=true;this.pending=false;this.startedAt=Date.now();
+   this.clockTimer=setInterval(()=>{const elapsed=Math.min(60,Math.floor((Date.now()-this.startedAt)/1000));this.onChange(`正在录音 · ${String(Math.floor(elapsed/60)).padStart(2,'0')}:${String(elapsed%60).padStart(2,'0')} / 01:00`);},1000);
    this.timer=setTimeout(()=>this.stop(),60000);this.onChange('正在录音… 最长 60 秒，点停止即可回听。');
   }catch(error){console.warn('Recording could not start:',error.name,error.message);if(generation===this.generation){this.dispose();this.onChange('没有获得麦克风权限。仍可以跟读，或说给家人听。');}}
  }
- stop(){if(this.recorder?.state==='recording')this.recorder.stop();}
+ stop(){if(this.recorder?.state==='recording'){clearInterval(this.clockTimer);this.recording=false;this.pending=true;this.onChange('正在准备回听…');this.recorder.stop();}}
  dispose(){
-  this.generation++;clearTimeout(this.timer);
+  this.generation++;clearTimeout(this.timer);clearInterval(this.clockTimer);
   if(this.recorder?.state==='recording')this.recorder.stop();
   this.stream?.getTracks().forEach(t=>t.stop());this.stream=null;this.recorder=null;
   if(this.url)URL.revokeObjectURL(this.url);this.url=null;this.recording=false;this.pending=false;

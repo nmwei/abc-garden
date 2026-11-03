@@ -15,7 +15,7 @@ test('listening hides answer labels, reveals help, and checks spelling without s
  await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await page.locator('[data-mode="listen"]').click();
  await expect(page.locator('.word-list')).toBeHidden();await expect(page.locator('.picture-choices')).not.toContainText('apple');
  await action(page,'hint').click();await page.locator('[data-course="choose"][data-word="apple"]').click();
- await expect(page.locator('.picture-choices .revealed')).toHaveCount(1);
+ await expect(page.locator('.picture-choices .quiz-correct')).toHaveCount(1);
  await page.locator('[data-mode="spell"]').click();await page.getByLabel('输入单词').fill('Apple');await page.getByRole('button',{name:'检查一下',exact:true}).click();
  await expect(page.locator('.feedback')).toContainText('拼出来啦');
  await page.reload();expect((await state(page))?.learning).toBeUndefined();
@@ -63,10 +63,10 @@ test('switching words does not restart the five-minute rest reminder',async({pag
 test('spelling retains drafts and allows correction after checking or hints',async({page})=>{
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();await page.locator('[data-mode="spell"]').click();
  const input=page.getByLabel('输入单词'),check=page.getByRole('button',{name:'检查一下',exact:true});
- await check.click();await expect(page.locator('#spell-feedback')).toContainText('先输入字母');await expect(input).toBeFocused();await expect(page.locator('.feedback')).not.toContainText('拼出来啦');await expect(input).toBeEnabled();
+ await expect(check).toBeDisabled();await expect(page.locator('.feedback')).not.toContainText('拼出来啦');await expect(input).toBeEnabled();
  await input.fill('aple');await check.click();await expect(input).toHaveValue('aple');await expect(input).toBeEnabled();await expect(page.locator('.feedback')).toContainText('改一改');
- await page.getByRole('button',{name:'看看提示',exact:true}).click();await expect(input).toHaveValue('aple');
+ await page.getByRole('button',{name:'提示',exact:true}).click();await expect(input).toHaveValue('aple');
  await input.fill('Apple');await expect(page.locator('.feedback')).toBeEmpty();await input.press('Enter');await expect(page.locator('.feedback')).toContainText('拼出来啦');await expect(input).toHaveValue('Apple');await expect(input).toBeEnabled();
- await input.fill('app');await check.click();await expect(page.locator('.feedback')).toContainText('改一改');await expect(input).toHaveValue('app');
- await page.getByRole('button',{name:'换一个朋友',exact:true}).click();await expect(input).toHaveValue('');await expect(page.locator('.feedback')).toBeEmpty();
+ await input.fill('app');await check.click();await expect(page.locator('.spell-reference')).toHaveText('apple');await expect(input).toHaveValue('app');
+ await page.getByRole('button',{name:'下一个词',exact:true}).click();await expect(input).toHaveValue('');await expect(page.locator('.feedback')).toBeEmpty();
 });

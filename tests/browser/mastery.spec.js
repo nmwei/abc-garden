@@ -14,13 +14,13 @@ test('automatic mastery uses independent cross-day listening and cancellation re
  await answer(page,{hint:true});expect(await entry(page)).toBeUndefined();
  await answer(page);await answer(page);expect((await entry(page)).mastered).toBe(false);
  await page.clock.setFixedTime(new Date('2026-10-31T10:00:00'));await answer(page);expect((await entry(page)).dates).toEqual(['2026-10-30','2026-10-30','2026-10-31']);
- await expect(page.getByRole('button',{name:'取消已掌握',exact:true})).toBeVisible();expect((await entry(page)).source).toBe('auto');
+ await page.locator('[data-mode=learn]').click();await expect(page.getByRole('button',{name:'取消已掌握',exact:true})).toBeVisible();expect((await entry(page)).source).toBe('auto');
  await page.reload();await page.locator('[data-filter=all]').click();await unlockParents(page);await expect(page.getByRole('button',{name:'取消已掌握',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'取消已掌握',exact:true}).click();expect((await entry(page)).dates).toEqual([]);
  await answer(page);expect((await entry(page)).mastered).toBe(false);expect((await entry(page)).dates).toHaveLength(1);
 });
 test('context pictures and speaking never mark mastery automatically; manual override works',async({page})=>{
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();await page.locator('#word-search').fill('mix');await page.locator('[data-mode="listen"]').click();await expect(page.locator('.learning-panel')).toContainText('暂不做看图辨认');
- await page.locator('[data-mode="speak"]').click();await page.getByRole('button',{name:'我试着说过啦',exact:true}).click();expect(await page.evaluate(key=>localStorage.getItem(key),key)).toBeNull();
- await page.getByRole('button',{name:'标记为已掌握',exact:true}).click();await expect(page.getByRole('button',{name:'取消已掌握',exact:true})).toBeVisible();
+ await page.locator('[data-mode="speak"]').click();await expect(page.getByRole('button',{name:'我试着说过啦',exact:true})).toHaveCount(0);expect(await page.evaluate(key=>localStorage.getItem(key),key)).toBeNull();
+ await page.locator('[data-mode=learn]').click();await page.getByRole('button',{name:'标记为已掌握',exact:true}).click();await expect(page.getByRole('button',{name:'取消已掌握',exact:true})).toBeVisible();
 });
