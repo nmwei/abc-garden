@@ -4,7 +4,7 @@ import {test,expect} from '@playwright/test';
 async function parents(page){await openParents(page);await expect(page.getByRole('heading',{name:'家长小角',exact:true})).toBeVisible();}
 test.beforeEach(async({page})=>{await page.addInitScript(()=>{if(!localStorage.getItem('abc-module-content-v1'))localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'ABCD',words:'',letterMode:'sound',soundConfirmed:true}));});await page.goto('/');});
 test('three destinations and three alphabet activities fit touch layouts',async({page})=>{
- await expect(page.locator('.home-entries>button')).toHaveCount(3);await expect(page.locator('.nav button')).toHaveCount(4);
+ await expect(page.locator('.home-entries>button')).toHaveCount(3);await expect(page.locator('.nav button')).toHaveCount(3);await expect(page.getByRole('button',{name:'家长小角',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'字母朋友',exact:true}).click();await expect(page.locator('.alphabet-card')).toHaveCount(4);
  for(const size of [{width:1194,height:834},{width:834,height:1194},{width:390,height:844}]){await page.setViewportSize(size);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.getByRole('button',{name:'大小写配对',exact:true}).click();await expect(page.locator('.choice')).toHaveCount(2);await page.getByRole('button',{name:'帮帮我',exact:true}).click();await expect(page.locator('.choice.revealed')).toHaveCount(1);await page.getByRole('button',{name:'换一道',exact:true}).click();await expect(page.locator('.choice.revealed')).toHaveCount(0);

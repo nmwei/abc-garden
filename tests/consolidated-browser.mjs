@@ -6,7 +6,7 @@ const webkitMode=process.argv.includes('--webkit');
 const b=await (webkitMode?webkit:chromium).launch(webkitMode?{executablePath:'/Users/nimengwei/Library/Caches/ms-playwright/webkit-2370/pw_run.sh'}:{channel:'chrome'});
 const context=await b.newContext({viewport:{width:390,height:844}});const p=await context.newPage();p.setDefaultTimeout(20000);const errors=[];p.on('pageerror',e=>errors.push(e.message));
 try{
- await p.goto('http://localhost:4173/#/home');assert.equal(await p.locator('.home-entries>button').count(),3);assert.equal(await p.locator('.nav button').count(),4);
+ await p.goto('http://localhost:4173/#/home');assert.equal(await p.locator('.home-entries>button').count(),3);assert.equal(await p.locator('.nav button').count(),3);assert.equal(await p.getByRole('button',{name:'家长小角',exact:true}).count(),1);
  assert.equal(await p.getByRole('button',{name:'字母跟读',exact:true}).count(),0);
  await p.screenshot({path:`/private/tmp/garden-home-${webkitMode?'webkit':'chrome'}.png`,fullPage:true});
  await p.locator('.entry-card[data-action="library"]').click();assert.equal(await p.locator('.alphabet-card').count(),4);

@@ -13,6 +13,8 @@ import { GardenAudio } from './audio.js';
 const app=document.querySelector('#app');
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state=freshState(),storageWarning='',route='home',libraryLetter='A',libraryActivity='listen',draft=null,modal=null,toastTimer=null,lastTick=Date.now();
+const PAGE_TITLES={letters:'字母朋友',words:'看图学词',learn:'成长地图',parents:'家长小角'};
+const COURSE_TITLES={read:'故事小屋',talk:'开口说一说',write:'小小写作室',records:'学习记录',credits:'声音与图片来源'};
 const offline=new OfflineLibrary(toast,()=>{if(!learning.flush())return false;follow.stop(false);learning.stop();course.leave();audio.stop();return true;});
 const PREFERENCES_KEY='abc-garden-preferences-v2';
 try{const saved=localStorage.getItem(PREFERENCES_KEY)||localStorage.getItem(STORAGE_KEY);if(saved){const previous=sanitizeState(JSON.parse(saved));state.settings=previous.settings;state.customAudio=previous.customAudio;}}catch{storageWarning='偏好暂时无法读取，仍可直接练习。';}
@@ -36,13 +38,20 @@ function enterParents(){draft=structuredClone(state.settings);go('parents');offl
 function requestParents(){pauseSong();if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
 function showModal(kind){modal=kind;renderModal();}
 function go(page){if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(!['listen','song'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
-function header(){return `<header class="topbar"><button class="brand" data-action="home" aria-label="字母小花园首页">${icon('sprout')}<span><strong>字母小花园</strong><small>ABC GARDEN</small></span></button><nav class="nav" aria-label="主导航"><button data-action="library" class="${route==='letters'?'active':''}" ${route==='letters'?'aria-current="page"':''}>${icon('book')}字母朋友</button><button data-action="words" class="${route==='words'?'active':''}" ${route==='words'?'aria-current="page"':''}>看图学词</button><button data-action="learn" class="${route==='learn'?'active':''}" ${route==='learn'?'aria-current="page"':''}>成长地图</button><button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" ${route==='parents'?'aria-current="page"':''}>${icon('heart')}家长小角</button></nav></header>`;}
+function header(){
+ const destinations=[['library','letters','alphabet','字母朋友'],['words','words','picture','看图学词'],['learn','learn','sprout','成长地图']];
+ return `<header class="topbar"><button class="brand" data-action="home" aria-label="字母小花园首页">${icon('sprout')}<span><strong>字母小花园</strong><small>ABC GARDEN</small></span></button>
+ <nav class="nav" aria-label="主导航">${destinations.map(([action,page,glyph,label])=>`<button data-action="${action}" class="${route===page?'active':''}" ${route===page?'aria-current="page"':''}><span class="nav-icon ${glyph==='alphabet'?'nav-letter':''}" aria-hidden="true">${glyph==='alphabet'?'Aa':icon(glyph)}</span><span>${label}</span></button>`).join('')}</nav>
+ <button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" aria-label="家长小角" title="家长小角" ${route==='parents'?'aria-current="page"':''}>${icon('parent')}<span class="parent-label">家长小角</span></button></header>`;
+}
 function footer(){return `<footer class="footer"><span>小小的尝试，也在悄悄长大。</span><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
 function pauseSong(){document.querySelector('#alphabet-song')?.pause();}
 function render(){
   pauseSong();
+  const title=route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
+  document.title=title?`${title} · 字母小花园`:'字母小花园 · ABC Garden';
   const focusId=document.activeElement?.id;
-  app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div>`;
+  app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
   if(route==='letters')updateFollow();
   if(route==='parents')offline.paintUpdates();
