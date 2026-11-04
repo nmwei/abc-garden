@@ -2,11 +2,13 @@ import {PictureQuiz} from './picture-quiz.js';
 import {matchesWord} from './word-aliases.js';
 import {wordLibrary} from './word-library.js';
 import {sentenceMeaning} from './sentence-meanings.js';
-import {wordCardBody,sentenceCreditDetails} from './word-card.js';
+import {wordCardBody,sentenceCreditDetails,wordSentenceTranslation} from './word-card.js';
 import {WORDS,WORD_BY_ID,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from './course-content.js';
 import {recordLearning,reviewWords,normalizeWord} from './course-core.js';
 import {LocalRecorder} from './recorder.js';
 const PAGE_SIZE=12;
+// These primary vocabulary entries also appear in the contextual expansion.
+const PRIMARY_EXPANSION_WORDS=new Set(['am','are','is','favorite','has','bye','mum']);
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const button=(action,text,extra='',primary=false)=>`<button class="button ${primary?'primary':'secondary'}" data-course="${action}" ${extra}>${text}</button>`;
 export const wordPicture=(id,alt='')=>`<img class="word-picture" src="${WORD_BY_ID.get(id)?.image||`./assets/pictures/${id}.svg`}" alt="${esc(alt)}" width="128" height="128" loading="lazy" decoding="async">`;
@@ -37,9 +39,15 @@ export class Course {
  pool(){const q=this.wordQuery.trim().toLowerCase();return this.sourceWords().filter(w=>this.topic==='all'||w.topic===this.topic).filter(w=>matchesWord(w,q)).filter(w=>this.masteryFilter==='all'||this.mastery.has(w.id)===(this.masteryFilter==='mastered'));}
  picture(w,alt=''){return w.image?wordPicture(w.id,alt):'<span class="word-context-label">结合例句理解</span>';}
  wordClip(w,kind='word'){
-  if(kind==='sentence'&&!w.sentence)return null;
-  if(kind==='sentence'&&w.sentence!==WORD_BY_ID.get(w.id)?.sentence)return {text:w.sentence,lang:'en-US'};
-  return {src:`./assets/audio/${kind==='word'?w.audio:'sentence-'+w.id}.wav`};
+  if(kind==='word')return {src:`./assets/audio/${w.audio}.wav`};
+  if(!w.sentence)return null;
+  const builtIn=WORD_BY_ID.get(w.id);
+  if(w.sentence!==builtIn?.sentence)return {text:w.sentence,lang:'en-US'};
+  const src=`./assets/audio/sentence-${w.id}.wav`;
+  if(builtIn.contentSource==='extended-context-v1'&&!PRIMARY_EXPANSION_WORDS.has(w.id)){
+   return {text:w.sentence,lang:'en-US',src};
+  }
+  return {src};
  }
  audioButton(w,kind,label,primary=false){return button('word-audio',label,`data-kind="${kind}" ${this.wordClip(w,kind)?'':'disabled'}`,primary);}
  async playWord(kind='word',includeMeaning=false){
@@ -111,9 +119,9 @@ export class Course {
  wordActivity(w){
  let body='';
  if(this.mode==='learn')body=wordCardBody({word:w.display||w.id,zh:w.zh,pos:w.pos,image:w.image,sentence:w.sentence,sentenceZh:w.sentenceZh,action:w.action,listenWord:this.audioButton(w,'word','听单词',true),listenSentence:this.audioButton(w,'sentence','听句子')})+`${w.image&&w.pictureCue?'<p class="micro">图片是情境提示，可结合例句理解。</p>':''}`;
- if(this.mode==='listen'&&w.pictureCue){body=`${this.picture(w)}<h2>结合情境听一听</h2><p class="micro">这个词适合结合语境理解，暂不做看图辨认。可以先听，再跟着例句说一说。</p>${this.audioButton(w,'word','听单词',true)}<p class="sentence">${esc(w.sentence||'')}</p><p class="sentence-meaning">${esc(w.sentenceZh??sentenceMeaning(w.sentence||''))}</p>${this.audioButton(w,'sentence','听句子')}`;}
+ if(this.mode==='listen'&&w.pictureCue){body=`${this.picture(w)}<h2>结合情境听一听</h2><p class="micro">这个词适合结合语境理解，暂不做看图辨认。可以先听，再跟着例句说一说。</p>${this.audioButton(w,'word','听单词',true)}<p class="sentence">${esc(w.sentence||'')}</p>${wordSentenceTranslation(w.sentenceZh??sentenceMeaning(w.sentence||''))}${this.audioButton(w,'sentence','听句子')}`;}
  if(this.mode==='listen'&&!w.pictureCue&&this.quiz)return this.quizActivity(w);
- if(this.mode==='speak')body=`<div class="speak-word-heading">${this.picture(w,w.zh)}<h2 class="english-word">${esc(w.display||w.id)}</h2></div><div class="speak-example"><p class="sentence">${esc(w.sentence||'')}</p><p class="sentence-meaning">${esc(w.sentenceZh??sentenceMeaning(w.sentence||''))}</p>${this.audioButton(w,w.sentence?'sentence':'word','听示范')}</div>${this.recordPanel()}`;
+ if(this.mode==='speak')body=`<div class="speak-word-heading">${this.picture(w,w.zh)}<h2 class="english-word">${esc(w.display||w.id)}</h2></div><div class="speak-example"><p class="sentence">${esc(w.sentence||'')}</p>${wordSentenceTranslation(w.sentenceZh??sentenceMeaning(w.sentence||''))}${this.audioButton(w,w.sentence?'sentence':'word','听示范')}</div>${this.recordPanel()}`;
  if(this.mode==='spell')body=`<div class="spell-prompt">${this.picture(w,w.zh)}<h2>${esc(w.zh||'')}</h2><div class="spell-cue">${this.audioButton(w,'word','听单词')}</div></div><form id="spell-form"><label for="spell-input" class="sr-only">输入单词</label><input id="spell-input" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" maxlength="80" placeholder="试着输入字母" value="${esc(this.spellDraft)}" aria-describedby="spell-feedback"><button class="button primary" type="submit" ${this.spellDraft.trim()?'':'disabled'}>${this.spellFeedbackKind==='success'?'下一题':'检查一下'}</button></form><div id="spell-feedback" class="feedback spell-feedback" role="status">${this.message?this.spellFeedback():''}</div>`;
  if(this.mode==='listen'&&!w.pictureCue&&(!w.image||!this.wordClip(w)||(!w.pictureCue&&this.options?.length<2)))body='<h2>暂时无法听音找图</h2><p class="micro">需要单词图片、英文发音和至少两张不同的图片。可以切换其他学习方式。</p>';
  const extra=this.mode==='learn'?`<details class="word-follow-extra"><summary>连续跟读</summary><p class="micro">跟着英文慢慢读，随时可以停止。</p><div class="button-row centered">${button('word-follow','英文连续跟读',this.wordClip(w)?'':'disabled')}${button('word-stop','停止')}</div></details>`:'';
@@ -232,6 +240,12 @@ export class Course {
     if(!await this.playWord())return;
     if(n+1<(this.customWords?.data.repeats||3))await new Promise(resolve=>setTimeout(resolve,this.customWords?.data.gap||1500));
    }return;
+  }
+  if(a==='word-translation'){
+   const text=this.word.sentenceZh??sentenceMeaning(this.word.sentence);
+   if(!text)return;
+   this.followToken=(this.followToken||0)+1;
+   return this.play([{text,lang:'zh-CN'}]);
   }
   if(a==='word-audio'&&this.mode==='listen'&&this.quiz){await this.playQuizQuestion();return;}
   if(a==='word-audio'){this.followToken=(this.followToken||0)+1;const round=this.round;const ok=await this.playWord(el.dataset.kind,this.mode==='learn'&&el.dataset.kind==='word');if(ok&&round===this.round&&this.mode==='listen'&&el.dataset.kind==='word')this.heard=true;return;}

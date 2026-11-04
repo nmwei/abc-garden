@@ -1,4 +1,4 @@
-import {pickVoice,isChineseLanguage} from './voice-settings.js';
+import {englishSpeechRate,pickVoice,pickEnglishVoice,isChineseLanguage} from './voice-settings.js';
 // Recorded clips and device speech share one cancellable queue.
 export class GardenAudio {
   constructor(customAudio,onError){
@@ -23,11 +23,13 @@ export class GardenAudio {
   speak(text,lang='zh-CN'){
     if(!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return Promise.resolve(false);
     const speech=globalThis.speechSynthesis,utterance=new SpeechSynthesisUtterance(text);
-    utterance.lang=lang;utterance.rate=.85;
-    const voices=speech.getVoices(),voice=pickVoice(voices,lang);
-    // Do not let the browser silently reuse an excluded Chinese voice. An empty
-    // initial list still allows the existing platform fallback while voices load.
-    if(!voice&&voices.length&&isChineseLanguage(lang))return Promise.resolve(false);
+    utterance.lang=lang;
+    const voices=speech.getVoices();
+    const english=lang==='en-US';
+    utterance.rate=english?englishSpeechRate():.85;
+    const voice=english?pickEnglishVoice(voices):pickVoice(voices,lang);
+    // An empty initial list can still use the platform default while voices load.
+    if(!voice&&voices.length&&(english||isChineseLanguage(lang)))return Promise.resolve(false);
     if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
     return new Promise(resolve=>{
       let settled=false;
@@ -48,8 +50,8 @@ export class GardenAudio {
       if(typeof key==='object'&&key.text){
         const ok=await this.speak(key.text,key.lang);
         if(token!==this.token)return false;
-        if(!ok){this.onError?.('朗读未能播放，请检查设备的对应语言语音后重试。');return false;}
-        continue;
+        if(ok)continue;
+        if(!key.src){this.onError?.('朗读未能播放，请检查设备的对应语言语音后重试。');return false;}
       }
       const audio=this.element;audio.src=typeof key==='object'?key.src:this.customAudio()[key]||`./assets/audio/${key}.wav`;
       audio.preload='auto';this.current=audio;

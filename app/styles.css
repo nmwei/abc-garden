@@ -224,7 +224,10 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .word-browser .word-list [data-course="word"]{justify-content:center}
 .word-browser .word-list [data-course="word"]>.word-status-slot:empty{display:none}
 
-.voice-controls{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}.voice-controls label{display:flex;flex:1;min-width:180px;flex-direction:column;gap:8px}.voice-controls select{width:100%;min-width:0;height:48px;min-height:48px;padding:10px;font:inherit;border:1px solid var(--line);border-radius:12px;background:#fffdf6;color:inherit}.voice-controls .button{flex:none}
+.voice-group+.voice-group{margin-top:24px}
+.voice-group>.micro:not(:empty){margin-top:10px}
+.voice-controls label.voice-rate{flex:none;min-width:88px}
+.voice-controls{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap}.voice-controls label{display:flex;flex:1;min-width:min(180px,100%);flex-direction:column;gap:8px}.voice-controls select{width:100%;min-width:0;height:48px;min-height:48px;padding:10px;font:inherit;border:1px solid var(--line);border-radius:12px;background:#fffdf6;color:inherit}.voice-controls .button{flex:none}
 
 .letter-song{max-width:860px;margin:0 auto}.song-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.song-heading h2{margin:10px 0 4px}.song-heading p{margin:0}.song-tag{font-size:12px;color:#526d4b;background:#e9efdf;border-radius:8px;padding:5px 9px}.letter-song video{display:block;width:100%;aspect-ratio:640/368;border-radius:16px;background:#242b23}.song-note{margin:16px 0 0;line-height:1.7}@media(max-width:600px){.letter-song{padding:18px 14px}.letter-song video{border-radius:10px}}
 .picture-quiz .quiz-feedback{min-height:2.8em;margin:12px 0 18px;font-size:18px;line-height:1.4;color:var(--ink)}.picture-quiz .quiz-feedback.correct{color:#456b38}.picture-quiz .quiz-feedback.revealed{color:#806136}
@@ -329,3 +332,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 :where(button, a[href], summary):active:not(:where(:disabled, [aria-disabled="true"], .parent-hold)) {
   filter: brightness(.94);
 }
+
+.translation-speaker{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;vertical-align:middle;border-radius:50%;background:transparent}
+.translation-speaker:hover{background:var(--pale)}
+.translation-speaker svg{width:18px;height:18px}

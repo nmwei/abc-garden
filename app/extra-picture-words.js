@@ -41,4 +41,8 @@ export const EXTRA_PICTURE_WORDS=[
 ['spoon','勺子','home','1f944','I use a spoon.'],
 ['mix','搅拌','actions','1f963','I can mix.'],
 ['clean','打扫','actions','1f9f9','I clean my room.'],
+// U1W1 main textbook vocabulary. Illustrations are project artwork.
+['mitt','棒球手套','sports','project-mitt','I catch the ball with my mitt.'],
+['mop','拖把','home','project-mop','I clean the floor with a mop.'],
+['marble','玻璃弹珠','play','project-marble','The marble rolls across the floor.'],
 ];
