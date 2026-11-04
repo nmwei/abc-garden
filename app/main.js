@@ -11,6 +11,7 @@ import { icon,gardenArt } from './art.js';
 import { GardenAudio } from './audio.js';
 
 const app=document.querySelector('#app');
+const APP_NAME='ABC小花园';
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state=freshState(),storageWarning='',route='home',libraryLetter='A',libraryActivity='listen',draft=null,modal=null,toastTimer=null,lastTick=Date.now();
 const PAGE_TITLES={letters:'字母朋友',words:'看图学词',learn:'成长地图',parents:'家长小角'};
@@ -40,7 +41,7 @@ function showModal(kind){modal=kind;renderModal();}
 function go(page){if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(!['listen','song'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
 function header(){
  const destinations=[['library','letters','alphabet','字母朋友'],['words','words','picture','看图学词'],['learn','learn','sprout','成长地图']];
- return `<header class="topbar"><button class="brand" data-action="home" aria-label="字母小花园首页">${icon('sprout')}<span><strong>字母小花园</strong><small>ABC GARDEN</small></span></button>
+ return `<header class="topbar"><button class="brand" data-action="home" aria-label="${APP_NAME}首页"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>${APP_NAME}</strong><small>ABC GARDEN</small></span></button>
  <nav class="nav" aria-label="主导航">${destinations.map(([action,page,glyph,label])=>`<button data-action="${action}" class="${route===page?'active':''}" ${route===page?'aria-current="page"':''}><span class="nav-icon ${glyph==='alphabet'?'nav-letter':''}" aria-hidden="true">${glyph==='alphabet'?'Aa':icon(glyph)}</span><span>${label}</span></button>`).join('')}</nav>
  <button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" aria-label="家长小角" title="家长小角" ${route==='parents'?'aria-current="page"':''}>${icon('parent')}<span class="parent-label">家长小角</span></button></header>`;
 }
@@ -49,7 +50,7 @@ function pauseSong(){document.querySelector('#alphabet-song')?.pause();}
 function render(){
   pauseSong();
   const title=route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
-  document.title=title?`${title} · 字母小花园`:'字母小花园 · ABC Garden';
+  document.title=title?`${title} · ${APP_NAME}`:`${APP_NAME} · ABC Garden`;
   const focusId=document.activeElement?.id;
   app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();

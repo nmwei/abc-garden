@@ -1,13 +1,18 @@
 export const VOICE_KEY='abc-garden-chinese-voice-v1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const language=s=>s.toLowerCase().replaceAll('_','-');
+const language=s=>s.toLowerCase().replaceAll('_','-').replace(/^cmn(?=-|$)/,'zh');
+export const isChineseLanguage=lang=>/^zh(?:-|$)/.test(language(lang));
+// Same Chinese exclusion policy as Reading Garden; unfamiliar voices remain available.
+const excludedName=/^(Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley)(?=$|[\s(（])/i;
+const usableChineseVoice=v=>isChineseLanguage(v.lang)&&!/yue|HK/i.test(v.lang)&&!excludedName.test(v.name)&&!/^com\.apple\.eloquence\./i.test(v.voiceURI);
 export const voiceId=v=>JSON.stringify([v.voiceURI||v.name,v.lang]);
-export const chineseVoices=()=> (globalThis.speechSynthesis?.getVoices()||[]).filter(v=>/^zh(?:-|_|$)/i.test(v.lang));
+export const chineseVoices=()=> (globalThis.speechSynthesis?.getVoices()||[]).filter(usableChineseVoice);
 export function savedVoice(){try{return localStorage.getItem(VOICE_KEY)||'';}catch{return '';}}
 export function pickVoice(voices,lang,preference=savedVoice()){
- const target=language(lang),isChinese=target.startsWith('zh');
- const selected=isChinese&&voices.find(v=>/^zh(?:-|_|$)/i.test(v.lang)&&voiceId(v)===preference);
- return selected||voices.find(v=>language(v.lang)===target&&v.default)||voices.find(v=>language(v.lang)===target)||voices.find(v=>language(v.lang).split('-')[0]===target.split('-')[0]);
+ const target=language(lang),isChinese=isChineseLanguage(lang);
+ const candidates=isChinese?voices.filter(usableChineseVoice):voices;
+ const selected=isChinese&&candidates.find(v=>voiceId(v)===preference);
+ return selected||candidates.find(v=>language(v.lang)===target&&v.default)||candidates.find(v=>language(v.lang)===target)||candidates.find(v=>language(v.lang).split('-')[0]===target.split('-')[0]);
 }
 export class VoiceSettings{
  constructor(audio){this.audio=audio;this.status='';globalThis.speechSynthesis?.addEventListener?.('voiceschanged',()=>this.paint());}
