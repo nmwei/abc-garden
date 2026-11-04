@@ -7,7 +7,7 @@ export function freshState() {
 }
 
 export function sanitizeState(input) {
-  if (!input || input.version !== 1) throw new Error('这不是可识别的字母花园备份。');
+  if (!input || input.version !== 1) throw new Error('这不是可识别的ABC小花园备份。');
   const state = freshState();
   state.learning=cleanLearning(input.learning);
   const settings = input.settings || {};

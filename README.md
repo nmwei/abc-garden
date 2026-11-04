@@ -1,6 +1,6 @@
-# 字母小花园 · ABC Garden
+# ABC小花园 · ABC Garden
 
-面向 iPad 的轻量英语字母练习网页：26个字母大小写、名称与基础字母音，配合词汇、故事、对话和写作。短时练习、随时求助、自然结束。
+花园系列的英语学习网页，面向 iPad。包含26个字母的大小写、名称与基础字母音，配合词汇、故事、对话和写作。短时练习、随时求助、自然结束。
 
 ![iPad 横屏首页](docs/screenshots/home.png)
 
@@ -14,7 +14,7 @@
 
 导航随屏幕宽度切换：1100px 起使用左侧栏，家长小角放在侧栏底部；较窄屏幕使用顶部图文导航，家长入口收为右上角盾牌图标，760px 及以下三个学习入口单独排一行。首页在内容区不足900px时改为一列横向学习卡，适配iPad竖屏；看图学词按内容区宽度调整左右分栏。家长入口仍需长按1秒进入。
 
-浏览器标签标题随页面和成长地图内的活动更新，格式为“当前页面 · 字母小花园”；首页保留“字母小花园 · ABC Garden”。
+浏览器标签标题随页面和成长地图内的活动更新，格式为“当前页面 · ABC小花园”；首页为“ABC小花园 · ABC Garden”。
 
 短时练习、随时求助，不做自动口语评分、掌握率、排名或连续打卡惩罚。组合拼读已移除。
 
@@ -94,7 +94,7 @@ ABC_TTS_PYTHON=/tmp/abc-audio-env/bin/python node scripts/generate-prompts.mjs
 
 ## GitHub Pages 发布
 
-线上地址：[字母小花园](https://nmwei.github.io/abc-garden/)，使用 `nmwei/abc-garden` 仓库的 `gh-pages` 分支，与阅读小花园独立部署。
+线上地址：[ABC小花园](https://nmwei.github.io/abc-garden/)，使用 `nmwei/abc-garden` 仓库的 `gh-pages` 分支，与阅读小花园独立部署。
 
 构建后的 `dist/` 可部署在任意静态 HTTPS 服务，全部资源采用相对路径，兼容项目子目录。
 

@@ -36,7 +36,7 @@ const worker=await readFile(new URL('../sw.js',import.meta.url),'utf8');
 hash.update(worker).update(await readFile(new URL(import.meta.url))).update(await readFile(new URL('./build-cache.mjs',import.meta.url)));
 const version=hash.digest('hex').slice(0,12);
 // Only the interface is installed automatically; media belongs to explicit optional packs.
-const shell=paths.filter(p=>p==='index.html'||p==='manifest.webmanifest'||p==='assets/icon.svg'||p.startsWith('app/')||/^assets\/icon-.*\.png$/.test(p));
+const shell=paths.filter(p=>p==='index.html'||p==='manifest.webmanifest'||p.startsWith('app/')||/^assets\/icon(?:-.*)?\.(?:png|svg)$/.test(p));
 const packs=[];
 async function pack(id,title,files){const unique=[...new Set(files)];let bytes=0;for(const file of unique)bytes+=meta(file).bytes;packs.push({id,title,files:unique,bytes});}
 const wav=key=>`./assets/audio/${key}.wav`;
