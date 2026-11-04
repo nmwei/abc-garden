@@ -4,7 +4,7 @@ const edit=page=>page.locator('#selection-results').locator('[data-learning=edit
 test('parent gloss editing persists across reload, drives search and loop speech, and restores default',async({page})=>{
  await page.addInitScript(()=>{
   if(!localStorage.getItem('abc-module-content-v1'))localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['walk']}));
-  window.spoken=[];Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{if(u.volume!==0)window.spoken.push(u.text);},cancel:()=>{}}});
+  window.spoken=[];Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[],speak:u=>{if(u.volume!==0){window.spoken.push(u.text);queueMicrotask(()=>u.onend?.());}},cancel:()=>{}}});
  });
  await openParents(page,true);await page.locator('#selection-query').fill('walk');await edit(page).click();
  await page.getByLabel('中文释义',{exact:true}).fill('散步');await page.getByLabel('英文例句',{exact:true}).fill('We walk home.');await page.getByLabel('例句中文',{exact:true}).fill('我们走回家。');await page.getByRole('button',{name:'保存内容',exact:true}).click();
@@ -13,7 +13,8 @@ test('parent gloss editing persists across reload, drives search and loop speech
  await page.getByRole('button',{name:'看图学词',exact:true}).click();
  await expect(page.locator('.learning-panel')).toContainText('散步');await expect(page.locator('.sentence')).toHaveText('We walk home.');
  await expect(page.locator('.sentence-meaning')).toHaveText('我们走回家。');
- await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.evaluate(()=>window.spoken)).toEqual(['We walk home.']);await page.evaluate(()=>window.spoken=[]);
+ await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.evaluate(()=>window.spoken)).toEqual(['We walk home.']);
+ await page.getByRole('button',{name:'朗读中文译文'}).click();await expect.poll(()=>page.evaluate(()=>window.spoken)).toEqual(['We walk home.','我们走回家。']);await page.evaluate(()=>window.spoken=[]);
  await page.locator('#word-search').fill('散步');await expect(page.locator('.word-list [data-course=word]')).toHaveCount(1);
  await page.getByRole('button',{name:'循环听 · 1 个词',exact:true}).click();
  await page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));

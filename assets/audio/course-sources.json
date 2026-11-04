@@ -221,6 +221,18 @@
       "text": "clean"
     },
     {
+      "key": "word-mitt",
+      "text": "mitt"
+    },
+    {
+      "key": "word-mop",
+      "text": "mop"
+    },
+    {
+      "key": "word-marble",
+      "text": "marble"
+    },
+    {
       "key": "word-cherry",
       "text": "cherry"
     },
@@ -12755,6 +12767,18 @@
     {
       "key": "sentence-clean",
       "text": "I clean my room."
+    },
+    {
+      "key": "sentence-mitt",
+      "text": "I catch the ball with my mitt."
+    },
+    {
+      "key": "sentence-mop",
+      "text": "I clean the floor with a mop."
+    },
+    {
+      "key": "sentence-marble",
+      "text": "The marble rolls across the floor."
     },
     {
       "key": "sentence-cherry",

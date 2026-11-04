@@ -17,6 +17,7 @@ test('all repaired and dependent illustrations decode at the learning-card size'
 test('revised examples and their new audio survive a reload without a network',async({page,context})=>{
  test.setTimeout(120000);
  await page.addInitScript(ids=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:ids})),changedIds);
+ await page.addInitScript(()=>Object.defineProperty(window,'speechSynthesis',{value:undefined}));
  await page.goto('/#/words');await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
  const urls=changedIds.flatMap(id=>[`${imagePath(id)}`,`/assets/audio/word-${encodeURIComponent(id)}.wav`,`/assets/audio/sentence-${encodeURIComponent(id)}.wav`]);
  await page.evaluate(urls=>Promise.all(urls.map(async u=>{const r=await fetch(u);if(!r.ok)throw Error(u);await r.arrayBuffer();})),urls);

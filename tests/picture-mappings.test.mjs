@@ -8,7 +8,7 @@ test('new direct pictures are complete, credited and have visually distinct quiz
   const w=WORD_BY_ID.get(id);assert.ok(w.image&&TOPICS[w.topic],id);assert.equal(w.pictureCue,mappings[id].pictureCue===true);assert.ok(credits.some(c=>c.file===w.image.replace('./assets/','')&&c.sha256===hashes.get(id)),id);
   const ctx={word:w,library:()=>({all:WORDS})};Course.prototype.makeOptions.call(ctx);assert.equal(ctx.options.length,3);assert.ok(ctx.options.includes(id));assert.equal(new Set(ctx.options.map(k=>hashes.get(k))).size,3,id);assert.equal(new Set(ctx.options.map(k=>WORD_BY_ID.get(k).pictureGroup)).size,3,id);
  }
- const additions=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk-cards.json',import.meta.url)));assert.equal(WORDS.length,3040+additions.length);assert.equal(WORDS.filter(w=>w.image).length,1168+Object.keys(mappings).length);
+ const additions=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk-cards.json',import.meta.url)));assert.equal(WORDS.length,3043+additions.length);assert.equal(WORDS.filter(w=>w.image).length,1171+Object.keys(mappings).length);
 });
 
 test('equivalent spatial and meaning groups cannot compete in one picture question',()=>{

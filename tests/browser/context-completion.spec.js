@@ -16,6 +16,7 @@ test('completion pictures decode and render for visual review',async({page},info
 });
 
 test('completed cards can be selected, stay contextual and play updated recordings offline',async({page,context},info)=>{
+ await page.addInitScript(()=>Object.defineProperty(window,'speechSynthesis',{value:undefined}));
  const ids=['after','live','use','accept','account','accurate','attack','current','female','graduate','object','quarter','soul','virus','whom'];
  await openParents(page,true);
  for(const id of ids){

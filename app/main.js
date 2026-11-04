@@ -169,6 +169,7 @@ app.addEventListener('click',event=>{
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
   if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}
+  if(action==='preview-english-voice'){follow.stop();course.leave();voiceSettings.previewEnglish();return;}
   if(action==='letter-loop'){if(follow.status==='playing'&&follow.loop){follow.stop();return;}audio.stop();highlightRequest++;follow.start(selectedLetters(),{loop:true});return;}
   if(action==='letter-follow'){if(!selectedLetters().includes(button.dataset.letter))return;audio.stop();highlightRequest++;clearSoundHighlight();follow.stop(false);libraryLetter=button.dataset.letter;render();follow.start([libraryLetter]);return;}
   follow.stop();
@@ -214,7 +215,11 @@ app.addEventListener('click',event=>{
 });
 app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
-app.addEventListener('change',event=>{if(event.target.id==='chinese-voice')voiceSettings.save(event.target.value);});
+app.addEventListener('change',event=>{
+  if(event.target.id==='chinese-voice')voiceSettings.save(event.target.value);
+  if(event.target.id==='english-preview-voice')voiceSettings.saveEnglish(event.target.value);
+  if(event.target.id==='english-speech-rate')voiceSettings.saveEnglishRate(event.target.value);
+});
 app.addEventListener('compositionend',event=>learning.editInput(event.target));
 // The result list is replaced on search, selection and paging; delegate submission to the app.
 app.addEventListener('submit',event=>{

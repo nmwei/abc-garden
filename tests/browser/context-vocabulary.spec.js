@@ -28,6 +28,7 @@ test('aliases find one canonical pictured card and real compound words remain av
  for(const [query,id] of [['because','because'],['per cent','percent'],['percent','percent']]){await page.locator('#word-search').fill(query);await expect(page.locator('.word-list button')).toHaveCount(1);await expect(page.locator('.word-list button')).toHaveAttribute('data-word',id);}
 });
 test('pictured expanded content retains examples, attribution and offline media',async({page,context})=>{
+ await page.addInitScript(()=>Object.defineProperty(window,'speechSynthesis',{value:undefined}));
  await openParents(page,true);await page.locator('#selection-query').fill('application');await page.getByRole('button',{name:'选择 app',exact:true}).click();
  await page.getByRole('button',{name:'看图学词',exact:true}).click();await expect(page.locator('.english-word')).toHaveText('app');await expect(page.locator('.sentence')).toHaveText('I deleted the app.');await page.locator('.sentence-credit summary').click();await expect(page.locator('.sentence-credit')).toContainText('CC BY 2.0 FR');
  await page.evaluate(async()=>{await navigator.serviceWorker.ready;await Promise.all(['./assets/pictures/app.svg','./assets/audio/word-app.wav','./assets/audio/sentence-app.wav'].map(u=>fetch(u).then(r=>r.arrayBuffer())));});

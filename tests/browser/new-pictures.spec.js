@@ -1,5 +1,6 @@
 import {test,expect} from '@playwright/test';
 test('new picture cards use all existing learning modes and exclude pending cards',async({page,context})=>{
+ await page.addInitScript(()=>Object.defineProperty(window,'speechSynthesis',{value:undefined}));
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();
  for(const word of ['pill','barbecue','china','above','inside','fridge']){
   await page.locator('#word-search').fill(word);await page.locator(`.word-list [data-word="${word}"]`).click();await expect(page.locator('.english-word')).toHaveText(word==='china'?'China':word);
