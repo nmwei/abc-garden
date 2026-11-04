@@ -12,6 +12,7 @@ import { GardenAudio } from './audio.js';
 
 const app=document.querySelector('#app');
 const APP_NAME='ABC小花园';
+const GARDEN_MOTTO='小小的尝试，也在悄悄长大。';
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state=freshState(),storageWarning='',route='home',libraryLetter='A',libraryActivity='listen',draft=null,modal=null,toastTimer=null,lastTick=Date.now();
 const PAGE_TITLES={letters:'字母朋友',words:'看图学词',learn:'成长地图',parents:'家长小角'};
@@ -43,9 +44,20 @@ function header(){
  const destinations=[['library','letters','alphabet','字母朋友'],['words','words','picture','看图学词'],['learn','learn','sprout','成长地图']];
  return `<header class="topbar"><button class="brand" data-action="home" aria-label="${APP_NAME}首页"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>${APP_NAME}</strong><small>ABC GARDEN</small></span></button>
  <nav class="nav" aria-label="主导航">${destinations.map(([action,page,glyph,label])=>`<button data-action="${action}" class="${route===page?'active':''}" ${route===page?'aria-current="page"':''}><span class="nav-icon ${glyph==='alphabet'?'nav-letter':''}" aria-hidden="true">${glyph==='alphabet'?'Aa':icon(glyph)}</span><span>${label}</span></button>`).join('')}</nav>
- <button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" aria-label="家长小角" title="家长小角" ${route==='parents'?'aria-current="page"':''}>${icon('parent')}<span class="parent-label">家长小角</span></button></header>`;
+ <div class="nav-end">
+  <div class="sidebar-motto">
+   <svg viewBox="0 0 72 84" width="72" height="84" aria-hidden="true">
+    <path fill="#e4c6a6" d="M16 56h40a3 3 0 0 1 3 3l-2 13a12 12 0 0 1-12 10H27a12 12 0 0 1-12-10l-2-13a3 3 0 0 1 3-3Z"/>
+    <path d="M36 61V16" fill="none" stroke="#96aa8c" stroke-width="3"/>
+    <path fill="#a7bc9b" d="M36 35C25 44 16 40 7 32c10-10 20-12 29 3Z"/>
+    <path fill="#bdcba5" d="M37 31C36 18 44 10 59 5c3 13-4 22-22 26Z"/>
+   </svg>
+   <p>${GARDEN_MOTTO}</p>
+  </div>
+  <button data-action="parents" class="parent-nav ${route==='parents'?'active':''}" aria-label="家长小角" title="家长小角" ${route==='parents'?'aria-current="page"':''}>${icon('parent')}<span class="parent-label">家长小角</span></button>
+ </div></header>`;
 }
-function footer(){return `<footer class="footer"><span>小小的尝试，也在悄悄长大。</span><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
+function footer(){return `<footer class="footer"><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
 function pauseSong(){document.querySelector('#alphabet-song')?.pause();}
 function render(){
   pauseSong();
