@@ -1,4 +1,4 @@
-import {pickVoice} from './voice-settings.js';
+import {pickVoice,isChineseLanguage} from './voice-settings.js';
 // Recorded clips and device speech share one cancellable queue.
 export class GardenAudio {
   constructor(customAudio,onError){
@@ -24,7 +24,10 @@ export class GardenAudio {
     if(!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return Promise.resolve(false);
     const speech=globalThis.speechSynthesis,utterance=new SpeechSynthesisUtterance(text);
     utterance.lang=lang;utterance.rate=.85;
-    const voice=pickVoice(speech.getVoices(),lang);
+    const voices=speech.getVoices(),voice=pickVoice(voices,lang);
+    // Do not let the browser silently reuse an excluded Chinese voice. An empty
+    // initial list still allows the existing platform fallback while voices load.
+    if(!voice&&voices.length&&isChineseLanguage(lang))return Promise.resolve(false);
     if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
     return new Promise(resolve=>{
       let settled=false;

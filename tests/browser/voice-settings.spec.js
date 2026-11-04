@@ -22,3 +22,21 @@ test('late voices populate and failed storage retains previous choice',async({pa
  await page.evaluate(()=>{window.testVoices=[{name:'中文 B',voiceURI:'voice-b',lang:'zh-CN'}];speechSynthesis.dispatchEvent(new Event('voiceschanged'));Storage.prototype.setItem=function(){throw Error('quota');};});
  await page.locator('#chinese-voice').selectOption(id);await expect(page.locator('#voice-save-status')).toContainText('保存失败');await expect(page.locator('#chinese-voice')).toHaveValue('');
 });
+test('rejected Chinese voices disappear and old preferences cannot bypass playback filtering',async({page})=>{
+ await setup(page);
+ await page.addInitScript(()=>{
+  const rejected={name:'Rocko (中文)',voiceURI:'rocko',lang:'zh-CN',default:true};
+  window.testVoices.unshift(rejected,{name:'本地化名称',voiceURI:'com.apple.eloquence.zh-CN.Eddy',lang:'zh-CN'});
+  localStorage.setItem('abc-garden-chinese-voice-v1',JSON.stringify(['rocko','zh-CN']));
+ });
+ await openParents(page,true);
+ await expect(page.locator('#chinese-voice option')).toHaveCount(4);
+ await expect(page.locator('#chinese-voice')).not.toContainText('Rocko');
+ await expect(page.locator('#chinese-voice')).not.toContainText('本地化名称');
+ await page.getByRole('button',{name:'试听',exact:true}).click();
+ await expect.poll(()=>page.evaluate(()=>window.spoken.at(-1)?.voice)).toBe('中文 A');
+ await page.evaluate(()=>{window.testVoices=window.testVoices.filter(v=>v.voiceURI==='rocko');speechSynthesis.dispatchEvent(new Event('voiceschanged'));window.spoken=[];});
+ await page.getByRole('button',{name:'试听',exact:true}).click();
+ await expect(page.getByRole('status').filter({hasText:'朗读未能播放'})).toBeVisible();
+ expect(await page.evaluate(()=>window.spoken)).toEqual([]);
+});
