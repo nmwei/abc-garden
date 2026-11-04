@@ -84,9 +84,6 @@
 .parent-hold{position:relative;overflow:hidden;touch-action:none;-webkit-touch-callout:none;user-select:none;isolation:isolate}
 .parent-hold:before{content:'';position:absolute;inset:0;background:#ffffff30;transform:scaleX(0);transform-origin:left;z-index:-1}
 .parent-hold.holding:before{transform:scaleX(1);transition:transform 1s linear}
-.parent-hold-actions{align-items:flex-start}
-.parent-hold-action{display:grid;justify-items:center;gap:4px}
-.parent-hold-action small{color:var(--muted);font-size:13px}
 .word-order-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}.word-order-actions .button{padding:9px 12px;min-height:44px}
 #word-save-status,#word-audio-preparation{margin-top:16px}#word-audio-preparation>.micro{margin-bottom:12px}
 @media(max-width:760px){.parent-word-preview>.word-order-actions{grid-column:1/-1;justify-content:flex-start}}
