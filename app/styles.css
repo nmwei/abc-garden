@@ -336,3 +336,20 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .translation-speaker{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;vertical-align:middle;border-radius:50%;background:transparent}
 .translation-speaker:hover{background:var(--pale)}
 .translation-speaker svg{width:18px;height:18px}
+
+.word-browser-tools{display:flex;align-items:stretch;gap:8px;margin-bottom:12px}
+.word-browser-tools #word-search{flex:1;margin:0}
+.word-order-trigger{flex:none;min-width:44px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:13px;background:transparent;color:var(--ink);font-size:14px;white-space:nowrap}
+.word-order-trigger:hover{background:var(--pale)}
+.word-order-dialog{width:min(640px,calc(100% - 24px));max-height:calc(100% - 24px);border:1px solid var(--line);border-radius:22px;background:#fffdf6;color:inherit;padding:20px}
+.word-order-dialog[open]{display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:10px}
+.word-order-dialog::backdrop{background:#26392c66}
+.word-order-list{margin:0;padding:4px 5px 4px 30px;overflow:auto;overscroll-behavior:contain}
+.word-order-list li{padding:8px 0;border-bottom:1px solid var(--line)}
+.word-order-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 12px}
+.word-order-name{display:grid;gap:3px;overflow-wrap:anywhere}
+.word-order-name small{color:var(--muted)}
+.word-order-moves,.word-order-footer{display:flex;gap:6px;flex-wrap:wrap}
+.word-order-moves .button{min-height:44px;padding:6px 10px;font-size:13px}
+.word-order-footer{justify-content:flex-end;gap:10px}
+.word-order-status:not(:empty){flex-basis:100%;text-align:right}
