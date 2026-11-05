@@ -26,8 +26,9 @@ test('legacy L plays once in point reading, follow-along and the listening game 
   await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.ended)).toBe(true);
   expect(await page.locator('#follow-audio').evaluate(a=>a.duration)).toBeCloseTo(.82,2);
   await page.getByRole('button',{name:'听音找字母',exact:true}).click();
+  await page.getByRole('button',{name:'设置',exact:true}).click();
   await page.getByRole('radio',{name:/字母音/}).check();
-  await page.getByRole('button',{name:'开始游戏',exact:true}).click();
+  await page.getByRole('button',{name:'开始新一轮',exact:true}).click();
   await expect(page.getByRole('button',{name:'选择大写 L',exact:true})).toBeEnabled();
   expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/single-sound-L.wav');
   expect(await page.locator('#garden-audio').evaluate(a=>a.duration)).toBeCloseTo(.82,2);

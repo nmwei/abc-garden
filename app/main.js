@@ -188,7 +188,7 @@ app.addEventListener('click',event=>{
   if(action==='learn'){course.view='map';go('learn');}
 
   if(action==='parents'){requestParents();}
-  if(action==='module-choose'){libraryActivity='choose';state.session=null;go('letters');return;}
+  if(action==='module-choose'){libraryActivity='choose';state.session=null;go('letters');listenGame.start();return;}
   if(action.startsWith('module-')){moduleKind=action.slice(7);if(!['pair','choose'].includes(moduleKind))return;if(newModuleTask()){libraryActivity=moduleKind;go('letters');taskAudio();}}
   if(action==='pause')showModal('pause');
   if(action==='close-modal'){closeModal();}

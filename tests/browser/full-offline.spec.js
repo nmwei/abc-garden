@@ -33,5 +33,5 @@ test('full download pauses, resumes, deduplicates and works offline',async({page
  expect((await send(page,'DOWNLOAD_PACK','pictures')).allReady).toBe(true);
 
  await context.setOffline(true);await page.goto('/#/words');await page.locator('[data-filter=all]').click();await page.reload();await page.locator('[data-filter=all]').click();await unlockParents(page);await page.locator('#word-search').fill('violin');await expect(page.locator('.english-word')).toHaveText('violin');await page.locator('.learning-panel>img').evaluate(img=>img.decode());await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
- await page.goto('/#/letters');await page.getByRole('button',{name:'听音找字母',exact:true}).click();await page.getByRole('button',{name:'开始游戏',exact:true}).click();await expect(page.locator('.listen-key').first()).toBeEnabled();expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/edcreate/single-name-');
+ await page.goto('/#/letters');await page.getByRole('button',{name:'听音找字母',exact:true}).click();await expect(page.locator('.listen-key').first()).toBeEnabled();expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/edcreate/single-name-');
 });
