@@ -36,17 +36,22 @@ test('production update waits for consent, clears old media and retains learner 
 });
 
 test('parent update controls check, apply a new release and retain saved data without showing version numbers',async({page})=>{
- const {openParents,unlockParents}=await import('./parent-helpers.js');
+ const {openParents}=await import('./parent-helpers.js');
  await page.goto(base+'?offline-test=1');await expect(page.locator('#offline-label')).toContainText('页面已可离线');
  await openParents(page);
  const section=page.locator('#app-update-settings');await expect(section).not.toHaveAttribute('open','');await section.locator('summary').click();
  await expect(section).not.toContainText('版本号');
  await page.getByRole('button',{name:'检查更新',exact:true}).click();await expect(page.locator('#app-update-status')).toHaveText('当前已是最新版本。');
+ await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();
+ await expect(page).toHaveURL(/#\/home$/);
+ await expect(page.locator('#parent-hold')).not.toBeVisible();
+ await openParents(page);await section.locator('summary').click();
  await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['walk'],wordMeanings:{walk:'散步'}})));
  release='b';await page.getByRole('button',{name:'检查更新',exact:true}).click();
  await expect(page.locator('#app-update-status')).toContainText('新版已准备好');expect(await page.evaluate(()=>window.testRelease)).toBe('a');
- await page.getByRole('button',{name:'重新加载页面',exact:true}).click();await page.waitForFunction(()=>window.testRelease==='b');
- await unlockParents(page);
+ await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();await page.waitForFunction(()=>window.testRelease==='b');
+ await expect(page).toHaveURL(/#\/home$/);
+ await expect(page.locator('#parent-hold')).not.toBeVisible();
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('abc-module-content-v1')).wordMeanings.walk)).toBe('散步');
 });
 
@@ -59,5 +64,5 @@ test('manual check reports offline and reload refuses a download in another page
   window.reloadMarker=true;const original=ServiceWorker.prototype.postMessage;
   ServiceWorker.prototype.postMessage=function(data,ports){if(data.type==='CHECK_OFFLINE'){ports[0].postMessage({downloading:'pictures'});return;}return original.call(this,data,ports);};
  });
- await page.getByRole('button',{name:'重新加载页面',exact:true}).click();await expect(page.locator('#app-update-status')).toContainText('另一个页面正在下载');expect(await page.evaluate(()=>window.reloadMarker)).toBe(true);
+ await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();await expect(page.locator('#app-update-status')).toContainText('另一个页面正在下载');expect(await page.evaluate(()=>window.reloadMarker)).toBe(true);
 });

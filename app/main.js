@@ -140,9 +140,9 @@ function renderModal(){
   const backdrop=document.createElement('div');backdrop.className='modal-backdrop';
   let body='';
 
-  if(modal==='parents')body=`<h2 id="modal-title">家长小角</h2><p>学习范围、发音和离线下载，请交给家长来操作。</p><div class="button-row">${btn('close-modal','返回')}<button type="button" id="parent-hold" class="button primary parent-hold" aria-describedby="parent-hold-hint">长按进入</button><span id="parent-hold-hint" hidden>按住 1 秒</span></div>`;
+  if(modal==='parents')body=`<h2 id="modal-title">家长小角</h2><p>学习范围、发音和离线下载，请交给家长来操作。</p><div class="button-row parent-actions">${btn('close-modal','取消')}<button type="button" id="parent-hold" class="button primary parent-hold">按住 1 秒进入</button></div>`;
   if(modal==='pause')body=`<h2 id="modal-title">小兔也想歇一歇</h2><p>不着急，准备好了再继续。<br>今天停在这里，也可以。</p><div class="button-row">${btn('close-modal','继续玩','primary','play')}${btn('end-session','今天先到这里','secondary')}</div>`;
-  backdrop.innerHTML=`<section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">${body}</section>`;
+  backdrop.innerHTML=`<section class="modal${modal==='parents'?' parent-gate-modal':''}" role="dialog" aria-modal="true" aria-labelledby="modal-title">${body}</section>`;
   app.append(backdrop);backdrop.querySelector('button')?.focus();
   const hold=backdrop.querySelector('#parent-hold');if(hold)disposeParentHold=mountParentHold(hold,enterParents);
 

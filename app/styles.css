@@ -81,6 +81,9 @@
 
 .word-picture-placeholder{display:inline-flex;align-items:center;justify-content:center;background:#eff1e8;border-radius:16px;color:#778574;font-size:12px;min-height:48px;aspect-ratio:1}
 
+.modal.parent-gate-modal{text-align:left}
+.modal .parent-actions{justify-content:flex-end;gap:10px}
+.modal .parent-actions .button{min-height:44px;padding:10px 16px;border-radius:10px;white-space:nowrap;box-shadow:none}
 .parent-hold{position:relative;overflow:hidden;touch-action:none;-webkit-touch-callout:none;user-select:none;isolation:isolate}
 .parent-hold:before{content:'';position:absolute;inset:0;background:#ffffff30;transform:scaleX(0);transform-origin:left;z-index:-1}
 .parent-hold.holding:before{transform:scaleX(1);transition:transform 1s linear}
