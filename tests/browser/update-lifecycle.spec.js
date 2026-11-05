@@ -41,6 +41,9 @@ test('parent update controls check, apply a new release and retain saved data wi
  await openParents(page);
  const section=page.locator('#app-update-settings');await expect(section).not.toHaveAttribute('open','');await section.locator('summary').click();
  await expect(section).not.toContainText('版本号');
+ const check=section.getByRole('button',{name:'检查更新',exact:true});
+ const reload=section.getByRole('button',{name:'重新加载并回首页',exact:true});
+ await expect(check).toHaveClass(/\bprimary\b/);await expect(reload).toHaveClass(/\bsecondary\b/);
  await page.getByRole('button',{name:'检查更新',exact:true}).click();await expect(page.locator('#app-update-status')).toHaveText('当前已是最新版本。');
  await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();
  await expect(page).toHaveURL(/#\/home$/);
@@ -49,6 +52,7 @@ test('parent update controls check, apply a new release and retain saved data wi
  await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['walk'],wordMeanings:{walk:'散步'}})));
  release='b';await page.getByRole('button',{name:'检查更新',exact:true}).click();
  await expect(page.locator('#app-update-status')).toContainText('新版已准备好');expect(await page.evaluate(()=>window.testRelease)).toBe('a');
+ await expect(check).toHaveClass(/\bsecondary\b/);await expect(reload).toHaveClass(/\bprimary\b/);
  await page.getByRole('button',{name:'重新加载并回首页',exact:true}).click();await page.waitForFunction(()=>window.testRelease==='b');
  await expect(page).toHaveURL(/#\/home$/);
  await expect(page.locator('#parent-hold')).not.toBeVisible();

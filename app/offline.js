@@ -5,8 +5,20 @@ export class OfflineLibrary {
  constructor(toast,beforeUpdate){this.beforeUpdate=beforeUpdate;this.toast=toast;this.state={ready:false,packs:[],recentBytes:0};this.packs=[];this.busy=false;this.message='';this.failed=false;this.warmed=false;this.plan=null;this.progress=null;}
  get label(){return this.state.ready?(this.state.allReady?'全部学习内容已可离线':'页面已可离线 · 素材按需保存'):this.failed?'离线页面尚未准备好，可先联网使用':'正在准备轻量离线页面…';}
  editor(){return `<section class="panel parent-section" id="parent-tools" aria-labelledby="offline-title"><details id="offline-settings"><summary><span id="offline-title">离线下载与存储管理</span><span class="micro">平时联网直接使用；出门前可提前下载。</span></summary><div class="offline-settings-body"><p>按需保存图片和读音，也可以一次下载全部内容。</p><p id="offline-stats" class="micro">${this.stats()}</p><div id="offline-categories">${this.categoriesHtml()}</div><div class="button-row"><button class="button secondary" id="offline-download" data-action="offline-download" ${this.busy||this.state.allReady?'disabled':''}>${this.downloadLabel()}</button><button class="button secondary" id="offline-clear" data-action="offline-clear" ${this.busy?'disabled':''}>清理全部素材</button></div><p class="micro offline-note">浏览过的图片和听过的音频也会自动缓存。下载时保持页面打开，中断后可以继续，不重复下载。清理素材不会删除掌握记录、学习范围和历史自定义音频。</p><section class="offline-help" aria-labelledby="offline-help-title"><h3 id="offline-help-title">离线使用说明</h3><p class="micro">所选单词使用词库已有发音。浏览器清理网站数据后需要重新下载；新版启用后会清理旧版离线素材，需要重新下载；学习记录和选词范围保留；出门前可以检查这里的下载状态。iPad可通过Safari分享菜单“添加到主屏幕”。</p></section></div></details><div id="offline-activity" ${this.message||this.progress?'':'hidden'}><progress id="offline-bar" aria-label="离线下载进度" max="${this.progress?.totalBytes||1}" value="${this.progress?.doneBytes||0}" ${this.progress?'':'hidden'}></progress><p id="offline-progress" role="status" tabindex="-1">${this.message}</p><button class="button secondary small" id="offline-cancel" data-action="offline-cancel" ${this.busy&&this.progress?'':'hidden'}>暂停下载</button></div><dialog id="offline-plan" aria-label="确认离线下载">${this.planHtml()}</dialog></section>`;}
- updatesEditor(){return `<section class="panel parent-section"><details id="app-update-settings"><summary><span>应用更新</span><span class="micro">检查新内容，或重新加载后回到首页。</span></summary><div class="app-update-body"><div class="button-row"><button class="button secondary" data-action="app-check-update">检查更新</button><button class="button secondary" data-action="app-reload">重新加载并回首页</button></div><p class="micro">重新加载会停止当前播放，已保存的学习设置和掌握记录会保留。</p><p id="app-update-status" role="status"></p></div></details></section>`;}
- paintUpdates(){const status=document.querySelector('#app-update-status');if(status)status.textContent=this.updateMessage||'';}
+ updatesEditor(){return `<section class="panel parent-section"><details id="app-update-settings"><summary><span>应用更新</span><span class="micro">检查新内容，或重新加载后回到首页。</span></summary><div class="app-update-body"><div class="button-row"><button class="button primary" data-action="app-check-update">检查更新</button><button class="button secondary" data-action="app-reload">重新加载并回首页</button></div><p id="app-update-status" role="status"></p><p class="micro">重新加载会停止当前播放，已保存的学习设置和掌握记录会保留。</p></div></details></section>`;}
+ paintUpdates(){
+  const status=document.querySelector('#app-update-status');
+  if(status)status.textContent=this.updateMessage||'';
+  const check=document.querySelector('[data-action="app-check-update"]');
+  const reload=document.querySelector('[data-action="app-reload"]');
+  if(!check||!reload)return;
+  const {ready=false,busy=false}=this.updateState||{};
+  check.classList.toggle('primary',!ready);
+  check.classList.toggle('secondary',ready);
+  reload.classList.toggle('primary',ready);
+  reload.classList.toggle('secondary',!ready);
+  check.disabled=reload.disabled=busy;
+ }
  manageUpdate(action){
   if(!this.updates){this.updateMessage='应用更新尚未准备好，请稍后重试。';this.paintUpdates();return;}
   return action==='check'?this.updates.check():this.updates.reload(true);
@@ -56,7 +68,11 @@ export class OfflineLibrary {
    const testOffline=new URLSearchParams(location.search).has('offline-test');
    const localPreview=['localhost','127.0.0.1','[::1]'].includes(location.hostname)&&!testOffline;
    const registration=await navigator.serviceWorker.register(testOffline?'./sw.js?mode=offline':'./sw.js',{scope:'./',updateViaCache:'none'});
-   this.updates=watchSiteUpdates(registration,{beforeUpdate:this.beforeUpdate,busy:()=>this.busy,showBanner:!localPreview,notify:message=>{this.updateMessage=message;this.paintUpdates();}});
+   this.updates=watchSiteUpdates(registration,{beforeUpdate:this.beforeUpdate,busy:()=>this.busy,showBanner:!localPreview,notify:message=>{this.updateMessage=message;this.paintUpdates();},
+    onState:state=>{
+     if(state.ready&&!this.updateState?.ready&&!state.busy)this.updateMessage='新版已准备好。';
+     this.updateState=state;this.paintUpdates();
+    }});
    this.packs=await fetch('./offline-packs.json').then(r=>r.json());
    await this.check();if(!wasControlled)await this.warmVisiblePictures();
   }catch{this.failed=true;this.message='离线页面尚未准备好，可以先联网使用。';this.paint();}
