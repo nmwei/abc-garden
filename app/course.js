@@ -1,3 +1,4 @@
+import {quizCelebration} from './celebration.js';
 import {PictureQuiz} from './picture-quiz.js';
 import {matchesWord} from './word-aliases.js';
 import {selectedWordIds,wordLibrary} from './word-library.js';
@@ -196,7 +197,7 @@ export class Course {
  return `<section class="learning-panel ${this.mode==='speak'?'speak-panel':this.mode==='spell'?'spell-panel':''}">${this.mode==='learn'?this.selectionButton(w):''}${body}${missing}${['spell','speak'].includes(this.mode)?'':`<p class="feedback" role="status">${esc(this.message)}</p>`}${this.mode==='learn'?this.masteryControl(w):`<div class="practice-secondary button-row centered">${this.mode==='spell'?button('hint','提示'):''}${button('next-word','下一个词')}</div>`}${extra}${this.mode==='spell'?'':sentenceCreditDetails(w)}</section>`;
  }
  createPictureQuiz(pool,startId){return new PictureQuiz(pool.filter(w=>w.image&&!w.pictureCue),startId);}
- quizCelebration(kind){const flower=kind==='correct'||kind==='complete',text=kind==='complete'?'小花为你的练习开放！':flower?'答对啦！':'再听听，你可以的';return `<div class="quiz-celebration ${kind}" aria-hidden="true"><img src="./assets/pictures/${flower?'flower':'seedling'}.svg" alt="" width="48" height="48"><span>${text}</span>${flower?'<img class="quiz-petal petal-one" src="./assets/pictures/flower.svg" alt=""><img class="quiz-petal petal-two" src="./assets/pictures/flower.svg" alt="">':''}</div>`;}
+ quizCelebration(kind){return quizCelebration(kind);}
  quizComplete(){return `<section class="learning-panel quiz-complete">${this.quizCelebration('complete')}<h2>这一轮完成啦！</h2><p>已走完 ${this.quiz.words.length} 道听音找图，可以休息一下。</p>${button('quiz-again','再练一轮','',true)}${button('mode','回到看图听词','data-mode="learn"')}</section>`;}
  quizActivity(w){
   if(!this.options)this.makeOptions();const q=this.quiz,done=!!q.result;

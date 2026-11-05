@@ -10,3 +10,7 @@ playwright-report/
 .audio-cache/
 
 .build-cache/
+
+# Licensed audio is distributed only inside the built game.
+/assets/audio/feedback-correct.wav
+/assets/audio/feedback-retry.wav

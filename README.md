@@ -270,3 +270,9 @@ node scripts/publish.mjs --repository owner/abc-garden
 字母朋友中的“听音找字母”按 EdCreate Listen 的已核对交互独立实现，沿用小花园界面。可选名称/字母音、大写/小写、元音标红与答题音效，范围跟随家长设置。练习中错项划掉、可继续尝试，提示只圈答案且不计一次答对；挑战每题一次机会，遍历本轮字母后结算并支持错题单遍回听。C/K 在字母音模式中按相同 /k/ 判定。每题手动进入下一题；计时只计算等待作答时间，播放和反馈、切后台时暂停。离开游戏会停止声音并清理计时器，成绩不持久化。
 
 `app/listen-game-core.js` 管题目、计分和同音判定；`app/listen-game.js` 管界面、音频与计时。单遍文件与来源哈希加入离线“其他内容”包，重新生成沿用 `scripts/import-edcreate-audio.mjs`。
+
+## 答题音效
+
+答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
+
+许可为 [Mixkit Sound Effects Free License](https://mixkit.co/license/modal/sfxFree/)，允许游戏成品使用，但禁止随源码再分发。因此两个 WAV 不进入 `main`，仅随可运行的游戏成品发布到 `gh-pages`。首次构建或数学站启动前，`scripts/prepare-feedback-audio.mjs` 从来源下载并校验原始 MP3，再以 FFmpeg 8.1.1 生成已试听确认的 WAV；已有正确文件时无需联网或 FFmpeg。源码与输出均验证 SHA-256，差异会中止构建，不会悄悄更换录音。也可先运行 `node scripts/prepare-feedback-audio.mjs` 准备素材。

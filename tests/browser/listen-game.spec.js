@@ -40,6 +40,9 @@ test('offline all-letter board fits phone and tablet, accepts sound C/K and stop
  await page.setViewportSize({width:1194,height:834});await page.screenshot({path:`test-results/listen-game-tablet-${test.info().project.name}.png`,fullPage:true});
  for(const size of [{width:1194,height:834},{width:390,height:844}]){await page.setViewportSize(size);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.screenshot({path:`test-results/listen-game-${test.info().project.name}.png`,fullPage:true});
+ const answer=await target(page);await pick(page,answer).click();
+ await expect.poll(()=>page.locator('#feedback-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.04);
+ await page.locator('.quiz-celebration>img').first().evaluate(img=>img.decode());
  await page.getByRole('button',{name:'成长地图',exact:true}).click();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
 });
 test('failed audio can be retried and returning from the background requires a fresh single reading',async({page})=>{
@@ -74,28 +77,28 @@ test('entry starts immediately; cancel keeps the question and confirmed settings
  await page.screenshot({path:`test-results/listen-settings-${test.info().project.name}.png`,fullPage:true});
 });
 
-test('correct and wrong answers render audible feedback after resuming a suspended context; mute is honored',async({page})=>{
+test('A2 and B2 play clearly, share the flower celebration and honor mute',async({page})=>{
  await page.addInitScript(()=>{
-  const Native=window.AudioContext||window.webkitAudioContext;window.feedback={resumes:0,tones:[]};
-  window.AudioContext=function(){
-   const ctx=new Native(),nativeState=Object.getOwnPropertyDescriptor(Native.prototype,'state')||Object.getOwnPropertyDescriptor(Object.getPrototypeOf(Native.prototype),'state');
-   let forced=true;const suspended=ctx.suspend(),resume=ctx.resume.bind(ctx),createOscillator=ctx.createOscillator.bind(ctx),createGain=ctx.createGain.bind(ctx);
-   Object.defineProperty(ctx,'state',{get:()=>forced?'suspended':nativeState.get.call(ctx)});
-   ctx.resume=()=>{window.feedback.resumes++;return suspended.then(()=>{forced=false;return resume();});};
-   const analyser=ctx.createAnalyser();analyser.fftSize=1024;analyser.connect(ctx.destination);
-   ctx.createGain=()=>{const gain=createGain(),connect=gain.connect.bind(gain);gain.connect=()=>connect(analyser);return gain;};
-   ctx.createOscillator=()=>{
-    const osc=createOscillator(),record={peak:0};window.feedback.tones.push(record);
-    const samples=new Float32Array(analyser.fftSize),timer=setInterval(()=>{analyser.getFloatTimeDomainData(samples);record.peak=Math.max(record.peak,...samples.map(Math.abs));},15);
-    osc.addEventListener('ended',()=>clearInterval(timer));return osc;
-   };
-   return ctx;
-  };
+  window.feedbackPlays=[];const play=HTMLMediaElement.prototype.play;
+  HTMLMediaElement.prototype.play=function(){if(this.id==='feedback-audio')window.feedbackPlays.push(this.src);return play.apply(this,arguments);};
  });
  await setup(page);const t=await target(page),wrong=[...'ABCK'].find(l=>l!==t);
- await pick(page,wrong).click();await expect.poll(()=>page.evaluate(()=>window.feedback.tones[0]?.peak||0)).toBeGreaterThan(.01);
- await pick(page,t).click();await expect.poll(()=>page.evaluate(()=>window.feedback.tones[1]?.peak||0)).toBeGreaterThan(.01);
- expect(await page.evaluate(()=>window.feedback.resumes)).toBe(1);
- await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('checkbox',{name:'答题音效',exact:true}).uncheck();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();const next=await target(page);await pick(page,next).click();await page.waitForTimeout(350);
- expect(await page.evaluate(()=>window.feedback.tones.length)).toBe(2);
+ await pick(page,wrong).click();
+ const effect=page.locator('#feedback-audio');
+ await expect.poll(()=>effect.evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+ expect(await effect.evaluate(a=>a.src)).toContain('/feedback-retry.wav');expect(await effect.evaluate(a=>a.volume)).toBe(1);
+ await pick(page,t).click();await expect.poll(()=>effect.evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+ expect(await effect.evaluate(a=>a.src)).toContain('/feedback-correct.wav');
+ await expect(page.locator('.listen-stage .quiz-celebration.correct')).toBeVisible();
+ expect(await page.locator('.quiz-celebration').evaluate(el=>getComputedStyle(el).animationName)).toContain('quiz-rise');
+ await page.locator('.quiz-celebration>img').first().evaluate(img=>img.decode());
+ const audible=await page.evaluate(async()=>{
+  const ctx=new (window.AudioContext||window.webkitAudioContext)();
+  try{const bytes=await(await fetch('./assets/audio/feedback-correct.wav')).arrayBuffer(),buffer=await ctx.decodeAudioData(bytes);let peak=0;for(const v of buffer.getChannelData(0))peak=Math.max(peak,Math.abs(v));return {peak,duration:buffer.duration};}finally{await ctx.close();}
+ });
+ expect(audible.peak).toBeGreaterThan(.4);expect(audible.peak).toBeLessThan(.85);expect(audible.duration).toBeGreaterThan(2);
+ await page.getByRole('button',{name:'设置',exact:true}).click();expect(await effect.evaluate(a=>a.paused)).toBe(true);
+ await page.getByRole('checkbox',{name:'答题音效',exact:true}).uncheck();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();const next=await target(page);await pick(page,next).click();
+ expect(await page.evaluate(()=>window.feedbackPlays.length)).toBe(2);
+ await expect(page.locator('.listen-stage .quiz-celebration.correct')).toBeVisible();
 });
