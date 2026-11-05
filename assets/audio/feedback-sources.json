@@ -11,7 +11,7 @@
       "license": "Mixkit Sound Effects Free License",
       "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
       "changes": "Decoded public MP3 preview; loudness normalized to -16 LUFS with -2 dBTP ceiling; mono PCM16 WAV, 24 kHz; no trimming, pitch or speed changes",
-      "distributionNote": "Distributed as part of the built game only. Excluded from the public source branch; scripts/prepare-feedback-audio.mjs obtains and verifies the approved audio locally."
+      "distributionNote": "Stored with the other game audio assets in assets/audio; included in the built site and offline cache."
     },
     {
       "file": "audio/feedback-retry.wav",
@@ -24,9 +24,17 @@
       "license": "Mixkit Sound Effects Free License",
       "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
       "changes": "Decoded public MP3 preview; loudness normalized to -16 LUFS with -2 dBTP ceiling; mono PCM16 WAV, 24 kHz; no trimming, pitch or speed changes",
-      "distributionNote": "Distributed as part of the built game only. Excluded from the public source branch; scripts/prepare-feedback-audio.mjs obtains and verifies the approved audio locally."
+      "distributionNote": "Stored with the other game audio assets in assets/audio; included in the built site and offline cache."
     }
   ],
   "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
-  "use": "Incorporated into the deployed game; audio binaries are excluded from the public source branch."
+  "use": "Bundled local game audio, versioned with the other project audio assets.",
+  "flower": {
+    "file": "feedback-flower.svg",
+    "author": "Google Noto Emoji contributors",
+    "source": "https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@v2.047/svg/emoji_u1f33c.svg",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+    "changes": "None"
+  }
 }

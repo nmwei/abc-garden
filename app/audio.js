@@ -7,6 +7,7 @@ export class GardenAudio {
     this.element.setAttribute('playsinline','');document.body.append(this.element);
   }
   stop(){
+    globalThis.GardenFeedbackAudio?.stopAll();
     this.token++;
     if(this.cancelWait){this.cancelWait();this.cancelWait=null;}
     if(this.current){this.current.pause();this.current.removeAttribute('src');this.current.load();this.current=null;}

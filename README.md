@@ -275,4 +275,8 @@ node scripts/publish.mjs --repository owner/abc-garden
 
 答对使用用户选定的 Mixkit A2（Correct answer reward），答错使用 B2（Wrong answer fail notification）。音频统一到 -16 LUFS、真峰值上限 -2 dBTP，24 kHz 单声道 PCM16；保留原时长、语速和音高。来源及处理哈希见 `assets/audio/feedback-sources.json`，播放逻辑为 `app/feedback-audio.js`。题目朗读、切题、离开页面及进入后台会取消旧音效。
 
-许可为 [Mixkit Sound Effects Free License](https://mixkit.co/license/modal/sfxFree/)，允许游戏成品使用，但禁止随源码再分发。因此两个 WAV 不进入 `main`，仅随可运行的游戏成品发布到 `gh-pages`。首次构建或数学站启动前，`scripts/prepare-feedback-audio.mjs` 从来源下载并校验原始 MP3，再以 FFmpeg 8.1.1 生成已试听确认的 WAV；已有正确文件时无需联网或 FFmpeg。源码与输出均验证 SHA-256，差异会中止构建，不会悄悄更换录音。也可先运行 `node scripts/prepare-feedback-audio.mjs` 准备素材。
+两个 WAV 与现有声音素材一起保存在源码仓库的 `assets/audio/` 中，构建时校验 SHA-256，并随站点打包和离线缓存。重新拉取项目即可获得音频；启动、构建和部署无需再下载原音源，也不需要 FFmpeg。来源及许可记录保留在 `assets/audio/feedback-sources.json`。
+
+答对统一播放 A2 并呈现 1.4 秒小花上飘，答错播放 B2；覆盖配对、听音找字母、听音找图、拼写与故事理解。提示、答案展示、录音与自由表达不作自动正误评价。大小写配对的三个字母都有独立喇叭，每次读名称一遍，点读不作答；小花与题目朗读共用取消机制，离开或重播不延续旧反馈。
+
+大小写配对保留独立的单遍名称点读，移除“帮帮我”揭示答案按钮。小喇叭使用无边框、透明背景，仍保留 44 像素点击区域和键盘焦点提示；字母卡片外框保留。

@@ -1,8 +1,11 @@
 // Kept identical across the three standalone Garden apps.
 (() => {
   class GardenFeedbackAudio {
+    static instances = new Set();
+    static stopAll() { for (const player of this.instances) player.stop(); }
     constructor({enabled = () => true} = {}) {
       this.enabled = enabled;
+      GardenFeedbackAudio.instances.add(this);
       this.element = null;
       this.token = 0;
       this.cancel = null;
@@ -12,14 +15,36 @@
     }
     stop() {
       this.token++;
+      clearTimeout(this.flowerTimer);
+      this.flower?.remove();
+      this.flower = null;
       this.cancel?.();
       if (!this.element) return;
       this.element.pause();
       this.element.removeAttribute('src');
       this.element.load();
     }
+    answer(correct, anchor) {
+      const pending = this.play(correct);
+      if (correct && !document.hidden) {
+        const box = (anchor?.isConnected ? anchor : document.body).getBoundingClientRect();
+        const width = document.documentElement.clientWidth, height = document.documentElement.clientHeight;
+        const flower = document.createElement('div');
+        flower.className = 'answer-flower';
+        flower.setAttribute('aria-hidden', 'true');
+        flower.style.left = `${Math.max(90, Math.min(width - 90, box.left + box.width / 2))}px`;
+        flower.style.top = `${Math.max(90, Math.min(height - 65, box.top + 4))}px`;
+        const img = document.createElement('img');
+        img.src = new URL('./assets/feedback-flower.svg', document.baseURI).href;
+        img.alt = ''; img.width = img.height = 40;
+        const label = document.createElement('span'); label.textContent = '答对啦！';
+        flower.append(img, label); document.body.append(flower); this.flower = flower;
+        this.flowerTimer = setTimeout(() => { flower.remove(); if (this.flower === flower) this.flower = null; }, 1450);
+      }
+      return pending;
+    }
     async play(correct) {
-      this.stop();
+      GardenFeedbackAudio.stopAll();
       if (!this.enabled() || document.hidden) return false;
       if (!this.element) {
         this.element = new Audio();

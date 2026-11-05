@@ -380,3 +380,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .listen-settings>.button-row{justify-content:flex-end;gap:12px}.listen-settings>.button-row .button{min-width:110px}
 
 .listen-stage{position:relative}.listen-stage>.quiz-celebration{top:45%}
+
+.pair-target{position:relative;width:max-content;min-width:130px;margin:10px auto 22px;padding:12px 44px}.pair-target .big-glyph{display:block;margin:0}.pair-voice{display:grid;place-items:center;position:absolute;right:3px;top:3px;width:44px;height:44px;min-height:44px;border-radius:50%;color:var(--ink);background:transparent;border:0;cursor:pointer}.pair-voice svg{width:21px;height:21px}.pair-option{position:relative}.pair-option .choice{padding-top:32px}.pair-voice:focus-visible{outline:3px solid #537c9e;outline-offset:2px}

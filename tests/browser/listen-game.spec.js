@@ -42,7 +42,7 @@ test('offline all-letter board fits phone and tablet, accepts sound C/K and stop
  await page.screenshot({path:`test-results/listen-game-${test.info().project.name}.png`,fullPage:true});
  const answer=await target(page);await pick(page,answer).click();
  await expect.poll(()=>page.locator('#feedback-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.04);
- await page.locator('.quiz-celebration>img').first().evaluate(img=>img.decode());
+ await page.locator('.answer-flower>img').first().evaluate(img=>img.decode());
  await page.getByRole('button',{name:'成长地图',exact:true}).click();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
 });
 test('failed audio can be retried and returning from the background requires a fresh single reading',async({page})=>{
@@ -89,9 +89,9 @@ test('A2 and B2 play clearly, share the flower celebration and honor mute',async
  expect(await effect.evaluate(a=>a.src)).toContain('/feedback-retry.wav');expect(await effect.evaluate(a=>a.volume)).toBe(1);
  await pick(page,t).click();await expect.poll(()=>effect.evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
  expect(await effect.evaluate(a=>a.src)).toContain('/feedback-correct.wav');
- await expect(page.locator('.listen-stage .quiz-celebration.correct')).toBeVisible();
- expect(await page.locator('.quiz-celebration').evaluate(el=>getComputedStyle(el).animationName)).toContain('quiz-rise');
- await page.locator('.quiz-celebration>img').first().evaluate(img=>img.decode());
+ await expect(page.locator('.answer-flower')).toBeVisible();
+ expect(await page.locator('.answer-flower').evaluate(el=>getComputedStyle(el).animationName)).toContain('garden-answer-rise');
+ await page.locator('.answer-flower>img').first().evaluate(img=>img.decode());
  const audible=await page.evaluate(async()=>{
   const ctx=new (window.AudioContext||window.webkitAudioContext)();
   try{const bytes=await(await fetch('./assets/audio/feedback-correct.wav')).arrayBuffer(),buffer=await ctx.decodeAudioData(bytes);let peak=0;for(const v of buffer.getChannelData(0))peak=Math.max(peak,Math.abs(v));return {peak,duration:buffer.duration};}finally{await ctx.close();}
@@ -100,5 +100,5 @@ test('A2 and B2 play clearly, share the flower celebration and honor mute',async
  await page.getByRole('button',{name:'设置',exact:true}).click();expect(await effect.evaluate(a=>a.paused)).toBe(true);
  await page.getByRole('checkbox',{name:'答题音效',exact:true}).uncheck();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();const next=await target(page);await pick(page,next).click();
  expect(await page.evaluate(()=>window.feedbackPlays.length)).toBe(2);
- await expect(page.locator('.listen-stage .quiz-celebration.correct')).toBeVisible();
+ await expect(page.locator('.answer-flower')).toBeVisible();
 });

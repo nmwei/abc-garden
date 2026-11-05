@@ -1,3 +1,4 @@
+import './feedback-audio.js';
 import {ListenGame} from './listen-game.js';
 import {VoiceSettings} from './voice-settings.js';
 import {mountParentHold} from './parent-gate.js';
@@ -31,8 +32,9 @@ const learning=new LearningContent({audio,toast,refresh:render,mastery});
 state.settings.letters=[...learning.data.letters];
 state.settings.mode='name';state.settings.soundConfirmed=false;
 const selectedLetters=()=>[...learning.data.letters];
-const listenGame=new ListenGame({audio,refresh:render,letters:selectedLetters});
-const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery});
+const feedback=new globalThis.GardenFeedbackAudio({enabled:()=>listenGame.options.effects});
+const listenGame=new ListenGame({audio,refresh:render,letters:selectedLetters,feedback});
+const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback});
 function save(){try{localStorage.setItem(PREFERENCES_KEY,JSON.stringify({version:1,settings:state.settings,customAudio:state.customAudio}));return true;}catch{storageWarning='本机存储不可用或空间不足，本次变更可能无法保存。本次仍可继续使用。';toast(storageWarning);return false;}}
 function toast(text){const target=document.querySelector('#toast');target.textContent=text;target.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>target.classList.remove('show'),4500);}
 const btn=(action,label,style='secondary',glyph='',extra='')=>`<button type="button" class="button ${style}" data-action="${action}" ${extra}>${glyph?icon(glyph):''}${label}</button>`;
@@ -119,14 +121,15 @@ function practice(){
   const t=s.queue[s.index],done=s.task.done;
   let title='',subtitle='',body='',action='next',nextLabel='继续',kicker='';
   if(t.kind==='pair'){
-    kicker='FIND A FRIEND';title=t.case==='upper'?'它的小写朋友在哪里？':'它的大写朋友在哪里？';subtitle='点一点，帮它们找到彼此。';
-    body=`<div class="big-glyph target glyph ${t.case==='lower'?'lower':''}">${glyph(t.letter,t.case)}</div><div class="choices">${t.options.map(l=>`<button class="choice glyph ${t.case==='upper'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='upper'?'小':'大'}写 ${glyph(l,t.case==='upper'?'lower':'upper')}">${glyph(l,t.case==='upper'?'lower':'upper')}</button>`).join('')}</div>`;
+    kicker='FIND A FRIEND';title=t.case==='upper'?'它的小写朋友在哪里？':'它的大写朋友在哪里？';subtitle='点卡片配对，点小喇叭听名称。';
+    const voice=(l,letterCase)=>`<button type="button" class="pair-voice" data-action="pair-audio" data-letter="${l}" aria-label="听${letterCase==='upper'?'大':'小'}写 ${glyph(l,letterCase)} 的字母名称">${icon('speaker')}</button>`;
+    body=`<div class="pair-target"><span class="big-glyph target glyph ${t.case==='lower'?'lower':''}">${glyph(t.letter,t.case)}</span>${voice(t.letter,t.case)}</div><div class="choices">${t.options.map(l=>`<div class="pair-option"><button class="choice glyph ${t.case==='upper'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='upper'?'小':'大'}写 ${glyph(l,t.case==='upper'?'lower':'upper')}">${glyph(l,t.case==='upper'?'lower':'upper')}</button>${voice(l,t.case==='upper'?'lower':'upper')}</div>`).join('')}</div>`;
   }else if(t.kind==='choose'){
     kicker=s.mode==='name'?'LISTEN TO THE NAME':'LISTEN TO THE SOUND';title='听到的是哪位字母朋友？';subtitle=`这一轮听的是${modeLabel(s.mode)}。`;
     body=`<button class="sound-orb" data-action="task-audio" aria-label="听题目声音">${icon('speaker')}</button><div class="choices">${t.options.map(l=>`<button class="choice glyph ${t.case==='lower'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='lower'?'小':'大'}写 ${glyph(l,t.case)}">${glyph(l,t.case)}</button>`).join('')}</div>`;
   }else{return home();
   }
-  return `<div class="practice-shell"><div class="practice-top"><strong>${({pair:'大小写配对',choose:'听音找字母'})[moduleKind]}</strong>${btn('library','返回字母册','small secondary','back')}</div><section class="practice-panel ${t.kind==='demo'?'demo-panel':''}" aria-labelledby="task-title"><p class="practice-kicker">${kicker}</p><h1 id="task-title">${title}</h1><p class="micro">${subtitle}</p>${body}<p class="feedback" role="status" aria-live="polite">${esc(s.task.feedback)}</p></section><div class="practice-bottom"><p class="micro">每一小步都算数。${t.kind==='choose'||t.kind==='pair'?'忘记了也没关系，我们可以一起找。':'跟读和自己读，慢慢来。'}</p><div class="button-row" style="margin:0">${(t.kind==='pair'||t.kind==='choose')&&!done?btn('help','帮帮我','secondary','heart'):''}${btn(action,'换一道','primary','arrow',`${(t.kind==='pair'||t.kind==='choose')&&!done?'disabled':''}`)}</div></div></div>`;
+  return `<div class="practice-shell"><div class="practice-top"><strong>${({pair:'大小写配对',choose:'听音找字母'})[moduleKind]}</strong>${btn('library','返回字母册','small secondary','back')}</div><section class="practice-panel ${t.kind==='demo'?'demo-panel':''}" aria-labelledby="task-title"><p class="practice-kicker">${kicker}</p><h1 id="task-title">${title}</h1><p class="micro">${subtitle}</p>${body}<p class="feedback" role="status" aria-live="polite">${esc(s.task.feedback)}</p></section><div class="practice-bottom"><p class="micro">每一小步都算数。${t.kind==='choose'||t.kind==='pair'?'忘记了也没关系，我们可以一起找。':'跟读和自己读，慢慢来。'}</p><div class="button-row" style="margin:0">${t.kind==='choose'&&!done?btn('help','帮帮我','secondary','heart'):''}${btn(action,'换一道','primary','arrow',`${(t.kind==='pair'||t.kind==='choose')&&!done?'disabled':''}`)}</div></div></div>`;
 }
 function parents(){
  if(!draft)draft=structuredClone(state.settings);
@@ -200,13 +203,14 @@ app.addEventListener('click',event=>{
     if(!letter||!selectedLetters().includes(letter.upper)||!['name','sound','example'].includes(mode))return;
     const request=highlightRequest+1;const status=document.querySelector('#letter-play-status');if(status)status.textContent=mode==='name'?'正在读名称':mode==='sound'?'正在读字母音':'正在读例词';playHighlighted([`${mode}-${letter.upper}`]).finally(()=>{if(highlightRequest===request)updateFollow();});
   }
+  if(action==='pair-audio'){const t=state.session?.queue[0],l=button.dataset.letter;if(t?.kind==='pair'&&[t.letter,...t.options].includes(l))audio.play([`name-${l}`]);return;}
   if(action==='help')markHelp();
   if(action==='answer'){
     const s=state.session;if(!s||s.task.done)return;
     const t=s.queue[s.index];if(!t.options?.includes(button.dataset.answer))return;
     const correct=button.dataset.answer===t.letter;s.task.done=true;s.task.selected=button.dataset.answer;s.task.assisted=!correct;
     s.task.feedback=correct?'找到啦，我们接着去认识朋友。':'我们一起看看亮起来的这张。听过以后就可以继续啦。';
-    render();audio.play(correct?['prompt-correct']:[`${s.mode}-${t.letter}`]);
+    audio.stop();render();feedback.answer(correct,document.querySelector('.choice.revealed')||document.querySelector('.pair-target'));
   }
   if(action==='letter'){if(!selectedLetters().includes(button.dataset.letter))return;audio.stop();highlightRequest++;clearSoundHighlight();libraryLetter=button.dataset.letter;render();}
   if(action==='range'){draft.letters=[...button.dataset.range];saveLetters();}
