@@ -196,6 +196,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 #app-update-settings>summary:focus-visible{outline:3px solid var(--ochre);outline-offset:6px;border-radius:4px}
 .app-update-body{margin-top:20px;padding-top:4px;border-top:1px solid var(--line)}
 .app-update-body>.micro{margin-top:16px}
+.app-update-body .primary{box-shadow:none}
 #app-update-status{font-size:13px;line-height:1.7;margin-top:12px}
 #app-update-status:empty{display:none}
 /* One full-card button keeps the image and footer on the same edit action. */
