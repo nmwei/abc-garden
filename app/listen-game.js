@@ -1,3 +1,5 @@
+import './feedback-audio.js';
+import {quizCelebration} from './celebration.js';
 import {ListeningRound} from './listen-game-core.js';
 import {icon} from './art.js';
 
@@ -11,7 +13,7 @@ function loadOptions(){
 }
 const button=(action,label,style='secondary',extra='')=>`<button type="button" class="button ${style}" data-listen="${action}" ${extra}>${label}</button>`;
 export class ListenGame {
- constructor({audio,refresh,letters}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.effectEpoch=0;this.ready=false;this.elapsed=0;this.started=null;}
+ constructor({audio,refresh,letters}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.feedback=new globalThis.GardenFeedbackAudio({enabled:()=>this.options.effects});this.celebration=false;this.ready=false;this.elapsed=0;this.started=null;}
  display(letter){return this.options.letterCase==='lower'?letter.toLowerCase():letter;}
  pauseClock(){if(this.started!==null)this.elapsed+=performance.now()-this.started;this.started=null;clearInterval(this.timer);}
  startClock(){
@@ -20,29 +22,9 @@ export class ListenGame {
  }
  suspend(){this.epoch++;this.audio.stop();this.pauseClock();this.stopEffect();this.ready=false;}
  resume(){if(!this.draft&&this.round&&!this.round.done&&!this.round.finished){this.message='已暂停，点喇叭继续。';this.refresh();}}
- leave(){this.suspend();this.round=null;this.draft=null;this.effectContext?.close().catch(()=>{});this.effectContext=null;}
- stopEffect(){
-  this.effectEpoch++;
-  if(this.effectTone){try{this.effectTone.osc.stop();}catch{/* The tone may have already ended. */}this.effectTone.osc.disconnect();this.effectTone.gain.disconnect();this.effectTone=null;}
- }
- async effect(correct){
-  this.stopEffect();if(!this.options.effects)return;
-  const Context=globalThis.AudioContext||globalThis.webkitAudioContext;if(!Context)return;
-  const epoch=this.effectEpoch;
-  try{
-   const ctx=this.effectContext=this.effectContext?.state!=='closed'&&this.effectContext||new Context();
-   // Safari may suspend/interrupt Web Audio even though recorded speech already plays.
-   // Call resume inside the answer tap, then schedule against the resumed audio clock.
-   if(ctx.state!=='running')await ctx.resume();
-   if(epoch!==this.effectEpoch||ctx.state!=='running')return;
-   const osc=ctx.createOscillator(),gain=ctx.createGain(),start=ctx.currentTime;
-   const tone=this.effectTone={osc,gain};osc.connect(gain);gain.connect(ctx.destination);
-   osc.frequency.setValueAtTime(correct?660:240,start);osc.frequency.exponentialRampToValueAtTime(correct?880:180,start+.2);
-   gain.gain.setValueAtTime(.001,start);gain.gain.exponentialRampToValueAtTime(.12,start+.015);gain.gain.exponentialRampToValueAtTime(.001,start+.27);
-   osc.onended=()=>{osc.disconnect();gain.disconnect();if(this.effectTone===tone)this.effectTone=null;};
-   osc.start(start);osc.stop(start+.28);
-  }catch{/* Visual feedback remains available if the device cannot play effects. */}
- }
+ leave(){this.suspend();this.round=null;this.draft=null;this.celebration=false;}
+ stopEffect(){this.feedback.stop();}
+ effect(correct){return this.feedback.play(correct);}
  settings(){this.suspend();this.draft={...this.options};this.refresh();}
  cancelSettings(){this.draft=null;this.refresh();if(this.round&&!this.round.done&&!this.round.finished)this.hear();else this.ready=true;}
  start(){
@@ -71,7 +53,7 @@ export class ListenGame {
   if(action==='answer'){
    const correct=round.answer(value);if(correct===null)return;
    if(round.done){this.pauseClock();this.audio.stop();}
-   this.message=correct?'找到啦！':round.done?`刚刚读的是 ${this.display(round.target)}。`:'再听一听，换一个试试。';this.effect(correct);this.refresh();
+   this.message=correct?'找到啦！':round.done?`刚刚读的是 ${this.display(round.target)}。`:'再听一听，换一个试试。';this.effect(correct);this.celebration=correct;this.refresh();this.celebration=false;
    if(round.done)document.querySelector('[data-listen="next"]')?.focus({preventScroll:true});
   }
  }
@@ -89,6 +71,6 @@ export class ListenGame {
   if(!r)return `<section class="panel"><p>正在准备题目…</p></section>`;
   if(r.finished)return `<section class="panel listen-results"><p class="eyebrow">WELL DONE</p><h2>这一轮完成啦！</h2><p class="listen-score">${r.right} <small>/ ${r.letters.length} 题答对</small></p><p>答题用时：${format(this.elapsed)}</p>${r.missed.size?`<h3>再听听这些字母</h3><p class="micro">点字母回听，每次一遍。</p><div class="listen-review">${r.letters.filter(l=>r.missed.has(l)).map(l=>button('hear',this.display(l),'secondary',`data-letter="${l}" aria-label="回听字母 ${this.display(l)}"`)).join('')}</div>`:'<p>全部找到啦！</p>'}<p role="status">${this.message}</p><div class="button-row">${button('start','再玩一轮','primary')}${button('settings','设置')}</div></section>`;
   const shown=r.done?r.selected&&r.correct(r.selected)?r.selected:r.target:null;
-  return `<section class="listen-game" aria-label="听音找字母游戏"><div class="listen-scorebar"><div>${r.kind==='practice'?`找到 <strong>${r.found}</strong>　一次答对 <strong>${r.firstTry}</strong>`:`第 <strong>${r.index+1}</strong> / ${r.letters.length} 题　答对 <strong>${r.right}</strong>　用时 <strong id="listen-clock">${format(this.elapsed)}</strong>`}</div>${button('settings','设置','secondary small')}</div><div class="listen-stage"><button type="button" class="${r.done?'listen-answer':'sound-orb'}" data-listen="hear" aria-label="听题目声音">${r.done?this.display(shown):icon('speaker')}</button><p role="status" class="listen-message">${this.message}</p>${r.done?button('next',r.kind==='game'&&r.index+1===r.letters.length?'查看结果':'下一个字母','primary'):''}</div><div class="listen-pad" role="group" aria-label="选择字母">${r.letters.map(l=>`<button type="button" class="listen-key glyph ${option.letterCase==='lower'?'lower':''} ${option.vowels&&'AEIOU'.includes(l)?'vowel':''} ${r.wrong.has(l)?'wrong':''} ${r.done&&r.correct(l)?'correct':''} ${!r.done&&r.hinted&&r.correct(l)?'hinted':''}" data-listen="answer" data-letter="${l}" aria-label="选择${option.letterCase==='lower'?'小':'大'}写 ${this.display(l)}" ${r.done||r.wrong.has(l)||!this.ready?'disabled':''}>${this.display(l)}</button>`).join('')}</div>${r.kind==='practice'&&!r.done?button('hint','帮帮我','secondary listen-hint',this.ready?'':'disabled'):''}${option.mode==='sound'&&r.letters.includes('C')&&r.letters.includes('K')?'<p class="micro">C 和 K 在这里都示范 /k/，选任何一个都算对。</p>':''}</section>`;
+  return `<section class="listen-game" aria-label="听音找字母游戏"><div class="listen-scorebar"><div>${r.kind==='practice'?`找到 <strong>${r.found}</strong>　一次答对 <strong>${r.firstTry}</strong>`:`第 <strong>${r.index+1}</strong> / ${r.letters.length} 题　答对 <strong>${r.right}</strong>　用时 <strong id="listen-clock">${format(this.elapsed)}</strong>`}</div>${button('settings','设置','secondary small')}</div><div class="listen-stage">${this.celebration?quizCelebration('correct'):''}<button type="button" class="${r.done?'listen-answer':'sound-orb'}" data-listen="hear" aria-label="听题目声音">${r.done?this.display(shown):icon('speaker')}</button><p role="status" class="listen-message">${this.message}</p>${r.done?button('next',r.kind==='game'&&r.index+1===r.letters.length?'查看结果':'下一个字母','primary'):''}</div><div class="listen-pad" role="group" aria-label="选择字母">${r.letters.map(l=>`<button type="button" class="listen-key glyph ${option.letterCase==='lower'?'lower':''} ${option.vowels&&'AEIOU'.includes(l)?'vowel':''} ${r.wrong.has(l)?'wrong':''} ${r.done&&r.correct(l)?'correct':''} ${!r.done&&r.hinted&&r.correct(l)?'hinted':''}" data-listen="answer" data-letter="${l}" aria-label="选择${option.letterCase==='lower'?'小':'大'}写 ${this.display(l)}" ${r.done||r.wrong.has(l)||!this.ready?'disabled':''}>${this.display(l)}</button>`).join('')}</div>${r.kind==='practice'&&!r.done?button('hint','帮帮我','secondary listen-hint',this.ready?'':'disabled'):''}${option.mode==='sound'&&r.letters.includes('C')&&r.letters.includes('K')?'<p class="micro">C 和 K 在这里都示范 /k/，选任何一个都算对。</p>':''}</section>`;
  }
 }

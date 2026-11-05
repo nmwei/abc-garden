@@ -378,3 +378,5 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media(max-width:500px){.listen-pad{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.listen-key{min-height:57px;font-size:30px}.listen-options{grid-template-columns:1fr;gap:10px}.listen-options label{padding:14px}.listen-settings{padding:20px}.listen-stage{padding:22px 16px;min-height:220px}.listen-scorebar strong{font-size:24px}}
 
 .listen-settings>.button-row{justify-content:flex-end;gap:12px}.listen-settings>.button-row .button{min-width:110px}
+
+.listen-stage{position:relative}.listen-stage>.quiz-celebration{top:45%}

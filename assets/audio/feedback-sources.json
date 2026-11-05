@@ -1,0 +1,32 @@
+{
+  "clips": [
+    {
+      "file": "audio/feedback-correct.wav",
+      "author": "Mixkit（原站未注明作者）",
+      "title": "Correct answer reward",
+      "source": "https://mixkit.co/free-sound-effects/game-show/",
+      "sourceAudio": "https://assets.mixkit.co/active_storage/sfx/952/952-preview.mp3",
+      "sourceSha256": "641cedf96263c8fd7ad3d85dc592c522ddd477d45163b541656af98525c50d41",
+      "sha256": "7aed52982c290241ebe02c7c7ab98f7256695715f7988535b62e63e1014ad1d0",
+      "license": "Mixkit Sound Effects Free License",
+      "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
+      "changes": "Decoded public MP3 preview; loudness normalized to -16 LUFS with -2 dBTP ceiling; mono PCM16 WAV, 24 kHz; no trimming, pitch or speed changes",
+      "distributionNote": "Distributed as part of the built game only. Excluded from the public source branch; scripts/prepare-feedback-audio.mjs obtains and verifies the approved audio locally."
+    },
+    {
+      "file": "audio/feedback-retry.wav",
+      "author": "Mixkit（原站未注明作者）",
+      "title": "Wrong answer fail notification",
+      "source": "https://mixkit.co/free-sound-effects/game-show/",
+      "sourceAudio": "https://assets.mixkit.co/active_storage/sfx/946/946-preview.mp3",
+      "sourceSha256": "53c66e908fcfe406e1e6c696709dc7b2d5212c6f60b787c0ee8bc8d885f6f0c7",
+      "sha256": "985cfa74cf2ff6789bed01a8dff68b0d9a7a1c55e2f859fb0a0146d5bf4a8ecc",
+      "license": "Mixkit Sound Effects Free License",
+      "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
+      "changes": "Decoded public MP3 preview; loudness normalized to -16 LUFS with -2 dBTP ceiling; mono PCM16 WAV, 24 kHz; no trimming, pitch or speed changes",
+      "distributionNote": "Distributed as part of the built game only. Excluded from the public source branch; scripts/prepare-feedback-audio.mjs obtains and verifies the approved audio locally."
+    }
+  ],
+  "licenseUrl": "https://mixkit.co/license/modal/sfxFree/",
+  "use": "Incorporated into the deployed game; audio binaries are excluded from the public source branch."
+}
