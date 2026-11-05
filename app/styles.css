@@ -143,8 +143,22 @@
 .letter-speaker{position:absolute;right:5px;top:5px;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:transparent}
 .letter-speaker:hover,.letter-speaker.playing{background:#d3e3c8}
 .letter-sounds{grid-template-columns:repeat(2,minmax(0,1fr))}
-.loop-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 20px}
-.loop-toolbar [aria-pressed=true]{background:#d3e3c8}
+.loop-toolbar{display:flex;align-items:center;margin:0 0 20px}
+.loop-control{display:inline-flex;align-items:center;gap:12px;max-width:100%;padding:6px;border:1px solid #dce2d2;border-radius:20px;background:#edf0e4}
+.loop-control .loop-play{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;width:120px;min-height:48px;padding:10px 12px;border:1px solid transparent;border-radius:14px;background:var(--green);color:#fffdf6;white-space:nowrap;font-size:15px;font-weight:600;box-shadow:0 2px 4px #344d3910}
+.loop-control .loop-play svg{width:18px;height:18px;flex-shrink:0}
+.loop-control .loop-play:hover{background:#42644a}.loop-control.is-playing .loop-play{background:#334f3a}
+.loop-repeat-settings{display:flex;align-items:center;gap:8px;margin:0;padding:0 0 0 12px;border:0;border-left:1px solid #d1d9c7;min-width:0}
+.loop-repeat-label{font-size:13px;color:#5f705c;white-space:nowrap}
+.loop-repeat-options{display:flex;gap:2px;padding:3px;background:#f8f8f0;border:1px solid #dce2d2;border-radius:13px}
+.loop-repeat-option{position:relative;display:flex;cursor:pointer;border-radius:9px}
+.loop-repeat-input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.loop-repeat-option>span{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:4px;font-size:14px;color:#5a6a55;border-radius:9px;white-space:nowrap;border:1px solid transparent}
+.loop-repeat-option:has(input:checked)>span{background:#dce8d1;color:#304c36;border-color:#b6c8a6;font-weight:650}
+.loop-repeat-option:hover>span{background:#e7eddc}
+.loop-control button:focus-visible,.loop-repeat-option:has(input:focus-visible){outline:3px solid #527a52;outline-offset:3px}
+@media(max-width:340px){.loop-repeat-label{display:none}.loop-repeat-settings{border-left:0;padding-left:0}}
+@media(max-width:380px){.loop-control{gap:8px;padding:5px}.loop-control .loop-play{width:112px}.loop-repeat-settings{gap:5px;padding-left:8px}.loop-repeat-option>span{min-width:42px}}
 @media(max-width:520px){.alphabet-grid.letter-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.letter-picker .alphabet-card .glyph{font-size:38px}}
 
 .word-workspace-toolbar{display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:14px 20px;margin-bottom:20px}
@@ -357,3 +371,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .word-order-moves .button{min-height:44px;padding:6px 10px;font-size:13px}
 .word-order-footer{justify-content:flex-end;gap:10px}
 .word-order-status:not(:empty){flex-basis:100%;text-align:right}
+
+/* Listening game: one grid for both cases, with text and borders alongside color feedback. */
+.listen-settings{max-width:850px;margin:auto;padding:32px}.listen-settings h2{margin-top:0}.listen-settings fieldset{border:0;padding:0;margin:26px 0}.listen-settings legend{font-weight:600;margin-bottom:12px}.listen-options{display:grid;grid-template-columns:1fr 1fr;gap:14px}.listen-options label{display:flex;align-items:center;gap:12px;padding:20px;border:2px solid var(--line);border-radius:18px;cursor:pointer;background:#fffdf8}.listen-options label:has(input:checked){border-color:#64875c;background:#edf3e7}.listen-options input,.listen-checks input{accent-color:#53774b;width:20px;height:20px;flex-shrink:0}.listen-options strong{font-size:20px}.listen-options small{display:block;margin-top:8px;color:var(--muted);line-height:1.6}.listen-checks{display:flex;gap:28px;flex-wrap:wrap;margin:26px 0}.listen-checks label{display:flex;align-items:center;gap:8px;min-height:44px}.listen-settings>.button{display:flex;margin:auto;min-width:190px;justify-content:center}.listen-scorebar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.listen-scorebar strong{font-size:28px;color:#50754a}.listen-stage{min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(#eaf2e4,#fffdf7);gap:10px}.listen-stage .sound-orb{margin:0;width:130px;height:130px;flex-shrink:0}.listen-message{min-height:28px;text-align:center;line-height:1.7;margin:12px 0}.listen-answer{border:3px solid #64875c;border-radius:22px;background:#edf3e7;color:var(--ink);font:700 85px/1.2 Georgia,serif;width:140px;height:140px;cursor:pointer}.listen-pad{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:9px;margin-top:22px}.listen-key{min-width:0;min-height:70px;font-size:34px;font-weight:700;background:#fffdf8;border:2px solid #d6dfcf;border-radius:14px;color:var(--ink);cursor:pointer;padding:10px 2px}.listen-key:disabled{opacity:.65;cursor:default}.listen-key.vowel{color:#b84239;background:#fff5ed}.listen-key.wrong{text-decoration:line-through;border-color:#bd7772;background:#f8e7e2}.listen-key.correct{border-color:#4b7842;background:#e2efd9;color:#365e30;opacity:1}.listen-key.hinted{outline:3px dashed #b28c38;outline-offset:2px}.listen-hint{display:flex;margin:22px auto 0}.listen-review{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.listen-review button{font-size:28px;min-width:64px}.listen-results{text-align:center}.listen-score{font-size:56px;color:#50754a;margin:20px}.listen-score small{font-size:20px}.listen-results .button-row{justify-content:center}.listen-game button:focus-visible{outline:3px solid #537c9e;outline-offset:3px}
+@media(max-width:850px){.listen-pad{grid-template-columns:repeat(7,minmax(0,1fr))}.listen-settings{padding:24px}.listen-stage{min-height:240px}}
+@media(max-width:500px){.listen-pad{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.listen-key{min-height:57px;font-size:30px}.listen-options{grid-template-columns:1fr;gap:10px}.listen-options label{padding:14px}.listen-settings{padding:20px}.listen-stage{padding:22px 16px;min-height:220px}.listen-scorebar strong{font-size:24px}}

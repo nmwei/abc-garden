@@ -9,7 +9,8 @@ test('four download categories cover only released words and preserve other lear
  const union=[...new Set(categories.flatMap(id=>pack(id).files))];expect(pack('all').files).toEqual(union);
  expect(pack('all').bytes).toBe(union.reduce((n,f)=>n+manifest.resources[f].bytes,0));
  const ready=new Set(READY_WORDS.map(w=>w.id));for(const w of WORDS.filter(w=>!ready.has(w.id))){for(const f of [w.image,`./assets/audio/${w.audio}.wav`,`./assets/audio/sentence-${w.id}.wav`].filter(Boolean))expect(union).not.toContain(f);}
- expect(manifest.packs.map(p=>p.id)).toEqual([...categories,'all']);for(const f of ['./assets/audio/name-E.wav','./assets/audio/gcompris/index.html','./assets/audio/gk/source.mp3'])expect(pack('other').files).toContain(f);expect(pack('other').files.some(f=>f.includes('/read-'))).toBe(true);expect(pack('other').files.some(f=>f.includes('/talk-'))).toBe(true);
+ expect(manifest.packs.map(p=>p.id)).toEqual([...categories,'all']);for(const f of ['./assets/audio/name-E.wav','./assets/audio/edcreate/source.mp3','./assets/audio/edcreate/single-name-E.wav'])expect(pack('other').files).toContain(f);expect(pack('other').files.some(f=>f.includes('/read-'))).toBe(true);expect(pack('other').files.some(f=>f.includes('/talk-'))).toBe(true);
+ expect(pack('all').files.some(f=>/gcompris|audio\/gk\/|twocs/.test(f))).toBe(false);
  for(const p of manifest.packs)for(const f of p.files)expect(manifest.resources[f]).toBeDefined();
 });
 test('category controls plan independently, retain pictures and reuse them for all download',async({page},info)=>{

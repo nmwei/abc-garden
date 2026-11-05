@@ -11,21 +11,14 @@ const meta=path=>{const entry=build.entries[path.replace(/^\.\//,'')];if(!entry)
 await writeFile(new URL('.nojekyll',out),'');
 for(const word of WORDS.filter(w=>w.image))meta(word.image);
 const credits=JSON.parse(await readFile(new URL('assets/credits.json',out),'utf8'));
-const twocs=JSON.parse(await readFile(new URL('assets/audio/twocs-names.json',out),'utf8'));
 const sources=JSON.parse(await readFile(new URL('assets/audio/sources.json',out),'utf8'));
 for(const clip of sources.recordingOverrides){
   if(!credits.some(c=>c.file===clip.file&&c.author===clip.author&&c.source===clip.source))throw new Error(`Missing audio attribution: ${clip.file}`);
   if(clip.sha256&&meta(`assets/${clip.file}`).sha256!==clip.sha256)throw new Error(`Imported audio changed: ${clip.file}`);
 }
-for(const clip of sources.recordingOverrides.filter(c=>c.author==='Twocs'))if(!twocs.clips.some(c=>c.file===clip.file&&c.originalSha1===clip.originalSha1)||!credits.some(c=>c.file===clip.file&&c.author===clip.author&&c.license===clip.license))throw new Error(`Missing Twocs attribution: ${clip.file}`);
 const required=[...COURSE_AUDIO.map(a=>`./assets/audio/${a.key}.wav`),...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,`./assets/audio/example-${a.upper}.wav`]),...BLENDS.map(b=>`./assets/audio/blend-${b.id}.wav`),...Object.keys(PROMPTS).map(key=>`./assets/audio/prompt-${key}.wav`),'./assets/audio/silence.wav'];
-const candidate=JSON.parse(await readFile(new URL('assets/audio/gcompris/manifest.json',out),'utf8'));
-if(candidate.clips.map(c=>c.letter).join('')!=='ABCDEFGHIJKLMNOPQRSTUVWXYZ')throw new Error('Incomplete candidate alphabet');
-for(const clip of candidate.clips){
-  if(meta(`assets/audio/gcompris/originals/${clip.original}`).gitBlobSha1!==clip.gitBlobSha1)throw new Error(`Candidate source changed: ${clip.letter}`);
-  required.push(`./assets/audio/gcompris/${clip.file}`);
-}
-for(const file of ['SOURCE-README.txt','GPL-3.0.txt'])await readFile(new URL(`assets/audio/gcompris/${file}`,out));
+const listening=JSON.parse(await readFile(new URL('assets/audio/edcreate/imported.json',out),'utf8'));
+for(const clip of listening){if(meta(`assets/${clip.singleFile}`).sha256!==clip.singleSha256)throw Error(`Single letter recording changed: ${clip.file}`);required.push(`./assets/${clip.singleFile}`);}
 for(const name of required) {
   if(!meta(name).pcm16)throw new Error(`Missing or non-PCM16 audio: ${name}`);
 }
@@ -42,8 +35,7 @@ async function pack(id,title,files){const unique=[...new Set(files)];let bytes=0
 const wav=key=>`./assets/audio/${key}.wav`;
 const other=[...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,wav(`example-${a.upper}`)]),...BLENDS.map(b=>wav(`blend-${b.id}`)),...Object.keys(PROMPTS).map(k=>wav(`prompt-${k}`)),wav('silence'),
  ...[[READINGS,'read'],[DIALOGUES,'talk']].flatMap(([rows,prefix])=>rows.flatMap(r=>[WORDS.find(w=>w.id===r.image).image,...r.lines.map((_,i)=>wav(`${prefix}-${r.id}-${i}`))])),
- ...['index.html','preview.js','manifest.json','SOURCE-README.txt','GPL-3.0.txt'].map(f=>`./assets/audio/gcompris/${f}`),...candidate.clips.map(c=>`./assets/audio/gcompris/${c.file}`),
- './assets/credits.json','./assets/pictures/LICENSE-NOTO.txt','./assets/audio/gk/source.mp3','./assets/audio/gk/cuts.json'];
+ ...listening.map(c=>`./assets/${c.singleFile}`),...['source.mp3','legacy-L-source.wav','cuts.json','imported.json'].map(f=>`./assets/audio/edcreate/${f}`),'./assets/credits.json','./assets/pictures/LICENSE-NOTO.txt'];
 await pack('pictures','词卡图片',READY_WORDS.map(w=>w.image));
 await pack('word-audio','单词读音',READY_WORDS.map(w=>wav(w.audio)));
 await pack('sentence-audio','例句读音',READY_WORDS.map(w=>wav(`sentence-${w.id}`)));

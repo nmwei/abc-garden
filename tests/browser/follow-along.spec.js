@@ -1,13 +1,27 @@
 import {test,expect} from '@playwright/test';
 import {downloadPack} from '../offline-helpers.mjs';
+test('follow-along naturally plays each name and sound once and another tap replays the pair',async({page})=>{
+ await page.addInitScript(()=>{window.clips=[];const play=HTMLMediaElement.prototype.play;HTMLMediaElement.prototype.play=function(){window.clips.push(this.src.split('/').pop());return play.apply(this,arguments);};});
+ await page.goto('/#/letters');
+ const hear=page.getByRole('button',{name:'听字母 F 名称和字母音各一遍',exact:true});
+ for(let i=1;i<=2;i++){
+  await hear.click();await expect(page.locator('#letter-play-status')).toContainText('正在读名称');
+  await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.ended)).toBe(true);
+  await expect(page.locator('#letter-play-status')).toBeEmpty();
+  expect(await page.evaluate(()=>window.clips)).toEqual(Array.from({length:i},()=>['name-F.wav','sound-F.wav']).flat());
+ }
+ await page.getByRole('button',{name:'听字母名称 F',exact:true}).click();
+ await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.ended)).toBe(true);
+ expect((await page.evaluate(()=>window.clips)).at(-1)).toBe('name-F.wav');
+});
 test('letter selection is silent; current-letter sequence is explicit and stops on navigation',async({page,context})=>{
  await page.addInitScript(()=>{window.clips=[];const play=HTMLMediaElement.prototype.play;HTMLMediaElement.prototype.play=function(){window.clips.push(this.src.split('/').pop());return play.apply(this,arguments);};});
  await page.goto('/#/letters');await expect(page.locator('.segmented,.follow-panel,.tiny-speaker')).toHaveCount(0);await expect(page.getByRole('button',{name:'认识字母',exact:true})).toBeVisible();
  await page.getByRole('button',{name:'查看字母 F 大小写',exact:true}).click();await expect(page.locator('.library-detail h2')).toHaveText('你好，我是 F。');expect(await page.evaluate(()=>window.clips)).toEqual([]);
- await page.getByRole('button',{name:'听字母 F 名称和字母音各三遍',exact:true}).click();await expect(page.locator('#letter-play-status')).toContainText('正在读名称');await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+ await page.getByRole('button',{name:'听字母 F 名称和字母音各一遍',exact:true}).click();await expect(page.locator('#letter-play-status')).toContainText('正在读名称');await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
  await page.locator('#follow-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));await expect(page.locator('#letter-play-status')).toContainText('正在读字母音');await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await page.locator('#follow-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));await expect(page.locator('#letter-play-status')).toBeEmpty();expect(await page.evaluate(()=>window.clips)).toEqual(['name-F.wav','sound-F.wav']);
- await page.getByRole('button',{name:'听字母 F 名称和字母音各三遍',exact:true}).click();await page.getByRole('button',{name:'查看字母 G 大小写',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);await expect(page.locator('#letter-play-status')).toBeEmpty();expect((await page.evaluate(()=>window.clips)).at(-1)).toBe('name-F.wav');
+ await page.getByRole('button',{name:'听字母 F 名称和字母音各一遍',exact:true}).click();await page.getByRole('button',{name:'查看字母 G 大小写',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);await expect(page.locator('#letter-play-status')).toBeEmpty();expect((await page.evaluate(()=>window.clips)).at(-1)).toBe('name-F.wav');
  await page.getByRole('button',{name:'听字母名称 G',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await expect(page.getByRole('button',{name:'停止',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'查看字母 F 大小写',exact:true}).click();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
- await page.getByRole('button',{name:'听字母 F 名称和字母音各三遍',exact:true}).click();await page.getByRole('button',{name:'大小写配对',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);
- await page.getByRole('button',{name:'认识字母',exact:true}).click();await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存');await downloadPack(page,'other');await context.setOffline(true);await page.reload();await page.getByRole('button',{name:'听字母 F 名称和字母音各三遍',exact:true}).click();await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await page.getByRole('button',{name:'成长地图',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);
+ await page.getByRole('button',{name:'听字母 F 名称和字母音各一遍',exact:true}).click();await page.getByRole('button',{name:'大小写配对',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);
+ await page.getByRole('button',{name:'认识字母',exact:true}).click();await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存');await downloadPack(page,'other');await context.setOffline(true);await page.reload();await page.getByRole('button',{name:'听字母 F 名称和字母音各一遍',exact:true}).click();await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await page.getByRole('button',{name:'成长地图',exact:true}).click();expect(await page.locator('#follow-audio').evaluate(a=>a.paused)).toBe(true);
 });

@@ -1,5 +1,29 @@
 import {test,expect} from '@playwright/test';
 const end=page=>page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
+test('letter loop repeats each item twice while card playback stays single; toolbar remains compact',async({page})=>{
+ await page.addInitScript(()=>{
+  localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF'}));window.letterClips=[];
+  const play=HTMLMediaElement.prototype.play;HTMLMediaElement.prototype.play=function(){if(this.id==='follow-audio')window.letterClips.push(this.src.split('/').pop());return play.apply(this,arguments);};
+ });
+ await page.goto('/#/letters');const count=n=>page.getByRole('radio',{name:`每项读 ${n} 遍`,exact:true});await expect(count(1)).toBeChecked();await expect(page.locator('.loop-toolbar .micro')).toHaveCount(0);
+ await count(2).check();await page.getByRole('button',{name:'循环听',exact:true}).click();await expect(count(3)).toBeEnabled();
+ // End each clip synchronously so the assertions test queue order independently of device speed.
+ const clips=await page.locator('#follow-audio').evaluate(async a=>{for(let i=0;i<4;i++)a.dispatchEvent(new Event('ended'));await new Promise(resolve=>a.addEventListener('playing',resolve,{once:true}));a.pause();return window.letterClips;});
+ expect(clips).toEqual(['name-E.wav','name-E.wav','sound-E.wav','sound-E.wav','name-F.wav']);await expect(count(2)).toBeChecked();
+ await count(3).check();await expect(page.locator('#letter-play-status')).toContainText('下个字母起每项 3 遍');
+ const changed=await page.locator('#follow-audio').evaluate(async a=>{for(let i=0;i<4;i++)a.dispatchEvent(new Event('ended'));await new Promise(resolve=>a.addEventListener('playing',resolve,{once:true}));a.pause();return window.letterClips.slice(-5);});
+ expect(changed).toEqual(['name-F.wav','name-F.wav','sound-F.wav','sound-F.wav','name-E.wav']);await expect(page.locator('#letter-play-status')).toContainText('第 1/3 遍');
+ await page.setViewportSize({width:1194,height:834});await page.locator('.loop-control').screenshot({path:`test-results/letter-loop-control-playing-${test.info().project.name}.png`});
+ await page.getByRole('button',{name:'停止播放',exact:true}).click();
+ await page.evaluate(()=>{window.letterClips=[];});
+ await page.getByRole('button',{name:'听字母 E 名称和字母音各一遍',exact:true}).click();await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.ended)).toBe(true);
+ expect(await page.evaluate(()=>window.letterClips)).toEqual(['name-E.wav','sound-E.wav']);await expect(count(3)).toBeChecked();
+ await count(1).check();await count(1).focus();await page.keyboard.press('ArrowRight');await expect(count(2)).toBeChecked();
+ for(const width of [320,390,834,1194]){await page.setViewportSize({width,height:834});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const targets=await page.locator('.loop-repeat-option').evaluateAll(labels=>labels.map(l=>l.getBoundingClientRect().height));expect(targets.every(h=>h>=44)).toBe(true);}
+ await page.locator('.loop-control').screenshot({path:`test-results/letter-loop-control-idle-${test.info().project.name}.png`});
+ await page.screenshot({path:`test-results/letter-loop-repeat-${test.info().project.name}.png`,fullPage:true});
+ await page.reload();await expect(count(1)).toBeChecked();
+});
 test('letter loop follows the saved range, wraps without an added gap and stops',async({page})=>{
  await page.addInitScript(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['apple','cat']})));
  await page.goto('/#/letters');

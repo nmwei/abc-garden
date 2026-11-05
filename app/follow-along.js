@@ -6,13 +6,16 @@ export class FollowAlong {
     this.audio.onerror=()=>{if(this.status==='playing'){clearTimeout(this.timer);this.status='error';this.changed();}};
     this.audio.onended=()=>{
       if(this.status!=='playing')return;
+      if(++this.repeatIndex<this.repeats){this.play();return;}
+      this.repeatIndex=0;
       if(this.phase==='name'){this.phase='sound';this.play();}
-      else if(this.loop||this.index+1<this.letters.length){this.index=(this.index+1)%this.letters.length;this.phase='name';this.play();}
+      else if(this.loop||this.index+1<this.letters.length){this.index=(this.index+1)%this.letters.length;this.repeats=this.nextRepeats;this.phase='name';this.play();}
       else{this.status='done';this.changed();}
     };
   }
   stop(notify=true){this.version++;clearTimeout(this.timer);this.audio.pause();this.audio.removeAttribute('src');this.audio.load();this.status='idle';if(notify)this.changed();}
-  start(letters,{loop=false}={}){this.stop(false);this.loop=loop;if(!letters.length)return;this.letters=[...letters];this.index=0;this.phase='name';this.play();}
+  start(letters,{loop=false,repeats=1}={}){this.stop(false);this.loop=loop;this.repeats=loop&&[1,2,3].includes(repeats)?repeats:1;this.nextRepeats=this.repeats;this.repeatIndex=0;if(!letters.length)return;this.letters=[...letters];this.index=0;this.phase='name';this.play();}
+  setRepeats(repeats){if(this.loop&&[1,2,3].includes(repeats)){this.nextRepeats=repeats;this.changed();}}
   play(){
     const version=++this.version;this.status='playing';
     const key=`${this.phase}-${this.letters[this.index]}`;
@@ -28,6 +31,6 @@ export class FollowAlong {
   }
   skip(direction){
     if(!this.letters.length)return;
-    clearTimeout(this.timer);this.audio.pause();this.index=Math.max(0,Math.min(this.letters.length-1,this.index+direction));this.phase='name';this.play();
+    clearTimeout(this.timer);this.audio.pause();this.index=Math.max(0,Math.min(this.letters.length-1,this.index+direction));this.repeats=this.nextRepeats;this.repeatIndex=0;this.phase='name';this.play();
   }
 }
