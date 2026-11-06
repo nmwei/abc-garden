@@ -183,7 +183,7 @@ app.addEventListener('error',event=>{if(event.target.id==='alphabet-song')toast(
 app.addEventListener('click',event=>{
   const listening=event.target.closest('[data-listen]');if(listening&&!listening.disabled){follow.stop(false);listenGame.action(listening.dataset.listen,listening.dataset.letter);return;}
   const learningButton=event.target.closest('[data-learning]');if(learningButton&&!learningButton.disabled){audio.stop();follow.stop();learning.action(learningButton).catch(()=>toast('操作没有完成，请再试一次。'));return;}
-  const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){if(courseButton.dataset.course!=='word-list-toggle'){learning.stop();follow.stop(false);}course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
+  const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){if(!['word-list-toggle','word-page'].includes(courseButton.dataset.course)){learning.stop();follow.stop(false);}course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
   if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}

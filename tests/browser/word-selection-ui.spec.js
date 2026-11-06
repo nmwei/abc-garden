@@ -49,6 +49,7 @@ test('removal keeps a filtered sequence across a page boundary',async({page})=>{
  await page.locator('#word-topic').isVisible().then(async visible=>{if(visible)await page.locator('#word-topic').selectOption('food');else await page.locator('[data-course=topic][data-topic=food]').click();});
  const capacity=Number(await page.locator('.word-browser').getAttribute('data-page-size'));
  await page.getByRole('button',{name:'下一页',exact:true}).click();
+ await page.locator('.word-list [data-course=word]').first().click();
  await page.locator('[data-course=remove-selection]').click();await expect(page.locator('.english-word')).toHaveText(rows[capacity+1].display||rows[capacity+1].id);
  await expect(page.locator('#word-page-input')).toHaveValue('2');await expect(page.locator('#word-topic')).toHaveValue('food');
 });

@@ -233,6 +233,7 @@ test('resize updates a focused page number but preserves an unfinished jump draf
  const input=page.locator('#word-page-input'),browser=page.locator('.word-browser');
  const oldSize=Number(await browser.getAttribute('data-page-size'));
  await input.fill('20');await input.press('Enter');await expect(input).toHaveValue('20');
+ await page.locator('.word-list [data-course=word]').first().click();
  const selected=await page.locator('.word-list [aria-pressed=true]').getAttribute('data-word');
  await input.focus();await page.setViewportSize({width:1034,height:1378});
  await expect.poll(()=>browser.getAttribute('data-page-size')).not.toBe(String(oldSize));

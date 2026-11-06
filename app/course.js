@@ -257,21 +257,31 @@ export class Course {
   return `<span>${esc(this.message)}</span>`;
  }
  paintSpelling(){const form=document.querySelector('#spell-form');if(!form)return;const done=this.spellFeedbackKind==='success';form.querySelector('button').textContent=done?'下一题':'检查一下';form.querySelector('button').disabled=!this.spellDraft.trim();document.querySelector('#spell-feedback').innerHTML=this.message?this.spellFeedback():'';document.querySelector('.practice-secondary').hidden=done;}
- // Resizing changes the left-hand page capacity, not the active word or audio.
+ // Paging and resizing only replace the list and pager, preserving the active
+ // detail, audio, recording and keyboard focus.
+ refreshWordBrowserPage(list,jumpDraft=null){
+  const browser=list.closest('.word-browser'),pager=browser.querySelector('.word-pagination');
+  const focusIndex=[...pager.querySelectorAll('input,button')].indexOf(document.activeElement);
+  const template=document.createElement('template');template.innerHTML=this.wordBrowser();
+  list.replaceChildren(...template.content.querySelector('.word-list').childNodes);
+  pager.replaceWith(template.content.querySelector('.word-pagination'));
+  browser.dataset.pageSize=String(this.wordPageSize);
+  this.wordListScrollLeft=0;
+  if(jumpDraft!==null)browser.querySelector('#word-page-input').value=jumpDraft;
+  browser.querySelectorAll('.word-pagination input,.word-pagination button')[focusIndex]?.focus({preventScroll:true});
+ }
  updateWordPageSize(size,list){
   if(size===this.wordPageSize)return false;
   const pool=this.pool(),index=pool.findIndex(word=>word.id===this.word?.id);
-  const anchor=index>=0?index:this.wordPage*this.wordPageSize;
-  const browser=list.closest('.word-browser'),active=document.activeElement;
+  const start=this.wordPage*this.wordPageSize;
+  // Follow the current word only when it is on the page being viewed. Otherwise
+  // retain the browsing position instead of jumping back to the selected word.
+  const anchor=index>=start&&index<start+this.wordPageSize?index:start;
+  const active=document.activeElement;
   const jumpFocused=active?.id==='word-page-input';
   const jumpDraft=jumpFocused&&active.value!==String(this.wordPage+1)?active.value:null;
   this.wordPageSize=size;this.wordPage=Math.floor(Math.max(0,anchor)/size);
-  const template=document.createElement('template');template.innerHTML=this.wordBrowser();
-  list.replaceChildren(...template.content.querySelector('.word-list').childNodes);
-  browser.querySelector('.word-pagination').replaceWith(template.content.querySelector('.word-pagination'));
-  browser.dataset.pageSize=String(size);
-  this.wordListScrollLeft=0;
-  if(jumpFocused){const input=browser.querySelector('#word-page-input');if(jumpDraft!==null)input.value=jumpDraft;input.focus({preventScroll:true});}
+  this.refreshWordBrowserPage(list,jumpDraft);
   return true;
  }
  fitWordGrid(list){
@@ -375,6 +385,12 @@ export class Course {
  }
  async action(el){
   const a=el.dataset.course;
+  if(a==='word-page'){
+   const page=Number(el.dataset.page);if(!Number.isInteger(page))return;
+   this.wordPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(this.pool().length/this.wordPageSize)-1)));
+   this.refreshWordBrowserPage(document.querySelector('.word-browser .word-list'));
+   this.mountWordBrowserLayout();return;
+  }
   if(a==='word-list-toggle'){
    this.wordListExpanded=!this.wordListExpanded;
    const browser=document.querySelector('.word-browser');if(!browser)return;
@@ -404,7 +420,6 @@ export class Course {
   if(a==='level'){this.state.level=Number(el.dataset.level);this.save();this.refresh();return;}
   if(a==='records'||a==='credits'){this.open(a);return;}
   if(a==='review'){const due=reviewWords(this.state);if(!due.length)return;this.wordQuery='';this.wordPage=0;this.review=true;this.word=due[0];this.mode='listen';this.options=null;this.open('words');return;}
-  if(a==='word-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;const pool=this.pool();this.wordPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(pool.length/this.wordPageSize)-1)));if(pool.length)this.word=pool[this.wordPage*this.wordPageSize];this.options=null;this.open('words');return;}
   if(a==='topic'){this.review=false;this.wordQuery='';this.wordPage=0;this.topic=el.dataset.topic;this.word=this.pool()[0]||this.word;this.options=null;this.open('words');return;}
   if(a==='word'||a==='next-word'){const pool=this.pool();if(!pool.length){this.toast('没有匹配的词，请调整搜索或分类。');return;}this.word=a==='word'?pool.find(w=>w.id===el.dataset.word):pool[(pool.findIndex(w=>w.id===this.word.id)+1)%pool.length];this.wordPage=Math.floor(pool.findIndex(w=>w.id===this.word.id)/this.wordPageSize);this.options=null;this.open('words');return;}
   if(a==='mode'){this.mode=el.dataset.mode;this.options=null;this.open('words');return;}
