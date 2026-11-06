@@ -7,7 +7,7 @@ import {wordCardBody,sentenceCreditDetails,wordSentenceTranslation} from './word
 import {WORDS,WORD_BY_ID,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from './course-content.js';
 import {recordLearning,reviewWords,normalizeWord} from './course-core.js';
 import {LocalRecorder} from './recorder.js';
-const PAGE_SIZE=12;
+const DEFAULT_WORD_PAGE_SIZE=12;
 // These primary vocabulary entries also appear in the contextual expansion.
 const PRIMARY_EXPANSION_WORDS=new Set(['am','are','is','favorite','has','bye','mum']);
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -15,12 +15,12 @@ const button=(action,text,extra='',primary=false)=>`<button class="button ${prim
 export const wordPicture=(id,alt='')=>`<img class="word-picture" src="${WORD_BY_ID.get(id)?.image||`./assets/pictures/${id}.svg`}" alt="${esc(alt)}" width="128" height="128" loading="lazy" decoding="async">`;
 export class Course {
  constructor({getState,save,audio,toast,refresh,customWords,mastery,feedback}){
-  Object.assign(this,{getState,save,audio,toast,refresh,customWords,mastery,feedback});this.masteryFilter='learning';this.view='map';this.topic='all';this.wordPage=0;this.wordQuery='';this.word=null;this.mode='learn';this.review=false;
+  Object.assign(this,{getState,save,audio,toast,refresh,customWords,mastery,feedback});this.masteryFilter='learning';this.view='map';this.topic='all';this.wordPage=0;this.wordPageSize=DEFAULT_WORD_PAGE_SIZE;this.wordQuery='';this.word=null;this.mode='learn';this.review=false;this.wordListExpanded=false;
   this.customWords?.ready.then(()=>{if(this.view==='words')this.refresh();});
   this.recorder=new LocalRecorder(message=>this.updateRecording(message));this.role='B';this.message='';this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;
  }
  get state(){return this.getState().learning;}
- leave(reset=true){this.quiz=null;this.stopWordLoop();this.followToken=(this.followToken||0)+1;this.customWords?.stop();if(reset){this.breakDeadline=null;this.breakShown=false;}this.recorder.dispose();this.audio.stop();clearTimeout(this.breakTimer);this.resizeObserver?.disconnect();this.resizeObserver=null;}
+ leave(reset=true){this.quiz=null;this.stopWordLoop();this.followToken=(this.followToken||0)+1;this.customWords?.stop();if(reset){this.breakDeadline=null;this.breakShown=false;}this.recorder.dispose();this.audio.stop();clearTimeout(this.breakTimer);this.resizeObserver?.disconnect();this.resizeObserver=null;this.unmountWordBrowserLayout();}
  open(view){this.leave(view==='map');this.view=view;this.message='';this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;this.heard=false;this.round=(this.round||0)+1;this.refresh();if(view!=='map'&&!this.breakShown){this.breakDeadline??=Date.now()+15*60000;this.breakTimer=setTimeout(()=>{this.breakShown=true;this.toast('已经练习一小会儿啦，可以休息一下。');},Math.max(0,this.breakDeadline-Date.now()));}}
  play(keys){this.recorder.stop();document.querySelector('#self-recording')?.pause();return this.audio.play(keys);}
  record(item,skill,result){
@@ -28,7 +28,7 @@ export class Course {
   if(this.mastery.record(item,{independent:true,direct:true,heard:true}))this.toast('已自动标记为已掌握，可以随时取消。');
  }
  header(title,subtitle){return `<div class="library-head"><div><p class="eyebrow">GROW AT YOUR OWN PACE</p><h1 class="page-title">${title}</h1><p class="subtitle">${subtitle}</p></div>${['map','words'].includes(this.view)?'':button('map','返回成长地图')}</div>`;}
- html(){return `<section id="course">${this.view==='map'?this.map():this.view==='words'?this.words():this.view==='read'?this.read():this.view==='talk'?this.talk():this.view==='write'?this.write():this.view==='records'?this.records():this.credits()}</section>`;}
+ html(){return `<section id="course"${this.view==='words'?` class="word-page word-mode-${this.mode}"`:''}>${this.view==='map'?this.map():this.view==='words'?this.words():this.view==='read'?this.read():this.view==='talk'?this.talk():this.view==='write'?this.write():this.view==='records'?this.records():this.credits()}</section>`;}
  map(){
  const level=this.state.level;const due=reviewWords(this.state);
  return `${this.header('英语，一点点长成大树','听一个故事，说一段对话，再动手写一写。')}<div class="level-picker" aria-label="选择练习阶段">${LEVELS.map(l=>`<button data-course="level" data-level="${l.id}" aria-pressed="${l.id===level}"><span>0${l.id}</span><strong>${l.title}</strong><small>${l.text}</small></button>`).join('')}</div><div class="course-grid">${[
@@ -142,7 +142,7 @@ export class Course {
   this.audio.unlockSpeech();
   const token=this.followToken;this.wordLoop=true;
   for(let index=0;token===this.followToken&&this.wordLoop;index=(index+1)%words.length){
-   this.word=words[index];this.wordPage=Math.floor(index/PAGE_SIZE);this.refresh();
+   this.word=words[index];this.wordPage=Math.floor(index/this.wordPageSize);this.refresh();
    const ok=await this.play([this.wordClip(this.word),{text:this.word.zh}]);
    if(token!==this.followToken)return;
    if(!ok){this.stopWordLoop();return;}
@@ -154,8 +154,10 @@ export class Course {
   // Keep the live input node, focus, selection and IME composition intact.
   this.recorder.dispose();this.audio.stop();this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;this.heard=false;this.round=(this.round||0)+1;this.message='';const template=document.createElement('template');template.innerHTML=this.wordBrowser();
   for(const selector of ['.word-list','.word-pagination'])document.querySelector('.word-browser '+selector)?.replaceWith(template.content.querySelector(selector));
+  document.querySelector('[data-course=word-list-toggle]').disabled=!this.pool().length;
   document.querySelector('.word-workspace-toolbar').outerHTML=this.wordToolbar();
   document.querySelector('.word-workspace').innerHTML=this.wordWorkspace();
+  this.mountWordBrowserLayout();
  }
  wordLoopControl(){
   const count=this.library().selected.filter(w=>!this.mastery.has(w.id)).length;
@@ -163,29 +165,29 @@ export class Course {
   return `<div class="word-loop-control">${button('word-loop',this.wordLoop?'停止播放':`循环听 · ${count} 个词`,`aria-pressed="${!!this.wordLoop}" aria-describedby="word-loop-scope"`)}<span id="word-loop-scope" class="micro">全部正在学 · 英文＋中文</span></div>`;
  }
  wordToolbar(){return `<div class="word-workspace-toolbar"><div class="skill-tabs" aria-label="词汇练习类型">${[['learn',this.word&&!this.word.image?'语境听词':'看图听词'],['listen',this.word&&!this.word.image?'听音理解':'听音找图'],['speak','试着说'],['spell','拼一拼']].map(([id,label])=>`<button data-course="mode" data-mode="${id}" aria-pressed="${this.mode===id}">${label}</button>`).join('')}</div>${this.wordLoopControl()}</div>`;}
- wordWorkspace(){return `${this.quiz?.done?this.quizComplete():this.pool().length||this.answered||this.quiz?this.wordActivity(this.word):`<section class="learning-panel empty-content"><p>${this.emptyWords()}</p></section>`}`;}
+ wordWorkspace(){return `${this.quiz?.done?this.quizComplete():this.pool().length||this.answered||this.quiz?this.wordActivity(this.word):`<section class="learning-panel empty-content" data-empty-scope="${this.wordQuery.trim()||this.topic!=='all'?'filtered':'selection'}"><p>${this.emptyWords()}</p><div class="word-empty-guide"><p class="micro">${this.masteryFilter==='learning'&&!this.wordQuery.trim()&&this.topic==='all'?'到词库找到喜欢的词，点“加入正在学”，再回来练习。':'可以先到词库看看，选择一个喜欢的词开始。'}</p>${button('browse-words','去词库选词','',true)}</div></section>`}`;}
 
  selectionButton(w){const selected=this.library().selected.some(x=>x.id===w.id),known=this.mastery.has(w.id);if(this.masteryFilter==='learning'&&!selected)return '';const action=known?'restart-learning':selected?'remove-selection':'add-selection',label=known?'重新学习':selected?'移出正在学':'加入正在学';return `<div class="word-selection-toolbar"><button type="button" class="word-selection-action ${action==='remove-selection'?'':'is-add'}" data-course="${action}" data-word="${w.id}" aria-label="${label} ${esc(w.display||w.id)}">${label}</button></div>`;}
  // Keep the nearest surviving item in the filtered sequence, including page boundaries.
- keepWordPosition(before){const index=before.findIndex(w=>w.id===this.word?.id),after=this.pool();this.word=after.find(w=>w.id===this.word?.id)||after[Math.min(Math.max(index,0),after.length-1)]||null;this.wordPage=this.word?Math.floor(after.findIndex(w=>w.id===this.word.id)/PAGE_SIZE):0;this.options=null;}
+ keepWordPosition(before){const index=before.findIndex(w=>w.id===this.word?.id),after=this.pool();this.word=after.find(w=>w.id===this.word?.id)||after[Math.min(Math.max(index,0),after.length-1)]||null;this.wordPage=this.word?Math.floor(after.findIndex(w=>w.id===this.word.id)/this.wordPageSize):0;this.options=null;}
  emptyWords(){if(this.wordQuery.trim()||this.topic!=='all')return '没有找到匹配的单词，请调整搜索或主题。';return this.masteryFilter==='learning'?'还没有正在学的单词。':this.masteryFilter==='mastered'?'还没有已掌握的单词。':'暂无可用单词。';}
  wordBrowser(){
-  const pool=this.pool(),selected=new Set(this.library().selected.map(w=>w.id)),pages=Math.max(1,Math.ceil(pool.length/PAGE_SIZE));this.wordPage=Math.min(Math.max(0,this.wordPage),pages-1);
+  const pool=this.pool(),selected=new Set(this.library().selected.map(w=>w.id)),pages=Math.max(1,Math.ceil(pool.length/this.wordPageSize));this.wordPage=Math.min(Math.max(0,this.wordPage),pages-1);
   const canReorder=this.masteryFilter==='learning'&&this.learningWords().length>1;
   const orderButton=canReorder?'<button type="button" class="word-order-trigger" data-course="word-order-open" aria-haspopup="dialog" aria-label="调整顺序" aria-controls="word-order-dialog">排序</button>':'';
-  return `<aside class="word-browser ${['listen','spell'].includes(this.mode)?'quiz-hidden':''}"><div class="word-browser-tools"><label for="word-search" class="sr-only">搜索单词</label><input id="word-search" type="search" placeholder="搜索英文或中文" value="${esc(this.wordQuery)}">${orderButton}</div>${canReorder?this.orderDialog():''}<div class="word-list" aria-label="选择单词">${pool.slice(this.wordPage*PAGE_SIZE,(this.wordPage+1)*PAGE_SIZE).map(x=>`<div class="word-tile"><button data-course="word" data-word="${x.id}" aria-pressed="${this.word.id===x.id}">${this.picture(x)}<span>${esc(x.display||x.id)}</span>${x.display&&x.display.toLowerCase()!==x.id?`<small>${esc(x.zh)}</small>`:''}<span class="word-status-slot">${this.mastery.has(x.id)?'<small class="mastery-badge">已掌握</small>':this.masteryFilter==='all'&&selected.has(x.id)?'<small class="learning-badge">正在学</small>':''}</span></button></div>`).join('')||`<p class="micro">${this.emptyWords()}</p>`}</div><div class="word-pagination" ${pool.length?'':'hidden'}><div class="word-page-controls"><button class="button secondary small" data-course="word-page" data-page="0" ${this.wordPage===0?'disabled':''}>首页</button><button class="button secondary small" data-course="word-page" data-page="${this.wordPage-1}" ${this.wordPage===0?'disabled':''}>上一页</button><button class="button secondary small" data-course="word-page" data-page="${this.wordPage+1}" ${this.wordPage===pages-1?'disabled':''}>下一页</button><button class="button secondary small" data-course="word-page" data-page="${pages-1}" ${this.wordPage===pages-1?'disabled':''}>末页</button></div><form id="word-page-form" class="word-page-jump"><span role="status">${pool.length} 个 · ${this.wordPage+1}/${pages}</span><label for="word-page-input" class="sr-only">跳转页码</label><input id="word-page-input" type="number" inputmode="numeric" min="1" max="${pages}" step="1" required value="${this.wordPage+1}" aria-label="跳转页码" ${pages===1?'disabled':''}><button class="button secondary small" type="submit" ${pages===1?'disabled':''}>跳转</button></form></div></aside>`;
+  return `<aside class="word-browser ${['listen','spell'].includes(this.mode)?'quiz-hidden':''}" data-list-expanded="${!!this.wordListExpanded}" data-page-size="${this.wordPageSize}"><div class="word-browser-tools"><label for="word-search" class="sr-only">搜索单词</label><input id="word-search" type="search" placeholder="搜索英文或中文" value="${esc(this.wordQuery)}">${orderButton}<button type="button" class="word-list-toggle" data-course="word-list-toggle" aria-expanded="${!!this.wordListExpanded}" aria-controls="word-list" ${pool.length?'':'disabled'}>${this.wordListExpanded?'收起列表':'展开列表'}</button></div>${canReorder?this.orderDialog():''}<div id="word-list" class="word-list" aria-label="选择单词">${pool.slice(this.wordPage*this.wordPageSize,(this.wordPage+1)*this.wordPageSize).map(x=>`<div class="word-tile"><button data-course="word" data-word="${x.id}" aria-pressed="${this.word.id===x.id}">${this.picture(x)}<span>${esc(x.display||x.id)}</span>${x.display&&x.display.toLowerCase()!==x.id?`<small>${esc(x.zh)}</small>`:''}<span class="word-status-slot">${this.mastery.has(x.id)?'<small class="mastery-badge">已掌握</small>':this.masteryFilter==='all'&&selected.has(x.id)?'<small class="learning-badge">正在学</small>':''}</span></button></div>`).join('')||`<p class="micro">${this.emptyWords()}</p>`}</div><div class="word-pagination" ${pool.length?'':'hidden'}><div class="word-page-controls"><button class="button secondary small" data-course="word-page" data-page="0" ${this.wordPage===0?'disabled':''}>首页</button><button class="button secondary small" data-course="word-page" data-page="${this.wordPage-1}" ${this.wordPage===0?'disabled':''}>上一页</button><button class="button secondary small" data-course="word-page" data-page="${this.wordPage+1}" ${this.wordPage===pages-1?'disabled':''}>下一页</button><button class="button secondary small" data-course="word-page" data-page="${pages-1}" ${this.wordPage===pages-1?'disabled':''}>末页</button></div><form id="word-page-form" class="word-page-jump"><span role="status">${pool.length} 个 · ${this.wordPage+1}/${pages}</span><label for="word-page-input" class="sr-only">跳转页码</label><input id="word-page-input" type="number" inputmode="numeric" min="1" max="${pages}" step="1" required value="${this.wordPage+1}" aria-label="跳转页码" ${pages===1?'disabled':''}><button class="button secondary small" type="submit" ${pages===1?'disabled':''}>跳转</button></form></div></aside>`;
  }
  words(){
  const pool=this.pool();if(!this.word&&pool.length)this.word=pool[0];if(this.mode==='listen'&&!this.quiz&&this.word&&!this.word.pictureCue&&pool.length){this.quiz=this.createPictureQuiz(pool,this.word.id);}
  if(this.mode==='listen'&&this.quiz&&!this.quiz.done)this.word=this.quiz.current;
  else if(!this.answered&&!this.quiz)this.word=pool.find(w=>w.id===this.word?.id)||pool[0]||this.word;
- return `${this.header('看图学词','选一个词，听一听，再试着说一句话。')}${this.masteryFilters()}<label class="word-topic-select" for="word-topic">图文主题<select id="word-topic">${Object.entries(TOPICS).map(([id,label])=>`<option value="${id}" ${this.topic===id?'selected':''}>${label}</option>`).join('')}</select></label><div class="topic-tabs word-topic-tabs" aria-label="图文主题">${Object.entries(TOPICS).map(([id,label])=>`<button data-course="topic" data-topic="${id}" aria-pressed="${this.topic===id&&!this.review}">${label}</button>`).join('')}</div>${this.wordToolbar()}<div class="word-layout">${this.wordBrowser()}<div class="word-workspace">${this.wordWorkspace()}</div></div>`;
+ return `${this.header('看图学词','选一个词，听一听，再试着说一句话。')}${this.masteryFilters()}<label class="word-topic-select" for="word-topic">图文主题<select id="word-topic">${Object.entries(TOPICS).map(([id,label])=>`<option value="${id}" ${this.topic===id?'selected':''}>${label}</option>`).join('')}</select></label>${this.wordToolbar()}<div class="word-layout">${this.wordBrowser()}<div class="word-workspace">${this.wordWorkspace()}</div></div>`;
  }
  masteryFilters(){const lib=this.library();const counts={all:lib.all.length,learning:lib.selected.filter(w=>!this.mastery.has(w.id)).length,mastered:lib.all.filter(w=>this.mastery.has(w.id)).length};return `<div class="mastery-filters" role="group" aria-label="单词视图">${[['all','词库'],['learning','正在学'],['mastered','已掌握']].map(([id,label])=>`<button data-course="mastery-filter" data-filter="${id}" aria-pressed="${this.masteryFilter===id}">${label} · ${counts[id]}</button>`).join('')}</div>`;}
  masteryControl(w){const known=this.mastery.has(w.id);return `<div class="mastery-control word-card-actions">${button('next-word','下一个词')}${known?'<span class="mastery-badge">已掌握</span>':''}${button('mastery-toggle',known?'取消已掌握':'标记为已掌握',`aria-pressed="${known}"`)}<details><summary>怎样记录掌握？</summary><p class="micro">两个不同日期累计3次听完题目后，无提示、首次答对听音找图，会自动标记。情境提示词由家长确认。听过或录过音不会自动算掌握；标记表示本应用内的练习进度，可以随时取消，取消后重新累计。</p></details></div>`;}
  wordActivity(w){
  let body='';
- if(this.mode==='learn')body=wordCardBody({word:w.display||w.id,zh:w.zh,pos:w.pos,image:w.image,sentence:w.sentence,sentenceZh:w.sentenceZh,action:w.action,listenWord:this.audioButton(w,'word','听单词',true),listenSentence:this.audioButton(w,'sentence','听句子')})+`${w.image&&w.pictureCue?'<p class="micro">图片是情境提示，可结合例句理解。</p>':''}`;
+ if(this.mode==='learn')body='<div class="word-learning-content">'+wordCardBody({word:w.display||w.id,zh:w.zh,pos:w.pos,image:w.image,sentence:w.sentence,sentenceZh:w.sentenceZh,action:w.action,listenWord:this.audioButton(w,'word','听单词',true),listenSentence:this.audioButton(w,'sentence','听句子')})+`${w.image&&w.pictureCue?'<p class="micro">图片是情境提示，可结合例句理解。</p>':''}</div>`;
  if(this.mode==='listen'&&w.pictureCue){body=`${this.picture(w)}<h2>结合情境听一听</h2><p class="micro">这个词适合结合语境理解，暂不做看图辨认。可以先听，再跟着例句说一说。</p>${this.audioButton(w,'word','听单词',true)}<p class="sentence">${esc(w.sentence||'')}</p>${wordSentenceTranslation(w.sentenceZh??sentenceMeaning(w.sentence||''))}${this.audioButton(w,'sentence','听句子')}`;}
  if(this.mode==='listen'&&!w.pictureCue&&this.quiz)return this.quizActivity(w);
  if(this.mode==='speak')body=`<div class="speak-word-heading">${this.picture(w,w.zh)}<h2 class="english-word">${esc(w.display||w.id)}</h2></div><div class="speak-example"><p class="sentence">${esc(w.sentence||'')}</p>${wordSentenceTranslation(w.sentenceZh??sentenceMeaning(w.sentence||''))}${this.audioButton(w,w.sentence?'sentence':'word','听示范')}</div>${this.recordPanel()}`;
@@ -255,7 +257,98 @@ export class Course {
   return `<span>${esc(this.message)}</span>`;
  }
  paintSpelling(){const form=document.querySelector('#spell-form');if(!form)return;const done=this.spellFeedbackKind==='success';form.querySelector('button').textContent=done?'下一题':'检查一下';form.querySelector('button').disabled=!this.spellDraft.trim();document.querySelector('#spell-feedback').innerHTML=this.message?this.spellFeedback():'';document.querySelector('.practice-secondary').hidden=done;}
+ // Resizing changes the left-hand page capacity, not the active word or audio.
+ updateWordPageSize(size,list){
+  if(size===this.wordPageSize)return false;
+  const pool=this.pool(),index=pool.findIndex(word=>word.id===this.word?.id);
+  const anchor=index>=0?index:this.wordPage*this.wordPageSize;
+  const browser=list.closest('.word-browser'),active=document.activeElement;
+  const jumpFocused=active?.id==='word-page-input';
+  const jumpDraft=jumpFocused&&active.value!==String(this.wordPage+1)?active.value:null;
+  this.wordPageSize=size;this.wordPage=Math.floor(Math.max(0,anchor)/size);
+  const template=document.createElement('template');template.innerHTML=this.wordBrowser();
+  list.replaceChildren(...template.content.querySelector('.word-list').childNodes);
+  browser.querySelector('.word-pagination').replaceWith(template.content.querySelector('.word-pagination'));
+  browser.dataset.pageSize=String(size);
+  this.wordListScrollLeft=0;
+  if(jumpFocused){const input=browser.querySelector('#word-page-input');if(jumpDraft!==null)input.value=jumpDraft;input.focus({preventScroll:true});}
+  return true;
+ }
+ fitWordGrid(list){
+  const style=getComputedStyle(list),px=value=>parseFloat(value)||0;
+  if(!list.clientWidth)return false;
+  if(!style.getPropertyValue('--word-grid-adaptive'))return this.updateWordPageSize(DEFAULT_WORD_PAGE_SIZE,list);
+  const buttons=[...list.querySelectorAll('[data-course="word"]')];if(!buttons.length)return false;
+  const columns=3,width=list.clientWidth-px(style.paddingLeft)-px(style.paddingRight);
+  const cellWidth=(width-(columns-1)*px(style.columnGap))/columns;
+  const viewportHeight=document.documentElement.clientHeight;
+  const key=JSON.stringify([Math.round(width),viewportHeight,this.masteryFilter,this.topic,this.wordQuery]);
+  // Keep card height stable while paging through the same viewport/filter.
+  // Unusually long labels can grow their row naturally instead of changing the
+  // page number mid-navigation. A new search or viewport gets measured afresh.
+  if(this.wordGridMetrics?.key!==key){
+   const minimum=Math.max(...buttons.map(button=>{
+    const css=getComputedStyle(button);
+    const content=[...button.children].reduce((sum,child)=>{
+     if(!child.getClientRects().length)return sum;
+     const childStyle=getComputedStyle(child);
+     return sum+child.getBoundingClientRect().height+px(childStyle.marginTop)+px(childStyle.marginBottom);
+    },0);
+    return Math.max(px(css.minHeight),content+px(css.paddingTop)+px(css.paddingBottom)+px(css.borderTopWidth)+px(css.borderBottomWidth));
+   }));
+   this.wordGridMetrics={key,cardHeight:Math.ceil(Math.max(minimum,cellWidth*.95))};
+  }
+  const browser=list.closest('.word-browser'),pager=browser.querySelector('.word-pagination');
+  const pagerStyle=getComputedStyle(pager),page=list.closest('.page'),footer=page.parentElement.querySelector('.footer');
+  const reserved=pager.getBoundingClientRect().height+px(pagerStyle.marginTop)+px(getComputedStyle(page).paddingBottom)+(footer?.getBoundingClientRect().height||0);
+  // Ignore height added by a long detail/label: it must not recursively create
+  // more rows. The list uses the remaining visible viewport above pagination.
+  const available=viewportHeight-list.getBoundingClientRect().top-window.scrollY-reserved-px(style.paddingTop)-px(style.paddingBottom);
+  const cardHeight=this.wordGridMetrics.cardHeight,gap=px(style.rowGap);
+  const rows=Math.max(1,Math.floor((available+gap)/(cardHeight+gap)));
+  for(const [name,value] of [['--word-grid-rows',String(rows)],['--word-grid-card-height',`${cardHeight}px`]]){
+   if(list.style.getPropertyValue(name)!==value)list.style.setProperty(name,value);
+  }
+  return this.updateWordPageSize(columns*rows,list);
+ }
+ // Resize the grid on wide screens and reveal only the horizontal strip on
+ // narrow screens; scrollIntoView() would also move the document on mobile.
+ unmountWordBrowserLayout(){
+  this.wordBrowserObserver?.disconnect();this.wordBrowserObserver=null;
+  if(this.wordBrowserResize)window.removeEventListener('resize',this.wordBrowserResize);
+  this.wordBrowserResize=null;
+  if(this.wordBrowserFrame)cancelAnimationFrame(this.wordBrowserFrame);
+  this.wordBrowserFrame=null;
+ }
+ mountWordBrowserLayout(){
+  this.unmountWordBrowserLayout();
+  const list=document.querySelector('.word-browser .word-list');if(!list)return;
+  const key=JSON.stringify([this.masteryFilter,this.topic,this.wordQuery,this.wordPage]);
+  if(key!==this.wordListScrollKey){this.wordListScrollKey=key;this.wordListScrollLeft=0;}
+  const reveal=()=>{if(!list.isConnected)return;
+   if(this.fitWordGrid(list))schedule();
+   if(list.scrollWidth<=list.clientWidth)return;
+   list.scrollLeft=this.wordListScrollLeft||0;
+   const selected=list.querySelector('[data-course="word"][aria-pressed="true"]');
+   if(selected){const box=list.getBoundingClientRect(),item=selected.getBoundingClientRect();
+    if(item.left<box.left+4)list.scrollLeft-=box.left+4-item.left;
+    else if(item.right>box.right-4)list.scrollLeft+=item.right-box.right+4;
+   }
+   this.wordListScrollLeft=list.scrollLeft;
+  };
+  // Schedule outside the observer cycle so row changes cannot feed back into it.
+  const schedule=()=>{
+   if(this.wordBrowserFrame)cancelAnimationFrame(this.wordBrowserFrame);
+   this.wordBrowserFrame=requestAnimationFrame(()=>{this.wordBrowserFrame=null;reveal();});
+  };
+  this.wordBrowserResize=schedule;window.addEventListener('resize',schedule);
+  this.wordBrowserObserver=new ResizeObserver(schedule);
+  this.wordBrowserObserver.observe(list);
+  reveal();
+  list.onscroll=()=>{if(list.isConnected&&list.scrollWidth>list.clientWidth)this.wordListScrollLeft=list.scrollLeft;};
+ }
  mount(){
+  this.mountWordBrowserLayout();
   if(this.view==='write')this.setupCanvas();
   const search=document.querySelector('#word-search');search?.addEventListener('input',e=>{if(!e.isComposing)this.searchWords(e.target.value);});search?.addEventListener('compositionend',e=>this.searchWords(e.target.value));
   // Delegate to the stable browser container: search replaces the pagination subtree.
@@ -282,6 +375,14 @@ export class Course {
  }
  async action(el){
   const a=el.dataset.course;
+  if(a==='word-list-toggle'){
+   this.wordListExpanded=!this.wordListExpanded;
+   const browser=document.querySelector('.word-browser');if(!browser)return;
+   browser.dataset.listExpanded=String(this.wordListExpanded);
+   el.setAttribute('aria-expanded',String(this.wordListExpanded));
+   el.textContent=this.wordListExpanded?'收起列表':'展开列表';
+   this.mountWordBrowserLayout();return;
+  }
   if(a.startsWith('word-order-'))return this.changeWordOrder(a,el);
   if(a==='add-selection'){await this.customWords.action({dataset:{learning:'select-word',word:el.dataset.word}});this.open('words');return;}
   if(a==='remove-selection'){const before=this.pool();await this.customWords.action({dataset:{learning:'remove-word',word:el.dataset.word}});this.keepWordPosition(before);this.open('words');return;}
@@ -295,6 +396,7 @@ export class Course {
   if(a==='quiz-again'){const previous=this.quiz,words=previous?.words;if(!words?.length)return;this.leave();this.quiz=new PictureQuiz(words,words[0].id);this.word=this.quiz.current;this.options=null;this.message='';this.answered=false;this.assisted=false;this.heard=false;this.round=(this.round||0)+1;this.refresh();await this.playQuizQuestion();return;}
   if(a==='word-loop'){if(this.wordLoop)this.stopWordLoop();else await this.loopWords();return;}
   this.stopWordLoop();this.followToken=(this.followToken||0)+1;
+  if(a==='browse-words'){this.mode='learn';this.review=false;this.masteryFilter='all';this.topic='all';this.wordQuery='';this.wordPage=0;this.word=this.pool()[0]||null;this.options=null;this.open('words');return;}
   if(a==='mastery-filter'){this.masteryFilter=el.dataset.filter;this.topic='all';this.wordQuery='';this.wordPage=0;this.word=this.pool()[0]||this.word;this.options=null;this.open('words');return;}
   if(a==='mastery-toggle'){if(!this.word)return;const before=this.pool();this.mastery.toggle(this.word.id);this.keepWordPosition(before);this.open('words');return;}
   if(a==='map'){this.open('map');return;}
@@ -302,9 +404,9 @@ export class Course {
   if(a==='level'){this.state.level=Number(el.dataset.level);this.save();this.refresh();return;}
   if(a==='records'||a==='credits'){this.open(a);return;}
   if(a==='review'){const due=reviewWords(this.state);if(!due.length)return;this.wordQuery='';this.wordPage=0;this.review=true;this.word=due[0];this.mode='listen';this.options=null;this.open('words');return;}
-  if(a==='word-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;const pool=this.pool();this.wordPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(pool.length/PAGE_SIZE)-1)));if(pool.length)this.word=pool[this.wordPage*PAGE_SIZE];this.options=null;this.open('words');return;}
+  if(a==='word-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;const pool=this.pool();this.wordPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(pool.length/this.wordPageSize)-1)));if(pool.length)this.word=pool[this.wordPage*this.wordPageSize];this.options=null;this.open('words');return;}
   if(a==='topic'){this.review=false;this.wordQuery='';this.wordPage=0;this.topic=el.dataset.topic;this.word=this.pool()[0]||this.word;this.options=null;this.open('words');return;}
-  if(a==='word'||a==='next-word'){const pool=this.pool();if(!pool.length){this.toast('没有匹配的词，请调整搜索或分类。');return;}this.word=a==='word'?pool.find(w=>w.id===el.dataset.word):pool[(pool.findIndex(w=>w.id===this.word.id)+1)%pool.length];this.wordPage=Math.floor(pool.findIndex(w=>w.id===this.word.id)/PAGE_SIZE);this.options=null;this.open('words');return;}
+  if(a==='word'||a==='next-word'){const pool=this.pool();if(!pool.length){this.toast('没有匹配的词，请调整搜索或分类。');return;}this.word=a==='word'?pool.find(w=>w.id===el.dataset.word):pool[(pool.findIndex(w=>w.id===this.word.id)+1)%pool.length];this.wordPage=Math.floor(pool.findIndex(w=>w.id===this.word.id)/this.wordPageSize);this.options=null;this.open('words');return;}
   if(a==='mode'){this.mode=el.dataset.mode;this.options=null;this.open('words');return;}
   if(a==='word-stop'){this.followToken=(this.followToken||0)+1;this.audio.stop();return;}
   if(a==='word-follow'){

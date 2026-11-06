@@ -15,7 +15,7 @@ test('Wonders hop and rake can be selected, understood and played offline',async
   await expect(page.locator('.learning-panel')).toContainText(zh);
   await expect(page.locator('.sentence')).toHaveText(sentence);
   await expect(page.locator('.learning-panel')).toContainText(translation);
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
   await page.screenshot({path:testInfo.outputPath(`${id}.png`),fullPage:true});
  }
  await page.evaluate(async()=>{
@@ -30,7 +30,7 @@ test('Wonders hop and rake can be selected, understood and played offline',async
  await context.setOffline(true);await page.reload();
  for(const id of ['hop','rake']){
   await page.locator(`.word-list [data-word="${id}"]`).click();
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
   for(const name of ['听单词','听句子']){
    await page.getByRole('button',{name,exact:true}).click();
    await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
@@ -56,7 +56,7 @@ test('official grammar and sense cards retain readable spelling, separate progre
   await page.locator(`.word-list [data-word="${id}"]`).click();
   await expect(page.locator('.english-word')).toHaveText(word.display||id);
   await expect(page.locator('.sentence')).toHaveText(word.sentence);
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
  }
  await page.locator('.word-list [data-word="train-pet"]').click();
  await page.locator('[data-mode="spell"]').click();await page.locator('#spell-input').fill('train-pet');await page.locator('#spell-form button').click();
@@ -77,7 +77,7 @@ test('official grammar and sense cards retain readable spelling, separate progre
  await context.setOffline(true);await page.reload();
  for(const id of ids){
   await page.locator(`.word-list [data-word="${id}"]`).click();
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
   for(const name of ['听单词','听句子']){await page.getByRole('button',{name,exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);}
  }
  await page.screenshot({path:info.outputPath('sense-card.png'),fullPage:true});

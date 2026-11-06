@@ -129,3 +129,21 @@ test('word tap reads current meaning after English; quizzes and English follow d
  await page.locator('[data-mode=listen]').click();await page.getByRole('button',{name:'听题目',exact:true}).click();await end(page);await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>!a.getAttribute('src'))).toBe(false);expect(await page.evaluate(()=>window.spoken)).toEqual(['大苹果']);
  await page.locator('[data-mode=learn]').click();await page.locator('.word-follow-extra summary').click();await page.getByRole('button',{name:'英文连续跟读',exact:true}).click();await end(page);await page.getByRole('button',{name:'停止',exact:true}).click();expect(await page.evaluate(()=>window.spoken)).toEqual(['大苹果']);
 });
+
+test('folding the word list does not interrupt the current loop',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.addInitScript(()=>{
+  localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['apple','cat']}));
+  HTMLMediaElement.prototype.play=function(){return Promise.resolve();};
+ });
+ await page.goto('/#/words');
+ const loop=page.locator('[data-course=word-loop]');
+ await loop.click();await expect(loop).toHaveAttribute('aria-pressed','true');
+ const source=await page.locator('#garden-audio').getAttribute('src');
+ await page.getByRole('button',{name:'展开列表',exact:true}).click();
+ await expect(loop).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:'收起列表',exact:true}).click();
+ await expect(loop).toHaveAttribute('aria-pressed','true');
+ await expect(page.locator('#garden-audio')).toHaveAttribute('src',source);
+ await loop.click();await expect(loop).toHaveAttribute('aria-pressed','false');
+});

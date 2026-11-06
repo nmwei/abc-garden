@@ -12,7 +12,7 @@ test('detail selection supports catalog removal and learning-only removal with p
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('abc-module-content-v1')).selectedWordIds)).toEqual([]);
  await page.reload();await expect(page.locator('.empty-content')).toContainText('还没有正在学');
  await page.locator('[data-course=mastery-filter][data-filter=all]').click();await add.click();
- await page.locator('.word-list img').evaluateAll(imgs=>Promise.all(imgs.map(i=>i.decode().catch(()=>{}))));
+ await page.locator('.word-list img').evaluateAll(imgs=>Promise.all(imgs.map(i=>{i.loading='eager';return i.decode().catch(()=>{});})));
  await page.locator('.word-list').scrollIntoViewIfNeeded();
  await page.locator('.word-list').screenshot({path:`test-results/catalog-status-${test.info().project.name}.png`});
  await page.locator('#word-search').fill('zzzzzz');await expect(page.locator('.word-list')).toContainText('没有找到匹配');await expect(page.locator('.word-pagination')).toBeHidden();
@@ -47,7 +47,8 @@ test('removal keeps a filtered sequence across a page boundary',async({page})=>{
  const {READY_WORDS}=await import('../../app/course-content.js');const rows=READY_WORDS.filter(w=>w.topic==='food').slice(0,15),ids=rows.map(w=>w.id);
  await page.goto('/');await page.evaluate(ids=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:ids})),ids);await page.goto('/#/words');await page.reload();
  await page.locator('#word-topic').isVisible().then(async visible=>{if(visible)await page.locator('#word-topic').selectOption('food');else await page.locator('[data-course=topic][data-topic=food]').click();});
+ const capacity=Number(await page.locator('.word-browser').getAttribute('data-page-size'));
  await page.getByRole('button',{name:'下一页',exact:true}).click();
- await page.locator('[data-course=remove-selection]').click();await expect(page.locator('.english-word')).toHaveText(rows[13].display||rows[13].id);
+ await page.locator('[data-course=remove-selection]').click();await expect(page.locator('.english-word')).toHaveText(rows[capacity+1].display||rows[capacity+1].id);
  await expect(page.locator('#word-page-input')).toHaveValue('2');await expect(page.locator('#word-topic')).toHaveValue('food');
 });

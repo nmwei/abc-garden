@@ -23,10 +23,10 @@ try{
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
     await page.getByRole('button',{name:'成长地图',exact:true}).click();
     await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();
-    await expect(page.locator('.word-list button')).toHaveCount(12);
+    await expect.poll(()=>page.locator('.word-browser').evaluate(e=>e.querySelectorAll('.word-list [data-course=word]').length===Number(e.dataset.pageSize))).toBe(true);
     await page.getByRole('button',{name:'听句子',exact:true}).click();
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
-    expect(await page.locator('.learning-panel>img').evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
+    expect(await page.locator('.learning-panel .word-picture').evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
     console.log(`${name}: /abc-garden/ resources, audio Range, word pictures and offline sentence playback passed.`);
     await browser.close();browser=null;
   }

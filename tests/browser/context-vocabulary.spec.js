@@ -33,6 +33,6 @@ test('pictured expanded content retains examples, attribution and offline media'
  await page.getByRole('button',{name:'看图学词',exact:true}).click();await expect(page.locator('.english-word')).toHaveText('app');await expect(page.locator('.sentence')).toHaveText('I deleted the app.');await page.locator('.sentence-credit summary').click();await expect(page.locator('.sentence-credit')).toContainText('CC BY 2.0 FR');
  await page.evaluate(async()=>{await navigator.serviceWorker.ready;await Promise.all(['./assets/pictures/app.svg','./assets/audio/word-app.wav','./assets/audio/sentence-app.wav'].map(u=>fetch(u).then(r=>r.arrayBuffer())));});
  await expect.poll(()=>page.evaluate(async()=>{const keys=(await caches.keys()).filter(k=>k.endsWith('-media'));let count=0;for(const k of keys)count+=(await (await caches.open(k)).keys()).filter(r=>/(?:\/app.svg|\/(?:word|sentence)-app.wav)$/.test(r.url)).length;return count;})).toBe(3);
- await context.setOffline(true);await page.reload();await expect(page.locator('.english-word')).toHaveText('app');await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+ await context.setOffline(true);await page.reload();await expect(page.locator('.english-word')).toHaveText('app');await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
  for(const name of ['听单词','听句子']){await page.getByRole('button',{name,exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);}
 });

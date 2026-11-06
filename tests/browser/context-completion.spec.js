@@ -30,7 +30,7 @@ test('completed cards can be selected, stay contextual and play updated recordin
   await page.locator(`.word-list [data-word="${id}"]`).click();
   await expect(page.locator('.sentence')).toHaveText(card.sentence);
   await expect(page.locator('.learning-panel')).toContainText(card.sentenceZh);
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
  }
  await page.locator('[data-mode="listen"]').click();
  await expect(page.locator('.learning-panel')).toContainText('结合情境听一听');
@@ -48,7 +48,7 @@ test('completed cards can be selected, stay contextual and play updated recordin
  for(const id of ids){
   await page.locator('#word-search').fill(id);
   await page.locator(`.word-list [data-word="${id}"]`).click();
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
   for(const name of ['听单词','听句子']){
    await page.getByRole('button',{name,exact:true}).click();
    await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);

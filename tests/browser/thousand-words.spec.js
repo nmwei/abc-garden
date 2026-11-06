@@ -1,14 +1,15 @@
 import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
-import {WORDS,TOPICS} from '../../app/course-content.js';
+import {READY_WORDS as WORDS,TOPICS} from '../../app/course-content.js';
 test('large themed vocabulary paginates, searches, handles cues and works offline',async({page,context})=>{
  test.setTimeout(180000);
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();
  await expect(page.getByRole('button',{name:`词库 · ${WORDS.length}`,exact:true})).toBeVisible();
- await expect(page.locator('.word-list button')).toHaveCount(12);
- await expect(page.locator('.word-topic-tabs button')).toHaveCount(Object.keys(TOPICS).length);
+ await expect.poll(()=>page.locator('.word-browser').evaluate(e=>e.querySelectorAll('.word-list [data-course=word]').length===Number(e.dataset.pageSize))).toBe(true);
+ await expect(page.locator('#word-topic option')).toHaveCount(Object.keys(TOPICS).length);
+ const pageSize=Number(await page.locator('.word-browser').getAttribute('data-page-size'));
  await page.getByRole('button',{name:'下一页',exact:true}).click();
- await expect(page.locator('.word-list button').first()).toHaveAttribute('data-word',WORDS[12].id);
+ await expect(page.locator('.word-list button').first()).toHaveAttribute('data-word',WORDS[pageSize].id);
  await page.locator('#word-search').fill('cherry');await expect(page.locator('.word-list button')).toHaveCount(2);
  await expect(page.locator('.english-word')).toHaveText('cherry');
  await page.getByRole('button',{name:'听音找图',exact:true}).click();
@@ -24,8 +25,8 @@ test('large themed vocabulary paginates, searches, handles cues and works offlin
  if(await page.locator('#word-topic').isVisible())await page.locator('#word-topic').selectOption('all');else await page.getByRole('button',{name:'全部朋友',exact:true}).click();await page.locator('#word-search').fill('樱桃');await expect(page.locator('.english-word')).toHaveText('cherry');
  await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:120000});
  await downloadPack(page,'all');await context.setOffline(true);await page.reload();await page.locator('[data-filter=all]').click();await page.locator('#word-search').fill('cherry');
- await expect(page.locator('.learning-panel>img')).toHaveJSProperty('complete',true);
- expect(await page.locator('.learning-panel>img').evaluate(x=>x.naturalWidth)).toBeGreaterThan(0);
+ await expect(page.locator('.learning-panel .word-picture')).toHaveJSProperty('complete',true);
+ expect(await page.locator('.learning-panel .word-picture').evaluate(x=>x.naturalWidth)).toBeGreaterThan(0);
  for(const name of ['听单词','听句子']){
   await page.getByRole('button',{name,exact:true}).click();
   await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);

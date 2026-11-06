@@ -30,8 +30,8 @@ test('revised examples and their new audio survive a reload without a network',a
   const expected=fixes.entries.find(f=>f.id===id).reviewedCard;
   await page.locator('#word-search').fill(id);await page.locator(`.word-list [data-word="${id}"]`).click();
   await expect(page.locator('.sentence')).toHaveText(expected.sentence);await expect(page.locator('.sentence-meaning')).toHaveText(expected.sentenceZh);
-  await expect(page.locator('.learning-panel>img')).toHaveAttribute('src',fixes.entries.find(e=>e.id===id).reviewedCard.image);
-  await page.locator('.learning-panel>img').evaluate(img=>img.decode());
+  await expect(page.locator('.learning-panel .word-picture')).toHaveAttribute('src',fixes.entries.find(e=>e.id===id).reviewedCard.image);
+  await page.locator('.learning-panel .word-picture').evaluate(img=>img.decode());
   await page.getByRole('button',{name:'听句子',exact:true}).click();
   await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
   expect(await page.locator('#garden-audio').getAttribute('src')).toContain(`sentence-${id}.wav`);

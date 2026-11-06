@@ -6,8 +6,8 @@ const state=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),key);
 test.beforeEach(async({page})=>{await page.goto('/#/learn');});
 test('map, all word pictures and responsive layouts are available',async({page},info)=>{
  await expect(page.getByRole('heading',{name:'英语，一点点长成大树'})).toBeVisible();
- await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await expect(page.locator('.word-list button')).toHaveCount(12);
- const images=await page.locator('.word-list img').evaluateAll(imgs=>Promise.all(imgs.map(img=>img.decode().then(()=>true,()=>false))));expect(images.every(Boolean)).toBe(true);
+ await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await expect.poll(()=>page.locator('.word-browser').evaluate(e=>e.querySelectorAll('.word-list [data-course=word]').length===Number(e.dataset.pageSize))).toBe(true);
+ const images=await page.locator('.word-list img').evaluateAll(imgs=>Promise.all(imgs.map(img=>{img.loading='eager';return img.decode().then(()=>true,()=>false);})));expect(images.every(Boolean)).toBe(true);
  for(const size of [{width:1194,height:834},{width:834,height:1194},{width:390,height:844}]){await page.setViewportSize(size);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.setViewportSize({width:1194,height:834});await page.screenshot({path:`test-results/words-${info.project.name}.png`,fullPage:true});
 });
@@ -42,7 +42,7 @@ test('microphone denial is graceful and a late permission grant is stopped on na
 });
 test('new pictures and sentence audio remain available offline',async({page,context})=>{
  await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:30000});await downloadPack(page,'all');await context.setOffline(true);await page.reload();
- await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await expect(page.locator('.learning-panel>img')).toBeVisible();await page.getByRole('button',{name:'听句子',exact:true}).click();
+ await page.locator('.nav [data-action="words"]').click();await page.locator('[data-filter=all]').click();await expect(page.locator('.learning-panel .word-picture')).toBeVisible();await page.getByRole('button',{name:'听句子',exact:true}).click();
  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);await context.setOffline(false);
 });
 test('recording stops and releases tracks, produces a local replay, then deletes it',async({page})=>{
