@@ -76,7 +76,7 @@ function render(){
     template.innerHTML=course.html();
     wordPage.replaceWith(template.content);
   }
-  else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
+  else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell${route==='words'?' word-shell':''}">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
   if(route==='letters')updateFollow();
   if(route==='parents')offline.paintUpdates();
@@ -183,7 +183,7 @@ app.addEventListener('error',event=>{if(event.target.id==='alphabet-song')toast(
 app.addEventListener('click',event=>{
   const listening=event.target.closest('[data-listen]');if(listening&&!listening.disabled){follow.stop(false);listenGame.action(listening.dataset.listen,listening.dataset.letter);return;}
   const learningButton=event.target.closest('[data-learning]');if(learningButton&&!learningButton.disabled){audio.stop();follow.stop();learning.action(learningButton).catch(()=>toast('操作没有完成，请再试一次。'));return;}
-  const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){learning.stop();follow.stop(false);course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
+  const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){if(!['word-list-toggle','word-page'].includes(courseButton.dataset.course)){learning.stop();follow.stop(false);}course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
   if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}

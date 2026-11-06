@@ -16,5 +16,8 @@ export function wordSentenceTranslation(meaning){
 // Both sources share the same presentation; each keeps its own audio actions.
 export function wordCardBody({word,zh,pos,image,sentence,sentenceZh,action,listenWord,listenSentence}){
  const meaning=sentenceZh??sentenceMeaning(sentence);
- return `${image?`<img class="word-picture" src="${esc(image)}" alt="${esc(zh||'')}" width="128" height="128" decoding="async">`:''}<h2 class="english-word">${esc(word)}</h2>${pos?`<p class="micro">${esc(pos)} · 本例用法</p>`:''}${zh?`<p>${esc(zh)}</p>`:''}<div class="button-row centered">${listenWord}${sentence?listenSentence:''}</div>${sentence?`<p class="sentence">${esc(sentence)}</p>${wordSentenceTranslation(meaning)}`:''}${action?`<p class="micro">${esc(action)}</p>`:''}`;
+ const picture=image?`<img class="word-picture" src="${esc(image)}" alt="${esc(zh||'')}" width="128" height="128" decoding="async">`:'';
+ const label=`<h2 class="english-word">${esc(word)}</h2>${pos?`<p class="micro">${esc(pos)} · 本例用法</p>`:''}${zh?`<p>${esc(zh)}</p>`:''}`;
+ const identity=`<div class="word-identity">${picture}<div class="word-identity-copy">${label}</div></div>`;
+ return `${identity}<div class="button-row centered">${listenWord}${sentence?listenSentence:''}</div>${sentence?`<p class="sentence">${esc(sentence)}</p>${wordSentenceTranslation(meaning)}`:''}${action?`<p class="micro">${esc(action)}</p>`:''}`;
 }
