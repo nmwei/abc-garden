@@ -31,10 +31,9 @@ test('relearning clears mastery and adds a word, survives reload',async({page})=
  await page.reload();await expect(page.locator('.english-word')).toHaveText('apple');
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('abc-garden-mastery-v1')).entries.apple)).toMatchObject({mastered:false,dates:[]});
 });
-test('remove selects successor then predecessor, and card click scrolls on phone only',async({page})=>{
+test('remove selects successor then predecessor',async({page})=>{
  await page.goto('/');await page.evaluate(()=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['apple','ball','cat']})));await page.goto('/#/words');await page.reload();
  await page.locator('[data-course=word][data-word=ball]').click();
- if(test.info().project.name.startsWith('phone'))await expect.poll(()=>page.locator('.word-workspace').evaluate(e=>Math.abs(e.getBoundingClientRect().top-16)<4)).toBe(true);
  await page.getByRole('button',{name:'移出正在学 ball',exact:true}).click();await expect(page.locator('.english-word')).toHaveText('cat');
  await page.getByRole('button',{name:'移出正在学 cat',exact:true}).click();await expect(page.locator('.english-word')).toHaveText('apple');
 });

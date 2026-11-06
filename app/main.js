@@ -69,7 +69,14 @@ function render(){
   const title=route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
   document.title=title?`${title} · ${APP_NAME}`:`${APP_NAME} · ABC Garden`;
   const focusId=document.activeElement?.id;
-  app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
+  // Replace the word content atomically without tearing down the page shell.
+  const wordPage=route==='words'&&document.querySelector('#course:has(.word-layout)');
+  if(wordPage){
+    const template=document.createElement('template');
+    template.innerHTML=course.html();
+    wordPage.replaceWith(template.content);
+  }
+  else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
   if(route==='letters')updateFollow();
   if(route==='parents')offline.paintUpdates();
