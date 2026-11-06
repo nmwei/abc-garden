@@ -168,7 +168,6 @@ export class Course {
  selectionButton(w){const selected=this.library().selected.some(x=>x.id===w.id),known=this.mastery.has(w.id);if(this.masteryFilter==='learning'&&!selected)return '';const action=known?'restart-learning':selected?'remove-selection':'add-selection',label=known?'重新学习':selected?'移出正在学':'加入正在学';return `<div class="word-selection-toolbar"><button type="button" class="word-selection-action ${action==='remove-selection'?'':'is-add'}" data-course="${action}" data-word="${w.id}" aria-label="${label} ${esc(w.display||w.id)}">${label}</button></div>`;}
  // Keep the nearest surviving item in the filtered sequence, including page boundaries.
  keepWordPosition(before){const index=before.findIndex(w=>w.id===this.word?.id),after=this.pool();this.word=after.find(w=>w.id===this.word?.id)||after[Math.min(Math.max(index,0),after.length-1)]||null;this.wordPage=this.word?Math.floor(after.findIndex(w=>w.id===this.word.id)/PAGE_SIZE):0;this.options=null;}
- scrollToWord(){if(!globalThis.matchMedia('(max-width: 760px)').matches)return;document.querySelector('.word-workspace')?.scrollIntoView({block:'start',behavior:globalThis.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
  emptyWords(){if(this.wordQuery.trim()||this.topic!=='all')return '没有找到匹配的单词，请调整搜索或主题。';return this.masteryFilter==='learning'?'还没有正在学的单词。':this.masteryFilter==='mastered'?'还没有已掌握的单词。':'暂无可用单词。';}
  wordBrowser(){
   const pool=this.pool(),selected=new Set(this.library().selected.map(w=>w.id)),pages=Math.max(1,Math.ceil(pool.length/PAGE_SIZE));this.wordPage=Math.min(Math.max(0,this.wordPage),pages-1);
@@ -305,7 +304,7 @@ export class Course {
   if(a==='review'){const due=reviewWords(this.state);if(!due.length)return;this.wordQuery='';this.wordPage=0;this.review=true;this.word=due[0];this.mode='listen';this.options=null;this.open('words');return;}
   if(a==='word-page'){const page=Number(el.dataset.page);if(!Number.isInteger(page))return;const pool=this.pool();this.wordPage=Math.max(0,Math.min(page,Math.max(0,Math.ceil(pool.length/PAGE_SIZE)-1)));if(pool.length)this.word=pool[this.wordPage*PAGE_SIZE];this.options=null;this.open('words');return;}
   if(a==='topic'){this.review=false;this.wordQuery='';this.wordPage=0;this.topic=el.dataset.topic;this.word=this.pool()[0]||this.word;this.options=null;this.open('words');return;}
-  if(a==='word'||a==='next-word'){const pool=this.pool();if(!pool.length){this.toast('没有匹配的词，请调整搜索或分类。');return;}this.word=a==='word'?pool.find(w=>w.id===el.dataset.word):pool[(pool.findIndex(w=>w.id===this.word.id)+1)%pool.length];this.wordPage=Math.floor(pool.findIndex(w=>w.id===this.word.id)/PAGE_SIZE);this.options=null;this.open('words');if(a==='word')this.scrollToWord();return;}
+  if(a==='word'||a==='next-word'){const pool=this.pool();if(!pool.length){this.toast('没有匹配的词，请调整搜索或分类。');return;}this.word=a==='word'?pool.find(w=>w.id===el.dataset.word):pool[(pool.findIndex(w=>w.id===this.word.id)+1)%pool.length];this.wordPage=Math.floor(pool.findIndex(w=>w.id===this.word.id)/PAGE_SIZE);this.options=null;this.open('words');return;}
   if(a==='mode'){this.mode=el.dataset.mode;this.options=null;this.open('words');return;}
   if(a==='word-stop'){this.followToken=(this.followToken||0)+1;this.audio.stop();return;}
   if(a==='word-follow'){
