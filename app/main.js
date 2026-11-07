@@ -1,6 +1,7 @@
 import './feedback-audio.js';
 import {ListenGame} from './listen-game.js';
 import {VoiceSettings} from './voice-settings.js';
+import {mountLetterLayout} from './letter-layout.js';
 import {LetterAudioSettings} from './letter-audio-settings.js';
 import {letterSourceInfo} from './letter-audio.js';
 import {mountParentHold} from './parent-gate.js';
@@ -72,7 +73,9 @@ function header(){
 }
 function footer(){return `<footer class="footer"><span class="offline-state"><i class="offline-dot ${offline.state.ready?'ready':''}"></i><span id="offline-label">${offline.label}</span></span></footer>`;}
 function pauseSong(){document.querySelector('#alphabet-song')?.pause();}
+let disposeLetterLayout=()=>{};
 function render(){
+  disposeLetterLayout();
   pauseSong();
   const title=route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
   document.title=title?`${title} · ${APP_NAME}`:`${APP_NAME} · ABC Garden`;
@@ -86,7 +89,7 @@ function render(){
   }
   else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell${route==='words'?' word-shell':route==='letters'?' letters-shell':''}">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'?'letters-page ':''}${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
-  if(route==='letters')updateFollow();
+  if(route==='letters'){updateFollow();disposeLetterLayout=mountLetterLayout();}
   if(route==='parents')offline.paintUpdates();
   if(modal)renderModal();else if(focusId)document.getElementById(focusId)?.focus({preventScroll:true});
 }
@@ -164,7 +167,7 @@ function library(){
   const letters=selectedLetters();if(!letters.includes(libraryLetter))libraryLetter=letters[0];
   const letter=byLetter(libraryLetter);
   const tabs=`<div class="activity-switch" role="group" aria-label="字母练习方式">${[['library','认识字母','listen'],['module-pair','大小写配对','pair'],['module-choose','听音找字母','choose'],['letter-song','字母跟唱','song']].map(([action,label,id])=>`<button data-action="${action}" aria-pressed="${libraryActivity===id}">${label}</button>`).join('')}</div>`;
-  if(libraryActivity==='song')return `<section class="library-head"><div><p class="eyebrow">SING ALONG</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听，跟着唱，让字母变熟悉。</p></div></section>${tabs}<section class="panel letter-song"><div class="song-heading"><div><span class="song-tag">老师推荐</span><h2>跟老师唱字母</h2><p class="micro">A–Z 字母跟唱 · 约 1 分钟</p></div></div><video id="alphabet-song" controls playsinline preload="none" poster="./assets/videos/alphabet-singalong.jpg" aria-label="跟老师唱字母视频"><source src="./assets/videos/alphabet-singalong.mp4" type="video/mp4">当前浏览器不支持视频播放。</video><p class="micro song-note">先听一遍，再跟着唱。完整播放 A–Z，不受所选字母范围限制。</p></section>`;
+  if(libraryActivity==='song')return `<section class="library-head"><div><p class="eyebrow">SING ALONG</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听，跟着唱，让字母变熟悉。</p></div></section>${tabs}<section class="panel letter-song"><div class="song-heading"><div><span class="song-tag">老师推荐</span><h2>跟老师唱字母</h2><p class="micro">A–Z 字母跟唱 · 约 1 分钟</p></div></div><div class="song-video-stage"><video id="alphabet-song" controls playsinline preload="none" poster="./assets/videos/alphabet-singalong.jpg" aria-label="跟老师唱字母视频"><source src="./assets/videos/alphabet-singalong.mp4" type="video/mp4">当前浏览器不支持视频播放。</video></div><p class="micro song-note">先听一遍，再跟着唱。完整播放 A–Z，不受所选字母范围限制。</p></section>`;
   if(libraryActivity==='choose')return `<section class="library-head"><div><p class="eyebrow">LISTEN & FIND</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听声音，找到字母朋友。</p></div></section>${tabs}${listenGame.html()}`;
   if(libraryActivity!=='listen')return `<section class="library-head"><div><h1 class="page-title">字母朋友</h1><p class="subtitle">当前范围：${[...learning.data.letters].join(' · ')}。忘记了也可以听提示。</p></div></section>${tabs}${practice()}`;
   return `<section class="library-head"><div><p class="eyebrow">MEET THE LETTERS</p><h1 class="page-title">字母朋友</h1><p class="subtitle" id="letter-range">本次学习：${letters.join(' · ')}。选一个字母，看看大小写，再点按钮听声音。</p></div></section><div class="letter-tools">${tabs}<div class="loop-toolbar"><div class="loop-control" role="group" aria-label="字母循环播放">${btn('letter-loop','循环听','loop-play','play','aria-pressed="false"')}<fieldset class="loop-repeat-settings" aria-label="循环听每项遍数"><legend class="sr-only">循环听每项遍数</legend><span class="loop-repeat-label" aria-hidden="true">每项</span><div class="loop-repeat-options">${[1,2,3].map(n=>`<label class="loop-repeat-option"><input class="loop-repeat-input" id="letter-loop-repeats-${n}" name="letter-loop-repeats" type="radio" value="${n}" aria-label="每项读 ${n} 遍" ${letterLoopRepeats===n?'checked':''}><span>${n} 遍</span></label>`).join('')}</div></fieldset></div></div></div><section class="alphabet-grid letter-picker" aria-label="当前学习字母">${letters.map(l=>`<div class="letter-picker-card"><button class="alphabet-card current" data-action="letter" data-letter="${l}" aria-label="查看字母 ${l} 大小写" aria-pressed="${libraryLetter===l}"><span class="glyph">${l}<span class="glyph lower">${l.toLowerCase()}</span></span></button><button class="letter-speaker" data-action="letter-follow" data-letter="${l}" aria-label="听字母 ${l} 名称和字母音各一遍">${icon('speaker')}</button></div>`).join('')}</section><section class="library-detail letter-detail" aria-label="所选字母详情"><div class="letter-detail-heading"><div class="glyph">${letter.upper}<span class="glyph lower">${letter.lower}</span></div><div><h2>你好，我是 ${letter.upper}。</h2><p class="micro">大小写是同一个字母的两种写法。</p></div></div>${soundGuide(letter)}</section><details class="audio-sources"><summary>发音说明与来源</summary><p class="micro">当前使用${letterSourceInfo(letterSource()).label}，A–Z 的名称音和字母音均来自同一套录音。可在家长小角切换。点读每次一遍，需要时可再点重播。例词为合成示范。<br><a href="${letterSourceInfo(letterSource()).original}" target="_blank" rel="noopener">听完整原录音</a><br>字母展示和练习都使用家长保存的范围。成长地图可查看素材来源。</p></details>`;
