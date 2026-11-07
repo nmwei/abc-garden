@@ -1,0 +1,502 @@
+{
+  "title": "GK 26个字母拼读音",
+  "source": "source.mp3",
+  "sourcePage": "./assets/audio/gk/source.mp3",
+  "sourceUrl": "./assets/audio/gk/source.mp3",
+  "sourceSha256": "74f993ee6c9b72c574842bb05b8d7356940afdfdf20d0c5b4452d9b5f56e5d06",
+  "sampleRate": 24000,
+  "repetitions": 1,
+  "leadingMs": 80,
+  "trailingMs": {
+    "name": 150,
+    "sound": 350
+  },
+  "singleTrailingMs": 350,
+  "fadeMs": 5,
+  "decodedDuration": 77.4,
+  "provenance": {
+    "gitRevision": "5b3f4ab",
+    "description": "Original training-class recording restored from Git; one reading per clip, normally the first. F name uses the user-approved third reading with peak-matched gain. Cuts end before the reviewed following onset; 5 ms edge fades prevent clicks.",
+    "review": "All 52 boundaries reviewed against source waveforms and spectra; C/J/M listener-reported contamination addressed. F name third-reading preview approved by user. Other clips retain the previously reviewed boundaries."
+  },
+  "clips": [
+    {
+      "letter": "A",
+      "mode": "name",
+      "startMs": 600,
+      "durationMs": 405,
+      "gainStartMs": 500,
+      "gainDurationMs": 1490,
+      "nextOnsetMs": 1020
+    },
+    {
+      "letter": "B",
+      "mode": "name",
+      "startMs": 3540,
+      "durationMs": 365,
+      "gainStartMs": 3450,
+      "gainDurationMs": 1430,
+      "nextOnsetMs": 3935
+    },
+    {
+      "letter": "C",
+      "mode": "name",
+      "startMs": 6400,
+      "durationMs": 346,
+      "gainStartMs": 6300,
+      "gainDurationMs": 1490,
+      "nextOnsetMs": 6770
+    },
+    {
+      "letter": "D",
+      "mode": "name",
+      "startMs": 9490,
+      "durationMs": 360,
+      "gainStartMs": 9250,
+      "gainDurationMs": 1600,
+      "nextOnsetMs": 9870
+    },
+    {
+      "letter": "E",
+      "mode": "name",
+      "startMs": 12440,
+      "durationMs": 350,
+      "gainStartMs": 12240,
+      "gainDurationMs": 1540,
+      "nextOnsetMs": 12800
+    },
+    {
+      "letter": "F",
+      "mode": "name",
+      "startMs": 16025,
+      "durationMs": 450,
+      "gainStartMs": 15250,
+      "gainDurationMs": 1300,
+      "nextOnsetMs": 16700,
+      "reading": 3,
+      "gainMode": "clip"
+    },
+    {
+      "letter": "G",
+      "mode": "name",
+      "startMs": 18150,
+      "durationMs": 360,
+      "gainStartMs": 17950,
+      "gainDurationMs": 1490,
+      "nextOnsetMs": 18525
+    },
+    {
+      "letter": "H",
+      "mode": "name",
+      "startMs": 20960,
+      "durationMs": 360,
+      "gainStartMs": 20800,
+      "gainDurationMs": 1500,
+      "nextOnsetMs": 21330
+    },
+    {
+      "letter": "I",
+      "mode": "name",
+      "startMs": 23870,
+      "durationMs": 323,
+      "gainStartMs": 23750,
+      "gainDurationMs": 1410,
+      "nextOnsetMs": 24210
+    },
+    {
+      "letter": "J",
+      "mode": "name",
+      "startMs": 26750,
+      "durationMs": 315,
+      "gainStartMs": 26570,
+      "gainDurationMs": 1490,
+      "nextOnsetMs": 27095
+    },
+    {
+      "letter": "K",
+      "mode": "name",
+      "startMs": 29520,
+      "durationMs": 340,
+      "gainStartMs": 29390,
+      "gainDurationMs": 1370,
+      "nextOnsetMs": 29890
+    },
+    {
+      "letter": "L",
+      "mode": "name",
+      "startMs": 32350,
+      "durationMs": 331,
+      "gainStartMs": 32150,
+      "gainDurationMs": 1470,
+      "nextOnsetMs": 32705
+    },
+    {
+      "letter": "M",
+      "mode": "name",
+      "startMs": 35950,
+      "durationMs": 323,
+      "gainStartMs": 35650,
+      "gainDurationMs": 1570,
+      "nextOnsetMs": 36300
+    },
+    {
+      "letter": "N",
+      "mode": "name",
+      "startMs": 38860,
+      "durationMs": 352,
+      "gainStartMs": 38700,
+      "gainDurationMs": 1480,
+      "nextOnsetMs": 39230
+    },
+    {
+      "letter": "O",
+      "mode": "name",
+      "startMs": 41740,
+      "durationMs": 350,
+      "gainStartMs": 41600,
+      "gainDurationMs": 1560,
+      "nextOnsetMs": 42100
+    },
+    {
+      "letter": "P",
+      "mode": "name",
+      "startMs": 44580,
+      "durationMs": 376,
+      "gainStartMs": 44480,
+      "gainDurationMs": 1390,
+      "nextOnsetMs": 44975
+    },
+    {
+      "letter": "Q",
+      "mode": "name",
+      "startMs": 47450,
+      "durationMs": 372,
+      "gainStartMs": 47320,
+      "gainDurationMs": 1430,
+      "nextOnsetMs": 47840
+    },
+    {
+      "letter": "R",
+      "mode": "name",
+      "startMs": 51350,
+      "durationMs": 352,
+      "gainStartMs": 51150,
+      "gainDurationMs": 1480,
+      "nextOnsetMs": 51720
+    },
+    {
+      "letter": "S",
+      "mode": "name",
+      "startMs": 54120,
+      "durationMs": 297,
+      "gainStartMs": 54000,
+      "gainDurationMs": 1240,
+      "nextOnsetMs": 54445
+    },
+    {
+      "letter": "T",
+      "mode": "name",
+      "startMs": 56740,
+      "durationMs": 380,
+      "gainStartMs": 56600,
+      "gainDurationMs": 1340,
+      "nextOnsetMs": 57135
+    },
+    {
+      "letter": "U",
+      "mode": "name",
+      "startMs": 59440,
+      "durationMs": 333,
+      "gainStartMs": 59300,
+      "gainDurationMs": 1400,
+      "nextOnsetMs": 59795
+    },
+    {
+      "letter": "V",
+      "mode": "name",
+      "startMs": 62200,
+      "durationMs": 365,
+      "gainStartMs": 62100,
+      "gainDurationMs": 1350,
+      "nextOnsetMs": 62580
+    },
+    {
+      "letter": "W",
+      "mode": "name",
+      "startMs": 64930,
+      "durationMs": 391,
+      "gainStartMs": 64770,
+      "gainDurationMs": 1610,
+      "nextOnsetMs": 65345
+    },
+    {
+      "letter": "X",
+      "mode": "name",
+      "startMs": 68700,
+      "durationMs": 380,
+      "gainStartMs": 68500,
+      "gainDurationMs": 1540,
+      "nextOnsetMs": 69090
+    },
+    {
+      "letter": "Y",
+      "mode": "name",
+      "startMs": 71710,
+      "durationMs": 380,
+      "gainStartMs": 71550,
+      "gainDurationMs": 1440,
+      "nextOnsetMs": 72105
+    },
+    {
+      "letter": "Z",
+      "mode": "name",
+      "startMs": 74450,
+      "durationMs": 426,
+      "gainStartMs": 74330,
+      "gainDurationMs": 1380,
+      "nextOnsetMs": 74905
+    },
+    {
+      "letter": "A",
+      "mode": "sound",
+      "startMs": 2070,
+      "durationMs": 388,
+      "gainStartMs": 1990,
+      "gainDurationMs": 1460,
+      "nextOnsetMs": 2475
+    },
+    {
+      "letter": "B",
+      "mode": "sound",
+      "startMs": 5000,
+      "durationMs": 390,
+      "gainStartMs": 4880,
+      "gainDurationMs": 1420,
+      "nextOnsetMs": 5400
+    },
+    {
+      "letter": "C",
+      "mode": "sound",
+      "startMs": 7950,
+      "durationMs": 340,
+      "gainStartMs": 7790,
+      "gainDurationMs": 1460,
+      "nextOnsetMs": 8335
+    },
+    {
+      "letter": "D",
+      "mode": "sound",
+      "startMs": 10970,
+      "durationMs": 357,
+      "gainStartMs": 10850,
+      "gainDurationMs": 1390,
+      "nextOnsetMs": 11345
+    },
+    {
+      "letter": "E",
+      "mode": "sound",
+      "startMs": 13900,
+      "durationMs": 345,
+      "gainStartMs": 13780,
+      "gainDurationMs": 1470,
+      "nextOnsetMs": 14265
+    },
+    {
+      "letter": "F",
+      "mode": "sound",
+      "startMs": 16550,
+      "durationMs": 500,
+      "gainStartMs": 16550,
+      "gainDurationMs": 1400,
+      "nextOnsetMs": 17065
+    },
+    {
+      "letter": "G",
+      "mode": "sound",
+      "startMs": 19560,
+      "durationMs": 360,
+      "gainStartMs": 19440,
+      "gainDurationMs": 1360,
+      "nextOnsetMs": 19935
+    },
+    {
+      "letter": "H",
+      "mode": "sound",
+      "startMs": 22380,
+      "durationMs": 410,
+      "gainStartMs": 22300,
+      "gainDurationMs": 1450,
+      "nextOnsetMs": 22805
+    },
+    {
+      "letter": "I",
+      "mode": "sound",
+      "startMs": 25280,
+      "durationMs": 376,
+      "gainStartMs": 25160,
+      "gainDurationMs": 1410,
+      "nextOnsetMs": 25675
+    },
+    {
+      "letter": "J",
+      "mode": "sound",
+      "startMs": 28160,
+      "durationMs": 340,
+      "gainStartMs": 28060,
+      "gainDurationMs": 1330,
+      "nextOnsetMs": 28515
+    },
+    {
+      "letter": "K",
+      "mode": "sound",
+      "startMs": 30900,
+      "durationMs": 390,
+      "gainStartMs": 30760,
+      "gainDurationMs": 1390,
+      "nextOnsetMs": 31315
+    },
+    {
+      "letter": "L",
+      "mode": "sound",
+      "startMs": 33700,
+      "durationMs": 390,
+      "gainStartMs": 33620,
+      "gainDurationMs": 2030,
+      "nextOnsetMs": 34115
+    },
+    {
+      "letter": "M",
+      "mode": "sound",
+      "startMs": 37320,
+      "durationMs": 417,
+      "gainStartMs": 37220,
+      "gainDurationMs": 1480,
+      "nextOnsetMs": 37755
+    },
+    {
+      "letter": "N",
+      "mode": "sound",
+      "startMs": 40280,
+      "durationMs": 360,
+      "gainStartMs": 40180,
+      "gainDurationMs": 1420,
+      "nextOnsetMs": 40655
+    },
+    {
+      "letter": "O",
+      "mode": "sound",
+      "startMs": 43260,
+      "durationMs": 292,
+      "gainStartMs": 43160,
+      "gainDurationMs": 1320,
+      "nextOnsetMs": 43570
+    },
+    {
+      "letter": "P",
+      "mode": "sound",
+      "startMs": 46020,
+      "durationMs": 360,
+      "gainStartMs": 45870,
+      "gainDurationMs": 1450,
+      "nextOnsetMs": 46405
+    },
+    {
+      "letter": "Q",
+      "mode": "sound",
+      "startMs": 48900,
+      "durationMs": 330,
+      "gainStartMs": 48750,
+      "gainDurationMs": 2400,
+      "nextOnsetMs": 49260
+    },
+    {
+      "letter": "R",
+      "mode": "sound",
+      "startMs": 52630,
+      "durationMs": 402,
+      "gainStartMs": 52630,
+      "gainDurationMs": 1370,
+      "nextOnsetMs": 53060
+    },
+    {
+      "letter": "S",
+      "mode": "sound",
+      "startMs": 55300,
+      "durationMs": 303,
+      "gainStartMs": 55240,
+      "gainDurationMs": 1360,
+      "nextOnsetMs": 55630
+    },
+    {
+      "letter": "T",
+      "mode": "sound",
+      "startMs": 58090,
+      "durationMs": 321,
+      "gainStartMs": 57940,
+      "gainDurationMs": 1360,
+      "nextOnsetMs": 58435
+    },
+    {
+      "letter": "U",
+      "mode": "sound",
+      "startMs": 60850,
+      "durationMs": 312,
+      "gainStartMs": 60700,
+      "gainDurationMs": 1400,
+      "nextOnsetMs": 61190
+    },
+    {
+      "letter": "V",
+      "mode": "sound",
+      "startMs": 63550,
+      "durationMs": 310,
+      "gainStartMs": 63450,
+      "gainDurationMs": 1320,
+      "nextOnsetMs": 63890
+    },
+    {
+      "letter": "W",
+      "mode": "sound",
+      "startMs": 66460,
+      "durationMs": 470,
+      "gainStartMs": 66380,
+      "gainDurationMs": 2120,
+      "nextOnsetMs": 67100
+    },
+    {
+      "letter": "X",
+      "mode": "sound",
+      "startMs": 70040,
+      "durationMs": 450,
+      "gainStartMs": 70040,
+      "gainDurationMs": 1510,
+      "nextOnsetMs": 70505
+    },
+    {
+      "letter": "Y",
+      "mode": "sound",
+      "startMs": 73110,
+      "durationMs": 380,
+      "gainStartMs": 72990,
+      "gainDurationMs": 1340,
+      "nextOnsetMs": 73505
+    },
+    {
+      "letter": "Z",
+      "mode": "sound",
+      "startMs": 75790,
+      "durationMs": 332,
+      "gainStartMs": 75710,
+      "gainDurationMs": 1290,
+      "nextOnsetMs": 76150
+    }
+  ],
+  "boundaryReview": {
+    "minimumGapMs": 10,
+    "method": "Following-reading onset estimates (normally the second repetition; for F name take 3, the following phonics group) reviewed with 10 ms RMS and high-frequency energy, and 25 ms spectrograms. Quiet consonant attacks count as onset. Revise only cuts with less than 10 ms clearance; revised endpoints use a quiet 8 ms window 15-30 ms before estimated onset. No time stretching or pitch change. Signal review is not a complete auditory review.",
+    "revisedGapRangeMs": [
+      15,
+      30
+    ]
+  }
+}

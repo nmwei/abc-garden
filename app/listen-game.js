@@ -1,6 +1,7 @@
 import './feedback-audio.js';
 import {ListeningRound} from './listen-game-core.js';
 import {icon} from './art.js';
+import {letterAudioPath} from './letter-audio.js';
 
 const ABC='ABCDEFGHIJKLMNOPQRSTUVWXYZ',format=ms=>`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}`;
 const OPTIONS_KEY='abc-listen-game-options-v1',defaults={mode:'name',letterCase:'upper',kind:'practice',vowels:true,effects:true};
@@ -12,14 +13,15 @@ function loadOptions(){
 }
 const button=(action,label,style='secondary',extra='')=>`<button type="button" class="button ${style}" data-listen="${action}" ${extra}>${label}</button>`;
 export class ListenGame {
- constructor({audio,refresh,letters,feedback}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.feedback=feedback||new globalThis.GardenFeedbackAudio({enabled:()=>this.options.effects});this.ready=false;this.elapsed=0;this.started=null;}
+ constructor({audio,refresh,letters,feedback,letterSource=()=> 'edcreate'}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.letterSource=letterSource;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.feedback=feedback||new globalThis.GardenFeedbackAudio({enabled:()=>this.options.effects});this.ready=false;this.elapsed=0;this.started=null;}
  display(letter){return this.options.letterCase==='lower'?letter.toLowerCase():letter;}
  pauseClock(){if(this.started!==null)this.elapsed+=performance.now()-this.started;this.started=null;clearInterval(this.timer);}
  startClock(){
   if(this.options.kind!=='game'||this.started!==null)return;
   this.started=performance.now();this.timer=setInterval(()=>{const clock=document.querySelector('#listen-clock');if(clock)clock.textContent=format(this.elapsed+performance.now()-this.started);},250);
  }
- suspend(){this.epoch++;this.audio.stop();this.pauseClock();this.stopEffect();this.ready=false;}
+ cancelAdvance(){this.epoch++;clearTimeout(this.advanceTimer);this.advanceTimer=null;}
+ suspend(){this.cancelAdvance();this.audio.stop();this.pauseClock();this.stopEffect();this.ready=false;}
  resume(){if(!this.draft&&this.round&&!this.round.done&&!this.round.finished){this.message='已暂停，点喇叭继续。';this.refresh();}}
  leave(){this.suspend();this.round=null;this.draft=null;}
  stopEffect(){this.feedback.stop();}
@@ -32,12 +34,26 @@ export class ListenGame {
  }
  async hear(letter=this.round?.target){
   if(!letter||!ABC.includes(letter))return;
-  this.pauseClock();this.stopEffect();const epoch=++this.epoch;this.ready=false;this.message='正在播放…';this.refresh();
-  const ok=await this.audio.play([{src:`./assets/audio/edcreate/single-${this.options.mode}-${letter}.wav`}]);
+  this.cancelAdvance();this.pauseClock();this.stopEffect();const epoch=this.epoch;this.ready=false;this.message='正在播放…';this.refresh();
+  const ok=await this.audio.play([{src:letterAudioPath(`${this.options.mode}-${letter}`,this.letterSource(),{single:true})}]);
   if(epoch!==this.epoch)return;
   this.ready=ok;this.message=ok?(this.round?.done?'点字母可以再听一次。':this.round?.hinted?`提示已圈出 ${this.display(this.round.target)}，点它试试。`:'听到的是哪位字母朋友？'):'声音未能播放，请点喇叭重试。';
   if(ok&&this.round&&!this.round.done&&!this.round.finished)this.startClock();
   this.refresh();
+ }
+ async answerFeedback(correct){
+  this.cancelAdvance();const epoch=this.epoch,round=this.round;
+  const current=()=>epoch===this.epoch&&this.round===round&&!this.draft&&!document.hidden;
+  const effects=this.options.effects;
+  const effectOK=await this.feedback.answer(correct,document.querySelector('.listen-answer')||document.querySelector('.listen-stage'));
+  if(!correct||!current()||effects&&!effectOK)return;
+  // Keep the visual reward when effects are muted, just as in letter pairing.
+  if(!effects){await new Promise(resolve=>setTimeout(resolve,1450));if(!current())return;}
+  const ok=await this.audio.play([{src:letterAudioPath(`${this.options.mode}-${round.target}`,this.letterSource(),{single:true})}]);
+  if(!current())return;
+  if(!ok){this.message='声音未能播放，可以点字母重听或手动继续。';this.refresh();return;}
+  // Count the pause from actual playback completion, never from the answer tap.
+  this.advanceTimer=setTimeout(()=>{if(current())this.action('next');},1000);
  }
  action(action,value){
   if(action==='settings'){this.settings();return;}
@@ -53,7 +69,7 @@ export class ListenGame {
    if(round.done){this.pauseClock();this.audio.stop();}
    this.message=correct?'找到啦！':round.done?`刚刚读的是 ${this.display(round.target)}。`:'再听一听，换一个试试。';this.refresh();
    if(round.done)document.querySelector('[data-listen="next"]')?.focus({preventScroll:true});
-   this.feedback.answer(correct,document.querySelector('.listen-answer')||document.querySelector('.listen-stage'));
+   this.answerFeedback(correct);
   }
  }
  edit(input){

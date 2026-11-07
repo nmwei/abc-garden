@@ -1,6 +1,7 @@
+import {letterAudioPath} from './letter-audio.js';
 export class FollowAlong {
-  constructor(customAudio,changed){
-    this.customAudio=customAudio;this.changed=changed;this.audio=new Audio();
+  constructor(letterSource,changed){
+    this.letterSource=letterSource;this.changed=changed;this.audio=new Audio();
     this.audio.id='follow-audio';this.audio.hidden=true;this.audio.setAttribute('playsinline','');document.body.append(this.audio);
     this.letters=[];this.index=0;this.phase='name';this.status='idle';this.version=0;
     this.audio.onerror=()=>{if(this.status==='playing'){clearTimeout(this.timer);this.status='error';this.changed();}};
@@ -19,7 +20,7 @@ export class FollowAlong {
   play(){
     const version=++this.version;this.status='playing';
     const key=`${this.phase}-${this.letters[this.index]}`;
-    this.audio.src=this.customAudio()[key]||`./assets/audio/${key}.wav`;this.changed();
+    this.audio.src=letterAudioPath(key,this.letterSource());this.changed();
     this.audio.play().catch(()=>{if(version===this.version){this.status='error';this.changed();}});
   }
   pause(){if(this.status!=='playing')return;this.version++;clearTimeout(this.timer);this.audio.pause();this.status='paused';this.changed();}
