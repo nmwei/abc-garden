@@ -41,8 +41,9 @@ test('offline all-letter board fits phone and tablet, accepts sound C/K and stop
  for(const size of [{width:1194,height:834},{width:390,height:844}]){await page.setViewportSize(size);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.screenshot({path:`test-results/listen-game-${test.info().project.name}.png`,fullPage:true});
  const answer=await target(page);await pick(page,answer).click();
- await expect.poll(()=>page.locator('#feedback-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.04);
+ // Inspect the short-lived flower before waiting for buffered audio to start.
  await page.locator('.answer-flower>img').first().evaluate(img=>img.decode());
+ await expect.poll(()=>page.locator('#feedback-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.04);
  await page.getByRole('button',{name:'成长地图',exact:true}).click();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
 });
 test('failed audio can be retried and returning from the background requires a fresh single reading',async({page})=>{
