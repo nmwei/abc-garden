@@ -107,7 +107,7 @@
 .alphabet-card[aria-pressed="true"]{border-color:#52795c;box-shadow:inset 0 0 0 1px #52795c;background:#e1ecd9}
 
 /* Letter browsing: compact selectors, one focal letter, equal listening actions. */
-.page:has(.letter-detail){max-width:960px;margin-inline:auto}
+.page:has(.letter-detail){max-width:none;margin-inline:0}
 .alphabet-grid.letter-picker{grid-template-columns:repeat(auto-fill,minmax(64px,84px));gap:10px}
 .letter-picker .alphabet-card{min-height:64px;padding:10px 8px;border-radius:15px;background:#f3f4eb;border-color:var(--line)}
 .letter-picker .alphabet-card .glyph{font-size:30px}
@@ -525,7 +525,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 
 /* Letter activities share compact spacing and keep natural overflow for long ranges. */
-.letters-page{padding:16px 0 10px}
+.letters-page{padding:16px 0 10px;overflow-anchor:none}
 .letters-page>.library-head{margin-bottom:12px}
 .letters-page>.library-head .eyebrow{display:none}
 .letters-page .page-title{font-size:26px;margin:0 0 4px}
@@ -551,7 +551,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .letters-page .alphabet-grid.letter-picker{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:calc(12px + var(--letter-room)*.02)}
  .letters-page .letter-picker .alphabet-card{min-height:calc(88px + var(--letter-room)*.18)}
  .letters-page .letter-picker .alphabet-card .glyph{font-size:calc(38px + var(--letter-room)*.05)}
- .letters-page .library-detail.letter-detail{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:calc(8px + var(--letter-room)*.08) calc(20px + var(--letter-room)*.04);align-items:center;align-content:center;min-height:calc(204px + var(--letter-room)*.78);margin-top:calc(14px + var(--letter-room)*.05);padding:calc(16px + var(--letter-room)*.08) calc(20px + var(--letter-room)*.06)}
+ .letters-page .library-detail.letter-detail{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:calc(8px + var(--letter-room)*.08) calc(20px + var(--letter-room)*.04);align-items:center;align-content:center;min-height:max(200px,var(--letter-stage-height,360px));margin-top:calc(14px + var(--letter-room)*.05);padding:calc(16px + var(--letter-room)*.08) calc(20px + var(--letter-room)*.06)}
  .letters-page .letter-detail-heading{grid-column:1;grid-row:1/4;flex-direction:column;align-items:flex-start;gap:calc(12px + var(--letter-room)*.04);margin:0}
  .letters-page .letter-detail-heading>.glyph{font-size:calc(72px + var(--letter-room)*.28);min-width:0}
  .letters-page .letter-detail-heading h2{font-size:calc(20px + var(--letter-room)*.02)}
@@ -576,3 +576,33 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .letters-page .letter-detail-heading>.glyph{font-size:64px;min-width:100px}
  .letters-page .library-detail.letter-detail{padding:16px}
 }
+
+/* Activity panels use the same measured remainder, independent of their content. */
+@container garden-content (min-width:781px){
+ .letters-page>.practice-shell{width:100%;max-width:none;min-height:var(--letter-stage-height,440px);display:flex;flex-direction:column}
+ .letters-page .practice-top{display:none}
+ .letters-page .practice-panel{flex:1;min-height:300px;padding:20px 28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);grid-template-rows:auto auto 1fr auto;gap:8px 24px;align-items:center;overflow:visible}
+ .letters-page .practice-kicker{display:none}
+ .letters-page #task-title{grid-column:1/-1;margin:0;font-size:24px}
+ .letters-page .practice-panel>.micro{grid-column:1/-1;margin:0}
+ .letters-page .pair-target{grid-column:1;grid-row:3;margin:0 auto;padding:12px 44px;min-width:0}
+ .letters-page .pair-target .big-glyph{font-size:clamp(100px,12vw,156px)}
+ .letters-page .practice-panel>.choices{grid-column:2;grid-row:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+ .letters-page .pair-option .choice{width:100%;min-width:0;min-height:144px;font-size:clamp(64px,7vw,96px);padding:32px 8px 14px}
+ .letters-page .practice-panel>.feedback{grid-column:1/-1;min-height:28px;margin:0;line-height:1.5}
+ .letters-page .practice-bottom{margin-top:12px;gap:12px}
+ .letters-page>.listen-game{max-width:none;width:100%;min-height:var(--letter-stage-height,420px);display:flex;flex-direction:column}
+ .letters-page .listen-stage{flex:1;min-height:160px}
+ .letters-page .listen-key{flex-basis:clamp(72px,7vw,96px);width:clamp(72px,7vw,96px);min-height:clamp(72px,7vw,96px);font-size:clamp(36px,4vw,44px)}
+ .letters-page .listen-hint{margin:16px auto 0}
+ .letters-page>.letter-song{max-width:none;width:100%;height:var(--letter-stage-height,480px);min-height:360px;display:flex;flex-direction:column;padding:20px 24px;margin:0}
+ .letters-page .song-heading{flex:none;margin-bottom:12px}
+ .letters-page .song-heading h2{font-size:22px;margin:4px 0}
+ .letters-page .song-tag{display:none}
+ .letters-page .song-video-stage{flex:1;min-height:180px;position:relative;background:#242b23;border-radius:16px}
+ .letters-page .letter-song video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;aspect-ratio:auto}
+ .letters-page .song-note{flex:none;margin:10px 0 0}
+}
+.letter-picker-card[hidden],.letter-picker-pages[hidden]{display:none}
+.letter-picker-pages{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:8px;font-size:13px;color:var(--muted)}
+.letter-picker-pages .button{min-height:44px}

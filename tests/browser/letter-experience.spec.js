@@ -75,7 +75,7 @@ test('two rows of letters fit wide screens while expanded sources and phone cont
   await page.goto('/#/letters');await page.evaluate(()=>document.fonts.ready);
   for(const [width,height] of [[1024,768],[1133,744],[1180,720],[1194,834],[1440,1000]]){
    await page.setViewportSize({width,height});
-   expect(await page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight+1)).toBe(true);
+   await expect.poll(()=>page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight+1)).toBe(true);
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
    await expect(page.locator('.letter-detail')).toBeInViewport();
   }
