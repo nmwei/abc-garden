@@ -1,6 +1,7 @@
 import './feedback-audio.js';
 import {ListeningRound} from './listen-game-core.js';
 import {icon} from './art.js';
+import {letterAudioPath} from './letter-audio.js';
 
 const ABC='ABCDEFGHIJKLMNOPQRSTUVWXYZ',format=ms=>`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}`;
 const OPTIONS_KEY='abc-listen-game-options-v1',defaults={mode:'name',letterCase:'upper',kind:'practice',vowels:true,effects:true};
@@ -12,7 +13,7 @@ function loadOptions(){
 }
 const button=(action,label,style='secondary',extra='')=>`<button type="button" class="button ${style}" data-listen="${action}" ${extra}>${label}</button>`;
 export class ListenGame {
- constructor({audio,refresh,letters,feedback}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.feedback=feedback||new globalThis.GardenFeedbackAudio({enabled:()=>this.options.effects});this.ready=false;this.elapsed=0;this.started=null;}
+ constructor({audio,refresh,letters,feedback,letterSource=()=> 'edcreate'}){this.audio=audio;this.refresh=refresh;this.letters=letters;this.letterSource=letterSource;this.options=loadOptions();this.draft=null;this.round=null;this.epoch=0;this.feedback=feedback||new globalThis.GardenFeedbackAudio({enabled:()=>this.options.effects});this.ready=false;this.elapsed=0;this.started=null;}
  display(letter){return this.options.letterCase==='lower'?letter.toLowerCase():letter;}
  pauseClock(){if(this.started!==null)this.elapsed+=performance.now()-this.started;this.started=null;clearInterval(this.timer);}
  startClock(){
@@ -34,7 +35,7 @@ export class ListenGame {
  async hear(letter=this.round?.target){
   if(!letter||!ABC.includes(letter))return;
   this.cancelAdvance();this.pauseClock();this.stopEffect();const epoch=this.epoch;this.ready=false;this.message='正在播放…';this.refresh();
-  const ok=await this.audio.play([{src:`./assets/audio/edcreate/single-${this.options.mode}-${letter}.wav`}]);
+  const ok=await this.audio.play([{src:letterAudioPath(`${this.options.mode}-${letter}`,this.letterSource(),{single:true})}]);
   if(epoch!==this.epoch)return;
   this.ready=ok;this.message=ok?(this.round?.done?'点字母可以再听一次。':this.round?.hinted?`提示已圈出 ${this.display(this.round.target)}，点它试试。`:'听到的是哪位字母朋友？'):'声音未能播放，请点喇叭重试。';
   if(ok&&this.round&&!this.round.done&&!this.round.finished)this.startClock();
@@ -48,7 +49,7 @@ export class ListenGame {
   if(!correct||!current()||effects&&!effectOK)return;
   // Keep the visual reward when effects are muted, just as in letter pairing.
   if(!effects){await new Promise(resolve=>setTimeout(resolve,1450));if(!current())return;}
-  const ok=await this.audio.play([{src:`./assets/audio/edcreate/single-${this.options.mode}-${round.target}.wav`}]);
+  const ok=await this.audio.play([{src:letterAudioPath(`${this.options.mode}-${round.target}`,this.letterSource(),{single:true})}]);
   if(!current())return;
   if(!ok){this.message='声音未能播放，可以点字母重听或手动继续。';this.refresh();return;}
   // Count the pause from actual playback completion, never from the answer tap.

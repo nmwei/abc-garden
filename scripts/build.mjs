@@ -5,6 +5,7 @@ import {syncBuild} from './build-cache.mjs';
 import { createHash } from 'node:crypto';
 import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../app/course-content.js';
 import { ALPHABET,BLENDS,PROMPTS } from '../app/content.js';
+import {LETTER_AUDIO_SOURCES} from '../app/letter-audio.js';
 const out=new URL('../dist/',import.meta.url);
 const build=await syncBuild(fileURLToPath(new URL('../',import.meta.url)),fileURLToPath(out),fileURLToPath(new URL('../.build-cache/files.json',import.meta.url)),{clean:process.argv.includes('--clean')});
 const meta=path=>{const entry=build.entries[path.replace(/^\.\//,'')];if(!entry)throw Error(`Missing resource: ${path}`);return entry;};
@@ -22,8 +23,8 @@ for(const clip of feedback){
  if(!credits.some(c=>c.file===clip.file&&c.license===clip.license))throw Error(`Missing feedback attribution: ${clip.file}`);
 }
 const required=[...feedback.map(c=>`./assets/${c.file}`),...COURSE_AUDIO.map(a=>`./assets/audio/${a.key}.wav`),...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,`./assets/audio/example-${a.upper}.wav`]),...BLENDS.map(b=>`./assets/audio/blend-${b.id}.wav`),...Object.keys(PROMPTS).map(key=>`./assets/audio/prompt-${key}.wav`),'./assets/audio/silence.wav'];
-const listening=JSON.parse(await readFile(new URL('assets/audio/edcreate/imported.json',out),'utf8'));
-for(const clip of listening){if(meta(`assets/${clip.singleFile}`).sha256!==clip.singleSha256)throw Error(`Single letter recording changed: ${clip.file}`);required.push(`./assets/${clip.singleFile}`);}
+const listening=(await Promise.all(LETTER_AUDIO_SOURCES.map(async source=>JSON.parse(await readFile(new URL(`assets/audio/${source.id}/imported.json`,out),'utf8'))))).flat();
+for(const clip of listening){if(meta(`assets/${clip.singleFile}`).sha256!==clip.singleSha256)throw Error(`Single letter recording changed: ${clip.file}`);required.push(`./assets/${clip.file}`,`./assets/${clip.singleFile}`);}
 for(const name of required) {
   if(!meta(name).pcm16)throw new Error(`Missing or non-PCM16 audio: ${name}`);
 }
@@ -40,7 +41,7 @@ async function pack(id,title,files){const unique=[...new Set(files)];let bytes=0
 const wav=key=>`./assets/audio/${key}.wav`;
 const other=['./assets/feedback-flower.svg','./assets/feedback-flower-license.txt',...feedback.map(c=>`./assets/${c.file}`),'./assets/audio/feedback-sources.json','./assets/pictures/flower.svg',...ALPHABET.flatMap(a=>[a.nameAudio,a.soundAudio,wav(`example-${a.upper}`)]),...BLENDS.map(b=>wav(`blend-${b.id}`)),...Object.keys(PROMPTS).map(k=>wav(`prompt-${k}`)),wav('silence'),
  ...[[READINGS,'read'],[DIALOGUES,'talk']].flatMap(([rows,prefix])=>rows.flatMap(r=>[WORDS.find(w=>w.id===r.image).image,...r.lines.map((_,i)=>wav(`${prefix}-${r.id}-${i}`))])),
- ...listening.map(c=>`./assets/${c.singleFile}`),...['source.mp3','legacy-L-source.wav','cuts.json','imported.json'].map(f=>`./assets/audio/edcreate/${f}`),'./assets/credits.json','./assets/pictures/LICENSE-NOTO.txt'];
+ ...listening.flatMap(c=>[`./assets/${c.file}`,`./assets/${c.singleFile}`]),...LETTER_AUDIO_SOURCES.flatMap(source=>['source.mp3','cuts.json','imported.json'].map(f=>`./assets/audio/${source.id}/${f}`)),'./assets/credits.json','./assets/pictures/LICENSE-NOTO.txt'];
 await pack('pictures','词卡图片',READY_WORDS.map(w=>w.image));
 await pack('word-audio','单词读音',READY_WORDS.map(w=>wav(w.audio)));
 await pack('sentence-audio','例句读音',READY_WORDS.map(w=>wav(`sentence-${w.id}`)));

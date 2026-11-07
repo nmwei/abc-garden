@@ -20,6 +20,17 @@
 .follow-panel{margin-bottom:24px}.follow-panel select{max-width:100%;padding:10px;border:1px solid var(--line,#d6e0d7);border-radius:12px;font:inherit;background:white;color:inherit}.follow-panel label{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.follow-panel #follow-status{font-size:18px;font-weight:600;min-height:28px}.alphabet-card.following{outline:3px solid #35775b;outline-offset:2px;background:#dcefe1}.follow-panel .button:disabled{opacity:.45;cursor:default}@media(max-width:600px){.library-head{flex-wrap:wrap}.library-head .segmented{max-width:100%;flex-wrap:wrap}.follow-panel .button-row{flex-wrap:wrap}}
 .follow-panel #follow-status{margin:18px 0;line-height:1.6}.follow-panel>.micro{margin-top:14px}
 .parent-settings{max-width:900px;margin:0 auto}
+.letter-preview-picker{display:flex;align-items:center;gap:12px;margin:20px 0 14px;font-size:14px}
+.letter-preview-picker select{min-width:100px;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);font:inherit}
+.letter-source-options{border:0;padding:0;margin:0;display:grid;gap:12px;min-width:0}
+.letter-source-option{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--white)}
+.letter-source-option:has(input:checked){background:#edf3e7;border-color:#8ba677}
+.letter-source-option label{display:flex;align-items:center;gap:12px;min-height:44px;cursor:pointer}
+.letter-source-option input{width:20px;height:20px;flex-shrink:0;accent-color:var(--green)}
+.letter-source-option strong{font-size:16px;font-weight:600}.letter-source-option small{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.6}
+.letter-source-option .button-row{flex-shrink:0;margin:0;gap:8px}.letter-source-status{min-height:24px;margin-bottom:0}
+.letter-source-options+p{margin-top:12px}
+@media(max-width:600px){.letter-source-option{align-items:stretch;flex-direction:column;gap:10px;padding:14px}.letter-source-option .button-row{padding-left:32px}.letter-source-option .button-row .button{flex:1;justify-content:center}}
 .weekly-editor label{display:flex;flex-direction:column;gap:8px;margin:16px 0}.weekly-editor input,.weekly-editor textarea,.weekly-editor select{font:inherit;padding:12px;border:1px solid #cbd5c6;border-radius:10px;max-width:100%;background:white;color:inherit}.weekly-editor textarea{width:100%;resize:vertical}.weekly-editor details{margin-top:22px}.weekly-editor summary{cursor:pointer;font-weight:600;padding:12px 0}[data-weekly][aria-pressed="true"]{background:#dce8d1;border-color:#64805a}#weekly-status{min-height:3em;line-height:1.6;margin:20px 0}.activity-preview button.mini-card{text-align:left;font:inherit;color:inherit;cursor:pointer}.activity-preview button.mini-card h2{font-size:20px}
 .weekly-editor fieldset{border:0;padding:0;margin:0;min-width:0}.weekly-editor fieldset:disabled{opacity:.75}#generation-status{line-height:1.6;margin:16px 0;overflow-wrap:anywhere}
 /* Two destinations, with exercises grouped inside their subject. */

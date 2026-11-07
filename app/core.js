@@ -1,9 +1,10 @@
 import {freshLearning,cleanLearning} from './course-core.js';
 import { LETTERS, BLENDS } from './content.js';
+import {normalizeLetterSource} from './letter-audio.js';
 
 export const STORAGE_KEY = 'abc-garden-v1';
 export function freshState() {
-  return { version:1, settings:{ letters:['A','B','C','D'], mode:'name', minutes:5, soundConfirmed:false, blending:false }, events:[], observations:{}, session:null, lastSession:null, customAudio:{}, learning:freshLearning() };
+  return { version:1, settings:{ letters:['A','B','C','D'], mode:'name', minutes:5, soundConfirmed:false, blending:false, letterAudioSource:'edcreate' }, events:[], observations:{}, session:null, lastSession:null, customAudio:{}, learning:freshLearning() };
 }
 
 export function sanitizeState(input) {
@@ -11,6 +12,7 @@ export function sanitizeState(input) {
   const state = freshState();
   state.learning=cleanLearning(input.learning);
   const settings = input.settings || {};
+  state.settings.letterAudioSource=normalizeLetterSource(settings.letterAudioSource);
   const letters = LETTERS.filter(l => Array.isArray(settings.letters) && settings.letters.includes(l));
   if (letters.length >= 2) state.settings.letters = letters;
   state.settings.minutes = [3,5,8].includes(settings.minutes) ? settings.minutes : 5;

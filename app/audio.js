@@ -1,7 +1,9 @@
 import {englishSpeechRate,pickVoice,pickEnglishVoice,isChineseLanguage} from './voice-settings.js';
+import {letterAudioPath} from './letter-audio.js';
 // Recorded clips and device speech share one cancellable queue.
 export class GardenAudio {
-  constructor(customAudio,onError){
+  constructor(customAudio,onError,letterSource=()=> 'edcreate'){
+    this.letterSource=letterSource;
     this.customAudio=customAudio;this.onError=onError;this.token=0;this.current=null;this.cancelWait=null;
     this.element=new Audio();this.element.id='garden-audio';this.element.hidden=true;
     this.element.setAttribute('playsinline','');document.body.append(this.element);
@@ -54,7 +56,7 @@ export class GardenAudio {
         if(ok)continue;
         if(!key.src){this.onError?.('朗读未能播放，请检查设备的对应语言语音后重试。');return false;}
       }
-      const audio=this.element;audio.src=typeof key==='object'?key.src:this.customAudio()[key]||`./assets/audio/${key}.wav`;
+      const audio=this.element;audio.src=typeof key==='object'?key.src:letterAudioPath(key,this.letterSource())||this.customAudio()[key]||`./assets/audio/${key}.wav`;
       audio.preload='auto';this.current=audio;
       const ok=await new Promise(resolve=>{
         let settled=false;
