@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {letterClips,seekLoop} from './letter-loop-helpers.js';
-const end=page=>page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
+const end=async page=>{await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>typeof a.onended==='function')).toBe(true);await page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));};
 test('letter loop repeats each item twice while card playback stays single; toolbar remains compact',async({page})=>{
  await page.addInitScript(()=>{
   localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF'}));window.letterClips=[];
@@ -68,7 +68,7 @@ test('word loop uses learning words, reads English then Chinese only, wraps and 
   await end(page);await expect.poll(()=>page.evaluate(()=>window.spoken.at(-1))).toBe(zh);
   if(word==='apple'&&(await page.evaluate(()=>window.spoken.length))===3)break;
   await page.evaluate(async()=>{window.utterance.onend();await Promise.resolve();await Promise.resolve();await Promise.resolve();});
-  expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain(`example-${word==='apple'?'C':'A'}.wav`);
+  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.src)).toContain(`example-${word==='apple'?'C':'A'}.wav`);
  }
  expect(await page.evaluate(()=>window.clips)).toEqual(['example-A.wav','example-C.wav','example-A.wav']);
  await page.getByRole('button',{name:'停止播放',exact:true}).click();expect(await page.evaluate(()=>window.cancelled)).toBeGreaterThan(0);

@@ -12,7 +12,7 @@ async function setup(page){
  });
  await page.goto('/#/words');
 }
-const endEnglish=page=>page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
+const endEnglish=async page=>{await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>typeof a.onended==='function')).toBe(true);await page.locator('#garden-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));};
 const endChinese=page=>page.evaluate(()=>window.lastSpeech.onend());
 test('repeated picture-word taps clean up Chinese speech before the next English recording',async({page})=>{
  await setup(page);
@@ -37,4 +37,22 @@ test('word loop cleans up between Chinese and English, including a rapid replace
  await page.getByRole('button',{name:'字母朋友',exact:true}).click();expect(await page.evaluate(()=>window.speechActive)).toBe(false);expect(await page.evaluate(()=>navigator.audioSession.type)).toBe('auto');
  await page.getByRole('button',{name:'循环听',exact:true}).click();expect(await page.evaluate(()=>navigator.audioSession.type)).toBe('playback');
  await page.getByRole('button',{name:'看图学词',exact:true}).click();expect(await page.evaluate(()=>navigator.audioSession.type)).toBe('auto');
+});
+
+test('iPad speech recovery delays a rapid repeat and navigation cancels it',async({page})=>{
+ await setup(page);await page.clock.install();await page.clock.pauseAt((await page.evaluate(()=>Date.now()))+1000);
+ await page.getByRole('button',{name:'听单词',exact:true}).click();
+ // Unlike the earlier model, cancel does not synchronously end native ducking.
+ await page.evaluate(()=>{speechSynthesis.cancel=()=>{};});
+ await endEnglish(page);await expect.poll(()=>page.evaluate(()=>window.speechActive)).toBe(true);await endChinese(page);
+ await page.getByRole('button',{name:'听单词',exact:true}).click();
+ expect(await page.evaluate(()=>window.audioTrace.length)).toBe(1);
+ await page.clock.runFor(1499);expect(await page.evaluate(()=>window.audioTrace.length)).toBe(1);
+ await page.evaluate(()=>{window.speechActive=false;});await page.clock.runFor(1);
+ await expect.poll(()=>page.evaluate(()=>window.audioTrace.length)).toBe(2);
+ expect(await page.evaluate(()=>window.audioTrace.at(-1).speechActive)).toBe(false);
+ await endEnglish(page);await endChinese(page);await page.getByRole('button',{name:'听单词',exact:true}).click();
+ await page.getByRole('button',{name:'字母朋友',exact:true}).click();await page.clock.runFor(2000);
+ expect(await page.evaluate(()=>window.audioTrace.length)).toBe(2);
+ expect(await page.locator('#garden-audio').evaluate(a=>a.paused&&!a.getAttribute('src'))).toBe(true);
 });
