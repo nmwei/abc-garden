@@ -155,11 +155,12 @@ function updateFollow(){
  if(active&&libraryLetter!==follow.letters[follow.index]){libraryLetter=follow.letters[follow.index];render();return;}
  const status=document.querySelector('#letter-play-status');
  const loopButton=document.querySelector('[data-action=letter-loop]');
- if(loopButton){const looping=active&&follow.loop;loopButton.innerHTML=icon(looping?'speaker':'play')+`<span>${looping?'停止播放':'循环听'}</span>`;loopButton.setAttribute('aria-pressed',String(looping));}
+ const preparing=follow.preparation?.status==='loading',prepareError=follow.preparation?.status==='error',paused=follow.status==='paused'&&follow.loop;
+ if(loopButton){const looping=active&&follow.loop;loopButton.disabled=preparing&&!looping;loopButton.innerHTML=icon(looping?'speaker':'play')+`<span>${looping?'停止播放':paused?'继续播放':preparing?'准备声音…':prepareError?'重新加载声音':'循环听'}</span>`;loopButton.setAttribute('aria-pressed',String(looping));}
  const loopGroup=document.querySelector('.loop-control');if(loopGroup)loopGroup.classList.toggle('is-playing',active&&follow.loop);
  const repeatLabel=follow.repeats>1?`（第 ${follow.repeatIndex+1}/${follow.repeats} 遍）`:'';
  const pendingRepeat=follow.loop&&follow.nextRepeats!==follow.repeats?` · 下个字母起每项 ${follow.nextRepeats} 遍`:'';
- if(status)status.textContent=active?`${libraryLetter}${libraryLetter.toLowerCase()} · ${follow.phase==='gap'?'稍停一下，接着听下一位':follow.phase==='name'?`正在读名称${repeatLabel} → 接着读字母音`:`名称已读完 → 正在读字母音${repeatLabel}`}${pendingRepeat}`:follow.status==='error'?'声音未能播放，请重试。':'';
+ if(status)status.textContent=active?`${libraryLetter}${libraryLetter.toLowerCase()} · ${follow.phase==='gap'?'稍停一下，接着听下一位':follow.phase==='name'?`正在读名称${repeatLabel} → 接着读字母音`:`名称已读完 → 正在读字母音${repeatLabel}`}${pendingRepeat}`:follow.status==='error'?'声音未能播放，请重试。':paused?'已暂停，可以继续播放。':prepareError?'循环声音未能加载，请重试；离线时请先下载字母素材。':'';
  document.querySelectorAll('[data-action="letter-follow"]').forEach(el=>el.classList.toggle('playing',active&&el.dataset.letter===libraryLetter));
  if(active)highlightSound(`${follow.phase}-${libraryLetter}`);else clearSoundHighlight();
 }
@@ -170,6 +171,7 @@ function library(){
   if(libraryActivity==='song')return `<section class="library-head"><div><p class="eyebrow">SING ALONG</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听，跟着唱，让字母变熟悉。</p></div></section>${tabs}<section class="panel letter-song"><div class="song-heading"><div><span class="song-tag">老师推荐</span><h2>跟老师唱字母</h2><p class="micro">A–Z 字母跟唱 · 约 1 分钟</p></div></div><div class="song-video-stage"><video id="alphabet-song" controls playsinline preload="none" poster="./assets/videos/alphabet-singalong.jpg" aria-label="跟老师唱字母视频"><source src="./assets/videos/alphabet-singalong.mp4" type="video/mp4">当前浏览器不支持视频播放。</video></div><p class="micro song-note">先听一遍，再跟着唱。完整播放 A–Z，不受所选字母范围限制。</p></section>`;
   if(libraryActivity==='choose')return `<section class="library-head"><div><p class="eyebrow">LISTEN & FIND</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听声音，找到字母朋友。</p></div></section>${tabs}${listenGame.html()}`;
   if(libraryActivity!=='listen')return `<section class="library-head"><div><h1 class="page-title">字母朋友</h1><p class="subtitle">当前范围：${[...learning.data.letters].join(' · ')}。忘记了也可以听提示。</p></div></section>${tabs}${practice()}`;
+  follow.prepareLoop(letters);
   return `<section class="library-head"><div><p class="eyebrow">MEET THE LETTERS</p><h1 class="page-title">字母朋友</h1><p class="subtitle" id="letter-range">本次学习：${letters.join(' · ')}。选一个字母，看看大小写，再点按钮听声音。</p></div></section><div class="letter-tools">${tabs}<div class="loop-toolbar"><div class="loop-control" role="group" aria-label="字母循环播放">${btn('letter-loop','循环听','loop-play','play','aria-pressed="false"')}<fieldset class="loop-repeat-settings" aria-label="循环听每项遍数"><legend class="sr-only">循环听每项遍数</legend><span class="loop-repeat-label" aria-hidden="true">每项</span><div class="loop-repeat-options">${[1,2,3].map(n=>`<label class="loop-repeat-option"><input class="loop-repeat-input" id="letter-loop-repeats-${n}" name="letter-loop-repeats" type="radio" value="${n}" aria-label="每项读 ${n} 遍" ${letterLoopRepeats===n?'checked':''}><span>${n} 遍</span></label>`).join('')}</div></fieldset></div></div></div><section class="alphabet-grid letter-picker" aria-label="当前学习字母">${letters.map(l=>`<div class="letter-picker-card"><button class="alphabet-card current" data-action="letter" data-letter="${l}" aria-label="查看字母 ${l} 大小写" aria-pressed="${libraryLetter===l}"><span class="glyph">${l}<span class="glyph lower">${l.toLowerCase()}</span></span></button><button class="letter-speaker" data-action="letter-follow" data-letter="${l}" aria-label="听字母 ${l} 名称和字母音各一遍">${icon('speaker')}</button></div>`).join('')}</section><section class="library-detail letter-detail" aria-label="所选字母详情"><div class="letter-detail-heading"><div class="glyph">${letter.upper}<span class="glyph lower">${letter.lower}</span></div><div><h2>你好，我是 ${letter.upper}。</h2><p class="micro">大小写是同一个字母的两种写法。</p></div></div>${soundGuide(letter)}</section><details class="audio-sources"><summary>发音说明与来源</summary><p class="micro">当前使用${letterSourceInfo(letterSource()).label}，A–Z 的名称音和字母音均来自同一套录音。可在家长小角切换。点读每次一遍，需要时可再点重播。例词为合成示范。<br><a href="${letterSourceInfo(letterSource()).original}" target="_blank" rel="noopener">听完整原录音</a><br>字母展示和练习都使用家长保存的范围。成长地图可查看素材来源。</p></details>`;
 }
 function practice(){
@@ -239,7 +241,7 @@ app.addEventListener('click',event=>{
   if(action==='preview-letter-source'){letterAudioSettings.preview(button.dataset.source,button.dataset.mode);return;}
   if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}
   if(action==='preview-english-voice'){follow.stop();course.leave();voiceSettings.previewEnglish();return;}
-  if(action==='letter-loop'){if(follow.status==='playing'&&follow.loop){follow.stop();return;}audio.stop();highlightRequest++;follow.start(selectedLetters(),{loop:true,repeats:letterLoopRepeats});return;}
+  if(action==='letter-loop'){if(follow.status==='playing'&&follow.loop){follow.stop();return;}if(follow.status==='paused'&&follow.loop){follow.resume();return;}audio.stop();highlightRequest++;follow.start(selectedLetters(),{loop:true,repeats:letterLoopRepeats});return;}
   if(action==='letter-follow'){if(!selectedLetters().includes(button.dataset.letter))return;audio.stop();highlightRequest++;clearSoundHighlight();follow.stop(false);libraryLetter=button.dataset.letter;render();follow.start([libraryLetter]);return;}
   follow.stop();
   if(action==='home')go('home');
@@ -309,7 +311,7 @@ document.addEventListener('keydown',event=>{
     if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
   }
 });
-document.addEventListener('visibilitychange',()=>{lastTick=Date.now();if(document.hidden){letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();follow.stop();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&!['listen','song'].includes(libraryActivity)&&!modal)showModal('pause');}});
+document.addEventListener('visibilitychange',()=>{lastTick=Date.now();follow.visibilityChanged();if(document.hidden){letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&!['listen','song'].includes(libraryActivity)&&!modal)showModal('pause');}});
 window.addEventListener('pagehide',()=>{letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.leave();audio.stop();save();});
 function requestedPage(){
  const requested=location.hash.slice(2);

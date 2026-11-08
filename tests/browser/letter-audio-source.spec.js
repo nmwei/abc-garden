@@ -1,5 +1,7 @@
 import {test,expect} from '@playwright/test';
 import {openParents,unlockParents} from './parent-helpers.js';
+import {letterClips,seekLoop} from './letter-loop-helpers.js';
+import {createHash} from 'node:crypto';
 
 const sourceRadio=(page,id)=>page.locator(`[name="letter-audio-source"][value="${id}"]`);
 const end=(page,id='garden-audio')=>page.locator(`#${id}`).evaluate(a=>a.dispatchEvent(new Event('ended')));
@@ -37,9 +39,12 @@ for(const source of ['gk','edcreate'])test(`${source}: point reading, loop, pair
   await page.getByRole('button',{name:'听字母音 R',exact:true}).click();
   await expect(page.locator('#garden-audio')).toHaveAttribute('src',`${prefix}sound-R.wav`);
   await page.getByRole('button',{name:'循环听',exact:true}).click();
-  await expect(page.locator('#follow-audio')).toHaveAttribute('src',`${prefix}name-L.wav`);
-  await end(page,'follow-audio');await expect(page.locator('#follow-audio')).toHaveAttribute('src',`${prefix}sound-L.wav`);
-  await end(page,'follow-audio');await expect(page.locator('#follow-audio')).toHaveAttribute('src',`${prefix}name-R.wav`);
+  await expect(page.locator('#follow-audio')).toHaveAttribute('src',/^blob:/);
+  const clips=await letterClips('LR',source),expected=createHash('sha256').update(Buffer.concat(clips.map(clip=>Buffer.from(clip.data)))).digest('hex');
+  const actual=await page.locator('#follow-audio').evaluate(async audio=>{const data=await fetch(audio.src).then(r=>r.arrayBuffer());const hash=await crypto.subtle.digest('SHA-256',data.slice(44));return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('');});
+  expect(actual).toBe(expected);
+  await seekLoop(page,clips[0].duration+.01);await expect(page.locator('#letter-play-status')).toContainText('正在读字母音');
+  await seekLoop(page,clips[0].duration+clips[1].duration+.01);await expect(page.locator('.letter-detail h2')).toContainText('R');
   await page.getByRole('button',{name:'听示例词 rabbit',exact:true}).click();
   await expect(page.locator('#garden-audio')).toHaveAttribute('src','./assets/audio/example-R.wav');
   await page.getByRole('button',{name:'大小写配对',exact:true}).click();

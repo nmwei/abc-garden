@@ -19,6 +19,11 @@ try{
     expect(range).toEqual({status:206,length:2});
     await downloadPack(page,'other');await downloadPack(page,'all');await context.setOffline(true);await page.reload();await expect(page.locator('.alphabet-card')).toHaveCount(4);
 
+    await page.getByRole('button',{name:'循环听',exact:true}).click();
+    await expect.poll(()=>page.locator('#follow-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
+    expect(await page.locator('#follow-audio').evaluate(a=>a.loop&&a.src.startsWith('blob:'))).toBe(true);
+    await page.getByRole('button',{name:'停止播放',exact:true}).click();
+
   await page.getByRole('button',{name:'听字母名称 E',exact:true}).click();
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
     await page.getByRole('button',{name:'成长地图',exact:true}).click();
@@ -27,7 +32,7 @@ try{
     await page.getByRole('button',{name:'听句子',exact:true}).click();
     await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
     expect(await page.locator('.learning-panel .word-picture').evaluate(img=>img.complete&&img.naturalWidth>0)).toBe(true);
-    console.log(`${name}: /abc-garden/ resources, audio Range, word pictures and offline sentence playback passed.`);
+    console.log(`${name}: /abc-garden/ resources, audio Range, offline native letter loop, word pictures and offline sentence playback passed.`);
     await browser.close();browser=null;
   }
 }finally{if(browser)await browser.close();server.kill('SIGTERM');}

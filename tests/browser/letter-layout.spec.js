@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+import {letterClips,seekLoop} from './letter-loop-helpers.js';
 
 const fits=async page=>{
  await expect.poll(()=>page.evaluate(()=>document.scrollingElement.scrollHeight-innerHeight)).toBeLessThanOrEqual(1);
@@ -11,10 +12,11 @@ test('loop playback reveals the next letter group without scrolling or restartin
  });
  await page.setViewportSize({width:1024,height:768});await page.goto('/#/letters');
  await page.getByRole('button',{name:'循环听',exact:true}).click();
- for(let i=0;i<28;i++)await page.locator('#follow-audio').evaluate(a=>a.dispatchEvent(new Event('ended')));
+ const clips=await letterClips('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+ await seekLoop(page,clips.slice(0,28).reduce((sum,clip)=>sum+clip.duration,0)+.01);
  await expect(page.locator('.letter-detail h2')).toHaveText('你好，我是 O。');
  await expect(page.getByRole('button',{name:'查看字母 O 大小写',exact:true})).toBeVisible();
- await expect(page.locator('#follow-audio')).toHaveAttribute('src',/name-O\.wav$/);
+ await expect(page.locator('#follow-audio')).toHaveAttribute('src',/^blob:/);
  await expect(page.locator('[data-action=letter-loop]')).toHaveAttribute('aria-pressed','true');
  await fits(page);
 });
