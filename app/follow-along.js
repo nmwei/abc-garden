@@ -1,5 +1,6 @@
 import {letterAudioPath} from './letter-audio.js';
 import {loadLetterLoopClips,makeLetterLoop} from './letter-loop-audio.js';
+import {acquirePlaybackSession} from './playback-session.js';
 export class FollowAlong {
   constructor(letterSource,changed){
     this.letterSource=letterSource;this.changed=changed;this.audio=new Audio();
@@ -86,7 +87,7 @@ export class FollowAlong {
   }
   claimMedia(){
     const navigator=globalThis.navigator;if(!navigator)return;
-    if(navigator.audioSession)try{this.previousAudioType=navigator.audioSession.type;navigator.audioSession.type='playback';}catch{}
+    this.releasePlayback=acquirePlaybackSession();
     if(!navigator.mediaSession)return;
     this.ownsMedia=true;
     if(globalThis.MediaMetadata)try{navigator.mediaSession.metadata=new MediaMetadata({title:`字母循环听 · ${this.letters.join('、')}`,artist:'ABC小花园'});}catch{}
@@ -95,7 +96,7 @@ export class FollowAlong {
   }
   mediaState(){if(this.ownsMedia)try{navigator.mediaSession.playbackState=this.status==='playing'?'playing':'paused';}catch{}}
   releaseMedia(){
-    if(this.previousAudioType!==undefined){try{navigator.audioSession.type=this.previousAudioType;}catch{}this.previousAudioType=undefined;}
+    this.releasePlayback?.();this.releasePlayback=null;
     if(!this.ownsMedia)return;this.ownsMedia=false;
     for(const action of ['play','pause','stop'])try{navigator.mediaSession.setActionHandler(action,null);}catch{}
     try{navigator.mediaSession.metadata=null;navigator.mediaSession.playbackState='none';}catch{}
