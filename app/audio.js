@@ -1,5 +1,6 @@
 import {englishSpeechRate,pickVoice,pickEnglishVoice,isChineseLanguage} from './voice-settings.js';
 import {letterAudioPath} from './letter-audio.js';
+import {acquirePlaybackSession} from './playback-session.js';
 // Recorded clips and device speech share one cancellable queue.
 export class GardenAudio {
   constructor(customAudio,onError,letterSource=()=> 'edcreate'){
@@ -13,14 +14,15 @@ export class GardenAudio {
     this.token++;
     if(this.cancelWait){this.cancelWait();this.cancelWait=null;}
     if(this.current){this.current.pause();this.current.removeAttribute('src');this.current.load();this.current=null;}
+    this.releasePlayback?.();this.releasePlayback=null;
   }
   unlockSpeech(){
     const speech=globalThis.speechSynthesis;
-    if(!speech||!globalThis.SpeechSynthesisUtterance)return;
+    if(this.speechUnlocked||!speech||!globalThis.SpeechSynthesisUtterance)return;
     // iOS unlocks speech only when speak() runs inside the tap, before awaiting audio.
     try{
       const silent=new SpeechSynthesisUtterance('');silent.lang='zh-CN';silent.volume=0;
-      speech.speak(silent);speech.cancel();
+      speech.speak(silent);speech.cancel();this.speechUnlocked=true;
     }catch{/* The normal speech step reports unavailable synthesis. */}
   }
   speak(text,lang='zh-CN'){
@@ -36,7 +38,15 @@ export class GardenAudio {
     if(voice){utterance.voice=voice;utterance.lang=voice.lang;}
     return new Promise(resolve=>{
       let settled=false;
-      const finish=ok=>{if(settled)return;settled=true;clearTimeout(timer);utterance.onend=null;utterance.onerror=null;if(this.cancelWait===cancel)this.cancelWait=null;if(!ok)speech.cancel();resolve(ok);};
+      const finish=ok=>{
+        if(settled)return;settled=true;clearTimeout(timer);utterance.onend=null;utterance.onerror=null;
+        if(this.cancelWait===cancel)this.cancelWait=null;
+        // Finish the native speech session on success too, before resolving
+        // the queue and allowing the next recorded clip to start.
+        try{speech.cancel();}catch{}
+        if(ok)this.speechUnlocked=true;
+        resolve(ok);
+      };
       const cancel=()=>finish(false);this.cancelWait=cancel;
       const timer=setTimeout(()=>finish(false),20000);
       utterance.onend=()=>finish(true);utterance.onerror=()=>finish(false);
@@ -45,6 +55,8 @@ export class GardenAudio {
   }
   async play(items,onClip){
     this.stop();const token=this.token;
+    this.releasePlayback=acquirePlaybackSession();
+    try{
     const sequence=items;
     for(let index=0;index<sequence.length;index++){
       if(token!==this.token)return false;
@@ -71,5 +83,8 @@ export class GardenAudio {
     }
     if(token===this.token)this.current=null;
     return token===this.token;
+    }finally{
+      if(token===this.token){this.releasePlayback?.();this.releasePlayback=null;}
+    }
   }
 }
