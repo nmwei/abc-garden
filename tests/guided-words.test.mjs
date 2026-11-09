@@ -114,7 +114,7 @@ test('all error patterns finish and old successes migrate conservatively',()=>{
  }
  const old={version:1,entries:{mitt:{days:['2026-11-01','2026-11-02','2026-11-03'],dueAt:now,seenAt:now-86400000,result:'independent'}},session:{queue:[]}};
  const migrated=cleanGuided(old,new Set(['mitt']));
- assert.equal(migrated.version,5);assert.equal(migrated.session,null);assert.equal(migrated.entries.mitt.level,2);
+ assert.equal(migrated.version,8);assert.equal(migrated.session,null);assert.equal(migrated.entries.mitt.level,2);
  assert.equal(migrated.entries.mitt.transferAt,0);assert.equal(migrated.entries.mitt.days.length,3);
 });
 test('duration, local midnight and damaged pending tasks are handled',()=>{

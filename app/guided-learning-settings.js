@@ -1,4 +1,4 @@
-import {DEFAULT_GUIDED_POLICY} from './guided-learning-policy.js';
+import {DEFAULT_GUIDED_POLICY,createGuidedPolicy} from './guided-learning-policy.js';
 
 export const GUIDED_SETTINGS_KEY='abc-garden-guided-settings-v1';
 const choices={newWordsPerGroup:[2,3,4,5,6],breakAfterMinutes:[10,15,20]};
@@ -13,9 +13,9 @@ export class GuidedLearningSettings {
   const {version,...values}=saved;return {...values,newWordsPerGroup:Math.max(2,values.newWordsPerGroup)};
  }
  load(){try{this.values=this.read();}catch{this.values=defaults();this.status='设置暂时无法读取，先使用默认安排；原设置仍保留。';}return this.values;}
- policy(){
+ policy(preset='learn'){
   const values=this.load();
-  return {session:{breakAfterMinutes:values.breakAfterMinutes},teaching:{newWordsPerGroup:values.newWordsPerGroup}};
+  return createGuidedPolicy({session:{breakAfterMinutes:values.breakAfterMinutes},teaching:{newWordsPerGroup:values.newWordsPerGroup}},{preset});
  }
  save(name,value){
   if(!Object.hasOwn(choices,name)||!choices[name].includes(value))return false;

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY} from '../app/guided-learning-policy.js';
+import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY,GUIDED_PRESETS,guidedInitialTask} from '../app/guided-learning-policy.js';
 
 test('policy has a small set of coherent learning controls, and partial overrides cannot mutate defaults',()=>{
  const input={session:{breakAfterMinutes:12},review:{intervalsDays:[2,4,9]}},policy=createGuidedPolicy(input);
@@ -24,7 +24,42 @@ test('saved policy snapshots must be complete and supported, independent of new 
  const snapshot=JSON.parse(JSON.stringify(createGuidedPolicy({session:{maxWords:4}})));
  assert.equal(readGuidedPolicy(snapshot).session.maxWords,4);
  delete snapshot.review.retryAfterMinutes;assert.equal(readGuidedPolicy(snapshot),null);
- assert.equal(readGuidedPolicy({...DEFAULT_GUIDED_POLICY,version:3}),null);
+ assert.equal(readGuidedPolicy({...DEFAULT_GUIDED_POLICY,version:4}),null);
  assert.equal(readGuidedPolicy({...DEFAULT_GUIDED_POLICY,id:'spelling'}),null);
  assert.equal(readGuidedPolicy({...DEFAULT_GUIDED_POLICY,unexpected:1}),null);
+});
+
+
+test('presets compose concrete rules; either preset accepts the same validated overrides',()=>{
+ const learning={policySnapshot:createGuidedPolicy()},review={policySnapshot:createGuidedPolicy({},{preset:'review'})};
+ assert.equal(guidedInitialTask(learning,null),'learn');
+ assert.equal(guidedInitialTask(learning,{meaning:true}),'recall');
+ assert.equal(guidedInitialTask(review,null),'recall');
+ assert.equal(guidedInitialTask({...review,relearn:true},{meaning:true}),'learn');
+ assert.deepEqual(learning.policySnapshot.retrieval,review.policySnapshot.retrieval);
+ assert.deepEqual(learning.policySnapshot.review,review.policySnapshot.review);
+ assert.deepEqual(createGuidedPolicy({teaching:{unfamiliarStart:'teach'}},{preset:'review'}),learning.policySnapshot);
+ assert.deepEqual(createGuidedPolicy({teaching:{unfamiliarStart:'recall'}}),review.policySnapshot);
+ assert.throws(()=>createGuidedPolicy({},{preset:'unsupported'}));
+ assert.throws(()=>{GUIDED_PRESETS.review.teaching.unfamiliarStart='teach';},TypeError);
+});
+test('selection and entry rules validate strictly, including restored snapshots',()=>{
+ for(const value of [
+  {selection:{eligibility:'unseen'}},{selection:{priority:'random'}},{selection:null},
+  {teaching:{unfamiliarStart:'review'}},{allowPromptedMastery:true},
+ ])assert.throws(()=>createGuidedPolicy(value));
+ for(const snapshot of [
+  {...DEFAULT_GUIDED_POLICY,selection:undefined},
+  {...DEFAULT_GUIDED_POLICY,teaching:{newWordsPerGroup:2,maxMeaningAttempts:2}},
+  {...DEFAULT_GUIDED_POLICY,version:2,selection:null},
+ ])assert.equal(readGuidedPolicy(snapshot),null);
+ for(const version of [1,2]){
+  const old=structuredClone(DEFAULT_GUIDED_POLICY);old.version=version;
+  delete old.selection;delete old.teaching.unfamiliarStart;
+  const restored=readGuidedPolicy(old);
+  assert.equal(restored.version,version);
+  assert.deepEqual(restored.selection,{eligibility:'all',priority:'due-first'});
+  assert.equal(restored.teaching.unfamiliarStart,'teach');
+  delete old.retrieval.maxAttempts;assert.equal(readGuidedPolicy(old),null);
+ }
 });

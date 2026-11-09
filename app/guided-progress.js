@@ -4,11 +4,11 @@ const legacyGames=['mirror','drawing','rhythm'];
 const outcomes=new Set(['independent','prompted','again']);
 const kinds=new Set(['learn','choose','understand','recall','play']);
 const validDay=day=>typeof day==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(day);
-export const freshGuided=()=>({version:5,scope:[],entries:{},session:null,observations:[],contentRevisions:{},archivedEntries:[]});
+export const freshGuided=()=>({version:8,mode:'learn',scope:[],entries:{},session:null,observations:[],contentRevisions:{},archivedEntries:[]});
 export function restoreGuidedProgress(raw,validIds){
  const data=freshGuided();const result=(issue='')=>({data,issue});
  if(!raw)return result();
- if(![1,2,3,4,5].includes(raw.version))return result('unsupported-storage');
+ if(![1,2,3,4,5,6,7,8].includes(raw.version)||raw.mode!==undefined&&!['learn','review'].includes(raw.mode))return result('unsupported-storage');
  data.contentRevisions=Object.fromEntries(Object.entries(raw.contentRevisions||{}).filter(([id,sense])=>validIds.has(id)&&typeof sense==='string'));
  data.archivedEntries=Array.isArray(raw.archivedEntries)?raw.archivedEntries.filter(item=>validIds.has(item?.id)&&typeof item.sense==='string'&&Number.isFinite(item.archivedAt)&&Number.isFinite(item.entry?.seenAt)&&Number.isFinite(item.entry?.dueAt)).map(item=>structuredClone(item)):[];
  const scope=raw.scope||raw.session?.scope;
@@ -23,11 +23,30 @@ export function restoreGuidedProgress(raw,validIds){
    retryDay:validDay(entry.retryDay)?entry.retryDay:'',result:outcomes.has(entry.result)?entry.result:'again'}});
  }
  if(Array.isArray(raw.observations))data.observations=raw.observations.filter(item=>validIds.has(item?.id)&&Number.isFinite(item.at)&&outcomes.has(item.outcome)&&typeof item.prompted==='boolean'&&typeof item.policy?.id==='string'&&Number.isInteger(item.policy.version)).slice(-200).map(item=>structuredClone(item));
+ data.mode=raw.mode==='review'?'review':'learn';
+ if(raw.parked){
+  const restored=restoreGuidedProgress({...raw,mode:data.mode==='review'?'learn':'review',scope:raw.parked.scope,session:raw.parked.session,parked:null},validIds);
+  if(restored.issue)return result(restored.issue);
+  data.parked={scope:restored.data.scope,session:restored.data.session,at:Number.isFinite(raw.parked.at)?raw.parked.at:0};
+ }
  const session=raw.session;if(!session)return result();
+ // v6 used a launch flag, v7 a mode snapshot. Both are migration input only.
+ let legacyStart='teach';
+ if(raw.version===7){
+  const mode=session.modeSnapshot;
+  if(!mode||Object.keys(mode).length!==3||mode.id!==data.mode||mode.version!==1||
+   mode.initialTask!==(data.mode==='review'?'recall':'adaptive'))return result('unsupported-mode');
+  legacyStart=mode.initialTask==='recall'?'recall':'teach';
+ }else if(raw.version<7){
+  if(session.reviewOnly!==undefined&&typeof session.reviewOnly!=='boolean')return result();
+  if(session.reviewOnly)legacyStart='recall';
+ }
  if(session.relearn!==undefined&&typeof session.relearn!=='boolean')return result();
  const legacy=raw.version===3&&[3,4].includes(session.policy);
  if(raw.version<3||raw.version===3&&!legacy)return result();
- const policy=legacy?LEGACY_GUIDED_POLICY:readGuidedPolicy(session.policySnapshot);
+ const sourcePolicy=legacy?LEGACY_GUIDED_POLICY:session.policySnapshot;
+ const policy=readGuidedPolicy(raw.version<8&&sourcePolicy?
+  {...sourcePolicy,teaching:{...sourcePolicy.teaching,unfamiliarStart:legacyStart}}:sourcePolicy);
  if(!policy)return result('unsupported-policy');
  const games=legacy?legacyGames:session.gameIds;
  if(!Array.isArray(games)||!games.length||games.length>20||new Set(games).size!==games.length||!games.every(id=>typeof id==='string'&&/^[a-z][a-z0-9-]{0,63}$/.test(id)))return result();
@@ -58,7 +77,7 @@ export function restoreGuidedProgress(raw,validIds){
    &&(legacy&&session.policy===3||Number.isInteger(result.lastPracticeStep)&&result.lastPracticeStep>=-1&&result.lastPracticeStep<=activityStep+1);
  }))return result();
  data.session=structuredClone(session);
- const restored=data.session;restored.activityStep=activityStep;restored.policySnapshot=structuredClone(policy);restored.gameIds=[...games];
+ const restored=data.session;delete restored.modeSnapshot;delete restored.reviewOnly;restored.activityStep=activityStep;restored.policySnapshot=structuredClone(policy);restored.gameIds=[...games];
  restored.trace=Array.isArray(session.trace)?session.trace.filter(item=>Number.isFinite(item?.at)&&typeof item.event==='string'&&item.event.length<80).slice(-64).map(item=>structuredClone(item)):[];
  if(legacy){
   // Storage migration preserves evidence; the engine alone decides what comes next.

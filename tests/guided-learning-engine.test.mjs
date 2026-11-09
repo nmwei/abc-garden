@@ -112,7 +112,7 @@ test('runtime accepts a custom word/content source, repository and clock without
 });
 test('unsupported future policies preserve history and block writes instead of silently resetting a session',()=>{
  const engine=engineWith();let data=freshGuided();data.entries.one=record();
- data=engine.transition(data,{type:'start',ids:['one']});data.session.policySnapshot.version=3;
+ data=engine.transition(data,{type:'start',ids:['one']});data.session.policySnapshot.version=4;
  const restored=restoreGuidedProgress(data,new Set(['one']));assert.equal(restored.issue,'unsupported-policy');assert.deepEqual(restored.data.entries,data.entries);
  let writes=0;const raw=JSON.stringify(data);
  const guided=new GuidedWords({getWords:()=>[{id:'one',zh:'一'}],getValidIds:()=>['one'],repository:{load:()=>({raw,value:JSON.parse(raw)}),save(){writes++;}},refresh(){},enter(){},exit(){}});
@@ -238,4 +238,132 @@ test('group estimate follows remaining words and the next reduced group without 
  assert.equal(engine.describe(state,ids).session.estimatedBatches,4);
  state.session.remaining=[];
  assert.equal(engine.describe(state,ids).session.estimatedBatches,state.session.batch);
+});
+
+test('review starts with recall, preserves the learning session and shares evidence through reload',()=>{
+ const engine=createGuidedLearning({now:()=>at});
+ let state=engine.transition(freshGuided(),{type:'start',ids:['egg','hat']});
+ const original=structuredClone(state.session);
+ state=engine.transition(state,{type:'mode',mode:'review'});
+ state=createGuidedLearning({now:()=>at,policy:createGuidedPolicy({},{preset:'review'})}).transition(state,{type:'start',ids:['fish','apple']});
+ assert.equal(state.session.queue[0].kind,'recall');
+ assert.equal(state.session.queue[0].prompted,false);
+ state=engine.transition(state,{type:'recall',outcome:'again'});
+ assert.equal(state.session.queue[0].kind,'learn');
+ assert.equal(state.entries.fish.meaning,false);
+ const restored=restoreGuidedProgress(state,new Set(['egg','hat','fish','apple']));
+ assert.equal(restored.issue,'');
+ state=engine.transition(restored.data,{type:'mode',mode:'learn'});
+ assert.deepEqual(state.session,original);
+ assert.equal(state.entries.fish.result,'again');
+ assert.equal(state.parked.session.policySnapshot.teaching.unfamiliarStart,'recall');
+});
+
+test('review prioritizes due words and cannot manufacture oral mastery from a legacy mark',()=>{
+ const engine=createGuidedLearning({now:()=>at});
+ let state=freshGuided();state.entries.fish=record();state.entries.fish.dueAt=at-1000;
+ state=engine.transition(state,{type:'mode',mode:'review'});
+ state=engine.transition(state,{type:'start',ids:['apple','fish']});
+ assert.equal(state.session.words[0],'fish');
+ state=engine.transition(state,{type:'recall',outcome:'independent'});
+ assert.equal(state.entries.fish.days.length,0);
+ assert.equal(state.session.results.fish.independent,1);
+ assert.equal(state.entries.apple,undefined);
+});
+
+test('a model heard in review prevents an unprompted claim in the parked learning task',()=>{
+ let time=at;const engine=createGuidedLearning({now:()=>time});
+ let state=freshGuided();state.entries.fish=record();
+ state=engine.transition(state,{type:'start',ids:['fish']});
+ assert.equal(state.session.queue[0].kind,'recall');
+ state=engine.transition(state,{type:'mode',mode:'review'});
+ state=engine.transition(state,{type:'start',ids:['fish']});
+ time+=1000;state=engine.transition(state,{type:'model'});
+ state=engine.transition(state,{type:'mode',mode:'learn'});
+ assert.equal(state.session.queue[0].kind,'play');
+ assert.equal(engine.transition(state,{type:'recall',outcome:'independent'}),state);
+ state=engine.transition(state,{type:'continue'});assert.equal(state.session.queue[0].prompted,false);
+});
+
+test('host policy resolver receives the selected mode without adding another engine',()=>{
+ const modes=[];
+ const controller=new GuidedWords({audio:{stop(){}},getWords:()=>[],getValidIds:()=>[],getMode:()=>'review',
+  getPolicy:mode=>{modes.push(mode);return {session:{maxWords:4}};},repository:{load:()=>({raw:null,value:null})}});
+ assert.deepEqual(modes,['review']);
+ assert.equal(controller.engine.policy.session.maxWords,4);
+ assert.equal(controller.engine.policy.teaching.unfamiliarStart,'recall');
+});
+
+test('workflow label does not determine teaching; selection and entry policy do',()=>{
+ const probe=createGuidedLearning({now:()=>at,policy:{teaching:{unfamiliarStart:'recall'}}});
+ let state=probe.transition(freshGuided(),{type:'start',ids:['new']});
+ assert.equal(state.mode,'learn');assert.equal(state.session.queue[0].kind,'recall');
+ state=complete(probe,state);
+ assert.equal(state.entries.new.days.length,1);
+ const teach=createGuidedLearning({now:()=>at});
+ state=teach.transition(freshGuided(),{type:'mode',mode:'review'});
+ state=teach.transition(state,{type:'start',ids:['new']});
+ assert.equal(state.session.queue[0].kind,'learn');
+ state=complete(teach,state);
+ assert.equal(state.entries.new.days.length,1);
+});
+
+test('eligibility filters before limits, priority orders independently, and empty due plans stay empty',()=>{
+ const input=freshGuided(),ids=['unseen','future','due-later','due-first'];
+ input.entries.future={...record(),dueAt:at+86400000};
+ input.entries['due-later']={...record(),dueAt:at-1000};
+ input.entries['due-first']={...record(),dueAt:at-5000};
+ for(const [selection,expected] of [
+  [{eligibility:'due-only',priority:'due-first'},['due-first','due-later']],
+  [{eligibility:'due-only',priority:'listed'},['due-later','due-first']],
+  [{eligibility:'all',priority:'listed'},['unseen','future']],
+  [{eligibility:'all',priority:'due-first'},['due-first','due-later']],
+ ]){
+  const engine=createGuidedLearning({now:()=>at,policy:{selection,session:{maxWords:2}}});
+  const state=engine.transition(input,{type:'start',ids});
+  assert.deepEqual(state.session.words,expected);
+ }
+ const engine=createGuidedLearning({now:()=>at,policy:{selection:{eligibility:'due-only'}}});
+ const empty=engine.transition(input,{type:'start',ids:['unseen','future']});
+ assert.equal(empty.session,null);
+ assert.deepEqual(engine.describe(empty,['unseen','future']).plan.targets,[]);
+ const restart=engine.transition(empty,{type:'restart',ids:['unseen','future']});
+ assert.deepEqual(new Set(restart.session.words),new Set(['unseen','future']));
+ assert.equal(restart.session.queue[0].kind,'learn');
+});
+
+test('v6 and v7 migrate both parked tasks into complete policy snapshots without re-planning',()=>{
+ const learn=createGuidedLearning({now:()=>at});
+ const review=createGuidedLearning({now:()=>at,policy:createGuidedPolicy({},{preset:'review'})});
+ let source=learn.transition(freshGuided(),{type:'start',ids:['egg','hat']});
+ source=review.transition(source,{type:'mode',mode:'review'});
+ source=review.transition(source,{type:'start',ids:['fish']});
+ for(const version of [6,7]){
+  const raw=structuredClone(source);raw.version=version;
+  const expected=structuredClone(source);
+  for(const [session,isReview] of [[raw.session,true],[raw.parked.session,false]]){
+   session.policySnapshot.version=2;delete session.policySnapshot.selection;delete session.policySnapshot.teaching.unfamiliarStart;
+   if(version===6){if(isReview)session.reviewOnly=true;}
+   else session.modeSnapshot={id:isReview?'review':'learn',version:1,initialTask:isReview?'recall':'adaptive'};
+  }
+  expected.session.policySnapshot.version=2;expected.parked.session.policySnapshot.version=2;
+  const result=restoreGuidedProgress(raw,new Set(['egg','hat','fish']));
+  assert.equal(result.issue,'');assert.deepEqual(result.data,expected);
+  if(version===7){
+   raw.parked.session.modeSnapshot.version=99;
+   assert.equal(restoreGuidedProgress(raw,new Set(['egg','hat','fish'])).issue,'unsupported-mode');
+  }
+ }
+});
+
+test('concrete strategy snapshots survive changed presets and keep prompting safeguards',()=>{
+ const engine=createGuidedLearning({now:()=>at,policy:{selection:{priority:'listed'},teaching:{unfamiliarStart:'recall'},retrieval:{maxAttempts:4,newWordSuccesses:3}}});
+ let state=engine.transition(freshGuided(),{type:'start',ids:['one','two']});
+ state=engine.transition(state,{type:'prompt'});
+ const restored=restoreGuidedProgress(state,new Set(['one','two']));
+ assert.deepEqual(restored.data,state);
+ const different=createGuidedLearning({now:()=>at,policy:{selection:{eligibility:'due-only'},teaching:{unfamiliarStart:'teach'}}});
+ assert.equal(different.transition(restored.data,{type:'recall',outcome:'independent'}),restored.data);
+ assert.deepEqual(different.describe(restored.data,['one','two']).policy,state.session.policySnapshot);
+ assert.equal(different.describe(restored.data,['one','two']).planningPolicy.selection.priority,'listed');
 });

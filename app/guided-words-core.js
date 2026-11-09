@@ -1,5 +1,5 @@
 import {reconcileGuidedSenses} from './guided-content-state.js';
-import {DEFAULT_GUIDED_POLICY,createGuidedPolicy,readGuidedPolicy,guidedPolicyFor,guidedBreakMs,guidedRetryMs} from './guided-learning-policy.js';
+import {DEFAULT_GUIDED_POLICY,createGuidedPolicy,readGuidedPolicy,guidedPolicyFor,guidedBreakMs,guidedRetryMs,guidedInitialTask} from './guided-learning-policy.js';
 const DEFAULT_GAME_IDS=['mirror','drawing','rhythm'];
 const outcomes=new Set(['independent','prompted','again']);
 const kinds=new Set(['learn','choose','understand','recall','play']);
@@ -18,7 +18,9 @@ export function learningPlan(data,ids,now=Date.now(),policy=guidedPolicyFor(data
  const due=ids.filter(id=>entryAt(data,id)?.dueAt<=now).sort((a,b)=>entryAt(data,a).dueAt-entryAt(data,b).dueAt);
  const unseen=ids.filter(id=>!entryAt(data,id));
  const familiar=ids.filter(id=>entryAt(data,id)&&!due.includes(id)).sort((a,b)=>entryAt(data,a).seenAt-entryAt(data,b).seenAt);
- const targets=[...due,...unseen,...familiar].slice(0,policy.session.maxWords);
+ const eligible=policy.selection.eligibility==='due-only'?due:ids;
+ const ordered=policy.selection.priority==='listed'?ids:[...due,...unseen,...familiar];
+ const allowed=new Set(eligible),targets=ordered.filter(id=>allowed.has(id)).slice(0,policy.session.maxWords);
  const reviews=targets.filter(id=>due.includes(id)),newWords=targets.filter(id=>unseen.includes(id));
  const reviewed=ids.filter(id=>entryAt(data,id)?.level>=3&&entryAt(data,id).transferAt>0).length;
  const nextAt=Math.min(...ids.filter(id=>entryAt(data,id)?.dueAt>now).map(id=>entryAt(data,id).dueAt));
@@ -39,7 +41,9 @@ function understanding(id,review,options,random){
 }
 export function startRound(data,ids,now=Date.now(),directIds=[],policy=DEFAULT_GUIDED_POLICY,random=Math.random,gameIds=DEFAULT_GAME_IDS,{relearn=false}={}){
  synchronizeScope(data,ids);
- const words=learningPlan(data,ids,now,policy).targets;
+ // Explicit relearning visits the supplied scope even under a due-only preset.
+ const planningPolicy=relearn?{...policy,selection:{...policy.selection,eligibility:'all'}}:policy;
+ const words=learningPlan(data,ids,now,planningPolicy).targets;
  if(!words.length){data.session=null;return;}
  data.session={policySnapshot:structuredClone(policy),gameIds:[...gameIds],trace:[],scope:[...ids],words,queue:[],batchWords:[],introduced:[],remaining:[...words],covered:[],directIds:directIds.filter(id=>words.includes(id)),batch:0,smallerNext:false,step:0,activityStep:0,playCount:0,startedAt:now,segmentStartedAt:now,ended:false,reason:'',results:Object.fromEntries(words.map(id=>[id,{attempts:0,helped:false,taught:false,qualified:false,understood:false,assessable:!entryAt(data,id)||entryAt(data,id).dueAt<=now||entryAt(data,id).level===0,meaningAttempts:0,independent:0,lastRecallAt:0,lastPracticeStep:recentPractice(entryAt(data,id),now)?0:-1}]))};
  if(relearn)data.session.relearn=true;
@@ -57,12 +61,52 @@ function nextBatch(data,now,random){
  const session=data.session;
  session.batchWords=session.remaining.splice(0,session.smallerNext?1:session.policySnapshot.teaching.newWordsPerGroup);session.batch++;session.smallerNext=false;
  session.introduced.push(...session.batchWords);
- const known=session.relearn?[]:session.batchWords.filter(id=>entryAt(data,id)?.meaning);
- const teaching=session.relearn?[...session.batchWords]:session.batchWords.filter(id=>!entryAt(data,id)?.meaning);
+ const known=session.batchWords.filter(id=>guidedInitialTask(session,entryAt(data,id))==='recall');
+ const teaching=session.relearn?[...session.batchWords]:session.batchWords.filter(id=>!known.includes(id));
  if(!session.relearn)for(const id of session.batchWords){const entry=entryAt(data,id);if(entry&&entry.result!=='independent'&&dayKey(entry.seenAt)===dayKey(now))entry.retryDay=dayKey(now);}
  const options=session.batchWords.filter(id=>session.directIds.includes(id));
- session.queue.push(...known.map(id=>task('recall',id,true,entryAt(data,id).level>=2&&!entryAt(data,id).transferAt)),
+ session.queue.push(...known.map(id=>task('recall',id,true,entryAt(data,id)?.level>=2&&!entryAt(data,id).transferAt)),
   ...teaching.map(id=>task('learn',id)),...teaching.map(id=>understanding(id,false,options,random)),...teaching.map(id=>task('recall',id)));
+}
+// A parked queue is a plan, while entries are shared evidence. Reconcile only
+// pending work: keep real per-question hints, counters and completed history.
+function restoreParkedTasks(data,parkedAt,now,random){
+ const session=data.session;if(!hasPending(session))return;
+ const policy=session.policySnapshot,queue=[],taught=new Set(),checked=new Set();
+ const needsMeaning=new Set(session.queue.filter(next=>next.kind==='recall'&&!entryAt(data,next.id)?.meaning&&policy.teaching.unfamiliarStart!=='recall').map(next=>next.id));
+ const exhausted=new Set([...needsMeaning].filter(id=>session.results[id].meaningAttempts>=policy.teaching.maxMeaningAttempts));
+ let changed=false;
+ for(const id of new Set(session.queue.filter(next=>next.kind==='recall').map(next=>next.id))){
+  const modelAt=entryAt(data,id)?.lastModelAt||0;
+  // Only exposure after parking invalidates the old spacing position.
+  // No attempt or memory credit is created by this adjustment.
+  if(modelAt>parkedAt){
+   session.results[id].lastPracticeStep=Math.max(session.results[id].lastPracticeStep,session.activityStep);
+   changed=true;
+  }
+ }
+ for(const next of session.queue){
+  if(exhausted.has(next.id)){changed=true;continue;}
+  if(next.kind==='learn')taught.add(next.id);
+  if(next.kind==='understand'||next.kind==='choose')checked.add(next.id);
+  if(next.kind==='recall'&&needsMeaning.has(next.id)&&!checked.has(next.id)){
+   if(!taught.has(next.id))queue.push(task('learn',next.id,next.review));
+   queue.push(task('understand',next.id,next.review));
+   taught.add(next.id);checked.add(next.id);
+   session.results[next.id].independent=0;session.results[next.id].understood=false;
+   changed=true;
+  }
+  queue.push(next);
+ }
+ if(!changed)return;
+ session.queue=queue;
+ session.covered=session.words.filter(id=>session.introduced.includes(id)&&!queue.some(next=>next.id===id&&next.kind!=='play'));
+ if(!queue.length&&!session.remaining.length){finishRound(data);return;}
+ // A genuinely prompted current question must still be rated as prompted.
+ // Fresh questions instead go through the existing spacing scheduler.
+ if(queue[0]?.kind==='recall'&&queue[0].prompted)return;
+ if(session.ended)session.needsPreparation=true;
+ else spaceNext(data,now,random);
 }
 export function resumeRound(data,now=Date.now(),random=Math.random){
  const session=data.session;if(!hasPending(session))return false;
@@ -164,10 +208,11 @@ export function answerRecall(data,outcome,now=Date.now(),random=Math.random){
  const result=session.results[current.id];
  if(result.attempts>=policy.retrieval.maxAttempts)return false;
  const entry=entryFor(data,current.id,now);
- if(!entry.meaning)return false;
+ if(!entry.meaning&&policy.teaching.unfamiliarStart!=='recall')return false;
 
  // Record what happened before evaluating whether it is durable evidence.
  const clean=outcome==='independent'&&!current.prompted;
+ if(clean&&policy.teaching.unfamiliarStart==='recall')entry.meaning=true;
  const wasHelped=result.helped;
  result.attempts++;
  result.lastRecallAt=now;
@@ -246,7 +291,14 @@ export function createGuidedLearning({policy={},now=Date.now,random=Math.random,
   const data=structuredClone(state),at=now(),session=data.session,current=session?.queue[0];let accepted;
   if(!Number.isFinite(at))throw Error('无效的学习时钟');
   if(!event||typeof event.type!=='string')return state;
-  if(event.type==='revisions'){
+  if(event.type==='mode'){
+   if(!['learn','review'].includes(event.mode)||event.mode===(data.mode||'learn'))return state;
+   const previous={scope:data.scope,session:data.session,at};
+   const parked=data.parked;
+   data.scope=parked?.scope||[];data.session=parked?.session||null;
+   restoreParkedTasks(data,parked?.at||0,at,random);
+   data.parked=previous;data.mode=event.mode;return data;
+  }else if(event.type==='revisions'){
    if(!Array.isArray(event.revisions)||!event.revisions.every(item=>item&&typeof item.id==='string'&&typeof item.sense==='string'&&(item.baseline===undefined||typeof item.baseline==='string')))return state;
    reconcileGuidedSenses(data,event.revisions,at);
   }else if(event.type==='start'||event.type==='restart'){
@@ -302,9 +354,9 @@ export function createGuidedLearning({policy={},now=Date.now,random=Math.random,
  function describe(data,ids){
   const planningPolicy=policyFor(data,ids),session=data.session,policy=session?.policySnapshot||configured,pending=hasPending(session)&&scopeMatches(session,ids),at=now();
   return {
-   policy,planningPolicy,plan:learningPlan(data,ids,at,planningPolicy),pending,scopeValid:!session||scopeMatches(session,ids),
+   mode:data.mode||'learn',policy,planningPolicy,plan:learningPlan(data,ids,at,planningPolicy),pending,scopeValid:!session||scopeMatches(session,ids),
    currentTask:session&&!session.ended?structuredClone(session.queue[0]):null,
-   session:session?{startedAt:session.startedAt,segmentStartedAt:session.segmentStartedAt,step:session.step,batch:session.batch,estimatedBatches:session.batch+(session.smallerNext&&session.remaining.length?1+Math.ceil((session.remaining.length-1)/policy.teaching.newWordsPerGroup):Math.ceil(session.remaining.length/policy.teaching.newWordsPerGroup)),batchWords:[...session.batchWords],words:[...session.words],ended:session.ended,reason:session.reason,practicedIds:session.words.filter(id=>{const result=session.results[id];return result.taught||result.attempts||result.meaningAttempts;})}:null,
+   session:session?{relearn:session.relearn===true,startedAt:session.startedAt,segmentStartedAt:session.segmentStartedAt,step:session.step,batch:session.batch,estimatedBatches:session.batch+(session.smallerNext&&session.remaining.length?1+Math.ceil((session.remaining.length-1)/policy.teaching.newWordsPerGroup):Math.ceil(session.remaining.length/policy.teaching.newWordsPerGroup)),batchWords:[...session.batchWords],words:[...session.words],ended:session.ended,reason:session.reason,practicedIds:session.words.filter(id=>{const result=session.results[id];return result.taught||result.attempts||result.meaningAttempts;})}:null,
    progress:ids.filter(id=>entryAt(data,id)).map(id=>({id,stage:memoryStage(entryAt(data,id)),dueAt:entryAt(data,id).dueAt,independentDays:entryAt(data,id).days.length,due:entryAt(data,id).dueAt<=at})),
    decision:session?.decision?structuredClone(session.decision):null,
   };

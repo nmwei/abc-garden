@@ -1,15 +1,20 @@
+import {createGuidedPolicy} from './guided-learning-policy.js';
 import {guidedSense} from './guided-content-state.js';
 import {guidedEntry,guidedPage} from './guided-words-view.js';
 import {createGuidedLearning,scopeMatches,hasPending} from './guided-words-core.js';
 import {restoreGuidedProgress,createGuidedRepository,GuidedProgressConflict} from './guided-progress.js';
 
 export class GuidedWords {
- constructor({audio,play,getWords,wordClip,sentenceClip,refresh,enter,exit,getActivity=()=>({}),getGame=()=>null,getValidIds=()=>getWords().map(word=>word.id),contentVersion='',policy={},getPolicy=()=>policy,getSettings=()=>'',getRevisions=()=>getWords().map(word=>({id:word.id,sense:guidedSense(word)})),now,random,gameIds,repository=createGuidedRepository()}){
-  Object.assign(this,{audio,play,getWords,wordClip,sentenceClip,refresh,enter,exit,getActivity,getGame,getValidIds,contentVersion,repository,getSettings,getRevisions});
+ constructor({audio,play,getWords,wordClip,sentenceClip,refresh,enter,exit,getActivity=()=>({}),getGame=()=>null,getValidIds=()=>getWords().map(word=>word.id),contentVersion='',policy={},getPolicy=()=>policy,getSettings=()=>'',getMode=()=>'learn',getRevisions=()=>getWords().map(word=>({id:word.id,sense:guidedSense(word)})),now,random,gameIds,repository=createGuidedRepository()}){
+  Object.assign(this,{audio,play,getWords,wordClip,sentenceClip,refresh,enter,exit,getActivity,getGame,getValidIds,contentVersion,repository,getSettings,getMode,getRevisions});
   this.getPolicy=getPolicy;this.engineOptions={now,random,gameIds};this.configurePolicy();
   this.busy=false;this.error='';this.generation=0;this.overview=false;this.feedback='';this.load();
  }
- configurePolicy(){this.engine=createGuidedLearning({...this.engineOptions,policy:this.getPolicy()});}
+ configurePolicy(){
+  const preset=this.getMode(),supplied=this.getPolicy(preset);
+  const policy=Object.hasOwn(supplied,'id')?supplied:createGuidedPolicy(supplied,{preset});
+  this.engine=createGuidedLearning({...this.engineOptions,policy});
+ }
  load(){
   try{
    const saved=this.repository.load(),restored=restoreGuidedProgress(saved.value,new Set(this.getValidIds()));
@@ -32,7 +37,9 @@ export class GuidedWords {
  ids(){return this.words().map(word=>word.id);}
  plan(){return this.engine.describe(this.data,this.ids()).plan;}
  pending(){const session=this.data.session;return hasPending(session)&&scopeMatches(session,this.ids());}
+ syncMode(){return (this.data.mode||'learn')===this.getMode()||this.update({type:'mode',mode:this.getMode()});}
  syncScope(){
+  if(!this.syncMode())return false;
   const ids=this.ids();if(scopeMatches({scope:this.data.scope},ids))return true;
   const previous=this.data.scope.length;
   if(!this.update({type:'scope',ids})){this.overview=true;return false;}
@@ -63,7 +70,7 @@ export class GuidedWords {
  open(){
   this.configurePolicy();this.restartConfirm=false;this.contentChanged=false;
   this.load();if(!this.ids().length){this.exit();return;}
-  if(!this.syncSenses()||!this.syncScope()||!this.syncContent()){this.overview=true;this.enter();return;}
+  if(!this.syncMode()||!this.syncSenses()||!this.syncScope()||!this.syncContent()){this.overview=true;this.enter();return;}
   const session=this.data.session;
   this.overview=!this.pending();this.feedback='';
   if(this.pending()){
@@ -74,7 +81,7 @@ export class GuidedWords {
  }
  start(){
   this.configurePolicy();
-  if(!this.syncSenses()||!this.syncScope()||!this.syncContent()){this.refresh();return;}
+  if(!this.syncMode()||!this.syncSenses()||!this.syncScope()||!this.syncContent()){this.refresh();return;}
   if(this.pending()){
    const session=this.data.session;
    if(session.ended){if(this.update({type:'resume'}))this.overview=false;}

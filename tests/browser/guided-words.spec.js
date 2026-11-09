@@ -96,7 +96,7 @@ test('old progress migrates, forgotten reviews keep success history and defer pl
  await page.addInitScript(({key,yesterday})=>localStorage.setItem(key,JSON.stringify({version:1,entries:{fish:{days:['2026-01-01','2026-01-02','2026-01-03'],dueAt:yesterday,seenAt:yesterday,result:'independent'}},session:null})),{key,yesterday});
  await setup(page,['fish','mop']);await page.locator('[data-result="again"]').click();
  await expect(page.getByRole('heading',{name:'一起玩明白这个意思'})).toBeVisible();
- const data=await saved(page);expect(data.version).toBe(5);expect(data.entries.fish.days).toHaveLength(3);expect(data.session.batchWords).toEqual(['fish']);expect(data.session.remaining).toEqual(['mop']);
+ const data=await saved(page);expect(data.version).toBe(8);expect(data.entries.fish.days).toHaveLength(3);expect(data.session.batchWords).toEqual(['fish']);expect(data.session.remaining).toEqual(['mop']);
  await teach(page);await beforeRecall(page);
  await screenshot(page,`test-results/guided-recall.png`);
 });
@@ -485,4 +485,93 @@ test('listening mastery does not remove a selected word from speaking practice, 
  expect(after.entries.apple).toBeUndefined();expect(after.entries.fish).toEqual(before.entries.fish);
  expect(after.archivedEntries.find(row=>row.id==='apple').entry).toEqual(before.entries.apple);
  expect(after.session.queue.find(task=>task.id==='apple').kind).toBe('learn');
+});
+
+test('mastered review has its own session and returning preserves unfinished learning',async({page},info)=>{
+ await setup(page,['egg','hat']);
+ const learning=(await saved(page)).session;
+ await action(page,'exit').click();
+ await page.evaluate(()=>localStorage.setItem('abc-garden-mastery-v1',JSON.stringify({version:1,entries:{fish:{mastered:true,source:'manual',dates:[]},apple:{mastered:true,source:'manual',dates:[]}}})));
+ await page.reload();
+ await page.locator('[data-course="mastery-filter"][data-filter="mastered"]').click();
+ await page.getByRole('button',{name:'复习一下',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'复习一下',exact:true})).toBeVisible();
+ await expect(page.locator('.guided-intro')).toContainText('全部已掌握');
+ await action(page,'start').click();
+ await expect(page.locator('.guided-kind-recall')).toBeVisible();
+ await expect(page.locator('.guided-model')).toHaveCount(0);
+ expect((await saved(page)).session.words.sort()).toEqual(['apple','fish']);
+ await page.screenshot({path:`.playwright-cli/guided-review/${info.project.name}.png`,fullPage:true});
+ await page.locator('[data-result="again"]').click();
+ const review=(await saved(page)).session;
+ await page.reload();
+ await page.locator('[data-course="mastery-filter"][data-filter="mastered"]').click();
+ await page.getByRole('button',{name:'复习一下',exact:true}).click();
+ expect((await saved(page)).session).toEqual(review);
+ await action(page,'exit').click();
+ await page.locator('[data-course="mastery-filter"][data-filter="learning"]').click();
+ await action(page,'open').click();
+ expect((await saved(page)).session).toEqual(learning);
+ await action(page,'exit').click();
+ await page.locator('[data-course="mastery-filter"][data-filter="mastered"]').click();
+ await page.getByRole('button',{name:'复习一下',exact:true}).click();
+ expect((await saved(page)).session).toEqual(review);
+});
+
+test('catalog shortcut opens only selected words after adding a word',async({page})=>{
+ await setup(page,['hat']);
+ await action(page,'exit').click();
+ await page.locator('[data-course="mastery-filter"][data-filter="all"]').click();
+ await page.locator('#word-search').fill('apple');
+ await page.locator('[data-course="word"][data-word="apple"]').click();
+ await page.getByRole('button',{name:'加入正在学 apple',exact:true}).click();
+ await page.locator('[data-course="guided-selected"]').click();
+ if(await action(page,'start').isVisible())await action(page,'start').click();
+ expect((await saved(page)).session.scope.sort()).toEqual(['apple','hat']);
+});
+
+async function seedAutoMasteredApple(page){
+ await page.addInitScript(()=>{
+  if(!localStorage.getItem('abc-garden-mastery-v1'))localStorage.setItem('abc-garden-mastery-v1',JSON.stringify({version:1,entries:{apple:{mastered:true,source:'auto',dates:['2026-11-01','2026-11-02','2026-11-02']}}}));
+ });
+}
+async function switchToReview(page){
+ await action(page,'exit').click();
+ await page.locator('[data-course="mastery-filter"][data-filter="mastered"]').click();
+ await page.getByRole('button',{name:'复习一下',exact:true}).click();
+ if(await action(page,'start').isVisible())await action(page,'start').click();
+}
+async function switchToLearning(page){
+ await action(page,'exit').click();
+ await page.locator('[data-course="mastery-filter"][data-filter="learning"]').click();
+ await action(page,'open').click();
+}
+test('switching back after review misunderstanding repairs learning and all progress can continue',async({page})=>{
+ await seedAutoMasteredApple(page);await setup(page,['apple']);await beforeRecall(page);
+ const prior=(await saved(page)).session.results.apple;
+ await switchToReview(page);await action(page,'plan').click();await action(page,'restart').click();await action(page,'restart-confirm').click();
+ await teach(page);await understand(page,false);
+ expect((await saved(page)).entries.apple.meaning).toBe(false);
+ await switchToLearning(page);
+ await expect(page.locator('.guided-kind-learn')).toBeVisible();
+ let state=await saved(page);expect(state.session.results.apple.attempts).toBe(prior.attempts);expect(state.session.queue.filter(t=>t.kind==='understand')).toHaveLength(1);
+ const repaired=state.session;
+ await page.reload();await action(page,'open').click();expect((await saved(page)).session).toEqual(repaired);
+ await beforeRecall(page);
+ await expect(page.locator('[data-result="independent"]')).toBeEnabled();
+ state=await saved(page);await page.locator('[data-result="independent"]').click();expect((await saved(page)).observations).toHaveLength(state.observations.length+1);
+ await complete(page);expect((await saved(page)).entries.apple.days).toHaveLength(1);
+});
+test('a review hint permits independent learning recall after another word, including reload',async({page})=>{
+ await seedAutoMasteredApple(page);await setup(page,['apple','fish']);await beforeRecall(page);
+ expect((await saved(page)).session.queue[0].id).toBe('apple');
+ await page.locator('[data-result="independent"]').click();expect((await saved(page)).session.queue[0].id).toBe('fish');
+ await switchToReview(page);await beforeRecall(page);await page.clock.runFor(1600);await action(page,'hint').click();
+ await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await switchToLearning(page);expect((await saved(page)).session.queue[0].id).toBe('fish');
+ await page.locator('[data-result="independent"]').click();
+ expect((await saved(page)).session.queue[0]).toMatchObject({id:'apple',kind:'recall',prompted:false});
+ await page.reload();await action(page,'open').click();
+ await expect(page.locator('[data-result="independent"]')).toBeEnabled();await expect(page.locator('.guided-model')).toHaveCount(0);
+ await page.locator('[data-result="independent"]').click();expect((await saved(page)).entries.apple.days).toHaveLength(1);
 });

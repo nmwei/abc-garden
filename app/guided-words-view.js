@@ -8,13 +8,14 @@ const wordName=word=>`<strong lang="en">${esc(word.display||word.id)}</strong><s
 const picture=(word,alt='词卡图片')=>`<img class="guided-picture" src="${esc(word.image)}" alt="${esc(alt)}" width="240" height="240">`;
 const phase=kind=>kind==='play'?null:kind==='learn'?0:['choose','understand'].includes(kind)?1:2;
 const stateLabels={meaning:'先熟悉意思',sounds:'还在熟悉声音',today:'今天能想起','across-days':'隔天也能说',transfer:'换情境也会说'};
+const recallFirst=view=>view.policy.teaching.unfamiliarStart==='recall'&&!(view.pending&&view.session?.relearn);
 const groupLabel=policy=>policy.teaching.newWordsPerGroup===1?'1':`1～${policy.teaching.newWordsPerGroup}`;
 const parentTarget=word=>`<details class="guided-parent-cue" data-guided-detail="target"><summary>家长看目标 · 不念给孩子</summary><div class="guided-word-chips"><span>${wordName(word)}</span></div></details>`;
 const parentNote=text=>`<details class="guided-parent-note" data-guided-detail="note"><summary>陪学小提示</summary><p>${text}</p></details>`;
 const help=policy=>`<details class="guided-parent-help" data-guided-detail="help"><summary>家长怎么陪，怎么记录？</summary><p>先确认孩子懂中文意思，再把英文声音和实物、动作连起来。可以跟一次，不要求连读很多遍。</p><p>物品词练自己说名字；功能词、时态词在短话或回应里练使用，不考读字、猜图标。抽象词先理解具体例子，中文概念不熟就先跳过。</p><p>让孩子自己说时，先等约 5 秒。卡住就听示范，温和接一句正确读音，再换个活动。能辨认出目标词就好，不逐音挑错。其他合理叫法先肯定，再补上这次目标词。</p><p>没有听提示、家长也没有说出英文，才记录“自己说出”。给了中文答案、口型或开头音的帮助，就记录“提示后说出”。跟读整句不算独立使用。</p><p>每次重点认识 ${groupLabel(policy)} 个词，其他词和小游戏会自然穿插，学过的词稍后再回来想。小游戏不考孩子，也不计掌握。约 ${policy.session.breakAfterMinutes} 分钟休息，累了随时停，未完成的下次继续。记忆还要通过跨日复习观察。记录保存在当前设备。</p></details>`;
 
-export function guidedEntry(count){
- return `<section class="guided-entry" aria-label="家长陪同学习">${button('open',`一起学 <span aria-hidden="true">→</span>`,{primary:true,attrs:`aria-label="一起学" title="口语练习 ${count} 个词 · 家长陪同"`})}</section>`;
+export function guidedEntry(count,{action='open',label='一起学'}={}){
+ return `<section class="guided-entry" aria-label="家长陪同学习">${button(action,`${esc(label)} <span aria-hidden="true">→</span>`,{primary:true,attrs:`aria-label="${esc(label)}" title="口语练习 ${count} 个词 · 家长陪同"`})}</section>`;
 }
 
 function progress(view){
@@ -28,18 +29,19 @@ function progress(view){
 function overview(view){
  const today=view.pending?view.session.words:view.plan.targets;
  return `<section class="panel guided-overview" data-guided-position="${esc(view.position)}">
-  <h2 id="guided-plan-title" tabindex="-1">先玩明白，再自己说</h2>
-  <p class="guided-intro">拿起实物，演一演；听懂以后，再让孩子自己说。</p>
-  <div class="guided-today"><div class="guided-start-row"><div><h3>${view.pending?'接着上次的小安排':`这次一起学 · ${today.length} 个词`}</h3><p>每小组 ${groupLabel(view.policy)} 个 · 约 ${view.policy.session.breakAfterMinutes} 分钟 · 随时可休息</p></div></div>
+  <h2 id="guided-plan-title" tabindex="-1">${recallFirst(view)?'先试着说，忘了再一起学':'先玩明白，再自己说'}</h2>
+  <p class="guided-intro">${view.mode==='review'?'从全部已掌握的词中安排。':''}${view.policy.selection.eligibility==='due-only'?'只安排到期词。':view.policy.selection.priority==='due-first'?'到期词优先，':''}${view.policy.selection.priority==='listed'?'按选词顺序安排，':''}每次最多 ${view.policy.session.maxWords} 个。${recallFirst(view)?'不先播放答案，卡住了再听示范。':'拿起实物，演一演；听懂以后，再让孩子自己说。'}</p>
+  ${!today.length? `<p class="guided-scope-notice">${Number.isFinite(view.plan.nextAt)?`暂时没有待复习的词，下次到期时间为 ${dateLabel(view.plan.nextAt)}。`:'当前没有符合安排的词，可以先从一起学建立学习记录。'}</p>`:''}
+  <div class="guided-today"><div class="guided-start-row"><div><h3>${view.pending?'接着上次的小安排':`这次${view.mode==='review'?'复习':'一起学'} · ${today.length} 个词`}</h3><p>每小组 ${groupLabel(view.policy)} 个 · 约 ${view.policy.session.breakAfterMinutes} 分钟 · 随时可休息</p></div></div>
    <div class="guided-word-chips">${today.map(id=>`<span>${wordName(view.words.find(word=>word.id===id))}</span>`).join('')}</div>
    ${view.words.length>view.policy.session.maxWords?`<p class="micro">这次先安排 ${view.policy.session.maxWords} 个词，其余后续继续。</p>`:''}
   </div>
   ${view.contentChanged?'<p class="guided-scope-notice" role="status">词义有变化，已重新安排学习；原意思的记录已保留。</p>':''}
   ${view.scopeChanged?'<p class="guided-scope-notice" role="status">正在学的词变了，已重新安排；原有的记忆记录仍保留。</p>':''}
-  <ol class="guided-path" aria-label="一起学的路径"><li><span>1</span><strong>玩出意思</strong></li><li><span>2</span><strong>听懂反应</strong></li><li><span>3</span><strong>自己说出</strong></li><li><span>4</span><strong>隔天再见</strong></li></ol>
+  ${recallFirst(view)?'<p class="guided-scope-notice">先自己说 → 需要时补教学 → 穿插回想 → 改天再复习</p>':`<ol class="guided-path" aria-label="一起学的路径"><li><span>1</span><strong>玩出意思</strong></li><li><span>2</span><strong>听懂反应</strong></li><li><span>3</span><strong>自己说出</strong></li><li><span>4</span><strong>隔天再见</strong></li></ol>`}
   <details class="guided-settings-fold" data-guided-detail="settings"><summary>陪学设置<span>每组最多 ${view.policy.teaching.newWordsPerGroup} 个新词 · ${view.policy.session.breakAfterMinutes} 分钟休息</span></summary>${view.settings||''}  ${view.session&&!view.blocked?`<div class="guided-restart"><div><strong>想从头再熟悉一次？</strong><p class="micro">从理解意思开始，过去的学习记录会保留。</p></div>${button('restart','重新学这组')}</div>`:''}</details>
   ${view.pending&&view.newPolicy&&JSON.stringify(view.newPolicy)!==JSON.stringify(view.policy)?'<p class="micro guided-policy-notice">新设置会在下次新安排生效，继续本次学习仍使用原设置。</p>':''}
-  ${help(view.policy)}${progress(view)}<footer class="guided-overview-actions">${today.length?button('start',view.pending?'继续学习':'开始一起学',{primary:true,attrs:view.blocked?'disabled':''}):''}</footer>
+  ${help(view.policy)}${progress(view)}<footer class="guided-overview-actions">${today.length?button('start',view.pending?'继续学习':view.mode==='review'?'开始复习':'开始一起学',{primary:true,attrs:view.blocked?'disabled':''}):''}</footer>
 </section>
   ${view.restartConfirm?`<dialog id="guided-restart-dialog" class="guided-restart-dialog" aria-labelledby="guided-restart-title" aria-describedby="guided-restart-description"><h2 id="guided-restart-title">重新学这组词？</h2><p id="guided-restart-description">重新安排这组中的 ${Math.min(view.words.length,(view.newPolicy||view.policy).session.maxWords)} 个词，从理解意思开始。过去的学习记录会保留。</p><p class="micro">采用当前家长设置：每小组 ${groupLabel(view.newPolicy||view.policy)} 个 · 约 ${(view.newPolicy||view.policy).session.breakAfterMinutes} 分钟。</p><p class="micro">刚听过的词会穿插活动后再回想；同一天重复学习不会累计为跨日成功。</p>${view.error?`<p role="alert" class="guided-error">${esc(view.error)}</p>`:''}<div class="guided-restart-actions">${button('restart-cancel','先不重学',{attrs:'autofocus'})}${button('restart-confirm','重新开始',{primary:true})}</div></dialog>`:''}`;
 }
@@ -99,10 +101,10 @@ function stage(view){
   if(current.prompted)visual+=`<div class="guided-model">${wordName(word)}</div>`;
   instructions=`${live?`<div class="guided-activity"><p class="guided-instruction-label">家长布置好，再让孩子说</p><p>${esc(current.transfer?activity.transfer:activity.recall)}</p></div>${parentTarget(word)}`:''}${parentNote(`${inPhrase?'能在合适情境里自己用出这个词即可；跟读不计为独立使用。':'能辨认出目标词就好，不逐音挑错。'}卡住时帮一下，别连续追问。`)}${live?deferControl():''}`;
  }
- const steps=['玩出意思','听懂反应','自己说出'],pictureTask=current.kind==='choose'||current.kind==='recall'&&!live;
+ const steps=recallFirst(view)?['先自己说','需要时再学','穿插回想']:['玩出意思','听懂反应','自己说出'],activePhase=recallFirst(view)?(current.kind==='play'?null:current.kind==='recall'?(current.review?0:2):1):phase(current.kind),pictureTask=current.kind==='choose'||current.kind==='recall'&&!live;
  return `<section class="panel guided-stage guided-kind-${current.kind}${current.kind==='learn'&&inPhrase?' is-phrase':''}${live?' is-live':''}${pictureTask?' is-picture-task':''}" aria-label="引导练习" data-guided-position="${esc(view.position)}">
   <div class="guided-stage-top"><p class="guided-session-progress">${current.kind==='play'?'穿插小游戏':current.kind==='recall'&&!session.batchWords.includes(word.id)?'穿插回想':`第 ${session.batch} 组 / 预计 ${session.estimatedBatches} 组 · 本组 ${session.batchWords.length} 个词`}</p><span class="guided-scope-count">本次已接触 ${session.practicedIds.length} / ${session.words.length} 个词</span>
-   <ol class="guided-stage-path" aria-label="本组学习步骤">${steps.map((label,index)=>`<li ${index===phase(current.kind)?'aria-current="step"':''}><span>${index+1}</span>${label}</li>`).join('')}</ol>
+   <ol class="guided-stage-path" aria-label="本组学习步骤">${steps.map((label,index)=>`<li ${index===activePhase?'aria-current="step"':''}><span>${index+1}</span>${label}</li>`).join('')}</ol>
   </div>
   <h2 id="guided-step-title" tabindex="-1">${titles[current.kind]}</h2>
   <div class="guided-stage-body"><div class="guided-visual">${visual}</div><div class="guided-instructions">${instructions}</div></div>
@@ -111,7 +113,7 @@ function stage(view){
 
 function summary(view){
  const session=view.session,practiced=session?.practicedIds||[];
- const message=session?.reason==='rest'?`学了约 ${view.policy.session.breakAfterMinutes} 分钟，休息一下`:session?.reason==='stopped'?'先休息，进度已保存':'这些词，今天都玩过啦';
+ const message=session?.reason==='rest'?`学了约 ${view.policy.session.breakAfterMinutes} 分钟，休息一下`:session?.reason==='stopped'?'先休息，进度已保存':view.mode==='review'?'这次复习完成啦':'这些词，今天都玩过啦';
  const next=view.pending?'下一次直接接着未完成的任务，不用重新开始。':Number.isFinite(view.plan.nextAt)?`下一次到期复习在 ${dateLabel(view.plan.nextAt)}。`:'之后还会通过跨日复习观察记忆。';
  return `<section class="panel guided-summary" data-guided-position="${esc(view.position)}"><div class="guided-summary-art" aria-hidden="true">${icon('sprout')}</div><h2 id="guided-summary-title" tabindex="-1">${message}</h2><p>${practiced.length?`这次一起玩过 ${practiced.length} 个词。`:'谢谢一起认真玩。'}说不出也没关系。</p>
   ${practiced.length?`<div class="guided-word-chips">${practiced.map(id=>`<span>${wordName(view.words.find(word=>word.id===id))}</span>`).join('')}</div>`:''}<p>${next}</p>
@@ -122,7 +124,7 @@ function summary(view){
 export function guidedPage(view){
  view={...view,policy:view.overview?view.planningPolicy:view.policy};
  const active=!view.overview&&view.session&&!view.session.ended&&view.scopeValid;
- const header=`<header class="guided-heading"><div><h1 class="page-title">一起学</h1><p>家长陪同 · 约 ${view.policy.session.breakAfterMinutes} 分钟</p></div><div class="guided-header-actions">${!view.overview&&view.pending?button('plan','设置',{attrs:'aria-label="一起学设置"'}):''}${active?button('finish','休息',{attrs:'aria-label="先休息，保存进度"'}):''}${button('exit','← 返回词表')}</div></header>`;
+ const header=`<header class="guided-heading"><div><h1 class="page-title">${view.mode==='review'?'复习一下':'一起学'}</h1><p>家长陪同 · 约 ${view.policy.session.breakAfterMinutes} 分钟</p></div><div class="guided-header-actions">${!view.overview&&view.pending?button('plan','设置',{attrs:'aria-label="一起学设置"'}):''}${active?button('finish','休息',{attrs:'aria-label="先休息，保存进度"'}):''}${button('exit','← 返回词表')}</div></header>`;
  const error=view.error?`<p id="guided-error" class="guided-error" role="alert" tabindex="-1">${esc(view.error)}</p>`:'';
  const scopeNotice='<section class="panel guided-summary"><h2 id="guided-plan-title" tabindex="-1">正在学的词变了</h2><p>记忆记录还在，先看看新范围的安排。</p>'+button('plan','看看学习安排',{primary:true})+'</section>';
  return `${header}${error}${!view.overview&&view.session&&!view.scopeValid?scopeNotice:view.overview?overview(view):active?stage(view):summary(view)}`;
