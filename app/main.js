@@ -47,7 +47,22 @@ const letterAudioSettings=new LetterAudioSettings({audio,getSource:letterSource,
 },stop:()=>{cancelPairPlayback();listenGame.leave();follow.stop(false);audio.stop();}});
 const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback,getGuidedPolicy:mode=>guidedSettings.policy(mode),getGuidedSettings:()=>guidedSettings.editor({embedded:true})});
 function save(){try{localStorage.setItem(PREFERENCES_KEY,JSON.stringify({version:1,settings:state.settings,customAudio:state.customAudio}));return true;}catch{storageWarning='本机存储不可用或空间不足，本次变更可能无法保存。本次仍可继续使用。';toast(storageWarning);return false;}}
-function toast(text){const target=document.querySelector('#toast');target.textContent=text;target.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>target.classList.remove('show'),4500);}
+function toast(text,action){
+ const target=document.querySelector('#toast'),message=document.createElement('span');message.textContent=text;
+ clearTimeout(toastTimer);target.replaceChildren(message);target.inert=false;
+ target.classList.add('show');target.classList.toggle('has-action',!!action);
+ // A stale dismissal must not hide a later success or error message.
+ const dismiss=()=>{if(target.firstChild!==message)return;clearTimeout(toastTimer);target.classList.remove('show','has-action');target.inert=true;target.replaceChildren();};
+ const schedule=()=>{if(target.firstChild!==message)return;clearTimeout(toastTimer);if(!action||!target.matches(':hover')&&!target.contains(document.activeElement))toastTimer=setTimeout(dismiss,action?8000:4500);};
+ target.onpointerenter=action?()=>clearTimeout(toastTimer):null;target.onpointerleave=action?schedule:null;
+ if(action){
+  const control=document.createElement('button');control.type='button';control.textContent=action.label;
+  control.onfocus=()=>clearTimeout(toastTimer);control.onblur=()=>queueMicrotask(schedule);
+  control.addEventListener('click',async()=>{dismiss();try{await action.run();}catch{toast('这次操作没有完成，请再试一次。');}});
+  target.append(control);
+ }
+ schedule();return dismiss;
+}
 const btn=(action,label,style='secondary',glyph='',extra='')=>`<button type="button" class="button ${style}" data-action="${action}" ${extra}>${glyph?icon(glyph):''}${label}</button>`;
 const modeLabel=mode=>mode==='both'?'名称和字母音':mode==='sound'?'字母音':'字母名称';
 const glyph=(letter,letterCase)=>letterCase==='lower'?letter.toLowerCase():letter;

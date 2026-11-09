@@ -55,6 +55,7 @@ export class LearningContent {
   else if(a==='select-matches')ids=[...new Set([...ids,...this.matches().map(w=>w.id)])];
   else if(a==='remove-matches'){const remove=new Set(this.matches().map(w=>w.id));ids=ids.filter(id=>!remove.has(id));}
   else return;
-  this.saveMessage=this.persist({...this.data,selectedWordIds:ids})?`已加入 ${ids.length} 个词 · 已保存`:'保存失败，选择未改变，请重试。';this.paint();
+  const saved=this.persist({...this.data,selectedWordIds:ids});
+  this.saveMessage=saved?`已加入 ${ids.length} 个词 · 已保存`:'保存失败，选择未改变，请重试。';this.paint();return saved;
  }
 }
