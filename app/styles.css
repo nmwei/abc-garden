@@ -629,9 +629,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .guided-header-actions{display:flex;gap:8px;align-items:center}
 .guided-header-actions .button{min-width:44px;min-height:44px;padding:8px 12px;font-size:14px}
 .guided-shell .button:focus-visible,.guided-entry .button:focus-visible,.guided-shell summary:focus-visible{outline:3px solid #709261;outline-offset:3px}
-.guided-overview,.guided-summary{max-width:860px;margin:0 auto;padding:28px}
+.guided-overview,.guided-summary{width:100%;max-width:none;margin:0 auto;padding:28px}
 .guided-overview h2{font-size:28px;line-height:1.45;font-weight:600;margin:0}
-.guided-intro{font-size:16px;color:var(--muted);margin:10px 0 22px;line-height:1.8}
+.guided-intro{max-width:760px;font-size:16px;color:var(--muted);margin:10px 0 22px;line-height:1.8}
 .guided-today{padding:22px 0;border-block:1px solid var(--line)}
 .guided-start-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .guided-start-row h3{font-size:20px;font-weight:600;margin:0}
@@ -678,7 +678,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .guided-progress li>span{display:grid;gap:5px;min-width:0;overflow-wrap:anywhere}
 .guided-progress li>span:last-child{text-align:right;font-size:14px}
 .guided-progress small{color:var(--muted);font-size:13px}
-.guided-stage{display:flex;flex-direction:column;max-width:1280px;min-height:calc(100svh - var(--guided-header-height,90px) - 24px);padding:22px 26px 0;margin:0 auto;text-align:center;border-radius:24px}
+.guided-stage{display:flex;flex-direction:column;max-width:none;min-height:calc(100svh - var(--guided-header-height,90px) - 24px);padding:22px 26px 0;margin:0 auto;text-align:center;border-radius:24px}
 .guided-stage-top{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;color:var(--muted);font-size:13px}
 .guided-stage-top>.guided-session-progress{text-align:left}
 .guided-scope-count{text-align:right}
@@ -846,7 +846,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .guided-settings-fold>summary>span{display:block;margin-left:16px;font-size:13px;font-weight:400;color:var(--muted)}
 .guided-settings-fold .guided-settings-embedded{border:0;margin:0;padding-top:12px}
 .guided-settings-fold .guided-settings-embedded h3{display:none}
-.guided-overview-actions{position:sticky;bottom:0;z-index:5;display:flex;justify-content:center;margin:24px -28px 0;padding:16px 24px calc(16px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--white);border-radius:0 0 24px 24px}
+.guided-overview-actions{position:sticky;bottom:0;z-index:5;display:flex;justify-content:center;margin:auto -28px 0;padding:16px 24px calc(16px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--white);border-radius:0 0 24px 24px}
 .guided-overview-actions .button{width:min(100%,280px);min-height:52px}
 @media(max-width:600px){
  .guided-overview{padding-bottom:0}
@@ -918,3 +918,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .letters-page>.library-head .page-title{font-size:24px}
  .button.module-settings-button{padding-inline:10px;font-size:13px}
 }
+
+/* One outer page width; explanatory prose keeps a readable line length. */
+.guided-overview .guided-parent-help p,.guided-overview .guided-policy-notice{max-width:760px}
