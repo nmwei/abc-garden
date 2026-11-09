@@ -55,7 +55,7 @@ export class VoiceSettings{
     </select></label>
     <button type="button" class="button secondary" data-action="preview-english-voice" ${canPreview?'':'disabled'}>试听</button>
    </div>
-   <p class="micro">${!available?'此浏览器暂不支持系统朗读。':!canPreview?'暂时没有可用的英文音色。':'用于扩展词例句和修改后的英文例句，仅保存在本机。'}</p>
+   <p class="micro">${!available?'此浏览器暂不支持系统朗读。':!canPreview?'暂时没有可用的英文音色。':'此设备共用，用于扩展词例句和修改后的英文例句。音色与语速只影响系统朗读，不改变原有录音。'}</p>
    <p class="micro" role="status">${esc(this.englishStatus)}</p>`;
  }
  editor(){return `<section class="panel voice-settings"><h2>系统朗读声音</h2><div id="voice-settings-controls" class="voice-group">${this.controls()}</div><div id="english-preview-controls" class="voice-group">${this.englishControls()}</div></section>`;}

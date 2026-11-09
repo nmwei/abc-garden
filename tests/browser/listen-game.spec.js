@@ -20,7 +20,7 @@ test('practice retries, hint and manual next preserve first-try scoring and sing
  await page.getByRole('button',{name:'听题目声音',exact:true}).click();await page.getByRole('button',{name:'认识字母',exact:true}).click();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
 });
 test('challenge uses lowercase phonics, pauses clock between questions, finishes and reviews misses',async({page})=>{
- await setup(page);await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('radio',{name:'abc 小写',exact:true}).check();await page.getByRole('radio',{name:/计时挑战/}).check();
+ await setup(page);await page.getByRole('button',{name:'玩法设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('radio',{name:'abc 小写',exact:true}).check();await page.getByRole('radio',{name:/计时挑战/}).check();
  await page.getByRole('button',{name:'开始新一轮',exact:true}).click();const seen=[];
  for(let i=0;i<4;i++){
   const t=await target(page);seen.push(t);await expect(pick(page,t)).toHaveText(t.toLowerCase());
@@ -32,11 +32,11 @@ test('challenge uses lowercase phonics, pauses clock between questions, finishes
  expect(new Set(seen).size).toBe(4);await expect(page.getByRole('heading',{name:'这一轮完成啦！'})).toBeVisible();await expect(page.locator('.listen-score')).toContainText('0');
  await page.getByRole('button',{name:'回听字母 a',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.02);expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('single-sound-A.wav');
  await page.getByRole('button',{name:'再玩一轮',exact:true}).click();await target(page);await expect(page.locator('.listen-scorebar')).toContainText('第 1 / 4 题');
- await page.getByRole('button',{name:'设置',exact:true}).click();await expect(page.getByRole('radio',{name:'abc 小写',exact:true})).toBeChecked();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();await expect(page.getByRole('radio',{name:'abc 小写',exact:true})).toBeChecked();expect(await page.locator('#garden-audio').evaluate(a=>a.paused)).toBe(true);
 });
 test('offline all-letter board fits phone and tablet, accepts sound C/K and stops on navigation',async({page,context})=>{
  test.setTimeout(120000);await setup(page,'ABCDEFGHIJKLMNOPQRSTUVWXYZ');await downloadPack(page,'other');await context.setOffline(true);await page.reload();await page.getByRole('button',{name:'听音找字母',exact:true}).click();
- await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();await target(page);await expect(page.locator('.listen-key')).toHaveCount(26);
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();await target(page);await expect(page.locator('.listen-key')).toHaveCount(26);
  await page.setViewportSize({width:1194,height:834});await page.screenshot({path:`test-results/listen-game-tablet-${test.info().project.name}.png`,fullPage:true});
  for(const size of [{width:1194,height:834},{width:390,height:844}]){await page.setViewportSize(size);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
  await page.screenshot({path:`test-results/listen-game-${test.info().project.name}.png`,fullPage:true});
@@ -62,19 +62,19 @@ test('entry starts immediately; cancel keeps the question and confirmed settings
  await setup(page);const t=await target(page);
  await expect(page.getByRole('region',{name:'听音游戏设置'})).toHaveCount(0);
  const wrong=[...'ABCK'].find(l=>l!==t);await pick(page,wrong).click();
- await page.getByRole('button',{name:'设置',exact:true}).click();
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();
  await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('radio',{name:'abc 小写',exact:true}).check();
  await page.getByRole('button',{name:'取消',exact:true}).click();expect(await target(page)).toBe(t);
  await expect(pick(page,wrong)).toBeDisabled();await expect(pick(page,t)).toHaveText(t);
  expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/single-name-');
- await page.getByRole('button',{name:'设置',exact:true}).click();
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();
  await expect(page.getByRole('radio',{name:/字母名称/})).toBeChecked();
  await page.getByRole('radio',{name:/字母音/}).check();await page.getByRole('radio',{name:'abc 小写',exact:true}).check();await page.getByRole('radio',{name:/计时挑战/}).check();
  await page.getByRole('button',{name:'开始新一轮',exact:true}).click();await target(page);
  await page.reload();await page.getByRole('button',{name:'听音找字母',exact:true}).click();const restored=await target(page);
  expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/single-sound-');await expect(pick(page,restored)).toHaveText(restored.toLowerCase());await expect(page.locator('#listen-clock')).toBeVisible();
  await page.screenshot({path:`test-results/listen-direct-${test.info().project.name}.png`,fullPage:true});
- await page.getByRole('button',{name:'设置',exact:true}).click();await expect(page.getByRole('radio',{name:'abc 小写',exact:true})).toBeChecked();
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();await expect(page.getByRole('radio',{name:'abc 小写',exact:true})).toBeChecked();
  await page.screenshot({path:`test-results/listen-settings-${test.info().project.name}.png`,fullPage:true});
 });
 
@@ -98,7 +98,7 @@ test('A2 and B2 play clearly, share the flower celebration and honor mute',async
   try{const bytes=await(await fetch('./assets/audio/feedback-correct.wav')).arrayBuffer(),buffer=await ctx.decodeAudioData(bytes);let peak=0;for(const v of buffer.getChannelData(0))peak=Math.max(peak,Math.abs(v));return {peak,duration:buffer.duration};}finally{await ctx.close();}
  });
  expect(audible.peak).toBeGreaterThan(.4);expect(audible.peak).toBeLessThan(.85);expect(audible.duration).toBeGreaterThan(2);
- await page.getByRole('button',{name:'设置',exact:true}).click();expect(await effect.evaluate(a=>a.paused)).toBe(true);
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();expect(await effect.evaluate(a=>a.paused)).toBe(true);
  await page.getByRole('checkbox',{name:'答题音效',exact:true}).uncheck();await page.getByRole('button',{name:'开始新一轮',exact:true}).click();const next=await target(page);await pick(page,next).click();
  expect(await page.evaluate(()=>window.feedbackPlays.length)).toBe(2);
  await expect(page.locator('.answer-flower')).toBeVisible();

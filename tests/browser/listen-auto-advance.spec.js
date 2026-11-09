@@ -68,7 +68,7 @@ test('manual next, navigation, settings and backgrounding invalidate pending con
  await page.getByRole('button',{name:'下一个字母',exact:true}).click();await end(page,'feedback-audio');letter=await ready(page);
  await page.clock.runFor(2000);await expect(pick(page,letter)).toBeEnabled();
  await answer(page,letter);await end(page);
- await page.getByRole('button',{name:'设置',exact:true}).click();await page.clock.runFor(2000);
+ await page.getByRole('button',{name:'玩法设置',exact:true}).click();await page.clock.runFor(2000);
  await page.getByRole('button',{name:'取消',exact:true}).click();await expect(page.locator('.listen-answer')).toHaveText(letter);
  await page.getByRole('button',{name:'下一个字母',exact:true}).click();letter=await ready(page);await answer(page,letter);await end(page);
  await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));});

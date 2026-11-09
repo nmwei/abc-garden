@@ -28,7 +28,7 @@ export class GuidedLearningSettings {
   this.load();
   const field=(name,title,unit)=>`<fieldset><legend>${title}</legend><div class="guided-settings-options ${name==='newWordsPerGroup'?'is-count':''}">${choices[name].map(value=>`<label><input type="radio" name="guided-${name}" id="guided-setting-${name}-${value}" data-guided-setting="${name}" value="${value}" ${this.values[name]===value?'checked':''}><span>${value}${unit}</span></label>`).join('')}</div></fieldset>`;
   const heading=embedded?'h3':'h2';
-  return `<section class="${embedded?'guided-settings-embedded':'panel'} guided-settings" aria-labelledby="guided-settings-title"><${heading} id="guided-settings-title">陪学设置</${heading}>${field('newWordsPerGroup','每批最多引入几个新词','个')}${field('breakAfterMinutes','休息提醒','分钟')}<p class="micro">默认每批 ${DEFAULT_GUIDED_POLICY.teaching.newWordsPerGroup} 个。遇到困难可临时减到 1 个；整次学习仍会继续后面的词。</p><p class="micro">仅保存在本机。修改后，下次新安排生效；进行中的学习保持原设置。</p><p id="guided-settings-status" class="micro" role="status">${this.status}</p></section>`;
+  return `<section class="${embedded?'guided-settings-embedded':'panel'} guided-settings" aria-labelledby="guided-settings-title"><${heading} id="guided-settings-title">陪学设置</${heading}>${field('newWordsPerGroup','每批最多引入几个新词','个')}${field('breakAfterMinutes','一起学休息提醒','分钟')}<p class="micro">默认每批 ${DEFAULT_GUIDED_POLICY.teaching.newWordsPerGroup} 个。遇到困难可临时减到 1 个；整次学习仍会继续后面的词。</p><p class="micro">仅保存在本机。修改后，下次新安排生效；进行中的学习保持原设置。</p><p id="guided-settings-status" class="micro" role="status">${this.status}</p></section>`;
  }
  change(control){
   this.save(control.dataset.guidedSetting,Number(control.value));

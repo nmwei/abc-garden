@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import {openParents,unlockParents} from './parent-helpers.js';
+import {openLetterSettings} from './letter-settings-helpers.js';
 import {letterClips,seekLoop} from './letter-loop-helpers.js';
 import {createHash} from 'node:crypto';
 
@@ -15,7 +15,7 @@ async function seed(page,source='edcreate'){
 }
 
 test('preview is independent; selection persists and failed saves preserve the old source',async({page})=>{
-  await seed(page);await openParents(page,true);
+  await seed(page);await openLetterSettings(page,true);
   await expect(sourceRadio(page,'edcreate')).toBeChecked();
   await page.getByRole('button',{name:'试听培训班录音（GK）字母音 R',exact:true}).click();
   await expect(page.locator('#garden-audio')).toHaveAttribute('src','./assets/audio/gk/sound-R.wav');
@@ -26,7 +26,7 @@ test('preview is independent; selection persists and failed saves preserve the o
   await expect(page.locator('#garden-audio')).toHaveAttribute('src','./assets/audio/name-L.wav');
   await sourceRadio(page,'gk').check();await expect(page.locator('#garden-audio')).not.toHaveAttribute('src');
   await expect(page.locator('.letter-source-status')).toContainText('已保存');
-  await page.reload();await unlockParents(page);await expect(sourceRadio(page,'gk')).toBeChecked();
+  await page.reload();await openLetterSettings(page);await expect(sourceRadio(page,'gk')).toBeChecked();
   await page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(key==='abc-garden-preferences-v2')throw new Error('Storage full');return original.call(this,key,value);};});
   await sourceRadio(page,'edcreate').click();await expect(sourceRadio(page,'gk')).toBeChecked();
   await expect(page.locator('.letter-source-status')).toContainText('保存失败');
@@ -58,7 +58,7 @@ for(const source of ['gk','edcreate'])test(`${source}: point reading, loop, pair
   await end(page);await page.locator(`[data-listen=answer][data-letter=${gameLetter}]`).click();await end(page,'feedback-audio');
   await expect.poll(()=>page.evaluate(letter=>window.played.filter(p=>p.src.endsWith(`/single-name-${letter}.wav`)).length,gameLetter)).toBe(2);
   await expect(page.locator('#garden-audio')).toHaveAttribute('src',`./assets/audio/${source}/single-name-${gameLetter}.wav`);
-  await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();
+  await page.getByRole('button',{name:'玩法设置',exact:true}).click();await page.getByRole('radio',{name:/字母音/}).check();
   await page.getByRole('button',{name:'开始新一轮',exact:true}).click();
   const soundLetter=await page.locator('#garden-audio').evaluate(a=>a.src.match(/single-sound-([A-Z])/)[1]);
   await expect(page.locator('#garden-audio')).toHaveAttribute('src',`./assets/audio/${source}/single-sound-${soundLetter}.wav`);
@@ -68,7 +68,7 @@ for(const source of ['gk','edcreate'])test(`${source}: point reading, loop, pair
 });
 
 test('preview and card errors never fall back to another source',async({page})=>{
-  await seed(page,'gk');await openParents(page,true);
+  await seed(page,'gk');await openLetterSettings(page,true);
   await page.evaluate(()=>{HTMLMediaElement.prototype.play=function(){window.played.push({id:this.id,src:this.src});return Promise.reject(new Error('Audio missing'));};});
   await page.getByRole('button',{name:'试听EdCreate 录音字母音 R',exact:true}).click();
   await expect(page.locator('.letter-source-status')).toContainText('试听未能播放');

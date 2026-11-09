@@ -872,3 +872,49 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media(max-width:360px){
  .guided-stage h2{margin-block:12px}
 }
+/* Settings follow their scope: learning controls in the module, shared care here. */
+.letter-settings-page{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.letter-settings-page>.panel{margin:0;padding:28px;border-radius:24px}
+.letter-settings-page .micro{line-height:1.8}
+.letter-settings-page .select-letters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:20px 0}
+.letter-settings-page .select-letters button{min-height:48px;min-width:0;padding:8px;font-size:20px;border-radius:12px}
+.letter-settings-page .range-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.letter-settings-page .range-buttons button{min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.letter-settings-page .settings-footnote{grid-column:1/-1;color:var(--muted);padding:0 4px}
+.settings-heading{align-items:flex-start;gap:16px}
+.settings-heading>.button,.letters-page>.library-head>.button{flex-shrink:0;min-height:44px}
+.parent-settings-grouped{display:grid;gap:32px;max-width:960px}
+.parent-setting-group>header{margin:0 4px 14px}
+.parent-setting-group>header h2{font-size:21px;font-weight:600;margin:0 0 6px}
+.parent-setting-group>header p{font-size:14px;line-height:1.7;color:var(--muted)}
+.parent-setting-group>.panel,.parent-device-grid>.panel{margin:0;padding:26px;border-radius:22px}
+.parent-device-grid{display:grid;gap:16px}
+.parent-settings-grouped .panel h2{font-size:18px;margin-top:0}
+.parent-settings-grouped .micro{line-height:1.8}
+@container garden-content (max-width:900px){
+ .letter-settings-page{grid-template-columns:minmax(0,1fr);gap:18px;max-width:680px;margin:auto}
+}
+@media(max-width:600px){
+ .letter-settings-page>.panel,.parent-setting-group>.panel,.parent-device-grid>.panel{padding:20px 16px}
+ .letter-settings-page .select-letters{gap:6px}
+ .letter-settings-page .select-letters button{min-height:44px}
+ .parent-settings-grouped{gap:26px}
+ .settings-heading .subtitle{font-size:13px}
+}
+@media(max-width:400px){
+ .letter-settings-page .select-letters{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+/* Module-level settings stay beside the title, above activity controls. */
+.letters-page>.library-head{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 16px;margin-bottom:20px}
+.letters-page>.library-head>div{display:contents}
+.letters-page>.library-head .page-title{grid-column:1;grid-row:1;margin:0}
+.letters-page>.library-head>.button{grid-column:2;grid-row:1}
+.letters-page>.library-head .subtitle{grid-column:1/-1;grid-row:2;margin:0}
+.button.module-settings-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:9px 13px;border:1px solid var(--line);border-radius:12px;background:transparent;box-shadow:none;font-size:14px;font-weight:500;white-space:nowrap}
+.button.module-settings-button svg{width:18px;height:18px}
+.button.module-settings-button:hover{background:var(--pale)}
+@media(max-width:600px){
+ .letters-page>.library-head{gap:8px 10px;margin-bottom:18px}
+ .letters-page>.library-head .page-title{font-size:24px}
+ .button.module-settings-button{padding-inline:10px;font-size:13px}
+}
