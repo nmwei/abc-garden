@@ -1,4 +1,5 @@
 import './compile-sentence-meanings.mjs';
+import './compile-guided-activities.mjs';
 import { readFile,writeFile } from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {syncBuild} from './build-cache.mjs';

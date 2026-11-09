@@ -1,0 +1,219 @@
+{
+  "source": "Captured from the working behavior before the configurable-policy refactor; all answers correct, one fixed clock, picture-option order excluded.",
+  "ids": [
+    "egg",
+    "yes",
+    "apple",
+    "fish",
+    "ball",
+    "hat",
+    "insect"
+  ],
+  "pictureIds": [
+    "egg",
+    "apple",
+    "fish",
+    "ball",
+    "hat",
+    "insect"
+  ],
+  "at": 1794189600000,
+  "trace": [
+    {
+      "kind": "learn",
+      "id": "egg"
+    },
+    {
+      "kind": "learn",
+      "id": "yes"
+    },
+    {
+      "kind": "understand",
+      "id": "egg"
+    },
+    {
+      "kind": "understand",
+      "id": "yes"
+    },
+    {
+      "kind": "recall",
+      "id": "egg"
+    },
+    {
+      "kind": "recall",
+      "id": "yes"
+    },
+    {
+      "kind": "learn",
+      "id": "apple"
+    },
+    {
+      "kind": "recall",
+      "id": "egg"
+    },
+    {
+      "kind": "recall",
+      "id": "yes"
+    },
+    {
+      "kind": "learn",
+      "id": "fish"
+    },
+    {
+      "kind": "choose",
+      "id": "apple"
+    },
+    {
+      "kind": "choose",
+      "id": "fish"
+    },
+    {
+      "kind": "recall",
+      "id": "apple"
+    },
+    {
+      "kind": "recall",
+      "id": "fish"
+    },
+    {
+      "kind": "learn",
+      "id": "ball"
+    },
+    {
+      "kind": "recall",
+      "id": "apple"
+    },
+    {
+      "kind": "recall",
+      "id": "fish"
+    },
+    {
+      "kind": "learn",
+      "id": "hat"
+    },
+    {
+      "kind": "choose",
+      "id": "ball"
+    },
+    {
+      "kind": "choose",
+      "id": "hat"
+    },
+    {
+      "kind": "recall",
+      "id": "ball"
+    },
+    {
+      "kind": "recall",
+      "id": "hat"
+    },
+    {
+      "kind": "learn",
+      "id": "insect"
+    },
+    {
+      "kind": "recall",
+      "id": "ball"
+    },
+    {
+      "kind": "recall",
+      "id": "hat"
+    },
+    {
+      "kind": "understand",
+      "id": "insect"
+    },
+    {
+      "kind": "play",
+      "id": "egg",
+      "wordGame": true,
+      "gameId": "mirror"
+    },
+    {
+      "kind": "recall",
+      "id": "insect"
+    },
+    {
+      "kind": "play",
+      "id": "yes",
+      "wordGame": true,
+      "gameId": "drawing"
+    },
+    {
+      "kind": "recall",
+      "id": "insect"
+    }
+  ],
+  "credit": {
+    "egg": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "yes": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "apple": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "fish": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "ball": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "hat": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    },
+    "insect": {
+      "level": 1,
+      "days": [
+        "2026-11-09"
+      ],
+      "meaning": true,
+      "dueAt": 1794240000000,
+      "transferAt": 0,
+      "result": "independent"
+    }
+  }
+}

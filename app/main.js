@@ -1,6 +1,7 @@
 import './feedback-audio.js';
 import {ListenGame} from './listen-game.js';
 import {VoiceSettings} from './voice-settings.js';
+import {GuidedLearningSettings} from './guided-learning-settings.js';
 import {mountLetterLayout} from './letter-layout.js';
 import {LetterAudioSettings} from './letter-audio-settings.js';
 import {letterSourceInfo} from './letter-audio.js';
@@ -28,6 +29,7 @@ try{const saved=localStorage.getItem(PREFERENCES_KEY)||localStorage.getItem(STOR
 const letterSource=()=>state.settings.letterAudioSource;
 const audio=new GardenAudio(()=>({}),toast,letterSource);
 const voiceSettings=new VoiceSettings(audio);
+const guidedSettings=new GuidedLearningSettings();
 const follow=new FollowAlong(letterSource,updateFollow);
 let letterLoopRepeats=1;
 window.addEventListener('pagehide',()=>follow.stop(false));
@@ -43,7 +45,7 @@ const letterAudioSettings=new LetterAudioSettings({audio,getSource:letterSource,
  if(!save()){state.settings.letterAudioSource=previous;return false;}
  return true;
 },stop:()=>{cancelPairPlayback();listenGame.leave();follow.stop(false);audio.stop();}});
-const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback});
+const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback,getGuidedPolicy:()=>guidedSettings.policy(),getGuidedSettings:()=>guidedSettings.editor({embedded:true})});
 function save(){try{localStorage.setItem(PREFERENCES_KEY,JSON.stringify({version:1,settings:state.settings,customAudio:state.customAudio}));return true;}catch{storageWarning='本机存储不可用或空间不足，本次变更可能无法保存。本次仍可继续使用。';toast(storageWarning);return false;}}
 function toast(text){const target=document.querySelector('#toast');target.textContent=text;target.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>target.classList.remove('show'),4500);}
 const btn=(action,label,style='secondary',glyph='',extra='')=>`<button type="button" class="button ${style}" data-action="${action}" ${extra}>${glyph?icon(glyph):''}${label}</button>`;
@@ -77,9 +79,12 @@ let disposeLetterLayout=()=>{};
 function render(){
   disposeLetterLayout();
   pauseSong();
-  const title=route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
+  const guided=route==='words'&&course.view==='guided';
+  const title=guided?'一起学':route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
   document.title=title?`${title} · ${APP_NAME}`:`${APP_NAME} · ABC Garden`;
   const focusId=document.activeElement?.id;
+  if(guided)course.guided.captureView();
+  document.querySelector('.shell')?.classList.toggle('guided-shell',guided);
   // Replace the word content atomically without tearing down the page shell.
   const wordPage=route==='words'&&document.querySelector('#course:has(.word-layout)');
   if(wordPage){
@@ -87,11 +92,11 @@ function render(){
     template.innerHTML=course.html();
     wordPage.replaceWith(template.content);
   }
-  else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell${route==='words'?' word-shell':route==='letters'?' letters-shell':''}">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'?'letters-page ':''}${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
+  else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell${route==='words'?' word-shell':route==='letters'?' letters-shell':''}${guided?' guided-shell':''}">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'?'letters-page ':''}${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
   if(route==='letters'){updateFollow();disposeLetterLayout=mountLetterLayout();}
   if(route==='parents')offline.paintUpdates();
-  if(modal)renderModal();else if(focusId)document.getElementById(focusId)?.focus({preventScroll:true});
+  if(modal)renderModal();else if(focusId&&!guided)document.getElementById(focusId)?.focus({preventScroll:true});
 }
 function home(){
  return `<section class="home-intro"><div><p class="eyebrow">LITTLE STEPS, EVERY DAY</p><h1>今天，想和谁做朋友？</h1><p class="subtitle">听一听，玩一玩。<br>从一个喜欢的声音开始。</p></div><div class="home-art" aria-hidden="true">${gardenArt()}</div></section><section class="home-entries" aria-label="学习入口"><button class="entry-card letter-entry" data-action="library"><span class="entry-art glyph" aria-hidden="true">Aa</span><h2>字母朋友</h2><p>听与跟读 · 大小写配对 · 听音找字母</p><span class="entry-link">去找字母朋友 ${icon('arrow')}</span></button><button class="entry-card word-entry" data-action="words"><span class="entry-art" aria-hidden="true">${wordPicture('apple')}</span><h2>看图学词</h2><p>认识生活里的词 · 听一听 · 说一句</p><span class="entry-link">去认识新单词 ${icon('arrow')}</span></button><button class="entry-card growth-entry" data-action="learn"><span class="entry-art" aria-hidden="true">${icon('sprout')}</span><h2>成长地图</h2><p>听故事 · 开口说 · 写一写</p><span class="entry-link">去探索小花园 ${icon('arrow')}</span></button></section><p class="page-note">不赶进度，不用打卡。随时可以休息。</p>`;
@@ -289,6 +294,7 @@ app.addEventListener('click',event=>{
 app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
 app.addEventListener('change',event=>{
+  if(event.target.dataset.guidedSetting)guidedSettings.change(event.target);
   if(event.target.name==='letter-audio-source')letterAudioSettings.select(event.target.value);
   if(event.target.id==='letter-preview')letterAudioSettings.selectLetter(event.target.value);
   if(event.target.name==='letter-loop-repeats'){const count=Number(event.target.value);if([1,2,3].includes(count)){letterLoopRepeats=count;follow.setRepeats(count);}}

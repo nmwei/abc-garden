@@ -1,0 +1,947 @@
+{
+ "version": 1,
+ "notes": "Project-authored short models and sense-specific parent scenarios. Shared strategies supply the remaining steps.",
+ "entries": {
+  "in": {
+   "modelText": "The bear is in the box.",
+   "modelZh": "小熊在盒子里面。",
+   "scene": "把小熊放进纸盒里面",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在里面”和“在盒子外面”。",
+   "teach": "家长先把小熊放进纸盒里面，再改成在盒子外面的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在里面”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放进纸盒里面，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在里面”，让孩子自己描述。"
+  },
+  "on": {
+   "modelText": "The bear is on the box.",
+   "modelZh": "小熊在盒子上面。",
+   "scene": "把小熊放在盒子顶上",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在上面并接触”和“在盒子下面”。",
+   "teach": "家长先把小熊放在盒子顶上，再改成在盒子下面的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在上面并接触”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在盒子顶上，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在上面并接触”，让孩子自己描述。"
+  },
+  "under": {
+   "modelText": "The bear is under the table.",
+   "modelZh": "小熊在桌子下面。",
+   "scene": "把小熊放在小桌下面",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在下面”和“在桌面上”。",
+   "teach": "家长先把小熊放在小桌下面，再改成在桌面上的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在下面”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在小桌下面，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在下面”，让孩子自己描述。"
+  },
+  "beneath": {
+   "modelText": "The ball is beneath the table.",
+   "modelZh": "球在桌子下面。",
+   "scene": "把小球放在桌子下面",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在下面”和“在桌面上”。",
+   "teach": "家长先把小球放在桌子下面，再改成在桌面上的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在下面”的位置；家长先不摆答案。",
+   "recall": "家长把小球放在桌子下面，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在下面”，让孩子自己描述。"
+  },
+  "above": {
+   "modelText": "The bird is above the box.",
+   "modelZh": "鸟在盒子上方。",
+   "scene": "家长手持小鸟图停在纸盒上方、不接触盒子",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在上方”和“在下方”。",
+   "teach": "家长先手持小鸟图停在纸盒上方、不接触盒子，再改成在下方的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在上方”的位置；家长先不摆答案。",
+   "recall": "家长手持小鸟图停在纸盒上方、不接触盒子，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在上方”，让孩子自己描述。"
+  },
+  "over": {
+   "modelText": "The bird flies over the box.",
+   "modelZh": "鸟从盒子上方飞过。",
+   "scene": "让玩具小鸟从盒子上方飞过",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在上方经过”和“在旁边经过”。",
+   "teach": "家长先让玩具小鸟从盒子上方飞过，再改成在旁边经过的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在上方经过”的位置；家长先不摆答案。",
+   "recall": "家长让玩具小鸟从盒子上方飞过，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在上方经过”，让孩子自己描述。"
+  },
+  "behind": {
+   "modelText": "The bear is behind the doll.",
+   "modelZh": "小熊在玩偶后面。",
+   "scene": "让玩偶面朝前，把小熊放在玩偶身后",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在后面”和“在玩偶前面”。",
+   "teach": "家长先让玩偶面朝前，把小熊放在玩偶身后，再改成在玩偶前面的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在后面”的位置；家长先不摆答案。",
+   "recall": "家长让玩偶面朝前，把小熊放在玩偶身后，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在后面”，让孩子自己描述。"
+  },
+  "beside": {
+   "modelText": "The bear is beside the box.",
+   "modelZh": "小熊在盒子旁边。",
+   "scene": "把小熊放在盒子旁边",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在旁边”和“在盒子里面”。",
+   "teach": "家长先把小熊放在盒子旁边，再改成在盒子里面的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在旁边”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在盒子旁边，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在旁边”，让孩子自己描述。"
+  },
+  "between": {
+   "modelText": "The bear is between the chairs.",
+   "modelZh": "小熊在两把椅子之间。",
+   "scene": "把小熊放在两把玩具椅子之间",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在两者之间”和“在两把椅子外侧”。",
+   "teach": "家长先把小熊放在两把玩具椅子之间，再改成在两把椅子外侧的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在两者之间”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在两把玩具椅子之间，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在两者之间”，让孩子自己描述。"
+  },
+  "near": {
+   "modelText": "The bear is near the house.",
+   "modelZh": "小熊在房子附近。",
+   "scene": "把小熊放在房子积木的近处",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在附近”和“离房子很远”。",
+   "teach": "家长先把小熊放在房子积木的近处，再改成离房子很远的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在附近”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在房子积木的近处，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在附近”，让孩子自己描述。"
+  },
+  "far": {
+   "modelText": "The house is far away.",
+   "modelZh": "房子在很远的地方。",
+   "scene": "把小熊放在离房子积木较远的位置",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“远”和“离房子很近”。",
+   "teach": "家长先把小熊放在离房子积木较远的位置，再改成离房子很近的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“远”的位置；家长先不摆答案。",
+   "recall": "家长把小熊放在离房子积木较远的位置，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“远”，让孩子自己描述。"
+  },
+  "into": {
+   "modelText": "The bear goes into the box.",
+   "modelZh": "小熊走进盒子里面。",
+   "scene": "让小熊从盒子外走进盒子里面",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“进入”和“从里面走出来”。",
+   "teach": "家长先让小熊从盒子外走进盒子里面，再改成从里面走出来的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“进入”的位置；家长先不摆答案。",
+   "recall": "家长让小熊从盒子外走进盒子里面，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“进入”，让孩子自己描述。"
+  },
+  "onto": {
+   "modelText": "The bear jumps onto the sofa.",
+   "modelZh": "小熊跳到沙发上。",
+   "scene": "让小熊从旁边爬到玩具沙发上",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“到上面”和“从沙发上下来”。",
+   "teach": "家长先让小熊从旁边爬到玩具沙发上，再改成从沙发上下来的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“到上面”的位置；家长先不摆答案。",
+   "recall": "家长让小熊从旁边爬到玩具沙发上，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“到上面”，让孩子自己描述。"
+  },
+  "across": {
+   "modelText": "The bear walks across the bridge.",
+   "modelZh": "小熊走过桥到另一边。",
+   "scene": "在纸上画两岸，让小熊沿纸桥走到对岸",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“从一边到另一边”和“停在同一岸”。",
+   "teach": "家长先在纸上画两岸，让小熊沿纸桥走到对岸，再改成停在同一岸的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“从一边到另一边”的位置；家长先不摆答案。",
+   "recall": "家长在纸上画两岸，让小熊沿纸桥走到对岸，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“从一边到另一边”，让孩子自己描述。"
+  },
+  "through": {
+   "modelText": "The car goes through the tunnel.",
+   "modelZh": "车从隧道里穿过。",
+   "scene": "让玩具车穿过纸做的隧道",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“从中穿过”和“绕着隧道外面走”。",
+   "teach": "家长先让玩具车穿过纸做的隧道，再改成绕着隧道外面走的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“从中穿过”的位置；家长先不摆答案。",
+   "recall": "家长让玩具车穿过纸做的隧道，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“从中穿过”，让孩子自己描述。"
+  },
+  "around": {
+   "modelText": "The car goes around the box.",
+   "modelZh": "车绕着盒子走。",
+   "scene": "让玩具小车绕着盒子走一圈",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“在周围”和“穿过盒子里面”。",
+   "teach": "家长先让玩具小车绕着盒子走一圈，再改成穿过盒子里面的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“在周围”的位置；家长先不摆答案。",
+   "recall": "家长让玩具小车绕着盒子走一圈，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“在周围”，让孩子自己描述。"
+  },
+  "toward": {
+   "modelText": "The bear walks toward the house.",
+   "modelZh": "小熊朝房子走去。",
+   "scene": "让小熊朝玩具房子的方向走、还没到房子",
+   "setup": "准备小熊、纸盒和位置对照图，先用中文区分“朝向”和“背离房子走”。",
+   "teach": "家长先让小熊朝玩具房子的方向走、还没到房子，再改成背离房子走的位置做对照；只让位置变化，听目标词和短句。",
+   "listen": "只放英文，让孩子摆出或指出“朝向”的位置；家长先不摆答案。",
+   "recall": "家长让小熊朝玩具房子的方向走、还没到房子，不说英文，问小熊在哪里或怎样移动；孩子可用目标词或熟悉短语回答。",
+   "transfer": "换玩偶、容器或摆放地点，仍表示“朝向”，让孩子自己描述。"
+  },
+  "inside": {
+   "modelText": "The bear is inside.",
+   "modelZh": "小熊在里面。",
+   "scene": "纸盒当房子，小熊在里面，再和另一个位置比较。"
+  },
+  "outside": {
+   "modelText": "The bear is outside.",
+   "modelZh": "小熊在外面。",
+   "scene": "纸盒当房子，小熊在外面，再和另一个位置比较。"
+  },
+  "left": {
+   "modelText": "Turn left.",
+   "modelZh": "向左转。",
+   "scene": "家长和孩子朝同一个方向看，让玩具车向孩子左手一侧转；再与右转比较。",
+   "setup": "用桌面小路和玩具车。成人与孩子朝同一方向，以孩子的左右为准，避免面对面的镜像混淆。"
+  },
+  "right": {
+   "modelText": "Turn right.",
+   "modelZh": "向右转。",
+   "scene": "家长和孩子朝同一个方向看，让玩具车向孩子右手一侧转；再与左转比较。",
+   "setup": "用桌面小路和玩具车。成人与孩子朝同一方向，以孩子的左右为准，避免面对面的镜像混淆。"
+  },
+  "before": {
+   "modelText": "Wash your hands before you eat.",
+   "modelZh": "吃东西前先洗手。",
+   "scene": "用两张图排出先洗手、再吃饭，说明洗手发生在吃饭之前。"
+  },
+  "after": {
+   "modelText": "We play after school.",
+   "modelZh": "我们放学后玩。",
+   "scene": "用两张图排出先上课、后玩耍，说明玩耍发生在放学之后。"
+  },
+  "already": {
+   "modelText": "I have already finished.",
+   "modelZh": "我已经做完了。",
+   "scene": "拼图早已完成，另一只玩偶刚来问有没有完成，强调问之前就做好了。"
+  },
+  "yet": {
+   "modelText": "Is the bear here yet?",
+   "modelZh": "小熊已经来了吗？",
+   "scene": "等一只还没到的玩偶，另一只玩偶问它来了没有；再看它刚刚到达。"
+  },
+  "again": {
+   "modelText": "Roll it again.",
+   "modelZh": "再滚一次。",
+   "scene": "先把球滚一次，再请对方做同样动作一次，区别第一次和再一次。"
+  },
+  "spring": {
+   "modelText": "Spring is here.",
+   "modelZh": "春天到了。",
+   "scene": "看春天新芽和花朵的照片，与冬天照片对照；这里不指弹簧。"
+  },
+  "fall": {
+   "modelText": "It is fall.",
+   "modelZh": "现在是秋天。",
+   "scene": "看秋天树叶变色的场景，本次练季节“秋天”，不是让孩子摔倒。"
+  },
+  "a": {
+   "modelText": "I have a ball.",
+   "modelZh": "我有一个球。",
+   "scene": "拿一个球，先听熟“一只/一个”的短话，不讲字母规则。",
+   "contextual": true
+  },
+  "an": {
+   "modelText": "This is an egg.",
+   "modelZh": "这是一个鸡蛋。",
+   "scene": "拿鸡蛋图，听熟带 an 的短话；这里跟读声音组合，不让孩子按字母猜冠词。",
+   "contextual": true
+  },
+  "am": {
+   "modelText": "I am happy.",
+   "modelZh": "我很开心。",
+   "scene": "说话者指自己表达开心，再换孩子作为说话者，练我和 am 的搭配。",
+   "contextual": true
+  },
+  "are": {
+   "modelText": "You are happy.",
+   "modelZh": "你很开心。",
+   "scene": "一方对另一方说“你很开心”，换角色再说，听短句里 are 的用法。",
+   "contextual": true
+  },
+  "is": {
+   "modelText": "The ball is red.",
+   "modelZh": "球是红色的。",
+   "scene": "家长拿一个红球，指物说明它是什么样，练短句里的 is。",
+   "contextual": true
+  },
+  "be": {
+   "modelText": "Please be quiet.",
+   "modelZh": "请安静一点。",
+   "scene": "玩偶在图书馆，另一只玩偶轻声提醒安静，练状态表达。",
+   "contextual": true
+  },
+  "was": {
+   "modelText": "I was at home yesterday.",
+   "modelZh": "我昨天在家。",
+   "scene": "把昨天在家和今天在公园两张图分开，练昨天的状态表达。",
+   "contextual": true
+  },
+  "were": {
+   "modelText": "We were at home yesterday.",
+   "modelZh": "我们昨天在家。",
+   "scene": "两个玩偶昨天都在家，今天去了公园；强调过去的我们。",
+   "contextual": true
+  },
+  "being": {
+   "modelText": "Thank you for being kind.",
+   "modelZh": "谢谢你的友善。",
+   "scene": "一只玩偶很友善地帮忙，另一只玩偶感谢它，听 being 在短句中的状态含义。",
+   "contextual": true
+  },
+  "have": {
+   "modelText": "I have a ball.",
+   "modelZh": "我有一个球。",
+   "scene": "说话者拿自己的球，表示自己拥有；不是把 have 当作球的名字。",
+   "contextual": true
+  },
+  "has": {
+   "modelText": "She has a ball.",
+   "modelZh": "她有一个球。",
+   "scene": "给一个已说明身份的女性玩偶一个球，另一人描述她拥有球。",
+   "contextual": true
+  },
+  "does": {
+   "modelText": "Does she like apples?",
+   "modelZh": "她喜欢苹果吗？",
+   "scene": "用一只玩偶问另一只是否喜欢苹果，练问句，不把 does 当物品名。",
+   "contextual": true
+  },
+  "do": {
+   "modelText": "What do you do?",
+   "modelZh": "你做什么？",
+   "scene": "让玩偶问对方做什么，表演一个熟悉活动，听 do 表示做事情。",
+   "contextual": true
+  },
+  "can": {
+   "modelText": "I can jump.",
+   "modelZh": "我会跳。",
+   "scene": "让玩偶演示会做的动作，另一只玩偶不会做，理解能够、会。",
+   "contextual": true
+  },
+  "could": {
+   "modelText": "I could see it.",
+   "modelZh": "我能看见它。",
+   "scene": "玩偶看得到图片中的小猫，家长用简短情境说明能够看见。",
+   "contextual": true
+  },
+  "may": {
+   "modelText": "May I play?",
+   "modelZh": "我可以玩吗？",
+   "scene": "玩偶想加入游戏，先礼貌询问是否可以，不是问能力。",
+   "contextual": true
+  },
+  "might": {
+   "modelText": "It might rain.",
+   "modelZh": "可能会下雨。",
+   "scene": "看见云，但还不知道会不会下雨，练可能，不说成一定会。",
+   "contextual": true
+  },
+  "must": {
+   "modelText": "We must stop.",
+   "modelZh": "我们必须停下。",
+   "scene": "玩具车遇到红灯必须停，和自己想不停区别开。",
+   "contextual": true
+  },
+  "should": {
+   "modelText": "We should help.",
+   "modelZh": "我们应该帮忙。",
+   "scene": "一只玩偶需要帮助，讨论怎么做更合适，练应该。",
+   "contextual": true
+  },
+  "will": {
+   "modelText": "We will play.",
+   "modelZh": "我们将要玩。",
+   "scene": "画一个接下来要一起玩的安排，不是已经在玩。",
+   "contextual": true
+  },
+  "would": {
+   "modelText": "What would you do?",
+   "modelZh": "你会怎么做？",
+   "scene": "假设玩偶遇到一个小问题，问在这种情况下会怎么做。",
+   "contextual": true
+  },
+  "shall": {
+   "modelText": "Shall we play?",
+   "modelZh": "我们一起玩好吗？",
+   "scene": "玩偶邀请对方一起玩，用这个短问句提出建议。",
+   "contextual": true
+  },
+  "ought to": {
+   "modelText": "We ought to help.",
+   "modelZh": "我们应该帮忙。",
+   "scene": "一只玩偶需要帮助，另一只提出应该帮忙，先听熟短话即可。",
+   "contextual": true
+  },
+  "the": {
+   "modelText": "Close the door.",
+   "modelZh": "关上这扇门。",
+   "scene": "先一起看清正在说的是哪一扇门，再提出请求，感受 the 指双方知道的目标。",
+   "contextual": true
+  },
+  "and": {
+   "modelText": "A ball and a book.",
+   "modelZh": "一个球和一本书。",
+   "scene": "同时拿球和书，表达两样都有，不是二选一。",
+   "contextual": true
+  },
+  "or": {
+   "modelText": "A ball or a book?",
+   "modelZh": "球还是书？",
+   "scene": "玩偶只能选一个，家长给两个选项，区别两样都要。",
+   "contextual": true
+  },
+  "but": {
+   "modelText": "It is small but heavy.",
+   "modelZh": "它很小，但是很重。",
+   "scene": "看一个小而重的物品图，说明两个特点之间的转折。",
+   "contextual": true
+  },
+  "because": {
+   "modelText": "I wear a coat because it is cold.",
+   "modelZh": "我穿外套，因为天冷。",
+   "scene": "用天冷和穿外套两张图，问为什么穿外套，连起原因和行为。",
+   "contextual": true
+  },
+  "so": {
+   "modelText": "It is raining, so we stay inside.",
+   "modelZh": "下雨了，所以我们待在室内。",
+   "scene": "先下雨，后决定在屋内玩，连起原因和结果。",
+   "contextual": true
+  },
+  "not": {
+   "modelText": "This is not my bag.",
+   "modelZh": "这不是我的包。",
+   "scene": "拿对方的包和自己的包比较，表达不是，而不是用物品名代替否定。",
+   "contextual": true
+  },
+  "who": {
+   "modelText": "Who is there?",
+   "modelZh": "谁在那里？",
+   "scene": "一只玩偶在纸门后，让另一只玩偶提出询问人物的问题。",
+   "contextual": true
+  },
+  "what": {
+   "modelText": "What is this?",
+   "modelZh": "这是什么？",
+   "scene": "用布轻盖一件熟悉玩具，让玩偶先询问它是什么。",
+   "contextual": true
+  },
+  "where": {
+   "modelText": "Where is my ball?",
+   "modelZh": "我的球在哪里？",
+   "scene": "把球放到两个可找到的地方之一，让玩偶询问地点。",
+   "contextual": true
+  },
+  "when": {
+   "modelText": "When do we play?",
+   "modelZh": "我们什么时候玩？",
+   "scene": "用先吃饭后游戏的日程，让玩偶询问时间。",
+   "contextual": true
+  },
+  "why": {
+   "modelText": "Why is the bear sad?",
+   "modelZh": "小熊为什么难过？",
+   "scene": "小熊的球滚走了，让另一只玩偶询问原因。",
+   "contextual": true
+  },
+  "how": {
+   "modelText": "How do we make it?",
+   "modelZh": "我们怎么做它？",
+   "scene": "家长准备折纸小游戏，让玩偶询问做法，不要求孩子读步骤。",
+   "contextual": true
+  },
+  "which": {
+   "modelText": "Which ball do you want?",
+   "modelZh": "你要哪一个球？",
+   "scene": "放两只不同的球，玩偶询问具体选哪一个。",
+   "contextual": true
+  },
+  "whose": {
+   "modelText": "Whose ball is this?",
+   "modelZh": "这是谁的球？",
+   "scene": "先说明球属于哪只玩偶，再让另一方询问主人。",
+   "contextual": true
+  },
+  "by": {
+   "modelText": "I go by bus.",
+   "modelZh": "我乘公共汽车去。",
+   "scene": "让玩偶乘公交模型去学校，区别乘坐工具和站在车旁。",
+   "contextual": true
+  },
+  "for": {
+   "modelText": "This gift is for you.",
+   "modelZh": "这份礼物是给你的。",
+   "scene": "一只玩偶把礼物送给对方，强调礼物给谁。",
+   "contextual": true
+  },
+  "from": {
+   "modelText": "This letter is from Dad.",
+   "modelZh": "这封信来自爸爸。",
+   "scene": "用玩具信封演送信，强调是谁寄来的。",
+   "contextual": true
+  },
+  "of": {
+   "modelText": "A picture of a cat.",
+   "modelZh": "一张猫的图片。",
+   "scene": "给玩偶看一幅猫图，表示图片画的是什么，不把 of 当作猫的名字。",
+   "contextual": true
+  },
+  "with": {
+   "modelText": "I play with you.",
+   "modelZh": "我和你一起玩。",
+   "scene": "两个人一起玩，和一个人独自玩对照。",
+   "contextual": true
+  },
+  "without": {
+   "modelText": "I cannot draw without a pencil.",
+   "modelZh": "没有铅笔我无法画画。",
+   "scene": "演准备画画却缺少笔的情境，突出没有、缺少。",
+   "contextual": true
+  },
+  "about": {
+   "modelText": "A book about animals.",
+   "modelZh": "一本关于动物的书。",
+   "scene": "翻动物绘本说明它讲什么内容，练关于，而不是只说书或动物。",
+   "contextual": true
+  },
+  "at": {
+   "modelText": "Meet me at the gate.",
+   "modelZh": "到门口和我见面。",
+   "scene": "让两个玩偶约在纸画的门口见面，说明碰面的地点。",
+   "contextual": true
+  },
+  "i": {
+   "modelText": "I am happy.",
+   "modelZh": "我很开心。",
+   "scene": "说话者先指自己，再轮到孩子指自己，不把 I 固定成某一个人。",
+   "contextual": true
+  },
+  "me": {
+   "modelText": "Give it to me.",
+   "modelZh": "把它给我。",
+   "scene": "说话者伸手要球，再交换说话者，所指的人也随之改变。",
+   "contextual": true
+  },
+  "you": {
+   "modelText": "You are my friend.",
+   "modelZh": "你是我的朋友。",
+   "scene": "说话者对面前的人或玩偶说，再交换角色。",
+   "contextual": true
+  },
+  "we": {
+   "modelText": "We can play.",
+   "modelZh": "我们可以玩。",
+   "scene": "说话者把自己和伙伴都包括在一起。",
+   "contextual": true
+  },
+  "us": {
+   "modelText": "Play with us.",
+   "modelZh": "和我们一起玩。",
+   "scene": "两只玩偶一起邀请第三只，表示包含说话者的一组。",
+   "contextual": true
+  },
+  "he": {
+   "modelText": "He is happy.",
+   "modelZh": "他很开心。",
+   "scene": "先用中文说明一个人物的身份，再用 he 指他，不从外貌猜性别。",
+   "contextual": true
+  },
+  "him": {
+   "modelText": "Give it to him.",
+   "modelZh": "把它给他。",
+   "scene": "先明确男性玩偶是谁，再把球给他。",
+   "contextual": true
+  },
+  "she": {
+   "modelText": "She is happy.",
+   "modelZh": "她很开心。",
+   "scene": "先明确女性玩偶是谁，再用 she 指她，不从外貌猜性别。",
+   "contextual": true
+  },
+  "her": {
+   "modelText": "This is her bag.",
+   "modelZh": "这是她的包。",
+   "scene": "先说明包属于哪只女性玩偶，本次练她的这个意思。",
+   "contextual": true
+  },
+  "it": {
+   "modelText": "It is a ball.",
+   "modelZh": "它是一个球。",
+   "scene": "用 it 回指刚才已经提到的球，不把它固定成一种物品。",
+   "contextual": true
+  },
+  "they": {
+   "modelText": "They are happy.",
+   "modelZh": "他们很开心。",
+   "scene": "指一组已介绍的玩偶，不包含此时的说话者。",
+   "contextual": true
+  },
+  "them": {
+   "modelText": "Give it to them.",
+   "modelZh": "把它给他们。",
+   "scene": "把玩具递给已经介绍的那组玩偶。",
+   "contextual": true
+  },
+  "my": {
+   "modelText": "This is my ball.",
+   "modelZh": "这是我的球。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“说话者自己的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "your": {
+   "modelText": "This is your ball.",
+   "modelZh": "这是你的球。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“听话者的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "his": {
+   "modelText": "This is his ball.",
+   "modelZh": "这是他的球。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“已说明的男性玩偶的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "its": {
+   "modelText": "Look at its tail.",
+   "modelZh": "看看它的尾巴。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“已提到的动物的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "our": {
+   "modelText": "This is our ball.",
+   "modelZh": "这是我们的球。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“包含说话者的一组人的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "their": {
+   "modelText": "This is their ball.",
+   "modelZh": "这是他们的球。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“已介绍的另一组玩偶的”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "mine": {
+   "modelText": "The ball is mine.",
+   "modelZh": "球是我的。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“属于说话者自己”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "yours": {
+   "modelText": "The ball is yours.",
+   "modelZh": "球是你的。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“属于听话者”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "hers": {
+   "modelText": "The ball is hers.",
+   "modelZh": "球是她的。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“属于已说明的女性玩偶”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "ours": {
+   "modelText": "The ball is ours.",
+   "modelZh": "球是我们的。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“属于包含说话者的一组”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "theirs": {
+   "modelText": "The ball is theirs.",
+   "modelZh": "球是他们的。",
+   "scene": "用两个玩偶和一个球或动物图，先说明主人，目标关系是“属于另一组玩偶”。换说话者或物品，再听短句。",
+   "contextual": true
+  },
+  "this": {
+   "modelText": "This is a ball.",
+   "modelZh": "这个是一个球。",
+   "scene": "按孩子作为说话者的近远摆球，this/that 用一个，these/those 用多个；先说清中文关系再听短句。",
+   "contextual": true
+  },
+  "that": {
+   "modelText": "That is a ball.",
+   "modelZh": "那个是一个球。",
+   "scene": "按孩子作为说话者的近远摆球，this/that 用一个，these/those 用多个；先说清中文关系再听短句。",
+   "contextual": true
+  },
+  "these": {
+   "modelText": "These are balls.",
+   "modelZh": "这些是球。",
+   "scene": "按孩子作为说话者的近远摆球，this/that 用一个，these/those 用多个；先说清中文关系再听短句。",
+   "contextual": true
+  },
+  "those": {
+   "modelText": "Those are balls.",
+   "modelZh": "那些是球。",
+   "scene": "按孩子作为说话者的近远摆球，this/that 用一个，these/those 用多个；先说清中文关系再听短句。",
+   "contextual": true
+  },
+  "myself": {
+   "modelText": "I did it myself.",
+   "modelZh": "我自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "yourself": {
+   "modelText": "You did it yourself.",
+   "modelZh": "你自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "himself": {
+   "modelText": "He did it himself.",
+   "modelZh": "他自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "herself": {
+   "modelText": "She did it herself.",
+   "modelZh": "她自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "ourselves": {
+   "modelText": "We did it ourselves.",
+   "modelZh": "我们自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "themselves": {
+   "modelText": "They did it themselves.",
+   "modelZh": "他们自己做的。",
+   "scene": "用玩偶演自己完成一件简单小事、没有别人代做的情境，先明确谁是说话者、做事者。",
+   "contextual": true
+  },
+  "itself": {
+   "modelText": "The toy moves by itself.",
+   "modelZh": "玩具自己在动。",
+   "scene": "玩偶看一个能自动移动的玩具图片，表示它自己，并不是另一个人正在推。",
+   "contextual": true
+  },
+  "fly": {
+   "modelText": "A fly is on the leaf.",
+   "modelZh": "一只苍蝇在叶子上。",
+   "scene": "看苍蝇的清楚图片，与小鸟区分。本次是苍蝇，不是飞行动作。"
+  },
+  "wave": {
+   "modelText": "A wave is on the sea.",
+   "modelZh": "海面上有一道海浪。",
+   "scene": "看海浪起伏图片；本次不是挥手动作。"
+  },
+  "drink": {
+   "modelText": "This drink is cold.",
+   "modelZh": "这杯饮料是凉的。",
+   "scene": "用饮料图片指物，本次练饮料这个名词，不要求表演喝水。"
+  },
+  "brush": {
+   "modelText": "This is a brush.",
+   "modelZh": "这是一把刷子。",
+   "scene": "指刷子实物或照片，本次练物品名称，不把刷牙动作当答案。"
+  },
+  "top": {
+   "modelText": "The top can spin.",
+   "modelZh": "陀螺能旋转。",
+   "scene": "看玩具陀螺或旋转图片，本次不是顶部或最高。"
+  },
+  "watch": {
+   "modelText": "This is my watch.",
+   "modelZh": "这是我的手表。",
+   "scene": "看手表照片或成人的手表，本次练物品名称，不是观看。"
+  },
+  "match": {
+   "modelText": "This is a match.",
+   "modelZh": "这是一根火柴。",
+   "scene": "只看火柴照片，说明物品名称；不点燃，不当作比赛。"
+  },
+  "shoot": {
+   "modelText": "I can shoot a basketball.",
+   "modelZh": "我会投篮。",
+   "scene": "让玩偶把小纸球投进桌面纸篮；本次不是射击。"
+  },
+  "patient": {
+   "modelText": "Please be patient.",
+   "modelZh": "请耐心一点。",
+   "scene": "两只玩偶轮流玩，另一只安静等待，表示有耐心；不是医院里的病人。"
+  },
+  "anxious": {
+   "modelText": "I am anxious to see you.",
+   "modelZh": "我渴望见到你。",
+   "scene": "玩偶盼着见朋友，期待见面；本次不把 anxious 解释成焦虑。"
+  },
+  "natural": {
+   "modelText": "He has a natural talent.",
+   "modelZh": "他有天生的才能。",
+   "scene": "玩偶第一次试节奏就做得很好，用故事说明天生的；本次不是自然材料。"
+  },
+  "lead": {
+   "modelText": "We lead a busy life.",
+   "modelZh": "我们过着忙碌的生活。",
+   "scene": "用日程图说明怎样生活；本次不是带路，也不是金属铅。"
+  },
+  "observe": {
+   "modelText": "We observe the rules.",
+   "modelZh": "我们遵守规则。",
+   "scene": "玩偶按约定排队轮流；本次是遵守，不是看东西。"
+  },
+  "observe-watch": {
+   "modelText": "We observe the butterfly.",
+   "modelZh": "我们仔细观察蝴蝶。",
+   "scene": "用蝴蝶大图看看细节，本次是仔细观察，不是遵守。"
+  },
+  "object": {
+   "modelText": "I object to that plan.",
+   "modelZh": "我反对那个计划。",
+   "scene": "玩偶礼貌地表达不赞同的计划，本次是反对，不是物品。"
+  },
+  "figure": {
+   "modelText": "I can figure it out.",
+   "modelZh": "我能弄明白。",
+   "scene": "用玩偶想通简单拼图的故事，目标表达是 figure out，不指人物或数字。"
+  },
+  "mean": {
+   "modelText": "What does this word mean?",
+   "modelZh": "这个词是什么意思？",
+   "scene": "家长先说一个孩子已懂的词，让玩偶询问它的意思；本次不是刻薄或打算。"
+  },
+  "state": {
+   "modelText": "This state is on the map.",
+   "modelZh": "这个州在地图上。",
+   "scene": "由家长指出地图上的一个州，本次不是心情状态，也不是国家。"
+  },
+  "capital": {
+   "modelText": "Beijing is the capital of China.",
+   "modelZh": "北京是中国的首都。",
+   "scene": "由成人在地图上指出国家和首都的位置，本次不是资金或大写字母。"
+  },
+  "content": {
+   "modelText": "I am content with it.",
+   "modelZh": "我对此感到满意。",
+   "scene": "玩偶对已完成的作品感到满足，本次不是书的内容。"
+  },
+  "fit": {
+   "modelText": "The shoes fit me.",
+   "modelZh": "这双鞋合我的脚。",
+   "scene": "用玩偶和鞋图比较大小合适，本次不是身体健康。"
+  },
+  "fit-healthy": {
+   "modelText": "Exercise helps me stay fit.",
+   "modelZh": "运动帮助我保持健康。",
+   "scene": "用活动和休息图说保持健康，本次不是衣物合身。"
+  },
+  "concrete": {
+   "modelText": "This bridge is concrete.",
+   "modelZh": "这座桥是混凝土做的。",
+   "scene": "看混凝土桥的图片，由成人解释材料；本次不是抽象的反义词。"
+  },
+  "virus": {
+   "modelText": "The computer has a virus.",
+   "modelZh": "电脑中了病毒。",
+   "scene": "只用纸屏幕讲电脑程序出问题，本次是计算机病毒，不是身体生病。"
+  },
+  "attack": {
+   "modelText": "An asthma attack needs help.",
+   "modelZh": "哮喘发作时需要帮助。",
+   "scene": "用友善的健康故事理解疾病发作，不要求模仿喘不过气，也不演打斗。"
+  },
+  "guard": {
+   "modelText": "We stay on guard.",
+   "modelZh": "我们保持警惕。",
+   "scene": "玩偶留意已有的安全提示，本次是警惕，不把它当保安的名字。"
+  },
+  "board": {
+   "modelText": "We are on board.",
+   "modelZh": "我们在船上。",
+   "scene": "把玩偶放在玩具船上，练 on board 的意思，不指木板。"
+  },
+  "present": {
+   "modelText": "This present is for you.",
+   "modelZh": "这份礼物是给你的。",
+   "scene": "玩偶互送礼物，本次不是现在或出席。"
+  },
+  "live": {
+   "modelText": "I live here.",
+   "modelZh": "我住在这里。",
+   "scene": "让玩偶指出居住的房子，本次不是活着或现场直播。"
+  },
+  "lie": {
+   "modelText": "It is wrong to lie.",
+   "modelZh": "说谎是不对的。",
+   "scene": "在温和故事中区分说了真话和没说真话，不要求孩子自己说谎；本次不是躺下。"
+  },
+  "soul": {
+   "modelText": "We did not see a soul.",
+   "modelZh": "我们一个人也没看见。",
+   "scene": "两只玩偶看空房间，表示一个人也没有；不讲灵魂概念。"
+  },
+  "spider web": {
+   "modelText": "This is a spider web.",
+   "modelZh": "这是一张蜘蛛网。",
+   "scene": "看清蜘蛛织出的网，不把蜘蛛身体当作蜘蛛网。"
+  },
+  "air": {
+   "modelText": "We breathe air.",
+   "modelZh": "我们呼吸空气。",
+   "scene": "家长用纸片示意周围有看不见的空气，可以轻轻扇动纸片看它移动；不以看到某个物体代替空气概念。"
+  },
+  "mixture": {
+   "modelText": "This is a mixture.",
+   "modelZh": "这是一个混合物。",
+   "scene": "把两种颜色的大积木放到同一个透明盒中，认识混合在一起的东西；不需要化学材料。"
+  },
+  "once": {
+   "modelText": "Clap once.",
+   "modelZh": "拍一次手。",
+   "scene": "家长只拍一次手，再与拍两次对照，表示次数，不是某个日期。"
+  },
+  "twice": {
+   "modelText": "Clap twice.",
+   "modelZh": "拍两次手。",
+   "scene": "家长拍两次手，再与拍一次对照，表示动作重复的次数。"
+  },
+  "material": {
+   "modelText": "We collect material for a book.",
+   "modelZh": "我们为一本书收集资料。",
+   "scene": "给玩偶收集照片和笔记，用来写一本小书；本次练写书用的资料，不把它当金属、塑料等材质。",
+   "focus": "写书等使用的资料"
+  },
+  "transfer": {
+   "modelText": "We transfer to a bus.",
+   "modelZh": "我们换乘公共汽车。",
+   "scene": "用玩偶先坐一种交通工具，再改乘公交模型；强调换乘，不只是在两个位置之间移动。"
+  },
+  "rather": {
+   "modelText": "I would rather stay home.",
+   "modelZh": "我宁愿待在家里。",
+   "scene": "给玩偶两个选择，让它表达更愿意做哪一个；本次是 would rather 表示宁愿，不是程度相当。"
+  },
+  "mr": {
+   "modelText": "Hello, Mr. Lee.",
+   "modelZh": "你好，李先生。",
+   "scene": "先介绍一位人物叫李先生，再让玩偶礼貌称呼；称谓和名字连着用，不从服装猜称谓。",
+   "contextual": true
+  },
+  "mrs": {
+   "modelText": "Hello, Mrs. Lee.",
+   "modelZh": "你好，李太太。",
+   "scene": "由成人先说明这位人物在故事中的称谓，再用称谓和姓打招呼，不让孩子猜婚姻状态。",
+   "contextual": true,
+   "extension": true
+  },
+  "ms": {
+   "modelText": "Hello, Ms. Lee.",
+   "modelZh": "你好，李女士。",
+   "scene": "介绍故事中的李女士，再让玩偶用称谓和姓打招呼，不需要知道她的婚姻状态。",
+   "contextual": true
+  },
+  "miss": {
+   "modelText": "Hello, Miss Lee.",
+   "modelZh": "你好，李小姐。",
+   "scene": "成人先介绍故事中使用的称谓，再让玩偶用称谓和姓打招呼；不以人物外貌作为答案。",
+   "contextual": true,
+   "extension": true
+  },
+  "sir": {
+   "modelText": "Thank you, sir.",
+   "modelZh": "谢谢您，先生。",
+   "scene": "在玩偶的礼貌对话里称呼对方为先生，先由成人说明称谓，不凭图片猜身份。",
+   "contextual": true
+  },
+  "madam": {
+   "modelText": "Thank you, madam.",
+   "modelZh": "谢谢您，女士。",
+   "scene": "在玩偶的礼貌对话里称呼对方为女士，先由成人说明称谓。",
+   "contextual": true
+  }
+ }
+}
