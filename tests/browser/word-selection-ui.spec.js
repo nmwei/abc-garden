@@ -53,3 +53,31 @@ test('removal keeps a filtered sequence across a page boundary',async({page})=>{
  await page.locator('[data-course=remove-selection]').click();await expect(page.locator('.english-word')).toHaveText(rows[capacity+1].display||rows[capacity+1].id);
  await expect(page.locator('#word-page-input')).toHaveValue('2');await expect(page.locator('#word-topic')).toHaveValue('food');
 });
+
+test('catalog offers a temporary learning action only after a successful save',async({page})=>{
+ await page.clock.install();await page.goto('/#/words');
+ await page.locator('[data-filter=all]').click();
+ await expect(page.locator('.word-toolbar-actions [data-course="guided-selected"]')).toHaveCount(0);
+ await expect(page.getByRole('button',{name:'去一起学',exact:true})).toHaveCount(0);
+ await page.getByRole('button',{name:'加入正在学 apple',exact:true}).click();
+ const notice=page.locator('#toast'),shortcut=notice.getByRole('button',{name:'去一起学',exact:true});
+ await expect(notice).toContainText('已加入正在学');await expect(shortcut).toBeVisible();
+ await shortcut.focus();await page.clock.runFor(9000);await expect(shortcut).toBeVisible();
+ await page.locator('#word-search').focus();await page.mouse.move(0,0);await page.clock.runFor(8100);
+ await expect(shortcut).toHaveCount(0);await expect(notice).not.toHaveClass(/show/);
+ await page.reload();await page.locator('[data-filter=all]').click();await expect(shortcut).toHaveCount(0);
+ await page.getByRole('button',{name:'移出正在学 apple',exact:true}).click();
+ await page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(key==='abc-module-content-v1')throw Error('quota');return original.call(this,key,value);};});
+ await page.getByRole('button',{name:'加入正在学 apple',exact:true}).click();
+ await expect(notice).toContainText('保存失败');await expect(shortcut).toHaveCount(0);
+ await expect(page.getByRole('button',{name:'加入正在学 apple',exact:true})).toBeVisible();
+});
+
+test('leaving the catalog clears the success action while the normal learning entry remains',async({page})=>{
+ await page.goto('/#/words');await page.locator('[data-filter=all]').click();
+ await page.getByRole('button',{name:'加入正在学 apple',exact:true}).click();
+ await expect(page.locator('#toast').getByRole('button',{name:'去一起学',exact:true})).toBeVisible();
+ await page.locator('[data-filter=learning]').click();
+ await expect(page.locator('#toast').getByRole('button',{name:'去一起学',exact:true})).toHaveCount(0);
+ await expect(page.getByRole('button',{name:'一起学',exact:true})).toBeVisible();
+});

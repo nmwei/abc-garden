@@ -525,7 +525,7 @@ test('catalog shortcut opens only selected words after adding a word',async({pag
  await page.locator('#word-search').fill('apple');
  await page.locator('[data-course="word"][data-word="apple"]').click();
  await page.getByRole('button',{name:'加入正在学 apple',exact:true}).click();
- await page.locator('[data-course="guided-selected"]').click();
+ await page.locator('#toast').getByRole('button',{name:'去一起学',exact:true}).click();
  if(await action(page,'start').isVisible())await action(page,'start').click();
  expect((await saved(page)).session.scope.sort()).toEqual(['apple','hat']);
 });
