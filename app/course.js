@@ -1,3 +1,4 @@
+import {guidedEntry} from './guided-words-view.js';
 import {guidedSense} from './guided-content-state.js';
 import {LETTER_AUDIO_SOURCES,letterSourceInfo} from './letter-audio.js';
 import {GuidedWords} from './guided-words.js';
@@ -26,15 +27,15 @@ export class Course {
   this.recorder=new LocalRecorder(message=>this.updateRecording(message));this.role='B';this.message='';this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;
   this.guided=new GuidedWords({
    audio:this.audio,play:items=>this.play(items),wordClip:word=>this.wordClip(word),sentenceClip:word=>this.wordClip(word,'sentence'),
-   getWords:()=>this.guidedWords(),
+   getWords:()=>this.guidedWords(),getMode:()=>this.guidedReview?'review':'learn',
    getRevisions:()=>this.guidedWords().map(word=>({id:word.id,sense:guidedSense(word),baseline:guidedSense(CATALOG_BY_ID.get(word.id)||word)})),
    getActivity:activityFor,getGame:guidedGame,gameIds:guidedGameIds,getValidIds:()=>CATALOG_BY_ID.keys(),contentVersion:GUIDED_PLAN_FINGERPRINT,policy:guidedPolicy,getPolicy:getGuidedPolicy,getSettings:getGuidedSettings,
-   refresh:this.refresh,enter:()=>this.open('guided'),exit:()=>{this.masteryFilter='learning';this.open('words');}
+   refresh:this.refresh,enter:()=>this.open('guided'),exit:()=>{this.masteryFilter=this.guidedReview?'mastered':'learning';this.open('words');}
   });
  }
  get state(){return this.getState().learning;}
  leave(reset=true){this.guided?.leave();this.quiz=null;this.stopWordLoop();this.followToken=(this.followToken||0)+1;this.customWords?.stop();if(reset){this.breakDeadline=null;this.breakShown=false;}this.recorder.dispose();this.audio.stop();clearTimeout(this.breakTimer);this.resizeObserver?.disconnect();this.resizeObserver=null;this.unmountWordBrowserLayout();}
- open(view){this.leave(view==='map'||view==='guided');this.view=view;if(view==='words')this.guided?.syncScope();this.message='';this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;this.heard=false;this.round=(this.round||0)+1;this.refresh();if(!['map','guided'].includes(view)&&!this.breakShown){this.breakDeadline??=Date.now()+15*60000;this.breakTimer=setTimeout(()=>{this.breakShown=true;this.toast('已经练习一小会儿啦，可以休息一下。');},Math.max(0,this.breakDeadline-Date.now()));}}
+ open(view){this.leave(view==='map'||view==='guided');this.view=view;if(view==='words'){this.guidedReview=false;this.guided?.syncScope();}this.message='';this.spellDraft='';this.spellFailures=0;this.spellFeedbackKind='';this.answered=false;this.assisted=false;this.heard=false;this.round=(this.round||0)+1;this.refresh();if(!['map','guided'].includes(view)&&!this.breakShown){this.breakDeadline??=Date.now()+15*60000;this.breakTimer=setTimeout(()=>{this.breakShown=true;this.toast('已经练习一小会儿啦，可以休息一下。');},Math.max(0,this.breakDeadline-Date.now()));}}
  play(keys){this.recorder.stop();document.querySelector('#self-recording')?.pause();return this.audio.play(keys);}
  record(item,skill,result){
   if(skill!=='listen'||result!=='independent'||!this.heard||this.word.pictureCue)return;
@@ -51,7 +52,7 @@ export class Course {
  library(){return wordLibrary(this.customWords?.words||[],this.customWords?.data.wordMeanings);}
  sourceWords(){const lib=this.library();return this.masteryFilter==='learning'?lib.selected:lib.all;}
  learningWords(){return this.library().selected.filter(word=>!this.mastery.has(word.id));}
- guidedWords(){return this.library().selected.filter(word=>!this.mastery.has(word.id)||this.mastery.data?.entries[word.id]?.source==='auto');}
+ guidedWords(){if(this.guidedReview)return this.library().all.filter(word=>this.mastery.has(word.id));return this.library().selected.filter(word=>!this.mastery.has(word.id)||this.mastery.data?.entries[word.id]?.source==='auto');}
  orderDialog(){
   return `<dialog class="word-order-dialog" id="word-order-dialog" aria-labelledby="word-order-title">
     <h2 id="word-order-title">调整学习顺序</h2>
@@ -178,7 +179,7 @@ export class Course {
   if(this.masteryFilter!=='learning'||!count)return '';
   return `<div class="word-loop-control">${button('word-loop',this.wordLoop?'停止播放':`循环听 · ${count} 个词`,`aria-pressed="${!!this.wordLoop}" aria-describedby="word-loop-scope"`)}<span id="word-loop-scope" class="sr-only">全部正在学 · 英文＋中文</span></div>`;
  }
- wordToolbar(){return `<div class="word-workspace-toolbar"><div class="skill-tabs" aria-label="词汇练习类型">${[['learn',this.word&&!this.word.image?'语境听词':'看图听词'],['listen',this.word&&!this.word.image?'听音理解':'听音找图'],['speak','试着说'],['spell','拼一拼']].map(([id,label])=>`<button data-course="mode" data-mode="${id}" aria-pressed="${this.mode===id}">${label}</button>`).join('')}</div><div class="word-toolbar-actions">${this.wordLoopControl()}${this.masteryFilter==='learning'?this.guided.entry():''}</div></div>`;}
+ wordToolbar(){return `<div class="word-workspace-toolbar"><div class="skill-tabs" aria-label="词汇练习类型">${[['learn',this.word&&!this.word.image?'语境听词':'看图听词'],['listen',this.word&&!this.word.image?'听音理解':'听音找图'],['speak','试着说'],['spell','拼一拼']].map(([id,label])=>`<button data-course="mode" data-mode="${id}" aria-pressed="${this.mode===id}">${label}</button>`).join('')}</div><div class="word-toolbar-actions">${this.wordLoopControl()}${this.masteryFilter==='learning'?this.guided.entry():this.masteryFilter==='mastered'&&this.library().all.some(word=>this.mastery.has(word.id))?guidedEntry(this.library().all.filter(word=>this.mastery.has(word.id)).length,{action:'review',label:'复习一下'}):this.masteryFilter==='all'&&this.guidedWords().length?button('guided-selected',`去一起学 · ${this.guidedWords().length} 个词 →`,'title="学习正在学里的词，不受当前搜索和分类影响"'):''}</div></div>`;}
  wordWorkspace(){return `${this.quiz?.done?this.quizComplete():this.pool().length||this.answered||this.quiz?this.wordActivity(this.word):`<section class="learning-panel empty-content" data-empty-scope="${this.wordQuery.trim()||this.topic!=='all'?'filtered':'selection'}"><p>${this.emptyWords()}</p><div class="word-empty-guide"><p class="micro">${this.masteryFilter==='learning'&&!this.wordQuery.trim()&&this.topic==='all'?'到词库找到喜欢的词，点“加入正在学”，再回来练习。':'可以先到词库看看，选择一个喜欢的词开始。'}</p>${button('browse-words','去词库选词','',true)}</div></section>`}`;}
 
  selectionButton(w){const selected=this.library().selected.some(x=>x.id===w.id),known=this.mastery.has(w.id);if(this.masteryFilter==='learning'&&!selected)return '';const action=known?'restart-learning':selected?'remove-selection':'add-selection',label=known?'重新学习':selected?'移出正在学':'加入正在学';return `<div class="word-selection-toolbar"><button type="button" class="word-selection-action ${action==='remove-selection'?'':'is-add'}" data-course="${action}" data-word="${w.id}" aria-label="${label} ${esc(w.display||w.id)}">${label}</button></div>`;}
@@ -400,6 +401,11 @@ export class Course {
  }
  async action(el){
   const a=el.dataset.course;
+  if(a==='guided-review'||a==='guided-selected'){
+   this.guidedReview=a==='guided-review';
+   if(!this.guidedReview)this.masteryFilter='learning';
+   this.guided.open();return;
+  }
   if(a.startsWith('guided-'))return this.guided.action(a.slice(7),el);
   if(a==='word-page'){
    const page=Number(el.dataset.page);if(!Number.isInteger(page))return;

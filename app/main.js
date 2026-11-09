@@ -45,7 +45,7 @@ const letterAudioSettings=new LetterAudioSettings({audio,getSource:letterSource,
  if(!save()){state.settings.letterAudioSource=previous;return false;}
  return true;
 },stop:()=>{cancelPairPlayback();listenGame.leave();follow.stop(false);audio.stop();}});
-const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback,getGuidedPolicy:()=>guidedSettings.policy(),getGuidedSettings:()=>guidedSettings.editor({embedded:true})});
+const course=new Course({getState:()=>state,save,audio,toast,refresh:render,customWords:learning,mastery,feedback,getGuidedPolicy:mode=>guidedSettings.policy(mode),getGuidedSettings:()=>guidedSettings.editor({embedded:true})});
 function save(){try{localStorage.setItem(PREFERENCES_KEY,JSON.stringify({version:1,settings:state.settings,customAudio:state.customAudio}));return true;}catch{storageWarning='本机存储不可用或空间不足，本次变更可能无法保存。本次仍可继续使用。';toast(storageWarning);return false;}}
 function toast(text){const target=document.querySelector('#toast');target.textContent=text;target.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>target.classList.remove('show'),4500);}
 const btn=(action,label,style='secondary',glyph='',extra='')=>`<button type="button" class="button ${style}" data-action="${action}" ${extra}>${glyph?icon(glyph):''}${label}</button>`;

@@ -18,5 +18,6 @@ export function reconcileGuidedSenses(data,revisions,at){
   Object.defineProperty(data.contentRevisions,id,{value:sense,enumerable:true,writable:true,configurable:true});
  }
  if(data.session?.words.some(id=>changed.includes(id)))data.session=null;
+ if(data.parked?.session?.words.some(id=>changed.includes(id)))data.parked.session=null;
  return changed;
 }
