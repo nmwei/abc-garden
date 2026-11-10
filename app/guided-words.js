@@ -129,7 +129,10 @@ export class GuidedWords {
   }
   this.restoreFocus='';
   if(this.blocked)document.querySelectorAll('[data-course^="guided-"]:not([data-course="guided-exit"]):not([data-course="guided-restart-cancel"])').forEach(control=>control.disabled=true);
-  if(this.busy)document.querySelectorAll('[data-course^="guided-"]:not([data-course="guided-exit"]):not([data-course="guided-finish"])').forEach(control=>control.disabled=true);
+  if(this.busy)document.querySelectorAll('[data-course^="guided-"]:not([data-course="guided-exit"]):not([data-course="guided-finish"])').forEach(control=>{
+   if(this.data.session?.queue[0]?.kind==='recall'&&['guided-hint','guided-answer'].includes(control.dataset.course))return;
+   control.disabled=true;
+  });
  }
  mount(){
   clearInterval(this.clock);this.clock=null;this.dockObserver?.disconnect();this.placeView();
@@ -157,7 +160,7 @@ export class GuidedWords {
  html(){return guidedPage({...this.engine.describe(this.data,this.ids()),settings:this.overview?this.getSettings():'',newPolicy:this.engine.policy,restartConfirm:this.restartConfirm,words:this.words(),getActivity:this.getActivity,getGame:this.getGame,overview:this.overview,scopeChanged:this.scopeChanged,contentChanged:this.contentChanged,error:this.error,blocked:this.blocked,feedback:this.feedback,playing:this.playing,position:this.positionKey()});}
  async action(action,el){
   if(action==='exit'){this.stopPlayback();this.exit();return;}
-  if(this.busy&&action!=='finish')return;
+  if(this.busy&&action!=='finish'&&!(this.data.session?.queue[0]?.kind==='recall'&&['hint','model','answer'].includes(action)))return;
   if(action==='restart-cancel'){this.restartConfirm=false;this.restoreFocus='guided-restart';this.refresh();return;}
   if(action==='restart-confirm'){this.restart();return;}
   if(action==='restart'){
@@ -174,7 +177,8 @@ export class GuidedWords {
   const current=this.engine.describe(this.data,this.ids()).currentTask;
   if(action==='model'||action==='hint'){
    const word=this.words().find(word=>word.id===current.id);if(!word||!['learn','choose','understand','recall','play'].includes(current.kind)||current.kind==='play'&&!current.wordGame)return;
-   if(current.kind==='recall'&&!current.prompted&&!this.update({type:'prompt'})){this.refresh();return;}
+   this.stopPlayback();
+   if(current.kind==='recall'&&!this.update({type:'preview'})&&(this.blocked||this.error)){this.refresh();return;}
    const generation=this.generation;this.busy=true;this.playing=action;this.refresh();
    const activity=this.getActivity(word);
    if(activity.contextual)this.audio.unlockSpeech?.();
@@ -184,12 +188,12 @@ export class GuidedWords {
    this.restoreFocus=action==='hint'?'guided-hint':'guided-model';
    this.refresh();return;
   }
-  this.audio.stop();
+  this.stopPlayback();
   let saved=false,message='';
   if(action==='choose'){saved=this.update({type:'choose',id:el.dataset.word});message=el.dataset.word===current.id?'听懂啦，刚才的反应记下了。':'没关系，我们换个方式再试试。';}
   if(action==='understood'){saved=this.update({type:'understood',correct:el.dataset.correct==='yes'});message=el.dataset.correct==='yes'?'听懂啦，刚才的反应记下了。':'没关系，我们换个方式再试试。';}
   if(action==='next'){saved=this.update({type:'continue'});message=current.kind==='play'?'小游戏玩好了，接着来。':'一起玩过啦，接着试下一步。';}
-  if(action==='answer'){saved=this.update({type:'recall',outcome:el.dataset.result});message=el.dataset.result==='independent'?'这次自己说出来了，记下啦。':'记下这次需要的帮助，再一起玩一玩。';}
+  if(action==='answer'){saved=this.update({type:'recall',outcome:el.dataset.result,parentReported:true});message=el.dataset.result==='independent'?'这次自己说出来了，记下啦。':'记下这次需要的帮助，再一起玩一玩。';}
   if(action==='defer'){saved=this.update({type:'defer'});message='今天先跳过了这个词，已保留，改天再学。';}
   if(saved)this.feedback=message;
   this.refresh();

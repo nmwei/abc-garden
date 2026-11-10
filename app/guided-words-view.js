@@ -12,7 +12,7 @@ const recallFirst=view=>view.policy.teaching.unfamiliarStart==='recall'&&!(view.
 const groupLabel=policy=>policy.teaching.newWordsPerGroup===1?'1':`1～${policy.teaching.newWordsPerGroup}`;
 const parentTarget=word=>`<details class="guided-parent-cue" data-guided-detail="target"><summary>家长看目标 · 不念给孩子</summary><div class="guided-word-chips"><span>${wordName(word)}</span></div></details>`;
 const parentNote=text=>`<details class="guided-parent-note" data-guided-detail="note"><summary>陪学小提示</summary><p>${text}</p></details>`;
-const help=policy=>`<details class="guided-parent-help" data-guided-detail="help"><summary>家长怎么陪，怎么记录？</summary><p>先确认孩子懂中文意思，再把英文声音和实物、动作连起来。可以跟一次，不要求连读很多遍。</p><p>物品词练自己说名字；功能词、时态词在短话或回应里练使用，不考读字、猜图标。抽象词先理解具体例子，中文概念不熟就先跳过。</p><p>让孩子自己说时，先等约 5 秒。卡住就听示范，温和接一句正确读音，再换个活动。能辨认出目标词就好，不逐音挑错。其他合理叫法先肯定，再补上这次目标词。</p><p>没有听提示、家长也没有说出英文，才记录“自己说出”。给了中文答案、口型或开头音的帮助，就记录“提示后说出”。跟读整句不算独立使用。</p><p>每次重点认识 ${groupLabel(policy)} 个词，其他词和小游戏会自然穿插，学过的词稍后再回来想。小游戏不考孩子，也不计掌握。约 ${policy.session.breakAfterMinutes} 分钟休息，累了随时停，未完成的下次继续。记忆还要通过跨日复习观察。记录保存在当前设备。</p></details>`;
+const help=policy=>`<details class="guided-parent-help" data-guided-detail="help"><summary>家长怎么陪，怎么记录？</summary><p>先确认孩子懂中文意思，再把英文声音和实物、动作连起来。可以跟一次，不要求连读很多遍。</p><p>物品词练自己说名字；功能词、时态词在短话或回应里练使用，不考读字、猜图标。抽象词先理解具体例子，中文概念不熟就先跳过。</p><p>让孩子自己说时，先等约 5 秒。卡住就听示范，温和接一句正确读音，再换个活动。能辨认出目标词就好，不逐音挑错。其他合理叫法先肯定，再补上这次目标词。</p><p>孩子在听示范或家长提示之前已经说出，就记录“自己说出”；说出后再听示范巩固，不影响这次记录。听过示范才说出，记录“提示后说出”。给了中文答案、口型或开头音的帮助，就记录“提示后说出”。跟读整句不算独立使用。</p><p>每次重点认识 ${groupLabel(policy)} 个词，其他词和小游戏会自然穿插，学过的词稍后再回来想。小游戏不考孩子，也不计掌握。约 ${policy.session.breakAfterMinutes} 分钟休息，累了随时停，未完成的下次继续。记忆还要通过跨日复习观察。记录保存在当前设备。</p></details>`;
 
 export function guidedEntry(count,{action='open',label='一起学'}={}){
  return `<section class="guided-entry" aria-label="家长陪同学习">${button(action,`${esc(label)} <span aria-hidden="true">→</span>`,{primary:true,attrs:`aria-label="${esc(label)}" title="口语练习 ${count} 个词 · 家长陪同"`})}</section>`;
@@ -58,7 +58,7 @@ function teaching(activity){
 }
 
 function audioButton(view,label,{hint=false,primary=true}={}){
- return button(hint?'hint':'model',`${icon('speaker')}${view.playing?'正在播放…':label}`,{primary,attrs:`aria-describedby="guided-audio-status" ${view.playing?'disabled':''}`});
+ return button(hint?'hint':'model',`${icon('speaker')}${view.playing&&!hint?'正在播放…':label}`,{primary,attrs:`aria-describedby="guided-audio-status" ${view.playing&&!hint?'disabled':''}`});
 }
 
 function dock(view,current,activity){
@@ -67,8 +67,8 @@ function dock(view,current,activity){
  else if(current.kind==='choose')controls=audioButton(view,'听题目');
  else if(current.kind==='understand')controls=`${audioButton(view,activity.contextual?'听短句':'只听声音')}<fieldset class="guided-rating"><legend>请家长看孩子的反应</legend><div class="guided-rating-options is-binary">${button('understood','听懂了，做对了',{id:'understood-yes',attrs:`data-correct="yes" ${current.heard?'':'disabled'}`})}${button('understood','还没明白，再玩一次',{id:'understood-no',attrs:`data-correct="no" ${current.heard?'':'disabled'}`})}</div></fieldset>`;
  else if(current.kind==='play')controls=current.wordGame?`<div class="guided-play-actions">${audioButton(view,'听声音',{primary:false})}${button('next','玩好了，接着来',{primary:true})}</div>`:button('next','玩好了，接着来',{primary:true});
- else controls=`<div class="guided-help-control">${audioButton(view,current.prompted?'再听一次示范':'听示范帮一下',{hint:true,primary:false})}<span>${current.prompted?'这次听过提示，按实际表现记录。':'先等约 5 秒，卡住再帮一下。'}</span></div><fieldset class="guided-rating"><legend>请家长记录这次表现</legend><div class="guided-rating-options">${button('answer',activity.responseMode==='phrase'?'自己用出来了':'自己说出了',{id:'answer-independent',attrs:`data-result="independent" ${current.prompted?'disabled':''}`})}${button('answer','提示后说出了',{id:'answer-prompted',attrs:'data-result="prompted"'})}${button('answer','还需要练',{id:'answer-again',attrs:'data-result="again"'})}</div></fieldset>`;
- const status=view.playing?'正在播放，请稍等。':current.kind==='play'?'换着玩一玩，不用记录对错。':current.kind==='recall'&&current.prompted?'听过提示后，不计为独立说出。':view.feedback||(current.kind==='learn'?(current.heard?'一起玩过了，就点继续。':'先听示范，一起玩过再继续。'):'');
+ else controls=`<div class="guided-help-control">${audioButton(view,'听示范',{hint:true,primary:false})}<span>试听不影响表现记录。</span></div><fieldset class="guided-rating"><legend>请家长记录这次表现</legend><div class="guided-rating-options">${button('answer',activity.responseMode==='phrase'?'自己用出来了':'自己说出了',{id:'answer-independent',attrs:`data-result="independent"`})}${button('answer','提示后说出了',{id:'answer-prompted',attrs:'data-result="prompted"'})}${button('answer','还需要练',{id:'answer-again',attrs:'data-result="again"'})}</div></fieldset>`;
+ const status=view.playing?'正在播放，请稍等。':current.kind==='play'?'换着玩一玩，不用记录对错。':current.kind==='recall'&&current.prompted?'先说出再听，也可记自己说出。':view.feedback||(current.kind==='learn'?(current.heard?'一起玩过了，就点继续。':'先听示范，一起玩过再继续。'):'');
  return `<footer class="guided-dock" aria-label="本步操作"><p id="guided-audio-status" class="guided-audio-status" role="status">${esc(status)}</p><div class="guided-dock-inner guided-dock-${current.kind}">${controls}</div></footer>`;
 }
 

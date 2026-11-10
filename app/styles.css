@@ -393,7 +393,14 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
 .listen-stage{position:relative}.listen-stage>.quiz-celebration{top:45%}
 
-.pair-target{position:relative;width:max-content;min-width:130px;margin:10px auto 22px;padding:12px 44px}.pair-target .big-glyph{display:block;margin:0}.pair-voice{display:grid;place-items:center;position:absolute;right:3px;top:3px;width:44px;height:44px;min-height:44px;border-radius:50%;color:var(--ink);background:transparent;border:0;cursor:pointer}.pair-voice svg{width:21px;height:21px}.pair-option{position:relative}.pair-option .choice{padding-top:32px}.pair-voice:focus-visible{outline:3px solid #537c9e;outline-offset:2px}
+.letters-page .pair-shell .practice-top,.practice-pair .practice-kicker{display:none}
+
+.pair-workspace{width:100%;max-width:780px;margin:16px auto;display:grid;justify-items:center;gap:16px}
+.practice-pair .pair-target .big-glyph{margin:0;line-height:1.1}
+.pair-target{position:relative;display:flex;flex-direction:column;align-items:center;min-width:130px;padding:12px 8px;gap:8px}.pair-target .big-glyph{display:block;margin:0}.pair-voice{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:8px 10px;border-radius:10px;color:var(--ink);background:transparent;border:0;cursor:pointer;font-size:14px;white-space:nowrap}.pair-voice svg{width:18px;height:18px}.pair-option{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;padding:8px 0}.pair-voice:hover{background:var(--pale)}.pair-voice:focus-visible{outline:3px solid #537c9e;outline-offset:-3px}
+.pair-workspace>.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;width:100%;max-width:440px;margin:0}.pair-workspace .choice{width:clamp(112px,12vw,160px);max-width:100%;aspect-ratio:1;min-width:0;min-height:128px;padding:12px 8px;border:1px solid #e1e5d8;border-radius:22px;background:transparent}
+.pair-workspace .choice.revealed{background:#e7eedc;border-color:#8ba67c}
+
 
 .word-list-toggle{display:none}
 .word-learning-content{display:contents}
@@ -567,8 +574,12 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .letters-page .letter-detail #letter-play-status{grid-column:2;grid-row:3;margin:0;min-height:24px}
 }
 .pair-target,.pair-option{border-radius:22px}
-.pair-target.is-speaking,.pair-option.is-speaking .choice{background:#f5ead2;box-shadow:inset 0 0 0 3px #ac843d}
-[data-pair-case].is-speaking .pair-voice{background:#f0dfc4;color:#795c29}
+/* Playback is a listening cue, not a selected or graded card. */
+.pair-target.is-speaking .big-glyph,.pair-option.is-speaking .choice{color:var(--green)}
+.pair-voice::after{content:'';width:5px;height:5px;border-radius:50%;background:currentColor;visibility:hidden;flex:none}
+[data-pair-case].is-speaking .pair-voice{color:var(--green)}
+[data-pair-case].is-speaking .pair-voice::after{visibility:visible}
+[data-pair-case].is-speaking .pair-voice svg{stroke-width:2.5}
 @container garden-content (max-width:540px){
  .letters-page .activity-switch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
  .letter-tools{align-items:stretch}
@@ -585,10 +596,12 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .letters-page .practice-kicker{display:none}
  .letters-page #task-title{grid-column:1/-1;margin:0;font-size:24px}
  .letters-page .practice-panel>.micro{grid-column:1/-1;margin:0}
- .letters-page .pair-target{grid-column:1;grid-row:3;margin:0 auto;padding:12px 44px;min-width:0}
- .letters-page .pair-target .big-glyph{font-size:clamp(100px,12vw,156px)}
+ .letters-page .practice-pair{grid-template-columns:minmax(0,1fr)}
+ .letters-page .pair-workspace{grid-column:1/-1;grid-row:3;grid-template-columns:minmax(180px,1fr) minmax(0,1.6fr);gap:clamp(24px,4vw,56px);align-items:center;align-self:start;margin:clamp(4px,calc((100dvh - 720px)*.25),80px) auto 4px}
+ .letters-page .pair-target{margin:0;min-width:0;padding:8px;gap:4px}
+ .letters-page .pair-target .big-glyph{font-size:clamp(100px,10vw,144px)}
  .letters-page .practice-panel>.choices{grid-column:2;grid-row:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
- .letters-page .pair-option .choice{width:100%;min-width:0;min-height:144px;font-size:clamp(64px,7vw,96px);padding:32px 8px 14px}
+ .letters-page .pair-option .choice{font-size:clamp(64px,7vw,96px)}
  .letters-page .practice-panel>.feedback{grid-column:1/-1;min-height:28px;margin:0;line-height:1.5}
  .letters-page .practice-bottom{margin-top:12px;gap:12px}
  .letters-page>.listen-game{max-width:none;width:100%;min-height:var(--letter-stage-height,420px);display:flex;flex-direction:column}

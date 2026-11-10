@@ -165,6 +165,14 @@ function deferNew(data){
  for(const next of session.queue)if(next.kind==='choose'&&next.options.some(id=>deferred.has(id))){next.kind='understand';delete next.options;}
 }
 export function markPrompt(data){const current=data.session.queue[0];if(current.kind==='recall')current.prompted=true;}
+// Keep exposure separate from the parent's report of what happened before playback.
+function previewRecall(data,now){
+ const current=data.session.queue[0],entry=entryFor(data,current.id,now);
+ current.beforePreview??={at:now,lastModelAt:entry.lastModelAt||0};
+ current.prompted=true;
+ entry.lastModelAt=now;
+ data.session.results[current.id].lastPracticeStep=data.session.activityStep+1;
+}
 export function markHeard(data,now=Date.now()){
  const current=data.session.queue[0];current.heard=true;
  // Hearing the answer is a prompt even if a different host omitted its prompt event.
@@ -201,17 +209,17 @@ export function nextTeachingStep(data,now=Date.now(),random=Math.random){
  else if(current.kind!=='play')return false;
  advance(data,now,random);return true;
 }
-export function answerRecall(data,outcome,now=Date.now(),random=Math.random){
+export function answerRecall(data,outcome,now=Date.now(),random=Math.random,parentReported=false){
  const session=data.session, current=session.queue[0], policy=session.policySnapshot;
  if(current.kind!=='recall'||!outcomes.has(outcome))return false;
- if(outcome==='independent'&&current.prompted)return false;
+ if(outcome==='independent'&&current.prompted&&!parentReported)return false;
  const result=session.results[current.id];
  if(result.attempts>=policy.retrieval.maxAttempts)return false;
  const entry=entryFor(data,current.id,now);
  if(!entry.meaning&&policy.teaching.unfamiliarStart!=='recall')return false;
 
  // Record what happened before evaluating whether it is durable evidence.
- const clean=outcome==='independent'&&!current.prompted;
+ const clean=outcome==='independent'&&(parentReported||!current.prompted);
  if(clean&&policy.teaching.unfamiliarStart==='recall')entry.meaning=true;
  const wasHelped=result.helped;
  result.attempts++;
@@ -230,17 +238,20 @@ export function answerRecall(data,outcome,now=Date.now(),random=Math.random){
  // need elapsed retention as well; a new calendar date alone is insufficient.
  const establishedReview=current.review&&!result.taught&&(policy.version<2||entry.days.length>0);
  const goalReached=clean&&(establishedReview||result.independent>=policy.retrieval.newWordSuccesses);
- const evidenceAnchor=Math.max(entry.lastCreditAt||entry.seenAt,entry.lastModelAt||0);
- const retentionReady=policy.version<2||!entry.days.length||now-evidenceAnchor>=86400000;
- const uniqueDay=policy.version<2||!entry.days.includes(dayKey(now));
+ // An explicit parent report can establish recall before the reinforcing demo.
+ const before=clean&&parentReported?current.beforePreview:null;
+ const evidenceAt=before?.at??now;
+ const evidenceAnchor=Math.max(entry.lastCreditAt||entry.seenAt,before?.lastModelAt??entry.lastModelAt??0);
+ const retentionReady=policy.version<2||!entry.days.length||evidenceAt-evidenceAnchor>=86400000;
+ const uniqueDay=policy.version<2||!entry.days.includes(dayKey(evidenceAt));
  const qualifies=goalReached&&result.assessable&&!result.qualified&&retentionReady&&uniqueDay;
  if(qualifies){
-  if(!entry.days.includes(dayKey(now))){
-   entry.days=[...entry.days,dayKey(now)].slice(-14);
+  if(!entry.days.includes(dayKey(evidenceAt))){
+   entry.days=[...entry.days,dayKey(evidenceAt)].slice(-14);
    entry.level=Math.min(3,entry.level+1);
-   if(policy.version>=2)entry.lastCreditAt=now;
+   if(policy.version>=2)entry.lastCreditAt=evidenceAt;
   }
-  if(current.transfer)entry.transferAt=now;
+  if(current.transfer)entry.transferAt=evidenceAt;
   result.qualified=true;
  }
 
@@ -329,17 +340,19 @@ export function createGuidedLearning({policy={},now=Date.now,random=Math.random,
    if(expired(data,at)){finishRound(data,'rest');}
    else if(event.type==='prompt'){
     if(current.kind!=='recall')return state;markPrompt(data);
+   }else if(event.type==='preview'){
+    if(current.kind!=='recall')return state;previewRecall(data,at);
    }else if(event.type==='model'){
     if(!kinds.has(current.kind)||current.kind==='play'&&!current.wordGame)return state;markHeard(data,at);
    }else if(event.type==='understood')accepted=answerUnderstanding(data,event.correct,at,random);
    else if(event.type==='choose')accepted=answerChoice(data,event.id,at,random);
    else if(event.type==='continue')accepted=nextTeachingStep(data,at,random);
    else if(event.type==='recall'){
-    accepted=answerRecall(data,event.outcome,at,random);
+    accepted=answerRecall(data,event.outcome,at,random,event.parentReported===true);
     if(accepted){
      data.observations??=[];
-     const credited=!entryAt(state,current.id)?.days.includes(dayKey(at))&&entryAt(data,current.id).days.includes(dayKey(at));
-     data.observations.push({at,id:current.id,revision:Object.hasOwn(data.contentRevisions,current.id)?data.contentRevisions[current.id]:'legacy',elapsedSinceModelMs:entryAt(state,current.id)?.lastModelAt?Math.max(0,at-entryAt(state,current.id).lastModelAt):null,elapsedSinceCreditMs:entryAt(state,current.id)?.lastCreditAt?Math.max(0,at-entryAt(state,current.id).lastCreditAt):null,outcome:event.outcome,prompted:current.prompted||event.outcome==='prompted',review:current.review,transfer:current.transfer,qualified:session.results[current.id].qualified,credited,policy:structuredClone(session.policySnapshot)});
+     const credited=entryAt(data,current.id).days.some(day=>!entryAt(state,current.id)?.days.includes(day));
+     data.observations.push({at,id:current.id,revision:Object.hasOwn(data.contentRevisions,current.id)?data.contentRevisions[current.id]:'legacy',elapsedSinceModelMs:entryAt(state,current.id)?.lastModelAt?Math.max(0,at-entryAt(state,current.id).lastModelAt):null,elapsedSinceCreditMs:entryAt(state,current.id)?.lastCreditAt?Math.max(0,at-entryAt(state,current.id).lastCreditAt):null,outcome:event.outcome,prompted:event.outcome==='prompted'||(!event.parentReported&&current.prompted),parentReported:event.parentReported===true,modelRequested:!!current.beforePreview||current.heard,review:current.review,transfer:current.transfer,qualified:session.results[current.id].qualified,credited,policy:structuredClone(session.policySnapshot)});
      data.observations=data.observations.slice(-200);
     }
    }else if(event.type==='defer')accepted=deferWord(data,at,random);
