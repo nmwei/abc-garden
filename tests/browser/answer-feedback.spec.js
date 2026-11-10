@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 async function cue(page,kind){const a=page.locator('#feedback-audio');await expect.poll(()=>a.evaluate(a=>a.currentTime)).toBeGreaterThan(.04);expect(await a.evaluate(a=>a.src)).toContain(`/feedback-${kind}.wav`);}
 test.beforeEach(async({page})=>{await page.addInitScript(()=>{Math.random=()=>0;localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'AB',selectedWordIds:['egg','cat','dog']}));});});
-test('each pair has three independent one-shot speakers, then shares wrong and correct feedback',async({page})=>{
+test('each pair has one case-based speaker per card, then shares wrong and correct feedback',async({page})=>{
  await page.goto('/#/letters');await page.getByRole('button',{name:'大小写配对',exact:true}).click();
  await expect(page.locator('.pair-voice')).toHaveCount(3);
  await expect(page.getByRole('button',{name:'帮帮我',exact:true})).toHaveCount(0);
@@ -9,7 +9,7 @@ test('each pair has three independent one-shot speakers, then shares wrong and c
  await expect(page.locator('.choice').first()).not.toHaveCSS('border-top-width','0px');
  await page.locator('.pair-option .pair-voice[data-letter="B"]').click();
  await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.03);
- expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/name-B.wav');
+ expect(await page.locator('#garden-audio').evaluate(a=>a.src)).toContain('/sound-B.wav');
  expect(await page.locator('#garden-audio').evaluate(a=>a.duration)).toBeLessThan(1.5);
  await expect(page.locator('.choice:enabled')).toHaveCount(2);await expect(page.locator('#feedback-audio')).toHaveCount(0);
  await page.locator('.choice[data-answer="B"]').click();await cue(page,'retry');await expect(page.locator('.answer-flower')).toHaveCount(0);

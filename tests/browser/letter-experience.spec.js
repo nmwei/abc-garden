@@ -27,7 +27,7 @@ for(const targetCase of ['upper','lower'])test(`pair success from ${targetCase} 
  await expect(page.locator('.feedback')).toContainText('大写 A');
  await end(page);await expect(page.locator('.feedback')).toContainText('小写 a');
  await expect(page.locator('[data-pair-letter=A][data-pair-case=lower]')).toHaveClass(/is-speaking/);
- expect(await page.evaluate(()=>window.played.filter(p=>p.src.endsWith('/name-A.wav')).length)).toBe(2);
+ expect(await page.evaluate(()=>window.played.filter(p=>/\/(name|sound)-A\.wav$/.test(p.src)).map(p=>p.src.split('/').pop()))).toEqual(['name-A.wav','sound-A.wav']);
  await end(page);await expect(page.locator('.feedback')).toContainText('马上');
  await page.clock.runFor(999);await expect(page.locator('.choice:enabled')).toHaveCount(0);
  await page.clock.runFor(1);await expect(page.locator('.choice:enabled')).toHaveCount(2);
@@ -108,4 +108,31 @@ test('listening choices are large, wrap naturally and center every row for small
   await page.locator(`[data-listen=answer][data-letter=${answer}]`).click();
   expect((await stage.boundingBox()).height).toBeCloseTo(before.height,0);
  }
+});
+
+for(const targetCase of ['upper','lower'])test(`one case-based speaker per card keeps the ${targetCase} question ungraded`,async({page})=>{
+ await pair(page,{targetCase});
+ await expect(page.locator('[data-action="pair-mode"]')).toHaveCount(0);
+ await expect(page.locator('.pair-voice')).toHaveCount(3);
+ const question=await page.locator('.pair-workspace').innerHTML();
+ for(const speaker of await page.locator('.pair-voice').all()){
+  const letter=await speaker.getAttribute('data-letter');
+  const letterCase=await speaker.getAttribute('data-case'),mode=letterCase==='upper'?'name':'sound';
+  await expect(speaker).toHaveText(mode==='name'?'名称':'字母音');
+  for(let i=0;i<2;i++){
+   await speaker.click();
+   expect(await page.evaluate(()=>window.played.at(-1).src)).toContain(`/${mode}-${letter}.wav`);
+   await expect(page.locator('.feedback')).toContainText(mode==='sound'?'字母音':'字母名称');
+   await end(page);
+   await expect(page.locator('.choice:enabled')).toHaveCount(2);
+   await expect(page.locator('#feedback-audio')).toHaveCount(0);
+  }
+ }
+ expect(await page.locator('.pair-workspace').innerHTML()).toBe(question);
+ await page.evaluate(()=>window.played=[]);await correct(page);await end(page);await end(page);
+ expect(await page.evaluate(()=>window.played.filter(p=>/\/(name|sound)-A\.wav$/.test(p.src)).map(p=>p.src.split('/').pop()))).toEqual(['name-A.wav','sound-A.wav']);
+ await page.locator('.pair-target .pair-voice').click();await end(page);
+ await page.clock.runFor(3000);await expect(page.locator('.choice:enabled')).toHaveCount(0);
+ await page.reload();await page.getByRole('button',{name:'大小写配对',exact:true}).click();
+ await expect(page.locator('.pair-voice')).toHaveCount(3);
 });

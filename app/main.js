@@ -118,6 +118,8 @@ function home(){
 }
 let moduleKind='pair';
 let pairPlayback=0,pairTimer=null;
+// This game's listening convention does not change a letter's name or sound.
+const pairVoiceMode=letterCase=>letterCase==='upper'?'name':'sound';
 function clearPairHighlight(){document.querySelectorAll('[data-pair-case]').forEach(el=>el.classList.remove('is-speaking'));}
 function cancelPairPlayback(){
  pairPlayback++;clearTimeout(pairTimer);pairTimer=null;clearPairHighlight();
@@ -128,12 +130,12 @@ function highlightPair(letter,letterCase){
  clearPairHighlight();
  document.querySelectorAll(`[data-pair-letter="${letter}"][data-pair-case="${letterCase}"]`).forEach(el=>el.classList.add('is-speaking'));
  const status=document.querySelector('.practice-panel .feedback');
- if(status)status.textContent=`正在听${letterCase==='upper'?'大':'小'}写 ${glyph(letter,letterCase)} 的名称`;
+ if(status)status.textContent=`正在听${letterCase==='upper'?'大':'小'}写 ${glyph(letter,letterCase)} 的${modeLabel(pairVoiceMode(letterCase))}`;
 }
-async function playPairName(letter,letterCase){
+async function playPairAudio(letter,letterCase){
  if(!['upper','lower'].includes(letterCase))return;
  const token=pairPlayback;
- await audio.play([`name-${letter}`],()=>highlightPair(letter,letterCase));
+ await audio.play([`${pairVoiceMode(letterCase)}-${letter}`],()=>highlightPair(letter,letterCase));
  if(token===pairPlayback){clearPairHighlight();const status=document.querySelector('.practice-panel .feedback');if(status)status.textContent=state.session?.task.feedback||'';}
 }
 async function pairAnswerFeedback(correct){
@@ -145,8 +147,8 @@ async function pairAnswerFeedback(correct){
  // Muting sound effects should still leave time to see the success flower.
  if(!enabled){await new Promise(resolve=>setTimeout(resolve,1450));if(!current())return;}
  const letter=session.queue[0].letter;
- // Both shapes have the same name. Read each once while highlighting its shape.
- const ok=await audio.play([`name-${letter}`,`name-${letter}`],index=>highlightPair(letter,index===0?'upper':'lower'));
+ // Use the same case-based listening convention for replay and success feedback.
+ const ok=await audio.play(['upper','lower'].map(letterCase=>`${pairVoiceMode(letterCase)}-${letter}`),index=>highlightPair(letter,index===0?'upper':'lower'));
  if(!current())return;
  clearPairHighlight();
  session.task.feedback=ok?'大小写是一对朋友，马上进入下一题。':'读音未能完成，可以点小喇叭重听，或手动换一道。';
@@ -200,15 +202,15 @@ function practice(){
   const t=s.queue[s.index],done=s.task.done;
   let title='',subtitle='',body='',action='next',nextLabel='继续',kicker='';
   if(t.kind==='pair'){
-    kicker='FIND A FRIEND';title=t.case==='upper'?'它的小写朋友在哪里？':'它的大写朋友在哪里？';subtitle='点卡片配对，点小喇叭听名称。';
-    const voice=(l,letterCase)=>`<button type="button" class="pair-voice" data-action="pair-audio" data-letter="${l}" data-case="${letterCase}" aria-label="听${letterCase==='upper'?'大':'小'}写 ${glyph(l,letterCase)} 的字母名称">${icon('speaker')}</button>`;
-    body=`<div class="pair-target" data-pair-letter="${t.letter}" data-pair-case="${t.case}"><span class="big-glyph target glyph ${t.case==='lower'?'lower':''}">${glyph(t.letter,t.case)}</span>${voice(t.letter,t.case)}</div><div class="choices">${t.options.map(l=>`<div class="pair-option" data-pair-letter="${l}" data-pair-case="${t.case==='upper'?'lower':'upper'}"><button class="choice glyph ${t.case==='upper'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='upper'?'小':'大'}写 ${glyph(l,t.case==='upper'?'lower':'upper')}">${glyph(l,t.case==='upper'?'lower':'upper')}</button>${voice(l,t.case==='upper'?'lower':'upper')}</div>`).join('')}</div>`;
+    kicker='FIND A FRIEND';title=t.case==='upper'?'它的小写朋友在哪里？':'它的大写朋友在哪里？';subtitle='点字母配对，下面的按钮可以听声音。';
+    const voice=(l,letterCase)=>`<button type="button" class="pair-voice" data-action="pair-audio" data-letter="${l}" data-case="${letterCase}" aria-label="听${letterCase==='upper'?'大':'小'}写 ${glyph(l,letterCase)} 的${modeLabel(pairVoiceMode(letterCase))}">${icon('speaker')}<span>${letterCase==='upper'?'名称':'字母音'}</span></button>`;
+    body=`<div class="pair-workspace"><div class="pair-target" data-pair-letter="${t.letter}" data-pair-case="${t.case}"><span class="big-glyph target glyph ${t.case==='lower'?'lower':''}">${glyph(t.letter,t.case)}</span>${voice(t.letter,t.case)}</div><div class="choices">${t.options.map(l=>`<div class="pair-option" data-pair-letter="${l}" data-pair-case="${t.case==='upper'?'lower':'upper'}"><button class="choice glyph ${t.case==='upper'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='upper'?'小':'大'}写 ${glyph(l,t.case==='upper'?'lower':'upper')}">${glyph(l,t.case==='upper'?'lower':'upper')}</button>${voice(l,t.case==='upper'?'lower':'upper')}</div>`).join('')}</div></div>`;
   }else if(t.kind==='choose'){
     kicker=s.mode==='name'?'LISTEN TO THE NAME':'LISTEN TO THE SOUND';title='听到的是哪位字母朋友？';subtitle=`这一轮听的是${modeLabel(s.mode)}。`;
     body=`<button class="sound-orb" data-action="task-audio" aria-label="听题目声音">${icon('speaker')}</button><div class="choices">${t.options.map(l=>`<button class="choice glyph ${t.case==='lower'?'lower':''} ${done&&l===t.letter?'revealed':''}" data-action="answer" data-answer="${l}" ${done?'disabled':''} aria-label="选择${t.case==='lower'?'小':'大'}写 ${glyph(l,t.case)}">${glyph(l,t.case)}</button>`).join('')}</div>`;
   }else{return home();
   }
-  return `<div class="practice-shell"><div class="practice-top"><strong>${({pair:'大小写配对',choose:'听音找字母'})[moduleKind]}</strong>${btn('library','返回字母册','small secondary','back')}</div><section class="practice-panel ${t.kind==='demo'?'demo-panel':''}" aria-labelledby="task-title"><p class="practice-kicker">${kicker}</p><h1 id="task-title">${title}</h1><p class="micro">${subtitle}</p>${body}<p class="feedback" role="status" aria-live="polite">${esc(s.task.feedback)}</p></section><div class="practice-bottom"><p class="micro">每一小步都算数。${t.kind==='choose'||t.kind==='pair'?'忘记了也没关系，我们可以一起找。':'跟读和自己读，慢慢来。'}</p><div class="button-row" style="margin:0">${t.kind==='choose'&&!done?btn('help','帮帮我','secondary','heart'):''}${btn(action,'换一道','primary','arrow',`${(t.kind==='pair'||t.kind==='choose')&&!done?'disabled':''}`)}</div></div></div>`;
+  return `<div class="practice-shell ${t.kind==='pair'?'pair-shell':''}"><div class="practice-top"><strong>${({pair:'大小写配对',choose:'听音找字母'})[moduleKind]}</strong>${btn('library','返回字母册','small secondary','back')}</div><section class="practice-panel ${t.kind==='pair'?'practice-pair':t.kind==='demo'?'demo-panel':''}" aria-labelledby="task-title"><p class="practice-kicker">${kicker}</p><h1 id="task-title">${title}</h1><p class="micro">${subtitle}</p>${body}<p class="feedback" role="status" aria-live="polite">${esc(s.task.feedback)}</p></section><div class="practice-bottom"><p class="micro">每一小步都算数。${t.kind==='choose'||t.kind==='pair'?'忘记了也没关系，我们可以一起找。':'跟读和自己读，慢慢来。'}</p><div class="button-row" style="margin:0">${t.kind==='choose'&&!done?btn('help','帮帮我','secondary','heart'):''}${btn(action,'换一道','primary','arrow',`${(t.kind==='pair'||t.kind==='choose')&&!done?'disabled':''}`)}</div></div></div>`;
 }
 function letterSettings(){
  if(!draft)draft=structuredClone(state.settings);
@@ -290,7 +292,7 @@ app.addEventListener('click',event=>{
     if(!letter||!selectedLetters().includes(letter.upper)||!['name','sound','example'].includes(mode))return;
     const request=highlightRequest+1;const status=document.querySelector('#letter-play-status');if(status)status.textContent=mode==='name'?'正在读名称':mode==='sound'?'正在读字母音':'正在读例词';playHighlighted([`${mode}-${letter.upper}`]).finally(()=>{if(highlightRequest===request)updateFollow();});
   }
-  if(action==='pair-audio'){const t=state.session?.queue[0],l=button.dataset.letter;if(t?.kind==='pair'&&[t.letter,...t.options].includes(l))playPairName(l,button.dataset.case);return;}
+  if(action==='pair-audio'){const t=state.session?.queue[0],l=button.dataset.letter;if(t?.kind==='pair'&&[t.letter,...t.options].includes(l))playPairAudio(l,button.dataset.case);return;}
   if(action==='help')markHelp();
   if(action==='answer'){
     const s=state.session;if(!s||s.task.done)return;
