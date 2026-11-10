@@ -57,9 +57,9 @@ test('the whole learning list continues through small groups with meaning practi
  await expect(page.locator('.guided-activity')).toContainText('手掌做小鱼游动');
  await expect(action(page,'next')).toBeDisabled();
  await beforeRecall(page);await expect(page.locator('.guided-model')).toHaveCount(0);
- await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  await page.reload();await action(page,'open').click();
- await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  await page.locator('[data-result="prompted"]').click();await complete(page);
  await expect(page.getByRole('heading',{name:'这些词，今天都玩过啦'})).toBeVisible();
  const data=await saved(page);expect(data.entries.fish.days).toHaveLength(1);expect(data.entries.mop.days).toHaveLength(1);
@@ -168,7 +168,7 @@ test('a function word is taught and heard in a phrase, then used in context with
  await expect(page.getByRole('heading',{name:'试着在情境里用这个词'})).toBeVisible();
  await expect(page.locator('.guided-picture')).toHaveCount(0);await expect(page.getByText('I have a ball.',{exact:true})).toHaveCount(0);
  await expect(page.locator('[data-result="independent"]')).toHaveText('自己用出来了');
- await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
 });
 test('a failed contextual model does not unlock teaching completion and can be retried',async({page})=>{
  await setup(page,['an']);await page.evaluate(()=>window.failSpeech=true);await action(page,'model').click();
@@ -253,7 +253,7 @@ test('all three speaking outcomes are equally reachable above the phone home are
  const backgrounds=await page.locator('.guided-rating-options button').evaluateAll(buttons=>buttons.map(button=>getComputedStyle(button).backgroundColor));
  expect(new Set(backgrounds).size).toBe(1);
  await screenshot(page,`test-results/guided-redesign-recall-${info.project.name}.png`);
- await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  await fullyOnScreen(page,page.locator('[data-result="again"]'));await expect(action(page,'hint')).toBeFocused();
 });
 test('picture recall uses the available screen as one workspace without separating the parent controls',async({page},info)=>{
@@ -276,7 +276,7 @@ test('picture recall uses the available screen as one workspace without separati
  }
  await page.setViewportSize({width:390,height:844});
  await page.getByText('陪学小提示',{exact:true}).click();await expect(page.locator('.guided-parent-note')).toHaveAttribute('open','');
- await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  await expect(page.locator('.guided-parent-note')).toHaveAttribute('open','');
 });
 test('playing preserves expanded instructions and reading position, but advancing reveals the new task',async({page})=>{
@@ -345,7 +345,7 @@ test('a one-word mini-game is playable now, survives the fifteen-minute reminder
  await action(page,'resume').click();await expect(action(page,'next')).toBeEnabled();
  await action(page,'next').click();const after=await saved(page);
  expect(after.session.queue[0].kind).toBe('recall');expect(after.session.results.jump.attempts).toBe(0);expect(after.entries).toEqual(before.entries);
- await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'hint').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
 });
 test('an existing countdown resumes as a game without losing hints, history, or the original time budget',async({page})=>{
  await setup(page,['jump']);await teach(page);await understand(page);
@@ -359,10 +359,10 @@ test('an existing countdown resumes as a game without losing hints, history, or 
  },key);
  await page.reload();await action(page,'open').click();
  await expect(page.getByRole('heading',{name:'换个小游戏',exact:true})).toBeVisible();await expect(action(page,'next')).toBeEnabled();
- await action(page,'next').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await action(page,'next').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  const resumed=await saved(page);expect(resumed.session.policySnapshot.id).toBe('preschool-speaking');expect(resumed.session.startedAt).toBe(legacy.session.startedAt);
  expect(resumed.session.segmentStartedAt).toBe(legacy.session.segmentStartedAt);expect(resumed.entries).toEqual(legacy.entries);
- await page.reload();await action(page,'open').click();await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await page.reload();await action(page,'open').click();await expect(page.locator('[data-result="independent"]')).toBeEnabled();
 });
 
 test('an applied custom policy controls wording, group size, scope and the real rest timer after reload',async({page},info)=>{
@@ -567,11 +567,29 @@ test('a review hint permits independent learning recall after another word, incl
  expect((await saved(page)).session.queue[0].id).toBe('apple');
  await page.locator('[data-result="independent"]').click();expect((await saved(page)).session.queue[0].id).toBe('fish');
  await switchToReview(page);await beforeRecall(page);await page.clock.runFor(1600);await action(page,'hint').click();
- await expect(page.locator('[data-result="independent"]')).toBeDisabled();
+ await expect(page.locator('[data-result="independent"]')).toBeEnabled();
  await switchToLearning(page);expect((await saved(page)).session.queue[0].id).toBe('fish');
  await page.locator('[data-result="independent"]').click();
  expect((await saved(page)).session.queue[0]).toMatchObject({id:'apple',kind:'recall',prompted:false});
  await page.reload();await action(page,'open').click();
  await expect(page.locator('[data-result="independent"]')).toBeEnabled();await expect(page.locator('.guided-model')).toHaveCount(0);
  await page.locator('[data-result="independent"]').click();expect((await saved(page)).entries.apple.days).toHaveLength(1);
+});
+
+test('recall demo can be replayed and parent can rate during playback without stale completion',async({page})=>{
+ await setup(page,['fish','mop']);await beforeRecall(page);
+ await page.evaluate(()=>window.holdAudio=true);
+ const before=await saved(page),id=before.session.queue[0].id;
+ await action(page,'hint').click();await expect(action(page,'hint')).toHaveText('听示范');
+ for(const outcome of ['independent','prompted','again'])await expect(page.locator(`[data-result="${outcome}"]`)).toBeEnabled();
+ const count=await page.evaluate(()=>window.guidedAudio.length);
+ await action(page,'hint').click();
+ expect(await page.evaluate(()=>window.guidedAudio.length)).toBeGreaterThan(count);
+ await page.locator('[data-result="independent"]').click();
+ const rated=await saved(page);
+ expect(rated.observations).toHaveLength((before.observations?.length||0)+1);
+ expect(rated.observations.at(-1)).toMatchObject({id,outcome:'independent',prompted:false,parentReported:true,modelRequested:true});
+ await page.evaluate(()=>document.querySelectorAll('audio').forEach(audio=>audio.dispatchEvent(new Event('ended'))));
+ await page.clock.runFor(100);
+ expect((await saved(page)).session.queue).toEqual(rated.session.queue);
 });

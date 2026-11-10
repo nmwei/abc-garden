@@ -367,3 +367,49 @@ test('concrete strategy snapshots survive changed presets and keep prompting saf
  assert.deepEqual(different.describe(restored.data,['one','two']).policy,state.session.policySnapshot);
  assert.equal(different.describe(restored.data,['one','two']).planningPolicy.selection.priority,'listed');
 });
+
+test('parent reports distinguish reinforcement after recall from help before recall',()=>{
+ let time=at;
+ const engine=engineWith({now:()=>time,policy:{teaching:{unfamiliarStart:'recall'}}});
+ const input=freshGuided();input.entries.one={...record(),days:[dayKey(at-2*86400000)],level:1,lastCreditAt:at-2*86400000,lastModelAt:at-2*86400000};
+ let state=engine.transition(input,{type:'start',ids:['one']});
+ state=engine.transition(state,{type:'preview'});
+ const first=structuredClone(state.session.queue[0].beforePreview);
+ time+=1000;state=engine.transition(state,{type:'model'});
+ time+=1000;state=engine.transition(state,{type:'preview'});
+ assert.deepEqual(state.session.queue[0].beforePreview,first,'replay preserves the first exposure boundary');
+ state=cleanGuided(JSON.parse(JSON.stringify(state)),new Set(['one']));
+ const prompted=engine.transition(state,{type:'recall',outcome:'prompted',parentReported:true});
+ assert.equal(prompted.observations.at(-1).credited,false);
+ assert.equal(prompted.observations.at(-1).prompted,true);
+ const independent=engine.transition(state,{type:'recall',outcome:'independent',parentReported:true});
+ assert.equal(independent.observations.at(-1).credited,true);
+ assert.equal(independent.observations.at(-1).prompted,false);
+ assert.equal(independent.observations.at(-1).modelRequested,true);
+ assert.equal(independent.entries.one.lastCreditAt,at,'credit represents recall before reinforcement');
+ assert.equal(independent.entries.one.lastModelAt,time,'latest playback still affects future spacing');
+ assert.equal(independent.entries.one.days.length,2);
+ const sameDay=engine.transition(independent,{type:'start',ids:['one']});
+ const again=engine.transition(sameDay,{type:'recall',outcome:'independent',parentReported:true});
+ assert.equal(again.entries.one.days.length,2,'no duplicate same-day credit');
+});
+
+test('replaying or rating cancels stale audio completion without advancing or marking the next task heard',async()=>{
+ const engine=engineWith();let data=engine.transition(freshGuided(),{type:'start',ids:['one','two']});
+ while(data.session.queue[0].kind!=='recall')data=step(engine,data);
+ let raw=JSON.stringify(data);const pending=[];
+ const controller=new GuidedWords({
+  audio:{stop(){}},play:()=>new Promise(resolve=>pending.push(resolve)),wordClip:id=>id,
+  getWords:()=>[{id:'one'},{id:'two'}],now:()=>at,random:()=>.25,
+  repository:{load:()=>({raw,value:JSON.parse(raw)}),save:value=>raw=JSON.stringify(value)},refresh(){},enter(){},exit(){}
+ });
+ const first=controller.action('hint');assert.equal(controller.busy,true);
+ const replay=controller.action('hint');assert.equal(pending.length,2);
+ pending[0](true);await first;assert.equal(controller.busy,true,'stale first audio cannot clear replay state');
+ await controller.action('answer',{dataset:{result:'independent'}});
+ const rated=structuredClone(controller.data);
+ assert.equal(rated.observations.at(-1).outcome,'independent');
+ assert.equal(controller.busy,false);
+ pending[1](true);await replay;
+ assert.deepEqual(controller.data,rated,'late completion cannot mark the next task heard');
+});

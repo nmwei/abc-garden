@@ -66,6 +66,7 @@ export function restoreGuidedProgress(raw,validIds){
  if(!session.queue.every(task=>{
   const legacyPause=legacy&&session.policy===3&&task.kind==='pause'&&Number.isFinite(task.readyAt);
   if((!kinds.has(task.kind)&&!legacyPause)||!introduced.includes(task.id)||!['review','prompted','heard','transfer'].every(key=>typeof task[key]==='boolean'))return false;
+  if(task.beforePreview!==undefined&&(!Number.isFinite(task.beforePreview?.at)||task.beforePreview.at<0||!Number.isFinite(task.beforePreview.lastModelAt)||task.beforePreview.lastModelAt<0||task.beforePreview.lastModelAt>task.beforePreview.at))return false;
   if(session.covered.includes(task.id)&&task.kind!=='play')return false;
   if(task.kind==='play'&&(typeof task.wordGame!=='boolean'||(legacy?session.policy!==4||!Number.isInteger(task.variant)||task.variant<0||task.variant>2:!games.includes(task.gameId))))return false;
   return task.kind!=='choose'||Array.isArray(task.options)&&task.options.length>=2&&task.options.length<=4&&new Set(task.options).size===task.options.length&&task.options.includes(task.id)&&task.options.every(id=>session.words.includes(id));
