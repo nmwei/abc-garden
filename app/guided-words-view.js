@@ -1,8 +1,8 @@
 import {icon} from './art.js';
+import {escapeGuidedText as esc,guidedHeading,guidedStage,guidedStageColumns,guidedDock,guidedDeferRow} from './guided-session-view.js';
 
-const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const button=(action,label,{primary=false,attrs='',id=action}={})=>`<button type="button" id="guided-${id}" class="button ${primary?'primary':'secondary'}" data-course="guided-${action}" ${attrs}>${label}</button>`;
-const deferControl=()=>`<div class="guided-defer-row">${button('defer','今天先跳过',{attrs:'aria-describedby="guided-defer-note"'})}<span id="guided-defer-note">保留这个词，改天再学</span></div>`;
+const deferControl=()=>guidedDeferRow({control:button('defer','今天先跳过',{attrs:'aria-describedby="guided-defer-note"'}),noteId:'guided-defer-note',note:'保留这个词，改天再学'});
 const dateLabel=at=>new Date(at).toLocaleString('zh-CN',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
 const wordName=word=>`<strong lang="en">${esc(word.display||word.id)}</strong><span>${esc(word.zh)}</span>`;
 const picture=(word,alt='词卡图片')=>`<img class="guided-picture" src="${esc(word.image)}" alt="${esc(alt)}" width="240" height="240">`;
@@ -69,7 +69,7 @@ function dock(view,current,activity){
  else if(current.kind==='play')controls=current.wordGame?`<div class="guided-play-actions">${audioButton(view,'听声音',{primary:false})}${button('next','玩好了，接着来',{primary:true})}</div>`:button('next','玩好了，接着来',{primary:true});
  else controls=`<div class="guided-help-control">${audioButton(view,'听示范',{hint:true,primary:false})}<span>试听不影响表现记录。</span></div><fieldset class="guided-rating"><legend>请家长记录这次表现</legend><div class="guided-rating-options">${button('answer',activity.responseMode==='phrase'?'自己用出来了':'自己说出了',{id:'answer-independent',attrs:`data-result="independent"`})}${button('answer','提示后说出了',{id:'answer-prompted',attrs:'data-result="prompted"'})}${button('answer','还需要练',{id:'answer-again',attrs:'data-result="again"'})}</div></fieldset>`;
  const status=view.playing?'正在播放，请稍等。':current.kind==='play'?'换着玩一玩，不用记录对错。':current.kind==='recall'&&current.prompted?'先说出再听，也可记自己说出。':view.feedback||(current.kind==='learn'?(current.heard?'一起玩过了，就点继续。':'先听示范，一起玩过再继续。'):'');
- return `<footer class="guided-dock" aria-label="本步操作"><p id="guided-audio-status" class="guided-audio-status" role="status">${esc(status)}</p><div class="guided-dock-inner guided-dock-${current.kind}">${controls}</div></footer>`;
+ return guidedDock({kind:current.kind,status,statusId:'guided-audio-status',controls});
 }
 
 function stage(view){
@@ -102,13 +102,11 @@ function stage(view){
   instructions=`${live?`<div class="guided-activity"><p class="guided-instruction-label">家长布置好，再让孩子说</p><p>${esc(current.transfer?activity.transfer:activity.recall)}</p></div>${parentTarget(word)}`:''}${parentNote(`${inPhrase?'能在合适情境里自己用出这个词即可；跟读不计为独立使用。':'能辨认出目标词就好，不逐音挑错。'}卡住时帮一下，别连续追问。`)}${live?deferControl():''}`;
  }
  const steps=recallFirst(view)?['先自己说','需要时再学','穿插回想']:['玩出意思','听懂反应','自己说出'],activePhase=recallFirst(view)?(current.kind==='play'?null:current.kind==='recall'?(current.review?0:2):1):phase(current.kind),pictureTask=current.kind==='choose'||current.kind==='recall'&&!live;
- return `<section class="panel guided-stage guided-kind-${current.kind}${current.kind==='learn'&&inPhrase?' is-phrase':''}${live?' is-live':''}${pictureTask?' is-picture-task':''}" aria-label="引导练习" data-guided-position="${esc(view.position)}">
-  <div class="guided-stage-top"><p class="guided-session-progress">${current.kind==='play'?'穿插小游戏':current.kind==='recall'&&!session.batchWords.includes(word.id)?'穿插回想':`第 ${session.batch} 组 / 预计 ${session.estimatedBatches} 组 · 本组 ${session.batchWords.length} 个词`}</p><span class="guided-scope-count">本次已接触 ${session.practicedIds.length} / ${session.words.length} 个词</span>
-   <ol class="guided-stage-path" aria-label="本组学习步骤">${steps.map((label,index)=>`<li ${index===activePhase?'aria-current="step"':''}><span>${index+1}</span>${label}</li>`).join('')}</ol>
-  </div>
-  <h2 id="guided-step-title" tabindex="-1">${titles[current.kind]}</h2>
-  <div class="guided-stage-body"><div class="guided-visual">${visual}</div><div class="guided-instructions">${instructions}</div></div>
- ${dock(view,current,activity)}</section>`;
+ return guidedStage({classes:`guided-kind-${current.kind}${current.kind==='learn'&&inPhrase?' is-phrase':''}${live?' is-live':''}${pictureTask?' is-picture-task':''}`,
+  label:'引导练习',labelledBy:'guided-step-title',position:view.position,title:titles[current.kind],
+  progress:current.kind==='play'?'穿插小游戏':current.kind==='recall'&&!session.batchWords.includes(word.id)?'穿插回想':`第 ${session.batch} 组 / 预计 ${session.estimatedBatches} 组 · 本组 ${session.batchWords.length} 个词`,
+  count:`本次已接触 ${session.practicedIds.length} / ${session.words.length} 个词`,steps,phase:activePhase,
+  body:guidedStageColumns({visual,instructions}),dock:dock(view,current,activity)});
 }
 
 function summary(view){
@@ -124,7 +122,8 @@ function summary(view){
 export function guidedPage(view){
  view={...view,policy:view.overview?view.planningPolicy:view.policy};
  const active=!view.overview&&view.session&&!view.session.ended&&view.scopeValid;
- const header=`<header class="guided-heading"><div><h1 class="page-title">${view.mode==='review'?'复习一下':'一起学'}</h1><p>家长陪同 · 约 ${view.policy.session.breakAfterMinutes} 分钟</p></div><div class="guided-header-actions">${!view.overview&&view.pending?button('plan','设置',{attrs:'aria-label="一起学设置"'}):''}${active?button('finish','休息',{attrs:'aria-label="先休息，保存进度"'}):''}${button('exit','← 返回词表')}</div></header>`;
+ const header=guidedHeading({title:view.mode==='review'?'复习一下':'一起学',subtitle:`家长陪同 · 约 ${view.policy.session.breakAfterMinutes} 分钟`,
+  actions:`${!view.overview&&view.pending?button('plan','设置',{attrs:'aria-label="一起学设置"'}):''}${active?button('finish','休息',{attrs:'aria-label="先休息，保存进度"'}):''}${button('exit','← 返回词表')}`});
  const error=view.error?`<p id="guided-error" class="guided-error" role="alert" tabindex="-1">${esc(view.error)}</p>`:'';
  const scopeNotice='<section class="panel guided-summary"><h2 id="guided-plan-title" tabindex="-1">正在学的词变了</h2><p>记忆记录还在，先看看新范围的安排。</p>'+button('plan','看看学习安排',{primary:true})+'</section>';
  return `${header}${error}${!view.overview&&view.session&&!view.scopeValid?scopeNotice:view.overview?overview(view):active?stage(view):summary(view)}`;

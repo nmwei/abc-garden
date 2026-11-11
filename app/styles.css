@@ -629,12 +629,12 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .word-toolbar-actions{width:100%;justify-content:flex-start}
  .word-page .word-toolbar-actions .word-loop-control{width:auto}
 }
-.shell.guided-shell{display:block;min-height:100svh;--muted:#596b5b}
+.shell.guided-shell{display:block;min-height:100svh;--muted:#596b5b;--guided-page-bottom:24px}
 .guided-shell>.topbar,.guided-shell>.content-area>.footer{display:none}
 .guided-shell>.content-area{display:block;max-width:none;min-height:100svh;padding:0 24px}
 .guided-shell .page{display:block;width:100%;max-width:1280px;padding:0;margin:auto;animation:none}
 .guided-shell .micro{font-size:14px;line-height:1.7}
-.guided-shell #course{padding-bottom:24px}
+.guided-shell #course{padding-bottom:var(--guided-page-bottom)}
 
 .guided-heading{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:78px;padding:12px 0;margin-bottom:12px;background:var(--cream,#f7f6ed)}
 .guided-heading .page-title{font-size:25px;line-height:1.3;letter-spacing:1px;margin:0}
@@ -702,7 +702,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .guided-stage-path li>span{font-size:13px}
 .guided-stage h2{font-size:26px;line-height:1.45;font-weight:600;margin:18px 0;outline:none}
 .guided-stage-body{display:grid;flex:1;gap:20px;align-items:center}
-.guided-kind-learn .guided-stage-body{flex:1;padding:12px 0 8px}
+/* Parent notes can grow without changing the child's position in the teaching area. */
+.guided-kind-learn .guided-stage-body{grid-template-columns:minmax(0,1fr);align-content:start;align-items:start;padding:12px 0 8px}
+.guided-kind-learn .guided-instructions{margin-block:0}
 .guided-visual{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-width:0}
 .guided-picture{display:block;width:clamp(144px,24svh,220px);height:clamp(144px,24svh,220px);object-fit:contain}
 .guided-kind-learn .guided-picture{width:clamp(120px,20svh,200px);height:clamp(120px,20svh,200px)}
@@ -736,7 +738,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .guided-parent-note summary{display:list-item;width:fit-content;min-height:44px;padding:10px 8px;margin:auto;font-size:14px;line-height:1.7;cursor:pointer}
 .guided-parent-note p{font-size:15px;line-height:1.8;padding:8px 14px;margin:0 0 6px;border-radius:12px;background:#f0f3e9;text-align:left}
 .guided-defer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:0 10px;margin-top:8px;padding-inline:8px}
-.guided-defer-row>[data-course="guided-defer"]{flex:none;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:transparent;box-shadow:none;color:var(--green);font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.guided-defer-row>.button{flex:none;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:transparent;box-shadow:none;color:var(--green);font-size:14px;text-decoration:underline;text-underline-offset:4px}
 .guided-defer-row>span{color:var(--muted);font-size:13px;line-height:1.6}
 .guided-parent-cue{margin-top:8px;text-align:center}
 .guided-parent-cue .guided-word-chips{justify-content:center;margin:4px 0 12px}
@@ -785,7 +787,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
  .guided-stage-top{grid-template-columns:minmax(145px,1fr) minmax(360px,480px) minmax(95px,1fr);gap:16px}
  .guided-stage-path{grid-column:2;grid-row:1}
  .guided-scope-count{grid-column:3;grid-row:1}
- .guided-kind-learn .guided-stage-body{grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:36px;min-height:300px;align-content:start;padding-top:clamp(24px,4svh,48px)}
+ .guided-kind-learn .guided-stage-body{grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:36px;min-height:300px;padding-top:clamp(24px,4svh,48px)}
  .guided-kind-learn .guided-picture{width:220px;height:220px}
  .guided-kind-learn .guided-visual{gap:14px}
  .guided-kind-learn.is-phrase .guided-visual{padding:32px 14px;background:#f1f3ea;border-radius:20px}
@@ -794,7 +796,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media(max-width:600px){
  .guided-entry{padding:0;margin:4px 0 12px}
  .guided-shell>.content-area{padding:0 12px}
- .guided-shell #course{padding-bottom:12px}
+ .shell.guided-shell{--guided-page-bottom:12px}
  .guided-heading{min-height:66px;padding:8px 0;gap:8px;margin-bottom:8px}
  .guided-heading .page-title{font-size:23px}
  .guided-heading p{font-size:12px}
@@ -868,8 +870,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 
 /* Leaving the module is secondary to continuing the current learning plan. */
-.guided-header-actions [data-course="guided-exit"]{border-color:transparent;background:transparent;box-shadow:none;font-weight:400;color:var(--muted)}
-.guided-header-actions [data-course="guided-exit"]:hover{background:var(--pale);color:var(--ink)}
+.guided-header-actions :is([data-course="guided-exit"],[data-action="letter-guided-exit"]){border-color:transparent;background:transparent;box-shadow:none;font-weight:400;color:var(--muted)}
+.guided-header-actions :is([data-course="guided-exit"],[data-action="letter-guided-exit"]):hover{background:var(--pale);color:var(--ink)}
 
 /* Keep the select's native sizing and popup anchor; hide only its label. */
 .word-page>.word-topic-select select{appearance:auto;-webkit-appearance:auto;padding-right:12px}
@@ -939,3 +941,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .toast.has-action>span{min-width:0}
 .toast.has-action>button{flex:none;min-height:44px;padding:8px 12px;border:1px solid #ffffff70;border-radius:10px;background:#ffffff12;color:#fffdf6;font:inherit;font-weight:600}
 .toast.has-action>button:hover{background:#ffffff25}
+
+/* The guided entry belongs to the letter activities, across free-play tabs. */
+.letter-activity-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.letter-tools>.letter-activity-bar{margin:0;flex:1}
+.letter-activity-bar .gl-entry .button{min-height:44px;padding:10px 18px;border-radius:14px;box-shadow:none;font-size:14px}
+@media(max-width:600px){.letter-activity-bar{align-items:stretch}.letter-activity-bar .activity-switch{flex:1;min-width:200px}.letter-activity-bar .gl-entry{display:flex;align-items:center}.letter-tools>.letter-activity-bar{width:100%}}
