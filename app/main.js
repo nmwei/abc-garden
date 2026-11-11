@@ -2,6 +2,7 @@ import './feedback-audio.js';
 import {ListenGame} from './listen-game.js';
 import {VoiceSettings} from './voice-settings.js';
 import {GuidedLearningSettings} from './guided-learning-settings.js';
+import {GuidedLetters} from './guided-letters.js';
 import {mountLetterLayout} from './letter-layout.js';
 import {LetterAudioSettings} from './letter-audio-settings.js';
 import {letterSourceInfo} from './letter-audio.js';
@@ -39,6 +40,11 @@ state.settings.letters=[...learning.data.letters];
 state.settings.mode='name';state.settings.soundConfirmed=false;
 const selectedLetters=()=>[...learning.data.letters];
 const feedback=new globalThis.GardenFeedbackAudio({enabled:()=>listenGame.options.effects});
+const letterGuided=new GuidedLetters({audio,getLetters:selectedLetters,refresh:render,
+ playAnswerFeedback:(correct,anchor)=>feedback.answer(correct,anchor),
+ enter:()=>{libraryActivity='guided';go('letters');},
+ exit:()=>{libraryActivity='listen';go('letters');},
+});
 const listenGame=new ListenGame({audio,refresh:render,letters:selectedLetters,feedback,letterSource});
 const letterAudioSettings=new LetterAudioSettings({audio,getSource:letterSource,saveSource:source=>{
  const previous=state.settings.letterAudioSource;state.settings.letterAudioSource=source;
@@ -68,9 +74,9 @@ const modeLabel=mode=>mode==='both'?'名称和字母音':mode==='sound'?'字母�
 const glyph=(letter,letterCase)=>letterCase==='lower'?letter.toLowerCase():letter;
 let disposeParentHold=null,letterSaveMessage='',letterSettingsReturn='listen';
 function enterParents(){draft=structuredClone(state.settings);go('parents');offline.check();}
-function requestParents(){listenGame.suspend();pauseSong();if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
+function requestParents(){letterGuided.suspend();listenGame.suspend();pauseSong();if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
 function showModal(kind){cancelPairPlayback();if(libraryActivity==='pair')audio.stop();modal=kind;renderModal();}
-function go(page){letterAudioSettings.cancel();cancelPairPlayback();listenGame.leave();if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page}`);if(page!=='letters')state.session=null;else if(!['listen','song','choose'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
+function go(page){if(page!=='letters'||libraryActivity!=='guided')letterGuided.leave({pause:true});letterAudioSettings.cancel();cancelPairPlayback();listenGame.leave();if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page==='letters'&&libraryActivity==='guided'?'letters-together':page}`);if(page!=='letters')state.session=null;else if(!['listen','song','choose','guided'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
 function header(){
  const destinations=[['library','letters','alphabet','字母朋友'],['words','words','picture','看图学词'],['learn','learn','sprout','成长地图']];
  return `<header class="topbar"><button class="brand" data-action="home" aria-label="${APP_NAME}首页"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>${APP_NAME}</strong><small>ABC GARDEN</small></span></button>
@@ -94,11 +100,14 @@ let disposeLetterLayout=()=>{};
 function render(){
   disposeLetterLayout();
   pauseSong();
-  const guided=route==='words'&&course.view==='guided';
-  const title=guided?'一起学':route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
+  const wordGuided=route==='words'&&course.view==='guided';
+  const lettersGuided=route==='letters'&&libraryActivity==='guided';
+  const guided=wordGuided||lettersGuided;
+  const title=lettersGuided?'一起学字母':guided?'一起学':route==='learn'?(COURSE_TITLES[course.view]||PAGE_TITLES.learn):PAGE_TITLES[route];
   document.title=title?`${title} · ${APP_NAME}`:`${APP_NAME} · ABC Garden`;
   const focusId=document.activeElement?.id;
-  if(guided)course.guided.captureView();
+  if(wordGuided)course.guided.captureView();
+  if(lettersGuided)letterGuided.captureView();
   document.querySelector('.shell')?.classList.toggle('guided-shell',guided);
   // Replace the word content atomically without tearing down the page shell.
   const wordPage=route==='words'&&document.querySelector('#course:has(.word-layout)');
@@ -109,7 +118,7 @@ function render(){
   }
   else app.innerHTML=`${storageWarning?`<div class="persistence-warning" role="alert">${esc(storageWarning)}</div>`:''}<div class="shell${route==='words'?' word-shell':route==='letters'?' letters-shell':''}${guided?' guided-shell':''}">${header()}<div class="content-area"><main id="main" class="page ${route==='letters'?'letters-page ':''}${route==='letters'&&!['listen','song'].includes(libraryActivity)?'practice-page':''}">${['learn','words'].includes(route)?course.html():route==='letters'?library():route==='parents'?parents():home()}</main>${footer()}</div></div>`;
   if(['learn','words'].includes(route))course.mount();
-  if(route==='letters'){updateFollow();disposeLetterLayout=mountLetterLayout();}
+  if(route==='letters'){if(lettersGuided)letterGuided.mount();else{updateFollow();disposeLetterLayout=mountLetterLayout();}}
   if(route==='parents')offline.paintUpdates();
   if(modal)renderModal();else if(focusId&&!guided)document.getElementById(focusId)?.focus({preventScroll:true});
 }
@@ -187,10 +196,11 @@ function updateFollow(){
  if(active)highlightSound(`${follow.phase}-${libraryLetter}`);else clearSoundHighlight();
 }
 function library(){
+  if(libraryActivity==='guided')return letterGuided.html();
   if(libraryActivity==='settings')return letterSettings();
   const letters=selectedLetters();if(!letters.includes(libraryLetter))libraryLetter=letters[0];
   const letter=byLetter(libraryLetter);
-  const tabs=`<div class="activity-switch" role="group" aria-label="字母练习方式">${[['library','认识字母','listen'],['module-pair','大小写配对','pair'],['module-choose','听音找字母','choose'],['letter-song','字母跟唱','song']].map(([action,label,id])=>`<button data-action="${action}" aria-pressed="${libraryActivity===id}">${label}</button>`).join('')}</div>`;
+  const tabs=`<div class="letter-activity-bar"><div class="activity-switch" role="group" aria-label="字母练习方式">${[['library','认识字母','listen'],['module-pair','大小写配对','pair'],['module-choose','听音找字母','choose'],['letter-song','字母跟唱','song']].map(([action,label,id])=>`<button data-action="${action}" aria-pressed="${libraryActivity===id}">${label}</button>`).join('')}</div>${letterGuided.entry()}</div>`;
   if(libraryActivity==='song')return `<section class="library-head"><div><p class="eyebrow">SING ALONG</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听，跟着唱，让字母变熟悉。</p></div>${btn('letter-settings','字母设置','secondary module-settings-button','settings')}</section>${tabs}<section class="panel letter-song"><div class="song-heading"><div><span class="song-tag">老师推荐</span><h2>跟老师唱字母</h2><p class="micro">A–Z 字母跟唱 · 约 1 分钟</p></div></div><div class="song-video-stage"><video id="alphabet-song" controls loop playsinline preload="none" poster="./assets/videos/alphabet-singalong.jpg" aria-label="跟老师唱字母视频"><source src="./assets/videos/alphabet-singalong.mp4" type="video/mp4">当前浏览器不支持视频播放。</video></div><p class="micro song-note">先听一遍，再跟着唱。播放后会自动循环，可随时暂停。完整播放 A–Z，不受所选字母范围限制。</p></section>`;
   if(libraryActivity==='choose')return `<section class="library-head"><div><p class="eyebrow">LISTEN & FIND</p><h1 class="page-title">字母朋友</h1><p class="subtitle">听一听声音，找到字母朋友。</p></div>${btn('letter-settings','字母设置','secondary module-settings-button','settings')}</section>${tabs}${listenGame.html()}`;
   if(libraryActivity!=='listen')return `<section class="library-head"><div><h1 class="page-title">字母朋友</h1><p class="subtitle">当前范围：${[...learning.data.letters].join(' · ')}。忘记了也可以听提示。</p></div>${btn('letter-settings','字母设置','secondary module-settings-button','settings')}</section>${tabs}${practice()}`;
@@ -266,6 +276,7 @@ app.addEventListener('click',event=>{
   const courseButton=event.target.closest('[data-course]');if(courseButton&&!courseButton.disabled){if(!['word-list-toggle','word-page'].includes(courseButton.dataset.course)){learning.stop();follow.stop(false);}course.action(courseButton).catch(()=>toast('这次操作没有完成，请再试一次。'));return;}
   const button=event.target.closest('[data-action]');if(!button||button.disabled)return;
   const action=button.dataset.action;
+  if(action.startsWith('letter-guided-')){follow.stop();listenGame.leave();pauseSong();letterGuided.action(action.slice('letter-guided-'.length),button).catch(()=>toast('这一步没有完成，请再试一次。'));return;}
   cancelPairPlayback();
   if(action==='preview-letter-source'){letterAudioSettings.preview(button.dataset.source,button.dataset.mode);return;}
   if(action==='preview-chinese-voice'){follow.stop();course.leave();voiceSettings.preview();return;}
@@ -319,6 +330,7 @@ app.addEventListener('click',event=>{
 });
 app.addEventListener('cancel',event=>{if(event.target.id==='offline-plan'){event.preventDefault();offline.dismiss();}},true);
 app.addEventListener('input',event=>learning.editInput(event.target,event.isComposing));
+app.addEventListener('change',event=>{if(event.target.matches('[data-letter-guided-setting]'))letterGuided.change(event.target);});
 app.addEventListener('change',event=>{
   if(event.target.dataset.guidedSetting)guidedSettings.change(event.target);
   if(event.target.name==='letter-audio-source')letterAudioSettings.select(event.target.value);
@@ -343,20 +355,24 @@ document.addEventListener('keydown',event=>{
     if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
   }
 });
-document.addEventListener('visibilitychange',()=>{lastTick=Date.now();follow.visibilityChanged();if(document.hidden){letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&!['listen','song','settings'].includes(libraryActivity)&&!modal)showModal('pause');}});
-window.addEventListener('pagehide',()=>{letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.leave();audio.stop();save();});
+document.addEventListener('visibilitychange',()=>{lastTick=Date.now();follow.visibilityChanged();if(document.hidden){letterGuided.suspend();letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.stopWordLoop();course.recorder.dispose();if(['learn','words'].includes(route))course.updateRecording('已暂停录音。');audio.stop();save();if(route==='letters'&&!['listen','song','settings','guided'].includes(libraryActivity)&&!modal)showModal('pause');}else letterGuided.foreground();});
+window.addEventListener('pagehide',()=>{letterGuided.suspend();letterGuided.leave();letterAudioSettings.cancel();cancelPairPlayback();listenGame.suspend();pauseSong();learning.flush();learning.stop();course.leave();audio.stop();save();});
+window.addEventListener('pageshow',event=>{if(event.persisted&&location.hash==='#/letters-together')letterGuided.open();});
 function requestedPage(){
  const requested=location.hash.slice(2);
+ if(requested==='letters-together'){libraryActivity='guided';return 'letters';}
+ if(requested==='letters')libraryActivity='listen';
  if(['weekly','modules','learning'].includes(requested)){course.view='words';course.masteryFilter='learning';return 'words';}
  if(['practice','finish'].includes(requested)){libraryActivity='listen';return 'letters';}
  return ['home','learn','words','letters','parents'].includes(requested)?requested:'home';
 }
-window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents'&&route!=='parents'){history.replaceState(null,'',`#/${route}`);requestParents();}else go(page);});
+window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents'&&route!=='parents'){history.replaceState(null,'',`#/${route}`);requestParents();}else if(page==='letters'&&libraryActivity==='guided')letterGuided.open();else go(page);});
 const initialPage=requestedPage();
 route=initialPage==='parents'?'home':initialPage;
 if(route==='words')course.view='words';
-history.replaceState(null,'',`#/${route}`);
-if(route==='words')course.open('words');else render();
+history.replaceState(null,'',`#/${route==='letters'&&libraryActivity==='guided'?'letters-together':route}`);
+if(route==='letters'&&libraryActivity==='guided')letterGuided.open();
+else if(route==='words')course.open('words');else render();
 if(initialPage==='parents')requestParents();
 offline.init();
 

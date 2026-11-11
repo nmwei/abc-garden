@@ -1,3 +1,4 @@
+import {createLearningRepository,LearningProgressConflict} from './learning-repository.js';
 import {LEGACY_GUIDED_POLICY,readGuidedPolicy} from './guided-learning-policy.js';
 export const GUIDED_KEY='abc-garden-guided-words-v1';
 const legacyGames=['mirror','drawing','rhythm'];
@@ -94,13 +95,5 @@ export function restoreGuidedProgress(raw,validIds){
 }
 export const cleanGuided=(raw,validIds)=>restoreGuidedProgress(raw,validIds).data;
 
-export class GuidedProgressConflict extends Error {}
-export function createGuidedRepository({storage=()=>globalThis.localStorage,key=GUIDED_KEY}={}){
- return {
-  load(){const raw=storage().getItem(key);return {raw,value:raw?JSON.parse(raw):null};},
-  save(data,expectedRaw){
-   const target=storage();if(target.getItem(key)!==expectedRaw)throw new GuidedProgressConflict('另一页更新了进度');
-   const raw=JSON.stringify(data);target.setItem(key,raw);return raw;
-  },
- };
-}
+export {LearningProgressConflict as GuidedProgressConflict};
+export const createGuidedRepository=({storage=()=>globalThis.localStorage,key=GUIDED_KEY}={})=>createLearningRepository({storage,key});
