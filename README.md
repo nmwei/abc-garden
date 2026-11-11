@@ -94,24 +94,25 @@ ABC_TTS_PYTHON=/tmp/abc-audio-env/bin/python node scripts/generate-prompts.mjs
 2. `LearningContent` 管理家长选择与排序；`word-library.js` 将选择ID映射到唯一词库；固定字母音频仍由字母库负责。
 3. 换题、切换来源和离开页面都应取消声音；IndexedDB 存储 WAV 的 ArrayBuffer，读取时还原 Blob，同时兼容旧 Blob 数据。离线固定音频继续支持 Range 请求。
 
-## GitHub Pages 发布
+## 服务器发布
 
-线上地址：[ABC小花园](https://nmwei.github.io/abc-garden/)，使用 `nmwei/abc-garden` 仓库的 `gh-pages` 分支，与阅读小花园独立部署。
+正式地址：[打开花园](https://nmwei.cn/abc-garden/)。GitHub 保留源码，发布脚本不再推送 `main` 或 `gh-pages`，源码推送单独进行。
 
-构建后的 `dist/` 可部署在任意静态 HTTPS 服务，全部资源采用相对路径，兼容项目子目录。
-
-已有仓库并配置 SSH 后，可运行：
+需要 Node.js 20+、SSH 和 rsync。服务器已配置独立部署账号，默认连接 `garden-deploy@106.15.155.26`，本机专用密钥位于 `~/.ssh/garden_deploy_nmwei`；私钥不进入仓库。换电脑需安全配置自己的部署权限，并通过可信渠道核对服务器主机指纹，不关闭 SSH 主机校验。
 
 ```sh
-npm run check
-node scripts/publish.mjs --repository owner/abc-garden
+npm run deploy -- --dry-run             # 构建、冻结快照和校验，不连接服务器
+npm run deploy                         # 发布当前项目
+npm run deploy -- --rollback           # 切回本项目上一个成功版本
 ```
 
-先在 `main` 提交全部修改并合并远程更新，保持工作区干净。脚本检查提交关系后重新构建，将现有本地源码提交原样推送到远程 `main`，仅为 `gh-pages` 创建网站快照，两者原子推送；不重建源码提交、不强推、不操作工作目录暂存区。未提交修改或远程分叉时拒绝发布。构建产物不包含本机学习记录、环境变量、模型和依赖。
+默认从 `main` 的干净工作区发布。确需发布已经审阅、尚未提交的改动时，显式加 `--allow-dirty`；版本元数据会记录 `dirty: true`，不会自动暂存、提交或推送。`--host user@host`、`--key /absolute/key` 可覆盖 SSH 配置，也支持 `GARDEN_DEPLOY_HOST`、`GARDEN_DEPLOY_KEY`。
 
-在 GitHub 仓库 Settings → Pages 中选择 `Deploy from a branch`，分支 `gh-pages`，目录 `/(root)`。等待 GitHub 完成部署后访问 Pages 提供的网址。
+执行链路：重新构建 → 冻结 `dist/` 快照 → 按哈希增量上传到本项目独立版本目录 → 服务器逐文件校验 → 原子切换 `current` → 内部 HTTP 核对。检查失败自动恢复旧入口；上传失败不切换。根目录 `_release.json` 提供源码提交、发布编号及工作区状态。发布后还应核对正式 HTTPS 地址，脚本的内部检查不能替代公网或真实 iPad 验收。
 
-详细验收边界见 [验收记录](docs/acceptance.md)。WebKit 模拟通过不等于真实 iPad 验收；设备音量和主屏幕模式仍需真机检查。
+发布产物仅包含静态页面与学习素材，不上传 Git、环境变量、依赖和本机学习数据。旧版本保留供回退；磁盘清理需保留 `current`、`previous` 指向的版本，不自动删除历史发布。三个仓库的发布工具副本保持一致，修改公共发布逻辑时同步三个仓库并运行发布测试。
+
+旧 GitHub Pages 暂时保留迁移期间的访问能力，后续不再更新。旧域名里的学习记录不会自动进入新域名，旧主屏幕图标仍指向旧站；账号/云端同步和完整数据迁移另行实现，先保留旧站数据。
 
 ## 听说读写成长地图（2026-10-30）
 

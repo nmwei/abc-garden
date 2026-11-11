@@ -18,7 +18,8 @@
     "audit:wonders": "node scripts/audit-wonders-gk.mjs",
     "audit:completion": "node scripts/audit-context-completion.mjs",
     "audit:quality": "node scripts/audit-quality-fixes.mjs",
-    "audit:guided": "node scripts/compile-guided-activities.mjs --check && node scripts/audit-guided-activities.mjs"
+    "audit:guided": "node scripts/compile-guided-activities.mjs --check && node scripts/audit-guided-activities.mjs",
+    "deploy": "node scripts/publish.mjs"
   },
   "engines": {
     "node": ">=20"
