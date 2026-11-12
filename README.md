@@ -1,3 +1,5 @@
+> 当前开发入口已迁至 [garden-platform/apps/abc](../garden-platform/apps/abc)。此目录保留迁移前历史，下文为原版本说明；日常安装、运行和发布请使用 [工作区说明](../garden-platform/README.md)。
+
 # ABC小花园 · ABC Garden
 
 花园系列的英语学习网页，面向 iPad。包含26个字母的大小写、名称与基础字母音，配合词汇、故事、对话和写作。短时练习、随时求助、自然结束。
