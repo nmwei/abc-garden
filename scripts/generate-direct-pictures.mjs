@@ -1,7 +1,7 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import{createHash}from'node:crypto';
 import{scenes}from'./pictures/direct-scenes.mjs';import{actions}from'./pictures/action-scenes.mjs';import{finalScenes}from'./pictures/final-scenes.mjs';import{finishingScenes}from'./pictures/finishing-scenes.mjs';import{closingScenes}from'./pictures/closing-scenes.mjs';import{lastScenes}from'./pictures/last-scenes.mjs';import{spatialScenes}from'./pictures/spatial-scenes.mjs';
-import{WORDS}from'../web/app/course-content.js';
+import{WORDS}from'../domain/course-content.js';
 const base=new URL('../',import.meta.url),map=JSON.parse(await readFile(new URL('data/vocabulary/picture-mappings.json',base))),credits=JSON.parse(await readFile(new URL('web/assets/credits.json',base))),byWord=new Map(WORDS.map(w=>[w.id,w]));
 const rows=(await readFile(new URL('data/vocabulary/direct-picture-plan.tsv',base),'utf8')).split('\n').filter(l=>l&&!l.startsWith('#'));const seen=new Set();let count=0;
 for(const row of rows){const[id,scene,topic,...extra]=row.split('|');if(extra.length||seen.has(id)||!byWord.has(id))throw Error(`Invalid picture plan: ${row}`);seen.add(id);const body=spatialScenes[scene]||lastScenes[scene]||closingScenes[scene]||finishingScenes[scene]||finalScenes[scene]||actions[scene]||scenes[scene];if(!body)throw Error(`Missing scene: ${scene}`);

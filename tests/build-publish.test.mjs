@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {mkdtemp,mkdir,writeFile,readFile,rm,symlink} from 'node:fs/promises';import {tmpdir} from 'node:os';import {join} from 'node:path';import {execFileSync} from 'node:child_process';import {syncBuild} from '../scripts/build-cache.mjs';import {snapshotTree} from '../scripts/publish-tree.mjs';
 test('incremental build reuses, repairs corruption, removes deleted files and matches clean output',async()=>{
  const root=await mkdtemp(join(tmpdir(),'garden-build-'));try{
- const src=join(root,'src'),out=join(root,'out'),cache=join(root,'cache/files.json');await mkdir(join(src,'assets'),{recursive:true});await mkdir(join(src,'app'));for(const p of ['index.html','manifest.webmanifest','app/a.js','assets/a.wav'])await writeFile(join(src,p),'initial');
+ const src=join(root,'src'),out=join(root,'out'),cache=join(root,'cache/files.json');await mkdir(join(src,'assets'),{recursive:true});await mkdir(join(src,'app'));await mkdir(join(src,'domain'));for(const p of ['index.html','manifest.webmanifest','app/a.js','assets/a.wav'])await writeFile(join(src,p),'initial');
  let b=await syncBuild(src,out,cache);await b.save();assert.equal(b.stats.copied,4);
  b=await syncBuild(src,out,cache);assert.equal(b.stats.reused,4);await b.save();
  await writeFile(join(out,'assets/a.wav'),'corrupt');await writeFile(join(src,'app/a.js'),'updated');await rm(join(src,'manifest.webmanifest'));await writeFile(join(src,'manifest.webmanifest'),'new manifest');await writeFile(join(src,'assets/new'),'new');

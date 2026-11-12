@@ -10,14 +10,15 @@ import {prepareSite, inventory, digest} from '../scripts/deploy-site.mjs';
 test('deployment freezes a complete snapshot, excludes hidden files and detects tampering', async () => {
   const root = await mkdtemp(join(tmpdir(), 'garden-deploy-test-'));
   try {
-    await mkdir(join(root, 'dist/app'), {recursive: true});
+    await mkdir(join(root, 'dist/app/account-runtime'), {recursive: true});
+    await writeFile(join(root,'dist/app/account-runtime/runtime.json'),JSON.stringify({version:'0.1.0',fingerprint:'test',source:{repository:'garden-platform',commit:'b'.repeat(40),dirty:false}}));
     await writeFile(join(root, 'package.json'), JSON.stringify({name: 'abc-garden'}));
     for (const file of ['index.html', 'app/main.js', 'manifest.webmanifest', 'sw.js']) await writeFile(join(root, 'dist', file), file);
     await writeFile(join(root, 'dist/.env'), 'must not be published');
     const output = join(root, 'snapshot');
     const result = await prepareSite(root, output, 'a'.repeat(40), true);
     assert.match(result.release, /^\d{8}T\d{9}Z-[a-f0-9]{8}$/);
-    assert.equal(result.fileCount, 5);
+    assert.equal(result.fileCount, 6);
     await assert.rejects(readFile(join(output, '.env')));
     const manifest = await readFile(join(output, '.deploy-manifest.json'));
     assert.equal(digest(manifest), result.manifestSha256);

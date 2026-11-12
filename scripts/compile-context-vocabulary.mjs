@@ -28,9 +28,9 @@ for(const [id,picture] of Object.entries(pictures)){
  if(!word||!topics.has(picture.topic)||!picture.emoji)throw Error(`Invalid picture mapping: ${id}`);
  Object.assign(word,{topic:picture.topic,emoji:picture.emoji,image:`./assets/pictures/${id}.svg`,pictureCue:picture.pictureCue===true});
 }
-await writeFile(new URL('../web/app/context-words.js',import.meta.url),'// Generated from data/vocabulary context sources. See docs/vocabulary-content.md for credits and review limits.\nexport const CONTEXT_WORDS='+JSON.stringify(words,null,1)+';\n');
+await writeFile(new URL('../domain/context-words.js',import.meta.url),'// Generated from data/vocabulary context sources. See docs/vocabulary-content.md for credits and review limits.\nexport const CONTEXT_WORDS='+JSON.stringify(words,null,1)+';\n');
 console.log(`Compiled ${words.length} contextual word cards.`);
 
 const quizGroups=JSON.parse(await readFile(new URL('../data/vocabulary/picture-quiz-groups.json',import.meta.url),'utf8')),quizIndex={};
 for(const [group,ids] of Object.entries(quizGroups))for(const id of ids){if(quizIndex[id])throw Error(`Duplicate picture quiz group: ${id}`);quizIndex[id]=group;}
-await writeFile(new URL('../web/app/picture-quiz-groups.js',import.meta.url),'// Generated semantic groups: do not offer equivalent images as different answers.\nexport const PICTURE_QUIZ_GROUPS='+JSON.stringify(quizIndex,null,1)+';\n');
+await writeFile(new URL('../domain/picture-quiz-groups.js',import.meta.url),'// Generated semantic groups: do not offer equivalent images as different answers.\nexport const PICTURE_QUIZ_GROUPS='+JSON.stringify(quizIndex,null,1)+';\n');

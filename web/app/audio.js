@@ -1,5 +1,5 @@
 import {englishSpeechRate,pickVoice,pickEnglishVoice,isChineseLanguage} from './voice-settings.js';
-import {letterAudioPath} from './letter-audio.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 import {acquirePlaybackSession} from './playback-session.js';
 // iPad/iPhone speech may finish its JS event before the native ducking fades
 // out. Keep this compatibility window at the speech -> recording boundary.

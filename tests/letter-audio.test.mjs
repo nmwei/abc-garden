@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {freshState,sanitizeState} from '../web/app/core.js';
-import {letterAudioPath} from '../web/app/letter-audio.js';
+import {freshState,sanitizeState} from '../domain/core.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 
 test('old and invalid preferences default to EdCreate; GK survives reload sanitization',()=>{
   assert.equal(freshState().settings.letterAudioSource,'edcreate');

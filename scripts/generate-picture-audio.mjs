@@ -33,7 +33,7 @@ if(process.argv[2]==='--worker'){
  }
  console.log(JSON.stringify({worker:slot,done,complete:true}));await network.dispose();
 }else{
- const {COURSE_AUDIO}=await import('../web/app/course-content.js');
+ const {COURSE_AUDIO}=await import('../domain/course-content.js');
  const prior=await readFile(new URL('course-sources.json',directory),'utf8').then(JSON.parse).catch(()=>({clips:[]}));
  const old=new Map(prior.clips.map(c=>[c.key,c])),tasks=[];
  for(const entry of COURSE_AUDIO){

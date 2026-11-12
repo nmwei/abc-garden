@@ -1,14 +1,14 @@
-import {createGuidedPolicy as testPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy as testPolicy} from '../domain/guided-learning-policy.js';
 const TWO_ATTEMPT_POLICY=testPolicy({retrieval:{maxAttempts:2}});
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {startRound as startPolicyRound,synchronizeScope,resumeRound,hasPending,finishRound,learningPlan,afterDays,dayKey,prepareGuidedSession,markPrompt,markHeard,nextTeachingStep,answerRecall,answerChoice,answerUnderstanding,deferWord} from '../web/app/guided-words-core.js';
 import {GUIDED_KEY,freshGuided,cleanGuided} from '../web/app/guided-progress.js';
-import {DEFAULT_GUIDED_POLICY,guidedBreakMs,guidedRetryMs} from '../web/app/guided-learning-policy.js';
+import {DEFAULT_GUIDED_POLICY,guidedBreakMs,guidedRetryMs} from '../domain/guided-learning-policy.js';
 const ROUND_LIMIT_MS=guidedBreakMs(DEFAULT_GUIDED_POLICY),SHORT_REVIEW_MS=guidedRetryMs(DEFAULT_GUIDED_POLICY);
 import {GuidedWords} from '../web/app/guided-words.js';
 import {activityFor} from '../web/app/guided-activities.js';
-import {CATALOG_BY_ID,READY_WORDS} from '../web/app/course-content.js';
+import {CATALOG_BY_ID,READY_WORDS} from '../domain/course-content.js';
 // Exercise a supported two-attempt strategy independently of the default.
 const startRound=(data,ids,time,directIds=[])=>startPolicyRound(data,ids,time,directIds,TWO_ATTEMPT_POLICY);
 const now=new Date(2026,10,9,10).getTime();

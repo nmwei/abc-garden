@@ -1,4 +1,4 @@
-import {createGuidedPolicy} from './guided-learning-policy.js';
+import {createGuidedPolicy} from '../domain/guided-learning-policy.js';
 import {guidedSense} from './guided-content-state.js';
 import {guidedEntry,guidedPage} from './guided-words-view.js';
 import {createGuidedLearning,scopeMatches,hasPending} from './guided-words-core.js';

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY,GUIDED_PRESETS,guidedInitialTask} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY,GUIDED_PRESETS,guidedInitialTask} from '../domain/guided-learning-policy.js';
 
 test('policy has a small set of coherent learning controls, and partial overrides cannot mutate defaults',()=>{
  const input={session:{breakAfterMinutes:12},review:{intervalsDays:[2,4,9]}},policy=createGuidedPolicy(input);

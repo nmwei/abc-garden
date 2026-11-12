@@ -1,3 +1,4 @@
+import {pageUrl} from './routes.js';
 export function watchSiteUpdates(registration,{beforeUpdate=()=>true,busy=()=>false,notify=()=>{},onState=()=>{},showBanner=true}={}){
  let returnHome=false,activationTimer;
  let checking=false,applying=false;
@@ -8,7 +9,7 @@ export function watchSiteUpdates(registration,{beforeUpdate=()=>true,busy=()=>fa
  const report=text=>{status.textContent=text;notify(text);};
  const reloadPage=()=>{
   clearTimeout(activationTimer);reloading=true;
-  if(returnHome)history.replaceState(null,'','#/home');
+  if(returnHome)history.replaceState(null,'',pageUrl('home'));
   location.reload();
  };
  const publish=()=>onState({ready:Boolean(registration.waiting)||changed,busy:checking||applying||requested});

@@ -1,5 +1,5 @@
 import {deviceStorage} from './device-storage.js';
-import {DATA} from './learning-data.js';
+import {DATA} from '../domain/learning-data.js';
 export const VOICE_KEY=DATA.chineseVoice;
 const ENGLISH_VOICE_KEY=DATA.englishVoice;
 const ENGLISH_RATE_KEY=DATA.englishRate;

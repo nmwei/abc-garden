@@ -1,7 +1,7 @@
-import {DATA, LETTER_SETTING_CHOICES} from './learning-data.js';
+import {DATA, LETTER_SETTING_CHOICES} from '../domain/learning-data.js';
 import {showSaveResult} from './save-feedback.js';
 import {learningStorage} from './account-storage.js';
-import {createLetterPolicy} from './guided-letters-policy.js';
+import {createLetterPolicy} from '../domain/guided-letters-policy.js';
 export const LETTER_GUIDED_SETTINGS_KEY=DATA.letterSettings;
 const allowed=LETTER_SETTING_CHOICES;
 export class LetterLearningSettings {

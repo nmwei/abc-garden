@@ -12,3 +12,10 @@ playwright-report/
 .build-cache/
 
 .runtime/
+
+web/app/account-runtime/
+
+
+web/domain/
+domain/catalog.json
+build/

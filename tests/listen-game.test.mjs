@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {ListeningRound} from '../web/app/listen-game-core.js';
+import {ListeningRound} from '../domain/listen-game-core.js';
 
 test('practice keeps wrong choices disabled and hints exclude first-try credit',()=>{
  const r=new ListeningRound(['A','B']);r.queue=['A','B'];

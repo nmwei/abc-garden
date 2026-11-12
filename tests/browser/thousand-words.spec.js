@@ -1,6 +1,6 @@
 import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
-import {READY_WORDS as WORDS,TOPICS} from '../../web/app/course-content.js';
+import {READY_WORDS as WORDS,TOPICS} from '../../domain/course-content.js';
 test('large themed vocabulary paginates, searches, handles cues and works offline',async({page,context})=>{
  test.setTimeout(180000);
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();

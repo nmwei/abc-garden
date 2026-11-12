@@ -2,9 +2,9 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {CATALOG_BY_ID} from '../web/app/course-content.js';
-import {canonicalWordId} from '../web/app/word-aliases.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {CATALOG_BY_ID} from '../domain/course-content.js';
+import {canonicalWordId} from '../domain/word-aliases.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const audioSource=await json('assets/audio/course-sources.json');
 const clips=new Map(audioSource.clips.map(c=>[c.key,c]));

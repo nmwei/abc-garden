@@ -1,4 +1,4 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {WORDS,WORD_BY_ID,TOPICS} from '../web/app/course-content.js';import {Course} from '../web/app/course.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {WORDS,WORD_BY_ID,TOPICS} from '../domain/course-content.js';import {Course} from '../web/app/course.js';
 test('new direct pictures are complete, credited and have visually distinct quiz options',async()=>{
  const mappings=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url))),credits=JSON.parse(await readFile(new URL('../web/assets/credits.json',import.meta.url))),hashes=new Map();
  for(const w of WORDS.filter(w=>w.image)){const bytes=await readFile(new URL('../web/'+w.image,import.meta.url));hashes.set(w.id,createHash('sha256').update(bytes).digest('hex'));}

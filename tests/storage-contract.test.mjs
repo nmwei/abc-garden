@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {learningSnapshot} from './fixtures/learning-snapshot.mjs';
-import {validateArchive} from '../web/app/archive-schema.js';
-import {DATA,ARCHIVE_KEYS,DATA_DEFINITIONS,projectLearningValue} from '../web/app/learning-data.js';
+import {validateArchive} from '../domain/archive-schema.js';
+import {DATA,ARCHIVE_KEYS,DATA_DEFINITIONS,projectLearningValue} from '../domain/learning-data.js';
 import {showSaveResult} from '../web/app/save-feedback.js';
 
 test('every account domain has populated round-trip data and device settings stay outside the archive',()=>{

@@ -1,8 +1,8 @@
 import {learningStorage} from './account-storage.js';
-import {canonicalWordId} from './word-aliases.js';
+import {canonicalWordId} from '../domain/word-aliases.js';
 export const MASTERY_KEY='abc-garden-mastery-v1';
-export {cleanMastery,localDay,recordMastery,setMastery} from './mastery-records.js';
-import {cleanMastery,recordMastery,setMastery} from './mastery-records.js';
+export {cleanMastery,localDay,recordMastery,setMastery} from '../domain/mastery-records.js';
+import {cleanMastery,recordMastery,setMastery} from '../domain/mastery-records.js';
 export class MasteryStore {
  constructor(toast){this.toast=toast;this.data=cleanMastery(null);this.reload();}
  reload(){try{this.data=cleanMastery(JSON.parse(learningStorage.getItem(MASTERY_KEY)||'null'));}catch{this.toast('掌握记录暂时无法读取，本次仍可练习。');}}

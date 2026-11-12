@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {cleanWordMeanings} from '../web/app/word-meanings.js';
+import {cleanWordMeanings} from '../domain/word-meanings.js';
 import {wordLibrary} from '../web/app/word-library.js';
-import {cleanWeekly} from '../web/app/module-content.js';
-import {CATALOG_BY_ID} from '../web/app/course-content.js';
+import {cleanWeekly} from '../domain/module-content.js';
+import {CATALOG_BY_ID} from '../domain/course-content.js';
 test('personal glosses survive sanitization and override every library view without modifying catalog or examples',()=>{
  const original=CATALOG_BY_ID.get('walk');
  const data=cleanWeekly({letters:'EF',wordMeanings:{walk:{zh:' 散步 '},unknown:{zh:'未知'},cat:{zh:''},apple:12,color:{zh:'a'.repeat(161)}}});
@@ -23,7 +23,7 @@ test('structured edits preserve identity, survive reload and are shared by both 
  assert.notEqual(CATALOG_BY_ID.get('walk').sentence,'We walk home.');
 });
 test('missing and blank translations fall back to the current sentence, never a different sentence',async()=>{
- const {withWordMeaning}=await import('../web/app/word-meanings.js');
+ const {withWordMeaning}=await import('../domain/word-meanings.js');
  for(const sentenceZh of [undefined,'','   '])assert.equal(withWordMeaning({id:'apple',sentence:'I like apples.',sentenceZh},{}).sentenceZh,'我喜欢苹果。');
  assert.equal(withWordMeaning({id:'apple',sentence:'A completely custom sentence.',sentenceZh:''},{}).sentenceZh,'');
 });

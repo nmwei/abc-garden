@@ -1,5 +1,5 @@
 import {icon} from './art.js';
-import {sameLetterSound} from './listen-game-core.js';
+import {sameLetterSound} from '../domain/listen-game-core.js';
 import {escapeGuidedText as esc,guidedHeading,guidedStage,guidedStageColumns,guidedDock,guidedDeferRow} from './guided-session-view.js';
 
 const skillLabel=skill=>({name:'字母名称',sound:'字母音',case:'大小写'})[skill]||'字母';

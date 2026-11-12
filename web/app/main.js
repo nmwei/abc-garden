@@ -1,3 +1,4 @@
+import {pageUrl} from './routes.js';
 import {validateRestore} from './account-restore.js';
 import {accountPanel,parentIdentity} from './account-ui.js';
 import {learningStorage,storageNotice,captureArchive,blockStorage,canRetryStorage,retryStorage} from './account-storage.js';
@@ -8,15 +9,15 @@ import {GuidedLearningSettings} from './guided-learning-settings.js';
 import {GuidedLetters} from './guided-letters.js';
 import {mountLetterLayout} from './letter-layout.js';
 import {LetterAudioSettings} from './letter-audio-settings.js';
-import {letterSourceInfo} from './letter-audio.js';
+import {letterSourceInfo} from '../domain/letter-audio.js';
 import {mountParentHold} from './parent-gate.js';
 import {MasteryStore,MASTERY_KEY} from './mastery.js';
 import {OfflineLibrary} from './offline.js';
 import {LearningContent} from './learning-content.js';
 import {FollowAlong} from './follow-along.js';
 import {Course,wordPicture} from './course.js';
-import { LETTERS,byLetter } from './content.js';
-import { freshState,sanitizeState,shuffle } from './core.js';
+import { LETTERS,byLetter } from '../domain/content.js';
+import { freshState,sanitizeState,shuffle } from '../domain/core.js';
 import { icon,gardenArt } from './art.js';
 import { GardenAudio } from './audio.js';
 
@@ -86,7 +87,7 @@ let disposeParentHold=null,letterSaveMessage='',letterSettingsReturn='listen';
 function enterParents(){draft=structuredClone(state.settings);go('parents');offline.check();}
 function requestParents(){letterGuided.suspend();listenGame.suspend();pauseSong();if(route==='parents')return;course.stopWordLoop();follow.stop();learning.stop();audio.stop();showModal('parents');}
 function showModal(kind){cancelPairPlayback();if(libraryActivity==='pair')audio.stop();modal=kind;renderModal();}
-function go(page){if(page!=='letters'||libraryActivity!=='guided')letterGuided.leave({pause:true});letterAudioSettings.cancel();cancelPairPlayback();listenGame.leave();if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',`#/${route}`);return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',`#/${page==='letters'&&libraryActivity==='guided'?'letters-together':page}`);if(page!=='letters')state.session=null;else if(!['listen','song','choose','guided'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
+function go(page){if(page!=='letters'||libraryActivity!=='guided')letterGuided.leave({pause:true});letterAudioSettings.cancel();cancelPairPlayback();listenGame.leave();if(page==='words'&&route!=='words'){course.word=null;course.masteryFilter='learning';course.topic='all';course.wordQuery='';course.wordPage=0;course.options=null;}if(route==='parents'&&!learning.flush()){history.replaceState(null,'',pageUrl(route));return;}disposeParentHold?.();disposeParentHold=null;learning.stop();follow.stop(false);course.leave();audio.stop();modal=null;history.replaceState(null,'',pageUrl(page==='letters'&&libraryActivity==='guided'?'letters-together':page));if(page!=='letters')state.session=null;else if(!['listen','song','choose','guided'].includes(libraryActivity)&&!state.session)libraryActivity='listen';route=page;if(page==='words')course.view='words';else if(page==='learn')course.view='map';lastTick=Date.now();if(page==='words')course.open('words');else render();window.scrollTo({top:0,behavior:'instant'});}
 function header(){
  const destinations=[['library','letters','alphabet','字母朋友'],['words','words','picture','看图学词'],['learn','learn','sprout','成长地图']];
  return `<header class="topbar"><button class="brand" data-action="home" aria-label="${APP_NAME}首页"><img src="./assets/icon.svg" alt="" width="42" height="42"><span><strong>${APP_NAME}</strong><small>ABC GARDEN</small></span></button>
@@ -377,11 +378,11 @@ function requestedPage(){
  if(['practice','finish'].includes(requested)){libraryActivity='listen';return 'letters';}
  return ['home','learn','words','letters','parents'].includes(requested)?requested:'home';
 }
-window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents'&&route!=='parents'){history.replaceState(null,'',`#/${route}`);requestParents();}else if(page==='letters'&&libraryActivity==='guided')letterGuided.open();else go(page);});
+window.addEventListener('hashchange',()=>{const page=requestedPage();if(page==='parents'&&route!=='parents'){history.replaceState(null,'',pageUrl(route));requestParents();}else if(page==='letters'&&libraryActivity==='guided')letterGuided.open();else go(page);});
 const initialPage=requestedPage();
 route=initialPage==='parents'?'home':initialPage;
 if(route==='words')course.view='words';
-history.replaceState(null,'',`#/${route==='letters'&&libraryActivity==='guided'?'letters-together':route}`);
+history.replaceState(null,'',pageUrl(route==='letters'&&libraryActivity==='guided'?'letters-together':route));
 if(route==='letters'&&libraryActivity==='guided')letterGuided.open();
 else if(route==='words')course.open('words');else render();
 if(initialPage==='parents')requestParents();

@@ -1,8 +1,8 @@
 // A review stamp records visual work; hashes only detect changes since that review.
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,COURSE_AUDIO} from '../web/app/course-content.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {CATALOG_WORDS,COURSE_AUDIO} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')?'web/'+path:path,root)).then(JSON.parse);
 const fixes=await json('data/vocabulary/quality-fixes.json'),baseline=await json('data/vocabulary/quality-review-2026-11-02.json');
 const original=new Map(baseline.cards.map(c=>[c.id,c])),current=new Map(CATALOG_WORDS.map(w=>[w.id,w]));

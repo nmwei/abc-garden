@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GuidedLearningSettings,GUIDED_SETTINGS_KEY} from '../web/app/guided-learning-settings.js';
-import {createGuidedPolicy,readGuidedPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy,readGuidedPolicy} from '../domain/guided-learning-policy.js';
 const fixture=()=>{let raw=null,fail=false;const storage=()=>({getItem:()=>raw,setItem:(_key,value)=>{if(fail)throw Error('quota');raw=value;}});return {storage,raw:()=>raw,write:value=>raw=value,fail:()=>fail=true};};
 test('parent settings expose two bounded preferences and leave all learning evidence rules unchanged',()=>{
  const store=fixture(),settings=new GuidedLearningSettings(store);

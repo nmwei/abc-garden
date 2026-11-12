@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {auditCurriculum,auditTarget} from '../scripts/audit-wonders-gk.mjs';
-import {WORD_BY_ID,READY_WORDS} from '../web/app/course-content.js';
+import {WORD_BY_ID,READY_WORDS} from '../domain/course-content.js';
 import {Course} from '../web/app/course.js';
 
 const manifest=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk.json',import.meta.url)));

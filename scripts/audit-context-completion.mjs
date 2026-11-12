@@ -3,7 +3,7 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../web/app/course-content.js';
+import {CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../domain/course-content.js';
 import {auditTarget} from './audit-wonders-gk.mjs';
 const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 export async function auditCompletion(plan){

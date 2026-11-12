@@ -1,9 +1,9 @@
 import {learningStorage} from './account-storage.js';
-import {DATA, LISTEN_DEFAULTS, LISTEN_CHOICES} from './learning-data.js';
+import {DATA, LISTEN_DEFAULTS, LISTEN_CHOICES} from '../domain/learning-data.js';
 import './feedback-audio.js';
-import {ListeningRound} from './listen-game-core.js';
+import {ListeningRound} from '../domain/listen-game-core.js';
 import {icon} from './art.js';
-import {letterAudioPath} from './letter-audio.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 
 const ABC='ABCDEFGHIJKLMNOPQRSTUVWXYZ',format=ms=>`${Math.floor(ms/60000)}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}`;
 const OPTIONS_KEY=DATA.listening,defaults=LISTEN_DEFAULTS;

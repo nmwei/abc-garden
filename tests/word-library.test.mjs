@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {wordLibrary,selectedWordIds} from '../web/app/word-library.js';
-import {READY_WORDS as WORDS,CATALOG_BY_ID} from '../web/app/course-content.js';
+import {READY_WORDS as WORDS,CATALOG_BY_ID} from '../web/domain/course-content.js';
 test('explicit selection keeps known words in order, excludes unknowns and keeps catalog canonical',()=>{
  assert.deepEqual(selectedWordIds({words:'cat | 改写 | Hello.\napple\nzzzzunknown'}),[]);
  assert.deepEqual(selectedWordIds({selectedWordIds:['apple','cat','apple','zzzzunknown'],words:'ball'}),['apple','cat']);

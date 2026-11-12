@@ -1,5 +1,5 @@
-import {byLetter} from './content.js';
-import {WORD_BY_ID} from './course-content.js';
+import {byLetter} from '../domain/content.js';
+import {WORD_BY_ID} from '../domain/course-content.js';
 
 // These cues support one relaxed demonstration. They are not pronunciation tests.
 const cues={

@@ -1,9 +1,13 @@
 import {seedLearning} from './storage-helpers.js';
 import { test, expect } from "@playwright/test";
 async function openParents(page) {
-  await page.goto("/#/parents");
   const hold = page.locator("#parent-hold");
-  await hold.waitFor({ state: "visible" });
+  // Initial session activation can reload once while this navigation starts.
+  await expect(async()=>{
+    await page.goto('/#/parents');
+    await expect(page.locator('#parent-hold:visible, #word-editor:visible').first()).toBeVisible({timeout:1500});
+  }).toPass({timeout:10000});
+  if(await page.locator('#word-editor').isVisible())return;
   await hold.focus();
   await page.keyboard.down("Space");
   await page.waitForTimeout(1100);
@@ -256,12 +260,10 @@ test("offline edits, a competing device and history restoration keep both versio
     { index },
   );
   await page.reload();
-  await openParents(page);
-  await openArchive(page);
-  await Promise.all([
-    page.waitForEvent("load"),
-    page.getByRole("button", { name: /保存本机记录到账号/ }).click(),
-  ]);
+  await expect.poll(async () => {
+    try { return await page.evaluate(async()=> (await import('/app/account-storage.js')).localAccount().owner); }
+    catch { return 'guest'; }
+  }).not.toBe('guest');
   await openParents(page);
   const remote = () =>
     page.evaluate(
@@ -284,7 +286,7 @@ test("offline edits, a competing device and history restoration keep both versio
   await expect
     .poll(
       async () =>
-        (await remote()).snapshot.data["abc-garden-mastery-v1"]?.entries.apple
+        (await remote()).snapshot?.data["abc-garden-mastery-v1"]?.entries.apple
           .mastered,
     )
     .toBe(true);

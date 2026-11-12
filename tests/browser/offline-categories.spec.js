@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {openParents} from './parent-helpers.js';
-import {READY_WORDS,WORDS} from '../../web/app/course-content.js';
+import {READY_WORDS,WORDS} from '../../domain/course-content.js';
 const send=(page,type,id)=>page.evaluate(async({type,id})=>{const reg=await navigator.serviceWorker.ready;return new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>{if(e.data.progress!==undefined)return;c.port1.close();resolve(e.data);};reg.active.postMessage({type,id},[c.port2]);});},{type,id});
 test('four download categories cover only released words and preserve other learning assets',async({page})=>{
  await page.goto('/');const manifest=await page.evaluate(()=>fetch('./precache.json').then(r=>r.json()));

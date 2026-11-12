@@ -1,18 +1,18 @@
 import {guidedEntry} from './guided-words-view.js';
 import {guidedSense} from './guided-content-state.js';
-import {LETTER_AUDIO_SOURCES,letterSourceInfo} from './letter-audio.js';
+import {LETTER_AUDIO_SOURCES,letterSourceInfo} from '../domain/letter-audio.js';
 import {GuidedWords} from './guided-words.js';
 import {activityFor} from './guided-activities.js';
 import {GUIDED_PLAN_FINGERPRINT} from './guided-word-plans.js';
 import {guidedGame,guidedGameIds} from './guided-learning-games.js';
 import {quizCelebration} from './celebration.js';
 import {PictureQuiz} from './picture-quiz.js';
-import {matchesWord} from './word-aliases.js';
+import {matchesWord} from '../domain/word-aliases.js';
 import {selectedWordIds,wordLibrary} from './word-library.js';
-import {sentenceMeaning} from './sentence-meanings.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 import {wordCardBody,sentenceCreditDetails,wordSentenceTranslation} from './word-card.js';
-import {WORDS,WORD_BY_ID,CATALOG_BY_ID,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from './course-content.js';
-import {recordLearning,reviewWords,normalizeWord} from './course-core.js';
+import {WORDS,WORD_BY_ID,CATALOG_BY_ID,TOPICS,READINGS,DIALOGUES,WRITING,LEVELS} from '../domain/course-content.js';
+import {recordLearning,reviewWords,normalizeWord} from '../domain/course-core.js';
 import {LocalRecorder} from './recorder.js';
 const DEFAULT_WORD_PAGE_SIZE=12;
 // These primary vocabulary entries also appear in the contextual expansion.

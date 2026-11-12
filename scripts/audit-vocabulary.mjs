@@ -1,6 +1,6 @@
-import {canonicalWordId} from '../web/app/word-aliases.js';
+import {canonicalWordId} from '../domain/word-aliases.js';
 import {readFile,writeFile} from 'node:fs/promises';
-import {WORDS} from '../web/app/course-content.js';
+import {WORDS} from '../domain/course-content.js';
 const source=JSON.parse(await readFile(new URL('../data/vocabulary/high-2025.json',import.meta.url),'utf8'));
 const primary=JSON.parse(await readFile(new URL('../data/vocabulary/primary-2022.json',import.meta.url),'utf8'));
 const normalize=s=>s.trim().replaceAll('’',"'").normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();

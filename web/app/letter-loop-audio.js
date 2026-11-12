@@ -1,4 +1,4 @@
-import {letterAudioPath} from './letter-audio.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 
 // Read RIFF chunks instead of assuming every WAV has a 44-byte header.
 export function readPcmWav(buffer){

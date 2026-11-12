@@ -1,4 +1,4 @@
-import {letterAudioPath} from './letter-audio.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 import {loadLetterLoopClips,makeLetterLoop} from './letter-loop-audio.js';
 import {acquirePlaybackSession} from './playback-session.js';
 export class FollowAlong {

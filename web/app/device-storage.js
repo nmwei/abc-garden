@@ -1,4 +1,4 @@
-import {definition} from './learning-data.js';
+import {definition} from '../domain/learning-data.js';
 // Device preferences never follow account switching or create cloud writes.
 export const deviceStorage = {
   getItem(key) { definition(key, 'device'); return localStorage.getItem(key); },

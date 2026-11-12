@@ -8,7 +8,7 @@
     "audio": "node scripts/generate-audio.mjs",
     "build": "node scripts/compile-picture-vocabulary.mjs && node scripts/compile-context-vocabulary.mjs && npm run pictures:quality && node scripts/build.mjs",
     "pictures:quality": "node scripts/generate-context-symbols.mjs && node scripts/generate-quality-pictures.mjs && node scripts/generate-context-pictures.mjs && node scripts/generate-refined-pictures.mjs",
-    "dev": "node scripts/build.mjs && node scripts/dev.mjs",
+    "dev": "node ../garden-platform/scripts/develop.mjs --site abc",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "check": "npm test && npm run build",
@@ -20,16 +20,24 @@
     "audit:quality": "node scripts/audit-quality-fixes.mjs",
     "audit:guided": "node scripts/compile-guided-activities.mjs --check && node scripts/audit-guided-activities.mjs",
     "deploy": "node scripts/publish.mjs",
-    "test:server": "npm test --prefix server",
+    "test:server": "node ../garden-platform/scripts/test-server.mjs",
     "test:account": "playwright test --config playwright.account.config.js",
-    "package:server": "node scripts/package-server.mjs"
+    "package:server": "node ../garden-platform/scripts/package-server.mjs",
+    "pretest": "node scripts/prepare-account.mjs",
+    "build:gardens": "node ../garden-platform/scripts/build-gardens.mjs",
+    "dev:gardens": "node ../garden-platform/scripts/develop.mjs",
+    "test:gardens": "npm --prefix ../garden-platform run test:browser",
+    "build:domain": "node scripts/build-domain.mjs",
+    "test:domain": "npm run build:domain && node --test server/tests/*.test.mjs",
+    "preview": "node scripts/serve.mjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": "22.x"
   },
   "devDependencies": {
     "@huggingface/transformers": "3.8.1",
     "@playwright/test": "1.64.1",
-    "kokoro-js": "1.2.1"
+    "kokoro-js": "1.2.1",
+    "@garden/account": "file:../garden-platform/packages/account"
   }
 }

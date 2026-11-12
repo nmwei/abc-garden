@@ -36,7 +36,8 @@ export async function prepareSite(root, output, sourceCommit, dirty) {
     throw Error('Build output changed while preparing deployment.');
   }
   const release = `${new Date().toISOString().replace(/[-:.]/g, '')}-${randomUUID().slice(0, 8)}`;
-  const metadata = {app, release, sourceCommit, dirty, createdAt: new Date().toISOString()};
+  const runtime=JSON.parse(await readFile(join(source,'app/account-runtime/runtime.json'),'utf8'));
+  const metadata = {app, release, sourceCommit, dirty, sharedRuntime:runtime, createdAt: new Date().toISOString()};
   const metadataBytes = JSON.stringify(metadata, null, 2) + '\n';
   await writeFile(join(output, '_release.json'), metadataBytes);
   files['_release.json'] = digest(metadataBytes);
@@ -70,6 +71,9 @@ export async function deploy(root = resolve('.')) {
     run('ssh', [...sshArgs, host, `python3 - ${quote(app)} rollback`], {input: remote});
     return;
   }
+  const platformRoot=resolve(root,'../garden-platform');
+  const platformDirty=!!execFileSync('git',['status','--porcelain'],{cwd:platformRoot,encoding:'utf8',env:{...process.env,GIT_OPTIONAL_LOCKS:'0'}}).trim();
+  if(platformDirty&&!values['allow-dirty'])throw Error('Shared platform has unreviewed changes; commit it or explicitly use --allow-dirty.');
   const sourceCommit = git(['rev-parse', 'HEAD']);
   run(process.execPath, ['scripts/build.mjs']);
   dirty = Boolean(git(['status', '--porcelain']));

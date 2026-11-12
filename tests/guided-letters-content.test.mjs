@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ALPHABET} from '../web/app/content.js';
-import {WORD_BY_ID} from '../web/app/course-content.js';
+import {ALPHABET} from '../domain/content.js';
+import {WORD_BY_ID} from '../domain/course-content.js';
 import {getLetterActivity,getInitialSoundActivity,getLetterPlay} from '../web/app/guided-letters-content.js';
 
 test('all 26 letters reuse the actual example, image and audio phoneme for each teaching skill',()=>{

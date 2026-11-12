@@ -1,5 +1,5 @@
 import {icon} from './art.js';
-import {sentenceMeaning} from './sentence-meanings.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 export function sentenceCreditDetails(word){

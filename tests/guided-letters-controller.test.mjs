@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GuidedLetters} from '../web/app/guided-letters.js';
 import {LetterLearningSettings} from '../web/app/guided-letters-settings.js';
-import {createLetterLearning,freshLetterLearning} from '../web/app/guided-letters-core.js';
+import {createLetterLearning,freshLetterLearning} from '../domain/guided-letters-core.js';
 import {createLearningRepository} from '../web/app/learning-repository.js';
 const at=new Date(2026,10,10,10).getTime();
 function fixture(initial=null){

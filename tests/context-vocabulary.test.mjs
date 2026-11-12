@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {WORDS,WORD_BY_ID} from '../web/app/course-content.js';
-import {CONTEXT_WORDS} from '../web/app/context-words.js';
+import {WORDS,WORD_BY_ID} from '../domain/course-content.js';
+import {CONTEXT_WORDS} from '../domain/context-words.js';
 import {sentenceCreditDetails} from '../web/app/word-card.js';
-import {parseWords} from '../web/app/module-content.js';
+import {parseWords} from '../domain/module-content.js';
 test('new cards fill primary headwords without replacing the original catalog or inventing picture questions',async()=>{
  const mappings=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url)));
  const primary=JSON.parse(await readFile(new URL('../data/vocabulary/primary-2022.json',import.meta.url)));

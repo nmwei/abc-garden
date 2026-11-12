@@ -1,6 +1,6 @@
 // Isolated browser-test process. This fixture never calls an external SMS provider.
 import { spawn } from "node:child_process";
-import { createApp } from "../server/app.mjs";
+import { createApp } from "../../garden-platform/server/app.mjs";
 let now = Date.now();
 const api = await createApp({
   origin: "http://localhost:4283",

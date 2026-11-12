@@ -1,7 +1,7 @@
-import {createGuidedPolicy as testPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy as testPolicy} from '../domain/guided-learning-policy.js';
 const TWO_ATTEMPT_POLICY=testPolicy({retrieval:{maxAttempts:2}});
 import {activityFor} from '../web/app/guided-activities.js';
-import {CATALOG_BY_ID} from '../web/app/course-content.js';
+import {CATALOG_BY_ID} from '../domain/course-content.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createGuidedLearning} from '../web/app/guided-words-core.js';

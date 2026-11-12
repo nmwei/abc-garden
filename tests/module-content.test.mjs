@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {cleanWeekly,parseBlends,parseWords,blendSteps} from '../web/app/module-content.js';
+import {cleanWeekly,parseBlends,parseWords,blendSteps} from '../domain/module-content.js';
 test('weekly classroom content validates limits and preserves explicit sentences',()=>{
  assert.deepEqual(parseWords('mix | 搅拌 | I can mix. | 做搅拌动作'),[{word:'mix',zh:'搅拌',sentence:'I can mix.',action:'做搅拌动作'}]);
  assert.throws(()=>parseWords('<script> | x'));

@@ -1,6 +1,6 @@
 import {KokoroTTS} from 'kokoro-js';
 import {writeFile} from 'node:fs/promises';
-import {ALPHABET} from '../web/app/content.js';
+import {ALPHABET} from '../domain/content.js';
 import {encodePcm16} from './audio-pcm.mjs';
 const model='onnx-community/Kokoro-82M-v1.0-ONNX',voice='af_heart';
 const tts=await KokoroTTS.from_pretrained(model,{dtype:'q8',device:'cpu'});

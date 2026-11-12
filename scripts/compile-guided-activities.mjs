@@ -1,7 +1,7 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {READY_WORDS} from '../web/app/course-content.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {READY_WORDS} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 import {ACTIVITY_PROFILES} from '../web/app/guided-activity-profiles.js';
 import {validateGuidedPlans} from './guided-activity-validation.mjs';
 const root=new URL('../',import.meta.url);

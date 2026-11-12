@@ -41,7 +41,7 @@ test('played media is reusable offline with byte ranges and cache count is bound
  test.setTimeout(60000);await page.goto('/#/words');await page.locator('[data-filter=all]').click();await ready(page);await page.getByRole('button',{name:'听句子',exact:true}).click();await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
  await expect.poll(async()=>{const state=await offlineStatus(page);return state.recentBytes;}).toBeGreaterThan(1000);
  await context.setOffline(true);const range=await page.evaluate(async()=>{const r=await fetch('./assets/audio/sentence-apple.wav',{headers:{Range:'bytes=0-1'}});return [r.status,(await r.arrayBuffer()).byteLength];});expect(range).toEqual([206,2]);await context.setOffline(false);
- await page.evaluate(async()=>{const {WORDS}=await import('./app/course-content.js');for(let i=0;i<260;i+=10)await Promise.all(WORDS.slice(i,i+10).map(w=>fetch(w.image).then(r=>r.arrayBuffer())));});
+ await page.evaluate(async()=>{const {WORDS}=await import('./domain/course-content.js');for(let i=0;i<260;i+=10)await Promise.all(WORDS.slice(i,i+10).map(w=>fetch(w.image).then(r=>r.arrayBuffer())));});
  await expect.poll(async()=>(await offlineStatus(page)).recentCount).toBe(240);
  expect((await offlineStatus(page)).recentBytes).toBeLessThanOrEqual(40*1024*1024);
 });

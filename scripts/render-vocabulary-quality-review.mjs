@@ -1,8 +1,8 @@
 // Render a dated review without changing application content or review decisions.
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,WORDS} from '../web/app/course-content.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {CATALOG_WORDS,WORDS} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 
 const root=new URL('../',import.meta.url);
 const report=JSON.parse(await readFile(new URL('data/vocabulary/quality-review-2026-11-02.json',root),'utf8'));

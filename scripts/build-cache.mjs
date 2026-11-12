@@ -26,7 +26,7 @@ export async function syncBuild(source,out,cacheFile,{clean=false}={}){
   await copyFile(src,dest);stats.copied++;
   entries[relative]={source:signature(s),destination:signature(await lstat(dest)),bytes:bytes.length,sha256:digest(bytes),gitBlobSha1:digest(Buffer.concat([Buffer.from(`blob ${bytes.length}\0`),bytes]),'sha1'),pcm16:bytes.length>=100&&bytes.toString('ascii',0,4)==='RIFF'&&bytes.readUInt16LE(20)===1&&bytes.readUInt16LE(34)===16};
  }
- const roots=['index.html','manifest.webmanifest','app','assets'];
+ const roots=['index.html','manifest.webmanifest','app','assets','domain'];
  for(const name of await readdir(out))if(!roots.includes(name))await rm(join(out,name),{recursive:true,force:true});
  for(const root of roots)await visit(root);
  return {entries,stats,save:async()=>{await mkdir(join(cacheFile,'..'),{recursive:true});await writeFile(cacheFile,JSON.stringify(entries));}};

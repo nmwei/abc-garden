@@ -1,6 +1,6 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {WORDS} from '../web/app/course-content.js';
+import {WORDS} from '../domain/course-content.js';
 import {renderWondersScene} from './pictures/wonders-scenes.mjs';
 const root=new URL('../',import.meta.url),read=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const plans=await read('data/vocabulary/wonders-gk-picture-plan.json'),mappings=await read('data/vocabulary/picture-mappings.json'),credits=await read('assets/credits.json');

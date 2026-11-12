@@ -3,7 +3,7 @@ import {Tensor} from '@huggingface/transformers';
 import {execFileSync} from 'node:child_process';
 import {readFile,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {PROMPTS} from '../web/app/content.js';
+import {PROMPTS} from '../domain/content.js';
 import {encodePcm16} from './audio-pcm.mjs';
 
 const model='onnx-community/Kokoro-82M-v1.1-zh-ONNX';

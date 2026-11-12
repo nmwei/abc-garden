@@ -5,7 +5,7 @@ import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {encodePcm16} from './audio-pcm.mjs';
-import {letterAudioPath} from '../web/app/letter-audio.js';
+import {letterAudioPath} from '../domain/letter-audio.js';
 
 const assets=new URL('../web/assets/',import.meta.url);
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');

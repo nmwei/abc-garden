@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {validateArchive} from '../web/app/archive-schema.js';
+import {validateArchive} from '../domain/archive-schema.js';
 import {validateRestore} from '../web/app/account-restore.js';
 const archive = entries => ({version:1,subject:'abc',data:{'abc-garden-mastery-v1':{version:1,entries}}});
 test('corrupt mastery cannot be accepted as a successful empty restore', () => {
@@ -13,10 +13,10 @@ test('corrupt mastery cannot be accepted as a successful empty restore', () => {
 });
 
 test('all seven archive sections validate without dropping their saved values', async () => {
-  const {freshWeekly}=await import('../web/app/module-content.js');
-  const {freshState}=await import('../web/app/core.js');
+  const {freshWeekly}=await import('../domain/module-content.js');
+  const {freshState}=await import('../domain/core.js');
   const {freshGuided}=await import('../web/app/guided-progress.js');
-  const {freshLetterLearning}=await import('../web/app/guided-letters-core.js');
+  const {freshLetterLearning}=await import('../domain/guided-letters-core.js');
   const {clips,...content}=freshWeekly();
   const snapshot={version:1,subject:'abc',data:{
     'abc-module-content-v1':content,

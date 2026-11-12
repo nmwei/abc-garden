@@ -1,12 +1,13 @@
+import './prepare-account.mjs';
 import './compile-sentence-meanings.mjs';
 import './compile-guided-activities.mjs';
 import { readFile,writeFile } from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {syncBuild} from './build-cache.mjs';
 import { createHash } from 'node:crypto';
-import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../web/app/course-content.js';
-import { ALPHABET,BLENDS,PROMPTS } from '../web/app/content.js';
-import {LETTER_AUDIO_SOURCES} from '../web/app/letter-audio.js';
+import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../domain/course-content.js';
+import { ALPHABET,BLENDS,PROMPTS } from '../domain/content.js';
+import {LETTER_AUDIO_SOURCES} from '../domain/letter-audio.js';
 const out=new URL('../dist/',import.meta.url);
 const build=await syncBuild(fileURLToPath(new URL('../web/',import.meta.url)),fileURLToPath(out),fileURLToPath(new URL('../.build-cache/files.json',import.meta.url)),{clean:process.argv.includes('--clean')});
 const meta=path=>{const entry=build.entries[path.replace(/^\.\//,'')];if(!entry)throw Error(`Missing resource: ${path}`);return entry;};

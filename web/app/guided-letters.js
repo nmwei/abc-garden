@@ -1,4 +1,4 @@
-import {createLetterLearning,letterModelSkills,matchesLetterChoice,sameLetterScope} from './guided-letters-core.js';
+import {createLetterLearning,letterModelSkills,matchesLetterChoice,sameLetterScope} from '../domain/guided-letters-core.js';
 import {createLetterRepository,restoreLetterLearning} from './guided-letters-progress.js';
 import {LearningProgressConflict} from './learning-repository.js';
 import {LetterLearningSettings} from './guided-letters-settings.js';

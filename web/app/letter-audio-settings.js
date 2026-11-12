@@ -1,6 +1,6 @@
 import {showSaveResult} from './save-feedback.js';
-import {LETTERS} from './content.js';
-import {LETTER_AUDIO_SOURCES,letterAudioPath,letterSourceInfo} from './letter-audio.js';
+import {LETTERS} from '../domain/content.js';
+import {LETTER_AUDIO_SOURCES,letterAudioPath,letterSourceInfo} from '../domain/letter-audio.js';
 
 export class LetterAudioSettings {
   constructor({audio,getSource,saveSource,stop}){

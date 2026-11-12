@@ -4,7 +4,7 @@ import {readFile,writeFile,mkdir,access} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {execFile} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {ALPHABET} from '../web/app/content.js';
+import {ALPHABET} from '../domain/content.js';
 import {encodePcm16} from './audio-pcm.mjs';
 const cache=new URL('../.audio-cache/',import.meta.url);
 let english,mandarin,styles,queue=Promise.resolve();

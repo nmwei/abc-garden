@@ -10,5 +10,5 @@ for(const id of Object.keys(refinementScenes)){
  const index=credits.findIndex(c=>c.file===file);if(index<0)credits.push(credit);else credits[index]=credit;
 }
 await writeFile(new URL('web/assets/credits.json',root),JSON.stringify(credits,null,2)+'\n');
-await writeFile(new URL('web/app/refined-pictures.js',root),'// Isolated illustrations: existing shared components remain unchanged.\nexport const REFINED_PICTURES='+JSON.stringify(mappings,null,1)+';\n');
+await writeFile(new URL('domain/refined-pictures.js',root),'// Isolated illustrations: existing shared components remain unchanged.\nexport const REFINED_PICTURES='+JSON.stringify(mappings,null,1)+';\n');
 console.log(`Generated ${Object.keys(mappings).length} isolated teaching illustrations.`);

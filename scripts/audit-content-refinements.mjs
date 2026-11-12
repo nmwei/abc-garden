@@ -1,8 +1,8 @@
 // Review snapshots detect drift; do not refresh stamps without reviewing changed content.
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,COURSE_AUDIO} from '../web/app/course-content.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {CATALOG_WORDS,COURSE_AUDIO} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 const root=new URL('../',import.meta.url),json=async p=>JSON.parse(await readFile(new URL(p,root)));
 const review=await json('data/vocabulary/content-refinements.json'),offline=await json('dist/precache.json');
 const sources=new Map((await json('assets/audio/course-sources.json')).clips.map(c=>[c.key,c]));

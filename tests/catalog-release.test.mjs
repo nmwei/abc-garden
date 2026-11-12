@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {WORDS,WORD_BY_ID,CATALOG_WORDS,CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../web/app/course-content.js';
-import {WORD_ALIASES,canonicalWordId,matchesWord} from '../web/app/word-aliases.js';
+import {WORDS,WORD_BY_ID,CATALOG_WORDS,CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../domain/course-content.js';
+import {WORD_ALIASES,canonicalWordId,matchesWord} from '../domain/word-aliases.js';
 test('release partitions canonical cards and retains every raw card through its canonical identity',()=>{
  assert.equal(READY_WORDS.length+PENDING_WORDS.length,CATALOG_WORDS.length);
  for(const w of WORDS)assert.ok(CATALOG_BY_ID.has(canonicalWordId(w.id)),w.id);

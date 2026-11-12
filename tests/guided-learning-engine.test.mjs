@@ -1,11 +1,11 @@
-import {createGuidedPolicy as testPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy as testPolicy} from '../domain/guided-learning-policy.js';
 const TWO_ATTEMPT_POLICY=testPolicy({retrieval:{maxAttempts:2}});
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createGuidedLearning,dayKey,afterDays} from '../web/app/guided-words-core.js';
 import {freshGuided,cleanGuided,restoreGuidedProgress,createGuidedRepository,GuidedProgressConflict} from '../web/app/guided-progress.js';
-import {createGuidedPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy} from '../domain/guided-learning-policy.js';
 import {GuidedWords} from '../web/app/guided-words.js';
 import {guidedPage} from '../web/app/guided-words-view.js';
 const at=new Date(2026,10,9,10).getTime();

@@ -1,7 +1,7 @@
 import {KokoroTTS} from 'kokoro-js';
 import {writeFile,access} from 'node:fs/promises';
 import {encodePcm16} from './audio-pcm.mjs';
-import {COURSE_AUDIO} from '../web/app/course-content.js';
+import {COURSE_AUDIO} from '../domain/course-content.js';
 const model='onnx-community/Kokoro-82M-v1.0-ONNX',voice='af_heart';
 const tts=await KokoroTTS.from_pretrained(model,{dtype:'q8',device:'cpu'});
 for(const {key,text} of COURSE_AUDIO){

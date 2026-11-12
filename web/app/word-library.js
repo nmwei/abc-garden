@@ -1,6 +1,6 @@
-import {withWordMeaning} from './word-meanings.js';
-import {canonicalWordId} from './word-aliases.js';
-import {READY_WORDS,CATALOG_BY_ID as WORD_BY_ID} from './course-content.js';
+import {withWordMeaning} from '../domain/word-meanings.js';
+import {canonicalWordId} from '../domain/word-aliases.js';
+import {READY_WORDS,CATALOG_BY_ID as WORD_BY_ID} from '../domain/course-content.js';
 
 // A selection stores references to the single built-in catalog, never copies of content.
 export function selectedWordIds(data){

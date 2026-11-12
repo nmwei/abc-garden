@@ -1,6 +1,6 @@
 import {guidedSense} from './guided-content-state.js';
-import {CATALOG_BY_ID} from './course-content.js';
-import {sentenceMeaning} from './sentence-meanings.js';
+import {CATALOG_BY_ID} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 import {GUIDED_WORD_PLANS} from './guided-word-plans.js';
 import {renderProfile} from './guided-activity-profiles.js';
 

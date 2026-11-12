@@ -2,8 +2,8 @@
 import './generate-quality-geography.mjs';
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_BY_ID} from '../web/app/course-content.js';
-import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+import {CATALOG_BY_ID} from '../domain/course-content.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
 import {qualityScenes,renderQualityScene} from './pictures/quality-scenes.mjs';
 const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const fixes=await json('data/vocabulary/quality-fixes.json'),baseline=await json('data/vocabulary/quality-review-2026-11-02.json');

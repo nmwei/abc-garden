@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createGuidedLearning} from '../web/app/guided-words-core.js';
-import {createGuidedPolicy} from '../web/app/guided-learning-policy.js';
+import {createGuidedPolicy} from '../domain/guided-learning-policy.js';
 import {freshGuided,restoreGuidedProgress,createGuidedRepository} from '../web/app/guided-progress.js';
 import {GuidedWords} from '../web/app/guided-words.js';
 const ids=['apple','fish'],at=Date.UTC(2026,10,9,2);

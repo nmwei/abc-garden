@@ -1,10 +1,10 @@
 import {showSaveResult} from './save-feedback.js';
 import {learningStorage} from './account-storage.js';
-import {withWordMeaning,cleanWordMeanings} from './word-meanings.js';
-import {sentenceMeaning} from './sentence-meanings.js';
-import {matchesWord} from './word-aliases.js';
-import {freshWeekly,cleanWeekly} from './module-content.js';
-import {CATALOG_BY_ID as WORD_BY_ID} from './course-content.js';
+import {withWordMeaning,cleanWordMeanings} from '../domain/word-meanings.js';
+import {sentenceMeaning} from '../domain/sentence-meanings.js';
+import {matchesWord} from '../domain/word-aliases.js';
+import {freshWeekly,cleanWeekly} from '../domain/module-content.js';
+import {CATALOG_BY_ID as WORD_BY_ID} from '../domain/course-content.js';
 import {selectedWordIds} from './word-library.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const wordLabel=w=>w.display&&w.display.toLowerCase()!==w.id?`${w.display}（${w.zh}）`:w.display||w.id;

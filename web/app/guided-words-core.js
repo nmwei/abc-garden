@@ -1,5 +1,5 @@
 import {reconcileGuidedSenses} from './guided-content-state.js';
-import {DEFAULT_GUIDED_POLICY,createGuidedPolicy,readGuidedPolicy,guidedPolicyFor,guidedBreakMs,guidedRetryMs,guidedInitialTask} from './guided-learning-policy.js';
+import {DEFAULT_GUIDED_POLICY,createGuidedPolicy,readGuidedPolicy,guidedPolicyFor,guidedBreakMs,guidedRetryMs,guidedInitialTask} from '../domain/guided-learning-policy.js';
 const DEFAULT_GAME_IDS=['mirror','drawing','rhythm'];
 const outcomes=new Set(['independent','prompted','again']);
 const kinds=new Set(['learn','choose','understand','recall','play']);

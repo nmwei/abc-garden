@@ -1,7 +1,7 @@
 import {KokoroTTS} from 'kokoro-js';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {encodePcm16} from './audio-pcm.mjs';
-import {ALPHABET,BLENDS} from '../web/app/content.js';
+import {ALPHABET,BLENDS} from '../domain/content.js';
 
 const directory=new URL('../web/assets/audio/',import.meta.url);
 await mkdir(directory,{recursive:true});

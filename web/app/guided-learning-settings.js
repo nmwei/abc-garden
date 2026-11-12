@@ -1,7 +1,7 @@
-import {DATA, WORD_SETTING_CHOICES} from './learning-data.js';
+import {DATA, WORD_SETTING_CHOICES} from '../domain/learning-data.js';
 import {showSaveResult} from './save-feedback.js';
 import {learningStorage} from './account-storage.js';
-import {DEFAULT_GUIDED_POLICY,createGuidedPolicy} from './guided-learning-policy.js';
+import {DEFAULT_GUIDED_POLICY,createGuidedPolicy} from '../domain/guided-learning-policy.js';
 
 export const GUIDED_SETTINGS_KEY=DATA.wordSettings;
 const choices=WORD_SETTING_CHOICES;
