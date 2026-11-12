@@ -1,6 +1,6 @@
 import {readFile,writeFile} from 'node:fs/promises';
-import {CATALOG_BY_ID} from '../app/course-content.js';
-const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path,root),'utf8').then(JSON.parse);
+import {CATALOG_BY_ID} from '../web/app/course-content.js';
+const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const plan=await json('data/vocabulary/context-completion-plan.json'),first=plan.batches[0];
 const original=new Map(plan.batches.slice(1).flatMap(b=>b.cards).map(w=>[w.id,w]));
 const ids=plan.baselineIds.slice(100),recipes=new Map();

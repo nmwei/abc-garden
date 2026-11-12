@@ -9,6 +9,14 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=
 http.createServer(async(req,res)=>{
   try {
     let pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+    if(pathname.startsWith('/api/') && pathname !== '/api/speech'){
+      const upstream=http.request({hostname:'127.0.0.1',port:Number(process.env.GARDEN_API_PORT||4174),path:req.url,method:req.method,headers:req.headers},response=>{
+        res.writeHead(response.statusCode,response.headers);response.pipe(res);
+      });
+      upstream.setTimeout(15000,()=>upstream.destroy());
+      upstream.on('error',()=>{if(!res.headersSent)res.writeHead(503,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify({error:'账号服务暂时不可用，请稍后再试'}));});
+      req.pipe(upstream);return;
+    }
     if(prefix){if(pathname!==prefix&&!pathname.startsWith(prefix+'/')){res.writeHead(404);res.end();return;}pathname=pathname.slice(prefix.length)||'/';}
     if(pathname==='/api/speech'){
       const origin=req.headers.origin;

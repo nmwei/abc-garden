@@ -2,10 +2,10 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {CATALOG_BY_ID} from '../app/course-content.js';
-import {canonicalWordId} from '../app/word-aliases.js';
-import {sentenceMeaning} from '../app/sentence-meanings.js';
-const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path,root),'utf8').then(JSON.parse);
+import {CATALOG_BY_ID} from '../web/app/course-content.js';
+import {canonicalWordId} from '../web/app/word-aliases.js';
+import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const audioSource=await json('assets/audio/course-sources.json');
 const clips=new Map(audioSource.clips.map(c=>[c.key,c]));
 const pronunciations=await json('data/vocabulary/wonders-gk-pronunciations.json');
@@ -22,12 +22,12 @@ export async function auditTarget(target,{catalog=CATALOG_BY_ID,read=readFile}={
  if(!sameSpelling||!reviewed||reviewed.id!==id||reviewed.zh!==word.zh||reviewed.sentence!==word.sentence)result.issues.push('review');
  if(!word.zh||!word.sentence||!(word.sentenceZh||sentenceMeaning(word.sentence)))result.issues.push('content');
  if(!word.image)result.issues.push('picture');
- else try{await read(new URL(word.image,root));}catch{result.issues.push('picture');}
+ else try{await read(new URL('web/'+word.image,root));}catch{result.issues.push('picture');}
  for(const [key,text] of [[word.audio,word.spoken||word.display||word.id],[`sentence-${word.id}`,word.sentence]]){
   try{
    if(clips.get(key)?.text!==text)throw Error('Stale audio text');
    if(pronunciations[key]&&(pronunciations[key].text!==text||clips.get(key)?.phonemes!==pronunciations[key].phonemes))throw Error('Stale pronunciation');
-   const bytes=await read(new URL(`assets/audio/${key}.wav`,root));
+   const bytes=await read(new URL(`web/assets/audio/${key}.wav`,root));
    if(bytes.length<100||bytes.toString('ascii',0,4)!=='RIFF'||bytes.readUInt16LE(20)!==1||bytes.readUInt16LE(34)!==16)throw Error('Invalid PCM16');
   }catch{result.issues.push('audio');break;}
  }

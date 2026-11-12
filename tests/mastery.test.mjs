@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {cleanMastery,recordMastery,setMastery,localDay} from '../app/mastery.js';
+import {cleanMastery,recordMastery,setMastery,localDay} from '../web/app/mastery.js';
 const evidence=day=>({day,independent:true,direct:true,heard:true});
 test('mastery needs three unassisted first answers across local calendar days',()=>{
  const data=cleanMastery(null);for(let i=0;i<4;i++)assert.equal(recordMastery(data,'apple',evidence('2026-10-30')),false);

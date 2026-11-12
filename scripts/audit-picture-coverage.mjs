@@ -1,5 +1,5 @@
 // Maintenance-only review ledger. No new classification UI and no changes to learning records.
-import{WORDS,CATALOG_BY_ID,READY_WORDS,PENDING_WORDS}from'../app/course-content.js';import{canonicalWordId}from'../app/word-aliases.js';import{readFile,writeFile}from'node:fs/promises';
+import{WORDS,CATALOG_BY_ID,READY_WORDS,PENDING_WORDS}from'../web/app/course-content.js';import{canonicalWordId}from'../web/app/word-aliases.js';import{readFile,writeFile}from'node:fs/promises';
 const baselinePictures=1301;
 const baselineMissing=WORDS.length-baselinePictures;
 const members=s=>new Set(s.split('|'));

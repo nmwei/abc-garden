@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {GardenAudio} from '../app/audio.js';
-import {acquirePlaybackSession} from '../app/playback-session.js';
+import {GardenAudio} from '../web/app/audio.js';
+import {acquirePlaybackSession} from '../web/app/playback-session.js';
 function setup(t){
  const original={Audio:globalThis.Audio,document:globalThis.document,speechSynthesis:globalThis.speechSynthesis,SpeechSynthesisUtterance:globalThis.SpeechSynthesisUtterance,navigator:Object.getOwnPropertyDescriptor(globalThis,'navigator')};
  const events=[];let type='auto',speechActive=false,utterance;

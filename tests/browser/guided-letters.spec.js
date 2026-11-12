@@ -1,16 +1,17 @@
+import {seedLearning} from './storage-helpers.js';
 import {test,expect} from '@playwright/test';
 const key='abc-garden-guided-letters-v1';
 test.beforeEach(async({page})=>{page.letterErrors=[];page.on('pageerror',error=>page.letterErrors.push(error.message));});
 test.afterEach(async({page})=>{expect(page.letterErrors).toEqual([]);});
 const button=(page,name)=>page.locator(`[data-action="letter-guided-${name}"]`);
-const saved=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),key);
+const saved=page=>page.evaluate(async key=>{const store=await import('/app/account-storage.js');await store.learningStorage.whenSaved();return JSON.parse(store.learningStorage.getItem(key));},key);
 async function setup(page,letters='ABCD',start=true){
  await page.clock.install();
  await page.addInitScript(letters=>{
-  if(!localStorage.getItem('abc-module-content-v1'))localStorage.setItem('abc-module-content-v1',JSON.stringify({letters,selectedWordIds:['egg','fish']}));
   window.letterPlayed=[];window.holdLetterAudio=false;
   HTMLMediaElement.prototype.play=function(){window.letterPlayed.push(this.getAttribute('src'));if(!window.holdLetterAudio)queueMicrotask(()=>this.dispatchEvent(new Event('ended')));return Promise.resolve();};
  },letters);
+ await seedLearning(page,{'abc-module-content-v1':{letters,selectedWordIds:['egg','fish']}});
  await page.goto('/#/letters');await page.getByRole('button',{name:'一起学字母',exact:true}).click();
  if(start)await button(page,'start').click();
 }

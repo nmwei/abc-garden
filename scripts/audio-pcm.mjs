@@ -10,7 +10,7 @@ export function encodePcm16(samples,sampleRate=24000){
   return bytes;
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)){
-  const directory=new URL('../assets/audio/',import.meta.url);
+  const directory=new URL('../web/assets/audio/',import.meta.url);
   for(const file of await readdir(directory)){
     if(!file.endsWith('.wav'))continue;
     const path=new URL(file,directory),data=await readFile(path);

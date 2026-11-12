@@ -1,12 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {wordLibrary,selectedWordIds} from '../app/word-library.js';
-import {READY_WORDS as WORDS,CATALOG_BY_ID} from '../app/course-content.js';
-test('selection migrates known words in order, excludes unknowns and keeps catalog canonical',()=>{
- assert.deepEqual(selectedWordIds({words:'cat | 改写 | Hello.\napple\nzzzzunknown'}),['cat','apple']);
+import {wordLibrary,selectedWordIds} from '../web/app/word-library.js';
+import {READY_WORDS as WORDS,CATALOG_BY_ID} from '../web/app/course-content.js';
+test('explicit selection keeps known words in order, excludes unknowns and keeps catalog canonical',()=>{
+ assert.deepEqual(selectedWordIds({words:'cat | 改写 | Hello.\napple\nzzzzunknown'}),[]);
  assert.deepEqual(selectedWordIds({selectedWordIds:['apple','cat','apple','zzzzunknown'],words:'ball'}),['apple','cat']);
  assert.deepEqual(selectedWordIds({selectedWordIds:[],words:'ball'}),[]);
- assert.deepEqual(selectedWordIds({words:'cat\nbecause'}),['cat']);
+ assert.deepEqual(selectedWordIds({words:'cat\nbecause'}),[]);
  assert.deepEqual(selectedWordIds({selectedWordIds:['because']}),['because']);
  const lib=wordLibrary([{word:'cat',sentence:'changed'},{word:'apple'},{word:'cat'}]);assert.deepEqual(lib.all.map(w=>w.id),WORDS.map(w=>w.id));assert.equal(lib.all.find(w=>w.id==='apple').sentenceZh,'我喜欢苹果。');assert.deepEqual(lib.selected.map(w=>w.id),['cat','apple']);assert.notEqual(lib.selected[0].sentence,'changed');
 });

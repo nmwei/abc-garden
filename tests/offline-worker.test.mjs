@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash,webcrypto} from 'node:crypto';
 import vm from 'node:vm';
-const source=await readFile(new URL('../sw.js',import.meta.url),'utf8');
+const source=await readFile(new URL('../web/sw.js',import.meta.url),'utf8');
 function worker(){
  const stores=new Map(),listeners=new Map(),bytes=new Uint8Array(1024*1024),hash=createHash('sha256').update(bytes).digest('hex');let requests=0,failId=null,corruptId=null,lastReplies=[];
  const files=[0,1,2,3].map(id=>`./assets/audio/${id}.wav`),resources=Object.fromEntries(files.map(file=>[file,{bytes:bytes.length,sha256:hash}]));

@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {ListenGame} from '../app/listen-game.js';
+import {ListenGame} from '../web/app/listen-game.js';
 
 const makeGame=()=>new ListenGame({audio:{stop(){},async play(){return true;}},refresh(){},letters:()=>['A','B']});
 test('settings are a draft: cancel preserves the round and apply persists validated preferences',async t=>{
@@ -16,6 +16,6 @@ test('settings are a draft: cancel preserves the round and apply persists valida
  game.edit({dataset:{listenSetting:'letterCase'},type:'radio',value:'lower'});
  game.start();await Promise.resolve();assert.notEqual(game.round,round);
  const restored=makeGame();assert.equal(restored.options.mode,'sound');assert.equal(restored.options.letterCase,'lower');restored.leave();
- store.set('abc-listen-game-options-v1',JSON.stringify({mode:'invalid',effects:'false',kind:'game'}));
+ store.set('abc-account-data-v1:guest:initial:abc-listen-game-options-v1',JSON.stringify({mode:'invalid',effects:'false',kind:'game'}));
  const invalid=makeGame();assert.equal(invalid.options.mode,'name');assert.equal(invalid.options.effects,true);assert.equal(invalid.options.kind,'game');invalid.leave();
 });

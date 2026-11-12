@@ -1,7 +1,8 @@
+import {seedLearning} from './storage-helpers.js';
 import {test,expect} from '@playwright/test';
 const key='abc-garden-guided-words-v1';
 const action=(page,name)=>page.locator(`[data-course="guided-${name}"]`);
-const saved=page=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)),key);
+const saved=page=>page.evaluate(async key=>{const store=await import('/app/account-storage.js');await store.learningStorage.whenSaved();return JSON.parse(store.learningStorage.getItem(key));},key);
 async function screenshot(page,path){
  const decoded=await page.locator('img').evaluateAll(images=>Promise.all(images.map(image=>image.decode().then(()=>true,()=>false))));
  expect(decoded.every(Boolean)).toBe(true);await page.screenshot({path,fullPage:true});
@@ -9,7 +10,6 @@ async function screenshot(page,path){
 async function setup(page,ids=['fish','mop'],start=true){
  await page.clock.install();
  await page.addInitScript(ids=>{
-  if(!localStorage.getItem('abc-module-content-v1'))localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:ids}));
   window.failAudio=false;window.holdAudio=false;window.failSpeech=false;window.guidedAudio=[];window.guidedSpeech=[];
   Object.defineProperty(window,'SpeechSynthesisUtterance',{configurable:true,value:class{constructor(text){this.text=text;this.volume=1;}}});
   const speech=new EventTarget();speech.getVoices=()=>[];speech.cancel=()=>{};
@@ -22,6 +22,7 @@ async function setup(page,ids=['fish','mop'],start=true){
    return Promise.resolve();
   };
  },ids);
+ await seedLearning(page,{'abc-module-content-v1':{letters:'EF',selectedWordIds:ids}});
  await page.goto('/#/words');await action(page,'open').click();
  if(start)await action(page,'start').click();
 }
@@ -89,7 +90,7 @@ test('due transfer has no model or original card, and verified success schedules
  await page.locator('[data-result="independent"]').click();
  const entry=(await saved(page)).entries.fish;expect(entry.level).toBe(3);expect(entry.transferAt).toBeGreaterThan(0);
  expect(entry.dueAt-entry.seenAt).toBeGreaterThan(6*86400000);
- await action(page,'finish').click();await expect(page.getByRole('heading',{name:'先休息，进度已保存'})).toBeVisible();
+ await action(page,'finish').click();await expect(page.getByRole('heading',{name:'先休息一下'})).toBeVisible();
 });
 test('old progress migrates, forgotten reviews keep success history and defer planned new words',async({page})=>{
  const yesterday=Date.now()-86400000;

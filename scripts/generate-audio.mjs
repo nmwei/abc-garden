@@ -1,13 +1,13 @@
 import {KokoroTTS} from 'kokoro-js';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {encodePcm16} from './audio-pcm.mjs';
-import {ALPHABET,BLENDS} from '../app/content.js';
+import {ALPHABET,BLENDS} from '../web/app/content.js';
 
-const directory=new URL('../assets/audio/',import.meta.url);
+const directory=new URL('../web/assets/audio/',import.meta.url);
 await mkdir(directory,{recursive:true});
 const model='onnx-community/Kokoro-82M-v1.0-ONNX';
 const voice='af_heart';
-const imported=await readFile(new URL('credits.json',new URL('../assets/',import.meta.url)),'utf8').then(JSON.parse).catch(()=>[]);
+const imported=await readFile(new URL('credits.json',new URL('../web/assets/',import.meta.url)),'utf8').then(JSON.parse).catch(()=>[]);
 const preserved=new Set(imported.filter(x=>x.file.startsWith('audio/')).map(x=>x.file.slice(6)));
 
 try {

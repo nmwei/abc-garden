@@ -1,11 +1,13 @@
+import {createGuidedPolicy as testPolicy} from '../web/app/guided-learning-policy.js';
+const TWO_ATTEMPT_POLICY=testPolicy({retrieval:{maxAttempts:2}});
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {createGuidedLearning,dayKey,afterDays} from '../app/guided-words-core.js';
-import {freshGuided,cleanGuided,restoreGuidedProgress,createGuidedRepository,GuidedProgressConflict} from '../app/guided-progress.js';
-import {LEGACY_GUIDED_POLICY,createGuidedPolicy} from '../app/guided-learning-policy.js';
-import {GuidedWords} from '../app/guided-words.js';
-import {guidedPage} from '../app/guided-words-view.js';
+import {createGuidedLearning,dayKey,afterDays} from '../web/app/guided-words-core.js';
+import {freshGuided,cleanGuided,restoreGuidedProgress,createGuidedRepository,GuidedProgressConflict} from '../web/app/guided-progress.js';
+import {createGuidedPolicy} from '../web/app/guided-learning-policy.js';
+import {GuidedWords} from '../web/app/guided-words.js';
+import {guidedPage} from '../web/app/guided-words-view.js';
 const at=new Date(2026,10,9,10).getTime();
 const fixture=JSON.parse(readFileSync(new URL('./fixtures/guided-default-path.json',import.meta.url)));
 const record=()=>({days:[],level:0,meaning:true,dueAt:at-1,seenAt:at-86400000,introducedAt:at-86400000,lastModelAt:0,transferAt:0,retryDay:'',result:'again'});
@@ -28,8 +30,8 @@ function complete(engine,state,outcome='independent',correct=true){
 }
 const engineWith=(options={})=>createGuidedLearning({now:()=>at,random:()=>.25,...options});
 
-test('legacy policy preserves the captured path and learning credit through the public engine',()=>{
- const engine=engineWith({policy:LEGACY_GUIDED_POLICY}),input=freshGuided(),untouched=structuredClone(input);
+test('a configured policy preserves the captured path and learning credit through the public engine',()=>{
+ const engine=engineWith({policy:TWO_ATTEMPT_POLICY}),input=freshGuided(),untouched=structuredClone(input);
  let state=engine.transition(input,{type:'start',ids:fixture.ids,pictureIds:fixture.pictureIds});const trace=[];
  assert.deepEqual(input,untouched);
  while(!state.session.ended){
@@ -38,7 +40,8 @@ test('legacy policy preserves the captured path and learning credit through the 
  }
  assert.deepEqual(trace,fixture.trace);
  const credit=Object.fromEntries(fixture.ids.map(id=>[id,Object.fromEntries(Object.keys(fixture.credit[id]).map(key=>[key,state.entries[id][key]]))]));
- assert.deepEqual(credit,fixture.credit);
+ const expected=structuredClone(fixture.credit);for(const row of Object.values(expected))if(row.level>0)row.dueAt=at+86400000;
+ assert.deepEqual(credit,expected);
  assert.equal(state.observations.length,14);assert.ok(state.observations.every(item=>item.policy.id==='preschool-speaking'));
  assert.ok(state.session.trace.length<=64);assert.ok(state.session.trace.some(item=>item.reason==='interleave-other-word'));
 });
@@ -332,27 +335,11 @@ test('eligibility filters before limits, priority orders independently, and empt
  assert.equal(restart.session.queue[0].kind,'learn');
 });
 
-test('v6 and v7 migrate both parked tasks into complete policy snapshots without re-planning',()=>{
- const learn=createGuidedLearning({now:()=>at});
- const review=createGuidedLearning({now:()=>at,policy:createGuidedPolicy({},{preset:'review'})});
- let source=learn.transition(freshGuided(),{type:'start',ids:['egg','hat']});
- source=review.transition(source,{type:'mode',mode:'review'});
- source=review.transition(source,{type:'start',ids:['fish']});
- for(const version of [6,7]){
-  const raw=structuredClone(source);raw.version=version;
-  const expected=structuredClone(source);
-  for(const [session,isReview] of [[raw.session,true],[raw.parked.session,false]]){
-   session.policySnapshot.version=2;delete session.policySnapshot.selection;delete session.policySnapshot.teaching.unfamiliarStart;
-   if(version===6){if(isReview)session.reviewOnly=true;}
-   else session.modeSnapshot={id:isReview?'review':'learn',version:1,initialTask:isReview?'recall':'adaptive'};
-  }
-  expected.session.policySnapshot.version=2;expected.parked.session.policySnapshot.version=2;
-  const result=restoreGuidedProgress(raw,new Set(['egg','hat','fish']));
-  assert.equal(result.issue,'');assert.deepEqual(result.data,expected);
-  if(version===7){
-   raw.parked.session.modeSnapshot.version=99;
-   assert.equal(restoreGuidedProgress(raw,new Set(['egg','hat','fish'])).issue,'unsupported-mode');
-  }
+test('unsupported record versions are rejected without mutation',()=>{
+ for(const version of [1,2,3,4,5,6,7,9]){
+  const raw={...freshGuided(),version};const original=structuredClone(raw);
+  assert.equal(restoreGuidedProgress(raw,new Set()).issue,'unsupported-storage');
+  assert.deepEqual(raw,original);
  }
 });
 

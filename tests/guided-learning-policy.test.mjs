@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY,GUIDED_PRESETS,guidedInitialTask} from '../app/guided-learning-policy.js';
+import {createGuidedPolicy,readGuidedPolicy,DEFAULT_GUIDED_POLICY,GUIDED_PRESETS,guidedInitialTask} from '../web/app/guided-learning-policy.js';
 
 test('policy has a small set of coherent learning controls, and partial overrides cannot mutate defaults',()=>{
  const input={session:{breakAfterMinutes:12},review:{intervalsDays:[2,4,9]}},policy=createGuidedPolicy(input);
@@ -56,10 +56,7 @@ test('selection and entry rules validate strictly, including restored snapshots'
  for(const version of [1,2]){
   const old=structuredClone(DEFAULT_GUIDED_POLICY);old.version=version;
   delete old.selection;delete old.teaching.unfamiliarStart;
-  const restored=readGuidedPolicy(old);
-  assert.equal(restored.version,version);
-  assert.deepEqual(restored.selection,{eligibility:'all',priority:'due-first'});
-  assert.equal(restored.teaching.unfamiliarStart,'teach');
+  assert.equal(readGuidedPolicy(old),null);
   delete old.retrieval.maxAttempts;assert.equal(readGuidedPolicy(old),null);
  }
 });

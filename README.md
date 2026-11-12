@@ -28,27 +28,34 @@
 - 单词点播和「循环听」使用内置英文单词录音与设备中文声音，循环听只读单词和释义。家长小角可编辑中文释义、英文例句及译文，也可恢复默认。修改保存在本机。扩展词例句及修改过的英文例句使用系统英文声音，可在家长小角选择音色与语速。
 - 认识字母的循环听可选每项 1／2／3 遍，播放中调整从下一字母生效。兼容的 iPad 主屏幕 Web App 可熄屏继续字母循环听，单词循环听仍按后台暂停处理。实际锁屏控制及音量需在真机确认。
 
-音频记录见 `assets/audio/sources.json`、`assets/audio/course-sources.json` 和 `assets/audio/{edcreate,gk}/imported.json`。模型采用 Apache-2.0 许可：[英文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX)、[中文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.1-zh-ONNX)。模型不随网页分发；第三方素材与用户录音另有来源边界。
+音频记录见 `web/assets/audio/sources.json`、`web/assets/audio/course-sources.json` 和 `web/assets/audio/{edcreate,gk}/imported.json`。模型采用 Apache-2.0 许可：[英文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX)、[中文模型](https://huggingface.co/onnx-community/Kokoro-82M-v1.1-zh-ONNX)。模型不随网页分发；第三方素材与用户录音另有来源边界。
 
 ## 本机数据
 
-家长配置、内置词的选词顺序、掌握标记及陪学进度存放在当前浏览器。写作草稿和临时录音仅在当前会话保留。没有账号、分析追踪或跨设备同步，清除网站数据会丢失本机记录。
+游客的家长配置、选词、掌握及陪学进度保存在当前浏览器。家长小角提供注册与登录，支持用户名或手机号加密码、手机号验证码两种方式。登录后先保存本机，再同步当前账号，清除网站数据后可恢复最后成功同步的云档。首次登录需要确认档案归属，冲突时选择保留的版本。写作草稿、临时录音和设备声音不进入云档。真实短信需要配置服务端凭证。
+
+家长小角将“家长账号”和“学习存档”分成两块：账号块显示用户名和脱敏手机号，直接提供重设密码与退出登录；存档块提供存档和历史入口。账号信息合并在原有家长入口：宽屏侧栏底部显示用户名，窄屏保留单个盾牌按钮，进入管理仍需家长长按确认。声音偏好与内容维护各占整行，给表单和单词搜索结果留足宽度；设备管理内的两项入口采用宽屏双列、手机单列。不提供昵称和头像编辑。学习时自动同步一份最新进度；点击「保存存档」并确认后另存一份手动快照，最多保留 3 份，自动同步不会覆盖它们。历史入口直接打开列表，选中记录后查看日期、摘要并确认恢复；取消返回列表，恢复不会新增手动存档。已有 3 份时，保存确认会提示将替换的最早存档；同一进度重复存档不会重复占用名额。保留重设密码和当前设备退出，不提供换绑、退出所有设备、注销和个人数据文件下载。
+
+学习数据由 `web/app/learning-data.js` 统一登记：内容与选词、掌握记录、单词和字母陪学进度、两类陪学设置、一般学习偏好、听音玩法共八类随账号保存。业务通过 `learningStorage` 读写本机 IndexedDB，音色及系统语速通过 `deviceStorage` 留在设备；业务不自行选择本机或云端。未登记的键禁止写入。读写和接口共用恢复校验，拒绝会被业务加载静默丢弃或修改的数据；当前契约不兜底转换旧格式。学习数据与待同步标记一起事务提交，`whenSaved()` 完成后才显示本机保存成功，随后上传云端。不自动读取或导入旧 localStorage 学习数据；新设备直接建立当前格式的 IndexedDB 工作副本。为避免多个页面互相覆盖，同源只允许一个页面编辑，第二个页面显示只读提示；关闭原页面并刷新即可继续。保存失败时请保持页面打开并点击重试，不要清除网站数据。
+
+旧站迁移入口、跨窗口接收通信、迁移脚本和历史格式转换均已移除。当前只支持现行数据格式；不受支持的格式会明确拒绝，不会自动清空原记录。
 
 主动录音不上传服务器。本地开发的 `/api/speech` 用于语音生成。家长入口长按 1 秒进入，提前松手、滑动、失焦或切到后台会取消。它用于防误触。
 
 ## 本地开发
 
-需要 Node.js 20+。
+需要 Node.js 22+。
 
 ```sh
 npm ci
+npm ci --prefix server
 npm run dev
 ```
 
 打开终端显示的本地地址，默认 `http://localhost:4173/`。修改后运行 `npm run build` 再刷新。固定素材练习使用本地资源。
 
 ```sh
-npm test                 # 选题、内容校验、兼容数据和接口规则
+npm test                 # 选题、内容校验、当前存储契约和接口规则
 npm run build            # 检查音频并生成 dist/
 npx playwright install chromium webkit
 npm run test:e2e         # iPad 尺寸，Chromium + WebKit
@@ -77,25 +84,25 @@ ABC_TTS_PYTHON=/tmp/abc-audio-env/bin/python node scripts/generate-prompts.mjs
 
 | 文件 | 职责 |
 | --- | --- |
-| `app/content.js` | 字母、示范音、拼读组合、中文引导文本 |
-| `app/core.js` | 选题、按能力记录、恢复与备份校验 |
-| `app/main.js` | 首页、字母朋友、单词入口、家长设置与路由 |
-| `app/learning-content.js`、`app/word-library.js` | 本机内容修订、选词保存与规范词卡映射 |
-| `app/course-content.js`、`app/course.js` | 词汇、故事、对话和写作数据及其界面 |
-| `app/letter-audio.js`、`app/letter-audio-settings.js` | 字母音源解析、试听与保存 |
+| `web/app/content.js` | 字母、示范音、拼读组合、中文引导文本 |
+| `web/app/core.js` | 选题、按能力记录、恢复与备份校验 |
+| `web/app/main.js` | 首页、字母朋友、单词入口、家长设置与路由 |
+| `web/app/learning-content.js`、`web/app/word-library.js` | 本机内容修订、选词保存与规范词卡映射 |
+| `web/app/course-content.js`、`web/app/course.js` | 词汇、故事、对话和写作数据及其界面 |
+| `web/app/letter-audio.js`、`web/app/letter-audio-settings.js` | 字母音源解析、试听与保存 |
 | `data/reference-dictionary/` | 旧字典扩词参考及来源许可，不打包到应用 |
-| `app/generated-audio.js` | 生成接口、IndexedDB 音频缓存 |
-| `app/audio.js` | 中英文固定音频队列、取消与防重叠 |
-| `app/styles.css`、`app/art.js` | iPad／手机布局与原创 SVG 插图 |
-| `sw.js` | 统一素材缓存、包引用、下载续传、完整性检查和音频 Range 响应 |
-| `app/offline.js` | 下载空间评估、确认、进度与清理界面 |
-| `app/mastery.js` | 单词掌握规则、手动覆盖与独立存储 |
+| `web/app/generated-audio.js` | 生成接口、IndexedDB 音频缓存 |
+| `web/app/audio.js` | 中英文固定音频队列、取消与防重叠 |
+| `web/app/styles.css`、`web/app/art.js` | iPad／手机布局与原创 SVG 插图 |
+| `web/sw.js` | 统一素材缓存、包引用、下载续传、完整性检查和音频 Range 响应 |
+| `web/app/offline.js` | 下载空间评估、确认、进度与清理界面 |
+| `web/app/mastery.js` | 单词掌握规则、手动覆盖与独立存储 |
 
 三个维护要点：
 
-1. 已保存的字母范围统一存放在模块配置中；修改入口在 `app/main.js` 的保存设置处理，避免多个页面各自维护一份范围。
+1. 已保存的字母范围统一存放在模块配置中；修改入口在 `web/app/main.js` 的保存设置处理，避免多个页面各自维护一份范围。
 2. `LearningContent` 管理家长选择与排序；`word-library.js` 将选择ID映射到唯一词库；固定字母音频仍由字母库负责。
-3. 换题、切换来源和离开页面都应取消声音；IndexedDB 存储 WAV 的 ArrayBuffer，读取时还原 Blob，同时兼容旧 Blob 数据。离线固定音频继续支持 Range 请求。
+3. 换题、切换来源和离开页面都应取消声音；IndexedDB 存储 WAV 的 ArrayBuffer，读取时还原 Blob，仅接受当前 ArrayBuffer 缓存格式。离线固定音频继续支持 Range 请求。
 
 ## 服务器发布
 
@@ -115,7 +122,7 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 
 发布产物仅包含静态页面与学习素材，不上传 Git、环境变量、依赖和本机学习数据。旧版本保留供回退；磁盘清理需保留 `current`、`previous` 指向的版本，不自动删除历史发布。三个仓库的发布工具副本保持一致，修改公共发布逻辑时同步三个仓库并运行发布测试。
 
-旧 GitHub Pages 暂时保留迁移期间的访问能力，后续不再更新。旧域名里的学习记录不会自动进入新域名，旧主屏幕图标仍指向旧站；账号/云端同步和完整数据迁移另行实现，先保留旧站数据。
+本项目日常发布只指向自有服务器。旧 GitHub Pages 的线上状态由部署操作单独控制；当前代码不包含旧站迁移功能，旧域名里的本机学习记录不会自动进入新域名。
 
 ## 学习范围与离线
 
@@ -128,12 +135,16 @@ npm run deploy -- --rollback           # 切回本项目上一个成功版本
 ## 素材维护
 
 - 增加故事、对话或例句后，用 `npm run audio:course` 生成所需音频。修改已有句子时先处理对应的旧音频。词卡来源、语境图边界及生成命令见[词库维护](docs/vocabulary-content.md)。
-- 两套字母录音的原文件、切点及输出哈希位于 `assets/audio/gk/` 和 `assets/audio/edcreate/`。重新生成运行 `node scripts/import-letter-audio.mjs`，可指定 `gk` 或 `edcreate`。导入与构建校验分段、音频格式和哈希，发音仍需试听核对。
-- 答对使用 Mixkit A2 和 1.4 秒小花反馈，答错使用 B2。覆盖大小写配对、听音找字母、听音找图、拼写和故事理解。播放及取消在 `app/feedback-audio.js`，来源和处理哈希见[音效记录](assets/audio/feedback-sources.json)。
-- 字母活动的剩余高度分配与换组由 `app/letter-layout.js` 处理，极矮或窄屏保留自然滚动。全量重建静态产物可用 `node scripts/build.mjs --clean`。
+- 两套字母录音的原文件、切点及输出哈希位于 `web/assets/audio/gk/` 和 `web/assets/audio/edcreate/`。重新生成运行 `node scripts/import-letter-audio.mjs`，可指定 `gk` 或 `edcreate`。导入与构建校验分段、音频格式和哈希，发音仍需试听核对。
+- 答对使用 Mixkit A2 和 1.4 秒小花反馈，答错使用 B2。覆盖大小写配对、听音找字母、听音找图、拼写和故事理解。播放及取消在 `web/app/feedback-audio.js`，来源和处理哈希见[音效记录](web/assets/audio/feedback-sources.json)。
+- 字母活动的剩余高度分配与换组由 `web/app/letter-layout.js` 处理，极矮或窄屏保留自然滚动。全量重建静态产物可用 `node scripts/build.mjs --clean`。
 
 ## 专题资料
 
 - [字母一起学](docs/guided-letters.md)与[单词陪学引擎](docs/guided-learning-engine.md)说明策略、进度和学习证据边界。
 - [历次验收](docs/acceptance.md)与[Wonders GK 覆盖](docs/wonders-gk-coverage.md)保留对应阶段的记录。
 - [国内访问及云存档计划](docs/domestic-launch/plan.md)记录上线取舍和待确认事项。
+
+## 账号服务
+
+前端源码与素材位于 `web/`，Node/SQLite 服务位于 `server/`，开发及发布工具在 `scripts/`。根目录 `data/` 保留内容维护资料。`npm run dev` 启动本地前后端，素材改动后重新构建。后端配置、接口与备份操作见[账号服务说明](server/README.md)。

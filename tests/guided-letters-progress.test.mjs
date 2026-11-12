@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createLetterLearning,freshLetterLearning} from '../app/guided-letters-core.js';
-import {createLetterRepository,restoreLetterLearning,LETTER_GUIDED_KEY} from '../app/guided-letters-progress.js';
-import {LearningProgressConflict} from '../app/learning-repository.js';
+import {createLetterLearning,freshLetterLearning} from '../web/app/guided-letters-core.js';
+import {createLetterRepository,restoreLetterLearning,LETTER_GUIDED_KEY} from '../web/app/guided-letters-progress.js';
+import {LearningProgressConflict} from '../web/app/learning-repository.js';
 const at=new Date(2026,10,10,10).getTime();
 const engine=createLetterLearning({now:()=>at,random:()=>.25});
 function step(d){

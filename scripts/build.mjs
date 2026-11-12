@@ -4,11 +4,11 @@ import { readFile,writeFile } from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {syncBuild} from './build-cache.mjs';
 import { createHash } from 'node:crypto';
-import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../app/course-content.js';
-import { ALPHABET,BLENDS,PROMPTS } from '../app/content.js';
-import {LETTER_AUDIO_SOURCES} from '../app/letter-audio.js';
+import {WORDS,READY_WORDS,COURSE_AUDIO,READINGS,DIALOGUES} from '../web/app/course-content.js';
+import { ALPHABET,BLENDS,PROMPTS } from '../web/app/content.js';
+import {LETTER_AUDIO_SOURCES} from '../web/app/letter-audio.js';
 const out=new URL('../dist/',import.meta.url);
-const build=await syncBuild(fileURLToPath(new URL('../',import.meta.url)),fileURLToPath(out),fileURLToPath(new URL('../.build-cache/files.json',import.meta.url)),{clean:process.argv.includes('--clean')});
+const build=await syncBuild(fileURLToPath(new URL('../web/',import.meta.url)),fileURLToPath(out),fileURLToPath(new URL('../.build-cache/files.json',import.meta.url)),{clean:process.argv.includes('--clean')});
 const meta=path=>{const entry=build.entries[path.replace(/^\.\//,'')];if(!entry)throw Error(`Missing resource: ${path}`);return entry;};
 await writeFile(new URL('.nojekyll',out),'');
 for(const word of WORDS.filter(w=>w.image))meta(word.image);
@@ -32,7 +32,7 @@ for(const name of required) {
 const paths=[...Object.keys(build.entries),'.nojekyll'].sort();
 const hash=createHash('sha256');
 for(const path of paths)hash.update(path).update(path==='.nojekyll'?'':meta(path).sha256);
-const worker=await readFile(new URL('../sw.js',import.meta.url),'utf8');
+const worker=await readFile(new URL('../web/sw.js',import.meta.url),'utf8');
 hash.update(worker).update(await readFile(new URL(import.meta.url))).update(await readFile(new URL('./build-cache.mjs',import.meta.url)));
 const version=hash.digest('hex').slice(0,12);
 // Only the interface is installed automatically; media belongs to explicit optional packs.

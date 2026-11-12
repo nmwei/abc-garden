@@ -44,7 +44,7 @@ test('failed mastery write rolls selection back on relearn',async({page})=>{
  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('abc-module-content-v1')).selectedWordIds||[])).toEqual([]);
 });
 test('removal keeps a filtered sequence across a page boundary',async({page})=>{
- const {READY_WORDS}=await import('../../app/course-content.js');const rows=READY_WORDS.filter(w=>w.topic==='food').slice(0,15),ids=rows.map(w=>w.id);
+ const {READY_WORDS}=await import('../../web/app/course-content.js');const rows=READY_WORDS.filter(w=>w.topic==='food').slice(0,15),ids=rows.map(w=>w.id);
  await page.goto('/');await page.evaluate(ids=>localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:ids})),ids);await page.goto('/#/words');await page.reload();
  await page.locator('#word-topic').isVisible().then(async visible=>{if(visible)await page.locator('#word-topic').selectOption('food');else await page.locator('[data-course=topic][data-topic=food]').click();});
  const capacity=Number(await page.locator('.word-browser').getAttribute('data-page-size'));

@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import '../app/feedback-audio.js';
+import '../web/app/feedback-audio.js';
 
 test('one feedback channel handles completion, rapid answers, mute and background cancellation',async t=>{
  const previous={Audio:globalThis.Audio,document:globalThis.document,window:globalThis.window},events={};

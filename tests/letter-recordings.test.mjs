@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {validateLetterCuts} from '../scripts/import-letter-audio.mjs';
 
 for(const source of ['edcreate','gk'])test(`${source}: all 52 card and follow-along clips contain one reading, matching the game clip`,async()=>{
- const base=new URL('../assets/audio/',import.meta.url);
+ const base=new URL('../web/assets/audio/',import.meta.url);
  const clips=JSON.parse(await readFile(new URL(`${source}/imported.json`,base)));
  const manifest=JSON.parse(await readFile(new URL(`${source}/cuts.json`,base)));
  validateLetterCuts(manifest,source);
@@ -48,7 +48,7 @@ for(const source of ['edcreate','gk'])test(`${source}: all 52 card and follow-al
 });
 
 test('GK generation rejects the old C/J/M/Q/T cuts and missing onset evidence',async()=>{
- const current=JSON.parse(await readFile(new URL('../assets/audio/gk/cuts.json',import.meta.url)));
+ const current=JSON.parse(await readFile(new URL('../web/assets/audio/gk/cuts.json',import.meta.url)));
  for(const [letter,oldEnd] of [['C',610],['J',570],['M',690],['Q',570],['T',560]]){
   const manifest=structuredClone(current),clip=manifest.clips.find(c=>c.mode==='name'&&c.letter===letter);
   clip.durationMs=clip.gainStartMs+oldEnd-clip.startMs;
@@ -61,7 +61,7 @@ test('GK generation rejects the old C/J/M/Q/T cuts and missing onset evidence',a
 });
 
 test('GK F name retains the approved third reading and its matched playback level',async()=>{
- const base=new URL('../assets/audio/gk/',import.meta.url);
+ const base=new URL('../web/assets/audio/gk/',import.meta.url);
  const manifest=JSON.parse(await readFile(new URL('cuts.json',base)));
  const clip=manifest.clips.find(c=>c.mode==='name'&&c.letter==='F');
  assert.equal(clip.reading,3);assert.equal(clip.startMs,16025);assert.equal(clip.durationMs,450);assert.equal(clip.gainMode,'clip');

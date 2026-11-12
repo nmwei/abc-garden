@@ -56,11 +56,11 @@ const bodies={
  'scene-dental-xray':`<rect x="12" y="10" width="104" height="108" rx="4" fill="${ink}"/><path d="M45 25Q27 26 32 53L40 94Q48 111 55 75Q63 51 71 75Q79 111 88 94L96 52Q102 25 81 25Q62 35 45 25Z" fill="#d3e1dd"/><path d="M62 43V64M45 44L50 78M81 44L77 78" stroke="#9fb6b8" stroke-width="3"/>`,
  'scene-broken-chair':`<path d="M35 19H95V69H35Z" fill="#bda07a"/><path d="M29 70H100V82H29Z" fill="#a68e70"/><path d="M36 82V111M92 82L84 94L96 99L89 111" stroke="#9d8264" stroke-width="7" fill="none"/><path d="M84 98L101 109" stroke="#c38474" stroke-width="5"/>`,
 };
-const credits=JSON.parse(await readFile(new URL('assets/credits.json',root),'utf8'));
+const credits=JSON.parse(await readFile(new URL('web/assets/credits.json',root),'utf8'));
 for(const [id,body] of Object.entries(bodies)){
  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">${body}</svg>\n`,file=`pictures/${id}.svg`;
- await writeFile(new URL(`assets/${file}`,root),svg);
+ await writeFile(new URL(`web/assets/${file}`,root),svg);
  const credit={file,author:'ABC Garden project',source:'Project-authored SVG; scripts/generate-context-symbols.mjs',license:'CC0-1.0',licenseUrl:'https://creativecommons.org/publicdomain/zero/1.0/',changes:'Original vector component',sha256:createHash('sha256').update(svg).digest('hex')};
  const index=credits.findIndex(c=>c.file===file);if(index<0)credits.push(credit);else credits[index]=credit;
 }
-await writeFile(new URL('assets/credits.json',root),JSON.stringify(credits,null,2)+'\n');
+await writeFile(new URL('web/assets/credits.json',root),JSON.stringify(credits,null,2)+'\n');

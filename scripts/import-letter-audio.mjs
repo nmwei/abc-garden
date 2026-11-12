@@ -5,9 +5,9 @@ import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {encodePcm16} from './audio-pcm.mjs';
-import {letterAudioPath} from '../app/letter-audio.js';
+import {letterAudioPath} from '../web/app/letter-audio.js';
 
-const assets=new URL('../assets/',import.meta.url);
+const assets=new URL('../web/assets/',import.meta.url);
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function validateLetterCuts(manifest,source){
   for(const mode of ['name','sound'])if(manifest.clips.filter(c=>c.mode===mode).map(c=>c.letter).join('')!=='ABCDEFGHIJKLMNOPQRSTUVWXYZ')throw Error(`Incomplete ${mode} alphabet`);

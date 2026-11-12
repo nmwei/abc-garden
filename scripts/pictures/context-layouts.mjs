@@ -2,7 +2,7 @@
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const root=new URL('../../',import.meta.url);
-const credits=JSON.parse(await readFile(new URL('assets/credits.json',root),'utf8'));
+const credits=JSON.parse(await readFile(new URL('web/assets/credits.json',root),'utf8'));
 const sources=new Map(credits.map(c=>[c.file,c])),cache=new Map();
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const ink='#526e7c',green='#8aa88a',blue='#91b5c1',orange='#d4a371',paper='#eee3cc';
@@ -19,7 +19,7 @@ async function asset(id){
  if(cache.has(id))return cache.get(id);
  const file=`pictures/${id}.svg`,credit=sources.get(file);
  if(!credit)throw Error(`Uncredited context component: ${id}`);
- const bytes=await readFile(new URL(`assets/${file}`,root));
+ const bytes=await readFile(new URL(`web/assets/${file}`,root));
  const source=bytes.toString(),match=source.match(/<svg\b([^>]*)>([\s\S]*)<\/svg>\s*$/);
  if(!match||/<script\b|<image\b|<foreignObject\b|(?:href|src)=["'](?:https?:|\/\/)|url\(\s*["']?(?:https?:|\/\/)/.test(match[2]))throw Error(`Nonlocal SVG component: ${id}`);
  const viewBox=match[1].match(/viewBox="([^"]+)"/)?.[1]||'0 0 128 128';

@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {auditCurriculum,auditTarget} from '../scripts/audit-wonders-gk.mjs';
-import {WORD_BY_ID,READY_WORDS} from '../app/course-content.js';
-import {Course} from '../app/course.js';
+import {WORD_BY_ID,READY_WORDS} from '../web/app/course-content.js';
+import {Course} from '../web/app/course.js';
 
 const manifest=JSON.parse(await readFile(new URL('../data/vocabulary/wonders-gk.json',import.meta.url)));
 test('Wonders reports five ready classroom words and independently verifies the complete official scope',async()=>{
@@ -63,7 +63,7 @@ test('every listed official word has paired content, auditable provenance and al
   for(const [pack,file]of[['pictures',card.image],['word-audio',`./assets/audio/${card.audio}.wav`],['sentence-audio',`./assets/audio/sentence-${card.id}.wav`]])assert.ok(packs.find(p=>p.id===pack).files.includes(file),file);
  }
  for(const card of cards){assert.match(card.sentenceZh,/[\u4e00-\u9fff]/);assert.ok(card.sentence.toLowerCase().includes(card.display||card.id),card.id);}
- const clips=JSON.parse(await readFile(new URL('../assets/audio/course-sources.json',import.meta.url))).clips;
+ const clips=JSON.parse(await readFile(new URL('../web/assets/audio/course-sources.json',import.meta.url))).clips;
  assert.equal(clips.find(c=>c.key==='word-content').phonemes,'kəntˈɛnt');
 });
 test('grammar and contextual scenes cannot create automatic mastery or appear as picture distractors',()=>{

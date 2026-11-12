@@ -1,10 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {FollowAlong} from '../app/follow-along.js';
-import {readPcmWav,makeLetterLoop} from '../app/letter-loop-audio.js';
+import {FollowAlong} from '../web/app/follow-along.js';
+import {readPcmWav,makeLetterLoop} from '../web/app/letter-loop-audio.js';
 
-const file=async path=>{const bytes=await readFile(new URL(`../${path}`,import.meta.url));return bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength);};
+const file=async path=>{const bytes=await readFile(new URL(`../web/${path}`,import.meta.url));return bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength);};
 function environment(t){
  const originals={Audio:globalThis.Audio,document:globalThis.document,navigator:Object.getOwnPropertyDescriptor(globalThis,'navigator')};
  globalThis.Audio=class {

@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import {READY_WORDS as WORDS} from '../../app/course-content.js';
+import {READY_WORDS as WORDS} from '../../web/app/course-content.js';
 test('word pagination jumps directly, respects boundaries and survives search replacement',async({page},info)=>{
  await page.goto('/#/words');await page.locator('[data-filter=all]').click();
  const expand=page.getByRole('button',{name:'展开列表',exact:true});if(await expand.isVisible())await expand.click();

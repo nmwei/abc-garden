@@ -8,7 +8,7 @@
     "audio": "node scripts/generate-audio.mjs",
     "build": "node scripts/compile-picture-vocabulary.mjs && node scripts/compile-context-vocabulary.mjs && npm run pictures:quality && node scripts/build.mjs",
     "pictures:quality": "node scripts/generate-context-symbols.mjs && node scripts/generate-quality-pictures.mjs && node scripts/generate-context-pictures.mjs && node scripts/generate-refined-pictures.mjs",
-    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "dev": "node scripts/build.mjs && node scripts/dev.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "check": "npm test && npm run build",
@@ -19,10 +19,13 @@
     "audit:completion": "node scripts/audit-context-completion.mjs",
     "audit:quality": "node scripts/audit-quality-fixes.mjs",
     "audit:guided": "node scripts/compile-guided-activities.mjs --check && node scripts/audit-guided-activities.mjs",
-    "deploy": "node scripts/publish.mjs"
+    "deploy": "node scripts/publish.mjs",
+    "test:server": "npm test --prefix server",
+    "test:account": "playwright test --config playwright.account.config.js",
+    "package:server": "node scripts/package-server.mjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "devDependencies": {
     "@huggingface/transformers": "3.8.1",

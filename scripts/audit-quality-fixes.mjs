@@ -1,9 +1,9 @@
 // A review stamp records visual work; hashes only detect changes since that review.
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,COURSE_AUDIO} from '../app/course-content.js';
-import {sentenceMeaning} from '../app/sentence-meanings.js';
-const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path,root)).then(JSON.parse);
+import {CATALOG_WORDS,COURSE_AUDIO} from '../web/app/course-content.js';
+import {sentenceMeaning} from '../web/app/sentence-meanings.js';
+const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')?'web/'+path:path,root)).then(JSON.parse);
 const fixes=await json('data/vocabulary/quality-fixes.json'),baseline=await json('data/vocabulary/quality-review-2026-11-02.json');
 const original=new Map(baseline.cards.map(c=>[c.id,c])),current=new Map(CATALOG_WORDS.map(w=>[w.id,w]));
 const credits=new Map((await json('assets/credits.json')).map(c=>[c.file,c]));
@@ -17,10 +17,10 @@ async function checkOffline(path,bytes){
 }
 async function checkImage(id,reviewedHash){
  const word=current.get(id);if(!word)throw Error(`Missing quality card: ${id}`);
- const bytes=await readFile(new URL(word.image,root)),credit=credits.get(word.image.replace('./assets/',''));
+ const bytes=await readFile(new URL('web/'+word.image,root)),credit=credits.get(word.image.replace('./assets/',''));
  if(sha(bytes)!==reviewedHash||credit?.sha256!==reviewedHash)throw Error(`Re-review changed picture: ${id}`);
  for(const part of credit.components||[]){
-  const component=await readFile(new URL(`assets/${part.file}`,root));
+  const component=await readFile(new URL(`web/assets/${part.file}`,root));
   if(sha(component)!==part.sha256||credits.get(part.file)?.license!==part.license)throw Error(`Stale component: ${id}/${part.file}`);
  }
  await checkOffline(word.image,bytes);return word;
@@ -30,7 +30,7 @@ for(const fix of fixes.entries){
  if(ids.has(fix.id)||!before?.findings.length||fix.priority!==before.reviewStatus||fix.status!=='reviewed'||!fix.visualReviewedOn)throw Error(`Incomplete quality repair: ${fix.id}`);
  ids.add(fix.id);scope[fix.priority]=(scope[fix.priority]||0)+1;
  const word=await checkImage(fix.id,fix.afterImageSha256);
- const old=await readFile(new URL(fix.originalImage,root));
+ const old=await readFile(new URL('web/'+fix.originalImage,root));
  if(sha(old)!==before.sha256||fix.beforeImageSha256!==before.sha256||fix.afterImageSha256===before.sha256)throw Error(`Invalid before/after evidence: ${fix.id}`);
  if(word.pictureCue!==before.pictureCue)throw Error(`Changed quiz semantics without review: ${fix.id}`);
  const now={id:word.id,zh:word.zh,pos:word.pos||'',sentence:word.sentence,sentenceZh:word.sentenceZh??sentenceMeaning(word.sentence)};
@@ -38,7 +38,7 @@ for(const fix of fixes.entries){
  for(const key of [word.audio,`sentence-${word.id}`]){
   const expected=expectedAudio.get(key),actual=audio.get(key);
   if(!expected||actual?.text!==expected.text)throw Error(`Stale audio text: ${key}`);
-  const path=`./assets/audio/${key}.wav`,bytes=await readFile(new URL(path,root));
+  const path=`./assets/audio/${key}.wav`,bytes=await readFile(new URL('web/'+path,root));
   if(bytes.toString('ascii',0,4)!=='RIFF'||bytes.readUInt16LE(20)!==1||bytes.readUInt16LE(34)!==16)throw Error(`Invalid PCM audio: ${key}`);
   let peak=0;for(let n=44;n+1<bytes.length;n+=2)peak=Math.max(peak,Math.abs(bytes.readInt16LE(n)));
   if(peak<10)throw Error(`Silent audio: ${key}`);
@@ -52,7 +52,7 @@ for(const [priority,count] of Object.entries(fixes.scope))if(scope[priority]!==c
 const collateral=new Map(fixes.collateralReviews.map(c=>[c.id,c]));
 const refinements=new Map((await json('data/vocabulary/content-refinements.json')).entries.filter(e=>e.newImage).map(e=>[e.id,e]));
 for(const card of CATALOG_WORDS.filter(c=>!ids.has(c.id))){
- const bytes=await readFile(new URL(card.image,root)),hash=sha(bytes);
+ const bytes=await readFile(new URL('web/'+card.image,root)),hash=sha(bytes);
  if(hash===original.get(card.id)?.sha256)continue;
  const refinement=refinements.get(card.id);
  if(refinement){

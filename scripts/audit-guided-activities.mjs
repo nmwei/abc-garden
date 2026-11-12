@@ -1,11 +1,11 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
-import {READY_WORDS,WORDS} from '../app/course-content.js';
-import {activityFor} from '../app/guided-activities.js';
-import {ACTIVITY_PROFILES} from '../app/guided-activity-profiles.js';
-import {GUIDED_PLAN_FINGERPRINT,GUIDED_WORD_PLANS} from '../app/guided-word-plans.js';
-const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path,root),'utf8').then(JSON.parse);
+import {READY_WORDS,WORDS} from '../web/app/course-content.js';
+import {activityFor} from '../web/app/guided-activities.js';
+import {ACTIVITY_PROFILES} from '../web/app/guided-activity-profiles.js';
+import {GUIDED_PLAN_FINGERPRINT,GUIDED_WORD_PLANS} from '../web/app/guided-word-plans.js';
+const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 const baseline=await json('data/vocabulary/guided-activity-baseline.json'),before=new Map(baseline.entries.map(row=>[row.id,row]));
 const digest=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const count=(rows,key)=>rows.reduce((counts,row)=>{const name=key(row);counts[name]=(counts[name]||0)+1;return counts;},{});

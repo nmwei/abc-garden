@@ -1,6 +1,6 @@
 import {mkdir,writeFile,access,readFile} from 'node:fs/promises';
-import {WORDS} from '../app/course-content.js';
-const base=new URL('../assets/',import.meta.url);await mkdir(new URL('pictures/',base),{recursive:true});
+import {WORDS} from '../web/app/course-content.js';
+const base=new URL('../web/assets/',import.meta.url);await mkdir(new URL('pictures/',base),{recursive:true});
 const credits=[];
 async function get(url){let error;for(let attempt=0;attempt<4;attempt++){try{const r=await fetch(url,{signal:AbortSignal.timeout(15000)});if(!r.ok)throw new Error(`${r.status}: ${url}`);return r;}catch(e){error=e;await new Promise(r=>setTimeout(r,500));}}throw error;}
 const revision='v2.047';

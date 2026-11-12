@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {openParents,unlockParents} from './parent-helpers.js';
-import {READY_WORDS,PENDING_WORDS} from '../../app/course-content.js';
+import {READY_WORDS,PENDING_WORDS} from '../../web/app/course-content.js';
 test('completed words become available while old selection and mastery records survive edits',async({page})=>{
  await page.goto('/');await page.evaluate(()=>{
   localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'EF',selectedWordIds:['because','per cent','percent','colour','color','cat']}));

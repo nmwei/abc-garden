@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {GuidedLearningSettings,GUIDED_SETTINGS_KEY} from '../app/guided-learning-settings.js';
-import {createGuidedPolicy,readGuidedPolicy} from '../app/guided-learning-policy.js';
+import {GuidedLearningSettings,GUIDED_SETTINGS_KEY} from '../web/app/guided-learning-settings.js';
+import {createGuidedPolicy,readGuidedPolicy} from '../web/app/guided-learning-policy.js';
 const fixture=()=>{let raw=null,fail=false;const storage=()=>({getItem:()=>raw,setItem:(_key,value)=>{if(fail)throw Error('quota');raw=value;}});return {storage,raw:()=>raw,write:value=>raw=value,fail:()=>fail=true};};
 test('parent settings expose two bounded preferences and leave all learning evidence rules unchanged',()=>{
  const store=fixture(),settings=new GuidedLearningSettings(store);
@@ -25,12 +25,10 @@ test('unreadable or future preference data remains untouched and the valid defau
   assert.deepEqual(readGuidedPolicy(settings.policy()),createGuidedPolicy());assert.equal(settings.save('newWordsPerGroup',6),false);assert.equal(store.raw(),raw);
  }
 });
-test('old one-word preferences become two for future plans without rewriting the saved preference',()=>{
+test('unsupported old one-word preferences are not silently rewritten',()=>{
  const store=fixture(),raw=JSON.stringify({version:1,newWordsPerGroup:1,breakAfterMinutes:10});store.write(raw);
  const settings=new GuidedLearningSettings(store);
- assert.equal(settings.policy().teaching.newWordsPerGroup,2);assert.equal(settings.policy().session.breakAfterMinutes,10);assert.equal(store.raw(),raw);
- for(const count of [2,3,4,5,6]){assert.equal(settings.save('newWordsPerGroup',count),true);assert.equal(settings.policy().teaching.newWordsPerGroup,count);}
- assert.equal(settings.save('newWordsPerGroup',7),false);
+ assert.match(settings.status,/暂时无法读取/);assert.equal(settings.save('newWordsPerGroup',2),false);assert.equal(store.raw(),raw);
 });
 
 test('parent preferences overlay either preset without copying or weakening evidence settings',()=>{

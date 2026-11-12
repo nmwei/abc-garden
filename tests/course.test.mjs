@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {freshLearning,cleanLearning,recordLearning,reviewWords} from '../app/course-core.js';
-import {freshState,sanitizeState} from '../app/core.js';
-import {WORDS,READINGS,DIALOGUES,WRITING,COURSE_AUDIO} from '../app/course-content.js';
+import {freshLearning,cleanLearning,recordLearning,reviewWords} from '../web/app/course-core.js';
+import {freshState,sanitizeState} from '../web/app/core.js';
+import {WORDS,READINGS,DIALOGUES,WRITING,COURSE_AUDIO} from '../web/app/course-content.js';
 test('legacy backups acquire an empty learning record, new records and drafts survive restore',()=>{
  const old=freshState();delete old.learning;assert.deepEqual(sanitizeState(old).learning,freshLearning());
  old.learning={level:3,events:[{item:'apple',skill:'listen',result:'assisted',at:100}],drafts:{me:'My name is Mia.',unknown:'bad'}};
@@ -26,7 +26,7 @@ test('beginner expansion provides short paired turns and complete translation su
  for(const d of talks.slice(0,8)){assert.equal(d.lines.length,4);assert.equal(d.zh.length,d.lines.length);assert.deepEqual(d.lines.map(l=>l[0]),['A','B','A','B']);}
 });
 
-import {sentenceMeaning} from '../app/sentence-meanings.js';
+import {sentenceMeaning} from '../web/app/sentence-meanings.js';
 test('every built-in example has an exact-source meaning and unknown parent sentences stay unlabelled',()=>{
  for(const word of WORDS)assert.ok(sentenceMeaning(word.sentence),word.id);
  assert.equal(sentenceMeaning('I like apples.'),'我喜欢苹果。');

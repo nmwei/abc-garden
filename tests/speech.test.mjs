@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validateSpeech} from '../scripts/speech-service.mjs';
-import {speechId} from '../app/generated-audio.js';
+import {speechId} from '../web/app/generated-audio.js';
 test('generation input is bounded and source text is part of cache identity',()=>{
  assert.throws(()=>validateSpeech({kind:'blend',text:'../../tmp'}));
  assert.throws(()=>validateSpeech({kind:'name',text:'AA'}));

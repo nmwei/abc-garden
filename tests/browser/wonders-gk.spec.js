@@ -40,7 +40,7 @@ test('Wonders hop and rake can be selected, understood and played offline',async
 });
 
 test('official grammar and sense cards retain readable spelling, separate progress and offline speech',async({page,context},info)=>{
- const {WORD_BY_ID}=await import('../../app/course-content.js');
+ const {WORD_BY_ID}=await import('../../web/app/course-content.js');
  const ids=['i','can','the','train-pet','saw-see','sort-group','natural resources','content'];
  await openParents(page,true);
  for(const id of ids){

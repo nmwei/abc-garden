@@ -35,7 +35,7 @@ test('revised examples and their new audio survive a reload without a network',a
   await page.getByRole('button',{name:'听句子',exact:true}).click();
   await expect.poll(()=>page.locator('#garden-audio').evaluate(a=>a.currentTime)).toBeGreaterThan(.05);
   expect(await page.locator('#garden-audio').getAttribute('src')).toContain(`sentence-${id}.wav`);
-  const expectedHash=createHash('sha256').update(await readFile(new URL(`../../assets/audio/sentence-${id}.wav`,import.meta.url))).digest('hex');
+  const expectedHash=createHash('sha256').update(await readFile(new URL(`../../web/assets/audio/sentence-${id}.wav`,import.meta.url))).digest('hex');
   const actualHash=await page.evaluate(async path=>{const bytes=await(await fetch(path)).arrayBuffer();return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(n=>n.toString(16).padStart(2,'0')).join('');},`/assets/audio/sentence-${id}.wav`);
   expect(actualHash).toBe(expectedHash);
  }

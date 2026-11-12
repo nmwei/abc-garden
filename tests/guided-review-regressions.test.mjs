@@ -1,14 +1,15 @@
-import {activityFor} from '../app/guided-activities.js';
-import {CATALOG_BY_ID} from '../app/course-content.js';
+import {createGuidedPolicy as testPolicy} from '../web/app/guided-learning-policy.js';
+const TWO_ATTEMPT_POLICY=testPolicy({retrieval:{maxAttempts:2}});
+import {activityFor} from '../web/app/guided-activities.js';
+import {CATALOG_BY_ID} from '../web/app/course-content.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createGuidedLearning} from '../app/guided-words-core.js';
-import {freshGuided,cleanGuided} from '../app/guided-progress.js';
-import {LEGACY_GUIDED_POLICY} from '../app/guided-learning-policy.js';
-import {guidedSense} from '../app/guided-content-state.js';
-import {GuidedWords} from '../app/guided-words.js';
-import {Course} from '../app/course.js';
-import {recordMastery} from '../app/mastery.js';
+import {createGuidedLearning} from '../web/app/guided-words-core.js';
+import {freshGuided,cleanGuided} from '../web/app/guided-progress.js';
+import {guidedSense} from '../web/app/guided-content-state.js';
+import {GuidedWords} from '../web/app/guided-words.js';
+import {Course} from '../web/app/course.js';
+import {recordMastery} from '../web/app/mastery.js';
 
 function next(engine,state,outcome='independent'){
  const task=state.session.queue[0];
@@ -32,18 +33,13 @@ test('changing a sense archives its evidence and reteaches it; punctuation keeps
  word={...word,zh:'香蕉'};g.open();assert.equal(g.data.entries.apple,undefined);assert.equal(g.data.archivedEntries.length,1);assert.deepEqual(g.data.archivedEntries[0].entry,previous.entries.apple);
  g.start();assert.equal(g.data.session.queue[0].kind,'learn');g.load();assert.equal(g.data.archivedEntries.length,1);
 });
-test('a local override predating revision tracking cannot inherit canonical meaning evidence',()=>{
- let time=new Date(2026,10,9,10).getTime();const engine=createGuidedLearning({policy:LEGACY_GUIDED_POLICY,now:()=>time});
- let state=finish(engine,engine.transition(freshGuided(),{type:'start',ids:['apple']}));state.version=4;delete state.contentRevisions;delete state.archivedEntries;
- state=cleanGuided(state,new Set(['apple']));state=engine.transition(state,{type:'revisions',revisions:[{id:'apple',baseline:guidedSense({zh:'苹果'}),sense:guidedSense({zh:'香蕉'})}]});
- assert.equal(state.entries.apple,undefined);assert.equal(state.archivedEntries[0].entry.level,1);
-});
-test('v2 allows a prompted first attempt followed by two independent successes; v1 snapshots keep their old cap',()=>{
- for(const legacy of [false,true]){
-  const engine=createGuidedLearning(legacy?{policy:LEGACY_GUIDED_POLICY}:{});let state=engine.transition(freshGuided(),{type:'start',ids:['apple']});
+
+test('current policies honor their configured two or three attempt caps',()=>{
+ for(const twoAttempts of [false,true]){
+  const engine=createGuidedLearning(twoAttempts?{policy:TWO_ATTEMPT_POLICY}:{});let state=engine.transition(freshGuided(),{type:'start',ids:['apple']});
   while(state.session.queue[0].kind!=='recall')state=next(engine,state);
   state=next(engine,state,'prompted');state=finish(engine,state);
-  assert.equal(state.session.results.apple.attempts,legacy?2:3);assert.equal(state.entries.apple.days.length,legacy?0:1);
+  assert.equal(state.session.results.apple.attempts,twoAttempts?2:3);assert.equal(state.entries.apple.days.length,twoAttempts?0:1);
  }
 });
 test('crossing midnight or hearing a fresh model cannot masquerade as delayed retention',()=>{

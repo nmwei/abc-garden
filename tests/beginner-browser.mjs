@@ -1,6 +1,6 @@
 import {chromium} from '@playwright/test';
 import assert from 'node:assert/strict';
-import {READINGS,DIALOGUES} from '../app/course-content.js';
+import {READINGS,DIALOGUES} from '../web/app/course-content.js';
 const b=await chromium.launch({channel:'chrome'});const context=await b.newContext({viewport:{width:390,height:844}});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
 try{
  await p.goto('http://localhost:4173/#/learn');await p.locator('[data-view="read"]').click();

@@ -1,7 +1,7 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {WORDS,WORD_BY_ID,TOPICS} from '../app/course-content.js';import {Course} from '../app/course.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import {WORDS,WORD_BY_ID,TOPICS} from '../web/app/course-content.js';import {Course} from '../web/app/course.js';
 test('new direct pictures are complete, credited and have visually distinct quiz options',async()=>{
- const mappings=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url))),credits=JSON.parse(await readFile(new URL('../assets/credits.json',import.meta.url))),hashes=new Map();
- for(const w of WORDS.filter(w=>w.image)){const bytes=await readFile(new URL('../'+w.image,import.meta.url));hashes.set(w.id,createHash('sha256').update(bytes).digest('hex'));}
+ const mappings=JSON.parse(await readFile(new URL('../data/vocabulary/picture-mappings.json',import.meta.url))),credits=JSON.parse(await readFile(new URL('../web/assets/credits.json',import.meta.url))),hashes=new Map();
+ for(const w of WORDS.filter(w=>w.image)){const bytes=await readFile(new URL('../web/'+w.image,import.meta.url));hashes.set(w.id,createHash('sha256').update(bytes).digest('hex'));}
  const groups=new Map();for(const w of WORDS.filter(w=>w.image)){const hash=hashes.get(w.id);if(!groups.has(hash))groups.set(hash,[]);groups.get(hash).push(w);}
  for(const group of groups.values())if(group.some(w=>mappings[w.id]))assert.equal(new Set(group.map(w=>w.emoji)).size,1,group.map(w=>w.id).join(','));
  for(const id of Object.keys(mappings)){

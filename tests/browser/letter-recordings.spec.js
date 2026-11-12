@@ -10,7 +10,7 @@ test('parents can switch complete sources and preview L/R names and sounds after
   await context.setOffline(true);await page.reload();await unlockParents(page);
   await page.getByRole('button',{name:'字母朋友',exact:true}).click();await openLetterSettings(page);
   for(const source of ['gk','edcreate']){
-    const clips=JSON.parse(await readFile(new URL(`../../assets/audio/${source}/imported.json`,import.meta.url)));
+    const clips=JSON.parse(await readFile(new URL(`../../web/assets/audio/${source}/imported.json`,import.meta.url)));
     await page.locator(`[name="letter-audio-source"][value="${source}"]`).check();
     for(const letter of ['L','R']){
       await page.locator('#letter-preview').selectOption(letter);
@@ -31,7 +31,7 @@ test('parents can switch complete sources and preview L/R names and sounds after
 
 for(const source of ['gk','edcreate'])test(`${source} L plays once in point reading, follow-along and the listening game while offline`,async({page,context})=>{
   test.setTimeout(120000);
-  const clips=JSON.parse(await readFile(new URL(`../../assets/audio/${source}/imported.json`,import.meta.url)));
+  const clips=JSON.parse(await readFile(new URL(`../../web/assets/audio/${source}/imported.json`,import.meta.url)));
   const sound=clips.find(c=>c.letter==='L'&&c.mode==='sound');
   await page.addInitScript(source=>{localStorage.setItem('abc-module-content-v1',JSON.stringify({letters:'L',words:''}));localStorage.setItem('abc-garden-preferences-v2',JSON.stringify({version:1,settings:{letterAudioSource:source}}));},source);
   await page.goto('/#/letters');await downloadPack(page,'other');
@@ -62,7 +62,7 @@ for(const source of ['gk','edcreate'])test(`${source} L plays once in point read
 
 for(const selectedSource of ['edcreate','gk'])test(`${selectedSource} recording supplies every name and sound in the offline letter library`,async({page,context})=>{
   test.setTimeout(120000);
-  const imported=JSON.parse(await readFile(new URL(`../../assets/audio/${selectedSource}/imported.json`,import.meta.url)));
+  const imported=JSON.parse(await readFile(new URL(`../../web/assets/audio/${selectedSource}/imported.json`,import.meta.url)));
   await page.addInitScript(source=>localStorage.setItem('abc-garden-preferences-v2',JSON.stringify({version:1,settings:{letterAudioSource:source}})),selectedSource);
   await openLetterSettings(page,true);await page.getByRole('button',{name:'全部 A–Z',exact:true}).click();await page.getByRole('button',{name:'字母朋友',exact:true}).click();
   await expect(page.locator('#offline-label')).toHaveText('页面已可离线 · 素材按需保存',{timeout:60000});

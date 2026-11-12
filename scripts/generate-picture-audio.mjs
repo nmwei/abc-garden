@@ -6,7 +6,7 @@ import {KokoroTTS} from 'kokoro-js';
 import {StyleTextToSpeech2Model,AutoTokenizer} from '@huggingface/transformers';
 import {encodePcm16} from './audio-pcm.mjs';
 const model='onnx-community/Kokoro-82M-v1.0-ONNX',voice='af_heart',speed=.9;
-const directory=new URL('../assets/audio/',import.meta.url),cache=new URL('../.audio-cache/picture-audio/',import.meta.url);
+const directory=new URL('../web/assets/audio/',import.meta.url),cache=new URL('../.audio-cache/picture-audio/',import.meta.url);
 await mkdir(cache,{recursive:true});
 const pronunciation={};
 for(const file of ['wonders-gk-pronunciations','context-pronunciations']){
@@ -33,7 +33,7 @@ if(process.argv[2]==='--worker'){
  }
  console.log(JSON.stringify({worker:slot,done,complete:true}));await network.dispose();
 }else{
- const {COURSE_AUDIO}=await import('../app/course-content.js');
+ const {COURSE_AUDIO}=await import('../web/app/course-content.js');
  const prior=await readFile(new URL('course-sources.json',directory),'utf8').then(JSON.parse).catch(()=>({clips:[]}));
  const old=new Map(prior.clips.map(c=>[c.key,c])),tasks=[];
  for(const entry of COURSE_AUDIO){

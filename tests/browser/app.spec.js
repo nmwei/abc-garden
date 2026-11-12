@@ -1,4 +1,4 @@
-import {openParents,unlockParents,addPending} from './parent-helpers.js';
+import {openParents,unlockParents} from './parent-helpers.js';
 import {downloadPack} from '../offline-helpers.mjs';
 import {test,expect} from '@playwright/test';
 async function parents(page){await openParents(page);await expect(page.getByRole('heading',{name:'家长小角',exact:true})).toBeVisible();}
@@ -13,7 +13,7 @@ test('three destinations and three alphabet activities fit touch layouts',async(
 });
 test('one letter range drives follow along and listening, and only parent settings persist',async({page})=>{
  await parents(page);await expect(page.locator('input[type=file]')).toHaveCount(0);await expect(page.locator('#selection-query')).toBeVisible();await expect(page.getByRole('heading',{name:'系统朗读声音',exact:true})).toBeVisible();await expect(page.locator('.parent-settings>details')).toHaveCount(0);await expect(page.locator('#learning-mode,[data-setting=soundConfirmed]')).toHaveCount(0);
- await page.getByRole('button',{name:'E–H',exact:true}).click();await addPending(page);
+ await page.getByRole('button',{name:'字母朋友',exact:true}).click();await page.getByRole('button',{name:'字母设置',exact:true}).click();await page.getByRole('button',{name:'E–H',exact:true}).click();
  await page.goto('/#/letters');await page.reload();await unlockParents(page);await page.getByRole('button',{name:'字母朋友',exact:true}).click();await expect(page.locator('#letter-range')).toContainText('E · F · G · H');await expect(page.locator('#follow-range')).toHaveCount(0);expect(await page.locator('.alphabet-card').evaluateAll(rows=>rows.map(r=>r.dataset.letter))).toEqual(['E','F','G','H']);await page.getByRole('button',{name:'听音找字母',exact:true}).click();await expect(page.getByRole('region',{name:'听音游戏设置'})).toHaveCount(0);await expect(page.locator('.listen-key').first()).toBeEnabled();
  const choices=await page.locator('.listen-key').allTextContents();expect(choices.every(l=>'efgh'.includes(l.toLowerCase()))).toBe(true);
 });

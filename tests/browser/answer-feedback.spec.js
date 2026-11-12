@@ -28,7 +28,7 @@ test('spelling, picture listening and comprehension use the shared cues without 
  await input.fill('egg');await input.press('Enter');await cue(page,'correct');await expect(page.locator('.answer-flower')).toBeVisible();
  await page.locator('[data-mode=listen]').click();await page.locator('[data-course=choose]:not([data-word="egg"])').first().click();await cue(page,'retry');await expect(page.locator('.answer-flower')).toHaveCount(0);await page.locator('[data-course=choose][data-word="egg"]').click();await cue(page,'correct');await expect(page.locator('.answer-flower')).toBeVisible();
  await page.locator('.nav [data-action=learn]').click();await page.locator('[data-view=read]').click();
- const {READINGS}=await import('../../app/course-content.js');const r=READINGS.find(r=>r.level===1);
+ const {READINGS}=await import('../../web/app/course-content.js');const r=READINGS.find(r=>r.level===1);
  await page.locator(`[data-course=read-answer][data-index="${r.answer}"]`).click();await cue(page,'correct');await expect(page.locator('.answer-flower')).toBeVisible();
  await page.locator('[data-course=map]').click();await page.locator('[data-view=read]').click();await page.locator(`[data-course=read-answer][data-index="${(r.answer+1)%r.options.length}"]`).click();await cue(page,'retry');await expect(page.locator('.answer-flower')).toHaveCount(0);
  await page.locator('.nav [data-action=words]').click();await page.locator('[data-mode=spell]').click();

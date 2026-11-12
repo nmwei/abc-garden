@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import {READY_WORDS as WORDS} from '../../app/course-content.js';
+import {READY_WORDS as WORDS} from '../../web/app/course-content.js';
 import {openParents,unlockParents} from './parent-helpers.js';
 
 test('parent pagination jumps, follows filters and preserves selected words',async({page},info)=>{

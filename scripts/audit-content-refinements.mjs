@@ -1,15 +1,15 @@
 // Review snapshots detect drift; do not refresh stamps without reviewing changed content.
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,COURSE_AUDIO} from '../app/course-content.js';
-import {sentenceMeaning} from '../app/sentence-meanings.js';
+import {CATALOG_WORDS,COURSE_AUDIO} from '../web/app/course-content.js';
+import {sentenceMeaning} from '../web/app/sentence-meanings.js';
 const root=new URL('../',import.meta.url),json=async p=>JSON.parse(await readFile(new URL(p,root)));
 const review=await json('data/vocabulary/content-refinements.json'),offline=await json('dist/precache.json');
 const sources=new Map((await json('assets/audio/course-sources.json')).clips.map(c=>[c.key,c]));
 const expected=new Map(COURSE_AUDIO.map(c=>[c.key,c])),credits=new Map((await json('assets/credits.json')).map(c=>[c.file,c]));
 const pronunciations=await json('data/vocabulary/context-pronunciations.json');
 const sha=b=>createHash('sha256').update(b).digest('hex');
-async function check(path,hash){const b=await readFile(new URL(path,root));if(sha(b)!==hash||offline.resources[path]?.sha256!==hash)throw Error(`Changed or stale resource: ${path}`);return b;}
+async function check(path,hash){const b=await readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root));if(sha(b)!==hash||offline.resources[path]?.sha256!==hash)throw Error(`Changed or stale resource: ${path}`);return b;}
 for(const entry of review.entries){
  const w=CATALOG_WORDS.find(w=>w.id===entry.id);if(!w||entry.status!=='reviewed')throw Error(`Unreviewed card: ${entry.id}`);
  const now={zh:w.zh,pos:w.pos||'',sentence:w.sentence,sentenceZh:w.sentenceZh??sentenceMeaning(w.sentence),image:w.image,pictureCue:w.pictureCue};

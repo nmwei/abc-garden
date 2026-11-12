@@ -15,12 +15,12 @@ for(const group of groups)for(const [id,draw] of Object.entries(group)){
 // Reload source metadata per render pass; a preceding pass may have replaced a base image.
 export async function renderQualityScene(id){
  if(!qualityScenes[id])throw Error(`Missing quality scene: ${id}`);
- const credits=new Map(JSON.parse(await readFile(new URL('assets/credits.json',root))).map(c=>[c.file,c]));
+ const credits=new Map(JSON.parse(await readFile(new URL('web/assets/credits.json',root))).map(c=>[c.file,c]));
  const components=[];let serial=0;
  const icon=async(name,x,y,width,height=width)=>{
   const file=`pictures/${name}.svg`,credit=credits.get(file);
   if(!credit)throw Error(`Uncredited quality component: ${name}`);
-  const bytes=await readFile(new URL(`assets/${file}`,root)),match=bytes.toString().match(/<svg\b([^>]*)>([\s\S]*)<\/svg>\s*$/);
+  const bytes=await readFile(new URL(`web/assets/${file}`,root)),match=bytes.toString().match(/<svg\b([^>]*)>([\s\S]*)<\/svg>\s*$/);
   if(!match||/<script\b|<image\b|<foreignObject\b|(?:href|src)=["'](?:https?:|\/\/)/.test(match[2]))throw Error(`Nonlocal component: ${name}`);
   const prefix=`quality${++serial}-`;
   const body=match[2].replace(/\bid="([^"]+)"/g,(_,key)=>`id="${prefix}${key}"`).replace(/url\(#([^)]+)\)/g,(_,key)=>`url(#${prefix}${key})`).replace(/((?:xlink:)?href=")#([^"]+)"/g,(_,start,key)=>`${start}#${prefix}${key}"`);

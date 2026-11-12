@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import { freshState,createSession,recordTask,sanitizeState,selectTargets,summarize,completeSession } from '../app/core.js';
-import { LETTERS,BLENDS } from '../app/content.js';
+import { freshState,createSession,recordTask,sanitizeState,selectTargets,summarize,completeSession } from '../web/app/core.js';
+import { LETTERS,BLENDS } from '../web/app/content.js';
 
 test('a full alphabet never becomes a 26-letter daily drill',()=>{
   const state=freshState();state.settings.letters=[...LETTERS];

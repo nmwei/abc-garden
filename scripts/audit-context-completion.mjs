@@ -3,9 +3,9 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
-import {CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../app/course-content.js';
+import {CATALOG_BY_ID,READY_WORDS,PENDING_WORDS} from '../web/app/course-content.js';
 import {auditTarget} from './audit-wonders-gk.mjs';
-const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path,root),'utf8').then(JSON.parse);
+const root=new URL('../',import.meta.url),json=path=>readFile(new URL(path.startsWith('assets/')||path.startsWith('./assets/')?'web/'+path:path,root),'utf8').then(JSON.parse);
 export async function auditCompletion(plan){
  const baseline=new Set(plan.baselineIds),planned=new Set(),rows=[];
  if(plan.baselineCount!==1195||baseline.size!==plan.baselineCount||plan.baselineIds.length!==baseline.size)throw Error('Invalid completion baseline');
@@ -26,26 +26,26 @@ export async function auditCompletion(plan){
    if(!card.reviewNote||!card.pictureCue||!word.pictureCue||word.topic!==card.topic||mappings[card.id]?.completionBatch!==batch.id||mappings[card.id]?.review!==card.reviewNote)throw Error(`Invalid contextual picture: ${card.id}`);
    const checked=await auditTarget({spelling:word.display||card.id,cardId:card.id,reviewedCard:card});
    if(checked.status!=='ready')throw Error(`${card.id}: ${checked.issues.join(',')}`);
-   const picture=await readFile(new URL(word.image,root));
+   const picture=await readFile(new URL('web/'+word.image,root));
    const credit=credits.find(c=>c.file===word.image.replace('./assets/',''));
    if(credit?.sha256!==createHash('sha256').update(picture).digest('hex'))throw Error(`Picture credit hash mismatch: ${card.id}`);
    for(const component of credit.components||[]){
     const current=credits.find(c=>c.file===component.file);
-    const bytes=await readFile(new URL(`assets/${component.file}`,root));
+    const bytes=await readFile(new URL(`web/assets/${component.file}`,root));
     if(!current||current.license!==component.license||createHash('sha256').update(bytes).digest('hex')!==component.sha256)throw Error(`Stale component: ${card.id}/${component.file}`);
     if(component.license==='Apache-2.0'&&credit.license!=='Apache-2.0')throw Error(`Lost component license: ${card.id}`);
    }
    for(const [key,text] of [[word.audio,word.spoken||word.display||word.id],[`sentence-${word.id}`,word.sentence]]){
     const override=pronunciations[key];
     if(override&&(override.text!==text||clips.get(key)?.phonemes!==override.phonemes))throw Error(`Stale pronunciation: ${key}`);
-    const audio=await readFile(new URL(`assets/audio/${key}.wav`,root));
+    const audio=await readFile(new URL(`web/assets/audio/${key}.wav`,root));
     // RIFF PCM files from this pipeline use the canonical 44-byte header.
     let peak=0;for(let i=44;i+1<audio.length;i+=2)peak=Math.max(peak,Math.abs(audio.readInt16LE(i)));
     if(peak<10)throw Error(`Silent audio: ${key}`);
    }
    for(const file of [word.image,`./assets/audio/${word.audio}.wav`,`./assets/audio/sentence-${word.id}.wav`]){
     if(!files.has(file))throw Error(`Missing offline resource: ${file}`);
-    const hash=createHash('sha256').update(await readFile(new URL(file,root))).digest('hex');
+    const hash=createHash('sha256').update(await readFile(new URL('web/'+file,root))).digest('hex');
     if(offline.resources[file]?.sha256!==hash)throw Error(`Stale build resource: ${file}`);
    }
    rows.push({batch:batch.id,id:card.id,zh:word.zh,status:'ready',pictureCue:true});

@@ -1,8 +1,8 @@
 // Render a dated review without changing application content or review decisions.
 import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {CATALOG_WORDS,WORDS} from '../app/course-content.js';
-import {sentenceMeaning} from '../app/sentence-meanings.js';
+import {CATALOG_WORDS,WORDS} from '../web/app/course-content.js';
+import {sentenceMeaning} from '../web/app/sentence-meanings.js';
 
 const root=new URL('../',import.meta.url);
 const report=JSON.parse(await readFile(new URL('data/vocabulary/quality-review-2026-11-02.json',root),'utf8'));
@@ -21,7 +21,7 @@ for(const card of report.cards){
  const actual={...word,display:word.display||word.id,pos:word.pos||'',sentenceZh:word.sentenceZh??sentenceMeaning(word.sentence)};
  const content=JSON.stringify(Object.fromEntries(fields.map(k=>[k,actual[k]??''])));
  if(sha(content)!==card.contentSha256)stale.push(`${card.id}: text or image mapping changed`);
- if(sha(await readFile(new URL(word.image,root)))!==card.sha256)stale.push(`${card.id}: image changed`);
+ if(sha(await readFile(new URL('web/'+word.image,root)))!==card.sha256)stale.push(`${card.id}: image changed`);
 }
 for(const id of current.keys())if(!seen.has(id))stale.push(`${id}: not reviewed`);
 for(const [key,n] of Object.entries(report.summary))if(counts[key]!==n)throw Error(`Incorrect summary: ${key}`);

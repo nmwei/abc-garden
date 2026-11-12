@@ -1,3 +1,3 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {PictureQuiz} from '../app/picture-quiz.js';
+import test from 'node:test';import assert from 'node:assert/strict';import {PictureQuiz} from '../web/app/picture-quiz.js';
 test('round freezes order and finishes without wrapping',()=>{const words=['a','b','c'].map(id=>({id})),q=new PictureQuiz(words,'b');words.splice(0,2);assert.equal(q.current.id,'b');q.next();assert.equal(q.current.id,'c');q.next();assert.equal(q.current.id,'a');q.next();assert.equal(q.done,true);});
 test('wrong choices permit one retry and cannot be counted twice',()=>{const q=new PictureQuiz([{id:'apple'}],'apple');assert.equal(q.answer('cat'),'retry');assert.equal(q.answer('cat'),null);assert.equal(q.answer('dog'),'revealed');assert.equal(q.answer('apple'),null);});

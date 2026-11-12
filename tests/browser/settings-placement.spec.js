@@ -21,7 +21,7 @@ test('module settings share the letter scope and parent settings keep shared con
  await openParents(page);
  await expect(page.locator('.parent-setting-group')).toHaveCount(3);
  await expect(page.locator('.letter-settings,.letter-audio-settings')).toHaveCount(0);
- await expect(page.getByRole('heading',{name:'系统朗读声音'})).toBeVisible();
+ await expect(page.getByRole('region',{name:'系统朗读声音'})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:`.playwright-cli/settings-placement/parents-${info.project.name}.png`,fullPage:true});
 });

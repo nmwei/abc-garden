@@ -10,3 +10,5 @@ playwright-report/
 .audio-cache/
 
 .build-cache/
+
+.runtime/

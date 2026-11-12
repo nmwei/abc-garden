@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 import {openParents} from './parent-helpers.js';
-import {PENDING_WORDS} from '../../app/course-content.js';
-import {matchesWord} from '../../app/word-aliases.js';
+import {PENDING_WORDS} from '../../web/app/course-content.js';
+import {matchesWord} from '../../web/app/word-aliases.js';
 
 test('pending browser supports independent search and pagination without selecting words',async({page},info)=>{
  await openParents(page,true);

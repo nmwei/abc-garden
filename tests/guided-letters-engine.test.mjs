@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createLetterLearning,freshLetterLearning} from '../app/guided-letters-core.js';
-import {createLetterPolicy,readLetterPolicy} from '../app/guided-letters-policy.js';
+import {createLetterLearning,freshLetterLearning} from '../web/app/guided-letters-core.js';
+import {createLetterPolicy,readLetterPolicy} from '../web/app/guided-letters-policy.js';
 const at=new Date(2026,10,10,10).getTime(),DAY=86400000;
 const engine=(options={})=>createLetterLearning({now:()=>at,random:()=>.25,...options});
 function step(e,d,{outcome='independent',wrong=false}={}){

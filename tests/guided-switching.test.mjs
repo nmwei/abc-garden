@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createGuidedLearning} from '../app/guided-words-core.js';
-import {createGuidedPolicy} from '../app/guided-learning-policy.js';
-import {freshGuided,restoreGuidedProgress,createGuidedRepository} from '../app/guided-progress.js';
-import {GuidedWords} from '../app/guided-words.js';
+import {createGuidedLearning} from '../web/app/guided-words-core.js';
+import {createGuidedPolicy} from '../web/app/guided-learning-policy.js';
+import {freshGuided,restoreGuidedProgress,createGuidedRepository} from '../web/app/guided-progress.js';
+import {GuidedWords} from '../web/app/guided-words.js';
 const ids=['apple','fish'],at=Date.UTC(2026,10,9,2);
 function fixture(words=ids){
  let now=at;const learn=createGuidedLearning({now:()=>now,random:()=>.25}),review=createGuidedLearning({now:()=>now,random:()=>.25,policy:createGuidedPolicy({},{preset:'review'})});

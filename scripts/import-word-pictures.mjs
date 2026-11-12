@@ -1,8 +1,8 @@
 // Import pinned Noto pictures in a small pool; never touch audio or original artwork.
 import {readFile,writeFile,access,rename} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {WORDS} from '../app/course-content.js';
-const base=new URL('../assets/',import.meta.url),revision='v2.047';
+import {WORDS} from '../web/app/course-content.js';
+const base=new URL('../web/assets/',import.meta.url),revision='v2.047';
 const credits=JSON.parse(await readFile(new URL('credits.json',base),'utf8'));
 const byFile=new Map(credits.map(c=>[c.file,c])),downloads=new Map();
 const pictureSources=new Map(credits.filter(c=>c.file.startsWith('pictures/')&&c.source.includes(`noto-emoji@${revision}`)).map(c=>[c.source,c.file]));
